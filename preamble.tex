@@ -1,6 +1,11 @@
 % University guide G1, pp. 2-8; mapping in docs/compliance-matrix.md.
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+% Older pdfTeX releases do not always emit ToUnicode maps by default.
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 % Broadly available Times-compatible Type 1 text/math; all actual fonts checked.
 \usepackage{mathptmx}
 \usepackage{amsmath,amssymb,amsthm}

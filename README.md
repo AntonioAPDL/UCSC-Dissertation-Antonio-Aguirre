@@ -16,9 +16,11 @@ bash scripts/build.sh
 ```
 
 Output: `build/main.pdf`. Main document: `main.tex`. Engine: pdfLaTeX;
-bibliography: BibTeX through latexmk. Tested environment and results are in
-`docs/VALIDATION.md`. No sibling repository, data file, network fetch, R/Python
-analysis, shell escape or separate figure-generation command is required.
+bibliography: BibTeX. The script uses latexmk when available and otherwise
+runs the required pdfLaTeX/BibTeX passes directly. Tested environment and
+results are in `docs/VALIDATION.md`. No sibling repository, data file, network
+fetch, R/Python analysis, shell escape or separate figure-generation command
+is required.
 
 Packages: PSNFSS (`mathptmx`), AMS math/fonts/theorems, geometry, setspace,
 fancyhdr, graphicx, booktabs, PGF/TikZ, caption, natbib, url and hyperref;
@@ -37,11 +39,13 @@ keeping, then run the same command. `build/` contains generated files only.
 
 ## Overleaf
 
-Upload **UCSC_Dissertation_Starter_Overleaf.zip** from the delivered bundle as
-a NEW project. Select `main.tex`, pdfLaTeX and TeX Live 2023 if offered, or an
-available newer version and perform the same checks. Local validation is not
-an Overleaf test. The full setup bundle is not the Overleaf upload archive.
-Linking to a NEW GitHub repository must follow `docs/WORKFLOW.md`.
+This project already has Git history and a GitHub origin. Do not create a
+second GitHub repository from Overleaf or assume an Overleaf project is already
+linked. At an authorized synchronization handoff, first preserve any existing
+Overleaf edits, comments and tracked changes, then follow `docs/WORKFLOW.md`.
+Use `main.tex`, pdfLaTeX and TeX Live 2023 if offered, or an available newer
+version, and repeat the documented checks. The muscat build is not an Overleaf
+test.
 
 ## Files to edit first
 
@@ -50,7 +54,7 @@ Linking to a NEW GitHub repository must follow `docs/WORKFLOW.md`.
 - `docs/STATUS.md`: decisions, gaps and next work.
 - `source-manifest.local.json`: create from the example; supply authorized
   absolute source paths locally. Do not publish local paths by accident.
-- `docs/CODEX-KICKOFF.md`: paste into the later local Codex chat.
+- `docs/CODEX-KICKOFF.md`: use in the later muscat thesis-workspace chat.
 
 `chapters/` contains five structured placeholders, including three research
 slots. The blank second leaf is intentional. The abstract and acknowledgments

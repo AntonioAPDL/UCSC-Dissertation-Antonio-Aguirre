@@ -1,0 +1,36 @@
+# Generated dissertation output.
+/build/
+/main.pdf
+
+# LaTeX auxiliary files that may be written outside build/.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.pdfsync
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Credentials and machine-local research/audit inputs.
+.env
+.env.*
+/source-manifest.local.json
+/audit-inputs/
+/docs/SETUP-LOCAL.md
+
+# Common editor and operating-system artifacts.
+.DS_Store
+*.swp
+*~

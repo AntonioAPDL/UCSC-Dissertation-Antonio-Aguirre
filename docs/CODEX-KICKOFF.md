@@ -1,4 +1,8 @@
-# Paste this prompt into the local dissertation Codex chat
+# Use this prompt in the dissertation-workspace Codex chat
+
+The active research-audit process is defined in
+`docs/research-audit-master-plan.md`; this kickoff remains the substantive
+fidelity checklist and historical handoff prompt.
 
 You are working in my UCSC Statistical Science PhD dissertation repository.
 I entered in Fall 2021 and plan around Fall 2026, but my defense, conferral and
