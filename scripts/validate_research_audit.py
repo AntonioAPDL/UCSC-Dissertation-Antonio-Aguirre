@@ -18,6 +18,7 @@ ABSOLUTE_PRIVATE_PATH = re.compile(r"(?<![A-Za-z0-9])/(?:data|home)/")
 FORBIDDEN_PUBLIC_TERMS = ("password=", "token=", "authorization: bearer")
 SOURCE_STATUSES = {
     "PENDING_AUTHOR_VERSION_DECISION",
+    "AUTHOR_DIRECTED_WORKING_SOURCE",
     "SUPPORTING_SOURCE",
     "AUTHOR_CONFIRMED",
     "EXCLUDED",

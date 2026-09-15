@@ -280,8 +280,8 @@
       "locator": "Authors@R and Author fields, compared with the exdqlm article author block",
       "evidence_level": "E2",
       "verification_status": "cross-source identity difference confirmed",
-      "qualification": "Do not infer the preferred official name or merge contribution identities without author confirmation and, where available, ORCID evidence.",
-      "dissertation_disposition": "resolve before bibliography and contribution imports"
+      "qualification": "The author confirmed that these identities refer to the same candidate, supplied Jose Antonio Aguirre Perez de Leon as the official long name, and selected Antonio de Leon as the scholarly name. ORCID remains pending.",
+      "dissertation_disposition": "identity resolved; preserve immutable source spellings and add ORCID when supplied"
     },
     {
       "id": "CLM-RQR-001",

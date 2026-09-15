@@ -51,11 +51,11 @@ test.
 
 - `docs/research-audit.md`: completed fixed-snapshot research audit, source
   conflicts, evidence limits, and decisions required before drafting.
-- `docs/chapter-plan.md`: evidence-backed three-unit recommendation and the
-  criteria for the two consequential alternatives.
-- `docs/research-decisions.md`: fill the still-open version, contribution,
-  rights, architecture, and drafting gates; never replace pending values by
-  inference.
+- `docs/chapter-plan.md`: evidence-backed four-project architecture and
+  section-level source-first adaptation plan.
+- `docs/research-decisions.md`: author-supplied identity/architecture decisions,
+  repository-documented collaborators/contributions, and the focused role,
+  rights, committee, and drafting confirmations that remain.
 - `source-manifest.json` and `docs/claim-evidence.json`: public immutable source,
   validation-run, and claim provenance. Check with
   `python3 scripts/validate_research_audit.py`.
@@ -67,7 +67,7 @@ test.
 - `docs/CODEX-KICKOFF.md`: use for the gated source-decision and drafting
   workflow.
 
-`chapters/` contains five structured placeholders, including three research
+`chapters/` contains six structured placeholders, including four research
 slots. The blank second leaf is intentional. The abstract and acknowledgments
 contain instructions only. The appendix contains elementary demonstration
 material that must be removed before submission. Replace its institutional

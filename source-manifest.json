@@ -17,6 +17,20 @@
     "decision_record": "docs/research-decisions.md",
     "clone_helper": "scripts/prepare_research_audit_clones.sh"
   },
+  "author_direction": {
+    "recorded_at": "2026-09-15",
+    "official_long_name": "Jose Antonio Aguirre Perez de Leon",
+    "primary_scholarly_name": "Antonio de Leon",
+    "cross_source_identity_note": "Antonio De Leon in manuscripts and Antonio Aguirre in package metadata refer to the dissertation candidate",
+    "working_architecture": [
+      "exdqlm software and computational workflow",
+      "Environmetrics hydrologic correction and predictive synthesis",
+      "QDESN nonlinear conditional-quantile methods",
+      "combined MTI foundation, tolerance, regression, and dynamic extensions"
+    ],
+    "snapshot_state": "Audited commits are working drafting sources; final submission freezes remain replaceable",
+    "direct_reuse_state": "Material-specific rights remain pending for verbatim text and source assets"
+  },
   "sources": [
     {
       "id": "SRC-QDESN",
@@ -38,7 +52,7 @@
       ],
       "relationship": "Candidate QDESN method and application line",
       "highest_bounded_evidence": "E3",
-      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
       "imports": []
     },
@@ -59,7 +73,7 @@
       ],
       "relationship": "Candidate first-project hydrological forecast application",
       "highest_bounded_evidence": "E3",
-      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
       "imports": []
     },
@@ -79,7 +93,7 @@
       ],
       "relationship": "Candidate mean-tilted short-tolerance-interval foundation",
       "highest_bounded_evidence": "E3",
-      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
       "imports": []
     },
@@ -99,7 +113,7 @@
       ],
       "relationship": "Candidate regression and dynamic extensions to mean-tilted intervals",
       "highest_bounded_evidence": "E3",
-      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
       "imports": []
     },
@@ -120,7 +134,7 @@
       ],
       "relationship": "Candidate software/article contribution and shared methodological infrastructure",
       "highest_bounded_evidence": "E3",
-      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
       "imports": []
     },

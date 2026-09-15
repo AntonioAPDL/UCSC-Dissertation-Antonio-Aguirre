@@ -1,6 +1,7 @@
 # PhD research-source audit
 
-Status: **completed at fixed discovery snapshots; author decisions pending**
+Status: **completed at fixed discovery snapshots; revised for the author's
+four-project direction; focused confirmations pending**
 Audit date: 2026-09-15
 Controlling method: `research-audit-master-plan.md`
 Machine-readable records: `../source-manifest.json` and
@@ -10,32 +11,36 @@ Machine-readable records: `../source-manifest.json` and
 
 The inspected work supports a coherent dissertation centered on **statistical
 learning for conditional quantiles and interval targets under dynamic,
-computational, and data-product constraints**. The strongest defensible
-three-unit architecture is:
+computational, and data-product constraints**. After reviewing the current
+manuscript contribution statements and the author's instruction to organize
+the dissertation around four main projects, the working architecture is:
 
-1. source-aware quantile correction and predictive synthesis for hydrologic
+1. the `exdqlm` software and computational workflow;
+2. source-aware quantile correction and predictive synthesis for hydrologic
    products;
-2. Q-DESN for nonlinear time-series quantiles, including its single- and
+3. Q-DESN for nonlinear time-series quantiles, including its single- and
    multi-quantile formulations and two applications; and
-3. mean-tilted intervals, combining the short-tolerance-interval foundation
+4. mean-tilted intervals, combining the short-tolerance-interval foundation
    with the regression and dynamic extensions.
 
-The `exdqlm` software article is important shared infrastructure and may supply
-a software/methods appendix. It should **not** be counted as an independent
-research chapter by default. The audited article itself says its contribution
-is software-centered, while the exAL distribution, exDQLM state-space model,
-MCMC, ISVB, and transfer-function foundations come from earlier work. Raquel
-Barata's dissertation and the AOAS article already document those foundations
-([dissertation](https://escholarship.org/uc/item/0bq4107v),
-[AOAS article](https://doi.org/10.1214/21-AOAS1497)). A separate software
-chapter remains possible only after the candidate's specific design,
-implementation, validation, and writing contributions are confirmed.
+The `exdqlm` promotion is evidence-based but provisional. Its audited article
+states five substantial software contributions and includes a methods appendix,
+four examples, an R package, and a reproducibility contract. It is distinct in
+purpose from the hydrologic and QDESN chapters. It must nevertheless preserve
+the boundary around inherited work: the exAL distribution, exDQLM state-space
+model, original MCMC/ISVB, and transfer-function foundations come from Yan and
+Barata et al. Raquel Barata's dissertation and the AOAS article document those
+foundations ([dissertation](https://escholarship.org/uc/item/0bq4107v),
+[AOAS article](https://doi.org/10.1214/21-AOAS1497)). The committee should
+confirm that the candidate's software-centered contribution counts as a
+journal-suitable research unit.
 
-This recommendation satisfies the public program expectation of at least
-three journal-suitable chapters without counting QDESN variants or the two MTI
-manuscripts twice. It is a scientific/editorial recommendation, not a finding
-that the chapters, contribution credit, reuse permissions, or exact inclusion
-versions have been approved.
+The two MTI papers remain one project chapter at their current evidence level.
+This avoids counting QDESN variants or closely linked MTI manuscripts as
+independent contributions merely to increase the chapter count. The source
+record supports project-level content and collaborator identification; granular
+individual contribution allocation and material-specific reuse rights still
+require focused confirmation.
 
 The audit found five issues that should be fixed before drafting:
 
@@ -51,9 +56,10 @@ The audit found five issues that should be fixed before drafting:
   13 mismatches in 14 rows and two Phase 181 check scripts still expect
   superseded manuscript inputs. Archive or update those historical controls
   before using them as dissertation provenance.
-- **Unfixed source authority and rights:** the audited commits are reproducible
-  snapshots, not author-approved dissertation inclusion versions. Coauthor,
-  publisher, and repository-level reuse permissions remain unverified.
+- **Working source authority and unresolved rights:** the author has directed
+  use of the audited current documentation as the working drafting base. A
+  later submitted snapshot may still replace it, and coauthor, publisher, and
+  repository-level direct-reuse permissions remain unverified.
 - **Software/provenance fragmentation:** the hydrology application pins
   `exdqlm` 1.1.0, the software article describes 1.1.1, and current package
   `main` is 1.1.2. Some QDESN and Environmetrics provenance records retain
@@ -102,7 +108,7 @@ validate every scientific conclusion in the repository.
 | `SRC-QDESN` | `757522db0f85815244370ec92a194de132268883` | Current article `main`; newer Search Phase II branches are unpromoted work | Recommended chapter |
 | `SRC-RQR` | `73887b9c86ef767aa1567c660718667945630aef` | Current `main` and current short-tolerance manuscript; old local checkout was stale | Recommended combined MTI chapter |
 | `SRC-MTI-EXT` | `f345d946aa5a81b94795838bec58d874a0fdd0c9` | Sole branch; compact theory manuscript without implementation/results | Combine with MTI foundation |
-| `SRC-EXDQLM-ARTICLE` | `d5534e97db8414fd875022261d4c530eae4676e4` | Current JSS-facing article `main` | Supporting software material by default |
+| `SRC-EXDQLM-ARTICLE` | `d5534e97db8414fd875022261d4c530eae4676e4` | Current JSS-facing article `main` | Provisional fourth research chapter; committee counting confirmation pending |
 | `SRC-EXDQLM-PKG` | `e51045a4324901cced27ca2aaa22569afbc8e0e6` | Current package `main`, version 1.1.2; not the freeze for every paper | Shared implementation dependency |
 | `SRC-SAN-LORENZO-REPRO` | `a8797b804271b46c62bd04dab7dba6b84a10ab7d` | Public staged reproducibility bundle | Environmetrics provenance |
 | `SRC-ENVIRON-CORR` | `b1ceeb610d20f8287e4ca44e146c9cfdbcda1ee6` | Revision/response and table cross-check evidence | Environmetrics supporting source |
@@ -118,11 +124,23 @@ validate every scientific conclusion in the repository.
 | exdqlm article | Antonio De Leon, Raquel Barata, Raquel Prado, Bruno Sansó |
 | exdqlm package | Raquel Barata (`aut`, `cre`), Raquel Prado (`ths`), Bruno Sanso (`ths`), Antonio Aguirre (`aut`) |
 
-These records identify named authors, not contribution allocation. The
-candidate name also differs between manuscript and package metadata (“Antonio
-De Leon” versus “Antonio Aguirre”), while the dissertation's official-name
-field remains unresolved. Confirm the preferred scholarly identity and any
-ORCID mapping before importing citations or writing contribution statements.
+These records identify named authors, not complete contribution allocation.
+The author has resolved the identity mismatch: use **Antonio de Leon** as the
+primary scholarly name and **Jose Antonio Aguirre Perez de Leon** as the
+official long dissertation name. “Antonio De Leon” in manuscripts and “Antonio
+Aguirre” in package metadata refer to the same candidate. Preserve immutable
+source spellings where required for accurate citation; an ORCID remains to be
+supplied.
+
+The repositories contain enough evidence to recover each project's purpose,
+methods, joint contribution statement, and collaborators. Environmetrics also
+identifies the candidate as corresponding author and explicitly calls the work
+part of the candidate's dissertation; the other project manuscripts list the
+candidate first. The project contribution paragraphs use collective language
+and do not assign individual theory, implementation, empirical, or writing
+tasks. Source-based chapter drafting can therefore proceed with neutral
+project-level wording, but final singular candidate-role statements still need
+author/coauthor confirmation.
 
 ### 3.2 Branch and worktree triage
 
@@ -398,12 +416,17 @@ builds and installs as version 1.1.2, and focused scale/skewness and
 RNG-repeatability tests pass. These bounded checks do not replace the missing
 bundle, full batch, or cross-platform package checks.
 
-The candidate may have a substantial software contribution. Before counting it
-as research-chapter material, record which APIs, algorithms, C++ paths, tests,
-examples, and manuscript sections the candidate designed or implemented, and
-which were coauthored or inherited. Until then, use exdqlm as shared
-infrastructure and place only necessary software detail in a methods or
-reproducibility appendix.
+The article and package now support a provisional software research chapter:
+the source explicitly defines a five-part software contribution, supplies four
+worked analyses and a technical appendix, and is distinct in purpose from the
+application and nonlinear-method chapters. The chapter must remain centered on
+software architecture, inference interfaces, diagnostics, reproducibility, and
+the evidence/limitations of those capabilities—not re-present inherited exDQLM
+theory as new. Before the candidate-contribution preface is finalized, record
+which APIs, algorithms, C++ paths, tests, examples, and manuscript sections the
+candidate personally led and which were coauthored or inherited. Committee
+confirmation is still required if this chapter is to count as an independent
+journal-suitable research unit.
 
 ## 6. Cross-project contribution and overlap diagnosis
 
@@ -413,7 +436,7 @@ reproducibility appendix.
 | QDESN | exAL/AL quantile readouts, exdqlm comparators, ESN/DESN literature | Deep-reservoir quantile architecture, multi-level shrinkage formulation, computation, and application/validation roles | Research chapter |
 | RQR/MTI | Residual-product criterion from Pouplin et al.; generalized-Bayes and tolerance literature | Mean-preserving characterization, tilt family, TCSP action/calibration, validation, and application roles | Research chapter, subject to proof-language repair |
 | MTI extensions | Same MTI loss and geometry | Regression/dynamic extension, conditional computation, implementation, and validation roles | Section/appendix within MTI pending stronger evidence |
-| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations | Later LDVB, API, static/shrinkage, C++, diagnostics, synthesis, testing, and writing roles | Shared methods/software appendix by default |
+| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations | Later LDVB, API, static/shrinkage, C++, diagnostics, synthesis, testing, examples, and writing roles | Provisional software research chapter plus technical appendix |
 
 The hydrology and QDESN projects share dynamic-quantile machinery but have
 different research questions: source-aware correction/synthesis versus
@@ -425,9 +448,10 @@ evidence base differ, but the dissertation should explain the relationship to
 avoid appearing to recycle one application.
 
 RQR/MTI targets intervals under a loss and a separate tolerance action; it does
-not estimate the same conditional response-quantile object as the first two
-chapters. That conceptual shift is strong enough for an independent research
-unit, provided the theorem/calibration wording is repaired.
+not estimate the same conditional response-quantile object as the exdqlm,
+Environmetrics, or QDESN chapters. That conceptual shift is strong enough for
+an independent research unit, provided the theorem/calibration wording is
+repaired.
 
 ## 7. Reproducibility and provenance diagnosis
 
@@ -452,15 +476,15 @@ hashes; exact server paths remain in the ignored local manifest.
 | Priority | Issue | Required action | Owner / gate |
 | --- | --- | --- | --- |
 | P0 | TCSP exact-guarantee wording exceeds completed proof record | Prove and audit the closed-window result, or narrow every guarantee to the validated numerical calibration actually supplied | Method authors before MTI drafting |
-| P0 | Candidate contribution records absent | Complete a source-specific contribution table with coauthors/advisors; do not infer from author order | Author, coauthors, committee; Gate G2 |
-| P0 | Exact inclusion versions unapproved | Confirm the commits/manuscript files in Section 3 or name replacements | Author; Gate G1 |
+| P0 | Granular candidate contribution allocation is absent | Use the source-documented joint contributions for drafting; confirm candidate versus collaborator roles before final contribution/acknowledgment language | Author, coauthors, committee; Gate G2 |
+| P0 | Working inclusion versions are not final submission freezes | Use the audited commits for source-packet drafting; replace them if a later submitted manuscript is intended | Author; Gate G1 |
 | P0 | Reuse rights unapproved | Record permissions/licenses for text, figures, tables, code, and staged data separately | Author/coauthors/publishers; Gate G2 |
 | P1 | RQR August 13 evidence records are stale | Regenerate the claim/support ledgers from the current completed-validation snapshot or mark them historical | RQR source maintenance |
 | P1 | QDESN historical validation controls are stale | Archive or refresh the 14-row historical joint manifest and retarget or retire the two Phase 181 manuscript-wiring checks; retain corrected-v4 as current authority | QDESN source maintenance |
 | P1 | MTI extensions lack implementation/evidence wiring | Create a snapshot-matched code and test contract; add targeted static/dynamic simulations before claiming empirical performance | MTI source maintenance |
 | P1 | exdqlm 1.1.1 archive provenance incomplete | Locate the submitted tarballs, record SHA-256 and source commit, or publish an approved archival release | exdqlm source maintenance |
 | P1 | Portable provenance gaps | Replace absolute-path fields in dissertation-facing exports with source IDs/relative paths; preserve raw records privately | Per-project import preparation |
-| P1 | Candidate name differs across sources | Confirm the official dissertation and scholarly name plus citation/ORCID mapping before contribution records and bibliography imports | Author; metadata and attribution review |
+| P1 | Candidate name differs across sources | Resolved by author: official long name is Jose Antonio Aguirre Perez de Leon and scholarly name is Antonio de Leon; add ORCID when supplied and preserve immutable source spellings | Metadata and attribution review |
 | P2 | QDESN Search Phase II unfinished | Leave out of current chapter; revisit only after its own promotion gates pass | Future QDESN decision |
 | P2 | Environmetrics dense-hindcast/raw reconstruction absent | State limitation; rerun only if a concrete chapter claim requires it and data/version costs are accepted | Author/advisors |
 
@@ -471,26 +495,32 @@ not authorize changes to those repositories in this thesis audit.
 
 Gate G1 — source selection:
 
-- confirm or replace each five seed audit commits as the dissertation inclusion
-  snapshot;
-- confirm that QDESN Search Phase II remains future work; and
-- confirm that MTI-EXTENSIONS is the intended companion manuscript despite its
-  present implementation gap.
+- the five audited commits are the author-directed working drafting snapshots;
+- QDESN Search Phase II remains future work until promoted and re-audited;
+- MTI-EXTENSIONS is the intended companion manuscript despite its present
+  implementation gap; and
+- a later submitted manuscript may replace a working snapshot before final
+  chapter freeze.
 
 Gate G2 — contribution and rights:
 
-- for each proposed chapter, record the candidate's conceptual, theoretical,
-  computational, empirical, and writing roles;
+- repository author lists and contribution paragraphs now supply the
+  collaborator list and project-level contribution descriptions;
+- confirm the remaining individual allocation of conceptual, theoretical,
+  computational, empirical, and writing roles before final contribution prose;
 - identify reused material authored principally by collaborators;
-- obtain the required coauthor/committee/publisher permissions; and
+- obtain the required coauthor/committee/publisher permissions for direct
+  reuse; and
 - approve which public assets, if any, may be copied into the thesis.
 
 Gate G3 — architecture:
 
-- approve the three-unit recommendation in `chapter-plan.md`, or select the
-  documented software-chapter alternative;
-- decide whether the MTI proof-language repair is a precondition to drafting or
-  an explicitly scoped dissertation limitation; and
+- the author has selected the four-project working architecture in
+  `chapter-plan.md`: exdqlm, Environmetrics, QDESN, and combined MTI;
+- committee/advisor confirmation is still needed for counting the
+  software-centered exdqlm chapter as a journal-suitable research unit;
+- use conservative TCSP language unless the missing action-matched proof is
+  completed and audited; and
 - select the first chapter/section for a separate drafting authorization.
 
 Gate G4 — drafting is deliberately still closed. Once G1-G3 decisions are
@@ -507,7 +537,8 @@ antecedent relationships, package-version graph, principal contradictions,
 reproducibility levels, and a concrete chapter architecture. It is ready for
 scientific decision and source repair.
 
-It has intentionally not resolved matters that require author or committee
-judgment: the exact inclusion versions, contribution allocation, permissions,
-whether software work counts independently, and final chapter approval. Those
-open gates are not audit failures and must not be filled by inference.
+It has intentionally not resolved matters that require author, coauthor, or
+committee judgment: any replacement for the working inclusion versions,
+granular individual contribution allocation, direct-reuse permissions, whether
+software work counts independently, and final chapter approval. Those open
+gates are not audit failures and must not be filled by inference.

@@ -7,11 +7,15 @@ executed on 2026-09-15. Read `docs/research-audit.md`,
 `source-manifest.json` before further work.
 Do not repeat the whole audit unless an approved source snapshot changes.
 
-Gates G1–G3 remain open: the author must confirm inclusion versions,
-contribution/rights records, and the architecture. Gate G4 remains closed until
-the author separately authorizes one drafting unit. The checklist below remains
-the controlling substantive-fidelity protocol for a targeted re-audit or the
-later import/drafting workflow.
+The author has selected the audited commits as working drafting snapshots,
+supplied the official/scholarly name mapping, and directed a four-project
+architecture: exdqlm, Environmetrics, QDESN, and combined MTI. Repository
+evidence supplies collaborators and project-level contributions. Granular
+candidate/coauthor roles, direct-reuse rights, the committee's exdqlm counting
+decision, and any final snapshot replacements remain open. Gate G4 remains
+closed until the author separately authorizes one drafting unit. The checklist
+below remains the controlling substantive-fidelity protocol for a targeted
+re-audit or the later import/drafting workflow.
 
 You are working in my UCSC Statistical Science PhD dissertation repository.
 I entered in Fall 2021 and plan around Fall 2026, but my defense, conferral and

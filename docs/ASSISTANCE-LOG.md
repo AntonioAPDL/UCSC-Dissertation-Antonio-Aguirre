@@ -50,3 +50,14 @@ MTI implementation gaps, exdqlm version/archive gaps, and unresolved
 contribution/rights decisions. No original research checkout was changed, no
 research content was imported or drafted, and nothing was pushed, merged,
 published, or synchronized with Overleaf.
+
+2026-09-15: At the author's direction, AI assistance re-read the fixed-snapshot
+manuscript author lists, acknowledgments, contribution paragraphs, section
+structures, supplements, and package metadata. It recorded the author's
+official and scholarly names, mapped the package/manuscript identity variants,
+revised the plan to four project chapters, and created section-level
+source-first adaptation and attribution controls. It updated only dissertation
+planning, metadata, and empty chapter placeholders. It did not assign
+undocumented individual coauthor roles, import research assets, draft
+substantive scientific prose, alter a research repository, or publish/sync the
+dissertation.

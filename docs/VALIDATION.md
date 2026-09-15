@@ -66,3 +66,26 @@ acknowledgments and contributions have not been written.
 
 Machine-readable results and retained final logs are in `docs/validation/`.
 Preview SHA-256: `27497309dd35d101331403125a97ae3bab144ab2706f2f7df4c636d5bb0b779e`.
+
+## Muscat four-project scaffold revalidation
+
+Performed 2026-09-15 after the author supplied the identity mapping and
+four-project architecture:
+
+- `bash scripts/build.sh` completed successfully under pdfTeX
+  3.14159265-2.6-1.40.19 (TeX Live 2018).
+- Output is 22 US Letter pages, 98,529 bytes, SHA-256
+  `d8cac07847f10e1cd9ac0800a8f155e7127a3de4d9ec3cec25c572723b62062a`.
+- The final log has no undefined citations/references, duplicate-label report,
+  overfull/underfull boxes, or font warnings. The known legacy-class caption
+  warning remains.
+- All seven PDF fonts are embedded Type 1 fonts; text extraction finds the
+  official long name and all six chapter titles.
+- The title page, both table-of-contents pages, and both MTI-placeholder pages
+  were rendered and visually inspected. The official long name fits the title
+  page, the four research chapters and synthesis appear in the intended order,
+  and no clipping or collision was observed.
+
+This revalidation covers metadata and empty chapter scaffolding only. It does
+not validate substantive chapter prose, imported source assets, or the final
+university record spelling.
