@@ -1,0 +1,60 @@
+\chapter{Formatting demonstration}
+\label{app:demonstration}
+\DemoNotice
+This appendix tests mathematics, floats and references. Remove it before
+submission. See UCSC preparation guidance \citeyearpar{ucscguide2021} and
+Library submission guidance \citeyearpar{ucsclibrary2026}.
+\section{Equation and proof}
+For arbitrary real numbers $x_1,\ldots,x_n$ and $n\geq1$, define
+\begin{equation}
+ \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i,
+ \qquad S(a)=\sum_{i=1}^{n}(x_i-a)^2.
+ \label{eq:demo-squares}
+\end{equation}
+\begin{samepage}
+\begin{theorem}[Elementary demonstration]
+The function $S$ in Equation~\eqref{eq:demo-squares} has the unique minimizer
+$a=\bar{x}$.
+\end{theorem}
+\begin{proof}
+Expand $x_i-a=(x_i-\bar{x})+(\bar{x}-a)$ and use
+$\sum_i(x_i-\bar{x})=0$ to obtain
+$S(a)=S(\bar{x})+n(a-\bar{x})^2$. Since $n>0$, equality with
+$S(\bar{x})$ holds exactly when $a=\bar{x}$.
+\end{proof}
+\end{samepage}
+\clearpage
+\section{Algorithm, figure and table}
+\begin{algorithm}[Elementary summation demonstration]
+Input $x_1,\ldots,x_n$ with $n\geq1$. Set $s=0$. For $i=1,\ldots,n$,
+replace $s$ by $s+x_i$. Return $s/n$. This is a typesetting example.
+\end{algorithm}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.7in,y=0.35in]
+\draw[->] (-2.2,0)--(2.3,0) node[right] {$a$};
+\draw[->] (0,-0.15)--(0,4.5) node[above] {$a^2$};
+\draw[thick,domain=-2:2,samples=45] plot (\x,{\x*\x});
+\node[below left] at (0,0) {$0$};
+\end{tikzpicture}
+\caption[Demonstration quadratic]{An exact quadratic used only to test figure
+placement and caption formatting. It is not a research output.}
+\label{fig:demo}
+\end{figure}
+\begin{table}[htbp]
+\centering
+\caption[Demonstration values]{Exact illustrative values for Figure~\ref{fig:demo}.
+These values are not experimental results.}
+\label{tab:demo}
+\begin{singlespace}
+\begin{tabular}{rr}\toprule
+$a$ & $a^2$ \\\midrule
+$-1$ & $1$ \\
+$0$ & $0$ \\
+$1$ & $1$ \\\bottomrule
+\end{tabular}
+\end{singlespace}
+\end{table}
+The table, caption, page number and footnote use the document's primary
+text size.\footnote{Demonstration footnote: single spacing is a permitted
+exception; the footnote text is 12 pt.}

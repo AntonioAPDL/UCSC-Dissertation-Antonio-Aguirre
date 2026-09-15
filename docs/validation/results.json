@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-15",
+  "clean_compile_exit": 0,
+  "pages": 20,
+  "pdf_sha256": "27497309dd35d101331403125a97ae3bab144ab2706f2f7df4c636d5bb0b779e",
+  "page_size_pdf_points": [
+    612,
+    792
+  ],
+  "rotation": 0,
+  "title_blank_counted_pages": 2,
+  "roman_toc_first": "iii",
+  "main_starts_at_pdf_page": 9,
+  "last_arabic_page": 12,
+  "footer_center_pdf_points": 306.0,
+  "minimum_footer_lower_clearance_inches": 0.9098943074544271,
+  "median_body_baseline_pdf_points": 23.907989501953125,
+  "baseline_samples": 29,
+  "text_bound_violations": [],
+  "font_count": 7,
+  "all_fonts_embedded_type1": true,
+  "outline_entries": 28,
+  "annotations_links": 40,
+  "log_errors_or_overflow": [],
+  "documented_warning": "caption: unknown document class; explicit standard defaults used; captions inspected",
+  "clean_render_identical_to_inspected_pdf": true,
+  "visual_inspection": "All pages rendered; contact sheets plus individual title, contents/body/demo/reference and report table/source pages inspected",
+  "not_tested": [
+    "Overleaf compilation/account sync",
+    "user VS Code/Codex directory permissions",
+    "landscape pages",
+    "facing-caption full-page figures",
+    "tagged PDF/PDF-A conformity",
+    "real metadata and substantive research imports",
+    "institutional submission acceptance"
+  ]
+}

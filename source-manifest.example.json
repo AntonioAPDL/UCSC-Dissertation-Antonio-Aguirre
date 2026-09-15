@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "status": "EXAMPLE: source paths and approved versions are unresolved",
+  "research_access": "Only sources explicitly authorized by the author; original repositories unchanged",
+  "repositories": [
+    {
+      "id": "qdesn",
+      "url": "https://github.com/AntonioAPDL/Article-Q-DESN---Version-2",
+      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
+      "inspection_authorized": false,
+      "discovery": {
+        "access_date": "2026-09-15",
+        "scope": "unauthenticated repository metadata only",
+        "result": "public",
+        "default_branch": "main",
+        "observed_head": "757522db0f85815244370ec92a194de132268883"
+      },
+      "approved_branch": null,
+      "approved_commit": null,
+      "manuscript_root": null,
+      "working_tree_status": "NOT_INSPECTED",
+      "dirty_content_snapshot": null,
+      "chapter_allocation": "PROVISIONAL",
+      "imports": []
+    },
+    {
+      "id": "exdqlm",
+      "url": "https://github.com/AntonioAPDL/exdqlm---Article",
+      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
+      "inspection_authorized": false,
+      "discovery": {
+        "access_date": "2026-09-15",
+        "scope": "unauthenticated repository metadata only",
+        "result": "public",
+        "default_branch": "main",
+        "observed_head": "d5534e97db8414fd875022261d4c530eae4676e4"
+      },
+      "approved_branch": null,
+      "approved_commit": null,
+      "manuscript_root": null,
+      "working_tree_status": "NOT_INSPECTED",
+      "dirty_content_snapshot": null,
+      "chapter_allocation": "PROVISIONAL",
+      "imports": []
+    },
+    {
+      "id": "rqr",
+      "url": "https://github.com/AntonioAPDL/RQR-GIBBS",
+      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
+      "inspection_authorized": false,
+      "discovery": {
+        "access_date": "2026-09-15",
+        "scope": "unauthenticated repository metadata only",
+        "result": "public",
+        "default_branch": "main",
+        "observed_head": "73887b9c86ef767aa1567c660718667945630aef"
+      },
+      "approved_branch": null,
+      "approved_commit": null,
+      "manuscript_root": null,
+      "working_tree_status": "NOT_INSPECTED",
+      "dirty_content_snapshot": null,
+      "chapter_allocation": "PROVISIONAL",
+      "imports": []
+    },
+    {
+      "id": "itpu",
+      "url": "https://github.com/AntonioAPDL/itpu-interval-regression",
+      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
+      "inspection_authorized": false,
+      "discovery": {
+        "access_date": "2026-09-15",
+        "scope": "unauthenticated repository metadata only",
+        "result": "API 404: private, renamed or unavailable not distinguished",
+        "default_branch": null,
+        "observed_head": null
+      },
+      "approved_branch": null,
+      "approved_commit": null,
+      "manuscript_root": null,
+      "working_tree_status": "NOT_INSPECTED",
+      "dirty_content_snapshot": null,
+      "chapter_allocation": "PROVISIONAL",
+      "imports": []
+    }
+  ],
+  "import_record_example": {
+    "status": "EXAMPLE ONLY: no material imported",
+    "source_id": "REPLACE_WITH_ID",
+    "source_url": "REPLACE_WITH_URL",
+    "source_commit": "REPLACE_WITH_FULL_COMMIT_SHA",
+    "source_path": "REPLACE_WITH_PATH",
+    "source_locator": "REPLACE_WITH_SECTION_OR_FIGURE",
+    "source_sha256": null,
+    "dirty_source": false,
+    "dirty_snapshot_id": null,
+    "destination": "REPLACE_WITH_PROJECT_RELATIVE_PATH",
+    "adaptation_notes": "REPLACE_WITH_CHANGES_AND_NOTATION_MAP",
+    "candidate_contribution": "UNVERIFIED",
+    "coauthors_and_attribution": "UNVERIFIED",
+    "rights_or_permission": "UNVERIFIED",
+    "verification_status": "NOT_CHECKED"
+  }
+}

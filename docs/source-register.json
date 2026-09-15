@@ -1,0 +1,252 @@
+[
+  {
+    "id": "G1",
+    "title": "Dissertation and Thesis Preparation Guidelines",
+    "issuer": "UCSC Division of Graduate Studies",
+    "revision_or_effective_date": "July 2021 revision printed in PDF; Library currently links this copy",
+    "url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
+    "locator": "All 11 PDF pages, including title-page sample on p. 10",
+    "access_result": "Full PDF downloaded and read; current linked copy, not proof that no newer rule exists",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "P1",
+    "title": "Statistical Science Ph.D., current General Catalog",
+    "issuer": "UCSC Statistics / General Catalog",
+    "revision_or_effective_date": "2026-2027 catalog at access",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/",
+    "locator": "Dissertation; Dissertation Reading Committee; Applying for Graduation",
+    "access_result": "Full program text read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "P2",
+    "title": "Statistical Science Ph.D., 2021-2022 General Catalog",
+    "issuer": "UCSC Statistics / General Catalog",
+    "revision_or_effective_date": "2021-2022",
+    "url": "https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/",
+    "locator": "Dissertation; Dissertation Reading Committee",
+    "access_result": "Full program text read; cohort applicability unresolved",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "L1",
+    "title": "Electronic Theses and Dissertations: Submitting at UCSC",
+    "issuer": "UCSC University Library",
+    "revision_or_effective_date": "No revision date established",
+    "url": "https://guides.library.ucsc.edu/etds/submitting-at-UCSC",
+    "locator": "Formatting; submission; fees; copyright; embargoes",
+    "access_result": "Full page read; also reached through /etds",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "L2",
+    "title": "Electronic Theses and Dissertations: Supplementary Files",
+    "issuer": "UCSC University Library",
+    "revision_or_effective_date": "No revision date established",
+    "url": "https://guides.library.ucsc.edu/etds/supplementaryfiles",
+    "locator": "File descriptions and recommended archival formats",
+    "access_result": "Full page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "E1",
+    "title": "Flexible Dynamic Quantile Linear Models, Raquel A. Barata",
+    "issuer": "UCSC / eScholarship",
+    "revision_or_effective_date": "December 2021",
+    "url": "https://escholarship.org/uc/item/0bq4107v",
+    "locator": "Title; contents iii-v; acknowledgments xxi-xxii; chapter openings, especially ch. 4 p. 57",
+    "access_result": "Deposited PDF text inspected; Statistics and Applied Mathematics",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "E2",
+    "title": "Bayesian Nonparametric Modeling for Spatial Nonhomogeneous and Clustered Point Pattern Data, Chunyi Zhao",
+    "issuer": "UCSC / eScholarship",
+    "revision_or_effective_date": "September 2022",
+    "url": "https://escholarship.org/uc/item/5800b879",
+    "locator": "Title; contents iii-iv; introduction pp. 6-10; ch. 2 opening p. 11; ch. 4 pp. 104 and 120",
+    "access_result": "Deposited PDF text inspected; Statistical Science",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "E3",
+    "title": "Exploring Multivariate Extreme Value Theory with Applications to Anomaly Detection, Peter Trubey",
+    "issuer": "UCSC / eScholarship",
+    "revision_or_effective_date": "March 2025",
+    "url": "https://escholarship.org/uc/item/6c80077v",
+    "locator": "Title; contents iii-iv; introduction and chapter 4 opening",
+    "access_result": "Deposited PDF text inspected; Statistical Science; repository cover sheet excluded from thesis numbering",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "T1",
+    "title": "ucscthesis",
+    "issuer": "Adam Novak and upstream contributors",
+    "revision_or_effective_date": "Snapshot 38a711c243bd78f1ace969f4dacb15e9c52c39de; 2020-12-05; class 2017-03-29",
+    "url": "https://github.com/adamnovak/ucscthesis/tree/38a711c243bd78f1ace969f4dacb15e9c52c39de",
+    "locator": "Class, size files, example and license",
+    "access_result": "Source downloaded and audited; local build of adapted starter tested separately",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "T2",
+    "title": "thesisucsc",
+    "issuer": "GauSyu and upstream contributors",
+    "revision_or_effective_date": "Snapshot 4a946f0693e38286129dc39842a458fb09fddcca; 2023-07-09",
+    "url": "https://github.com/GauSyu/thesisucsc/tree/4a946f0693e38286129dc39842a458fb09fddcca",
+    "locator": "README; layout, font, title, metadata, bibliography settings; license",
+    "access_result": "Source downloaded and audited; original project not compiled",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "O1",
+    "title": "University of California, Santa Cruz on Overleaf",
+    "issuer": "Overleaf institutional portal",
+    "revision_or_effective_date": "Live page; no expiry established",
+    "url": "https://www.overleaf.com/edu/ucsantacruz",
+    "locator": "Institutional access and account linking",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "O2",
+    "title": "GitHub synchronization",
+    "issuer": "Overleaf Documentation",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/github-synchronization",
+    "locator": "Linking; import/export; branch behavior; limitations; conflicts",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "O3",
+    "title": "Git integration",
+    "issuer": "Overleaf Documentation",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/git-integration",
+    "locator": "Premium prerequisite; direct Git access",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "O4",
+    "title": "Plan limits",
+    "issuer": "Overleaf Documentation",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://docs.overleaf.com/getting-started/free-and-premium-plans/plan-limits",
+    "locator": "File counts, text limits, upload and compile limits",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "C1",
+    "title": "Codex IDE extension",
+    "issuer": "OpenAI",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://learn.chatgpt.com/docs/codex/ide",
+    "locator": "Local IDE workflow",
+    "access_result": "Official developers.openai.com/codex/ide/ redirected here",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "C2",
+    "title": "AGENTS.md",
+    "issuer": "OpenAI",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+    "locator": "Discovery, scope and precedence of project instructions",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "C3",
+    "title": "Sandbox",
+    "issuer": "OpenAI",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://learn.chatgpt.com/docs/sandboxing",
+    "locator": "Sandbox modes; IDE permissions; writable roots",
+    "access_result": "Official /codex/sandboxing redirected here",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "C4",
+    "title": "Agent approvals and security",
+    "issuer": "OpenAI",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+    "locator": "OS sandbox; read-only; workspace boundaries",
+    "access_result": "Official /codex/agent-approvals-security redirected here",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "C5",
+    "title": "Config Basics",
+    "issuer": "OpenAI",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://learn.chatgpt.com/docs/config-file/config-basic",
+    "locator": "User and project configuration; IDE settings access",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "V1",
+    "title": "Multi-root Workspaces",
+    "issuer": "Microsoft Visual Studio Code",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces",
+    "locator": "Adding folders and workspace files",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "H1",
+    "title": "Cloning a repository",
+    "issuer": "GitHub Docs",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository",
+    "locator": "Clone instructions",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "H2",
+    "title": "Resolving a merge conflict using the command line",
+    "issuer": "GitHub Docs",
+    "revision_or_effective_date": "Live documentation; revision not established",
+    "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line",
+    "locator": "Review, resolve and commit conflicts",
+    "access_result": "Page read",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "U1",
+    "title": "Graduate Division website",
+    "issuer": "UCSC Graduate Division",
+    "revision_or_effective_date": "Current content not retrieved",
+    "url": "https://graduate.ucsc.edu/",
+    "locator": "Current forms, signatures, dean and deadlines",
+    "access_result": "Access attempts failed; no current procedural claims inferred",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "U2",
+    "title": "Planning to Graduate",
+    "issuer": "Baskin Engineering Graduate Advising",
+    "revision_or_effective_date": "Current content not retrieved",
+    "url": "https://grad.engineering.ucsc.edu/advising/planning-to-graduate/",
+    "locator": "Local completion and announcement instructions",
+    "access_result": "Access attempts failed",
+    "access_date": "2026-09-15"
+  },
+  {
+    "id": "U3",
+    "title": "Academic Calendar",
+    "issuer": "UCSC Registrar",
+    "revision_or_effective_date": "Current content not retrieved",
+    "url": "https://registrar.ucsc.edu/calendars-resources/academic-calendar/",
+    "locator": "Fall 2026 graduation and filing dates",
+    "access_result": "Catalog-linked page could not be retrieved; dates unverified",
+    "access_date": "2026-09-15"
+  }
+]

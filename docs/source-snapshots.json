@@ -1,0 +1,33 @@
+{
+  "access_date": "2026-09-15",
+  "formatting_guide": {
+    "source_id": "G1",
+    "sha256": "18f1224cd7423a3b42d68069f4f31d88787578d014803c3d78fc36b7335cb82d",
+    "bytes": 371795,
+    "printed_revision": "July 2021",
+    "identical_to_template_repo_copy": true
+  },
+  "selected_template_commit": "38a711c243bd78f1ace969f4dacb15e9c52c39de",
+  "vendored_files": [
+    {
+      "path": "ucscthesis.cls",
+      "sha256": "d76ece84310979ccfce14b3a14624f7a2e3457d9799848fc7c3bb7765a294213",
+      "matches_upstream": true
+    },
+    {
+      "path": "uct10.clo",
+      "sha256": "895cde856bab4ddcfe877eeeed2b3ad98503225b98564a50dd97c1d2a484f34b",
+      "matches_upstream": true
+    },
+    {
+      "path": "uct11.clo",
+      "sha256": "80d838a038f8f2f9304580214a2a4a35ed351430e6b3851eea5ecc2ba32a65ba",
+      "matches_upstream": true
+    },
+    {
+      "path": "uct12.clo",
+      "sha256": "bfc74e1fa9d63186cf85b82486c69fc39ce0eabbc3b16eb7dba5c9456816755e",
+      "matches_upstream": true
+    }
+  ]
+}

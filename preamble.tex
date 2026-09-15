@@ -1,0 +1,63 @@
+% University guide G1, pp. 2-8; mapping in docs/compliance-matrix.md.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% Broadly available Times-compatible Type 1 text/math; all actual fonts checked.
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb,amsthm}
+% Small vertical clearance keeps visible glyph bounds inside the 1.25 in minimum.
+\usepackage[letterpaper,left=1.5in,right=1.25in,top=1.30in,bottom=1.35in,
+  headheight=0pt,headsep=0pt,footskip=0.4in]{geometry}
+% Legacy class does not initialize setspace's current-size hook.
+\makeatletter
+\let\@currsize\normalsize
+\makeatother
+\usepackage{setspace}
+% The legacy class uses 1.37; override it instead of relying on its name.
+% At 12 pt, setspace double spacing gives approximately 24 pt baseline distance.
+\renewcommand{\dsp}{\doublespacing}
+\renewcommand{\ssp}{\singlespacing}
+\AtBeginDocument{\doublespacing}
+\setlength{\parindent}{0.3in}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Asymmetric margins shift the text centre right by 0.125 in.
+% Extend footer 0.25 in left to centre the number on the physical sheet.
+\fancyfootoffset[L]{0.25in}
+\fancyfoot[C]{\normalsize\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\normalsize\thepage}
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\usepackage{graphicx,booktabs}
+\usepackage{tikz}
+\usepackage[font=normalsize,labelfont=bf]{caption}
+\captionsetup{singlelinecheck=false,justification=justified}
+% natbib renews a command the legacy class defines only inside its own list.
+\providecommand{\newblock}{}
+\usepackage[authoryear,round]{natbib}
+\setlength{\bibsep}{12pt} % Single within, blank line between entries.
+\renewcommand{\bibfont}{\singlespacing\normalsize}
+\renewcommand{\bibsection}{\chapter*{Bibliography}
+  \addcontentsline{toc}{chapter}{Bibliography}}
+\usepackage{url}
+\urlstyle{same}
+\usepackage[hidelinks,bookmarksnumbered,pdfpagelabels]{hyperref}
+\hypersetup{pdftitle={UCSC dissertation formatting starter},
+ pdfauthor={Author metadata unresolved},pdfsubject={Demonstration; not for submission}}
+\newtheorem{theorem}{Theorem}[chapter]
+\theoremstyle{definition}
+\newtheorem{algorithm}{Algorithm}[chapter] % Prose algorithm, no floating package.
+\newcommand{\TODO}[1]{\par\noindent\textbf{TODO:} #1\par}
+\newcommand{\DemoNotice}{\par\noindent\textbf{Formatting demonstration only.}
+ This material is not the candidate's research.\par}
+% Preserve 12 pt footnote text. Superscript marks and mathematical scripts
+% naturally use reduced sizes; no primary text is deliberately reduced.
+\makeatletter
+\renewcommand\footnotesize{\@setfontsize\footnotesize{12}{14.5}}
+\makeatother
+\AtBeginDocument{\typeout{UCSC-CHECK textwidth=\the\textwidth;
+ textheight=\the\textheight; baseline=\the\baselineskip;
+ oddsidemargin=\the\oddsidemargin; footskip=\the\footskip}}

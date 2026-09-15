@@ -1,0 +1,38 @@
+% Adapted layout from ucscthesis.cls; original class remains unchanged.
+% G1 sample p. 10. Integrated unsigned approval block; no extra numbered page.
+\thispagestyle{empty}
+\begin{singlespace}
+\begin{center}
+UNIVERSITY OF CALIFORNIA\par\smallskip
+SANTA CRUZ\par\bigskip
+\textbf{\MakeUppercase{\ThesisTitle}}\par\bigskip
+A dissertation submitted in partial satisfaction of the\par
+requirements for the degree of\par\bigskip
+\DegreeName\par\bigskip
+in\par\bigskip
+\DegreeField\par\bigskip
+by\par\bigskip
+\textbf{\AuthorName}\par\bigskip
+\DegreeMonth\ \DegreeYear\par
+\ifStarterDraft\bigskip\textbf{FORMATTING STARTER}\par
+Not for submission; all approvals unresolved.\par\fi
+\end{center}
+\vfill
+\noindent\hfill\begin{minipage}{3.0in}
+\ifStarterDraft
+Committee block: unconfirmed placeholders
+\else
+The Dissertation of \AuthorName\ is approved:
+\fi
+\par\medskip
+\rule{\linewidth}{0.4pt}\par\CommitteeOne\par\medskip
+\rule{\linewidth}{0.4pt}\par\CommitteeTwo\par\medskip
+\rule{\linewidth}{0.4pt}\par\CommitteeThree\par\medskip
+\rule{\linewidth}{0.4pt}\par\CommitteeFour\par
+\end{minipage}
+\par\bigskip
+\noindent\begin{minipage}{3.0in}
+\rule{\linewidth}{0.4pt}\par\DeanName\par\DeanTitle
+\end{minipage}
+\end{singlespace}
+\clearpage

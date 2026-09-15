@@ -1,0 +1,25 @@
+{
+  "example_only": true,
+  "records": [
+    {
+      "id": "REPLACE_WITH_CLAIM_ID",
+      "type": "claim | equation | figure | table",
+      "destination": "REPLACE_WITH_CHAPTER_AND_LABEL",
+      "statement": "REPLACE_WITH_PRECISE_MATERIAL_CLAIM",
+      "source_repo": "REPLACE_WITH_SOURCE_ID",
+      "commit": null,
+      "source_path": null,
+      "locator": null,
+      "supporting_code_or_output": [],
+      "model_variant": null,
+      "data_split_horizon": null,
+      "prior_hyperparameters": null,
+      "replications_uncertainty_score": null,
+      "candidate_contribution": null,
+      "status": "UNVERIFIED",
+      "contradictions": [],
+      "checks_performed": [],
+      "author_decision": null
+    }
+  ]
+}
