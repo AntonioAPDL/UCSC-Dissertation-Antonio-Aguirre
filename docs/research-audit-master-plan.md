@@ -1,7 +1,7 @@
 # Research-audit master plan and readiness diagnosis
 
-Status: **ACTIVE — execution authorized; drafting and publication remain unauthorized**  
-Prepared: 2026-09-15  
+Status: **EXECUTED — audit complete; author decisions and drafting remain pending**
+Prepared: 2026-09-15
 Scope: the five author-nominated PhD research repositories and only those
 additional sources needed to resolve their provenance, claims, or relationships.
 
@@ -11,6 +11,9 @@ that file as the historical baseline. This approval authorizes the audit
 activities listed here; it does not by itself authorize dissertation drafting,
 publication, pushing, merging, Overleaf synchronization, or alteration of a
 research repository.
+
+Sections 1–20 preserve the pre-execution diagnosis and protocol; Sections
+21–23 record what was completed and which decision gates remain open.
 
 ## 1. Executive determination
 
@@ -433,7 +436,7 @@ level. The audit uses these levels consistently:
 | `E0` | Mentioned or asserted; supporting source not yet located | “asserted,” “unverified” |
 | `E1` | Exact manuscript/code/proof locator found at a fixed snapshot | “located,” “documented” |
 | `E2` | Cross-file consistency, manifest/hash, inputs, and generation contract checked | “provenance verified” or “internally consistent,” with scope |
-| `E3` | A bounded artifact or test was regenerated in an isolated environment and compared | “regenerated” or “targeted test passed,” never blanket “reproduced” |
+| `E3` | A bounded build, artifact-regeneration, or test contract was executed in an isolated environment and checked | “regenerated” only for regenerated artifacts, or “targeted test passed”; never blanket “reproduced” |
 | `E4` | Full claimed workflow independently rerun from declared inputs with acceptance criteria met | “reproduced,” with environment and limitations |
 
 Failure at a level is evidence, not a reason to inflate or erase the claim. A
@@ -495,56 +498,56 @@ that depend on them and must be reported with owner and next decision.
 
 ### Phase 0 — authorize and checkpoint
 
-**Entry:** author approves this plan or records requested changes.  
+**Entry:** author approves this plan or records requested changes.
 **Actions:** start a fresh thesis-scoped chat; verify environment; review the
 entire existing thesis diff; resolve Git identity; create focused local
-planning/setup commits; record free space and audit-root policy.  
+planning/setup commits; record free space and audit-root policy.
 **Outputs:** clean or explicitly understood thesis state, approved plan status,
-and `RUN-` record for audit initiation.  
-**Exit:** no unexplained thesis changes; no source repository touched.  
+and `RUN-` record for audit initiation.
+**Exit:** no unexplained thesis changes; no source repository touched.
 **Stop:** unexpected thesis origin, branch, or overlapping user edits.
 
 ### Phase 1 — approve schema and freeze discovery
 
-**Entry:** Phase 0 complete.  
+**Entry:** Phase 0 complete.
 **Actions:** define the sanitized research manifest and claim-evidence schemas;
 normalize the ignored local manifest; re-run remote-head checks; create source
 guards; estimate clone/storage requirements; create only the required audit
 clones. For Q-DESN, use ordinary command-line Git as its instructions require.
-  
+
 **Outputs:** `source-manifest.json`, normalized local manifest, raw evidence
-under a run directory, and immutable audit snapshots.  
+under a run directory, and immutable audit snapshots.
 **Exit:** every seed source has a unique ID, fixed audit commit, access mode,
-authority status, and verified main entry point.  
+authority status, and verified main entry point.
 **Stop:** authentication failure, insufficient storage, source changed during
 snapshotting, or unclear origin identity.
 
 ### Phase 2 — prepare version dossiers
 
-**Entry:** fixed audit snapshots.  
+**Entry:** fixed audit snapshots.
 **Actions:** inventory all heads/worktrees at metadata level; compare likely
 manuscript variants by ancestry, changed files, titles, abstracts, response
 letters, manifest dates, and declared submission/revision status. Deep-read
 only variants that are cited, authority-marked, uniquely unmerged, or needed to
-resolve a contradiction.  
+resolve a contradiction.
 **Outputs:** one version dossier per project with a recommended audit target,
-alternative candidates, differences, and uncertainty.  
-**Exit:** discovery and audit snapshots are distinct and documented.  
+alternative candidates, differences, and uncertainty.
+**Exit:** discovery and audit snapshots are distinct and documented.
 **Decision:** the author selects or confirms the intended inclusion snapshot;
 uncertain sources remain auditable but cannot be imported.
 
 ### Phase 3 — establish the exDQLM/exAL and software baseline
 
-**Entry:** version dossiers available.  
+**Entry:** version dossiers available.
 **Actions:** read Barata et al. (2021) and directly necessary antecedents; map
 original targets, likelihood/update, algorithms, guarantees, applications, and
 software. Map exdqlm package versions used by each project, including tags,
 tarballs, commits, dependency lock information, and archive hashes when
-available. Audit the exdqlm article against this baseline.  
+available. Audit the exdqlm article against this baseline.
 **Outputs:** antecedent matrix, package-version graph, article/package
-contribution dossier, and initial claim records.  
+contribution dossier, and initial claim records.
 **Exit:** later projects can state precisely what they inherit, modify, or add.
-  
+
 **Stop:** inaccessible central antecedent or package state; record a targeted
 gap rather than guessing.
 
@@ -638,52 +641,52 @@ analysis.
 
 ### Phase 5 — cross-project reconciliation
 
-**Entry:** all project dossiers complete or explicitly limited.  
+**Entry:** all project dossiers complete or explicitly limited.
 **Actions:** build matrices for shared estimands, notation, likelihood/update,
 algorithms, package versions, datasets, simulations, figures/tables,
 antecedents, and contributions. Resolve or record contradictions. Identify
-duplicate experiments and article variants so they are not counted twice.  
+duplicate experiments and article variants so they are not counted twice.
 **Outputs:** cross-project terminology map, overlap matrix, conflict register,
-shared-background outline, and prioritized evidence gaps.  
+shared-background outline, and prioritized evidence gaps.
 **Exit:** every candidate contribution has a defensible relationship to every
 other candidate and to central antecedents.
 
 ### Phase 6 — contribution and rights decision
 
-**Entry:** evidence-based overlap analysis.  
+**Entry:** evidence-based overlap analysis.
 **Actions:** present source-specific contribution prompts and reuse checklist to
 the author; record coauthor, publisher, committee, and program questions;
-separate public, private, and not-yet-approved materials.  
+separate public, private, and not-yet-approved materials.
 **Outputs:** approved or unresolved contribution statements, rights status, and
-inclusion eligibility by source.  
+inclusion eligibility by source.
 **Exit:** no source is recommended for direct import without an explicit status.
-  
+
 **Stop:** material dispute or absent required permission blocks that source's
 inclusion, not the rest of the audit.
 
 ### Phase 7 — chapter architecture decision
 
 **Entry:** scientific, provenance, overlap, contribution, and rights dossiers
-available.  
+available.
 **Actions:** prepare one primary architecture and at most one consequential
 alternative. Score candidate chapters on distinct contribution, evidentiary
 readiness, coherence, candidate role, rights, and amount of new exposition.
 Centralize shared background and notation; place supporting proofs,
-experiments, and software detail deliberately.  
+experiments, and software detail deliberately.
 **Outputs:** proposed table of contents, source-to-chapter map, contribution
-statement, appendix plan, omissions, and a short decision memo.  
-**Decision:** author approves, revises, or rejects the architecture.  
+statement, appendix plan, omissions, and a short decision memo.
+**Decision:** author approves, revises, or rejects the architecture.
 **Exit:** update `docs/chapter-plan.md` only after that decision.
 
 ### Phase 8 — finalize the audit handoff
 
-**Entry:** architecture decision recorded.  
+**Entry:** architecture decision recorded.
 **Actions:** reconcile structured records with the narrative; run validators;
 review public/private boundaries; update status and assistance log; compile only
-if a build-facing file has changed.  
+if a build-facing file has changed.
 **Outputs:** complete `docs/research-audit.md`, manifests, claim evidence,
 chapter plan, validation report, prioritized drafting gaps, and exact next-unit
-recommendation.  
+recommendation.
 **Exit:** the audit is independently traceable and no drafting has begun.
 
 ## 12. Required cross-project comparisons
@@ -900,24 +903,21 @@ material decisions and claims is.
 
 ## 21. Exact next actions if this plan is approved
 
-These actions are queued, not performed by preparation of this document:
+Execution status for the actions authorized after preparation of this document:
 
-1. Open a fresh Codex chat rooted in the thesis checkout and verify host,
-   working directory, repository, branch, and applicable instructions.
-2. Read this plan, the historical plan, setup audit, status, kickoff, ignored
-   local manifest, and current Git diff.
-3. Record the author's approval and any amendments; mark this plan active and
-   the earlier plan superseded without deleting it.
-4. Resolve Git identity and create reviewed local checkpoints for existing
-   setup work and planning work. Do not push.
-5. Approve and implement the research manifest/claim-evidence schemas and one
-   validator; keep institutional source records separate.
-6. Re-verify remote heads, source guards, free space, and clone estimates.
-7. Create only the required isolated audit clones and freeze audit snapshots.
-8. Produce version dossiers before asking the author to choose final inclusion
-   versions.
-9. Execute Phases 3–8, pausing only at the defined decision gates or stop
-   conditions.
+1. Completed: verified the thesis execution context and applicable instructions.
+2. Completed: reviewed the plan, setup records, local manifest, and Git state.
+3. Completed: recorded approval and preserved the superseded historical plan.
+4. Completed: created a focused local setup/planning checkpoint; no push.
+5. Completed: implemented separate public/private research manifests, a claim
+   ledger, validation-run records, and one audit validator.
+6. Completed: re-verified remote heads, source guards, and storage constraints.
+7. Completed: created eight isolated full Git clones and fixed audit snapshots.
+8. Completed: produced version dossiers and explicit author inclusion gates.
+9. Completed through the audit handoff: Phases 3–5 and 8 produced the evidence
+   audit and chapter recommendation. Phases 6–7 reached their intended author
+   decision gates; G1–G3 remain open because version selection, contribution,
+   rights, and architecture approval cannot be inferred. G4 remains closed.
 
 ## 22. Plan acceptance record
 
@@ -936,3 +936,19 @@ These actions are queued, not performed by preparation of this document:
   remain pending where an exact version, contribution, rights, or architecture
   judgment requires the author or committee. Gate G4 drafting is not
   authorized.
+
+## 23. Execution outcome
+
+The evidence-producing portion of this plan is complete. The authoritative
+outputs are `research-audit.md`, `chapter-plan.md`,
+`research-audit-validation.md`, `research-decisions.md`,
+`claim-evidence.json`, the public research manifest, and the ignored local
+execution record. The audit found fixed source
+snapshots, bounded validation evidence, a defensible three-research-chapter
+architecture, and a prioritized repair register. It imported no research
+material and altered no original source tree.
+
+The definition of done cannot legitimately close G1–G3 without the author's
+scientific and rights decisions. Those items are therefore explicit pending
+decisions, not missing audit work. A separate G4 authorization is still needed
+before any dissertation chapter or section is drafted.

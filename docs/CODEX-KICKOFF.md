@@ -1,8 +1,17 @@
 # Use this prompt in the dissertation-workspace Codex chat
 
-The active research-audit process is defined in
-`docs/research-audit-master-plan.md`; this kickoff remains the substantive
-fidelity checklist and historical handoff prompt.
+The research-audit process defined in `docs/research-audit-master-plan.md` was
+executed on 2026-09-15. Read `docs/research-audit.md`,
+`docs/research-audit-validation.md`, `docs/chapter-plan.md`,
+`docs/research-decisions.md`, `docs/claim-evidence.json`, and
+`source-manifest.json` before further work.
+Do not repeat the whole audit unless an approved source snapshot changes.
+
+Gates G1–G3 remain open: the author must confirm inclusion versions,
+contribution/rights records, and the architecture. Gate G4 remains closed until
+the author separately authorizes one drafting unit. The checklist below remains
+the controlling substantive-fidelity protocol for a targeted re-audit or the
+later import/drafting workflow.
 
 You are working in my UCSC Statistical Science PhD dissertation repository.
 I entered in Fall 2021 and plan around Fall 2026, but my defense, conferral and

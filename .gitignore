@@ -30,6 +30,10 @@
 /audit-inputs/
 /docs/SETUP-LOCAL.md
 
+# Python validator caches.
+__pycache__/
+*.pyc
+
 # Common editor and operating-system artifacts.
 .DS_Store
 *.swp

@@ -1,25 +1,26 @@
 {
+  "schema_version": 2,
   "example_only": true,
+  "evidence_scale": {
+    "E0": "assertion only",
+    "E1": "exact locator at an immutable snapshot",
+    "E2": "cross-file provenance or consistency checked",
+    "E3": "bounded artifact, build, or test contract passed in isolation",
+    "E4": "full declared workflow independently rerun"
+  },
   "records": [
     {
-      "id": "REPLACE_WITH_CLAIM_ID",
-      "type": "claim | equation | figure | table",
-      "destination": "REPLACE_WITH_CHAPTER_AND_LABEL",
-      "statement": "REPLACE_WITH_PRECISE_MATERIAL_CLAIM",
-      "source_repo": "REPLACE_WITH_SOURCE_ID",
-      "commit": null,
-      "source_path": null,
-      "locator": null,
-      "supporting_code_or_output": [],
-      "model_variant": null,
-      "data_split_horizon": null,
-      "prior_hyperparameters": null,
-      "replications_uncertainty_score": null,
-      "candidate_contribution": null,
-      "status": "UNVERIFIED",
-      "contradictions": [],
-      "checks_performed": [],
-      "author_decision": null
+      "id": "CLM-REPLACE-001",
+      "classification": "definition_or_setup",
+      "claim": "REPLACE_WITH_PRECISE_CLAIM",
+      "source_id": "SRC-REPLACE",
+      "commit": "REPLACE_WITH_FULL_40_CHARACTER_COMMIT",
+      "source_path": "REPLACE_WITH_RELATIVE_PATH",
+      "locator": "REPLACE_WITH_SECTION_EQUATION_FIGURE_OR_TABLE",
+      "evidence_level": "E0",
+      "verification_status": "NOT_CHECKED",
+      "qualification": "REPLACE_WITH_ASSUMPTIONS_AND_LIMITS",
+      "dissertation_disposition": "PENDING_AUTHOR_DECISION"
     }
   ]
 }

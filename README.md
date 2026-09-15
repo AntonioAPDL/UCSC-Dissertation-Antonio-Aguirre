@@ -49,12 +49,23 @@ test.
 
 ## Files to edit first
 
+- `docs/research-audit.md`: completed fixed-snapshot research audit, source
+  conflicts, evidence limits, and decisions required before drafting.
+- `docs/chapter-plan.md`: evidence-backed three-unit recommendation and the
+  criteria for the two consequential alternatives.
+- `docs/research-decisions.md`: fill the still-open version, contribution,
+  rights, architecture, and drafting gates; never replace pending values by
+  inference.
+- `source-manifest.json` and `docs/claim-evidence.json`: public immutable source,
+  validation-run, and claim provenance. Check with
+  `python3 scripts/validate_research_audit.py`.
 - `metadata.tex`: official author name, final title, conferral month/year,
   approved committee size/names/roles and current dean wording.
 - `docs/STATUS.md`: decisions, gaps and next work.
-- `source-manifest.local.json`: create from the example; supply authorized
-  absolute source paths locally. Do not publish local paths by accident.
-- `docs/CODEX-KICKOFF.md`: use in the later muscat thesis-workspace chat.
+- `source-manifest.local.json`: ignored exact paths, original-tree guards, and
+  audit-clone records. Do not publish it.
+- `docs/CODEX-KICKOFF.md`: use for the gated source-decision and drafting
+  workflow.
 
 `chapters/` contains five structured placeholders, including three research
 slots. The blank second leaf is intentional. The abstract and acknowledgments

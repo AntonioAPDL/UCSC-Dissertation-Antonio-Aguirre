@@ -35,3 +35,18 @@ packages, validation, stop conditions and author decision gates. It updated
 project status only. It did not execute the research audit, clone or fetch a
 source, run a research build or simulation, modify research content, select a
 chapter, or authorize reuse.
+
+2026-09-15: After author approval, AI assistance executed the research audit in
+eight isolated full Git clones at fixed commits. It reviewed the manuscripts,
+supplements, authority/provenance records, selected implementation paths,
+branch metadata, antecedent relationships, statistical targets, uncertainty
+claims, limitations, and contribution/rights gaps. It ran only bounded builds,
+hash checks, provenance validators, and focused tests; it did not rerun full
+simulations, selected-model fits, or the exdqlm replication batch. It produced
+the public source manifest, claim-evidence ledger, audit, validation report,
+and evidence-backed chapter plan, plus ignored local execution records. It
+identified stale QDESN and RQR validation controls, a TCSP proof/wording gap,
+MTI implementation gaps, exdqlm version/archive gaps, and unresolved
+contribution/rights decisions. No original research checkout was changed, no
+research content was imported or drafted, and nothing was pushed, merged,
+published, or synchronized with Overleaf.

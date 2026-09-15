@@ -1,50 +1,87 @@
 # Project status
 
-As of 2026-09-15: muscat thesis workspace established and the research-audit
-master plan approved for execution. Gate G0 is complete. The scientific audit
-is starting; dissertation drafting, source import, publication, push, merge and
-Overleaf synchronization remain unauthorized.
+As of 2026-09-15: the muscat research-source audit and evidence-backed chapter
+recommendation are complete. The work is ready for the author's scientific,
+contribution, rights, and architecture decisions. No dissertation research
+content has been drafted or imported.
 
-- Completed: the requirements/scaffold work already recorded here, a full
-  history-bearing muscat checkout of the existing GitHub repository, repository
-  setup audit, ignore rules, portable build fallback and server PDF validation.
-- Git checkpoint: `origin/main` was clean at
-  `de4d124d5e10ece8e69fc483e951ee42cf06ec5f`; focused setup work is on local
-  branch `setup/muscat-audit-20260915`. No push or merge was performed.
-- Validation: the clean muscat build produces 20 pages with resolved citations
-  and references, embedded Type 1 fonts with Unicode maps, compliant measured
-  margins/page-number placement, and only the documented legacy-class caption
-  warning. See `SETUP-AUDIT.md`; `VALIDATION.md` retains the earlier TeX Live
-  2023 baseline.
-- Scientific content: bounded read-only reconnaissance verified the five seed
-  repositories, their observed remote heads, principal manuscript files and
-  documented dependencies. No source was approved for chapter use, no complete
-  scientific/novelty audit was claimed, and no material was imported or
-  drafted. See the proposed `research-audit-master-plan.md`, the earlier
-  `research-audit-plan.md`, and the ignored local source manifest.
-- Audit design: the readiness diagnosis identified a required separation
-  between institutional source records and research provenance, manifest schema
-  drift, source-version and rights/contribution gates, stale or hazardous local
-  source states, and the need for metadata-first branch/worktree triage. The
-  proposed master plan defines evidence levels, source guards, project-specific
-  work packages, validation, stop conditions and four author decision gates.
-- Administrative gaps: cohort committee applicability; approved roles; current
-  dean/signatures/checklist; defense and Fall 2026 deadlines; applicable AI rule.
-- Candidate gaps: official name/title/dates, intended manuscript versions,
-  chapter selection, contribution records, publication/reuse rights, the role
-  of newer unmerged Q-DESN work, and whether the two MTI projects are separate
-  dissertation units.
-- Remote/Overleaf state: the existing GitHub repository was verified; its
-  Overleaf linkage and compile state remain unverified. No synchronization or
-  account change was performed.
-- Local handoff: exact server paths, tool locations and the VS Code command are
-  in ignored `SETUP-LOCAL.md`. Git author identity is not configured, so the
-  setup changes remain uncommitted.
-- Next task: checkpoint the approved setup/planning state, implement the
-  research provenance schemas, freeze isolated audit snapshots and execute the
-  source dossiers. Exact inclusion versions, contribution/rights statements
-  and final architecture remain evidence-based decision gates; drafting is a
-  separate future authorization.
+## Completed
+
+- Established and validated the muscat thesis checkout; the 20-page starter
+  builds cleanly apart from its documented legacy-class caption warning.
+- Created local branch `setup/muscat-audit-20260915` and checkpointed the setup
+  and audit-plan state at `cdd06d7`. No push, merge, publication, or Overleaf
+  synchronization was performed.
+- Executed the approved audit against full Git clones of the five nominated
+  sources and three claim-driven dependencies. Fixed commits, document IDs,
+  inventory metrics, validation runs, and inclusion/rights states are in
+  `../source-manifest.json`.
+- Produced `research-audit.md`, `research-audit-validation.md`,
+  `claim-evidence.json`, `chapter-plan.md`, and the pending-decision record
+  `research-decisions.md`; normalized the ignored local manifest and added a
+  safe exact-commit clone helper plus audit validator.
+- Verified all original research checkouts retained their original branch,
+  HEAD, and clean state. Exact paths and guards remain in ignored local records.
+
+## Recommendation
+
+Use three research chapters:
+
+1. Environmetrics hydrologic correction and predictive synthesis;
+2. QDESN single/multi-quantile methodology with GloFAS and PriceFM evidence;
+3. one combined RQR/MTI chapter covering the interval foundation, TCSP, and
+   regression/dynamic extensions.
+
+Treat the exdqlm article/package as shared computational infrastructure and a
+possible software/reproducibility appendix by default. A separate software
+chapter or MTI-extensions chapter requires the additional evidence and
+committee decisions in `chapter-plan.md`.
+
+## Main issues
+
+- RQR's exact scan recursion and a proof matched to the reported closed-window
+  TCSP action remain open; narrow the guarantee or complete and verify the
+  theorem before drafting that claim.
+- The RQR August 13 claim ledger is stale relative to its completed validation.
+- QDESN's current corrected-v4, PriceFM, GloFAS, and build checks pass, but a
+  historical 14-row joint manifest has 13 mismatches and two Phase 181 scripts
+  test superseded manuscript wiring.
+- MTI-EXTENSIONS has theory manuscripts but no implementation, numerical
+  evidence, tests, provenance manifest, or license at its audited snapshot.
+- The exdqlm application/article/package states are 1.1.0, 1.1.1, and 1.1.2;
+  the named 1.1.1 article archives are not tracked at the article snapshot.
+- Candidate-specific contribution records, exact inclusion versions, and
+  material-specific reuse rights remain unconfirmed.
+
+## Validation boundary
+
+Bounded isolated checks reached `E3` for document builds, manifests, source
+contracts, and focused tests. No full simulation campaign, selected-model
+refit, raw-data reconstruction, or complete replication batch was run; nothing
+is classified `E4`. See `research-audit-validation.md` for exact outcomes and
+environment workarounds.
+
+## Decision gates
+
+- `G0` plan authorization: complete.
+- `G1` exact inclusion snapshots: open.
+- `G2` candidate contribution and reuse rights: open.
+- `G3` chapter architecture: open.
+- `G4` section/chapter drafting: closed until separately authorized.
+
+## Next task
+
+The author should complete `research-decisions.md`: confirm or replace the five
+seed commits, confirm QDESN
+Search Phase II remains future work, decide whether MTI-EXTENSIONS belongs in
+the combined chapter, supply contribution/rights decisions, and approve or
+modify the three-unit architecture. After those decisions, authorize one unit
+at a time; the Chapter 2 problem/data-source design is the recommended first
+unit.
+
+Administrative fields remain unresolved: official title/name/date, committee
+roles and applicability, dean/signature/checklist wording, defense and Fall
+2026 deadlines, and the applicable AI-use rule.
 
 Future entries should state date, source commits, decisions, changed files,
 checks actually performed, evidence still missing, and next concrete action.
