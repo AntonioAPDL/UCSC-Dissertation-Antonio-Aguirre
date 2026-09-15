@@ -3,7 +3,8 @@
 The research-audit process defined in `docs/research-audit-master-plan.md` was
 executed on 2026-09-15. Read `docs/research-audit.md`,
 `docs/research-audit-validation.md`, `docs/chapter-plan.md`,
-`docs/research-decisions.md`, `docs/claim-evidence.json`, and
+`docs/manuscript-integration-plan.md`, `docs/research-decisions.md`,
+`docs/claim-evidence.json`, and
 `source-manifest.json` before further work.
 Do not repeat the whole audit unless an approved source snapshot changes.
 
@@ -13,9 +14,10 @@ architecture: exdqlm, Environmetrics, QDESN, and combined MTI. Repository
 evidence supplies collaborators and project-level contributions. Granular
 candidate/coauthor roles, direct-reuse rights, the committee's exdqlm counting
 decision, and any final snapshot replacements remain open. Gate G4 remains
-closed until the author separately authorizes one drafting unit. The checklist
-below remains the controlling substantive-fidelity protocol for a targeted
-re-audit or the later import/drafting workflow.
+closed until the author accepts or modifies the seven manuscript-conversion
+defaults and authorizes the local integration campaign. The checklist below
+remains the controlling substantive-fidelity protocol for a targeted re-audit;
+`manuscript-integration-plan.md` controls the later import workflow.
 
 You are working in my UCSC Statistical Science PhD dissertation repository.
 I entered in Fall 2021 and plan around Fall 2026, but my defense, conferral and
@@ -102,13 +104,19 @@ to make progress. Diagnose access gaps and offer a narrowly scoped route.
     to perform it. Routine scaffold, citation-import tooling and build repairs
     may proceed as needed without blocking on formatting preferences.
 
-After I approve the plan, draft one agreed unit at a time from verified sources.
-Preserve coauthor attribution, source-specific rights/permissions, limitations
-and citation accuracy. Use visible TODOs for missing support. Do not fabricate
-novelty, publication status, theorems, numbers, an abstract or acknowledgments.
-Record controlled imports in the manifest. Build and inspect after meaningful
-changes, check references/labels/fonts/overflow and review the diff. Keep
-compilation independent of sibling repositories and expensive computations.
+After I approve the conversion plan, perform the manuscript-first structural
+conversion defined there: preserve all four main article bodies initially,
+integrate unique supplement material by topic, import only selected final
+display assets, and keep code/data/computation external. Work in recoverable
+chapter-sized local commits even though the campaign covers all four chapters.
+Only after all four compile should you deduplicate background and write
+monograph transitions. Preserve coauthor attribution, source-specific rights
+status, limitations and citation accuracy. Use visible TODOs for missing
+support. Do not fabricate novelty, publication status, theorems, numbers, an
+abstract or acknowledgments. Build and inspect after meaningful changes and
+keep compilation independent of sibling repositories and expensive
+computations. Do not push or synchronize imported material until separately
+authorized after reuse review.
 
 At each handoff update docs/STATUS.md with completed work, decisions, source
 versions, material changes, missing evidence, validation results and the next

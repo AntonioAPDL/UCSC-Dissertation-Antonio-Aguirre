@@ -92,30 +92,31 @@ Inherited and collaborator work that must remain visible:
 
 ## G2 — material-specific rights and reuse
 
-The author has directed a source-first dissertation, not a blank rewrite. The
-working default is therefore:
+The author has rejected a blank rewrite and requested a manuscript-first
+conversion plan. The proposed working boundary is:
 
-- use the audited manuscripts, supplements, code documentation, and manifests
-  to recover methods, equations, evidence, limitations, and citations;
-- write new integrated dissertation prose and centralize repeated background;
-- adapt equations with source locators and attribution;
-- do not copy article prose verbatim by default; and
-- do not import figures, tables, or restricted data until the applicable
-  material-specific permission is recorded.
+- preserve the main article text initially and edit it later for integration;
+- place unique supplement prose, equations, proofs, algorithms, and
+  claim-relevant tables/figures next to the corresponding main material;
+- import selected final display assets only, never code/data/output archives;
+- record exact provenance for every imported component; and
+- keep all imports local until coauthor/publisher reuse status is reviewed for
+  external synchronization or submission.
 
-| Source | New source-grounded prose | Adapted equations | Direct text | Figures/tables | Code/data | Remaining evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| Environmetrics article | PLANNED SOURCE-FIRST MODE | PLANNED WITH ATTRIBUTION | PENDING | PENDING | PENDING | coauthor/publisher review; staged-bundle license |
-| San Lorenzo bundle | AUTHORIZED FOR INSPECTION | N/A | RESTRICTED | RESTRICTED | RESTRICTED | current license permits inspection/evaluation only |
-| QDESN | PLANNED SOURCE-FIRST MODE | PLANNED WITH ATTRIBUTION | PENDING | PENDING | PENDING | coauthor/publication-status review |
-| RQR-GIBBS | PLANNED SOURCE-FIRST MODE | PLANNED WITH ATTRIBUTION | PENDING | PENDING | PENDING | coauthor/publication-status review |
-| MTI-EXTENSIONS | PLANNED SOURCE-FIRST MODE | PLANNED WITH ATTRIBUTION | PENDING | PENDING | PENDING | no repository license located |
-| exdqlm article | PLANNED SOURCE-FIRST MODE | PLANNED WITH ATTRIBUTION | PENDING | PENDING | PENDING | coauthor/article rights and archive status |
-| exdqlm package | AUTHORITATIVE DOCUMENTATION SOURCE | AUTHORITATIVE IMPLEMENTATION SOURCE | N/A | N/A unless selected | MIT subject to notice | preserve license and exact version |
+| Source | Local manuscript conversion | Integrated equations/proofs | Selected final figures/tables | Code/data/computation | External reuse clearance |
+| --- | --- | --- | --- | --- | --- |
+| Environmetrics article | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM MANIFESTED ASSETS | EXTERNAL ONLY | PENDING coauthor/publisher review |
+| San Lorenzo bundle | INSPECTION/PROVENANCE ONLY | N/A | RESTRICTED unless separately cleared | EXTERNAL ONLY | current license is restrictive |
+| QDESN | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM CURRENT AUTHORITY ASSETS | EXTERNAL ONLY | PENDING coauthor/publication-status review |
+| RQR-GIBBS | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM CURRENT AUTHORITY ASSETS | EXTERNAL ONLY | PENDING coauthor/publication-status review |
+| MTI-EXTENSIONS | PROPOSED | PROPOSED WITH ATTRIBUTION | none currently tracked | EXTERNAL ONLY | PENDING; no repository license located |
+| exdqlm article | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM ARTICLE ASSETS | EXTERNAL ONLY | PENDING coauthor/article review |
+| exdqlm package | DOCUMENTATION/AUTHORITY SOURCE | IMPLEMENTATION REFERENCE ONLY | N/A unless selected | REMAINS EXTERNAL under MIT | preserve license and exact version |
 
-“Planned source-first mode” records the author's instruction to build from the
-repositories once a drafting unit is authorized. It does not assert publisher
-permission for verbatim reuse or publication of a collaborator's asset.
+“Proposed” authorizes nothing by itself. It is the execution design in
+`manuscript-integration-plan.md`; the author must approve its seven defaults to
+open G4. Local conversion does not establish permission to push, publish, or
+submit verbatim text or a collaborator's asset.
 
 ## G3 — architecture
 
@@ -136,19 +137,19 @@ counts as a journal-suitable research unit: **PENDING**.
 
 ## G4 — drafting authorization
 
-Gate G4 is **CLOSED FOR SUBSTANTIVE DRAFTING** until the author names one unit.
-Source-packet planning, citation/provenance preparation, metadata updates, and
-chapter placeholders are authorized by the current direction.
+Gate G4 is **CLOSED FOR MANUSCRIPT CONVERSION** until the author accepts or
+modifies the seven defaults in `manuscript-integration-plan.md`. Planning,
+source inventory, citation/provenance preparation, metadata updates, and empty
+chapter placeholders remain authorized.
 
-- Recommended first unit: Chapter 3, problem setting and source/horizon design.
-- Working source: Environmetrics commit
-  `1272bfc10442a28add5a4c74ff641e9b9a8e9666` and its supporting provenance
-  records.
-- Default allowed imports: no direct assets; new integrated prose, citations,
-  and adapted equations with provenance only.
-- Required qualifications: five-origin rather than dense-hindcast evidence;
-  separate 28-day and 8-day horizons; deterministic exogenous summaries; no
-  claim of full raw-data reconstruction.
+- Recommended first implementation unit: one local bulk structural conversion
+  campaign covering all four research chapters.
+- Conversion rule: preserve article prose first, integrate supplements by
+  topic, then perform the monograph/deduplication pass.
+- Default asset rule: all non-superseded main figures/tables; claim-relevant
+  supplement assets; no code, data, fitted objects, or full output archives.
+- Publication boundary: local commits only; no push, Overleaf sync, or external
+  submission of imported material before reuse review.
 - Authorization by/date: **PENDING**.
 
 When the author authorizes a unit, update this file, the public manifest,

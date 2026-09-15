@@ -25,7 +25,11 @@ substantive dissertation research prose or source asset has been imported.
 - Reconciled the current manuscript author lists and contribution paragraphs.
   Recorded the author-supplied official name, scholarly name, and cross-source
   identity mapping; converted the chapter plan from three units to four
-  project chapters and added a source-first adaptation strategy.
+  project chapters.
+- Added `manuscript-integration-plan.md`: a manuscript-first conversion design
+  that preserves each article as the chapter baseline, integrates unique
+  supplement material into the corresponding body sections, imports only
+  selected final display assets, and keeps code/data/computation external.
 - Verified all original research checkouts retained their original branch,
   HEAD, and clean state. Exact paths and guards remain in ignored local records.
 
@@ -78,17 +82,23 @@ environment workarounds.
   direct-reuse rights remain open.
 - `G3` four-project architecture: author-directed; committee counting review
   for exdqlm remains open.
-- `G4` section/chapter drafting: closed until separately authorized.
+- `G4` manuscript conversion: closed until the seven execution defaults in
+  `manuscript-integration-plan.md` are accepted or modified.
 
 ## Next task
 
-The author should now make only the focused confirmations in
-`research-decisions.md`: correct any working snapshot, confirm the short
-candidate-versus-collaborator role allocations, identify any assets already
-cleared for direct reuse, and obtain committee confirmation for counting
-exdqlm as a research chapter. Then authorize one unit at a time. The
-Environmetrics problem and source/horizon design is the recommended first unit;
-it will become Chapter 3 in the final reading order.
+The author should accept or modify the seven defaults in
+`manuscript-integration-plan.md`. The recommended execution is one local
+conversion campaign for all four chapters: preserve article prose first,
+integrate supplements by topic, import all non-superseded main figures/tables
+and claim-relevant supplement assets, keep computational repositories external,
+and commit in recoverable chapter-sized steps. Nothing should be pushed or
+synchronized until direct-reuse status is reviewed.
+
+Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
+and final publication permissions may remain open during the local structural
+conversion, provided the working text uses accurate collective attribution and
+the imported material is not externally synchronized.
 
 Administrative fields remain unresolved: ORCID, official title/date, committee
 roles and applicability, dean/signature/checklist wording, defense and Fall

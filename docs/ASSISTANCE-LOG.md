@@ -61,3 +61,12 @@ planning, metadata, and empty chapter placeholders. It did not assign
 undocumented individual coauthor roles, import research assets, draft
 substantive scientific prose, alter a research repository, or publish/sync the
 dissertation.
+
+2026-09-15: AI assistance prepared a manuscript-first integration plan for all
+four project chapters. It mapped each main article and supplement into one
+continuous dissertation body; defined the boundary between thesis-facing
+prose/equations/final display assets and external code/data/computation; and
+specified bibliography, LaTeX, provenance, validation, commit, and reuse
+controls. It updated planning/status records only. No article or supplement
+text, figure, table, code, data, or result asset was imported, and no build,
+push, publication, or synchronization was performed.

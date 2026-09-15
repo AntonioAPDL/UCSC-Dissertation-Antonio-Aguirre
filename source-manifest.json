@@ -29,7 +29,10 @@
       "combined MTI foundation, tolerance, regression, and dynamic extensions"
     ],
     "snapshot_state": "Audited commits are working drafting sources; final submission freezes remain replaceable",
-    "direct_reuse_state": "Material-specific rights remain pending for verbatim text and source assets"
+    "integration_mode": "Manuscript-first local conversion: preserve main article bodies, integrate unique supplement material into chapter sections, and keep computation external",
+    "asset_boundary": "Only final displayed figures/tables selected for the thesis may be copied; code, data, fitted objects, runs, and full output archives remain external",
+    "direct_reuse_state": "Material-specific rights remain pending before external synchronization, publication, or submission of verbatim text and source assets",
+    "integration_plan": "docs/manuscript-integration-plan.md"
   },
   "sources": [
     {

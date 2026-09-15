@@ -52,7 +52,11 @@ test.
 - `docs/research-audit.md`: completed fixed-snapshot research audit, source
   conflicts, evidence limits, and decisions required before drafting.
 - `docs/chapter-plan.md`: evidence-backed four-project architecture and
-  section-level source-first adaptation plan.
+  chapter boundaries.
+- `docs/manuscript-integration-plan.md`: controlling manuscript-first conversion
+  plan, including per-repository supplement placement, asset selection,
+  bibliography/LaTeX normalization, provenance, execution, and acceptance
+  criteria.
 - `docs/research-decisions.md`: author-supplied identity/architecture decisions,
   repository-documented collaborators/contributions, and the focused role,
   rights, committee, and drafting confirmations that remain.
@@ -70,8 +74,9 @@ test.
 `chapters/` contains six structured placeholders, including four research
 slots. The blank second leaf is intentional. The abstract and acknowledgments
 contain instructions only. The appendix contains elementary demonstration
-material that must be removed before submission. Replace its institutional
-example bibliography with verified research references as chapters develop.
+material that will be removed after supplement material has been integrated
+into the research chapter bodies. Replace its institutional example
+bibliography with verified research references as chapters develop.
 Do not disable `\StarterDrafttrue` merely to make an unfinished file look final.
 
 ## Portability and provenance

@@ -435,8 +435,8 @@ journal-suitable research unit.
 | Environmetrics | exDQLM/exAL and general LDVB strategy | Source-aware discrepancy/synthesis formulation, hydrologic design, implementation, validation, and writing roles | Research chapter |
 | QDESN | exAL/AL quantile readouts, exdqlm comparators, ESN/DESN literature | Deep-reservoir quantile architecture, multi-level shrinkage formulation, computation, and application/validation roles | Research chapter |
 | RQR/MTI | Residual-product criterion from Pouplin et al.; generalized-Bayes and tolerance literature | Mean-preserving characterization, tilt family, TCSP action/calibration, validation, and application roles | Research chapter, subject to proof-language repair |
-| MTI extensions | Same MTI loss and geometry | Regression/dynamic extension, conditional computation, implementation, and validation roles | Section/appendix within MTI pending stronger evidence |
-| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations | Later LDVB, API, static/shrinkage, C++, diagnostics, synthesis, testing, examples, and writing roles | Provisional software research chapter plus technical appendix |
+| MTI extensions | Same MTI loss and geometry | Regression/dynamic extension, conditional computation, implementation, and validation roles | Integrated sections within the MTI chapter; no separate appendix |
+| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations | Later LDVB, API, static/shrinkage, C++, diagnostics, synthesis, testing, examples, and writing roles | Provisional software research chapter with its technical material integrated by topic |
 
 The hydrology and QDESN projects share dynamic-quantile machinery but have
 different research questions: source-aware correction/synthesis versus
@@ -521,13 +521,17 @@ Gate G3 — architecture:
   software-centered exdqlm chapter as a journal-suitable research unit;
 - use conservative TCSP language unless the missing action-matched proof is
   completed and audited; and
-- select the first chapter/section for a separate drafting authorization.
+- approve or modify the manuscript-first conversion defaults in
+  `manuscript-integration-plan.md`.
 
-Gate G4 — drafting is deliberately still closed. Once G1-G3 decisions are
-recorded, authorize one unit at a time. Each unit should be imported through a
-manifest, rewritten into the dissertation's notation and narrative, compiled,
-visually inspected, claim-reviewed, and committed locally before any deliberate
-GitHub/Overleaf handoff.
+Gate G4 — conversion is deliberately still closed. After the integration plan
+is approved, convert all four manuscript bodies in one local campaign while
+using chapter-sized commits. Preserve article prose during the structural
+pass, integrate unique supplement material by topic, copy only selected final
+display assets, keep computation external, and compile/inspect after each
+chapter. Perform deduplication and monograph rewriting only after all four
+chapters compile. No GitHub/Overleaf handoff occurs until separately authorized
+after reuse review.
 
 ## 10. Completion assessment
 

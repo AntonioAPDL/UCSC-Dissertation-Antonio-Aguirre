@@ -57,6 +57,10 @@ def validate_manifest(data):
     require(data.get("schema_version") == 2, "source manifest schema_version must be 2")
     require(data.get("status") == "AUDIT_COMPLETE_WITH_AUTHOR_DECISIONS_PENDING",
             "source manifest completion status is inconsistent")
+    integration_plan = data.get("author_direction", {}).get("integration_plan")
+    require(integration_plan == "docs/manuscript-integration-plan.md",
+            "source manifest must identify the manuscript integration plan")
+    require((ROOT / integration_plan).is_file(), "manuscript integration plan is missing")
     sources = data.get("sources")
     require(isinstance(sources, list) and sources, "source manifest must contain sources")
     ids = set()  # type: Set[str]
@@ -150,6 +154,7 @@ def validate_public_boundary():
         CLAIMS,
         ROOT / "docs" / "research-audit.md",
         ROOT / "docs" / "chapter-plan.md",
+        ROOT / "docs" / "manuscript-integration-plan.md",
         ROOT / "docs" / "research-audit-validation.md",
         ROOT / "docs" / "research-decisions.md",
     ]

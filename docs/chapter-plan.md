@@ -229,37 +229,43 @@ software workflow, a loss-defined endpoint functional, or a tolerance action.
 Do not rank methods across incomparable targets or convert unfinished work into
 results.
 
-### Appendices
+### Integrated technical material — no separate scientific appendix
 
-- mathematical derivations that support but are not essential to the chapter
-  argument;
-- algorithms, software versions, diagnostics, and environment details;
-- secondary empirical tables and figures with claim locators; and
-- reproducibility/provenance records, including exact sources, configurations,
-  hashes, seeds/thread policies, and explicitly unexecuted workflows.
+The research chapters will contain their own derivations, proofs, algorithms,
+validation details, and claim-relevant secondary figures/tables. Supplement
+material will be inserted beside the main result it supports rather than placed
+in a detached dissertation supplement or appendix. The starter's formatting
+demonstration appendix will be removed once the converted chapters replace its
+technical-format examples.
 
-## 4. Source-first adaptation plan
+## 4. Manuscript-first adaptation plan
 
-The dissertation will not start from blank prose or from memory. Each chapter
-will be assembled from a fixed source packet. The packet is evidence, not a
-runtime dependency of the dissertation build.
+The dissertation will not start from blank prose or memory. Each article is the
+initial chapter body, and unique supplement content is merged into the relevant
+section. The detailed source-by-source map, asset boundary, provenance design,
+and execution gates are in `manuscript-integration-plan.md`.
+
+The source packet is evidence, not a runtime dependency of the dissertation
+build. Research repositories retain code, data, computation, and full
+provenance; the thesis imports only its readable scientific body and selected
+final assets.
 
 | Reuse class | Default treatment | Required control |
 | --- | --- | --- |
-| Research purpose, method, assumptions, limitations, and project-level contribution statements | Synthesize from the audited manuscripts in new dissertation connective prose | Cite source commit/path/section in the working provenance record |
-| Equations and definitions | Adapt from the verified source, harmonize notation only through an explicit mapping, and preserve attribution | Equation-level locator for central or inherited results |
+| Main-article scientific prose | Preserve during the local structural conversion, then edit only for integration, duplication, accuracy, and dissertation voice | Exact source commit/path/section, contributor credit, and external-reuse status |
+| Supplement prose, equations, proofs, and algorithms | Insert beside the main theorem, method, or result they support; merge duplicates | Section-level import disposition and explicit notation/label mapping |
+| Equations and definitions | Preserve or adapt from the verified source; harmonize notation only through an explicit mapping | Equation-level locator for central or inherited results |
 | Numerical claims | Reuse only the audited result line and its qualification | Claim-evidence entry with model, data, split/horizon, metric, and validation status |
-| Tables | Prefer regeneration or adaptation from tracked source data; do not manually transcribe when a machine-readable authority exists | Approved asset class, source hash/locator, and caption rewrite |
-| Figures | Prefer approved source figure or deterministic regeneration from tracked outputs | Rights decision, source hash, generation contract, and visual inspection |
+| Main tables and figures | Import the non-superseded final manuscript assets; omit only with a documented reason | Source hash/locator, authority record, caption adaptation, rights status, and visual inspection |
+| Supplement tables and figures | Import when they prove, qualify, diagnose, or interpret a central claim | Same controls as main assets plus a recorded include/omit decision |
 | Algorithms/code | Explain in pseudocode or dissertation notation; keep package/source code in its own licensed repository | Exact implementation version and license/attribution note |
-| Verbatim article prose | Avoid by default; use only when coauthor/publisher policy is recorded and verbatim reuse is editorially preferable | Material-specific permission and visible attribution |
+| Code, data, fitted objects, runs, and full output archives | Keep external; summarize only the evidence boundary required by the chapter | Source repository/commit/path and validation status |
 
-This policy uses the repositories heavily while preventing an article bundle
-from being pasted into the thesis without integration. Shared background is
-written once. Journal introductions, duplicated literature reviews, response
-letters, and submission-specific formatting are not imported. Central methods,
-proofs, validated results, and approved figures/tables are adapted rather than
-rediscovered.
+The first pass preserves the article record. The second pass removes repeated
+abstracts, introductions, literature reviews, conclusions, and submission
+formatting; adds transitions and attribution; and centralizes truly shared
+background. This avoids both a blank rewrite and an unreadable concatenation of
+article PDFs.
 
 The cross-chapter writing control is the repository-supplied *Academic Writing
 Style Profile for AI-Assisted Statistical Writing*, version 0.2, in
@@ -276,21 +282,21 @@ profile conflicts with them.
 
 | Dissertation chapter | Main source sections | Supplementary/supporting material | Material excluded by default |
 | --- | --- | --- | --- |
-| 2 `exdqlm` | article Sections 2–5; package `DESCRIPTION`, `NEWS.md`, help/tests for named claims | technical appendix; four example manifests and tracked outputs | missing submission archives, live package `main` substituted for older analyses, duplicated package manual text |
-| 3 Environmetrics | manuscript methodology, San Lorenzo design, validation, interpretation, conclusion | embedded MCMC/VB appendices; asset manifest; correction and staged-repro records | raw retrieval histories, unapproved restricted assets, five-origin claims generalized to dense operations |
-| 4 QDESN | article Sections 2–7 | QDESN derivation supplement; Gaussian-DESN supplement; corrected-v4, GloFAS, and PriceFM authority records | unpromoted Search Phase II; ignored output forests; superseded historical manifests as current evidence |
-| 5 MTI | RQR Sections 2–8 and its theory/validation supplement; MTI-EXTENSIONS Sections 2–6 and supplement | exact tracked table/figure contracts and application protocol | failed dynamic campaigns, an unavailable exact TCSP theorem, empirical claims for the unimplemented extensions |
+| 2 `exdqlm` | complete article scientific body and examples | integrate the article's technical appendix beside the corresponding model/computation sections | package source tree, caches, fitted objects, missing submission archives, duplicated manual text |
+| 3 Environmetrics | complete article scientific body | integrate MCMC/VB algorithms, sensitivity results, parameter summaries, and additional cutoff panels beside their main sections | staged data, raw retrieval histories, scripts, full outputs, five-origin claims generalized to dense operations |
+| 4 QDESN | complete main-article scientific body | integrate the QDESN derivation and Gaussian-DESN supplements by model, computation, simulation, and application topic | unpromoted Search Phase II; ignored output forests; superseded historical manifests as current evidence |
+| 5 MTI | complete RQR and MTI-EXTENSIONS scientific bodies | integrate both supplements by theorem, computation, validation, application, and dynamic-model topic | failed dynamic campaigns, validation output archives, an unavailable exact TCSP theorem, empirical claims for unimplemented extensions |
 
 ## 5. Source-to-chapter and overlap map
 
-| Source | Ch. 1 | Ch. 2 | Ch. 3 | Ch. 4 | Ch. 5 | Ch. 6 / appendices |
+| Source | Ch. 1 | Ch. 2 | Ch. 3 | Ch. 4 | Ch. 5 | Ch. 6 / integrated technical role |
 | --- | --- | --- | --- | --- | --- | --- |
-| exdqlm article/package | antecedent boundary | primary | computation dependency, pinned 1.1.0 | comparator/dependency, pinned 1.1.1 where declared | only exact dependencies | version graph and software reproducibility |
+| exdqlm article/package | antecedent boundary | complete article plus integrated technical detail | computation dependency, pinned 1.1.0 | comparator/dependency, pinned 1.1.1 where declared | only exact dependencies | version graph and software reproducibility |
 | Environmetrics article | applied motivation | example relationship only | primary | distinguish GloFAS tasks | — | provenance and limitations |
 | San Lorenzo bundle/corrections | — | — | provenance/revision evidence | — | — | approved reproducibility material |
-| QDESN article/supplements | nonlinear motivation | software comparator | distinguish application design | primary | — | derivations and secondary evidence |
-| RQR-GIBBS | interval taxonomy | — | — | — | foundation, tolerance, validation | proofs and validation details |
-| MTI-EXTENSIONS | generalized-Bayes taxonomy | — | — | — | regression/dynamic extension | derivations; future implementation plan |
+| QDESN article/supplements | nonlinear motivation | software comparator | distinguish application design | complete article with both supplements integrated | — | limitations and cross-project implications |
+| RQR-GIBBS | interval taxonomy | — | — | — | foundation, proofs, tolerance, validation, and application | limitations and open theory |
+| MTI-EXTENSIONS | generalized-Bayes taxonomy | — | — | — | integrated regression/dynamic extension and derivations | future implementation plan |
 | Yan and Barata antecedents | common credit | explicit foundation | inherited method boundary | exAL/exDQLM comparator credit | — | bibliography only |
 
 The main overlap controls are:
@@ -304,20 +310,20 @@ The main overlap controls are:
 - Chapter 5's two manuscripts are complementary parts of one MTI project until
   the extension work gains independent implementation and evidence.
 
-## 6. Drafting readiness and order
+## 6. Integration readiness and order
 
-| Chapter | Readiness | Remaining control before factual drafting | First source-based unit |
-| --- | --- | --- | --- |
-| 2 `exdqlm` | Medium-high | confirm granular candidate role; preserve version graph; do not claim full archive reproduction | inherited-method boundary and software architecture |
-| 3 Environmetrics | High | confirm material-specific rights before importing assets | problem setting and source/horizon design |
-| 4 QDESN | Medium-high | sanitize provenance; use current corrected authority; retain qualifications | target and fixed-reservoir architecture |
-| 5 MTI | Medium | use conservative TCSP wording; identify extension sections as theory/computation without validation | fixed-content targets and inferential distinctions |
+| Chapter | Structural conversion readiness | Controls during import |
+| --- | --- | --- |
+| 2 `exdqlm` | Medium-high: complete article, figures/tables, package, and technical appendix are available | preserve the version graph and inherited-method boundary; do not claim the missing archive was reproduced |
+| 3 Environmetrics | High: main/supporting sections, generated tables, 13 validated figure paths, and provenance records are available | import only final displayed assets; retain five-origin, horizon, and deterministic-covariate limitations |
+| 4 QDESN | Medium-high: main article, two supplements, and current authority manifests are available | use corrected-v4/current application authorities; exclude Search Phase II, ignored output forests, and stale controls |
+| 5 MTI | Medium: both articles and supplements are available; extensions remain theory/computation only | use conservative TCSP wording and do not invent extension validation or tolerance guarantees |
 
-Recommended drafting order is **Chapter 3 problem/data design**, then Chapter 2,
-Chapter 4, and Chapter 5. This starts with the most mature source/provenance
-packet while allowing the shared Chapter 2 terminology to be harmonized before
-the later chapters are finalized. Chapter numbers describe final reading order,
-not drafting order.
+Recommended implementation is a **bulk structural conversion of all four
+chapters before substantial rewriting**. Preserve manuscript content, integrate
+supplements, normalize LaTeX/citations/assets, and compile after each chapter.
+Only then deduplicate shared background and write monograph transitions. Local
+commits remain chapter-sized so each import is reviewable and recoverable.
 
 ## 7. Remaining decisions requiring the author
 
@@ -329,12 +335,13 @@ project from scratch. Only the following decisions remain:
 2. confirm or correct the short candidate-role summaries in
    `research-decisions.md`, especially the division of implementation, theory,
    empirical work, and writing among collaborators;
-3. identify any article text, figures, or tables already approved for direct
-   dissertation reuse; otherwise the default is new integrated prose and no
-   copied assets;
+3. confirm the local manuscript-first boundary: article prose and selected
+   final assets may be imported locally, but nothing is pushed or submitted
+   until material-specific reuse status is reviewed;
 4. obtain committee confirmation that `exdqlm` counts as the fourth research
    chapter; and
-5. authorize one drafting unit and its permitted asset classes.
+5. accept or modify the seven execution defaults in
+   `manuscript-integration-plan.md` and authorize the conversion campaign.
 
 Until a proof replaces the current evidence, conservative TCSP wording is a
 technical requirement rather than an optional stylistic choice. The ORCID,
@@ -343,20 +350,18 @@ metadata decisions.
 
 ## 8. Controlled execution after authorization
 
-For each authorized unit:
-
-1. freeze the source packet and create a section-level import manifest;
-2. extract the relevant claims, equations, citations, results, limitations,
-   and collaborator attribution from the fixed commit;
-3. write the dissertation-native narrative and notation map;
-4. import only approved tables/figures, recording source hashes and adaptation;
-5. update claim and source provenance;
-6. compile and inspect the affected pages, references, labels, fonts, and
-   overflow;
-7. review for target/likelihood/interval and empirical/theoretical claim
-   accuracy; and
-8. make a focused local commit before any separately authorized GitHub or
-   Overleaf synchronization.
+1. create chapter import manifests and citation/label/macro maps;
+2. convert all four article bodies without substantial rewriting;
+3. integrate supplement sections according to the project maps in
+   `manuscript-integration-plan.md`;
+4. copy only selected final tables/figures, recording hashes and status;
+5. compile each chapter and then the full thesis;
+6. perform the monograph pass: deduplication, transitions, common background,
+   notation review, and attribution;
+7. validate claims, references, labels, fonts, overflow, and rendered pages;
+8. make focused local commits throughout; and
+9. push or synchronize only at a separately authorized, rights-reviewed
+   handoff.
 
 The thesis must remain self-contained. Research repositories remain immutable
 evidence sources and never become build-time dependencies.
