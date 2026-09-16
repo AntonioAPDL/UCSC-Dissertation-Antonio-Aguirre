@@ -148,7 +148,29 @@ data, fitted objects, full output archives, and source histories external.
 
 ## G5 — scientific and editorial integration
 
-Gate G5 is **IN PROGRESS**. Work proceeds chapter by chapter from the immutable
-conversion baseline. Scientific reinterpretations that exceed the recorded
-evidence, candidate-specific role statements, and final reuse assertions remain
-decision boundaries rather than editorial assumptions.
+Gate G5 is **DRAFT INTEGRATION COMPLETE; FINAL CONFIRMATIONS REMAIN**. Chapters
+2--5 have completed their scientific/editorial passes, and the dissertation
+introduction, synthesis, and abstract now connect the four projects without
+assigning unverified individual roles or strengthening the source evidence.
+Scientific reinterpretations that exceed the recorded evidence, candidate-
+specific role statements, and final reuse assertions remain decision
+boundaries rather than editorial assumptions.
+
+The following matrix is the compact pre-submission record. A fixed source
+snapshot authorizes provenance-aware drafting; it does not settle authorship
+allocation, publication status, or reuse permission.
+
+| Project | Candidate role currently established | Collaborator record | Manuscript/version used | Prose and equations | Figures and tables | Required final acknowledgment/reuse action |
+| --- | --- | --- | --- | --- | --- | --- |
+| `exdqlm` | first article author; package `aut`; granular software and writing allocation pending | Raquel Barata, Raquel Prado, Bruno Sansó | article `d5534e9`; package analysis version 1.1.1, with 1.1.0/1.1.2 kept distinct | integrated with antecedent attribution | selected manifested article assets integrated | confirm personal task allocation, coauthor/article wording, and any publication-specific permission |
+| Environmetrics | first and corresponding author; individual conceptual/computational/empirical allocation pending | Raquel Prado, Bruno Sansó | `1272bfc`, `wileyNJD-APA.tex` | integrated with source and exAL/exDQLM attribution | selected article assets integrated; San Lorenzo bundle remains provenance-only | confirm individual roles and coauthor/publisher permission for retained article material |
+| QDESN | first author; individual theory/software/experiment allocation pending | Raquel Prado, Bruno Sansó | corrected current authority `757522d`, main article plus two supplements | integrated; ESN/DESN and quantile antecedents retained | selected current-authority assets integrated | confirm individual roles, publication status, and coauthor/publisher reuse terms |
+| MTI foundation and extensions | first author on both manuscripts; individual theorem/calibration/implementation allocation pending | Raquel Prado, Bruno Sansó | RQR `73887b9`; extensions `f345d94` | integrated with residual-product and tolerance antecedents; extensions marked proposed | selected RQR assets integrated; no extension assets tracked | confirm individual roles and reuse terms; resolve absent extension license and do not imply TCSP proof beyond current evidence |
+
+Before filing, the author should replace each pending role entry with a short
+confirmed statement, identify the publication status and permitted reused
+version of each manuscript, and record any required coauthor, publisher, or
+copyright acknowledgment. The committee must also confirm whether the
+software-centered Chapter 2 counts as an independent journal-suitable research
+unit. None of these pending decisions requires reconstructing the chapters from
+scratch.

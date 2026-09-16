@@ -102,14 +102,16 @@ test.
 - `docs/CODEX-KICKOFF.md`: use for the gated source-decision and drafting
   workflow.
 
-The chapters directory contains an unfinished introduction, four converted
-research chapters, and an unfinished synthesis. The blank second leaf is
-intentional. The abstract and acknowledgments contain instructions only. The
-starter demonstration appendix is no longer part of the document; technical
-supporting material is integrated into the research chapter bodies. The
-consolidated bibliography is generated from the fixed manuscript snapshots
-plus the two administrative starter records.
-Do not disable `\StarterDrafttrue` merely to make an unfinished file look final.
+The chapters directory contains a substantive introduction, four converted and
+scientifically revised research chapters, and a dissertation-wide synthesis.
+The global abstract is drafted; the acknowledgments remain an author task. The
+blank second leaf is intentional. The starter demonstration appendix is no
+longer part of the document; technical supporting material is integrated into
+the research chapter bodies. The consolidated bibliography is generated from
+the fixed manuscript snapshots plus the two administrative starter records.
+Do not disable `\StarterDrafttrue` until the final title, committee, dean,
+conferral date, acknowledgments, role statements, and reuse decisions have been
+confirmed and the filing version has been checked.
 
 ## Portability and provenance
 

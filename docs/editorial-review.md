@@ -67,9 +67,9 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 3. Phase 2: global architecture, notation, bibliography, and display decisions
    — complete.
 4. Phase 3: chapter revisions in order 2, 3, 4, 5 — complete.
-5. Phase 4: cross-chapter prose and typography review — next.
-6. Phase 5: dissertation introduction, synthesis, and abstract.
-7. Final release validation and explicit GitHub/Overleaf handoff.
+5. Phase 4: cross-chapter prose and typography review — complete.
+6. Phase 5: dissertation introduction, synthesis, and abstract — complete.
+7. Final release validation and explicit GitHub/Overleaf handoff — in progress.
 
 Substantive chapter work must record a `REV-*` entry in
 `revision-ledger.json`, update the corresponding current hash, pass the relevant
@@ -342,3 +342,38 @@ likelihoods, exact posterior simulation versus VB approximation, parameter or
 endpoint uncertainty versus response prediction, and empirical tolerance
 attainment versus a finite-sample guarantee. Chapters 2--5 are stable inputs
 for the dissertation introduction, synthesis, and abstract.
+
+## Phase 5 dissertation-framing result
+
+Chapter 1 now states one unifying research question while preserving the four
+projects' different probability models and inferential meanings. Its organizing
+dimensions are target, update, dependence representation, computation, and
+validation. The chapter distinguishes conditional quantiles from fixed-content
+intervals; credible, predictive, confidence, and tolerance intervals; AL/exAL
+working likelihoods from generalized Bayes; latent quantile states from fixed
+reservoir features and endpoint states; and mathematical, computational,
+simulation, application, and proposed-method evidence. The contribution map
+uses collective wording because the repositories do not establish granular
+coauthor task allocations.
+
+Chapter 6 compares the four research chapters along the same dimensions and
+states only evidence supported by their final discussions. It retains the
+mixed Big Tree and eight-day hydrologic comparisons, the bounded GloFAS and
+PriceFM conclusions, the numerical/empirical status of TCSP, and the theory-
+only status of the MTI regression and dynamic extensions. Its future-work
+agenda follows directly from those limitations rather than presenting
+unfinished work as a completed result.
+
+The global abstract is 319 words, within the UCSC guide's recommended 350-word
+indexing length. It identifies all four contributions and their principal
+limitations without citations or unsupported novelty language. The exact
+title remains unresolved, so the working metadata placeholder and starter
+approval warning remain active; substantive framing readiness does not imply
+administrative filing readiness.
+
+The framing build exposed one inherited Type 3 font inside the retained
+PriceFM regional-comparison PDF. The immutable source asset remains unchanged.
+The thesis now includes a vector-outline derivative of the same display, with
+both hashes and the transformation recorded in `display-ledger.json`. The
+full assembled-PDF audit finds no Type 3 or Type 0 fonts, and rendered review
+shows no visible change to the plotted evidence.

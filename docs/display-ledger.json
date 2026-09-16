@@ -655,7 +655,16 @@
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
       "status": "CHAPTER_REVISION_COMPLETE",
-      "implementation_status": "IMPLEMENTED"
+      "implementation_status": "IMPLEMENTED",
+      "rendering_derivative": {
+        "source": "figures/ch04-qdesn/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
+        "source_sha256": "870f43f594b86e607a93479568deb4943016bb201a870d2a8be9a3388e720413",
+        "destination": "figures/ch04-qdesn/pricefm_application/pricefm_r98_region_aql_comparison_fontsafe.pdf",
+        "destination_sha256": "9a624dc962399f440b2e7328d908c086fdfea010181625a5b87a729d0e75d04c",
+        "transformation": "Ghostscript pdfwrite 9.27 with NoOutputFonts; source plot lettering converted to vector outlines without changing the plotted data, dimensions, caption, or claim",
+        "reason": "The immutable source PDF embeds DejaVuSans as a Type 3 font; the derived display removes that filing-format defect while preserving the source asset and provenance.",
+        "rights_status": "UNVERIFIED; inherited from source asset"
+      }
     },
     {
       "id": "qdesn:fig:simulation-500obs-mcmc-forecast-mae-intervals",

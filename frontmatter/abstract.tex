@@ -1,5 +1,41 @@
 \begin{abstract}
-\TODO{Replace this instruction with the author's verified dissertation abstract.
-State the common problem, original contributions, methods and supported findings.
-No abstract or results have been invented for this starter.}
+This dissertation studies statistical inference for conditional quantiles and
+fixed-content intervals when temporal dependence, nonlinear structure,
+heterogeneous forecast products, and computational constraints complicate full
+response-distribution modeling. The central approach is target-first: the
+inferential object, information set, update, and validation claim are specified
+separately so that fitted quantiles, posterior predictive distributions,
+endpoint uncertainty, and tolerance intervals are not conflated.
+
+The first contribution is an integrated \proglang{R} workflow for extended
+dynamic quantile linear models. It connects composable state-space models with
+MCMC and variational inference, diagnostics, forecasting, post-fit predictive
+synthesis, and static shrinkage regression. The second contribution applies
+dynamic quantile models to source-aware correction and synthesis of river-flow
+products. In a five-origin San Lorenzo River study, the selected multivariate
+extended-asymmetric-Laplace specification gives the strongest 28-day comparison
+among the evaluated Bayesian variants, while the common eight-day comparison
+shows that gains are not uniform across every origin and horizon.
+
+The third contribution develops Bayesian quantile deep echo-state networks,
+which combine fixed nonlinear recurrent features with single-level or joint
+quantile regression. MCMC and model-specific variational methods are examined
+through simulations and retrospective GloFAS and PriceFM applications. The
+results support conditional-quantile estimation under the stated designs but
+also expose reservoir-conditioning, forecast-origin, convergence, and regional
+limitations. The fourth contribution studies mean-tilted intervals, a family
+of contiguous fixed-content targets indexed by retained-mean balance. It
+characterizes the mean-preserving member, develops a numerically calibrated
+shortest-path tolerance procedure, and evaluates the frozen procedure through
+simulation and a descriptive pharmaceutical application. Regression and
+dynamic endpoint formulations are derived as proposed extensions.
+
+Across the four projects, conditionally Gaussian representations make posterior
+simulation and variational approximation practical, but similar computation
+does not imply identical inference. Asymmetric-Laplace working likelihoods,
+generalized posteriors for loss-defined endpoints, predictive synthesis, and
+repeated-sampling tolerance calibration support different claims. The combined
+results show how distributional targets can be modeled and evaluated without
+erasing those distinctions, and they identify the additional theory and
+multi-origin validation required for broader predictive and tolerance claims.
 \end{abstract}

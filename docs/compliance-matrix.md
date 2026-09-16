@@ -82,7 +82,7 @@ the complete rule-to-check mapping readable.
 | F04 | Central placeholders; planned Fall would use December only after confirmation | Student record and conferral term | Unresolved personal fields |
 | F05 | Dean placeholders; no signature images | Graduate Division current instructions | Open; historical names deliberately not copied |
 | F06 | Blank page ii, no printed number | PDF second page and numbering | Implemented; notice decision remains author choice |
-| F07 | Class abstract environment with TODO only | Layout now; content/length after author draft | Layout demonstrated; actual abstract absent |
+| F07 | Class abstract environment with 319-word dissertation-level abstract | Word count, compiled layout and rendered-page review | Substantive draft implemented; final title remains unresolved |
 | F08 | Acknowledgment instructions only; no dedication | Author content and rights/contribution review | No acknowledgments invented |
 | F09 | Automatic TOC, LoF and LoT; double spacing | Resolve reruns and compare page references | Implemented and demonstrated |
 

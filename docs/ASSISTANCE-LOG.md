@@ -172,3 +172,19 @@ baseline field. Fast and chapter validation passed against the retained audit
 root, and eight affected pages were rendered and inspected. No statistical
 result, source repository, research code, data, simulation, or model fit was
 changed or rerun; no Overleaf build or synchronization was performed.
+
+2026-09-16: AI assistance completed the dissertation-level framing pass. It
+replaced the Chapter 1, Chapter 6, and abstract placeholders with a target-first
+introduction, evidence-bounded synthesis, and 319-word global abstract grounded
+in the completed source audit and revised research chapters. It added a compact
+authorship/version/reuse decision matrix while retaining collective attribution
+and all unresolved role, permission, committee, title, date, dean, and filing
+decisions. During the build audit it localized one inherited Type 3 plot font
+to the retained PriceFM regional comparison and generated a provenance-recorded
+vector-outline derivative of the same immutable PDF; no data, labels, plotted
+values, caption, or statistical claim changed. Fast and chapter validation
+passed, the final chapter-tier PDF font audit found no Type 3 or Type 0 fonts,
+and the abstract, introduction, synthesis, table, chapter transitions, and
+font-safe figure were rendered and inspected. No research computation, source
+repository, data, fitted model, simulation, or Overleaf project was changed or
+rerun.

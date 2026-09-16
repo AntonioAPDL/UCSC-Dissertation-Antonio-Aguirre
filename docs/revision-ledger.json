@@ -39,12 +39,13 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "78be86f645545b2b5813ced17c0987eae52757c1729223f4329f8225a37c90f2",
+      "current_sha256": "47fd8acd8d66617d0043aad0091866ccc8f3f6b733aa27b73920e83944229f5d",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH04-20260916",
-        "REV-GLOBAL-POLISH-20260916"
+        "REV-GLOBAL-POLISH-20260916",
+        "REV-RELEASE-FONTS-20260916"
       ]
     },
     {
@@ -134,6 +135,31 @@
       "summary": "Replaced blanket table, algorithm, and Chapter 4 equation compression with display-specific typography; line-broke the affected statistical formulas; and tightened isolated promotional or ambiguous prose without changing scientific results.",
       "evidence": "TeX overfull and float diagnostics from the Chapter 2--5 milestone builds; paragraph-level terminology scan; rendered-page inspection recorded in docs/VALIDATION.md",
       "validation": "Fast and chapter milestone validation, final log review, and targeted rendered-page inspection required before merge."
+    },
+    {
+      "id": "REV-FRAMING-20260916",
+      "date": "2026-09-16",
+      "paths": [
+        "chapters/01-introduction.tex",
+        "chapters/06-synthesis.tex",
+        "frontmatter/abstract.tex",
+        "docs/research-decisions.md"
+      ],
+      "summary": "Replaced the dissertation-level placeholders with a target-first introduction, evidence-bounded comparative synthesis, and 319-word abstract; connected all four research chapters while preserving collective attribution, mixed findings, and unresolved role, rights, and administrative decisions.",
+      "evidence": "docs/chapter-plan.md; docs/research-audit.md; docs/research-decisions.md; completed Chapter 2--5 discussions and validation records",
+      "validation": "Fast and chapter milestone validation, full cross-reference and bibliography checks, and rendered inspection of the abstract, introduction, synthesis, and document transitions required before merge."
+    },
+    {
+      "id": "REV-RELEASE-FONTS-20260916",
+      "date": "2026-09-16",
+      "paths": [
+        "chapters/04-research-c.tex",
+        "figures/ch04-qdesn/pricefm_application/pricefm_r98_region_aql_comparison_fontsafe.pdf",
+        "docs/display-ledger.json"
+      ],
+      "summary": "Replaced one Type-3-font rendering of the retained PriceFM regional comparison with a vector-outline derivative of the same immutable source PDF; no plotted value, label, caption, or scientific claim changed.",
+      "evidence": "The source asset hash and font-safe derivative hash are recorded in docs/display-ledger.json; per-page pdffonts audit localized the only Type 3 font to this display.",
+      "validation": "Fast validation, complete rebuild, all-page PDF font audit, and before/after visual comparison required before release."
     }
   ]
 }
