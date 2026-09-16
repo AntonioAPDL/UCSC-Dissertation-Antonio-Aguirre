@@ -6,8 +6,12 @@ not inspect or modify a source working tree, execute research code, or import
 data and fitted objects.  Only manuscript prose, recursively referenced TeX
 display fragments, and recursively referenced display assets are copied.
 
-Usage:
+Default usage is read-only and verifies the source snapshots:
     python3.11 scripts/import_manuscripts.py --audit-root /path/to/audit/clones
+
+Regeneration is deliberately restricted to a clean ``regenerate/*`` branch:
+    python3.11 scripts/import_manuscripts.py --audit-root /path/to/audit/clones \
+      --regenerate-baseline
 
 The audit root must contain the five clone directories named in SOURCES.  The
 path is deliberately supplied at run time so machine-local paths never enter a
@@ -27,6 +31,9 @@ from typing import Iterable
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+BASELINE_ID = "manuscript-first-20260915"
+BASELINE_COMMIT = "79dbb9cc8348d9cc0ece2f23d5ade33570275055"
+MERGED_COMMIT = "5def110d009545551e89b7efc9746c61122e8918"
 
 
 @dataclass(frozen=True)
@@ -164,6 +171,43 @@ class Importer:
             run_git(repo, "cat-file", "-e", f"{source.commit}^{{commit}}")
         if errors:
             raise SystemExit("\n".join(errors))
+
+    def baseline_divergences(self) -> list[str]:
+        """Return tracked import destinations that differ from the baseline."""
+        divergences: list[str] = []
+        for manifest_path in sorted((PROJECT_ROOT / "docs" / "imports").glob("*.json")):
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            seen: set[str] = set()
+            for item in manifest.get("items", []):
+                destination = str(item.get("destination", ""))
+                if not destination or destination in seen:
+                    continue
+                seen.add(destination)
+                path = PROJECT_ROOT / destination
+                expected = str(item.get("destination_sha256", ""))
+                if not path.is_file() or sha256(path.read_bytes()) != expected:
+                    divergences.append(destination)
+        return sorted(set(divergences))
+
+    def require_safe_regeneration_branch(self) -> None:
+        status = str(run_git(PROJECT_ROOT, "status", "--porcelain")).strip()
+        if status:
+            raise SystemExit(
+                "baseline regeneration requires a clean working tree; commit or preserve "
+                "the current work first"
+            )
+        branch = str(run_git(PROJECT_ROOT, "branch", "--show-current")).strip()
+        if not branch.startswith("regenerate/"):
+            raise SystemExit(
+                "baseline regeneration is restricted to a dedicated regenerate/* branch"
+            )
+        divergences = self.baseline_divergences()
+        if divergences:
+            joined = "\n- ".join(divergences)
+            raise SystemExit(
+                "baseline regeneration refused because editorial derivatives differ from "
+                f"the import baseline:\n- {joined}"
+            )
 
     def blob(self, source_key: str, path: str) -> bytes:
         source = SOURCES[source_key]
@@ -727,7 +771,7 @@ class Importer:
             "source_sha256": sha256(source_data),
             "destination_sha256": sha256(destination_data),
             "claim_ids": list(source.claim_ids),
-            "rights_status": "UNVERIFIED_LOCAL_ONLY",
+            "rights_status": "UNVERIFIED",
             "validation": "exact source blob and destination hash recorded; dissertation build checked separately",
         }
         self.manifests[self.current_chapter].append(item)
@@ -917,7 +961,7 @@ class Importer:
                 "commit": source.commit,
                 "source_path": source_path,
                 "source_sha256": sha256(self.blob(source_key, source_path)),
-                "rights_status": "UNVERIFIED_LOCAL_ONLY",
+                "rights_status": "UNVERIFIED",
                 "integration_note": note,
                 "section_dispositions": dispositions,
             }
@@ -1313,13 +1357,30 @@ class Importer:
         manifest_dir.mkdir(parents=True, exist_ok=True)
         for chapter, items in self.manifests.items():
             output = {
-                "schema_version": 1,
+                "schema_version": 2,
                 "generated_at": "2026-09-15",
                 "chapter": chapter,
+                "baseline": {
+                    "id": BASELINE_ID,
+                    "integration_commit": BASELINE_COMMIT,
+                    "merged_commit": MERGED_COMMIT,
+                    "destination_hash_field": "destination_sha256",
+                    "meaning": "Immutable hash of each destination at the initial structural-conversion baseline",
+                },
+                "editorial_derivative": {
+                    "chapter_path": CHAPTERS[chapter][0],
+                    "revision_ledger": "docs/revision-ledger.json",
+                    "status": "BASELINE_UNREVISED",
+                },
+                "distribution": {
+                    "github": "MERGED_TO_MAIN",
+                    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+                    "rights_effect": "NONE",
+                },
                 "policy": {
                     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
                     "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
-                    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission",
+                    "rights": "material-specific reuse permission remains unverified; recorded distribution does not establish publication or submission clearance",
                 },
                 "documents": self.documents[chapter],
                 "items": sorted(items, key=lambda item: (str(item["source_id"]), str(item["source_path"]))),
@@ -1348,9 +1409,29 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="directory containing the immutable audit clones",
     )
+    parser.add_argument(
+        "--regenerate-baseline",
+        action="store_true",
+        help="write a fresh structural baseline; allowed only on a clean regenerate/* branch",
+    )
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     arguments = parse_args()
-    Importer(arguments.audit_root.resolve()).run()
+    importer = Importer(arguments.audit_root.resolve())
+    importer.validate_sources()
+    if not arguments.regenerate_baseline:
+        divergences = importer.baseline_divergences()
+        state = (
+            f"; {len(divergences)} destination(s) now differ from the baseline"
+            if divergences
+            else "; current destinations still match the baseline"
+        )
+        print(
+            "Importer check-only mode: immutable source snapshots verified"
+            f"{state}. No files written."
+        )
+    else:
+        importer.require_safe_regeneration_branch()
+        importer.run()

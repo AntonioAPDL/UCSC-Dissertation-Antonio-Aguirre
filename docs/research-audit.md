@@ -524,14 +524,12 @@ Gate G3 — architecture:
 - approve or modify the manuscript-first conversion defaults in
   `manuscript-integration-plan.md`.
 
-Gate G4 — conversion is deliberately still closed. After the integration plan
-is approved, convert all four manuscript bodies in one local campaign while
-using chapter-sized commits. Preserve article prose during the structural
-pass, integrate unique supplement material by topic, copy only selected final
-display assets, keep computation external, and compile/inspect after each
-chapter. Perform deduplication and monograph rewriting only after all four
-chapters compile. No GitHub/Overleaf handoff occurs until separately authorized
-after reuse review.
+Gate G4 — this was deliberately closed when the audit was written. It was
+subsequently opened by the author's approval of all seven conversion defaults.
+The four-chapter structural conversion is complete on GitHub `main`, and the
+author reports a successful Overleaf handoff. This historical audit remains the
+source diagnosis; current lifecycle state is maintained in `STATUS.md`,
+`research-decisions.md`, and `source-manifest.json`.
 
 ## 10. Completion assessment
 

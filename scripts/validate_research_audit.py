@@ -32,6 +32,27 @@ RIGHTS_STATUSES = {
 }
 EVIDENCE_LEVELS = {"E0", "E1", "E2", "E3", "E4"}
 RUN_RESULTS = {"PASS", "ISSUE_FOUND", "NOT_RUN", "BLOCKED"}
+MANIFEST_STATUSES = {
+    "AUDIT_COMPLETE_WITH_AUTHOR_DECISIONS_PENDING",
+    "LOCAL_MANUSCRIPT_CONVERSION_COMPLETE_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+    "MANUSCRIPT_CONVERSION_SYNCED_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+    "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING",
+    "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
+    "DISSERTATION_DRAFT_COMPLETE_PENDING_ADMINISTRATIVE_AND_REUSE_CLEARANCE",
+}
+LIFECYCLE_VALUES = {
+    "research_audit": {"NOT_STARTED", "IN_PROGRESS", "COMPLETE"},
+    "author_architecture_decision": {"PENDING", "COMPLETE"},
+    "manuscript_conversion": {"NOT_STARTED", "IN_PROGRESS", "COMPLETE"},
+    "scientific_review": {"NOT_STARTED", "IN_PROGRESS", "COMPLETE"},
+    "reuse_review": {"PENDING", "IN_PROGRESS", "PARTIAL", "COMPLETE"},
+    "github_sync": {"NOT_SYNCED", "COMPLETE"},
+    "overleaf_handoff": {
+        "NOT_PERFORMED",
+        "AUTHOR_REPORTED_COMPLETE",
+        "INDEPENDENTLY_VERIFIED_COMPLETE",
+    },
+}
 
 
 def load_json(path):
@@ -53,10 +74,56 @@ def require(condition, message):
         fail(message)
 
 
+def validate_lifecycle(data):
+    """Validate state relationships without coupling the audit to one phase."""
+    status = data.get("status")
+    require(status in MANIFEST_STATUSES, f"unsupported source manifest status: {status!r}")
+    lifecycle = data.get("lifecycle")
+    require(isinstance(lifecycle, dict), "source manifest lifecycle must be an object")
+    for field, allowed in LIFECYCLE_VALUES.items():
+        value = lifecycle.get(field)
+        require(value in allowed, f"invalid lifecycle value {field}={value!r}")
+
+    audit = lifecycle["research_audit"]
+    architecture = lifecycle["author_architecture_decision"]
+    conversion = lifecycle["manuscript_conversion"]
+    scientific = lifecycle["scientific_review"]
+    github = lifecycle["github_sync"]
+    overleaf = lifecycle["overleaf_handoff"]
+
+    if conversion != "NOT_STARTED":
+        require(audit == "COMPLETE", "manuscript conversion requires a complete research audit")
+        require(
+            architecture == "COMPLETE",
+            "manuscript conversion requires a completed architecture decision",
+        )
+    if scientific != "NOT_STARTED":
+        require(conversion == "COMPLETE", "scientific review requires completed conversion")
+    if github == "COMPLETE":
+        require(conversion == "COMPLETE", "GitHub synchronization requires completed conversion")
+    if overleaf != "NOT_PERFORMED":
+        require(github == "COMPLETE", "Overleaf handoff requires completed GitHub synchronization")
+
+    synced_statuses = {
+        "MANUSCRIPT_CONVERSION_SYNCED_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+        "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING",
+        "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
+        "DISSERTATION_DRAFT_COMPLETE_PENDING_ADMINISTRATIVE_AND_REUSE_CLEARANCE",
+    }
+    if status in synced_statuses:
+        require(github == "COMPLETE", f"{status} requires github_sync=COMPLETE")
+    if status == "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING":
+        require(scientific == "IN_PROGRESS", "in-progress status requires scientific_review=IN_PROGRESS")
+    if status in {
+        "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
+        "DISSERTATION_DRAFT_COMPLETE_PENDING_ADMINISTRATIVE_AND_REUSE_CLEARANCE",
+    }:
+        require(scientific == "COMPLETE", f"{status} requires scientific_review=COMPLETE")
+
+
 def validate_manifest(data):
     require(data.get("schema_version") == 2, "source manifest schema_version must be 2")
-    require(data.get("status") == "AUDIT_COMPLETE_WITH_AUTHOR_DECISIONS_PENDING",
-            "source manifest completion status is inconsistent")
+    validate_lifecycle(data)
     integration_plan = data.get("author_direction", {}).get("integration_plan")
     require(integration_plan == "docs/manuscript-integration-plan.md",
             "source manifest must identify the manuscript integration plan")

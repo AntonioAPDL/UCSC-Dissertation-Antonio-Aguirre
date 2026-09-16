@@ -1,11 +1,28 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-09-15",
   "chapter": "ch05-mti",
+  "baseline": {
+    "id": "manuscript-first-20260915",
+    "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
+    "merged_commit": "5def110d009545551e89b7efc9746c61122e8918",
+    "destination_hash_field": "destination_sha256",
+    "meaning": "Immutable hash of each destination at the initial structural-conversion baseline"
+  },
+  "editorial_derivative": {
+    "chapter_path": "chapters/05-research-d.tex",
+    "revision_ledger": "docs/revision-ledger.json",
+    "status": "BASELINE_UNREVISED"
+  },
+  "distribution": {
+    "github": "MERGED_TO_MAIN",
+    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+    "rights_effect": "NONE"
+  },
   "policy": {
     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
     "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
-    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+    "rights": "material-specific reuse permission remains unverified; recorded distribution does not establish publication or submission clearance"
   },
   "documents": [
     {
@@ -13,7 +30,7 @@
       "commit": "73887b9c86ef767aa1567c660718667945630aef",
       "source_path": "main.tex",
       "source_sha256": "dff9095c2129cd89e30bb3f7ced4d19e297406600a886da9cfa9ad616ace6350",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All main scientific sections integrated as the foundation and tolerance portion of Chapter 5.",
       "section_dispositions": [
         {
@@ -59,7 +76,7 @@
       "commit": "73887b9c86ef767aa1567c660718667945630aef",
       "source_path": "rqr-gibbs-supplement.tex",
       "source_sha256": "7b3b734f1e814c012e9ffe06f493adbf54c52cdc097e2c89fe201b2978601b4e",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All substantive proof, computation, validation, and application sections integrated; part dividers and navigation guides omitted.",
       "section_dispositions": [
         {
@@ -134,7 +151,7 @@
       "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
       "source_path": "main.tex",
       "source_sha256": "a909c00dbf27f88746152550fd7117def17eeeeab135411c5f4d95c1cc69f363",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All regression and dynamic-extension scientific sections integrated after the RQR foundation.",
       "section_dispositions": [
         {
@@ -172,7 +189,7 @@
       "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
       "source_path": "mti-extensions-supplement.tex",
       "source_sha256": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All computational detail and validation-limit sections integrated within the extension movement.",
       "section_dispositions": [
         {
@@ -230,7 +247,7 @@
         "CLM-MTI-002",
         "CON-MTI-003"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -248,7 +265,7 @@
         "CLM-MTI-002",
         "CON-MTI-003"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -267,7 +284,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -286,7 +303,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -305,7 +322,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -324,7 +341,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -343,7 +360,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -362,7 +379,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -381,7 +398,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -400,7 +417,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -419,7 +436,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -438,7 +455,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -457,7 +474,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -476,7 +493,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -495,7 +512,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -514,7 +531,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -533,7 +550,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -552,7 +569,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -571,7 +588,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -590,7 +607,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -609,7 +626,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -628,7 +645,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -647,7 +664,7 @@
         "ART-RQR-003",
         "CON-RQR-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     }
   ]

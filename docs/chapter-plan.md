@@ -335,13 +335,13 @@ project from scratch. Only the following decisions remain:
 2. confirm or correct the short candidate-role summaries in
    `research-decisions.md`, especially the division of implementation, theory,
    empirical work, and writing among collaborators;
-3. confirm the local manuscript-first boundary: article prose and selected
-   final assets may be imported locally, but nothing is pushed or submitted
-   until material-specific reuse status is reviewed;
+3. resolve material-specific reuse status for final circulation and submission;
+   the conversion is already on GitHub and the author reports an Overleaf
+   handoff, which does not itself establish reuse clearance;
 4. obtain committee confirmation that `exdqlm` counts as the fourth research
    chapter; and
-5. accept or modify the seven execution defaults in
-   `manuscript-integration-plan.md` and authorize the conversion campaign.
+5. review the chapter-level scientific and editorial revision ledger before
+   finalizing dissertation-wide contribution language.
 
 Until a proof replaces the current evidence, conservative TCSP wording is a
 technical requirement rather than an optional stylistic choice. The ORCID,

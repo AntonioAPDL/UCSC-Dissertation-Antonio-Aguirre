@@ -1,11 +1,28 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-09-15",
   "chapter": "ch04-qdesn",
+  "baseline": {
+    "id": "manuscript-first-20260915",
+    "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
+    "merged_commit": "5def110d009545551e89b7efc9746c61122e8918",
+    "destination_hash_field": "destination_sha256",
+    "meaning": "Immutable hash of each destination at the initial structural-conversion baseline"
+  },
+  "editorial_derivative": {
+    "chapter_path": "chapters/04-research-c.tex",
+    "revision_ledger": "docs/revision-ledger.json",
+    "status": "BASELINE_UNREVISED"
+  },
+  "distribution": {
+    "github": "MERGED_TO_MAIN",
+    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+    "rights_effect": "NONE"
+  },
   "policy": {
     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
     "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
-    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+    "rights": "material-specific reuse permission remains unverified; recorded distribution does not establish publication or submission clearance"
   },
   "documents": [
     {
@@ -13,7 +30,7 @@
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "main.tex",
       "source_sha256": "99e10d9755fc97dc0ce995bf7285ee6c00c197341e8cda7a5c2483cb6e8d31c4",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All main scientific sections integrated; article wrapper removed.",
       "section_dispositions": [
         {
@@ -55,7 +72,7 @@
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "qdesn-supplement.tex",
       "source_sha256": "658eeb87924e6bb08923898e7773ddc9a20e1efb87d65808ca9896e29593fe8c",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All technical and empirical support sections integrated topically; only supplement-navigation prose omitted.",
       "section_dispositions": [
         {
@@ -114,7 +131,7 @@
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "gaussian_desn_scaled_ridge_supplement.tex",
       "source_sha256": "1c3d08ec2c50ac854d76b6f3af18c2635b5a8c21450898018f78e741c544072c",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All Gaussian-baseline and initialization sections integrated before Q--DESN computation.",
       "section_dispositions": [
         {
@@ -183,7 +200,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -204,7 +221,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -225,7 +242,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -246,7 +263,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -267,7 +284,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -288,7 +305,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -309,7 +326,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -330,7 +347,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -351,7 +368,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -372,7 +389,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -393,7 +410,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -414,7 +431,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -435,7 +452,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -456,7 +473,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -477,7 +494,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -498,7 +515,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -519,7 +536,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -540,7 +557,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -561,7 +578,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -582,7 +599,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -603,7 +620,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -624,7 +641,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -645,7 +662,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -666,7 +683,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -687,7 +704,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -708,7 +725,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -729,7 +746,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -750,7 +767,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -771,7 +788,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -792,7 +809,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -813,7 +830,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -834,7 +851,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -855,7 +872,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -876,7 +893,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -897,7 +914,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -918,7 +935,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -939,7 +956,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -960,7 +977,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -981,7 +998,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1002,7 +1019,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1023,7 +1040,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1044,7 +1061,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1065,7 +1082,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1086,7 +1103,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1107,7 +1124,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1128,7 +1145,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -1149,7 +1166,7 @@
         "ART-QDESN-005",
         "ART-QDESN-008"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     }
   ]

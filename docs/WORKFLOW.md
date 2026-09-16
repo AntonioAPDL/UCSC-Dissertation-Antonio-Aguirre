@@ -2,9 +2,11 @@
 
 Verified against linked official documentation on 2026-09-15. The existing
 GitHub repository and muscat Remote-SSH workspace were audited separately in
-`SETUP-AUDIT.md`; Overleaf account linking, project linkage and compilation
-have not been performed. Commands below retain placeholders only where the
-future handoff must supply an actual branch, source path or reviewed file.
+`SETUP-AUDIT.md`. The conversion is present on GitHub `main`, and on 2026-09-16
+the author reported that the GitHub-to-Overleaf handoff worked. No Overleaf
+build log or artifact was independently inspected, so compiler/version and
+rendering equivalence remain unverified. Commands below retain placeholders
+where a later handoff must supply an actual branch or reviewed file.
 
 ## 1. Establish the Overleaf side once
 

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-16",
+  "baseline": {
+    "id": "manuscript-first-20260915",
+    "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
+    "merged_commit": "5def110d009545551e89b7efc9746c61122e8918",
+    "description": "Immutable structural-conversion baseline. Source and destination hashes remain in docs/imports/*.json."
+  },
+  "policy": {
+    "current_derivatives_are_editable": true,
+    "baseline_hashes_are_immutable": true,
+    "hash_rule": "An edited derivative must record its current SHA-256 and at least one revision ID; matching the baseline does not require a revision.",
+    "rights_rule": "Editorial revision and distribution state do not establish material-specific reuse permission."
+  },
+  "artifacts": [
+    {
+      "path": "chapters/02-research-a.tex",
+      "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
+      "current_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
+      "state": "BASELINE_UNREVISED",
+      "revision_ids": []
+    },
+    {
+      "path": "chapters/03-research-b.tex",
+      "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
+      "current_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
+      "state": "BASELINE_UNREVISED",
+      "revision_ids": []
+    },
+    {
+      "path": "chapters/04-research-c.tex",
+      "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
+      "current_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
+      "state": "BASELINE_UNREVISED",
+      "revision_ids": []
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "current_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "state": "BASELINE_UNREVISED",
+      "revision_ids": []
+    },
+    {
+      "path": "references.bib",
+      "baseline_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
+      "current_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
+      "state": "BASELINE_UNREVISED",
+      "revision_ids": []
+    }
+  ],
+  "revisions": []
+}

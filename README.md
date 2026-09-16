@@ -32,19 +32,27 @@ machine.
 
 ## Manuscript conversion
 
-Research Chapters 2--5 are local manuscript-first structural conversions at
+Research Chapters 2--5 began as manuscript-first structural conversions at
 the immutable source commits in source-manifest.json. Main article prose is
 the initial baseline; selected supporting proofs, derivations, algorithms,
 diagnostics, tables, and figures are integrated into the chapter bodies. Code,
 data, fitted objects, computation, source histories, and full output archives
-remain external. Imported text and assets are not cleared for external reuse.
+remain external. The conversion is on GitHub, and the author reports an
+Overleaf handoff; material-specific permission for final reuse remains
+unverified and is tracked separately from distribution state.
 
-Routine thesis builds need only this checkout. To regenerate the conversion
-from the retained exact-commit audit clones, run:
+Routine thesis builds need only this checkout. The importer is check-only by
+default so later dissertation edits cannot be overwritten:
 
     python3.11 scripts/import_manuscripts.py --audit-root /PATH/TO/AUDIT-CLONES
     python3.11 scripts/validate_manuscript_imports.py \
       --audit-root /PATH/TO/AUDIT-CLONES
+
+Baseline regeneration is intentionally restricted to an explicit
+`--regenerate-baseline` invocation from a clean dedicated `regenerate/*`
+branch whose destinations still match the immutable baseline. Editorial
+derivatives and their current hashes are recorded in
+`docs/revision-ledger.json`.
 
 The validator may also run without --audit-root; that checks the local
 manifests, destinations, citations, labels, dependencies, paths, and file
