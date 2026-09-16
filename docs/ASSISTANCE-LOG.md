@@ -160,3 +160,15 @@ the audited snapshot has no matching implementation or validation. The chapter
 validation tier and systematic rendered-page inspection passed. No research
 repository, code, data, simulation, model fit, or application computation was
 changed or rerun.
+
+2026-09-16: AI assistance completed the cross-chapter statistical-prose and
+typography pass for Chapters 2--5. It replaced blanket small-type rules with
+display-specific choices, restored most Q--DESN equations to the dissertation
+text size, line-broke formulas identified by TeX diagnostics, and tightened
+isolated claims about approximation, scalability, and empirical evidence. It
+also restored the Chapter 5 manifest's immutable baseline hash after detecting
+that an earlier chapter edit had incorrectly copied a derivative hash into the
+baseline field. Fast and chapter validation passed against the retained audit
+root, and eight affected pages were rendered and inspected. No statistical
+result, source repository, research code, data, simulation, or model fit was
+changed or rerun; no Overleaf build or synchronization was performed.

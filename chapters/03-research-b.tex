@@ -15,7 +15,7 @@ Operational hydrological forecasts are commonly produced with conceptual or phys
 
 This setting is closely related to forecast combination and statistical post-processing, where multiple predictive sources are combined to improve calibration and sharpness \citep{env-siegert2019forecast,env-vannitsem,env-wang2022forecastcombinations50yearreview}. Bayesian formulations provide a coherent way to propagate uncertainty and update predictions as new information becomes available \citep{env-duan2006bma,env-yumnam2022quantile,env-aastveit2022quantifying,env-du2018ensemble_forecasting,env-doubleday,env-kleiber2011geostatistical,env-mcalinn2019dynamic,env-tallman2024bayesian,env-johnson2023bayesian}. Our focus is on a quantile-based version of this problem because river-flow forecasts must remain informative in both routine and extreme conditions.
 
-We develop a Bayesian quantile-based correction-and-synthesis framework for river flow forecasts. The framework builds on Dynamic Quantile Linear Models (DQLMs) \citep{env-goncalves,env-gourieroux2008dqlm,exd-me} and has three main components. First, we extend posterior inference for the model using scalable variational Bayes methods for the extended dynamic quantile linear model, following the Laplace--Delta strategy of \citet{exd-wang2013nonconjugatevb}. Second, we use retrospective products to learn dynamic discrepancies relative to U.S. Geological Survey (USGS) observations and propagate those discrepancies into the forecast period. Third, we synthesize the resulting quantile-specific predictive distributions into one predictive distribution for the river flow process.
+We develop a Bayesian quantile-based correction-and-synthesis framework for river flow forecasts. The framework builds on Dynamic Quantile Linear Models (DQLMs) \citep{env-goncalves,env-gourieroux2008dqlm,exd-me} and has three main components. First, we extend approximate posterior inference for the model using variational Bayes methods for the extended dynamic quantile linear model, following the Laplace--Delta strategy of \citet{exd-wang2013nonconjugatevb}. Second, we use retrospective products to learn dynamic discrepancies relative to U.S. Geological Survey (USGS) observations and propagate those discrepancies into the forecast period. Third, we synthesize the resulting quantile-specific predictive distributions into one predictive distribution for the river flow process.
 
 We study this framework using daily river flow for the San Lorenzo River in California, together with retrospective and forecast products from the European Centre for Medium-Range Weather Forecasts (ECMWF) Global Flood Awareness System (GloFAS) and the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS). These products are operationally useful but not directly exchangeable: they differ in horizon, update frequency, spatial support, and uncertainty representation, so a statistical synthesis must account for those differences rather than treat the inputs as homogeneous. Figure~\ref{env:fig:ensembles} illustrates the information structure at one representative rolling-origin cutoff, December 25, 2022: before the cutoff, observations and retrospective products are available for discrepancy learning; after the cutoff, issued forecast ensembles provide source-specific information about future flow. The empirical focus is forecasting performance and uncertainty quantification across multiple quantile levels, rather than only historical fit or methodological development in isolation. Although the application is hydrological, the same structure is relevant in other settings where observations, retrospective products, and forecast products all play distinct roles.
 
@@ -231,6 +231,7 @@ The integrated algorithms use the same state-space notation as Subsection~\ref{e
 
 \begin{algorithmblock}{MCMC Algorithm}
 \label{env:alg1}
+\begingroup\scriptsize
 \begin{algorithmic}
 
 \STATE \textbf{Notation:}
@@ -256,7 +257,10 @@ A^j = A(\gamma^j;p_0), \quad B^j = B(\gamma^j;p_0), \quad C^j = C(\gamma^j;p_0),
             \STATE Sample $(v^j_{T+k})^{(n)} \sim \mathcal{GIG}(a^j_{T+k}, b^j_{T+k}, c^j_{T+k})$
             \STATE $a^j_{T+k} = \frac{1}{2}$
             \STATE $b^j_{T+k} = \frac{1}{(\sigma^j)^{(n-1)}}\left[ \frac{((A^j)^2)^{(n-1)}}{(B^j)^{(n-1)}}+2\right]$
-            \STATE $c^j_{T+k} = \frac{1}{(\sigma^j)^{(n-1)} (B^j)^{(n-1)}}\left[y_{T+k}^j -\mathbf{e}_{T+k,j}' \boldsymbol{\eta}^{(n)}_{T+k} -(C^j)^{(n-1)} (\sigma^j)^{(n-1)} |(\gamma^j)^{(n-1)}| (s^j_{T+k})^{(n-1)} \right]^2$
+            \STATE $r^j_{T+k}=y_{T+k}^j-\mathbf{e}_{T+k,j}'\boldsymbol{\eta}^{(n)}_{T+k}
+            -(C^j)^{(n-1)}(\sigma^j)^{(n-1)}|(\gamma^j)^{(n-1)}|(s^j_{T+k})^{(n-1)}$
+            \STATE $c^j_{T+k}=\{r^j_{T+k}\}^2/
+            \{(\sigma^j)^{(n-1)}(B^j)^{(n-1)}\}$
         \ENDFOR
         \ENDIF
 
@@ -279,10 +283,12 @@ A^j = A(\gamma^j;p_0), \quad B^j = B(\gamma^j;p_0), \quad C^j = C(\gamma^j;p_0),
 \ENDFOR
 
 \end{algorithmic}
+\endgroup
 \end{algorithmblock}
 
 \begin{algorithmblock}{MCMC - Forward Filtering Backward Sampling (FFBS)}
 \label{env:alg:Alg2}
+\begingroup\scriptsize
 \begin{algorithmic}
 
 \STATE \textbf{Notation:}
@@ -325,6 +331,7 @@ s^j_t  \big] , \quad \mathbf{\sigma} = \big[ \sigma^j  \big]
 \ENDFOR
 
 \end{algorithmic}
+\endgroup
 \end{algorithmblock}
 
  \clearpage
@@ -333,6 +340,7 @@ s^j_t  \big] , \quad \mathbf{\sigma} = \big[ \sigma^j  \big]
 
 \begin{algorithmblock}{Variational Bayes (VB) Algorithm}
 \label{env:alg:Alg3}
+\begingroup\scriptsize
 \begin{algorithmic}
 
 \STATE \textbf{Notation:}
@@ -375,10 +383,12 @@ A^j = A(\gamma^j;p_0), \quad B^j = B(\gamma^j;p_0), \quad C^j = C(\gamma^j;p_0),
 \ENDWHILE
 
 \end{algorithmic}
+\endgroup
 \end{algorithmblock}
 
 \begin{algorithmblock}{VB-Filtering and VB-Smoothing}
 \label{env:alg:Alg4}
+\begingroup\scriptsize
 \begin{algorithmic}
 
 \STATE \textbf{Notation:}
@@ -387,8 +397,9 @@ A^j = A(\gamma^j;p_0), \quad B^j = B(\gamma^j;p_0), \quad C^j = C(\gamma^j;p_0),
 \STATE  Equivalently, let \(y_t^0 \equiv y_t^o\) and \(y_t^j \equiv z_t^j\) for \(j\in\mathcal{J}\). This algorithm is the variational analogue of Algorithm~\ref{env:alg:Alg2}.
 \STATE $\mathbf{M}_t= \mathbf{C} \odot  \mathbf{\sigma} \odot | \mathbf{\gamma} | \odot \mathbf{s}_t + \mathbf{A} \odot \mathbf{v}_t$, \quad $\mathbf{O}_t= \sqrt{\mathbf{B} \odot \mathbf{v}_t} \odot Diag
 (\mathbf{\sigma}) \sqrt{\mathbf{B} \odot \mathbf{v}_t} \odot \mathbf{\sigma}$
-\STATE  \(
-\mathbf{A} = \big[ \left\langle A(\gamma^j;p_0)  \right\rangle \big], \quad \mathbf{B} = \big[ \left\langle B(\gamma^j;p_0)  \right\rangle \big], \quad \mathbf{C} = \big[ \left\langle C(\gamma^j;p_0)  \right\rangle \big] \), \text{ as defined in Subsection~\ref{env:subsec:exal}}
+\STATE \(\mathbf{A}=\big[\left\langle A(\gamma^j;p_0)\right\rangle\big]\),
+\STATE \(\mathbf{B}=\big[\left\langle B(\gamma^j;p_0)\right\rangle\big]\), and
+\STATE \(\mathbf{C}=\big[\left\langle C(\gamma^j;p_0)\right\rangle\big]\), as defined in Subsection~\ref{env:subsec:exal}.
 \STATE \( \mathbf{v}_t = \big[ \left\langle v^j_t  \right\rangle \big], \quad  \mathbf{s}_t = \big[ \left\langle
 s^j_t  \right\rangle \big] , \quad \mathbf{\sigma} = \big[ \left\langle \sigma^j  \right\rangle \big]
 \)
@@ -425,6 +436,7 @@ s^j_t  \right\rangle \big] , \quad \mathbf{\sigma} = \big[ \left\langle \sigma^j
 
 
 \end{algorithmic}
+\endgroup
 \end{algorithmblock}
 
 
@@ -715,7 +727,7 @@ have the same meanings as in Figure~\ref{env:fig:synthsupport_20210123}.
 \section{Chapter summary and limitations}
 \label{env:sec5}
 
-We developed a Bayesian quantile-based correction-and-synthesis framework for river-flow forecasting that links USGS observations, retrospective products, and forecast products through a shared latent quantile process. The framework combines source-specific discrepancy learning over the pre-cutoff observation window with a forecast-window synthesis step that propagates discrepancy corrections learned from retrospective products together with forecast-window transfer covariates. Variational Bayes based on Laplace--Delta approximations provides a scalable alternative to full MCMC for fitting the extended dynamic quantile linear model.
+We developed a Bayesian quantile-based correction-and-synthesis framework for river-flow forecasting that links USGS observations, retrospective products, and forecast products through a shared latent quantile process. The framework combines source-specific discrepancy learning over the pre-cutoff observation window with a forecast-window synthesis step that propagates discrepancy corrections learned from retrospective products together with forecast-window transfer covariates. Variational Bayes based on Laplace--Delta approximations provides a lower-cost approximate alternative to full MCMC for fitting the extended dynamic quantile linear model.
 
 In the San Lorenzo River application, the main empirical result is the five-cutoff rolling-origin forecast comparison based on the latest forecast products available at each cutoff. Relative to simpler Bayesian variants, the multivariate specifications with an active forecast-window transfer component provide the strongest performance in the 28-day synthesis comparison. The selected exAL-M-T1 specification attains the lowest 28-day forecast-window CRPS in all five cutoffs. A separate eight-day NWS-horizon table preserves the direct operational comparison to NWS without mixing forecast horizons. Taken together, the results support the value of source-aware multivariate correction for the 28-day forecast window, while the shorter NWS-horizon comparison shows that gains are not uniform across every origin and horizon.
 

@@ -260,3 +260,28 @@ integration and rendering. It does not supply the open action-matched TCSP
 proof, rerun any simulation or application analysis, or establish an
 implementation or empirical performance result for the proposed MTI
 extensions.
+
+## 2026-09-16 cross-chapter prose and typography validation
+
+The Chapter 2--5 global pass removed preamble-wide small-type rules for tables
+and algorithms and replaced Chapter 4's blanket equation compression with
+case-specific layout. The API reference, four long Chapter 3 algorithms,
+reservoir-design table, and tolerance-validation table retain locally justified
+compact type. Wide equations were instead split across lines; only the DESN
+state recursion retains a local `small` setting.
+
+The chapter validation tier passed under Python 3.11 against the retained
+fixed-commit audit root. It rechecked 102 immutable source blobs, 398 unique
+labels, and all 118 cited keys. The final pdfLaTeX pass produced 323 US Letter
+pages and 18,014,949 bytes, with no undefined citations or references,
+duplicate labels, missing files, oversized floats, pdfTeX destination warnings,
+or overfull boxes. Thirty-nine underfull-box notices, the known legacy-class
+caption warning, and one automatic `!h`-to-`!ht` adjustment remain. PDF
+SHA-256: `ac53dddd1bf1765a08be027cfa813c5dcccc627958556c0bb3ef237a4c68c5f9`.
+
+Rendered pages for the Chapter 2 API table, Chapter 3 MCMC algorithm, Chapter 4
+reservoir table and DESN recursion, finite-grid scoring equations, error-model
+discussion, weighted augmented likelihood, and Chapter 5 tolerance-validation
+table were inspected. Text, equations, and tables were legible with no visible
+clipping or collisions. This validates document layout and integration; no
+research computation or Overleaf build was performed.

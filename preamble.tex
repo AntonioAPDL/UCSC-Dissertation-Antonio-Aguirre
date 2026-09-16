@@ -44,12 +44,12 @@
 \captionsetup{singlelinecheck=false,justification=justified}
 % Article floats were designed for single-spaced journal pages.  Keep tables,
 % figures, and algorithms single-spaced inside the otherwise double-spaced
-% dissertation, as permitted exceptions, so their original displays fit the
-% thesis page without globally shrinking body text.
-\AtBeginEnvironment{table}{\singlespacing\scriptsize}
+% dissertation, as permitted exceptions.  Font size is selected locally for
+% each display rather than imposed on every table or algorithm.
+\AtBeginEnvironment{table}{\singlespacing}
 \AtBeginEnvironment{figure}{\singlespacing}
 \AtBeginEnvironment{algorithm}{\singlespacing}
-\AtBeginEnvironment{algorithmic}{\singlespacing\scriptsize}
+\AtBeginEnvironment{algorithmic}{\singlespacing\small}
 \AtBeginEnvironment{longtable}{\singlespacing}
 \setlength{\emergencystretch}{2em}
 \allowdisplaybreaks
@@ -90,7 +90,7 @@
 \providecommand{\figalt}[1]{}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \providecommand{\tworowcell}[1]{\smash{\raisebox{-0.5\normalbaselineskip}{#1}}}
-\providecommand{\TableStyle}{\scriptsize\setlength{\tabcolsep}{4pt}%
+\providecommand{\TableStyle}{\small\setlength{\tabcolsep}{4pt}%
   \renewcommand{\arraystretch}{1.08}}
 \providecommand{\CompactTableStyle}{\scriptsize\setlength{\tabcolsep}{2.3pt}%
   \renewcommand{\arraystretch}{1.0}}

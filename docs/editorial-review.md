@@ -313,3 +313,32 @@ scale-asymmetry assessments. The GloFAS joint AL result is described as
 cap-stabilized rather than strictly converged. The PriceFM comparison remains
 heterogeneous: Q--DESN has lower AQL in 54 of 114 region--fold cases, PriceFM
 in 60, with means 7.217 and 7.039, respectively.
+
+## Phase 4 cross-chapter review result
+
+The paragraph-level scan found few remaining promotional markers after the
+chapter revisions. Uses that name established statistical concepts, such as
+robust regression, were retained. Generic claims were replaced with the exact
+operation or evidentiary scope: Chapter 3 now calls VB a lower-cost approximate
+alternative to MCMC, and Chapter 4 describes what its fixed simulation and
+retrospective studies document rather than treating them as general
+demonstrations of performance. Collective authorship language and all negative
+or limited findings were retained.
+
+Typography is now selected by display. Tables and algorithms remain single
+spaced, but the preamble no longer forces all of them to `scriptsize`.
+Ordinary retained tables use `small`; the long Chapter 2 API reference,
+Chapter 3 algorithms, reservoir-design table, and Chapter 5 tolerance table
+use the compact style because normal type caused measured overflow or an
+oversized float. Thirty-six Chapter 4 equation groups were restored from
+blanket `scriptsize`; the DESN recursion alone uses local `small`, and the other
+wide equations were split across aligned lines. The final TeX log reports zero
+overfull boxes and zero oversized floats. The case-specific pages listed in
+`VALIDATION.md` were rendered and inspected.
+
+No notation was globally replaced where the chapters define different targets.
+The controlling distinctions remain explicit: working versus ordinary
+likelihoods, exact posterior simulation versus VB approximation, parameter or
+endpoint uncertainty versus response prediction, and empirical tolerance
+attainment versus a finite-sample guarantee. Chapters 2--5 are stable inputs
+for the dissertation introduction, synthesis, and abstract.
