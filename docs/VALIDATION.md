@@ -285,3 +285,41 @@ discussion, weighted augmented likelihood, and Chapter 5 tolerance-validation
 table were inspected. Text, equations, and tables were legible with no visible
 clipping or collisions. This validates document layout and integration; no
 research computation or Overleaf build was performed.
+
+## 2026-09-16 dissertation-framing validation
+
+The Chapter 1, Chapter 6, and global-abstract pass completed the substantive
+dissertation framing. The abstract contains approximately 319 words, within the
+350-word indexing recommendation documented in `REQUIREMENTS-REPORT.md`. The
+introduction defines the common target/update/evidence framework and the
+synthesis compares all four projects without strengthening their mathematical
+or empirical claims.
+
+Fast and chapter validation passed under Python 3.11 against the retained
+fixed-commit audit root. The final chapter-tier build produced a 345-page US
+Letter PDF of 18,147,184 bytes with SHA-256
+`a568e8fc4cc954adb08e16921e3eb9979b2bf8431542ce9c95c0af8caf37fffe`.
+The log contains no undefined citation or reference, duplicate label, missing
+file, oversized float, pdfTeX destination warning, or overfull box. Forty-one
+underfull-box notices, the known legacy-class caption warning, and one automatic
+`!h`-to-`!ht` adjustment remain.
+
+The first build exposed one inherited Type 3 DejaVuSans font inside the PriceFM
+regional-comparison source PDF. The source asset was preserved byte-for-byte;
+a Ghostscript `pdfwrite` derivative converts only its plot lettering to vector
+outlines. The source and derivative hashes and transformation are recorded in
+`display-ledger.json`. An all-page `pdffonts` audit of the rebuilt dissertation
+finds no Type 3 or Type 0 font, and all remaining reported fonts are embedded.
+Rendered comparison confirmed that the plotted points, labels, legend, and
+caption remain legible and visually unchanged.
+
+The two abstract pages; Chapter 1 opening, interval-object table, contribution
+boundary, and transition to Chapter 2; Chapter 6 opening, synthesis table,
+principal findings, future-work section, concluding page, and transition to the
+bibliography; and the font-safe PriceFM page were rasterized and inspected.
+No clipping, collision, margin violation, or illegible display was observed.
+The working title and approval metadata remain unresolved, the acknowledgments
+remain an author task, and `\StarterDrafttrue` therefore remains active. This
+validation does not establish coauthor or publisher reuse permission,
+candidate-specific role allocation, committee approval, research-computation
+reproduction, an Overleaf build, or filing readiness.

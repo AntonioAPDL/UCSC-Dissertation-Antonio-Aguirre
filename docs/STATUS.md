@@ -7,9 +7,11 @@ the GitHub-to-Overleaf handoff worked. No Overleaf build log or artifact has
 been independently inspected. Material-specific reuse permission remains
 unverified and is not implied by that distribution event. The read-only
 scholarly audit and the scientific/editorial revision of Chapters 2--5 are
-complete. Chapter-sized changes are merged through Chapter 5 at
-`5d08241`; the global typography and prose pass is complete locally and is the
-current review unit. Dissertation-level framing is next.
+complete and merged through the global prose/typography pass at `2310613`.
+The substantive dissertation introduction, synthesis, and 319-word abstract
+are complete on the current framing branch. Their chapter-tier build and
+rendered-page review pass; release validation and the final GitHub handoff are
+the current review unit.
 
 ## Completed
 
@@ -90,6 +92,20 @@ current review unit. Dissertation-level framing is next.
   retain locally justified compact sizing. Wide formulas were line-broken.
   The 323-page milestone build has no overfull boxes or oversized floats, and
   targeted rendered-page inspection found no clipping or collisions.
+- Replaced the Chapter 1, Chapter 6, and abstract placeholders with a target-
+  first common framework, an evidence-bounded comparison of all four projects,
+  and a 319-word global abstract. The framing preserves the distinctions among
+  conditional quantiles, synthesized response distributions, loss-defined
+  endpoints, and tolerance actions; it also retains collective attribution and
+  the documented negative or mixed empirical findings.
+- Added a compact pre-submission authorship/version/reuse matrix to
+  `research-decisions.md`. Granular individual roles, exact publication status,
+  coauthor/publisher permissions, and committee acceptance of the software
+  chapter remain explicit confirmations rather than inferred facts.
+- Corrected the only Type 3 font found in the assembled dissertation. The
+  immutable PriceFM source figure remains preserved; the thesis uses a recorded
+  vector-outline derivative with identical plotted content. The full PDF font
+  audit now finds no Type 3 or Type 0 fonts.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -139,8 +155,10 @@ combined until the extensions gain independent implementation and evidence.
 - The conversion intentionally retains article-style prose, repeated background,
   and some “paper” signposting. These are Phase-2 editorial issues, not reasons
   to reconstruct the chapters from scratch.
-- The introduction, dissertation-wide synthesis, abstract, final title,
-  committee fields, and administrative dates remain placeholders.
+- The final title, committee fields, dean wording, conferral date, ORCID,
+  acknowledgments, granular contribution statements, publication status, and
+  material-specific reuse permissions remain unresolved. The substantive
+  abstract, introduction, and synthesis are no longer placeholders.
 
 ## Validation boundary
 

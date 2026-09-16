@@ -1,9 +1,327 @@
 \chapter{Synthesis, limitations and future work}
 \label{ch:synthesis}
-\TODO{Compare the four project contributions by target, dependence
-representation, computation, calibration evidence and reproducibility.
-Distinguish software workflows, fitted quantiles, synthesized predictive
-distributions, loss-defined endpoint functionals and tolerance actions.}
-\TODO{Do not promote empirical findings into general guarantees or unfinished
-work into results. This chapter is not a substitute for an independently
-justified research chapter.}
+
+\section{A target-first synthesis}
+\label{sec:synthesis-target-first}
+
+The four research chapters approach distributional inference from different
+directions. Chapter~\ref{ch:research-a} makes dynamic quantile methodology
+usable through a software and computational workflow. Chapter
+\ref{ch:research-b} uses that framework to correct and synthesize heterogeneous
+hydrologic products. Chapter~\ref{ch:research-c} replaces linear state
+evolution for the quantile location with fixed nonlinear recurrent features.
+Chapter~\ref{ch:research-d} changes the inferential object from pointwise
+conditional quantiles to fixed-content interval placement and tolerance
+actions. These are linked contributions, but they are not four implementations
+of one model.
+
+Table~\ref{tab:synthesis-comparison} compares the projects along the dimensions
+that determine their statistical interpretations. The target and update
+columns are especially important. Chapters~\ref{ch:research-a}--
+\ref{ch:research-c} use AL or exAL likelihood contributions to study
+conditional quantiles and, in selected analyses, synthesized future-response
+distributions. Chapter~\ref{ch:research-d} uses a residual-product loss to
+define interval endpoints and a separate repeated-sampling calibration to
+construct a tolerance action. A common latent-variable algebra does not erase
+this difference.
+
+\begin{table}[htbp]
+\centering
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}p{0.14\textwidth}YYYY@{}}
+\toprule
+\textbf{Chapter} & \textbf{Primary target} & \textbf{Dependence representation}
+& \textbf{Update and computation} & \textbf{Principal evidence} \\
+\midrule
+2: \pkg{exdqlm} & Dynamic or static conditional quantile; post-fit predictive
+synthesis & Linear latent states, transfer components, or static regression &
+AL/exAL likelihood; MCMC, LDVB, and ISVB interfaces & Software examples,
+diagnostics, held-out scores, and exact version contract \\
+3: hydrology & Source-corrected conditional quantiles and a synthesized
+future-response distribution & Shared latent quantile process with source-
+specific discrepancies and transfer covariates & exAL dynamic model with LDVB
+and supporting MCMC algorithms & Five forecast origins; separate 28-day and
+common 8-day comparisons \\
+4: Q--DESN & Single or joint conditional quantiles & Fixed deep-reservoir
+features followed by Bayesian regression & AL/exAL working likelihood; MCMC
+and model-specific VB--LD & Known-DGP simulations and retrospective GloFAS and
+PriceFM applications \\
+5: MTI & Fixed-content interval placement; calibrated empirical tolerance
+action & Static endpoints or proposed regression and dynamic endpoint states &
+Generalized Bayes for fixed targets; numerical scan calibration for TCSP &
+Population results, simulation validation, and a descriptive pharmaceutical
+application \\
+\bottomrule
+\end{tabularx}
+\endgroup
+\caption{Comparison of the four research chapters. The entries identify the
+main inferential object and the strongest evidence available; they do not imply
+that the validation designs are interchangeable.}
+\label{tab:synthesis-comparison}
+\end{table}
+
+Three connections emerge from this comparison. First, distributional targets
+can be modeled without committing every analysis to a complete parametric
+response distribution. The quantile chapters target selected conditional
+features, while the MTI chapter begins from the geometry of a fixed-content
+interval. Second, temporal structure can enter through a latent linear state,
+a fixed nonlinear recurrent feature map, or evolving endpoint functions. The
+interpretation of the state depends on the target it indexes. Third,
+computational tractability is achieved by exposing conditionally Gaussian
+structure, but posterior simulation, variational approximation, and
+generalized-posterior computation retain different inferential meanings.
+
+\section{What the four projects establish}
+\label{sec:synthesis-findings}
+
+\subsection{From methodology to a usable dynamic quantile workflow}
+
+Chapter~\ref{ch:research-a} shows how exAL and exDQLM foundations can be
+organized as a coherent analysis workflow. The \pkg{exdqlm} interface connects
+model construction, posterior computation, state and component summaries,
+forecasting, calibration diagnostics, predictive scoring, and post-fit
+quantile synthesis. Its examples establish functionality across dynamic and
+static analyses rather than a universal predictive advantage. The Big Tree
+study, for example, gives mixed fitted and held-out comparisons among the
+baseline, direct-regression, and transfer specifications. The static sparse
+example likewise shows the intended computational tradeoff: LDVB is faster in
+the reported fits, whereas MCMC gives the smaller held-out quantile error in
+all three quantile-specific comparisons and remains the reference when tail or
+interval behavior is central.
+
+The chapter also makes provenance part of the statistical contract. The
+hydrologic application uses the recorded version 1.1.0 interface, the software
+article is fixed to 1.1.1, and the later 1.1.2 repository state is retained as
+a support snapshot rather than substituted retroactively. This version
+separation is necessary because a package name alone does not identify the
+algorithm, default, or fitted object used in an analysis.
+
+\subsection{Source-aware hydrologic synthesis}
+
+Chapter~\ref{ch:research-b} provides the most direct link between the software
+and an applied forecasting problem. Its principal empirical finding is that the
+selected multivariate exAL specification with an active forecast-window
+transfer component attains the lowest 28-day CRPS among the compared Bayesian
+variants at each of the five retained origins. The shorter common eight-day
+comparison against NWS products is deliberately reported separately and gives
+more heterogeneous results. Thus the evidence supports source-aware correction
+and synthesis in the studied 28-day design without implying improvement over
+every comparator at every horizon.
+
+This application also clarifies what heterogeneous-source modeling requires.
+Observations, retrospective products, issued ensembles, and exogenous forecast
+summaries have different temporal supports and roles. Treating them as named
+source channels allows discrepancies learned before an origin to be propagated
+into a forecast-window analysis. It does not remove uncertainty about the
+inputs themselves: the future precipitation and soil-water ensembles enter
+through deterministic summaries in the current implementation. A fuller
+operational analysis would have to propagate that uncertainty and evaluate many
+more version-consistent origins.
+
+\subsection{Nonlinear recurrent features for conditional quantiles}
+
+Chapter~\ref{ch:research-c} shows that a fixed deep echo-state reservoir can
+serve as a nonlinear design for Bayesian conditional-quantile regression. The
+single-level models allow AL or exAL working likelihoods and shrinkage priors;
+the joint formulation shares information across an ordered quantile grid
+through shrinkage on adjacent coefficient differences. The joint prior can
+reduce crossing but does not impose monotonicity, so crossing diagnostics and
+post-fit monotone correction retain an explicit role.
+
+The simulations document recovery and forecasting under stated data-generating
+mechanisms and selected reservoirs. They do not integrate uncertainty over
+reservoir seeds or provide a universal MCMC--VB approximation comparison. The
+retrospective applications add two distinct forms of evidence. The GloFAS
+analysis produced an ordered issued-window grid with the reported empirical
+coverage at one origin, but it used retrospectively observed covariates and the
+fit reached its iteration cap before the strict outer tolerance. The PriceFM
+comparison froze one selected Q--DESN specification per region across three
+held-out folds; its aggregate score is slightly worse than the matched PriceFM
+score, with differences that vary by region and fold. These results demonstrate
+how the method behaves under the recorded protocols while resisting a broad
+ranking from two bounded applications.
+
+\subsection{Fixed-content placement and tolerance inference}
+
+Chapter~\ref{ch:research-d} establishes that fixed probability content leaves
+an interval-placement problem. Under its assumptions, the residual-product
+criterion identifies a mean-preserving interval, and the mean-tilt parameter
+indexes admissible contiguous windows of the prescribed content. Equal-tailed
+and shortest intervals appear as distribution-dependent locations on this
+path rather than as universal choices of one fixed tilt.
+
+The tolerance contribution is intentionally separate from this population
+geometry. TCSP numerically calibrates a retained count from a uniform scan and
+then reports the shortest closed order-statistic window at that count. Across
+the feasible cells of the prespecified simulation panel, the frozen procedure
+shows reliable empirical content attainment and substantially less width
+inflation than full-range Wilks intervals in many settings. That evidence is
+repeated-sampling validation, not the missing exact recursion or a finite-
+sample theorem for the adaptive closed-window action. The pharmaceutical study
+illustrates placement and held-out stability on historical batches; it is not
+a regulatory validation study. The regression and dynamic endpoint sections
+extend the target algebra, but without matching software and experiments they
+remain proposed methods.
+
+\section{Cross-cutting lessons}
+\label{sec:synthesis-lessons}
+
+\subsection{The target determines the meaning of uncertainty}
+
+The most general conclusion is that uncertainty cannot be interpreted from
+computational form alone. In the dynamic quantile chapters, posterior draws may
+describe model parameters, latent quantile states, or future responses after a
+defined predictive step. In the MTI chapter, generalized-posterior draws
+describe endpoints for a fixed loss-defined target. A tolerance statement adds
+a repeated-sampling guarantee for the reported interval rule. Moving between
+these levels requires an explicit probabilistic construction, calibration
+argument, or validation study.
+
+This distinction also governs interval terminology. A credible band for a
+fitted quantile curve is not a predictive band for a future response. A pair of
+quantile estimates does not represent every fixed-content interval target. A
+high posterior probability that selected endpoints have a property does not by
+itself establish tolerance confidence. Keeping these statements separate is
+not merely terminological; it prevents evidence for one object from being used
+to support a different claim.
+
+\subsection{Approximation should be evaluated as part of the method}
+
+All four project lines use computation to expose otherwise difficult targets.
+MCMC provides a reference posterior calculation in several models, while VB or
+LDVB reduces cost by optimizing a restricted family. Gaussian augmentation
+enables state simulation and coefficient updates. Numerical scan calibration
+defines the TCSP action. These devices are substantive parts of the procedures,
+not neutral implementation details.
+
+Consequently, approximation diagnostics must follow the claim. ELBO behavior,
+iteration limits, and comparisons with MCMC assess aspects of variational
+computation. Score and calibration summaries assess fitted or predictive
+behavior. Uniform-scan calibration and independent simulation assess the
+tolerance action. No single diagnostic validates all three levels. The mixed
+results preserved in the research chapters are useful precisely because they
+show where speed, uncertainty, and predictive performance do not move together.
+
+\subsection{Provenance is part of empirical meaning}
+
+The application results depend on source versions, forecast origins, horizon
+definitions, covariate availability, reservoir selections, and evaluation
+protocols. The dissertation therefore records exact manuscript and package
+snapshots and treats the external research repositories as the computational
+authority. Selected tables and figures are readable within the thesis, but
+code, data, fitted objects, and full output archives are not duplicated here.
+
+This separation avoids turning the dissertation into a second, divergent
+research monorepository. It also narrows reproducibility claims. The thesis
+build is self-contained and the imported scientific artifacts have recorded
+source hashes. That establishes document provenance and technical buildability;
+it does not establish bitwise regeneration of every scientific result or grant
+permission to redistribute every source asset outside the approved setting.
+
+\section{Limitations shared across the dissertation}
+\label{sec:synthesis-limitations}
+
+Several limitations recur across project boundaries.
+
+\begin{enumerate}[label=(\arabic*)]
+\item \textit{Working-likelihood calibration.} AL and exAL formulations provide
+tractable conditional-quantile analyses, but posterior spread under
+misspecification requires direct assessment. Sandwich adjustments, learning-
+rate calibration, and other generalized-Bayes corrections remain relevant.
+
+\item \textit{Dependence across quantile levels.} Separate fits plus synthesis
+or rearrangement do not define a joint posterior over quantile-specific
+parameters. The Q--DESN joint formulation shares information but does not
+guarantee noncrossing. Richer joint models must balance coherence, scale, and
+computational cost.
+
+\item \textit{Forecast-design breadth.} The hydrologic study uses five origins,
+and the Q--DESN GloFAS study uses one retrospective origin. The PriceFM design
+uses three folds but depends on region-specific selection and retrospectively
+observed leads. Broader claims require multi-origin studies with input
+information available at each historical forecast origin.
+
+\item \textit{Approximation and feature uncertainty.} The VB methods require
+more systematic calibration against posterior simulation, especially for
+tails and interval widths. The Q--DESN analyses condition on selected fixed
+reservoirs; variability due to reservoir construction and selection is not
+integrated into the reported posterior intervals.
+
+\item \textit{Tolerance theory and endpoint extensions.} The TCSP evidence does
+not yet include an exact action-matched finite-sample proof. Regression and
+dynamic MTI formulations need implementations, numerical diagnostics,
+simulation designs, and target-specific tolerance calibration before empirical
+performance or guarantees can be claimed.
+
+\item \textit{External validity and source stewardship.} Each empirical result
+is tied to a bounded data set and protocol. Final coauthor or publisher reuse
+review remains separate from scientific validity, and granular individual
+contribution allocations remain to be confirmed before final submission.
+\end{enumerate}
+
+These limitations do not collapse the four contributions into an unfinished
+program. They identify the boundary between what the completed studies support
+and what a subsequent study would need to establish.
+
+\section{Directions for future research}
+\label{sec:synthesis-future}
+
+One direction is a joint dynamic framework that combines source-aware
+discrepancy correction, nonlinear recurrent features, and coherent dependence
+across quantile levels. Such a model should be judged against simpler separate-
+quantile fits, include hard or probabilistic monotonicity controls, and report
+the computational cost of the joint structure. Sparse precision methods and
+targeted covariance calculations would be important for scalable MCMC and VB.
+
+A second direction is calibration under working likelihoods. Direct comparison
+of posterior intervals with repeated-sampling quantile coverage could clarify
+when AL or exAL posterior spread is adequate and when sandwich or learning-rate
+adjustment is needed. For variational inference, controlled paired fits using
+the same model specification would separate approximation error from model-
+selection differences.
+
+A third direction is operational hydrologic evaluation. Version-consistent
+forecast-origin archives would support a dense hindcast, and a hierarchical
+model for future precipitation and soil-water ensembles would propagate
+exogenous uncertainty rather than condition on summaries. Spatial coupling
+across gauges or basins could then test whether source-specific discrepancy
+learning transfers beyond a single site.
+
+A fourth direction is a complete inferential theory for adaptive fixed-content
+interval actions. For TCSP, this includes an exact scan calculation or a proof
+matched to the closed-window rule. For conditional and dynamic intervals, it
+requires distinguishing estimation of a loss-defined endpoint function from
+content calibration and repeated-sampling tolerance confidence. Implementing
+the proposed MTI regression and state-space algorithms is therefore only the
+first step; each target needs a corresponding simulation and diagnostic design.
+
+Finally, the software and provenance work suggests a methodological practice
+for collaborative statistical research: versions, inferential targets, and
+evidence levels should be recorded together. A reproducible command can still
+answer the wrong statistical question if it regenerates an artifact whose
+target or information set is unclear. Conversely, a carefully delimited result
+can remain scientifically useful even when full raw-data reconstruction is not
+available, provided that the limitation is visible and the supporting snapshot
+is fixed.
+
+\section{Concluding perspective}
+\label{sec:synthesis-conclusion}
+
+The projects in this dissertation share a concern with distributional features
+that must adapt to time, nonlinear dependence, heterogeneous information, or
+interval-placement requirements. Their combined contribution is not a single
+universal model. It is a set of statistically explicit routes from a decision-
+relevant target to a computational procedure and an evidence-matched claim.
+
+For conditional quantiles, dynamic state-space models and fixed recurrent
+features provide two representations of temporal structure, while software and
+source-aware synthesis make those representations usable in analysis. For
+fixed-content intervals, retained-mean geometry identifies placement and shows
+why endpoint uncertainty and tolerance confidence must be treated separately.
+Across both settings, the central principle is the same: define the statistical
+object before interpreting the computation, and validate the procedure at the
+level of the claim that will be made. That principle both unifies the four
+research chapters and fixes the boundary of their conclusions.
