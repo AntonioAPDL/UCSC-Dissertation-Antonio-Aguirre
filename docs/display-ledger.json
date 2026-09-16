@@ -18,8 +18,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:table:priors",
@@ -30,8 +30,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:table:post",
@@ -42,8 +42,8 @@
       "disposition": "MERGE",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:table:tf",
@@ -54,8 +54,8 @@
       "disposition": "MERGE",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:table:fore",
@@ -66,8 +66,8 @@
       "disposition": "MERGE",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:table:flow",
@@ -78,8 +78,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex1mcmc",
@@ -90,8 +90,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex1quants",
@@ -102,8 +102,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex2quant",
@@ -114,8 +114,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex2checks",
@@ -126,8 +126,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:tab:ex2bench",
@@ -138,8 +138,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex3data",
@@ -150,8 +150,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex3quant",
@@ -162,8 +162,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex3tftheta",
@@ -174,8 +174,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:tab:ex3",
@@ -186,8 +186,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:tab:ex3forecastmetrics",
@@ -198,8 +198,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex3forecast",
@@ -210,8 +210,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:fig:ex4static",
@@ -222,8 +222,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "exd:tab:ex4static",
@@ -234,8 +234,8 @@
       "disposition": "KEEP",
       "claim_role": "package scope, implemented inference, diagnostics, and example behavior",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:ensembles",

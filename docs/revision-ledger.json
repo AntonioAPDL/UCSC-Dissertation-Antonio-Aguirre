@@ -17,9 +17,9 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "50acf5ee7db65474b77f6a9fc71861d6f17dfbe887ccf3290f85f9d150839f32",
+      "current_sha256": "10a499900971558926f4616605c25836fccdef8e6a96881a5ddacfc5ec4bb975",
       "state": "EDITED",
-      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
+      "revision_ids": ["REV-GLOBAL-BIB-20260916", "REV-CH02-20260916"]
     },
     {
       "path": "chapters/03-research-b.tex",
@@ -63,6 +63,14 @@
       "summary": "Canonicalized eleven semantically overlapping bibliography groups, corrected three erroneous published records, and rewired affected chapter citations without changing scientific claims.",
       "evidence": "docs/bibliography-map.json; DOI/title/author/version comparisons recorded by the Phase 1 audit",
       "validation": "Fast validation, BibTeX resolution, and chapter-tier build required before merge."
+    },
+    {
+      "id": "REV-CH02-20260916",
+      "date": "2026-09-16",
+      "paths": ["chapters/02-research-a.tex"],
+      "summary": "Converted Chapter 2 from article order to a software-centered dissertation argument; moved package architecture before implementation details, stated the 1.1.0/1.1.1/1.1.2 provenance boundary, removed stale article navigation, and implemented all display dispositions while preserving negative held-out evidence.",
+      "evidence": "docs/editorial-issues.json; docs/display-ledger.json; fixed exdqlm article and package snapshots recorded in source-manifest.json",
+      "validation": "Fast and chapter milestone validation, rendered-page inspection, and final log review required before merge."
     }
   ]
 }

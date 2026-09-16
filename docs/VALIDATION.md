@@ -185,3 +185,20 @@ The generated bibliography was inspected for the three factual corrections:
 Emily Tallman, the Nishimura--Suchard 2023 record, and Yunwen Yang, Huixia Judy
 Wang, and Xuming He appear under their canonical entries. PDF SHA-256:
 `3f096e7b8555f27c0ee7c83eb9fbce46b5d533ad7107b3f3b73f45dd1567f39a`.
+
+## 2026-09-16 Chapter 2 milestone validation
+
+The Chapter 2 milestone passed the chapter validation tier against the retained
+audit root. The final build is 362 US Letter pages and 19,507,649 bytes, with
+no undefined citation or reference, duplicate-label, missing-file, or overfull-
+box diagnostic. Thirty-nine underfull-box notices, the known caption-package
+warning, and two automatic `!h`-to-`!ht` adjustments remain. PDF SHA-256:
+`82032cff68289df80e2376a43a2739cd33f904dc6a8d769f0ffc957b24ef4054`.
+
+The Chapter 2 opening, the relocated package-design section, a dense LDVB
+equation page, the Sunspots transition, the sparse-recovery table, and the
+chapter ending were rasterized and inspected. Text, mathematics, and tables
+were legible with no clipping or collisions. The chapter contains 14 retained
+labeled displays after implementing its three MERGE and two TEXT-SUMMARY
+decisions. This validates document integration and rendering, not a new run of
+the external research computation.

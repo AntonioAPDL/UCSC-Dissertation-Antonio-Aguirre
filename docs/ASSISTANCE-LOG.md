@@ -116,3 +116,12 @@ records, rewired affected citations, and recorded the derivative hashes in the
 revision ledger. The full chapter validation tier passed. This pass did not
 alter scientific conclusions, research code, data, source repositories, or
 reuse status.
+
+2026-09-16: AI assistance revised Chapter 2 as a software-centered dissertation
+chapter while preserving the imported statistical content and qualifications.
+It moved package architecture ahead of detailed implementation blocks, stated
+the 1.1.0/1.1.1/1.1.2 provenance boundary, removed article navigation and stale
+code-listing references, and implemented all 19 display decisions. The held-out
+Big Tree result remains negative for the transfer model. The chapter validation
+tier and representative rendered-page inspection passed. No research code,
+data, or source repository was changed, and no computation was rerun.

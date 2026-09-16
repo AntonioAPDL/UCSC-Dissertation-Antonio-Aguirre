@@ -61,7 +61,10 @@ the current stage.
   editorial ledgers.
 - Completed the global integration decisions: retained the four-project
   architecture, adopted the common terminology boundaries, and implemented
-  all 11 bibliography reconciliations. Chapter 2 is the next revision unit.
+  all 11 bibliography reconciliations.
+- Completed the Chapter 2 dissertation revision and all 19 of its display
+  dispositions. The chapter milestone build and representative page inspection
+  passed. Chapter 3 is the next revision unit.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,

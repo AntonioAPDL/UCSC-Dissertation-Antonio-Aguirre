@@ -2,7 +2,12 @@
   "schema_version": 1,
   "recorded_at": "2026-09-16",
   "baseline_commit": "5def110d009545551e89b7efc9746c61122e8918",
-  "severity_order": ["blocking", "major", "moderate", "minor"],
+  "severity_order": [
+    "blocking",
+    "major",
+    "moderate",
+    "minor"
+  ],
   "records": [
     {
       "id": "ED-GLOBAL-001",
@@ -86,7 +91,8 @@
       "proposed_action": "Replace article navigation with chapter purpose, boundaries, and thesis-local section transitions.",
       "source_provenance": "SRC-EXDQLM-ARTICLE@d5534e97",
       "author_input_required": false,
-      "validation": "self-reference scan and cross-reference build"
+      "validation": "self-reference scan and cross-reference build",
+      "resolution_status": "RESOLVED_IN_REV_CH02_20260916"
     },
     {
       "id": "ED-CH02-002",
@@ -98,7 +104,8 @@
       "proposed_action": "Retain necessary statistical foundations, then place package design, inference interfaces, diagnostics, and examples in reader-first order; integrate detailed blocks near the interface they justify.",
       "source_provenance": "DOC-EXDQLM-ARTICLE and integrated technical baseline",
       "author_input_required": false,
-      "validation": "section-order review and label/citation checks"
+      "validation": "section-order review and label/citation checks",
+      "resolution_status": "RESOLVED_IN_REV_CH02_20260916"
     },
     {
       "id": "ED-CH02-003",
@@ -110,7 +117,8 @@
       "proposed_action": "State the version graph explicitly and avoid substituting current package behavior retroactively for the article run.",
       "source_provenance": "SRC-EXDQLM-ARTICLE, SRC-EXDQLM-PKG, and SRC-ENVIRON fixed snapshots",
       "author_input_required": false,
-      "validation": "version statements against source manifest"
+      "validation": "version statements against source manifest",
+      "resolution_status": "RESOLVED_IN_REV_CH02_20260916"
     },
     {
       "id": "ED-CH02-004",
@@ -122,7 +130,8 @@
       "proposed_action": "Keep the negative held-out comparison prominent and frame the transfer model as a workflow demonstration rather than a superiority claim.",
       "source_provenance": "exd:tab:ex3 and exd:tab:ex3forecastmetrics",
       "author_input_required": false,
-      "validation": "table/prose numerical consistency"
+      "validation": "table/prose numerical consistency",
+      "resolution_status": "RESOLVED_IN_REV_CH02_20260916"
     },
     {
       "id": "ED-CH03-001",
