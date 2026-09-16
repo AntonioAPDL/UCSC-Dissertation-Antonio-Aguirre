@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-15",
+  "chapter": "ch02-exdqlm",
+  "policy": {
+    "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
+    "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
+    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+  },
+  "documents": [
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "exdqlm-jss.tex",
+      "source_sha256": "f5ad13436f8f731dcc75482dee272aa1d4601f1e8e619545058b9c7815f9f434",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All scientific sections integrated; journal wrapper and article front/back matter removed.",
+      "section_dispositions": [
+        {
+          "section": "Introduction",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Extended dynamic quantile linear models",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Package design and implementation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Examples",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Conclusion",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Technical overview and notation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Posterior targets and model blocks",
+          "disposition": "integrated"
+        },
+        {
+          "section": "LDVB scale--skewness implementation for exAL models",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Static regression with the Nishimura--Suchard regularized horseshoe",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Forecasting, diagnostics, and posterior-predictive synthesis",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Nonconjugate VB and backend notes",
+          "disposition": "integrated"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex1mcmc.png",
+      "locator": "analysis/manuscript/outputs/figures/ex1mcmc.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex1mcmc.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "3e944af4cd9f324aa6d1e33aaf6e45cf7141ca88f115e6005bf0b0c68c1a8226",
+      "destination_sha256": "3e944af4cd9f324aa6d1e33aaf6e45cf7141ca88f115e6005bf0b0c68c1a8226",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex1quants.png",
+      "locator": "analysis/manuscript/outputs/figures/ex1quants.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex1quants.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "9f5e567673510359bfb914dc62e0d7b06dc1d39d45da8ad8cce62025eede0fd7",
+      "destination_sha256": "9f5e567673510359bfb914dc62e0d7b06dc1d39d45da8ad8cce62025eede0fd7",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex2checks.png",
+      "locator": "analysis/manuscript/outputs/figures/ex2checks.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex2checks.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "787201095754a0b51fb53071cbb8620636dd09264cef1001ad92cfaa22575ffc",
+      "destination_sha256": "787201095754a0b51fb53071cbb8620636dd09264cef1001ad92cfaa22575ffc",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex2quant.png",
+      "locator": "analysis/manuscript/outputs/figures/ex2quant.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex2quant.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "626760606cc0f6cad3d9ba2472aa22db287cff3f61a0d915109b796516395664",
+      "destination_sha256": "626760606cc0f6cad3d9ba2472aa22db287cff3f61a0d915109b796516395664",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex3data.png",
+      "locator": "analysis/manuscript/outputs/figures/ex3data.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex3data.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "991ea67dae857ed3041acb714bd4dae0d544cb625373c9e4de7453b0126ce24a",
+      "destination_sha256": "991ea67dae857ed3041acb714bd4dae0d544cb625373c9e4de7453b0126ce24a",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex3forecast.png",
+      "locator": "analysis/manuscript/outputs/figures/ex3forecast.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex3forecast.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "3116e94d764299f2bbf2be448b38d5a905ba014c2653db3d34ad67a756ec15ee",
+      "destination_sha256": "3116e94d764299f2bbf2be448b38d5a905ba014c2653db3d34ad67a756ec15ee",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex3quantcomps.png",
+      "locator": "analysis/manuscript/outputs/figures/ex3quantcomps.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex3quantcomps.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "867d5b164fbd1c40d92bb94a5f3bde3f9b14386bb8037d11d062eb874cc88802",
+      "destination_sha256": "867d5b164fbd1c40d92bb94a5f3bde3f9b14386bb8037d11d062eb874cc88802",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex3zetapsi.png",
+      "locator": "analysis/manuscript/outputs/figures/ex3zetapsi.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex3zetapsi.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "7c1fe6be896fb637ea851ddd71c588190e7bcb36742d7b3c27a0219d11c04fdd",
+      "destination_sha256": "7c1fe6be896fb637ea851ddd71c588190e7bcb36742d7b3c27a0219d11c04fdd",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "analysis/manuscript/outputs/figures/ex4static.png",
+      "locator": "analysis/manuscript/outputs/figures/ex4static.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch02-exdqlm/ex4static.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "efb7479d3aa7c57d0b4ac4a97eb40f7ec5aaf453c9a228ba3cc0901da9baf7d3",
+      "destination_sha256": "efb7479d3aa7c57d0b4ac4a97eb40f7ec5aaf453c9a228ba3cc0901da9baf7d3",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "source_path": "exdqlm-jss.tex",
+      "locator": "exdqlm-jss.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/02-research-a.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "f5ad13436f8f731dcc75482dee272aa1d4601f1e8e619545058b9c7815f9f434",
+      "destination_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
+      "claim_ids": [
+        "CLM-EXDQLM-001",
+        "CON-EXDQLM-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    }
+  ]
+}
