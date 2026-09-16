@@ -169,3 +169,19 @@ the stronger TCSP result, administrative metadata, and an independently
 inspected Overleaf build remain unresolved. The chapter pass must retain
 collective attribution and narrow unsupported claims rather than fill those
 gaps by inference.
+
+## 2026-09-16 global-integration validation
+
+After canonicalizing the 11 bibliography groups, the chapter validation tier
+passed against the retained audit root. It rechecked all 102 immutable source
+blobs and resolved all 118 cited keys. The final pdfLaTeX pass produced a
+367-page US Letter PDF of 19,926,260 bytes with no undefined citation or
+reference, duplicate-label, missing-file, or overfull-box diagnostic. The log
+contains 42 underfull-box notices, the known legacy-class caption warning, and
+two automatic `!h`-to-`!ht` float adjustments. The PDF is untagged and retains
+the unresolved working title.
+
+The generated bibliography was inspected for the three factual corrections:
+Emily Tallman, the Nishimura--Suchard 2023 record, and Yunwen Yang, Huixia Judy
+Wang, and Xuming He appear under their canonical entries. PDF SHA-256:
+`3f096e7b8555f27c0ee7c83eb9fbce46b5d533ad7107b3f3b73f45dd1567f39a`.

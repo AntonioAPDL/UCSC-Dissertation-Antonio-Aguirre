@@ -64,7 +64,8 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 
 1. Phase 0: lifecycle and edit-safe provenance — complete.
 2. Phase 1: read-only scholarly audit and revision ledger — complete.
-3. Phase 2: global architecture, notation, bibliography, and display decisions.
+3. Phase 2: global architecture, notation, bibliography, and display decisions
+   — complete.
 4. Phase 3: chapter revisions in order 2, 3, 4, 5.
 5. Phase 4: cross-chapter prose and typography review.
 6. Phase 5: dissertation introduction, synthesis, and abstract.
@@ -201,3 +202,23 @@ entries and retain this mapping as provenance.
 - No source repository is a thesis build dependency.
 - Collective attribution, conservative TCSP wording, and unverified reuse
   status remain explicit.
+
+## Phase 2 global integration result
+
+The author-directed four-project architecture in `chapter-plan.md` is retained.
+The notation and terminology table above is the controlling global map; symbols
+remain chapter-local where their targets or conditioning sets differ. The
+display ledger supplies an explicit disposition for every imported labeled
+display, so display reduction can occur within each chapter without a second
+global inventory.
+
+The 11 bibliography groups in `bibliography-map.json` are implemented. Affected
+citations now use the canonical keys, superseded or erroneous duplicate records
+are removed, and the map retains the old-to-new provenance. The current thesis
+uses 118 bibliography keys. The chapter milestone build resolves every cited
+key and contains the corrected Nishimura--Suchard, Tallman--West, and
+Yang--Wang--He records.
+
+This pass intentionally did not flatten chapter-specific notation or relocate
+technical content before the chapter-level scientific edits. Chapter 2 is the
+next revision unit.

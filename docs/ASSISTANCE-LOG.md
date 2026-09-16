@@ -107,3 +107,12 @@ fast validation tier passed against the retained audit clones. This stage did
 not rewrite a research chapter, alter an original research repository, infer
 individual coauthor roles, establish reuse permission, or claim an unproved
 TCSP result.
+
+2026-09-16: AI assistance completed the global architecture, terminology,
+display, and bibliography decision pass. It retained the author-directed four-
+project structure, kept method-specific notation local where necessary,
+canonicalized 11 bibliography groups, corrected three erroneous publication
+records, rewired affected citations, and recorded the derivative hashes in the
+revision ledger. The full chapter validation tier passed. This pass did not
+alter scientific conclusions, research code, data, source repositories, or
+reuse status.
