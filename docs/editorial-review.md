@@ -240,3 +240,22 @@ by numerical and inferential summaries already supported by the recorded
 analysis. The Big Tree section continues to report that direct regression has
 the lowest held-out check loss and CRPS; the training diagnostics are not used
 to claim transfer-model superiority.
+
+## Chapter 3 revision result
+
+Chapter 3 now reads as a hydrologic application chapter rather than a journal
+submission. Its argument proceeds from the forecast problem and quantile-based
+model through computation, the five-origin validation design, comparative
+results, component-removal sensitivity, and interpretation. Journal navigation
+and all-capital headings have been removed. Central bands from synthesized
+future-response distributions are called posterior predictive bands; credible
+interval language remains only for fitted quantile-location curves and
+parameter summaries.
+
+All 21 Chapter 3 display decisions are implemented. The 12 KEEP records remain
+as claim-bearing displays. The drought and wet-period diagnostics are paired in
+one figure, and four forecast-origin support panels are paired in two figures.
+The univariate transfer-active illustration and two secondary source-parameter
+tables are summarized in prose. The chapter continues to state that its
+comparison uses five rolling origins, distinguishes the 28-day GloFAS and
+common 8-day NWS horizons, and is not a dense continuous hindcast.

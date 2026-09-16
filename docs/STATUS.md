@@ -64,7 +64,12 @@ the current stage.
   all 11 bibliography reconciliations.
 - Completed the Chapter 2 dissertation revision and all 19 of its display
   dispositions. The chapter milestone build and representative page inspection
-  passed. Chapter 3 is the next revision unit.
+  passed.
+- Completed the Chapter 3 hydrologic-application revision and all 21 of its
+  display dispositions. Predictive-band terminology, the five-origin evidence
+  boundary, and the distinct 28-day and common 8-day horizons are explicit.
+  The chapter milestone build and representative page inspection passed.
+  Chapter 4 is the next revision unit.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -151,12 +156,12 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-Complete the structured scholarly audit, then revise the structural chapters
-in this order: exdqlm, Environmetrics, QDESN, and combined RQR/MTI. Resolve
-structure and scientific language before sentence polishing. Then perform the
-cross-chapter notation, bibliography, display, and transition pass; write the
-introduction and synthesis; and resolve the G6 decisions. Major reviewed units
-use the explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
+Revise Chapter 4 around the Q-DESN inferential target, using the Gaussian DESN
+as a baseline and initialization device; then revise the combined RQR/MTI
+Chapter 5. After both chapter milestones pass, perform the cross-chapter
+notation, typography, bibliography, display, transition, and prose pass; write
+the introduction, synthesis, and abstract; and resolve the G6 decisions. Major
+reviewed units use the explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
 and final publication permissions remain open. Working text must use accurate

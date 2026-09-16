@@ -125,3 +125,12 @@ code-listing references, and implemented all 19 display decisions. The held-out
 Big Tree result remains negative for the transfer model. The chapter validation
 tier and representative rendered-page inspection passed. No research code,
 data, or source repository was changed, and no computation was rerun.
+
+2026-09-16: AI assistance revised Chapter 3 as a dissertation hydrologic-
+application chapter. It replaced journal navigation and all-capital headings,
+distinguished posterior predictive bands from credible intervals for fitted
+quantile curves and parameters, retained the five-origin and horizon limits,
+and implemented all 21 display decisions by pairing repeated regime and cutoff
+panels and summarizing secondary evidence in prose. The chapter validation tier
+and representative rendered-page inspection passed. No research code, data,
+source repository, forecast experiment, or fitted model was changed or rerun.

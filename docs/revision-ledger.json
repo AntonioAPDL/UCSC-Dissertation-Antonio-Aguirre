@@ -24,9 +24,9 @@
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "350c13f464efbb989ac721b24348577ff4746e133cab7a8f118b530fccfd1fbe",
+      "current_sha256": "6181e92a43e18fe15014937f745b4e486ab483872d902b6a5458f1be2b3ad463",
       "state": "EDITED",
-      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
+      "revision_ids": ["REV-GLOBAL-BIB-20260916", "REV-CH03-20260916"]
     },
     {
       "path": "chapters/04-research-c.tex",
@@ -70,6 +70,14 @@
       "paths": ["chapters/02-research-a.tex"],
       "summary": "Converted Chapter 2 from article order to a software-centered dissertation argument; moved package architecture before implementation details, stated the 1.1.0/1.1.1/1.1.2 provenance boundary, removed stale article navigation, and implemented all display dispositions while preserving negative held-out evidence.",
       "evidence": "docs/editorial-issues.json; docs/display-ledger.json; fixed exdqlm article and package snapshots recorded in source-manifest.json",
+      "validation": "Fast and chapter milestone validation, rendered-page inspection, and final log review required before merge."
+    },
+    {
+      "id": "REV-CH03-20260916",
+      "date": "2026-09-16",
+      "paths": ["chapters/03-research-b.tex"],
+      "summary": "Converted Chapter 3 from journal navigation to a dissertation application argument; corrected predictive-interval terminology, retained the five-origin and horizon boundaries, consolidated repeated regime and cutoff displays, and summarized secondary parameter evidence in prose.",
+      "evidence": "docs/editorial-issues.json; docs/display-ledger.json; fixed Environmetrics manuscript, San Lorenzo data-product, and correction snapshots recorded in source-manifest.json",
       "validation": "Fast and chapter milestone validation, rendered-page inspection, and final log review required before merge."
     }
   ]
