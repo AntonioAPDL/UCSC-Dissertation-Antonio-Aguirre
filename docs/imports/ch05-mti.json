@@ -1,0 +1,654 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-15",
+  "chapter": "ch05-mti",
+  "policy": {
+    "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
+    "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
+    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+  },
+  "documents": [
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "main.tex",
+      "source_sha256": "dff9095c2129cd89e30bb3f7ced4d19e297406600a886da9cfa9ad616ace6350",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All main scientific sections integrated as the foundation and tolerance portion of Chapter 5.",
+      "section_dispositions": [
+        {
+          "section": "Introduction",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Fixed-Content Interval Targets",
+          "disposition": "integrated"
+        },
+        {
+          "section": "The Mean-Preserving Interval Target",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Mean-Tilted Intervals",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Empirical Balance and Fixed-Target Computation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Calibrated Minimum-Width Tolerance Intervals",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Validation Design",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Pharmaceutical Batch Application",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Discussion",
+          "disposition": "integrated"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "rqr-gibbs-supplement.tex",
+      "source_sha256": "7b3b734f1e814c012e9ffe06f493adbf54c52cdc097e2c89fe201b2978601b4e",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All substantive proof, computation, validation, and application sections integrated; part dividers and navigation guides omitted.",
+      "section_dispositions": [
+        {
+          "section": "Part I. Notation, Inferential Objects, and Guide to Supporting Results",
+          "disposition": "omitted",
+          "reason": "source navigation or prefatory material duplicated by the integrated chapter"
+        },
+        {
+          "section": "Guide to the Supplement",
+          "disposition": "omitted",
+          "reason": "source navigation or prefatory material duplicated by the integrated chapter"
+        },
+        {
+          "section": "Part II. Population Theory and Proofs",
+          "disposition": "omitted",
+          "reason": "source navigation or prefatory material duplicated by the integrated chapter"
+        },
+        {
+          "section": "Fixed-Content Interval Targets",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Mean-Preserving Interval Scores",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Mean-Tilted Interval Loss and Target",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Empirical Balance",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Width-Regularized Interval Loss",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Part III. Fixed-Target Computation and Content Checking",
+          "disposition": "omitted",
+          "reason": "source navigation or prefatory material duplicated by the integrated chapter"
+        },
+        {
+          "section": "Fixed-Target MTI-ECM Calculation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Direct DP Content Check",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Part IV. Validation Details and Reproducibility",
+          "disposition": "omitted",
+          "reason": "source navigation or prefatory material duplicated by the integrated chapter"
+        },
+        {
+          "section": "Tolerance-Validation Protocol and Feasibility",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Pharmaceutical Application Details",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Reproducibility and Validation Limits",
+          "disposition": "integrated"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "source_path": "main.tex",
+      "source_sha256": "a909c00dbf27f88746152550fd7117def17eeeeab135411c5f4d95c1cc69f363",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All regression and dynamic-extension scientific sections integrated after the RQR foundation.",
+      "section_dispositions": [
+        {
+          "section": "Introduction",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Fixed-Content Targets and Generalized Bayes",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Static Endpoint Regression",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Pseudo-AL Computation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Basis Expansions and Time-Varying Endpoints",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Uncertainty Calibration and Diagnostics",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Discussion",
+          "disposition": "integrated"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "source_path": "mti-extensions-supplement.tex",
+      "source_sha256": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All computational detail and validation-limit sections integrated within the extension movement.",
+      "section_dispositions": [
+        {
+          "section": "Notation and Targets",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Root Labels and Endpoint Summaries",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Pseudo-AL Augmentation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Gaussian Root Updates and Fixed Tilt",
+          "disposition": "integrated"
+        },
+        {
+          "section": "ECM Mode Calculation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Conditionally Gaussian Shrinkage",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Deterministic Basis Expansions",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Dynamic Endpoint-State Updates",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Diagnostics and Validation Limits",
+          "disposition": "integrated"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "source_id": "SRC-MTI-EXT",
+      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "source_path": "main.tex",
+      "locator": "main.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/05-research-d.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "a909c00dbf27f88746152550fd7117def17eeeeab135411c5f4d95c1cc69f363",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "claim_ids": [
+        "CLM-MTI-001",
+        "CLM-MTI-002",
+        "CON-MTI-003"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "source_path": "mti-extensions-supplement.tex",
+      "locator": "mti-extensions-supplement.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/05-research-d.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "claim_ids": [
+        "CLM-MTI-001",
+        "CLM-MTI-002",
+        "CON-MTI-003"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/fig01_three_balance_principles.png",
+      "locator": "figures/generated/fig01_three_balance_principles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "7f015ee8b354e1ed89007898a758346cb1a35d34b74f979026a025167fd22e40",
+      "destination_sha256": "7f015ee8b354e1ed89007898a758346cb1a35d34b74f979026a025167fd22e40",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/fig03_mean_tilt_cf_anchors.png",
+      "locator": "figures/generated/fig03_mean_tilt_cf_anchors.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "b46586c26575355c7bc4de79dd14d93f33c223871a5248d4060aefea18983c84",
+      "destination_sha256": "b46586c26575355c7bc4de79dd14d93f33c223871a5248d4060aefea18983c84",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/fig04_tolerance_validation_primary.png",
+      "locator": "figures/generated/fig04_tolerance_validation_primary.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "0203812c871391b9953d9025799c53733c45cb180c05a8c93dded33770da301c",
+      "destination_sha256": "0203812c871391b9953d9025799c53733c45cb180c05a8c93dded33770da301c",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/fig05_tolerance_validation_width_ranges.png",
+      "locator": "figures/generated/fig05_tolerance_validation_width_ranges.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "ad19294e108c3ab44750a55a802cd84c82462484fbc5614dcca517e1a1ba2078",
+      "destination_sha256": "ad19294e108c3ab44750a55a802cd84c82462484fbc5614dcca517e1a1ba2078",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/fig06_pharma_application_tensile_intervals.png",
+      "locator": "figures/generated/fig06_pharma_application_tensile_intervals.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "95542b6c82712e53abf540344f3db1c8609825f3061c02876f3dc96299d209db",
+      "destination_sha256": "95542b6c82712e53abf540344f3db1c8609825f3061c02876f3dc96299d209db",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/figS01_cross_distribution_recovery.png",
+      "locator": "figures/generated/figS01_cross_distribution_recovery.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/figS01_cross_distribution_recovery.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "23287dc0f829f84a94dc73e04a9bc9b8033f3e49865e415fa56ea5d998219e90",
+      "destination_sha256": "23287dc0f829f84a94dc73e04a9bc9b8033f3e49865e415fa56ea5d998219e90",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/figS02_loss_geometry.png",
+      "locator": "figures/generated/figS02_loss_geometry.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/figS02_loss_geometry.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "8c454dbb06c547a84dc1389c4b39de909f41554c835ae68cba13c034d987928d",
+      "destination_sha256": "8c454dbb06c547a84dc1389c4b39de909f41554c835ae68cba13c034d987928d",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/figS03_tolerance_population_shortest_intervals.png",
+      "locator": "figures/generated/figS03_tolerance_population_shortest_intervals.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/figS03_tolerance_population_shortest_intervals.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "20c7540acb0be69533c536e6560342853f5423a79767968a5dfd390ce4e7117f",
+      "destination_sha256": "20c7540acb0be69533c536e6560342853f5423a79767968a5dfd390ce4e7117f",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "figures/generated/figS04_pharma_application_rsd_intervals.png",
+      "locator": "figures/generated/figS04_pharma_application_rsd_intervals.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "b84f9062b16569f5d3776c68671ae259ec12c49eb14819a1eb0c68a071b98c6c",
+      "destination_sha256": "b84f9062b16569f5d3776c68671ae259ec12c49eb14819a1eb0c68a071b98c6c",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "main.tex",
+      "locator": "main.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/05-research-d.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "dff9095c2129cd89e30bb3f7ced4d19e297406600a886da9cfa9ad616ace6350",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "rqr-gibbs-supplement.tex",
+      "locator": "rqr-gibbs-supplement.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/05-research-d.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "7b3b734f1e814c012e9ffe06f493adbf54c52cdc097e2c89fe201b2978601b4e",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/mean_tilt_cf_mini_study.tex",
+      "locator": "tables/mean_tilt_cf_mini_study.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "853e980b53fa5fd6d259de27a5882ca504f34d4811db505343d90d6526e8387a",
+      "destination_sha256": "802e5eb8ead312bb882e9b15de2017bf93ecb3ed35381af437060172ba36b3b2",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/pharma_application_dependence_sensitivity.tex",
+      "locator": "tables/pharma_application_dependence_sensitivity.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/pharma_application_dependence_sensitivity.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "2447edc1c6c6c373f4781c037a92057586185c9a561992e9a44e8afcb6a672d7",
+      "destination_sha256": "2447edc1c6c6c373f4781c037a92057586185c9a561992e9a44e8afcb6a672d7",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/pharma_application_primary_summary.tex",
+      "locator": "tables/pharma_application_primary_summary.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "c088fb2ed3fedcedab8663577b031f6aa175ff8066d219cb2b9e7e1c30cd72bf",
+      "destination_sha256": "c088fb2ed3fedcedab8663577b031f6aa175ff8066d219cb2b9e7e1c30cd72bf",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/pharma_application_response_diagnostics.tex",
+      "locator": "tables/pharma_application_response_diagnostics.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/pharma_application_response_diagnostics.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "291876c7fe9dbe004acd46c60e9315c03e28022c175ed3496e6af66e71859ee3",
+      "destination_sha256": "a744061c4ca540890028409466f4c5f163d0d0393995506cb6f5aa86bc677db2",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/pharma_application_supplement_summary.tex",
+      "locator": "tables/pharma_application_supplement_summary.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/pharma_application_supplement_summary.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "1b93eb290ac7d0c114c6c79e9e69d0f48267a5132a22b7d6c1440447402d6bda",
+      "destination_sha256": "1b93eb290ac7d0c114c6c79e9e69d0f48267a5132a22b7d6c1440447402d6bda",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/tolerance_validation_article_dgp_delivery.tex",
+      "locator": "tables/tolerance_validation_article_dgp_delivery.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/tolerance_validation_article_dgp_delivery.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "f417bc8ed1eb1377d731be8745e3fc5073730af484a7f856fb22a54f6aa30be8",
+      "destination_sha256": "ef99ca3e0e2a4f3fa78b47372b6cc2da7a2118e3ee09ac1f82b0e88edc068701",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/tolerance_validation_article_dgp_width_ranges.tex",
+      "locator": "tables/tolerance_validation_article_dgp_width_ranges.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/tolerance_validation_article_dgp_width_ranges.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "c5163982b0964f6161daf00b662eab272b647228829c0d1dae2da2dbd0096a86",
+      "destination_sha256": "053fb57937826ab181859a55436caad3c55415fa96810a5fc263a3856a057c22",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/tolerance_validation_article_scan_calibration.tex",
+      "locator": "tables/tolerance_validation_article_scan_calibration.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/tolerance_validation_article_scan_calibration.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "4ff554294e4b1f64f74b0c0bc544b7c4fed70d3cf49cfd9a96e8bace4868e75e",
+      "destination_sha256": "4ff554294e4b1f64f74b0c0bc544b7c4fed70d3cf49cfd9a96e8bace4868e75e",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/tolerance_validation_article_scenario_ranges.tex",
+      "locator": "tables/tolerance_validation_article_scenario_ranges.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "52dc75361dc6ee33618f2ac625cd783fc9e6940f5305c640def86b1b34c050b7",
+      "destination_sha256": "52dc75361dc6ee33618f2ac625cd783fc9e6940f5305c640def86b1b34c050b7",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "source_path": "tables/tolerance_validation_mti_ecm_selected_policy_summary.tex",
+      "locator": "tables/tolerance_validation_mti_ecm_selected_policy_summary.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch05-mti/tolerance_validation_mti_ecm_selected_policy_summary.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "878e7609eb85190ab94ec8e6cea235471bb661c26ea0d5916059020595f7781f",
+      "destination_sha256": "fa51fc75a0c40374014384143de1211052dadaf3ce21ac37def82d6896e1892d",
+      "claim_ids": [
+        "CLM-RQR-001",
+        "CLM-RQR-002",
+        "ART-RQR-003",
+        "CON-RQR-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    }
+  ]
+}
