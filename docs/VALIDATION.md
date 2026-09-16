@@ -220,3 +220,21 @@ legible with no clipping or collisions. The chapter contains 17 retained
 labeled displays after implementing its six MERGE and three TEXT-SUMMARY
 decisions. This validates integration and rendering; it does not constitute a
 new forecast experiment, selected-model refit, or operational hindcast.
+
+## 2026-09-16 Chapter 4 milestone validation
+
+The Chapter 4 milestone passed the chapter validation tier against the retained
+fixed-commit audit root. The final build is 343 US Letter pages and 18,913,562
+bytes, with no undefined citation or reference, duplicate-label, missing-file,
+or overfull-box diagnostic. Thirty-eight underfull-box notices, the known
+caption-package warning, and two automatic `!h`-to-`!ht` adjustments remain.
+PDF SHA-256: `910430f607f1f52f1c733c6e56ca3cf3df5d00ff61ac9c7466174a74dc848e32`.
+
+The Chapter 4 opening; Q--DESN formulation; Gaussian baseline transition;
+dense posterior, MCMC, VB--LD, and joint-quantile pages; simulation transition;
+paired two-page forecast and fit-recovery figures; GloFAS table and paired
+sensitivity figures; PriceFM regional figure; and chapter ending were
+rasterized and inspected. Text, equations, tables, and figures were legible,
+with no clipping or collisions. This validates dissertation integration and
+rendering; it does not constitute a new simulation run, model fit, forecast
+experiment, or computational reproduction.

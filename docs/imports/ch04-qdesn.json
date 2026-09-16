@@ -12,7 +12,7 @@
   "editorial_derivative": {
     "chapter_path": "chapters/04-research-c.tex",
     "revision_ledger": "docs/revision-ledger.json",
-    "status": "BASELINE_UNREVISED"
+    "status": "EDITED_REVISION_LEDGER_LINKED"
   },
   "distribution": {
     "github": "MERGED_TO_MAIN",

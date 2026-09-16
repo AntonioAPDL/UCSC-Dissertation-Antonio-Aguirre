@@ -69,7 +69,11 @@ the current stage.
   display dispositions. Predictive-band terminology, the five-origin evidence
   boundary, and the distinct 28-day and common 8-day horizons are explicit.
   The chapter milestone build and representative page inspection passed.
-  Chapter 4 is the next revision unit.
+- Completed the Chapter 4 Q--DESN revision and all 36 of its display-ledger
+  records. The chapter now places Q--DESN before its Gaussian baseline,
+  integrates source support by topic, and retains the simulation, VB--LD,
+  GloFAS, and PriceFM qualifications. The chapter milestone build and
+  representative page inspection passed.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -156,9 +160,9 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-Revise Chapter 4 around the Q-DESN inferential target, using the Gaussian DESN
-as a baseline and initialization device; then revise the combined RQR/MTI
-Chapter 5. After both chapter milestones pass, perform the cross-chapter
+Revise the combined RQR/MTI Chapter 5, consolidating duplicated theorem,
+calibration, and application material while preserving the TCSP and extension
+evidence boundaries. After that chapter milestone passes, perform the cross-chapter
 notation, typography, bibliography, display, transition, and prose pass; write
 the introduction, synthesis, and abstract; and resolve the G6 decisions. Major
 reviewed units use the explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
