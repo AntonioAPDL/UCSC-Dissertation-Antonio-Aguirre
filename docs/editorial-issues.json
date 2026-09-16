@@ -299,7 +299,9 @@
       "proposed_action": "Retain one theorem statement and place the proof immediately after it or behind a direct proof pointer.",
       "source_provenance": "DOC-RQR-MAIN and DOC-RQR-SUPP",
       "author_input_required": false,
-      "validation": "theorem numbering, references, and proof completeness"
+      "validation": "theorem numbering, references, and proof completeness",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "One quantile-window theorem statement remains; its source-supplement proof follows by direct pointer."
     },
     {
       "id": "ED-CH05-002",
@@ -311,7 +313,9 @@
       "proposed_action": "Merge the authoritative statement and proof while preserving assumptions and labels through an explicit mapping.",
       "source_provenance": "DOC-RQR-MAIN and DOC-RQR-SUPP",
       "author_input_required": false,
-      "validation": "proposition references and mathematical comparison"
+      "validation": "proposition references and mathematical comparison",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "One fixed-content mean-tilt proposition remains; its endpoint-score proof and global profiling argument follow in the same section."
     },
     {
       "id": "ED-CH05-003",
@@ -323,7 +327,9 @@
       "proposed_action": "Create one progression for each topic and integrate only nonduplicative derivations, protocol details, and diagnostics at the point of use.",
       "source_provenance": "DOC-RQR-MAIN and DOC-RQR-SUPP",
       "author_input_required": false,
-      "validation": "section and repeated-phrase audit"
+      "validation": "section and repeated-phrase audit",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "Empirical balance, validation, and pharmaceutical material now each form one progression, with repetitive displays summarized or merged."
     },
     {
       "id": "ED-CH05-004",
@@ -335,7 +341,9 @@
       "proposed_action": "Retain only the proved scan-calibration scope and label MTI-ECM results as repeated-sampling validation unless the missing proof is supplied and audited.",
       "source_provenance": "CLM-RQR-001, CLM-RQR-002, and research-audit gap record",
       "author_input_required": true,
-      "validation": "claim/proof audit against fixed RQR snapshot"
+      "validation": "claim/proof audit against fixed RQR snapshot",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "The conservative alternative authorized by the master prompt was used: exact scan recursion and the action-matched finite-sample proof remain explicitly open; reported findings are labeled repeated-sampling evidence."
     },
     {
       "id": "ED-CH05-005",
@@ -347,7 +355,9 @@
       "proposed_action": "Present the extensions as mathematical/proposed constructions and future computational work, not implemented validated methods.",
       "source_provenance": "SRC-MTI-EXT@f345d946",
       "author_input_required": false,
-      "validation": "terminology scan for implemented/evaluated/performance claims"
+      "validation": "terminology scan for implemented/evaluated/performance claims",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "Regression, basis-expansion, and dynamic constructions are explicitly proposed and theory-only; the missing implementation and validation are stated."
     },
     {
       "id": "ED-CH05-006",
@@ -359,7 +369,9 @@
       "proposed_action": "Audit every posterior, draw, interval, and calibration statement against the actual target.",
       "source_provenance": "RQR-GIBBS and MTI-EXTENSIONS AGENTS.md",
       "author_input_required": false,
-      "validation": "inferential-terminology scan and source comparison"
+      "validation": "inferential-terminology scan and source comparison",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "Generalized endpoint uncertainty, response-distribution probabilities, response prediction, empirical calibration, and tolerance statements are distinguished throughout."
     },
     {
       "id": "ED-CH05-007",
@@ -371,7 +383,9 @@
       "proposed_action": "Use one chapter introduction and conclusion, with a clearly delimited extension section and thesis-local transitions.",
       "source_provenance": "DOC-RQR-MAIN and DOC-MTI-MAIN",
       "author_input_required": false,
-      "validation": "heading and self-reference scan"
+      "validation": "heading and self-reference scan",
+      "resolution_status": "RESOLVED_IN_CHAPTER_REVISION",
+      "resolution": "Nested article introductions and discussions were replaced by one chapter introduction, a delimited extension section, and one final chapter discussion."
     }
   ]
 }

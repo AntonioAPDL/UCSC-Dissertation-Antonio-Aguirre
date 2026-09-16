@@ -74,6 +74,13 @@ the current stage.
   integrates source support by topic, and retains the simulation, VB--LD,
   GloFAS, and PriceFM qualifications. The chapter milestone build and
   representative page inspection passed.
+- Completed the Chapter 5 RQR/MTI revision and all 21 display decisions. Each
+  central theorem/proposition now has one authoritative statement and attached
+  proof; empirical-balance, validation, and pharmaceutical evidence is
+  integrated by topic. TCSP proof limits, generalized-Bayes distinctions, and
+  the theory-only status of the regression/dynamic extensions are explicit.
+  An inherited opposite-sign midpoint tilt formula was corrected against the
+  authoritative root form and score equations.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -150,9 +157,10 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
   for exdqlm remains open.
 - `G4` manuscript conversion: complete, merged into GitHub `main`, and reported
   by the author as synchronized to Overleaf.
-- `G5` scientific/editorial integration: in progress. Review one converted chapter at
-  a time, then deduplicate shared background and write the introduction and
-  synthesis without weakening source qualifications.
+- `G5` scientific/editorial integration: research-chapter revision complete;
+  cross-chapter prose/typography review and dissertation-level framing remain.
+  Shared background must be deduplicated before the introduction, synthesis,
+  and abstract are finalized, without weakening source qualifications.
 - `G6` reuse and submission clearance: open. Confirm granular roles, reuse
   permissions, committee counting, and administrative metadata before final
   circulation or submission. The existing synchronization is not rights
@@ -160,12 +168,13 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-Revise the combined RQR/MTI Chapter 5, consolidating duplicated theorem,
-calibration, and application material while preserving the TCSP and extension
-evidence boundaries. After that chapter milestone passes, perform the cross-chapter
-notation, typography, bibliography, display, transition, and prose pass; write
-the introduction, synthesis, and abstract; and resolve the G6 decisions. Major
-reviewed units use the explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
+Perform the cross-chapter notation, typography, bibliography, display,
+transition, and prose pass across Chapters 2--5. Then write the dissertation
+introduction, synthesis, and abstract from the stable research chapters and
+resolve the G6 decisions. Chapter 5 already uses conservative TCSP wording and
+theory-only extension language; those evidence boundaries must survive the
+global pass. Major reviewed units use the explicit GitHub/Overleaf handoff in
+`WORKFLOW.md`.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
 and final publication permissions remain open. Working text must use accurate

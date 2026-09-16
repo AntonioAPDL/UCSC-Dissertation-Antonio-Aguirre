@@ -66,9 +66,8 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 2. Phase 1: read-only scholarly audit and revision ledger — complete.
 3. Phase 2: global architecture, notation, bibliography, and display decisions
    — complete.
-4. Phase 3: chapter revisions in order 2, 3, 4, 5 — Chapters 2--4 complete;
-   Chapter 5 next.
-5. Phase 4: cross-chapter prose and typography review.
+4. Phase 3: chapter revisions in order 2, 3, 4, 5 — complete.
+5. Phase 4: cross-chapter prose and typography review — next.
 6. Phase 5: dissertation introduction, synthesis, and abstract.
 7. Final release validation and explicit GitHub/Overleaf handoff.
 
@@ -277,6 +276,34 @@ claim-bearing interval summaries; separately selected variational panels are
 not presented as a controlled approximation-error comparison. Secondary
 GloFAS, PriceFM, five-chain, and joint-simulation displays are consolidated or
 summarized with their exact conclusions retained.
+
+## Chapter 5 revision result
+
+Chapter 5 now presents one progression from contiguous fixed-content interval
+functionals through MPI/MTI identification, empirical score balance,
+fixed-target computation, the TCSP action and validation study, the
+pharmaceutical illustration, and proposed regression and dynamic extensions.
+The quantile-window theorem and fixed-content mean-tilt proposition each appear
+once with an attached proof; the global result retains one theorem statement
+and its profiling proof. Article/supplement duplicates in empirical balance,
+validation, and the application have been integrated by topic.
+
+All 21 Chapter 5 display decisions are implemented: seven KEEP, six MERGE, and
+eight TEXT-SUMMARY. The tolerance and pharmaceutical table/figure pairs now
+use the claim-bearing tables with the paired visual evidence stated in exact
+prose. Secondary simulation, diagnostic, width, and sensitivity displays are
+represented by exact numerical or inferential summaries. The source assets
+remain covered by the immutable import provenance.
+
+The audit also exposed an opposite tilt sign in the extension midpoint-loss
+formula. It now agrees with the authoritative root-form loss, score derivative,
+canonical-vector shift, and retained-mean target \(\mu+\delta\). TCSP is
+described as numerically scan-calibrated and empirically validated: exact scan
+recursion and a finite-sample proof matched to the adaptive closed-window action
+remain open. MTI-ECM findings remain repeated-sampling evidence, and the
+regression/dynamic extensions are explicitly proposed because the audited
+snapshot has no matching implementation, experiments, tests, or provenance
+manifest.
 
 The chapter preserves the evidence boundaries identified by the audit. The
 single-quantile intervals condition on one reproducible dynamic root per

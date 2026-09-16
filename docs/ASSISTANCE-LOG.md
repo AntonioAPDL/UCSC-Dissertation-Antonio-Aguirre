@@ -144,3 +144,19 @@ cap-stabilization, and PriceFM heterogeneity qualifications. The chapter
 validation tier and representative rendered-page inspection passed. No
 research code, data, source repository, simulation, model fit, or forecast
 experiment was changed or rerun.
+
+2026-09-16: AI assistance revised Chapter 5 as one RQR/MTI dissertation
+argument. It consolidated duplicate theorem and proposition statements with
+their proofs, integrated empirical-balance, tolerance-validation, and
+pharmaceutical material by topic, implemented all 21 display decisions, and
+removed article/supplement navigation. It narrowed TCSP language to numerical
+calibration and repeated-sampling evidence because exact scan recursion and an
+action-matched finite-sample proof remain open. It kept generalized endpoint
+uncertainty distinct from response prediction, posterior content probabilities,
+and tolerance confidence. It also corrected an inherited opposite-sign
+midpoint tilt formula against the authoritative root-form loss and score
+equations, and labeled the regression/dynamic extensions as proposed because
+the audited snapshot has no matching implementation or validation. The chapter
+validation tier and systematic rendered-page inspection passed. No research
+repository, code, data, simulation, model fit, or application computation was
+changed or rerun.
