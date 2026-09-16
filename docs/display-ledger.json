@@ -246,8 +246,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:sanlorenzo",
@@ -258,8 +258,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:covariates",
@@ -270,8 +270,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:retrospectives",
@@ -282,8 +282,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:dry_quantile",
@@ -294,8 +294,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:rainy_quantile",
@@ -306,8 +306,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:80_components",
@@ -318,8 +318,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synth1",
@@ -330,8 +330,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synth2",
@@ -342,8 +342,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synthsupport_20210123",
@@ -354,8 +354,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synthsupport_20211112",
@@ -366,8 +366,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synthsupport_20211221",
@@ -378,8 +378,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:fig:synthsupport_20220511",
@@ -390,8 +390,8 @@
       "disposition": "MERGE",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:benchmark_crps_models",
@@ -402,8 +402,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:benchmark_crps_models_nws_horizon",
@@ -414,8 +414,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:he4_quantile_check_loss",
@@ -426,8 +426,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:he3_ablation_crps",
@@ -438,8 +438,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:he3_ablation_crps_nws_horizon",
@@ -450,8 +450,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:components_23_31",
@@ -462,8 +462,8 @@
       "disposition": "KEEP",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:gamma_sigma_intervals1",
@@ -474,8 +474,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "env:tab:gamma_sigma_intervals2",
@@ -486,8 +486,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "five-origin hydrologic forecast design, predictive performance, and component interpretation",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-reservoir-selection",

@@ -202,3 +202,21 @@ were legible with no clipping or collisions. The chapter contains 14 retained
 labeled displays after implementing its three MERGE and two TEXT-SUMMARY
 decisions. This validates document integration and rendering, not a new run of
 the external research computation.
+
+## 2026-09-16 Chapter 3 milestone validation
+
+The Chapter 3 milestone passed the chapter validation tier. The final build is
+355 US Letter pages and 19,000,993 bytes, with no undefined citation or
+reference, duplicate-label, missing-file, or overfull-box diagnostic. Thirty-
+seven underfull-box notices, the known caption-package warning, and two
+automatic `!h`-to-`!ht` adjustments remain. PDF SHA-256:
+`04d9797e9d02b8cc501466c20a5e14f4933514bd2b38c7bb34a221e959fa2fc1`.
+
+The Chapter 3 opening, modeling transition, dense variational algorithm page,
+validation-design transition, component-removal section, interpretation text,
+principal predictive-synthesis figure, paired cutoff panels, and chapter ending
+were rasterized and inspected. Text, mathematics, tables, and figures were
+legible with no clipping or collisions. The chapter contains 17 retained
+labeled displays after implementing its six MERGE and three TEXT-SUMMARY
+decisions. This validates integration and rendering; it does not constitute a
+new forecast experiment, selected-model refit, or operational hindcast.

@@ -143,7 +143,8 @@
       "proposed_action": "Convert to thesis-style title case without changing labels.",
       "source_provenance": "SRC-ENVIRON@1272bfc1",
       "author_input_required": false,
-      "validation": "heading scan and table of contents review"
+      "validation": "heading scan and table of contents review",
+      "resolution_status": "RESOLVED_IN_REV_CH03_20260916"
     },
     {
       "id": "ED-CH03-002",
@@ -155,7 +156,8 @@
       "proposed_action": "Replace with chapter-local wording and remove journal navigation.",
       "source_provenance": "SRC-ENVIRON@1272bfc1",
       "author_input_required": false,
-      "validation": "self-reference scan"
+      "validation": "self-reference scan",
+      "resolution_status": "RESOLVED_IN_REV_CH03_20260916"
     },
     {
       "id": "ED-CH03-003",
@@ -167,7 +169,8 @@
       "proposed_action": "Use posterior predictive interval or band and reserve credible interval for posterior uncertainty in parameters or fitted quantile-location curves.",
       "source_provenance": "env:fig:synth1, env:fig:synth2, and four cutoff panels",
       "author_input_required": false,
-      "validation": "interval-terminology scan and caption review"
+      "validation": "interval-terminology scan and caption review",
+      "resolution_status": "RESOLVED_IN_REV_CH03_20260916"
     },
     {
       "id": "ED-CH03-004",
@@ -179,7 +182,8 @@
       "proposed_action": "Retain the five-origin and horizon limitations wherever performance is summarized.",
       "source_provenance": "DOC-ENV-MAIN and generated benchmark tables",
       "author_input_required": false,
-      "validation": "numbers and horizon descriptions against tables"
+      "validation": "numbers and horizon descriptions against tables",
+      "resolution_status": "RESOLVED_IN_REV_CH03_20260916"
     },
     {
       "id": "ED-CH03-005",
@@ -191,7 +195,8 @@
       "proposed_action": "Merge cutoff panels and summarize secondary parameter tables in prose as specified in the display ledger.",
       "source_provenance": "DOC-ENV-MAIN supporting-result subsections",
       "author_input_required": false,
-      "validation": "display-ledger and cross-reference review"
+      "validation": "display-ledger and cross-reference review",
+      "resolution_status": "RESOLVED_IN_REV_CH03_20260916"
     },
     {
       "id": "ED-CH04-001",
