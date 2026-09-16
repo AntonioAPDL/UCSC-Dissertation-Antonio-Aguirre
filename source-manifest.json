@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "recorded_at": "2026-09-15",
+  "status": "LOCAL_MANUSCRIPT_CONVERSION_COMPLETE_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+  "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
+  "snapshot_policy": {
+    "discovery_snapshot": "Observed remote default-branch head on the audit date",
+    "audit_snapshot": "Immutable commit used for this evidence audit",
+    "inclusion_snapshot": "Requires author confirmation before dissertation import or drafting"
+  },
+  "execution_record": {
+    "method": "Eight full-history ordinary Git clones in a temporary server-local audit root outside the thesis and original source trees",
+    "original_source_guards": "PASSED",
+    "research_assets_imported": 93,
+    "manuscript_source_records_imported": 9,
+    "total_import_records": 102,
+    "full_declared_workflows_reproduced": 0,
+    "validation_report": "docs/research-audit-validation.md",
+    "conversion_manifests": "docs/imports/*.json",
+    "conversion_importer": "scripts/import_manuscripts.py",
+    "conversion_validator": "scripts/validate_manuscript_imports.py",
+    "decision_record": "docs/research-decisions.md",
+    "clone_helper": "scripts/prepare_research_audit_clones.sh"
+  },
+  "author_direction": {
+    "recorded_at": "2026-09-15",
+    "official_long_name": "Jose Antonio Aguirre Perez de Leon",
+    "primary_scholarly_name": "Antonio de Leon",
+    "cross_source_identity_note": "Antonio De Leon in manuscripts and Antonio Aguirre in package metadata refer to the dissertation candidate",
+    "working_architecture": [
+      "exdqlm software and computational workflow",
+      "Environmetrics hydrologic correction and predictive synthesis",
+      "QDESN nonlinear conditional-quantile methods",
+      "combined MTI foundation, tolerance, regression, and dynamic extensions"
+    ],
+    "snapshot_state": "Audited commits are working drafting sources; final submission freezes remain replaceable",
+    "integration_mode": "Manuscript-first local conversion: preserve main article bodies, integrate unique supplement material into chapter sections, and keep computation external",
+    "asset_boundary": "Only final displayed figures/tables selected for the thesis may be copied; code, data, fitted objects, runs, and full output archives remain external",
+    "direct_reuse_state": "Material-specific rights remain pending before external synchronization, publication, or submission of verbatim text and source assets",
+    "integration_plan": "docs/manuscript-integration-plan.md"
+  },
+  "sources": [
+    {
+      "id": "SRC-QDESN",
+      "kind": "seed_repository",
+      "repository": "AntonioAPDL/Article-Q-DESN---Version-2",
+      "url": "https://github.com/AntonioAPDL/Article-Q-DESN---Version-2",
+      "default_branch": "main",
+      "discovery_commit": "757522db0f85815244370ec92a194de132268883",
+      "audit_commit": "757522db0f85815244370ec92a194de132268883",
+      "audit_scope": "Full Git clone; default snapshot plus metadata-first remote-branch triage",
+      "inventory": {"tracked_files": 2870, "remote_heads": 192, "tags": 0, "unmerged_remote_heads": 36},
+      "documents": [
+        {"id": "DOC-QDESN-MAIN", "path": "main.tex", "role": "main manuscript"},
+        {"id": "DOC-QDESN-SUPP", "path": "qdesn-supplement.tex", "role": "main supplement"},
+        {"id": "DOC-QDESN-GAUSS", "path": "gaussian_desn_scaled_ridge_supplement.tex", "role": "Gaussian DESN supplement"}
+      ],
+      "related_snapshots": [
+        {"id": "SNAP-QDESN-SEARCH2", "ref": "work/glofas-search-phase2-rhs-20260914", "commit": "78fa25b7df44bc484f13d5bc9a92602fa16a241d", "role": "six-commit-ahead unpromoted future-work branch"}
+      ],
+      "relationship": "Candidate QDESN method and application line",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/04-research-c.tex",
+          "manifest": "docs/imports/ch04-qdesn.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "three manuscript records plus selected current display fragments and claim-relevant figures"
+        }
+      ]
+    },
+    {
+      "id": "SRC-ENVIRON",
+      "kind": "seed_repository",
+      "repository": "AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2",
+      "url": "https://github.com/AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2",
+      "default_branch": "main",
+      "discovery_commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "audit_commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "audit_scope": "Full Git clone at revised default snapshot plus claim-driven provenance dependencies",
+      "inventory": {"tracked_files": 440, "remote_heads": 6, "tags": 0, "unmerged_remote_heads": 0},
+      "documents": [
+        {"id": "DOC-ENV-MAIN", "path": "wileyNJD-APA.tex", "role": "authoritative manuscript"},
+        {"id": "DOC-ENV-WRAPPER", "path": "main.tex", "role": "build wrapper"},
+        {"id": "DOC-ENV-ASSETS", "path": "MANUSCRIPT_ASSET_MANIFEST.json", "role": "manuscript asset authority"}
+      ],
+      "relationship": "Candidate first-project hydrological forecast application",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/03-research-b.tex",
+          "manifest": "docs/imports/ch03-environ.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "one manuscript record plus manuscript-referenced tables and figures"
+        }
+      ]
+    },
+    {
+      "id": "SRC-RQR",
+      "kind": "seed_repository",
+      "repository": "AntonioAPDL/RQR-GIBBS",
+      "url": "https://github.com/AntonioAPDL/RQR-GIBBS",
+      "default_branch": "main",
+      "discovery_commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "audit_commit": "73887b9c86ef767aa1567c660718667945630aef",
+      "audit_scope": "Full Git clone at current default snapshot plus metadata-first remote-branch triage",
+      "inventory": {"tracked_files": 1243, "remote_heads": 49, "tags": 0, "unmerged_remote_heads": 10},
+      "documents": [
+        {"id": "DOC-RQR-MAIN", "path": "main.tex", "role": "main manuscript"},
+        {"id": "DOC-RQR-SUPP", "path": "rqr-gibbs-supplement.tex", "role": "supplement"}
+      ],
+      "relationship": "Candidate mean-tilted short-tolerance-interval foundation",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/05-research-d.tex",
+          "manifest": "docs/imports/ch05-mti.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "RQR main and supplement records plus their selected display assets"
+        }
+      ]
+    },
+    {
+      "id": "SRC-MTI-EXT",
+      "kind": "seed_repository",
+      "repository": "AntonioAPDL/MTI-EXTENSIONS",
+      "url": "https://github.com/AntonioAPDL/MTI-EXTENSIONS",
+      "default_branch": "main",
+      "discovery_commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "audit_commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "audit_scope": "Full Git clone of manuscript-only default snapshot",
+      "inventory": {"tracked_files": 8, "remote_heads": 1, "tags": 0, "unmerged_remote_heads": 0},
+      "documents": [
+        {"id": "DOC-MTI-MAIN", "path": "main.tex", "role": "main manuscript"},
+        {"id": "DOC-MTI-SUPP", "path": "mti-extensions-supplement.tex", "role": "supplement"}
+      ],
+      "relationship": "Candidate regression and dynamic extensions to mean-tilted intervals",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/05-research-d.tex",
+          "manifest": "docs/imports/ch05-mti.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "MTI-EXTENSIONS main and supplement records integrated after the RQR foundation"
+        }
+      ]
+    },
+    {
+      "id": "SRC-EXDQLM-ARTICLE",
+      "kind": "seed_repository",
+      "repository": "AntonioAPDL/exdqlm---Article",
+      "url": "https://github.com/AntonioAPDL/exdqlm---Article",
+      "default_branch": "main",
+      "discovery_commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "audit_commit": "d5534e97db8414fd875022261d4c530eae4676e4",
+      "audit_scope": "Full Git clone of current article snapshot",
+      "inventory": {"tracked_files": 159, "remote_heads": 6, "tags": 0, "unmerged_remote_heads": 1},
+      "documents": [
+        {"id": "DOC-EXDQLM-ARTICLE", "path": "exdqlm-jss.tex", "role": "main software article"},
+        {"id": "DOC-EXDQLM-README", "path": "README.md", "role": "replication and archive contract"},
+        {"id": "DOC-EXDQLM-CODE", "path": "code.R", "role": "article replication entry point"}
+      ],
+      "relationship": "Candidate software/article contribution and shared methodological infrastructure",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/02-research-a.tex",
+          "manifest": "docs/imports/ch02-exdqlm.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "one article manuscript record plus its nine displayed figures"
+        }
+      ]
+    },
+    {
+      "id": "SRC-EXDQLM-PKG",
+      "kind": "required_dependency",
+      "repository": "AntonioAPDL/exdqlm",
+      "url": "https://github.com/AntonioAPDL/exdqlm",
+      "default_branch": "main",
+      "discovery_commit": "e51045a4324901cced27ca2aaa22569afbc8e0e6",
+      "audit_commit": "e51045a4324901cced27ca2aaa22569afbc8e0e6",
+      "audit_scope": "Full Git clone plus fixed historical package-version comparison",
+      "inventory": {"tracked_files": 215, "remote_heads": 90, "tags": 15, "unmerged_remote_heads": 76},
+      "documents": [
+        {"id": "DOC-EXDQLM-DESCRIPTION", "path": "DESCRIPTION", "role": "package identity and version"},
+        {"id": "DOC-EXDQLM-NEWS", "path": "NEWS.md", "role": "version and change history"}
+      ],
+      "related_snapshots": [
+        {"id": "SNAP-EXDQLM-ENV110", "ref": "cran-v1.1.0", "commit": "4c50b078abec33b9d752160911f7dfe841f818a7", "role": "Environmetrics application package freeze"},
+        {"id": "SNAP-EXDQLM-ARTICLE111", "ref": "feature/jss-resubmission-from-cran-1.0.0", "commit": "6dba6f2863705e0e90f0ce19e0c75d106d022a52", "role": "version 1.1.1 article and QDESN comparator snapshot"},
+        {"id": "SNAP-EXDQLM-RQR", "ref": "feature/rqr-desn-readout-20260716", "commit": "dffb71ee70b597d6a716ee74be1cbc99731cd453", "role": "RQR-documented development implementation snapshot, version 0.6.0.9000"}
+      ],
+      "relationship": "Implementation dependency; not automatically an independent dissertation unit",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "SUPPORTING_SOURCE",
+      "rights_status": "SOFTWARE_LICENSE_PRESENT",
+      "imports": []
+    },
+    {
+      "id": "SRC-SAN-LORENZO-REPRO",
+      "kind": "provenance_dependency",
+      "repository": "AntonioAPDL/san-lorenzo-exdqlm-reproducibility",
+      "url": "https://github.com/AntonioAPDL/san-lorenzo-exdqlm-reproducibility",
+      "default_branch": "main",
+      "discovery_commit": "a8797b804271b46c62bd04dab7dba6b84a10ab7d",
+      "audit_commit": "a8797b804271b46c62bd04dab7dba6b84a10ab7d",
+      "audit_scope": "Full Git clone; application provenance only",
+      "inventory": {"tracked_files": 535, "remote_heads": 1, "tags": 1, "unmerged_remote_heads": 0},
+      "documents": [
+        {"id": "DOC-SAN-README", "path": "README.md", "role": "public reproducibility contract"},
+        {"id": "DOC-SAN-LICENSE", "path": "LICENSE", "role": "review-stage reuse restriction"}
+      ],
+      "relationship": "Explicit public reproducibility bundle for the Environmetrics application",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "SUPPORTING_SOURCE",
+      "rights_status": "RESTRICTED",
+      "imports": []
+    },
+    {
+      "id": "SRC-ENVIRON-CORR",
+      "kind": "revision_dependency",
+      "repository": "AntonioAPDL/Corrections---Project-1",
+      "url": "https://github.com/AntonioAPDL/Corrections---Project-1",
+      "default_branch": "main",
+      "discovery_commit": "b1ceeb610d20f8287e4ca44e146c9cfdbcda1ee6",
+      "audit_commit": "b1ceeb610d20f8287e4ca44e146c9cfdbcda1ee6",
+      "audit_scope": "Full Git clone; revision and table-generation evidence only",
+      "inventory": {"tracked_files": 12, "remote_heads": 4, "tags": 0, "unmerged_remote_heads": 1},
+      "documents": [
+        {"id": "DOC-ENV-CORR-README", "path": "README.md", "role": "revision and table cross-check entry point"}
+      ],
+      "relationship": "Explicit corrections/reviewer-response evidence for the Environmetrics project",
+      "highest_bounded_evidence": "E2",
+      "inclusion_status": "SUPPORTING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": []
+    }
+  ],
+  "validation_runs": [
+    {"id": "RUN-QDESN-CURRENT-ASSETS", "source_id": "SRC-QDESN", "result": "PASS", "evidence_level": "E3", "summary": "53 current hashes passed; corrected-v4, PriceFM R98, and GloFAS focused checks passed"},
+    {"id": "RUN-QDESN-STALE-CONTROLS", "source_id": "SRC-QDESN", "result": "ISSUE_FOUND", "evidence_level": "E3", "summary": "13 of 14 historical manifest hashes differ and two Phase 181 manuscript-wiring checks fail against corrected-v4"},
+    {"id": "RUN-QDESN-TEX", "source_id": "SRC-QDESN", "result": "PASS", "evidence_level": "E3", "summary": "Main, supplement, and Gaussian supplement built to 22, 49, and 9 pages"},
+    {"id": "RUN-ENV-LINEAGE", "source_id": "SRC-ENVIRON", "result": "PASS", "evidence_level": "E3", "summary": "13 manuscript figure paths and the bounded authoritative-output lineage check passed"},
+    {"id": "RUN-SAN-VALIDATE", "source_id": "SRC-SAN-LORENZO-REPRO", "result": "PASS", "evidence_level": "E3", "summary": "Public-repository validator passed under Python 3.11"},
+    {"id": "RUN-RQR-FOCUSED", "source_id": "SRC-RQR", "result": "PASS", "evidence_level": "E3", "summary": "Seven theory-table tests, five theory-figure suites, and manuscript-language checks passed"},
+    {"id": "RUN-MTI-TEX", "source_id": "SRC-MTI-EXT", "result": "PASS", "evidence_level": "E3", "summary": "Main and supplement built to 7 and 4 pages"},
+    {"id": "RUN-EXDQLM-ARTICLE", "source_id": "SRC-EXDQLM-ARTICLE", "result": "PASS", "evidence_level": "E3", "summary": "Replication script parsed and article built to 55 pages"},
+    {"id": "RUN-EXDQLM-PKG", "source_id": "SRC-EXDQLM-PKG", "result": "PASS", "evidence_level": "E3", "summary": "Package 1.1.2 built and installed; three focused scale-skewness/RNG test files passed"}
+  ]
+}

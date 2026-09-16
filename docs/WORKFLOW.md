@@ -1,39 +1,39 @@
-# Overleaf, GitHub and local Codex workflow
+# Overleaf, GitHub and muscat Codex workflow
 
-Verified against linked official documentation on 2026-09-15. Account linking,
-remote creation, actual Overleaf compilation and this user's IDE access have
-not been performed. Commands below contain explicit placeholders to replace.
+Verified against linked official documentation on 2026-09-15. The existing
+GitHub repository and muscat Remote-SSH workspace were audited separately in
+`SETUP-AUDIT.md`; Overleaf account linking, project linkage and compilation
+have not been performed. Commands below retain placeholders only where the
+future handoff must supply an actual branch, source path or reviewed file.
 
-## 1. Establish the project once
+## 1. Establish the Overleaf side once
 
-1. Open [UCSC's Overleaf portal](https://www.overleaf.com/edu/ucsantacruz) and
-   follow the UCSC sign-in/account-linking steps. The live portal offers
-   institutional premium access; verify that the entitlement appears on your
-   account. Do not assume a paid personal plan is necessary.
-2. Upload `UCSC_Dissertation_Starter_Overleaf.zip` as a new Overleaf project.
-   Choose `main.tex` as the root document and pdfLaTeX. Compile and compare
-   the output with the supplied preview and `VALIDATION.md`.
-3. As the Overleaf project owner, use Integrations / GitHub, link the correct
-   GitHub account and let Overleaf create a **new private dissertation
-   repository**. Review requested account/repository permissions. Do not
-   create an independent second repository with a competing README first.
-4. Record the actual repository URL and its linked default branch. Clone it
-   locally using the URL GitHub provides, then open that directory in VS Code:
+The GitHub-first alternative is now the applicable path: this repository
+already exists and is the muscat checkout's origin. Do not follow the older
+starter route in which Overleaf creates another repository.
 
-```bash
-git clone 'REPLACE_WITH_DISSERTATION_CLONE_URL' 'REPLACE_WITH_LOCAL_DIRECTORY'
-cd 'REPLACE_WITH_LOCAL_DIRECTORY'
-git status --short --branch
-git remote -v
-code .
-bash scripts/build.sh
-```
+1. Before changing any linkage, determine whether an Overleaf project already
+   contains dissertation work. Preserve its source, comments and tracked
+   changes and record any current GitHub linkage. Do not infer linkage from the
+   Git commit message or repository name.
+2. If no Overleaf project must be preserved and the author authorizes the
+   handoff, open [UCSC's Overleaf portal](https://www.overleaf.com/edu/ucsantacruz),
+   verify the institutional entitlement, and use Integrations / GitHub to
+   import this existing repository as a new Overleaf project. Review requested
+   account and repository permissions. Only the project owner can establish
+   the initial link, and organization policy may add OAuth requirements.
+3. Select `main.tex` as the root document and pdfLaTeX. Use TeX Live 2023 if
+   offered, or an available newer version. Compile and compare the result with
+   `VALIDATION.md` and `SETUP-AUDIT.md`.
+4. Record the actual linked default branch and the successful Overleaf build
+   checkpoint. If an existing project is already linked to this repository,
+   skip creation and use the explicit editing handoff in section 3.
 
-A supported alternative is GitHub first, followed by a **new** Overleaf project
-imported from that repository. Do not independently create both and then
-attempt to attach them. Existing linked projects cannot simply be rebound.
-Only the project owner can establish the initial GitHub link. The linked account needs repository access sufficient for synchronization;
-organization policy may add OAuth authorization requirements.
+An existing unlinked or differently linked Overleaf project cannot simply be
+rebound without a preservation and reconciliation decision. Do not create two
+competing repositories or overwrite either source state to make linkage appear
+clean.
+
 See [Overleaf GitHub synchronization](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/github-synchronization)
 and [GitHub clone instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
@@ -43,12 +43,13 @@ is another premium feature, with a Git remote for the Overleaf project; it
 adds a different transport workflow. Do not configure both synchronization
 paths for this starter without a concrete need. Sync is manual, not continuous.
 
-## 2. Give local Codex the intended scope
+## 2. Give the muscat Codex chat the intended scope
 
-Open the dissertation as a single-folder VS Code project. Use the installed
-Codex IDE extension and a local session; establish that the working directory
-is this repository. A cloud task cannot see sibling directories on your
-laptop simply because a local chat could. Follow the current
+Open the dissertation as a single-folder VS Code Remote-SSH project on muscat.
+Use a fresh Codex chat in that window and verify both the hostname and working
+directory before relying on its instruction scope. Opening a window does not
+move an existing chat. A cloud task or a session on another host cannot see
+muscat sources merely because the VS Code interface can. Follow the current
 [IDE documentation](https://learn.chatgpt.com/docs/codex/ide).
 
 Create `source-manifest.local.json` from the example and fill in only the

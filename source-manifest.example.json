@@ -1,104 +1,49 @@
 {
-  "schema_version": 1,
-  "status": "EXAMPLE: source paths and approved versions are unresolved",
-  "research_access": "Only sources explicitly authorized by the author; original repositories unchanged",
-  "repositories": [
+  "schema_version": 2,
+  "example_only": true,
+  "status": "AUDIT_NOT_STARTED",
+  "scope": "Only sources explicitly authorized by the author",
+  "snapshot_policy": {
+    "discovery_snapshot": "Observed remote default-branch head",
+    "audit_snapshot": "Immutable commit used for evidence review",
+    "inclusion_snapshot": "Author-approved version used for dissertation drafting"
+  },
+  "execution_record": {
+    "method": "REPLACE_WITH_ISOLATED_AUDIT_METHOD",
+    "original_source_guards": "NOT_RUN",
+    "research_assets_imported": 0,
+    "full_declared_workflows_reproduced": 0,
+    "validation_report": null,
+    "clone_helper": null
+  },
+  "sources": [
     {
-      "id": "qdesn",
-      "url": "https://github.com/AntonioAPDL/Article-Q-DESN---Version-2",
-      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
-      "inspection_authorized": false,
-      "discovery": {
-        "access_date": "2026-09-15",
-        "scope": "unauthenticated repository metadata only",
-        "result": "public",
-        "default_branch": "main",
-        "observed_head": "757522db0f85815244370ec92a194de132268883"
+      "id": "SRC-REPLACE",
+      "kind": "seed_repository",
+      "repository": "OWNER/REPOSITORY",
+      "url": "https://github.com/OWNER/REPOSITORY",
+      "default_branch": "main",
+      "discovery_commit": "REPLACE_WITH_FULL_40_CHARACTER_COMMIT",
+      "audit_commit": "REPLACE_WITH_FULL_40_CHARACTER_COMMIT",
+      "audit_scope": "REPLACE_WITH_EXACT_SCOPE",
+      "inventory": {
+        "tracked_files": null,
+        "remote_heads": null,
+        "tags": null,
+        "unmerged_remote_heads": null
       },
-      "approved_branch": null,
-      "approved_commit": null,
-      "manuscript_root": null,
-      "working_tree_status": "NOT_INSPECTED",
-      "dirty_content_snapshot": null,
-      "chapter_allocation": "PROVISIONAL",
-      "imports": []
-    },
-    {
-      "id": "exdqlm",
-      "url": "https://github.com/AntonioAPDL/exdqlm---Article",
-      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
-      "inspection_authorized": false,
-      "discovery": {
-        "access_date": "2026-09-15",
-        "scope": "unauthenticated repository metadata only",
-        "result": "public",
-        "default_branch": "main",
-        "observed_head": "d5534e97db8414fd875022261d4c530eae4676e4"
-      },
-      "approved_branch": null,
-      "approved_commit": null,
-      "manuscript_root": null,
-      "working_tree_status": "NOT_INSPECTED",
-      "dirty_content_snapshot": null,
-      "chapter_allocation": "PROVISIONAL",
-      "imports": []
-    },
-    {
-      "id": "rqr",
-      "url": "https://github.com/AntonioAPDL/RQR-GIBBS",
-      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
-      "inspection_authorized": false,
-      "discovery": {
-        "access_date": "2026-09-15",
-        "scope": "unauthenticated repository metadata only",
-        "result": "public",
-        "default_branch": "main",
-        "observed_head": "73887b9c86ef767aa1567c660718667945630aef"
-      },
-      "approved_branch": null,
-      "approved_commit": null,
-      "manuscript_root": null,
-      "working_tree_status": "NOT_INSPECTED",
-      "dirty_content_snapshot": null,
-      "chapter_allocation": "PROVISIONAL",
-      "imports": []
-    },
-    {
-      "id": "itpu",
-      "url": "https://github.com/AntonioAPDL/itpu-interval-regression",
-      "local_path": "REPLACE_WITH_AUTHORIZED_ABSOLUTE_PATH",
-      "inspection_authorized": false,
-      "discovery": {
-        "access_date": "2026-09-15",
-        "scope": "unauthenticated repository metadata only",
-        "result": "API 404: private, renamed or unavailable not distinguished",
-        "default_branch": null,
-        "observed_head": null
-      },
-      "approved_branch": null,
-      "approved_commit": null,
-      "manuscript_root": null,
-      "working_tree_status": "NOT_INSPECTED",
-      "dirty_content_snapshot": null,
-      "chapter_allocation": "PROVISIONAL",
+      "documents": [
+        {"id": "DOC-REPLACE", "path": "REPLACE_WITH_RELATIVE_PATH", "role": "main manuscript"}
+      ],
+      "relationship": "REPLACE_WITH_CLAIM_DRIVEN_RELATIONSHIP",
+      "highest_bounded_evidence": "E0",
+      "inclusion_status": "PENDING_AUTHOR_VERSION_DECISION",
+      "rights_status": "UNVERIFIED",
       "imports": []
     }
   ],
-  "import_record_example": {
-    "status": "EXAMPLE ONLY: no material imported",
-    "source_id": "REPLACE_WITH_ID",
-    "source_url": "REPLACE_WITH_URL",
-    "source_commit": "REPLACE_WITH_FULL_COMMIT_SHA",
-    "source_path": "REPLACE_WITH_PATH",
-    "source_locator": "REPLACE_WITH_SECTION_OR_FIGURE",
-    "source_sha256": null,
-    "dirty_source": false,
-    "dirty_snapshot_id": null,
-    "destination": "REPLACE_WITH_PROJECT_RELATIVE_PATH",
-    "adaptation_notes": "REPLACE_WITH_CHANGES_AND_NOTATION_MAP",
-    "candidate_contribution": "UNVERIFIED",
-    "coauthors_and_attribution": "UNVERIFIED",
-    "rights_or_permission": "UNVERIFIED",
-    "verification_status": "NOT_CHECKED"
-  }
+  "validation_runs": [
+    {"id": "RUN-REPLACE", "source_id": "SRC-REPLACE", "result": "NOT_RUN", "evidence_level": "E0", "summary": "REPLACE_WITH_SCOPE_AND_RESULT"}
+  ],
+  "local_overlay_note": "Put absolute paths, access notes, dirty snapshots, and audit-clone locations only in ignored source-manifest.local.json."
 }
