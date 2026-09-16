@@ -9,9 +9,9 @@ unverified and is not implied by that distribution event. The read-only
 scholarly audit and the scientific/editorial revision of Chapters 2--5 are
 complete and merged through the global prose/typography pass at `2310613`.
 The substantive dissertation introduction, synthesis, and 319-word abstract
-are complete on the current framing branch. Their chapter-tier build and
-rendered-page review pass; release validation and the final GitHub handoff are
-the current review unit.
+are complete. The clean release-tier build, independent PDF audit, and
+systematic rendered-page review pass. This audit record is the final GitHub
+handoff unit; no Overleaf build or artifact was independently inspected.
 
 ## Completed
 
@@ -106,6 +106,14 @@ the current review unit.
   immutable PriceFM source figure remains preserved; the thesis uses a recorded
   vector-outline derivative with identical plotted content. The full PDF font
   audit now finds no Type 3 or Type 0 fonts.
+- Completed the final release audit from an empty timestamped output directory.
+  The exact 344-page PDF has no unresolved citation/reference, duplicate-label,
+  missing-file, overfull-box, Type 3/Type 0, unembedded-font, page-size, text-
+  envelope, or footer-placement failure. Front matter, every chapter boundary,
+  and both bibliography endpoints were rasterized and inspected.
+- Removed a stranded final DOI-only bibliography page by changing only the
+  inter-entry separation from 12 pt to 11.5 pt. Entries remain single spaced
+  with visible near-baseline separation; no reference content changed.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -152,9 +160,10 @@ combined until the extensions gain independent implementation and evidence.
 - Repository evidence now establishes project-level contributions and
   collaborators, but granular candidate/coauthor role allocation and
   material-specific direct-reuse rights remain unconfirmed.
-- The conversion intentionally retains article-style prose, repeated background,
-  and some “paper” signposting. These are Phase-2 editorial issues, not reasons
-  to reconstruct the chapters from scratch.
+- A final human scholarly read remains necessary. Automated and rendered-page
+  review cannot decide whether every transition reflects the candidate's
+  intended emphasis or whether all collaborator contribution descriptions are
+  complete.
 - The final title, committee fields, dean wording, conferral date, ORCID,
   acknowledgments, granular contribution statements, publication status, and
   material-specific reuse permissions remain unresolved. The substantive
@@ -181,10 +190,9 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
   for exdqlm remains open.
 - `G4` manuscript conversion: complete, merged into GitHub `main`, and reported
   by the author as synchronized to Overleaf.
-- `G5` scientific/editorial integration: research-chapter revision and the
-  cross-chapter prose/typography review are complete; dissertation-level
-  framing remains. Shared background must be synthesized in the introduction,
-  synthesis, and abstract without weakening source qualifications.
+- `G5` scientific/editorial integration: complete. Research-chapter revision,
+  cross-chapter prose/typography review, dissertation framing, and the release-
+  tier technical/visual audit all pass within the stated evidence boundary.
 - `G6` reuse and submission clearance: open. Confirm granular roles, reuse
   permissions, committee counting, and administrative metadata before final
   circulation or submission. The existing synchronization is not rights
@@ -192,12 +200,14 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-Write the dissertation introduction, synthesis, and abstract from the stable
-research chapters. Keep contribution language collective while granular roles
-remain unresolved, and preserve the conservative TCSP and theory-only MTI-
-extension boundaries. Then perform the release-tier build and systematic
-frontmatter/chapter-opening/ending inspection. Major reviewed units use the
-explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
+The author should now read the integrated dissertation as a dissertation,
+confirm the final title and administrative metadata, supply acknowledgments
+and granular contribution statements, obtain committee and reuse clearances,
+and decide whether the remaining open TCSP/MTI and version-provenance items
+must be resolved before circulation. Keep collective attribution until the
+role record is confirmed. Any resulting major reviewed unit should use the
+explicit GitHub/Overleaf handoff in `WORKFLOW.md`, followed by inspection of
+the actual Overleaf build rather than assuming synchronization proves parity.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
 and final publication permissions remain open. Working text must use accurate
