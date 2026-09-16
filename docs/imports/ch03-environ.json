@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-15",
+  "chapter": "ch03-environ",
+  "policy": {
+    "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
+    "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
+    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+  },
+  "documents": [
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "wileyNJD-APA.tex",
+      "source_sha256": "36ba1497d5e90680e88161512407a93e9deebf895ab77b48ecb2dfe140ea1cbd",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "The article spine, algorithms, and all four supporting-result subsections are integrated by topic.",
+      "section_dispositions": [
+        {
+          "section": "INTRODUCTION",
+          "disposition": "integrated"
+        },
+        {
+          "section": "METHODOLOGY",
+          "disposition": "integrated"
+        },
+        {
+          "section": "FORECASTING THE SAN LORENZO RIVER FLOW",
+          "disposition": "integrated"
+        },
+        {
+          "section": "FORECAST VALIDATION RESULTS",
+          "disposition": "integrated"
+        },
+        {
+          "section": "INTERPRETATION OF THE SELECTED SPECIFICATION",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Conclusions",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Acknowledgments",
+          "disposition": "omitted",
+          "reason": "article submission/availability boilerplate retained in the source repository, not repeated in the chapter body"
+        },
+        {
+          "section": "Funding Statement",
+          "disposition": "omitted",
+          "reason": "article submission/availability boilerplate retained in the source repository, not repeated in the chapter body"
+        },
+        {
+          "section": "Conflict of Interest Statement",
+          "disposition": "omitted",
+          "reason": "article submission/availability boilerplate retained in the source repository, not repeated in the chapter body"
+        },
+        {
+          "section": "Data Availability Statement",
+          "disposition": "omitted",
+          "reason": "article submission/availability boilerplate retained in the source repository, not repeated in the chapter body"
+        },
+        {
+          "section": "Code availability",
+          "disposition": "omitted",
+          "reason": "article submission/availability boilerplate retained in the source repository, not repeated in the chapter body"
+        },
+        {
+          "section": "Supplementary Parameter Summaries and Illustrations",
+          "disposition": "integrated_selected_subsections",
+          "included_subsections": [
+            "Component-Removal Sensitivity Analysis",
+            "Supplementary Source-Specific Shape and Scale Parameters",
+            "Univariate Transfer-Active Predictive Synthesis",
+            "Additional Cutoff-Specific Predictive Synthesis Panels"
+          ]
+        },
+        {
+          "section": "Markov Chain Monte Carlo Algorithms",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Variational Bayes Algorithms",
+          "disposition": "integrated"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/covariate_context_precip_soil_gdpc.png",
+      "locator": "Figures/manuscript/covariate_context_precip_soil_gdpc.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/covariate_context_precip_soil_gdpc.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "a450b7fa331403f61ea0af951dc1bdf65fab1e4d471c8f89b26cc72d89b9ad03",
+      "destination_sha256": "a450b7fa331403f61ea0af951dc1bdf65fab1e4d471c8f89b26cc72d89b9ad03",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/forecast_products_context.png",
+      "locator": "Figures/manuscript/forecast_products_context.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/forecast_products_context.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "8a3c1326949a6a8580add5db45ee57d7f17aa1b408dddf7e723a185dec4e2a4b",
+      "destination_sha256": "8a3c1326949a6a8580add5db45ee57d7f17aa1b408dddf7e723a185dec4e2a4b",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/historical_component_80month.png",
+      "locator": "Figures/manuscript/historical_component_80month.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/historical_component_80month.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "71f96ff3d2172082b52c4de1a5b75b6af998e282719e523fff65200572c51bbf",
+      "destination_sha256": "71f96ff3d2172082b52c4de1a5b75b6af998e282719e523fff65200572c51bbf",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/historical_summary_dry_period.png",
+      "locator": "Figures/manuscript/historical_summary_dry_period.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/historical_summary_dry_period.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "5e89ea1cd49566adfd8b27cef10723d4babf834178ae8e770bef3996e5e57a78",
+      "destination_sha256": "5e89ea1cd49566adfd8b27cef10723d4babf834178ae8e770bef3996e5e57a78",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/historical_summary_wet_period.png",
+      "locator": "Figures/manuscript/historical_summary_wet_period.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/historical_summary_wet_period.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "c81b3cc77c9a230ac1bfa94430a4820e8046b3eb1bdf730a76de2a624a5f18c4",
+      "destination_sha256": "c81b3cc77c9a230ac1bfa94430a4820e8046b3eb1bdf730a76de2a624a5f18c4",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/reference_synthesis_univariate.png",
+      "locator": "Figures/manuscript/reference_synthesis_univariate.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/reference_synthesis_univariate.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "daba2360b25c7fe4042ac28b7c0f72852c68b6c77d88ed3d80994cc145d15f6d",
+      "destination_sha256": "daba2360b25c7fe4042ac28b7c0f72852c68b6c77d88ed3d80994cc145d15f6d",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/retrospective_products_context.png",
+      "locator": "Figures/manuscript/retrospective_products_context.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/retrospective_products_context.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "a670b1de369c4a576c9d9221eec27f83e78bbdf00db88419a714efa2bf5de16e",
+      "destination_sha256": "a670b1de369c4a576c9d9221eec27f83e78bbdf00db88419a714efa2bf5de16e",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/manuscript/site_context_usgs.png",
+      "locator": "Figures/manuscript/site_context_usgs.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/site_context_usgs.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "eeef68672852e4a5362455147b84212ca5bd28d02f9774bb40bdc2a495dc8d8c",
+      "destination_sha256": "eeef68672852e4a5362455147b84212ca5bd28d02f9774bb40bdc2a495dc8d8c",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_01_23_multivariate_synthesis_with_reference_ensembles.png",
+      "locator": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_01_23_multivariate_synthesis_with_reference_ensembles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/cutoff_2021_01_23_multivariate_synthesis_with_reference_ensembles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "5709d427ec917df947e105d54591d94a7b67f43e99fe50027f65fcccf5192f9f",
+      "destination_sha256": "5709d427ec917df947e105d54591d94a7b67f43e99fe50027f65fcccf5192f9f",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_11_12_multivariate_synthesis_with_reference_ensembles.png",
+      "locator": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_11_12_multivariate_synthesis_with_reference_ensembles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/cutoff_2021_11_12_multivariate_synthesis_with_reference_ensembles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "fd64af9e6c4e1b059b51512c1d6cbfa0b764169e6e13682951d701512050b820",
+      "destination_sha256": "fd64af9e6c4e1b059b51512c1d6cbfa0b764169e6e13682951d701512050b820",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_12_21_multivariate_synthesis_with_reference_ensembles.png",
+      "locator": "Figures/multivariate_synthesis_by_cutoff/cutoff_2021_12_21_multivariate_synthesis_with_reference_ensembles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/cutoff_2021_12_21_multivariate_synthesis_with_reference_ensembles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "d6a6dbd4bf6817a2e7046aa96477107631038a13dda4ddce478be576a4ebf4dc",
+      "destination_sha256": "d6a6dbd4bf6817a2e7046aa96477107631038a13dda4ddce478be576a4ebf4dc",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/multivariate_synthesis_by_cutoff/cutoff_2022_05_11_multivariate_synthesis_with_reference_ensembles.png",
+      "locator": "Figures/multivariate_synthesis_by_cutoff/cutoff_2022_05_11_multivariate_synthesis_with_reference_ensembles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/cutoff_2022_05_11_multivariate_synthesis_with_reference_ensembles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "27caa21eccd85e8864a4bf15ee837893be764e3bc123dd629f57a4a5f98f4303",
+      "destination_sha256": "27caa21eccd85e8864a4bf15ee837893be764e3bc123dd629f57a4a5f98f4303",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "Figures/multivariate_synthesis_by_cutoff/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png",
+      "locator": "Figures/multivariate_synthesis_by_cutoff/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png",
+      "material_type": "figure_asset",
+      "destination": "figures/ch03-environ/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "4a5149e87b8325bd7ede753db82a369902c3de66f6cb8e885c07f2e41db245e6",
+      "destination_sha256": "4a5149e87b8325bd7ede753db82a369902c3de66f6cb8e885c07f2e41db245e6",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/appendix_gamma_summary_table.tex",
+      "locator": "tables/generated_tex/appendix_gamma_summary_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/appendix_gamma_summary_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "f2b5126ce287f345fcad65a7ee0ae0a8de0cbebf11f1e6d64a55ad5bc1f838ce",
+      "destination_sha256": "41237a10ad800d060e136b72aa30c1319a5c934590a52be6a0a99005237fa6d9",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/appendix_sigma_summary_table.tex",
+      "locator": "tables/generated_tex/appendix_sigma_summary_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/appendix_sigma_summary_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "ef37607041715f5be344b7b1f10273a69a6b2af7ecb5ee1b5e077367383a0833",
+      "destination_sha256": "6c4b9c67fdf2a4d72beb3f3cf6c6dff506ec40d47f29e61775d6fb7a15891f66",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/benchmark_crps_main_table.tex",
+      "locator": "tables/generated_tex/benchmark_crps_main_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/benchmark_crps_main_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "5e900a2d2f07acf18fdc0f1e9d8a98b37211671365a5c15c2c169f8aa45e458f",
+      "destination_sha256": "467695006a6ab917e63882d9d7177f31fc63f6fe4d9fabadbe9130a671a93486",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/benchmark_crps_nws_horizon_table.tex",
+      "locator": "tables/generated_tex/benchmark_crps_nws_horizon_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/benchmark_crps_nws_horizon_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "3ae0060696390bd1599aaf470fa6482d36c8601755ca6c8951d2001363287b1d",
+      "destination_sha256": "ffe4c9935aca5a2e518a3acc317b14daddd8e1f4b5410ba716a3f98758e24568",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/he3_ablation_crps_main_table.tex",
+      "locator": "tables/generated_tex/he3_ablation_crps_main_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/he3_ablation_crps_main_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "7dc7849baac8e43d3f8b3690d28fa7efc9bdb8fc9e90a36e8ef43e55c2125f3c",
+      "destination_sha256": "e5b07e0c5178db9cf5b1b52b1ed5cac63a101bdd04a41cddcb0d5dd52ddb7762",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/he3_ablation_crps_nws_horizon_table.tex",
+      "locator": "tables/generated_tex/he3_ablation_crps_nws_horizon_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/he3_ablation_crps_nws_horizon_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "69e6346034c677ef876c0a871b09badd7d79b254fab75f3f69ea690cd31fe4b1",
+      "destination_sha256": "f1266fb790be0f723bc4f0c3a3dc9992c6c64e8688f0cc3de81a59689ddca986",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/he4_quantile_check_loss_main_table.tex",
+      "locator": "tables/generated_tex/he4_quantile_check_loss_main_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/he4_quantile_check_loss_main_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "edd6b64454a928bbba0abe726211247d18bc8e7932dcffc30b553e3d27a40c49",
+      "destination_sha256": "9bd5f449d69b45572b6b9a8a8ae4478890dd9b21c3c9862b9497997d72fd9bba",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "tables/generated_tex/representative_covariate_effects_table.tex",
+      "locator": "tables/generated_tex/representative_covariate_effects_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch03-environ/generated_tex/representative_covariate_effects_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "39a85e0b27479cedf3189a95e8ce449b04728b4e6cbe9cf979b410ca9c641c17",
+      "destination_sha256": "bd1589e9f4263a7a26090bac5de65f4b519cdcdf7e36cadea3ac0f895566f959",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-ENVIRON",
+      "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+      "source_path": "wileyNJD-APA.tex",
+      "locator": "wileyNJD-APA.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/03-research-b.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "36ba1497d5e90680e88161512407a93e9deebf895ab77b48ecb2dfe140ea1cbd",
+      "destination_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
+      "claim_ids": [
+        "CLM-ENV-001",
+        "ART-ENV-002",
+        "ART-ENV-003",
+        "CLM-ENV-004"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    }
+  ]
+}
