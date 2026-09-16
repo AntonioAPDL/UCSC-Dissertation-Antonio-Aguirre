@@ -238,3 +238,25 @@ rasterized and inspected. Text, equations, tables, and figures were legible,
 with no clipping or collisions. This validates dissertation integration and
 rendering; it does not constitute a new simulation run, model fit, forecast
 experiment, or computational reproduction.
+
+## 2026-09-16 Chapter 5 milestone validation
+
+The Chapter 5 milestone passed the chapter validation tier against the retained
+fixed-commit audit root. The final build is 319 US Letter pages and 17,984,061
+bytes, with no undefined citation or reference, duplicate-label, missing-file,
+pdfTeX-destination, or overfull-box diagnostic. Thirty-eight underfull-box
+notices, the known caption-package warning, and two automatic `!h`-to-`!ht`
+adjustments remain. PDF SHA-256:
+`78794d00fbd28bf43f791ed6d434ee8e13f225962f57ec22bb2951420571bc38`.
+
+The Chapter 5 opening; quantile-window theorem and proof; MTI proposition and
+global profiling proof; fractional empirical-balance section; fixed-target
+generalized-Bayes computation; TCSP definition and proof-limit discussion;
+validation protocol and principal table; pharmaceutical application table;
+extension opening and corrected midpoint-loss sign; diagnostics; and final
+discussion were rasterized and inspected. Text, equations, tables, and figures
+were legible, with no clipping or collisions. This validates dissertation
+integration and rendering. It does not supply the open action-matched TCSP
+proof, rerun any simulation or application analysis, or establish an
+implementation or empirical performance result for the proposed MTI
+extensions.

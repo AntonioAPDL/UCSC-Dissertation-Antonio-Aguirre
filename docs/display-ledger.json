@@ -906,8 +906,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:fig:three-interval-principles",
@@ -918,8 +919,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:fig:mean-tilt-map",
@@ -930,8 +932,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:fig:mean-tilt-cf-anchors",
@@ -942,8 +945,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:fig:supp-loss-geometry",
@@ -954,8 +958,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:tolerance-validation-primary",
@@ -966,8 +971,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:fig:tolerance-validation-primary",
@@ -978,8 +984,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:fig:tolerance-validation-width-ranges",
@@ -990,8 +997,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:fig:supp-tolerance-population-shortest",
@@ -1002,8 +1010,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:supp-tcsp-scan-calibration",
@@ -1014,8 +1023,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:tab:supp-full-range-thresholds",
@@ -1026,8 +1036,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:pharma-application-primary",
@@ -1038,8 +1049,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:fig:pharma-application-primary",
@@ -1050,8 +1062,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:tab:supp-pharma-response-diagnostics",
@@ -1062,8 +1075,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:supp-pharma-rsd",
@@ -1074,8 +1088,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:fig:supp-pharma-rsd",
@@ -1086,8 +1101,9 @@
       "disposition": "MERGE",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Consolidated with its paired table or figure into one claim-bearing display and adjacent exact prose."
     },
     {
       "id": "rqr:tab:supp-pharma-dependence",
@@ -1098,8 +1114,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:mean-tilt-cf-mini-study",
@@ -1110,8 +1127,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "rqr:tab:supp-primary-dgp-delivery",
@@ -1122,8 +1140,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:supp-primary-dgp-width-ranges",
@@ -1134,8 +1153,9 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Replaced by an exact prose summary; immutable source-asset provenance remains in the import manifest."
     },
     {
       "id": "rqr:tab:supp-mti-ecm-policy",
@@ -1146,8 +1166,9 @@
       "disposition": "KEEP",
       "claim_role": "interval-target theory, tolerance calibration evidence, and pharmaceutical application",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED",
+      "implementation_note": "Retained as a claim-bearing Chapter 5 display."
     },
     {
       "id": "qdesn:fig:simulation-500obs-mcmc-forecast-criteria-thesis",
