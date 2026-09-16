@@ -59,6 +59,9 @@ the current stage.
   terminology/notation map, 11 bibliography reconciliation groups, and
   explicit dispositions for all 95 displays are recorded in the connected
   editorial ledgers.
+- Completed the global integration decisions: retained the four-project
+  architecture, adopted the common terminology boundaries, and implemented
+  all 11 bibliography reconciliations. Chapter 2 is the next revision unit.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,

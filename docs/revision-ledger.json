@@ -17,23 +17,23 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "state": "BASELINE_UNREVISED",
-      "revision_ids": []
+      "current_sha256": "50acf5ee7db65474b77f6a9fc71861d6f17dfbe887ccf3290f85f9d150839f32",
+      "state": "EDITED",
+      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "state": "BASELINE_UNREVISED",
-      "revision_ids": []
+      "current_sha256": "350c13f464efbb989ac721b24348577ff4746e133cab7a8f118b530fccfd1fbe",
+      "state": "EDITED",
+      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "state": "BASELINE_UNREVISED",
-      "revision_ids": []
+      "current_sha256": "77a99dbf3aa9439eab7fe0a9437dab6ee6eb4c93a1100977db9e6961680f5849",
+      "state": "EDITED",
+      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
     },
     {
       "path": "chapters/05-research-d.tex",
@@ -45,10 +45,24 @@
     {
       "path": "references.bib",
       "baseline_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
-      "current_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
-      "state": "BASELINE_UNREVISED",
-      "revision_ids": []
+      "current_sha256": "9f9ee13601f628b1572cdd7a4050fdde411a576ae40538ee6159e2792e61b960",
+      "state": "EDITED",
+      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "id": "REV-GLOBAL-BIB-20260916",
+      "date": "2026-09-16",
+      "paths": [
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "references.bib"
+      ],
+      "summary": "Canonicalized eleven semantically overlapping bibliography groups, corrected three erroneous published records, and rewired affected chapter citations without changing scientific claims.",
+      "evidence": "docs/bibliography-map.json; DOI/title/author/version comparisons recorded by the Phase 1 audit",
+      "validation": "Fast validation, BibTeX resolution, and chapter-tier build required before merge."
+    }
+  ]
 }

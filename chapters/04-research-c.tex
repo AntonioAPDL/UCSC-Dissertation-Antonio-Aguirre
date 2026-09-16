@@ -895,7 +895,7 @@ coefficients, ridge regularization uses
 \(\vect\beta_{\mathrm{slope}}\sim
 \Normal(\zeros{r},\kappa_\beta^2\Id{r})\). The adaptive alternative uses the
 Nishimura--Suchard product form of the regularized horseshoe
-\citep{qdesn-NishimuraSuchard2023SSS,qdesn-MakalicSchmidt2016SimpleSampler}. Conditional
+\citep{exd-nishimura2023shrunken,qdesn-MakalicSchmidt2016SimpleSampler}. Conditional
 on global, local, and slab scales \((\tau,\lambda_j,\zeta)\),
 \begin{equation}
 \beta_j\mid\tau,\lambda_j,\zeta\sim\Normal(0,V_j),
@@ -1140,7 +1140,7 @@ For the regularized-horseshoe prior, the intercept is independent,
 \(\beta_0\sim\Normal(b_0,V_0)\), and the non-intercept coefficients are
 represented through the
 Nishimura--Suchard-style regularized horseshoe construction
-\citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS,qdesn-NishimuraSuchard2023SSS}.
+\citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS,exd-nishimura2023shrunken}.
 For \(j=1,\ldots,r\),
 \begin{equation}
 p_{\mathrm{ns}}(\beta_j,\lambda_j\mid\tau,\zeta)
