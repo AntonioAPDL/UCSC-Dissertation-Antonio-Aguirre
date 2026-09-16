@@ -86,3 +86,14 @@ and provisional page-fit adaptations but did not invent scientific claims,
 assign undocumented individual roles, run research computation, or establish
 reuse permission. All imports remain local and unverified for direct reuse; no
 push, publication, or Overleaf synchronization was performed.
+
+2026-09-16: After the author reported that the GitHub-to-Overleaf handoff had
+worked and authorized the full scientific/editorial integration workflow, AI
+assistance reconciled the current lifecycle records and repaired the post-import
+provenance design. It separated immutable import-baseline hashes from editable
+dissertation derivatives, added a revision ledger, made the importer check-only
+by default, restricted explicit regeneration to a clean dedicated branch, and
+replaced the obsolete single-status audit check with tested lifecycle
+invariants. Fast validation passed under Python 3.11 and rechecked all 102
+source blobs against the retained fixed-commit audit clones. No research
+repository was modified and no research computation was run.

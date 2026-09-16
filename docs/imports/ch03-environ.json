@@ -1,11 +1,28 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-09-15",
   "chapter": "ch03-environ",
+  "baseline": {
+    "id": "manuscript-first-20260915",
+    "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
+    "merged_commit": "5def110d009545551e89b7efc9746c61122e8918",
+    "destination_hash_field": "destination_sha256",
+    "meaning": "Immutable hash of each destination at the initial structural-conversion baseline"
+  },
+  "editorial_derivative": {
+    "chapter_path": "chapters/03-research-b.tex",
+    "revision_ledger": "docs/revision-ledger.json",
+    "status": "BASELINE_UNREVISED"
+  },
+  "distribution": {
+    "github": "MERGED_TO_MAIN",
+    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+    "rights_effect": "NONE"
+  },
   "policy": {
     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
     "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
-    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+    "rights": "material-specific reuse permission remains unverified; recorded distribution does not establish publication or submission clearance"
   },
   "documents": [
     {
@@ -13,7 +30,7 @@
       "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
       "source_path": "wileyNJD-APA.tex",
       "source_sha256": "36ba1497d5e90680e88161512407a93e9deebf895ab77b48ecb2dfe140ea1cbd",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "The article spine, algorithms, and all four supporting-result subsections are integrated by topic.",
       "section_dispositions": [
         {
@@ -103,7 +120,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -122,7 +139,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -141,7 +158,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -160,7 +177,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -179,7 +196,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -198,7 +215,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -217,7 +234,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -236,7 +253,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -255,7 +272,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -274,7 +291,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -293,7 +310,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -312,7 +329,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -331,7 +348,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -350,7 +367,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -369,7 +386,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -388,7 +405,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -407,7 +424,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -426,7 +443,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -445,7 +462,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -464,7 +481,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -483,7 +500,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -502,7 +519,7 @@
         "ART-ENV-003",
         "CLM-ENV-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     }
   ]

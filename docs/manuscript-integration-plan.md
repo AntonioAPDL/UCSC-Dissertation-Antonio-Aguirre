@@ -596,11 +596,14 @@ On 2026-09-15, the author approved these defaults:
    supplement assets;
 5. keep all code, data, computations, and full provenance archives external;
 6. commit locally in recoverable chapter-sized steps; and
-7. do not push, sync, or externally publish imported text/assets until reuse
-   status is reviewed.
+7. initially keep the conversion local pending a separate distribution
+   decision. The author later explicitly directed the GitHub merge and Overleaf
+   handoff; that later instruction superseded the local-only distribution
+   boundary but did not resolve material-specific reuse rights.
 
-The local implementation follows all seven decisions. No remote or Overleaf
-synchronization was performed.
+The structural implementation followed the seven decisions. It was later
+merged into GitHub `main`, and the author reports that the Overleaf handoff
+worked. No Overleaf build artifact was independently inspected.
 
 ## 18. Local implementation record
 
@@ -623,7 +626,8 @@ dispositions, and 102 imported records. The 93 display dependencies comprise
 only selected TeX table/alias fragments and final PDF/PNG figure assets. No
 research code, data, fitted objects, simulation outputs as datasets, caches,
 environments, source histories, or live cross-repository paths were imported.
-All direct reuse remains marked `UNVERIFIED_LOCAL_ONLY`.
+All material-specific reuse remains marked `UNVERIFIED`; distribution state is
+recorded separately from rights state.
 
 Phase 1 is complete: all four article spines compile in the dissertation;
 supporting proofs, algorithms, derivations, diagnostics, and selected empirical
@@ -632,10 +636,10 @@ the document; and one bibliography resolves all chapter citations. Dense
 source tables and a small number of long derivations use provisional compact
 typesetting to fit the thesis page and require a later readability pass.
 
-Phases 2 and 3 remain deliberately open. The converted chapters still retain
+Phases 2 and 3 are the current editorial work. The converted chapters retain
 article-style signposting and repeated background where fidelity was safer
 than premature rewriting. Subsequent work must review scientific completeness
 and ordering chapter by chapter, deduplicate shared exposition, write the
 dissertation introduction and synthesis, confirm granular contribution roles,
 resolve direct-reuse permissions, and complete administrative metadata before
-any external synchronization or submission.
+final circulation or submission.

@@ -1,7 +1,17 @@
 {
   "schema_version": 2,
   "recorded_at": "2026-09-15",
-  "status": "LOCAL_MANUSCRIPT_CONVERSION_COMPLETE_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+  "status": "MANUSCRIPT_CONVERSION_SYNCED_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+  "lifecycle": {
+    "research_audit": "COMPLETE",
+    "author_architecture_decision": "COMPLETE",
+    "manuscript_conversion": "COMPLETE",
+    "scientific_review": "NOT_STARTED",
+    "reuse_review": "PENDING",
+    "github_sync": "COMPLETE",
+    "overleaf_handoff": "AUTHOR_REPORTED_COMPLETE",
+    "state_note": "The conversion is present on GitHub main. The author reports a successful GitHub-to-Overleaf handoff; no Overleaf build log or artifact was independently inspected. Distribution state does not establish material-specific reuse permission."
+  },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
     "discovery_snapshot": "Observed remote default-branch head on the audit date",
@@ -36,7 +46,7 @@
     "snapshot_state": "Audited commits are working drafting sources; final submission freezes remain replaceable",
     "integration_mode": "Manuscript-first local conversion: preserve main article bodies, integrate unique supplement material into chapter sections, and keep computation external",
     "asset_boundary": "Only final displayed figures/tables selected for the thesis may be copied; code, data, fitted objects, runs, and full output archives remain external",
-    "direct_reuse_state": "Material-specific rights remain pending before external synchronization, publication, or submission of verbatim text and source assets",
+    "direct_reuse_state": "Material-specific rights remain pending. The conversion has already been synchronized to GitHub and, according to the author, Overleaf; that distribution event does not establish permission for final publication or submission.",
     "integration_plan": "docs/manuscript-integration-plan.md"
   },
   "sources": [
@@ -66,7 +76,7 @@
         {
           "chapter": "chapters/04-research-c.tex",
           "manifest": "docs/imports/ch04-qdesn.json",
-          "status": "UNVERIFIED_LOCAL_ONLY",
+          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
           "scope": "three manuscript records plus selected current display fragments and claim-relevant figures"
         }
       ]
@@ -94,7 +104,7 @@
         {
           "chapter": "chapters/03-research-b.tex",
           "manifest": "docs/imports/ch03-environ.json",
-          "status": "UNVERIFIED_LOCAL_ONLY",
+          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
           "scope": "one manuscript record plus manuscript-referenced tables and figures"
         }
       ]
@@ -121,7 +131,7 @@
         {
           "chapter": "chapters/05-research-d.tex",
           "manifest": "docs/imports/ch05-mti.json",
-          "status": "UNVERIFIED_LOCAL_ONLY",
+          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
           "scope": "RQR main and supplement records plus their selected display assets"
         }
       ]
@@ -148,7 +158,7 @@
         {
           "chapter": "chapters/05-research-d.tex",
           "manifest": "docs/imports/ch05-mti.json",
-          "status": "UNVERIFIED_LOCAL_ONLY",
+          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
           "scope": "MTI-EXTENSIONS main and supplement records integrated after the RQR foundation"
         }
       ]
@@ -176,7 +186,7 @@
         {
           "chapter": "chapters/02-research-a.tex",
           "manifest": "docs/imports/ch02-exdqlm.json",
-          "status": "UNVERIFIED_LOCAL_ONLY",
+          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
           "scope": "one article manuscript record plus its nine displayed figures"
         }
       ]

@@ -6,18 +6,21 @@ executed on 2026-09-15. Read `docs/research-audit.md`,
 `docs/manuscript-integration-plan.md`, `docs/research-decisions.md`,
 `docs/claim-evidence.json`, and
 `source-manifest.json` before further work.
-Do not repeat the whole audit unless an approved source snapshot changes.
+Do not repeat the whole source audit unless an approved snapshot changes. For
+current editorial work, also read `docs/editorial-review.md` and
+`docs/revision-ledger.json`.
 
 The author has selected the audited commits as working drafting snapshots,
 supplied the official/scholarly name mapping, and directed a four-project
 architecture: exdqlm, Environmetrics, QDESN, and combined MTI. Repository
 evidence supplies collaborators and project-level contributions. Granular
 candidate/coauthor roles, direct-reuse rights, the committee's exdqlm counting
-decision, and any final snapshot replacements remain open. Gate G4 remains
-closed until the author accepts or modifies the seven manuscript-conversion
-defaults and authorizes the local integration campaign. The checklist below
-remains the controlling substantive-fidelity protocol for a targeted re-audit;
-`manuscript-integration-plan.md` controls the later import workflow.
+decision, and any final snapshot replacements remain open. Gate G4 is complete:
+the author approved the conversion, it was merged into GitHub `main`, and the
+author reports a successful Overleaf handoff. Gate G5 scientific/editorial
+integration is current. The checklist below remains the substantive-fidelity
+protocol for a targeted re-audit; `manuscript-integration-plan.md` documents the
+completed structural import, and the revision ledger protects later edits.
 
 You are working in my UCSC Statistical Science PhD dissertation repository.
 I entered in Fall 2021 and plan around Fall 2026, but my defense, conferral and
@@ -115,8 +118,9 @@ status, limitations and citation accuracy. Use visible TODOs for missing
 support. Do not fabricate novelty, publication status, theorems, numbers, an
 abstract or acknowledgments. Build and inspect after meaningful changes and
 keep compilation independent of sibling repositories and expensive
-computations. Do not push or synchronize imported material until separately
-authorized after reuse review.
+computations. Do not infer reuse permission from the completed GitHub/Overleaf
+handoff. Further pushes and synchronization follow the explicit reviewed-unit
+workflow.
 
 At each handoff update docs/STATUS.md with completed work, decisions, source
 versions, material changes, missing evidence, validation results and the next

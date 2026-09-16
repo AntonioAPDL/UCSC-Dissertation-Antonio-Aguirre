@@ -1,11 +1,28 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-09-15",
   "chapter": "ch02-exdqlm",
+  "baseline": {
+    "id": "manuscript-first-20260915",
+    "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
+    "merged_commit": "5def110d009545551e89b7efc9746c61122e8918",
+    "destination_hash_field": "destination_sha256",
+    "meaning": "Immutable hash of each destination at the initial structural-conversion baseline"
+  },
+  "editorial_derivative": {
+    "chapter_path": "chapters/02-research-a.tex",
+    "revision_ledger": "docs/revision-ledger.json",
+    "status": "BASELINE_UNREVISED"
+  },
+  "distribution": {
+    "github": "MERGED_TO_MAIN",
+    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+    "rights_effect": "NONE"
+  },
   "policy": {
     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
     "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
-    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+    "rights": "material-specific reuse permission remains unverified; recorded distribution does not establish publication or submission clearance"
   },
   "documents": [
     {
@@ -13,7 +30,7 @@
       "commit": "d5534e97db8414fd875022261d4c530eae4676e4",
       "source_path": "exdqlm-jss.tex",
       "source_sha256": "f5ad13436f8f731dcc75482dee272aa1d4601f1e8e619545058b9c7815f9f434",
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "integration_note": "All scientific sections integrated; journal wrapper and article front/back matter removed.",
       "section_dispositions": [
         {
@@ -78,7 +95,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -95,7 +112,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -112,7 +129,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -129,7 +146,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -146,7 +163,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -163,7 +180,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -180,7 +197,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -197,7 +214,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -214,7 +231,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
@@ -231,7 +248,7 @@
         "CLM-EXDQLM-001",
         "CON-EXDQLM-004"
       ],
-      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     }
   ]

@@ -1,12 +1,12 @@
 # Project status
 
-As of 2026-09-15: the muscat research-source audit and the approved local
-manuscript-first structural conversion are complete. All four research chapter
-bodies now compile from tracked dissertation files. Main-article prose was
-preserved as the initial baseline, unique supporting material was integrated
-by topic, and selected final display assets were copied with exact provenance.
-No code, data, computation, push, publication, or Overleaf synchronization was
-performed.
+As of 2026-09-16: the muscat research-source audit and manuscript-first
+structural conversion are complete. The conversion was merged into GitHub
+`main` at `5def110d009545551e89b7efc9746c61122e8918`; the author reports that
+the GitHub-to-Overleaf handoff worked. No Overleaf build log or artifact has
+been independently inspected. Material-specific reuse permission remains
+unverified and is not implied by that distribution event. Scientific and
+editorial integration is the current stage.
 
 ## Completed
 
@@ -41,7 +41,19 @@ performed.
 - Added four `docs/imports/*.json` records covering nine source manuscripts,
   96 top-level section dispositions, and 102 imported records. The 93 display
   dependencies contain only final PDF/PNG figures and TeX table/alias
-  fragments; every record remains `UNVERIFIED_LOCAL_ONLY`.
+  fragments; every material-specific rights record remains `UNVERIFIED`.
+- Reconciled the post-handoff lifecycle state. GitHub/Overleaf distribution is
+  now recorded separately from reuse rights, and the author's Overleaf report
+  is distinguished from an independently inspected build.
+- Replaced byte-identity coupling with a two-layer provenance model: immutable
+  import-baseline hashes remain in `docs/imports/*.json`, while current editable
+  derivatives and revision IDs are tracked in `docs/revision-ledger.json`.
+- Made the manuscript importer check-only by default and restricted explicit
+  baseline regeneration to a clean `regenerate/*` branch with unchanged
+  baseline destinations.
+- Repaired lifecycle validation with cross-state invariants and focused tests;
+  both audit validators now pass under Python 3.11, including rechecking all
+  102 immutable source blobs against the retained audit clones.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -116,28 +128,28 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
   direct-reuse rights remain open.
 - `G3` four-project architecture: author-directed; committee counting review
   for exdqlm remains open.
-- `G4` manuscript conversion: complete locally under the seven approved
-  defaults; no remote synchronization performed.
-- `G5` scientific/editorial integration: open. Review one converted chapter at
+- `G4` manuscript conversion: complete, merged into GitHub `main`, and reported
+  by the author as synchronized to Overleaf.
+- `G5` scientific/editorial integration: in progress. Review one converted chapter at
   a time, then deduplicate shared background and write the introduction and
   synthesis without weakening source qualifications.
 - `G6` reuse and submission clearance: open. Confirm granular roles, reuse
-  permissions, committee counting, and administrative metadata before push,
-  Overleaf synchronization, circulation, or submission.
+  permissions, committee counting, and administrative metadata before final
+  circulation or submission. The existing synchronization is not rights
+  clearance.
 
 ## Next task
 
-Review the structural chapters in this order: exdqlm, Environmetrics, QDESN,
-then combined RQR/MTI. For each chapter, confirm that the source selection and
-supporting-material placement are scientifically complete before substantive
-editing. Then perform the cross-chapter deduplication and transition pass,
-write the introduction and synthesis, and resolve the G6 decisions. Nothing
-should be pushed or synchronized until direct-reuse status is reviewed.
+Complete the structured scholarly audit, then revise the structural chapters
+in this order: exdqlm, Environmetrics, QDESN, and combined RQR/MTI. Resolve
+structure and scientific language before sentence polishing. Then perform the
+cross-chapter notation, bibliography, display, and transition pass; write the
+introduction and synthesis; and resolve the G6 decisions. Major reviewed units
+use the explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
-and final publication permissions may remain open during the local structural
-conversion, provided the working text uses accurate collective attribution and
-the imported material is not externally synchronized.
+and final publication permissions remain open. Working text must use accurate
+collective attribution until those roles are confirmed.
 
 Administrative fields remain unresolved: ORCID, official title/date, committee
 roles and applicability, dean/signature/checklist wording, defense and Fall

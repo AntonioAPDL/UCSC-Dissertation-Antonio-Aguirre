@@ -130,3 +130,21 @@ not scientific acceptance, full computational reproduction, contribution-role
 allocation, direct-reuse permission, committee approval, accessibility
 compliance, or filing readiness. The research repositories remain external and
 no source computation was rerun.
+
+## 2026-09-16 editorial-provenance validation
+
+Before scientific editing, the import workflow was separated into an immutable
+baseline and editable dissertation derivatives. The following checks passed
+under Python 3.11:
+
+- lifecycle-invariant unit tests;
+- `scripts/validate_research_audit.py` for eight sources and 32 evidence
+  records;
+- check-only importer verification of the five manuscript source snapshots;
+- `scripts/validate_manuscript_imports.py --audit-root ...`, including all 102
+  immutable source blobs, the four schema-2 import manifests, baseline/current
+  revision-ledger linkage, 434 unique labels, and 124 cited keys; and
+- `git diff --check` through the fast validation tier.
+
+This validation establishes workflow safety and provenance continuity. It does
+not yet certify revised chapter prose or an Overleaf build.

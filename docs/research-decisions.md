@@ -2,7 +2,7 @@
 
 Status: **partially resolved by author direction; focused confirmations remain**
 Prepared: 2026-09-15
-Revised: 2026-09-15
+Revised: 2026-09-16
 Evidence: `research-audit.md`, `chapter-plan.md`, `claim-evidence.json`,
 `../source-manifest.json`, and the fixed-snapshot source manuscripts
 
@@ -38,9 +38,8 @@ Associated decisions:
   software article and relevant QDESN comparator use 1.1.1; package `main`
   remains 1.1.2 support and is not substituted retroactively.
 
-G1 is sufficiently resolved for source-packet preparation. Original-prose
-drafting may begin only after the author opens G4 for a named unit. These
-snapshots are not final submission freezes.
+G1 is resolved for the current dissertation draft. The structural conversion
+has been completed from these snapshots. They are not final submission freezes.
 
 ## G2 — identity
 
@@ -100,23 +99,24 @@ conversion plan. The proposed working boundary is:
   claim-relevant tables/figures next to the corresponding main material;
 - import selected final display assets only, never code/data/output archives;
 - record exact provenance for every imported component; and
-- keep all imports local until coauthor/publisher reuse status is reviewed for
-  external synchronization or submission.
+- keep material-specific reuse status separate from repository distribution;
+  the current conversion is on GitHub and the author reports that it was
+  synchronized to Overleaf, but final publication/submission clearance remains
+  unverified.
 
 | Source | Local manuscript conversion | Integrated equations/proofs | Selected final figures/tables | Code/data/computation | External reuse clearance |
 | --- | --- | --- | --- | --- | --- |
-| Environmetrics article | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM MANIFESTED ASSETS | EXTERNAL ONLY | PENDING coauthor/publisher review |
+| Environmetrics article | INTEGRATED | INTEGRATED WITH ATTRIBUTION | SELECTED MANIFESTED ASSETS INTEGRATED | EXTERNAL ONLY | PENDING coauthor/publisher review |
 | San Lorenzo bundle | INSPECTION/PROVENANCE ONLY | N/A | RESTRICTED unless separately cleared | EXTERNAL ONLY | current license is restrictive |
-| QDESN | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM CURRENT AUTHORITY ASSETS | EXTERNAL ONLY | PENDING coauthor/publication-status review |
-| RQR-GIBBS | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM CURRENT AUTHORITY ASSETS | EXTERNAL ONLY | PENDING coauthor/publication-status review |
-| MTI-EXTENSIONS | PROPOSED | PROPOSED WITH ATTRIBUTION | none currently tracked | EXTERNAL ONLY | PENDING; no repository license located |
-| exdqlm article | PROPOSED | PROPOSED WITH ATTRIBUTION | PROPOSED FROM ARTICLE ASSETS | EXTERNAL ONLY | PENDING coauthor/article review |
+| QDESN | INTEGRATED | INTEGRATED WITH ATTRIBUTION | SELECTED CURRENT-AUTHORITY ASSETS INTEGRATED | EXTERNAL ONLY | PENDING coauthor/publication-status review |
+| RQR-GIBBS | INTEGRATED | INTEGRATED WITH ATTRIBUTION | SELECTED CURRENT-AUTHORITY ASSETS INTEGRATED | EXTERNAL ONLY | PENDING coauthor/publication-status review |
+| MTI-EXTENSIONS | INTEGRATED | INTEGRATED WITH ATTRIBUTION | none tracked in the source snapshot | EXTERNAL ONLY | PENDING; no repository license located |
+| exdqlm article | INTEGRATED | INTEGRATED WITH ATTRIBUTION | SELECTED ARTICLE ASSETS INTEGRATED | EXTERNAL ONLY | PENDING coauthor/article review |
 | exdqlm package | DOCUMENTATION/AUTHORITY SOURCE | IMPLEMENTATION REFERENCE ONLY | N/A unless selected | REMAINS EXTERNAL under MIT | preserve license and exact version |
 
-“Proposed” authorizes nothing by itself. It is the execution design in
-`manuscript-integration-plan.md`; the author must approve its seven defaults to
-open G4. Local conversion does not establish permission to push, publish, or
-submit verbatim text or a collaborator's asset.
+The author approved the seven conversion defaults and later explicitly directed
+the GitHub/Overleaf handoff. Neither conversion nor synchronization establishes
+permission to publish or submit verbatim text or a collaborator's asset.
 
 ## G3 — architecture
 
@@ -135,22 +135,20 @@ Architecture state: **AUTHOR-DIRECTED WORKING ARCHITECTURE**.
 Committee/advisor confirmation that the software-centered `exdqlm` chapter
 counts as a journal-suitable research unit: **PENDING**.
 
-## G4 — drafting authorization
+## G4 — manuscript conversion authorization
 
-Gate G4 is **CLOSED FOR MANUSCRIPT CONVERSION** until the author accepts or
-modifies the seven defaults in `manuscript-integration-plan.md`. Planning,
-source inventory, citation/provenance preparation, metadata updates, and empty
-chapter placeholders remain authorized.
+Gate G4 is **COMPLETE**. On 2026-09-15 the author approved all seven defaults
+in `manuscript-integration-plan.md` and authorized the four-chapter local
+conversion. The conversion was later merged into GitHub `main`; on 2026-09-16
+the author reported that the Overleaf handoff worked.
 
-- Recommended first implementation unit: one local bulk structural conversion
-  campaign covering all four research chapters.
-- Conversion rule: preserve article prose first, integrate supplements by
-  topic, then perform the monograph/deduplication pass.
-- Default asset rule: all non-superseded main figures/tables; claim-relevant
-  supplement assets; no code, data, fitted objects, or full output archives.
-- Publication boundary: local commits only; no push, Overleaf sync, or external
-  submission of imported material before reuse review.
-- Authorization by/date: **PENDING**.
+The completed conversion preserves article prose as the baseline, integrates
+supporting material by topic, imports selected final displays, and keeps code,
+data, fitted objects, full output archives, and source histories external.
 
-When the author authorizes a unit, update this file, the public manifest,
-`docs/STATUS.md`, and the relevant chapter source together.
+## G5 — scientific and editorial integration
+
+Gate G5 is **IN PROGRESS**. Work proceeds chapter by chapter from the immutable
+conversion baseline. Scientific reinterpretations that exceed the recorded
+evidence, candidate-specific role statements, and final reuse assertions remain
+decision boundaries rather than editorial assumptions.
