@@ -121,7 +121,7 @@ likelihood, and shrinkage parameters.
 \begin{table}[!htbp]
 \centering
 \begingroup
-\TableStyle
+\CompactTableStyle
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth}
 >{\raggedright\arraybackslash}p{0.25\textwidth}
 >{\raggedright\arraybackslash}p{0.28\textwidth}
@@ -270,7 +270,8 @@ sparse recurrent matrix scaled to target spectral radius \(\rho_d\),
 \(\mat W_d^{\mathrm{in}}\) is a fixed input matrix, \(\alpha_d\) is the leak
 rate, and \(\mat Q_{d-1}\) reduces the preceding layer. With
 \(\tilde{\vect h}_{t,d-1}=\mat Q_{d-1}\vect h_{t,d-1}\), the state recursion is
-\begingroup\scriptsize\begin{equation}
+\begingroup\small
+\begin{equation}
 \begin{alignedat}{2}
 \text{First layer:}\quad &\vect h_{t,1}
 &&=(1-\alpha_1)\vect h_{t-1,1}
@@ -286,7 +287,8 @@ k(\tilde{\vect h}_{t,D-1})^\top,\vect u_t^\top\big]^\top,
 \qquad \vect x_t=(1,\tilde{\vect x}_t^\top)^\top.
 \end{alignedat}
 \label{qdesn:eq:desn-hierarchy}
-\end{equation}\endgroup
+\end{equation}
+\endgroup
 The reservoir quantities in Eq.~\eqref{qdesn:eq:desn-hierarchy}, including scaling
 and washout, are determined from the fitting information and then held fixed.
 Posterior inference is therefore conditional on
@@ -308,7 +310,7 @@ shape. The quantile-fixing construction determines \((L,U)\) and functions
 \(A_{p_0}(\gamma)\), \(B_{p_0}(\gamma)\), and
 \(D_{p_0}(\gamma)\), where the latter is the exAL positive-shift coefficient.
 Computation uses
-\begingroup\scriptsize\begin{equation}
+\begin{equation}
 \begin{alignedat}{2}
 \text{Latent variables:}\quad
 &v_t\mid\sigma&&\sim\Exp(\mathrm{rate}=1/\sigma),
@@ -320,7 +322,7 @@ Computation uses
 B_{p_0}(\gamma)\sigma v_t\right).
 \end{alignedat}
 \label{qdesn:eq:qdesn-aug}
-\end{equation}\endgroup
+\end{equation}
 Integrating out \((s_t,v_t)\) recovers Eq.~\eqref{qdesn:eq:qdesn-marginal-main}.
 The AL model is the nested case with its probability-specific constants and no
 \(s_t\) or \(\gamma\) block. Posterior intervals and forecast bands are thus
@@ -485,7 +487,7 @@ mixture representations for computation.
 \subsection{AL and exAL augmented likelihoods}
 
 The exAL Q--DESN observation hierarchy is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 v_t\mid\sigma &\sim \Exp(\text{rate}=1/\sigma),&
 s_t&\sim\TN(0,1),\\
 y_t\mid\vect\beta,\sigma,\gamma,v_t,s_t,\mat X
@@ -495,10 +497,10 @@ y_t\mid\vect\beta,\sigma,\gamma,v_t,s_t,\mat X
 \sigma B_\gamma v_t
 \right).
 \label{qdesn:eq:supp_exal_hierarchy}
-\end{align}\endgroup
+\end{align}
 The marginal \(p_0\)-quantile of \(y_t\mid\vect x_t\) is
 \(\vect x_t^\top\vect\beta\). The AL special case is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 v_t\mid\sigma &\sim \Exp(\text{rate}=1/\sigma),\\
 y_t\mid\vect\beta,\sigma,v_t,\mat X
 &\sim
@@ -507,7 +509,7 @@ y_t\mid\vect\beta,\sigma,v_t,\mat X
 \sigma B_0v_t
 \right).
 \label{qdesn:eq:supp_al_hierarchy}
-\end{align}\endgroup
+\end{align}
 
 \subsection{Coefficient priors}
 \label{qdesn:sec:priors}
@@ -567,7 +569,7 @@ V_j=\left(\zeta^{-2}+\tau^{-2}\lambda_j^{-2}\right)^{-1}
 Equation~\eqref{qdesn:eq:supp_rhs_cond_beta} makes the finite-slab bound explicit.
 For inverse-gamma scale updates, use the half-Cauchy augmentation
 \citep{qdesn-MakalicSchmidt2016SimpleSampler}:
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \lambda_j^2\mid\nu_j&\sim\IG(1/2,1/\nu_j),&
 \nu_j&\sim\IG(1/2,1),\\
 \tau^2\mid\xi&\sim\IG(1/2,1/\xi),&
@@ -575,7 +577,7 @@ For inverse-gamma scale updates, use the half-Cauchy augmentation
 \label{qdesn:eq:supp_hs_aux}\\
 \zeta^2&\sim\IG(a_\zeta,b_\zeta),
 \label{qdesn:eq:supp_zeta_prior}
-\end{align}\endgroup
+\end{align}
 The slab update in Eq.~\eqref{qdesn:eq:supp_zeta_prior} is omitted when
 \(\zeta^2\) is fixed.
 
@@ -827,7 +829,7 @@ The identity matrix of size \(m\) is \(\mat I_m\).
 \label{qdesn:gauss:subsec:model}
 
 The exact Gaussian baseline uses the conjugate scaled ridge prior
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \vect y\mid\vect\beta,\omega^2,\mat X
 &\sim \Normal_T(\mat X\vect\beta,\omega^2\mat I_T),
 \label{qdesn:gauss:eq:likelihood}\\
@@ -836,7 +838,7 @@ The exact Gaussian baseline uses the conjugate scaled ridge prior
 \label{qdesn:gauss:eq:scaled_prior}\\
 \omega^2&\sim\IG(a_\omega,b_\omega),
 \label{qdesn:gauss:eq:omega_prior}
-\end{align}\endgroup
+\end{align}
 where \(a_\omega,b_\omega>0\), \(\mat P\in\R^{d\times d}\) is positive
 definite, and
 \begin{equation}
@@ -867,7 +869,7 @@ p(\vect y,\vect\beta,\omega^2\mid\mat X)
  p(\vect\beta\mid\omega^2)p(\omega^2).
 \end{equation}
 Writing all terms that depend on unknowns,
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \label{qdesn:gauss:eq:joint_density_explicit}
 p(\vect y,\vect\beta,\omega^2\mid\mat X)
 &=(2\pi\omega^2)^{-T/2}
@@ -882,9 +884,9 @@ p(\vect y,\vect\beta,\omega^2\mid\mat X)
 &\quad\times
 \frac{b_\omega^{a_\omega}}{\Gamma(a_\omega)}
 (\omega^2)^{-a_\omega-1}\exp(-b_\omega/\omega^2).
-\end{align}\endgroup
+\end{align}
 Equivalently, up to constants independent of \((\vect\beta,\omega^2)\),
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \label{qdesn:gauss:eq:log_joint}
 \log p(\vect y,\vect\beta,\omega^2\mid\mat X)
 &=\frac12\log|\mat P|+a_\omega\log b_\omega-\log\Gamma(a_\omega)
@@ -897,13 +899,13 @@ Equivalently, up to constants independent of \((\vect\beta,\omega^2)\),
 \|\vect y-\mat X\vect\beta\|^2
 +(\vect\beta-\vect b)^\top\mat P(\vect\beta-\vect b)
 +2b_\omega\right].
-\end{align}\endgroup
+\end{align}
 
 \subsubsection{Completing the square}
 \label{qdesn:gauss:subsec:complete_square}
 
 Define
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \mat P_n&=\mat P+\mat X^\top\mat X,
 \label{qdesn:gauss:eq:Pn}\\
 \vect h_n&=\mat P\vect b+\mat X^\top\vect y,
@@ -918,9 +920,9 @@ B_n&=b_\omega+\frac12\left(
 \vect m_n^\top\mat P_n\vect m_n
 \right).
 \label{qdesn:gauss:eq:Bn}
-\end{align}\endgroup
+\end{align}
 Then
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \label{qdesn:gauss:eq:complete_square_identity}
 &\|\vect y-\mat X\vect\beta\|^2
 +(\vect\beta-\vect b)^\top\mat P(\vect\beta-\vect b)
@@ -930,7 +932,7 @@ Then
 +\vect y^\top\vect y+
 \vect b^\top\mat P\vect b-
 \vect m_n^\top\mat P_n\vect m_n.
-\end{align}\endgroup
+\end{align}
 Substituting \eqref{qdesn:gauss:eq:complete_square_identity} into the joint density gives
 an exact Normal--inverse-gamma posterior.
 
@@ -938,13 +940,13 @@ an exact Normal--inverse-gamma posterior.
 \label{qdesn:gauss:subsec:exact_posterior}
 
 The posterior factorization is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \omega^2\mid\vect y,\mat X&\sim\IG(a_n,B_n),
 \label{qdesn:gauss:eq:omega_posterior}\\
 \vect\beta\mid\omega^2,\vect y,\mat X
 &\sim\Normal_d(\vect m_n,\omega^2\mat P_n^{-1}).
 \label{qdesn:gauss:eq:beta_cond_posterior}
-\end{align}\endgroup
+\end{align}
 Equivalently,
 \begin{equation}
 \label{qdesn:gauss:eq:joint_posterior_kernel}
@@ -959,7 +961,7 @@ The marginal coefficient posterior is multivariate Student \(t\):
 \StudentT_{2a_n}\left(\vect m_n,\frac{B_n}{a_n}\mat P_n^{-1}\right).
 \end{equation}
 Hence
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \E(\vect\beta\mid\vect y,\mat X)&=\vect m_n,
 \label{qdesn:gauss:eq:posterior_mean_beta}\\
 \Var(\vect\beta\mid\vect y,\mat X)
@@ -969,7 +971,7 @@ Hence
 \E(\omega^2\mid\vect y,\mat X)&=\frac{B_n}{a_n-1},
 \qquad a_n>1.
 \label{qdesn:gauss:eq:posterior_mean_omega}
-\end{align}\endgroup
+\end{align}
 The posterior mode of \(\vect\beta\) and its posterior mean coincide at
 \(\vect m_n\), while the marginal posterior for \(\vect\beta\) carries the
 additional uncertainty induced by integrating out \(\omega^2\).
@@ -1010,7 +1012,7 @@ propagate draws through the reservoir recursion rather than treating
 
 Integrating out both \(\vect\beta\) and \(\omega^2\) gives the closed-form
 marginal likelihood
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \label{qdesn:gauss:eq:log_marginal}
 \log p(\vect y\mid\mat X)
 &=-\frac{T}{2}\log(2\pi)
@@ -1018,7 +1020,7 @@ marginal likelihood
 +a_\omega\log b_\omega-a_n\log B_n
 \nonumber\\
 &\quad+\log\Gamma(a_n)-\log\Gamma(a_\omega).
-\end{align}\endgroup
+\end{align}
 This replaces any need for an ELBO in the Gaussian baseline. It is also a
 strong implementation check: exact posterior samplers and numerical posterior
 summaries should be consistent with \eqref{qdesn:gauss:eq:log_marginal} and
@@ -1077,13 +1079,13 @@ Let
 c_{p_0}=\widehat Q_{p_0}(r_1^N,\ldots,r_T^N)
 \end{equation}
 be the empirical \(p_0\)-quantile of the Gaussian residuals. Set
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \beta_0^{\mathrm{init}}(p_0)&=m_{n,0}+c_{p_0},
 \label{qdesn:gauss:eq:init_beta0}\\
 \beta_j^{\mathrm{init}}(p_0)&=m_{n,j},
 \qquad j=1,\ldots,r.
 \label{qdesn:gauss:eq:init_betaj}
-\end{align}\endgroup
+\end{align}
 Then the empirical \(p_0\)-quantile of
 \(y_t-\vect x_t^\top\vect\beta^{\mathrm{init}}(p_0)\) is approximately zero.
 This makes \(\vect x_t^\top\vect\beta^{\mathrm{init}}(p_0)\) a more appropriate
@@ -1176,7 +1178,7 @@ For Q--DESN initialization, the recommended default is therefore
 If adaptive RHS shrinkage is required in the final Q--DESN fit, RHS scale
 initializations can still be constructed from the shifted ridge coefficients,
 for example
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \tau^{\mathrm{init}}
 &=\operatorname{median}_{j=1,\ldots,r}|\beta_j^{\mathrm{init}}|+
 \epsilon,
@@ -1190,7 +1192,7 @@ for example
 &=\max_{j=1,\ldots,r}|\beta_j^{\mathrm{init}}|+
 \epsilon.
 \label{qdesn:gauss:eq:init_zeta_rhs}
-\end{align}\endgroup
+\end{align}
 These are initialization heuristics, not an exact RHS posterior calculation.
 
 \subsection{Numerical implementation}
@@ -1352,7 +1354,7 @@ the regularized-horseshoe prior, set
 \label{qdesn:eq:supp_prior_precision_mcmc}
 \end{equation}
 Using the prior precision in Eq.~\eqref{qdesn:eq:supp_prior_precision_mcmc},
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \mat\Sigma_{\beta\mid\cdot}
 &=(\mat X^\top\mat\Omega\mat X+\mat P)^{-1},\\
 \vect m_{\beta\mid\cdot}
@@ -1362,7 +1364,7 @@ Using the prior precision in Eq.~\eqref{qdesn:eq:supp_prior_precision_mcmc},
 &\sim
 \Normal(\vect m_{\beta\mid\cdot},\mat\Sigma_{\beta\mid\cdot}).
 \label{qdesn:eq:supp_beta_mcmc}
-\end{align}\endgroup
+\end{align}
 For AL, use the same update with
 \[
 y_t^\star=y_t-A_0v_t,\qquad
@@ -1385,12 +1387,12 @@ v_t\mid\cdot\sim\GIG(1/2,\chi_t,\psi_t).
 \end{equation}
 For \(s_t\), define \(\mu_{0t}=y_t-\vect x_t^\top\vect\beta-A_\gamma v_t\).
 Then
-\begingroup\scriptsize\begin{align}
+\begin{align}
 a_{s,t}&=1+\frac{\sigma D_\gamma^2}{B_\gamma v_t},&
 m_{s,t}&=\frac{D_\gamma\mu_{0t}}{B_\gamma v_t+\sigma D_\gamma^2},\\
 s_t\mid\cdot&\sim\TN(m_{s,t},a_{s,t}^{-1}).
 \label{qdesn:eq:supp_s_mcmc}
-\end{align}\endgroup
+\end{align}
 
 \subsection{AL latent-variable and scale blocks}
 
@@ -1406,7 +1408,7 @@ v_t\mid\cdot
 \label{qdesn:eq:supp_al_v_mcmc}
 \end{equation}
 With \(\sigma\sim\IG(a_\sigma,b_\sigma)\),
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \sigma\mid\cdot
 &\sim
 \IG\left(
@@ -1416,7 +1418,7 @@ b_\sigma+\sum_{t=1}^T v_t
 \frac{(y_t-\vect x_t^\top\vect\beta-A_0v_t)^2}{B_0v_t}
 \right).
 \label{qdesn:eq:supp_al_sigma_mcmc}
-\end{align}\endgroup
+\end{align}
 
 \subsection{exAL scale and asymmetry blocks}
 
@@ -1426,7 +1428,7 @@ model is exactly nested at \(\gamma=0\). Because \(p_\gamma\) and the associated
 coefficients are defined separately for \(\gamma<0\) and \(\gamma>0\), generic
 two-sided differentiability at zero need not hold for nonmedian quantiles.
 The joint log-kernel is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \ell_{\sigma,\gamma}
 &=
 -\frac12\sum_{t=1}^T\log(\sigma B_\gamma v_t)
@@ -1439,12 +1441,12 @@ The joint log-kernel is
 -(a_\sigma+1)\log\sigma-\frac{b_\sigma}{\sigma}
 +\log\pi_\gamma(\gamma),
 \label{qdesn:eq:supp_sigmagam_joint_kernel}
-\end{align}\endgroup
+\end{align}
 for \(L<\gamma<U\), with value \(-\infty\) outside this interval.
 This kernel can be sampled by random-walk Metropolis, slice, or a
 Laplace-informed proposal on transformed coordinates. Conditional on
 \(\gamma\), the Gibbs update for \(\sigma\) is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \sigma\mid\gamma,\cdot
 &\sim
 \GIG\left(
@@ -1455,9 +1457,9 @@ Laplace-informed proposal on transformed coordinates. Conditional on
 \sum_{t=1}^T\frac{D_\gamma^2s_t^2}{B_\gamma v_t}
 \right).
 \label{qdesn:eq:supp_exal_sigma_mcmc}
-\end{align}\endgroup
+\end{align}
 Conditioning on \(\sigma\), the one-dimensional \(\gamma\) kernel is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \pi(\gamma\mid\cdot)
 &\propto
 \pi_\gamma(\gamma)\ind\{L<\gamma<U\}
@@ -1475,14 +1477,14 @@ B_\gamma^{-T/2}
 \frac{D_\gamma^2s_t^2}{B_\gamma v_t}
 \right].
 \label{qdesn:eq:supp_gamma_mcmc}
-\end{align}\endgroup
+\end{align}
 
 \subsection{Regularized-horseshoe shrinkage blocks}
 \label{qdesn:sec:rhs_ns}
 
 Conditioning on \(\vect\beta\), the regularized-horseshoe scale block has
 inverse-gamma full conditionals:
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \lambda_j^2\mid\cdot
 &\sim
 \IG\left(1,\frac{1}{\nu_j}+\frac{\beta_j^2}{2\tau^2}\right),\\
@@ -1501,7 +1503,7 @@ inverse-gamma full conditionals:
 \IG\left(a_\zeta+\frac{r}{2},
 b_\zeta+\frac12\sum_{j=1}^r\beta_j^2\right),
 \label{qdesn:eq:supp_rhs_mcmc}
-\end{align}\endgroup
+\end{align}
 with the final line omitted when \(\zeta^2\) is fixed. The relevant
 distinction is that the Nishimura--Suchard joint construction preserves the
 ordinary global-local full conditional block given \(\vect\beta\), while the
@@ -1579,7 +1581,7 @@ for exAL. Define the variational canonical moments
 \]
 If the prior contributes Gaussian canonical parameters
 \((\bar{\mat P}_\beta,\bar{\vect h}_\beta)\), then
-\begingroup\scriptsize\begin{align}
+\begin{align}
 q_\beta(\vect\beta)&=\Normal(\vect m_\beta,\mat\Sigma_\beta),\\
 \mat\Sigma_\beta&=
 \left(\mat X^\top\bar{\mat W}\mat X+\bar{\mat P}_\beta\right)^{-1},\\
@@ -1587,7 +1589,7 @@ q_\beta(\vect\beta)&=\Normal(\vect m_\beta,\mat\Sigma_\beta),\\
 \mat\Sigma_\beta\left(\mat X^\top\bar{\vect r}
 +\bar{\vect h}_\beta\right),
 \label{qdesn:eq:supp_generic_vb_beta}
-\end{align}\endgroup
+\end{align}
 where \(\bar{\mat W}=\diag(\bar w_1,\ldots,\bar w_T)\) and
 \(\bar{\vect r}=(\bar r_1,\ldots,\bar r_T)^\top\). For a fixed ridge prior,
 \(\bar{\mat P}_\beta=\diag(V_0^{-1},\kappa_\beta^{-2}\ones{r})\) and
@@ -1603,7 +1605,7 @@ uses
 
 For AL, the latent and scale updates are conjugate after taking expectations
 over \(q_\beta\):
-\begingroup\scriptsize\begin{align}
+\begin{align}
 q_v(v_t)
 &=
 \GIG\left(
@@ -1614,21 +1616,21 @@ B_0^{-1}\E_q(\sigma^{-1})\overline e_t^{\,2},\
 q_\sigma(\sigma)
 &=\IG(a_\sigma^\star,b_\sigma^\star),
 \label{qdesn:eq:supp_generic_vb_al_latents}
-\end{align}\endgroup
+\end{align}
 where
 \(\overline e_t^{\,2}
 =\{y_t-\vect x_t^\top\vect m_\beta\}^2
 +\vect x_t^\top\mat\Sigma_\beta\vect x_t\), and
-\begingroup\scriptsize\[
-a_\sigma^\star=a_\sigma+\frac{3T}{2},\qquad
-b_\sigma^\star=b_\sigma+\sum_{t=1}^T\E_q(v_t)
+\begin{align}
+a_\sigma^\star&=a_\sigma+\frac{3T}{2},\\
+b_\sigma^\star&=b_\sigma+\sum_{t=1}^T\E_q(v_t)
 +\frac{1}{2B_0}\sum_{t=1}^T
 \left[
 \overline e_t^{\,2}\E_q(v_t^{-1})
 -2A_0\{y_t-\vect x_t^\top\vect m_\beta\}
 +A_0^2\E_q(v_t)
 \right].
-\]\endgroup
+\end{align}
 For exAL, \(q_v(v_t)\) and \(q_s(s_t)\) have the same GIG and
 positive-truncated Normal forms as the MCMC blocks after replacing products by
 expectations under the other variational factors. The smooth expectations that
@@ -1641,7 +1643,7 @@ Laplace--Delta approximation below.
 The regularized-horseshoe CAVI updates are the MCMC inverse-gamma scale updates with
 coefficient squares replaced by second moments
 \(\overline{\beta_j^2}=m_{\beta,j}^2+(\mat\Sigma_\beta)_{jj}\):
-\begingroup\scriptsize\begin{align}
+\begin{align}
 q(\lambda_j^2)
 &=\IG\left(1,\ \E_q(\nu_j^{-1})
 +\frac12\overline{\beta_j^2}\E_q(\tau^{-2})\right),\\
@@ -1657,7 +1659,7 @@ q(\zeta^2)
 &=\IG\left(a_\zeta+\frac r2,\
 b_\zeta+\frac12\sum_{j=1}^r\overline{\beta_j^2}\right).
 \label{qdesn:eq:supp_generic_vb_rhs}
-\end{align}\endgroup
+\end{align}
 The slab update is omitted when \(\zeta\) is fixed.
 
 For the exAL scale-asymmetry factor, map unconstrained coordinates
@@ -1740,7 +1742,7 @@ The fixed-design VB approximation is assessed using the evidence lower bound
 \]
 with the \(s\)-latent and \(\gamma\) terms omitted for AL. Expanding the exAL
 case gives
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \elbo(q)
 &=
 \E_q\{\log p(\vect y\mid\vect\beta,\sigma,\gamma,\vect v,\vect s,\mat X)\}
@@ -1753,7 +1755,7 @@ case gives
 +\E_q\{\log\pi_\gamma(\gamma)\}
 +H(q).
 \label{qdesn:eq:supp_generic_elbo_decomp}
-\end{align}\endgroup
+\end{align}
 \noindent\textbf{Approximation status.}
 For AL, replace the exAL likelihood term by the AL likelihood term and omit
 \(\E_q\{\log p(\vect s)\}\) and
@@ -1798,18 +1800,18 @@ The adjacent-difference hierarchy then coincides with the single-quantile
 regularized-horseshoe prior.
 The exAL augmented likelihood is a quantile-indexed copy of
 \eqref{qdesn:eq:supp_exal_hierarchy}:
-\begingroup\scriptsize\begin{align}
-v_{k,t}\mid\sigma_k&\sim\Exp(\text{rate}=1/\sigma_k),&
+\begin{align}
+v_{k,t}\mid\sigma_k&\sim\Exp(\text{rate}=1/\sigma_k),\\
 s_{k,t}&\sim\TN(0,1),\\
 y_t\mid\beta_{0k},\vect\beta_k,\sigma_k,\gamma_k,v_{k,t},s_{k,t}
 &\sim
 \Normal\left(
 \beta_{0k}+\tilde{\vect x}_t^\top\vect\beta_k
-+\sigma_kD_ks_{k,t}+A_kv_{k,t},\,
-\sigma_kB_kv_{k,t}
++\sigma_kD_ks_{k,t}+A_kv_{k,t},\right.\\
+&\hspace{8em}\left.\sigma_kB_kv_{k,t}
 \right),
 \label{qdesn:eq:supp_joint_exal_hierarchy}
-\end{align}\endgroup
+\end{align}
 where \(A_k=A_{p_k}(\gamma_k)\), \(B_k=B_{p_k}(\gamma_k)\), and
 \(D_k=D_{p_k}(\gamma_k)\). The AL special case fixes the AL constants and
 omits \(s_{k,t}\) and \(\gamma_k\) from
@@ -1857,7 +1859,7 @@ coefficient differences are
 \Delta_k=\vect\beta_k-\vect\beta_{k-1},\quad k=2,\ldots,K.
 \]
 The baseline slope and adjacent differences use separate RHS hierarchies:
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \beta_{\mathrm{base},j}\mid\lambda^0_j,\tau^0,\zeta_0
 &\sim\Normal(0,V^0_j),&
 V^0_j
@@ -1872,7 +1874,7 @@ V^\Delta_{k,j}
 \frac{\zeta_\Delta^2(\tau^\Delta_k)^2(\lambda^\Delta_{k,j})^2}
 {\zeta_\Delta^2+(\tau^\Delta_k)^2(\lambda^\Delta_{k,j})^2}.
 \label{qdesn:eq:supp_joint_innovation_var}
-\end{align}\endgroup
+\end{align}
 The priors in Eqs.~\eqref{qdesn:eq:supp_joint_baseline_var} and
 \eqref{qdesn:eq:supp_joint_innovation_var} use the inverse-gamma half-Cauchy
 augmentation in
@@ -1916,7 +1918,7 @@ Let \(\Theta_{\Delta}\) collect all local, global, auxiliary, and slab scales
 for the adjacent-difference RHS hierarchy, and let \(\Theta_0\) collect the
 corresponding baseline RHS scales. Up to constants not depending on unknowns,
 the complete-data posterior for the multi-quantile case is
-\begingroup\scriptsize\begin{align}
+\begin{align}
 &p(\vect\beta_{\mathrm{st}},\vect\beta_{\mathrm{base}},\vect\beta_0,
 \{\sigma_k,\gamma_k\}_{k=1}^K,
 \{v_{k,t},s_{k,t}\}_{k,t},
@@ -1945,7 +1947,7 @@ p(\vect\beta_0)\,
 p(\vect\beta_{\mathrm{base}}\mid\Theta_0)p(\Theta_0)\,
 p(\vect\beta_{\mathrm{st}}\mid\vect\beta_{\mathrm{base}},\mat D_\Delta)p(\Theta_\Delta).
 \label{qdesn:eq:supp_joint_complete_posterior}
-\end{align}\endgroup
+\end{align}
 The reported analysis uses the untempered complete-data posterior in
 \eqref{qdesn:eq:supp_joint_complete_posterior}. Weighting the quantile-specific
 contributions would define a different generalized posterior.
@@ -1961,7 +1963,7 @@ Let
 \(\vect r_\beta=\vect y_{\mathrm{st}}-\vect\beta_{0,\mathrm{st}}-\vect d\).
 Combining \eqref{qdesn:eq:supp_joint_stacked_likelihood} and
 \eqref{qdesn:eq:supp_joint_qvp_prior} gives
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \mat K_\beta
 &=
 \mat Z_{\mathrm{st}}^\top\mat\Omega^{-1}\mat Z_{\mathrm{st}}
@@ -1974,7 +1976,7 @@ Combining \eqref{qdesn:eq:supp_joint_stacked_likelihood} and
 +\mat H^\top\mat D_\Delta^{-1}\tilde{\vect\beta}_{\mathrm{base}}
 \right\}.
 \label{qdesn:eq:supp_joint_beta_conditional}
-\end{align}\endgroup
+\end{align}
 Thus
 \[
 \vect\beta_{\mathrm{st}}\mid\cdots\sim\Normal(\vect m_\beta,\mat K_\beta^{-1}).
@@ -1984,10 +1986,10 @@ its dense inverse is unnecessary.
 
 The baseline coefficients are conditionally independent by feature under the
 diagonal RHS representation. For \(j=1,\ldots,r\),
-\begingroup\scriptsize\begin{align}
+\begin{align}
 K_{0,j}&=(V^0_j)^{-1}+(V^\Delta_{1,j})^{-1},\\
 m_{0,j}&=K_{0,j}^{-1}(V^\Delta_{1,j})^{-1}\beta_{1,j},
-\end{align}\endgroup
+\end{align}
 so
 \[
 \beta_{\mathrm{base},j}\mid\cdots\sim\Normal(m_{0,j},K_{0,j}^{-1}).
@@ -2001,7 +2003,7 @@ For unconstrained intercepts with independent priors
 e_{k,t}^{0}=y_t-d_{k,t}-\tilde{\vect x}_t^\top\vect\beta_k .
 \]
 Then
-\begingroup\scriptsize\begin{align}
+\begin{align}
 K_{0k}
 &=V_{0k}^{-1}+\sum_{t=1}^T\omega_{k,t}^{-1},\\
 m_{0k}
@@ -2010,7 +2012,7 @@ m_{0k}
 V_{0k}^{-1}a_{0k}
 +\sum_{t=1}^T\omega_{k,t}^{-1}e_{k,t}^{0}
 \right\},
-\end{align}\endgroup
+\end{align}
 and \(\beta_{0k}\mid\cdots\sim\Normal(m_{0k},K_{0k}^{-1})\). For a
 monotone-gap version, write
 \(\beta_{0k}=\beta_{01}+\sum_{j=2}^k\exp(\eta_j)\) for
@@ -2180,18 +2182,16 @@ integrated check-loss representation
 For the finite evaluation grid \(p_1,\ldots,p_K\), we approximate
 Eq.~\eqref{qdesn:eq:crps-integrated-check-main} by the trapezoidal rule over its
 covered range,
-\begingroup\scriptsize\begin{equation}
-\begin{alignedat}{2}
-\text{Finite-grid score:}\quad
-&\aCRPS_{p_1:p_K}(y;\vect q^*)
-&&=2\sum_{k=1}^K\omega_k\rho_{p_k}(y-q_k^*),\\
-\text{Trapezoidal weights:}\quad
-&\omega_1&&=\frac{p_2-p_1}{2},\qquad
-\omega_k=\frac{p_{k+1}-p_{k-1}}{2},\quad 2\leq k\leq K-1,\\
-&\omega_K&&=\frac{p_K-p_{K-1}}{2}.
-\end{alignedat}
+\begin{equation}
+\begin{aligned}
+\aCRPS_{p_1:p_K}(y;\vect q^*)
+&=2\sum_{k=1}^K\omega_k\rho_{p_k}(y-q_k^*),\\
+\omega_1&=\frac{p_2-p_1}{2},\\
+\omega_k&=\frac{p_{k+1}-p_{k-1}}{2},\quad 2\leq k\leq K-1,\\
+\omega_K&=\frac{p_K-p_{K-1}}{2}.
+\end{aligned}
 \label{qdesn:eq:acrps-main}
-\end{equation}\endgroup
+\end{equation}
 The weights satisfy
 \(\sum_{k=1}^K\omega_k=p_K-p_1\). Thus \(\aCRPS\) retains the scale of integrated
 check loss over the fitted range rather than representing a full-distribution
@@ -2458,7 +2458,7 @@ distinct comparisons and provide complementary evidence.
 For each error family \(f\) and target quantile level
 \(p\in\{0.05,0.25,0.50\}\), the synthetic series and its conditional
 quantile path are
-\begingroup\scriptsize\begin{equation}
+\begin{equation}
 \begin{alignedat}{2}
 \text{Centered innovation:}\quad
 &\varepsilon_{t,p,f}&&=e_{t,f}-H_f^{-1}(p),\\
@@ -2470,7 +2470,7 @@ quantile path are
 \qquad \vect F=(1,0,1,0,1,0)^\top.
 \end{alignedat}
 \label{qdesn:eq:single-quantile-dgp-main}
-\end{equation}\endgroup
+\end{equation}
 In Eq.~\eqref{qdesn:eq:single-quantile-dgp-main}, \(H_f\) is the distribution
 function of the raw error \(e_{t,f}\), so the centering makes the
 \(p\)-quantile of \(\varepsilon_{t,p,f}\) zero. The
@@ -2560,7 +2560,7 @@ at fitting index \(t\), and let \(q_{p,\ell}^{(b)}\) be the corresponding
 forecast draw for origin--horizon pair \(\ell\). With
 \(N_{\mathrm{fit}}=500\) and \(N_{\mathrm{eval}}=1000\), the draw-wise
 criteria are
-\begingroup\scriptsize\begin{align}
+\begin{align}
 \text{Fit RMSE:}\quad R_{\mathrm{fit}}^{(b)}
   &=\left\{\frac{1}{N_{\mathrm{fit}}}\sum_{t=1}^{N_{\mathrm{fit}}}
     \bigl(q_{p,t}^{(b)}-\mu_t\bigr)^2\right\}^{1/2}, \\
@@ -2570,7 +2570,7 @@ criteria are
 \text{Forecast check loss:}\quad C_{\mathrm{fore}}^{(b)}
   &=\frac{1}{N_{\mathrm{eval}}}\sum_{\ell=1}^{N_{\mathrm{eval}}}
     \rho_p\!\left(y_\ell-q_{p,\ell}^{(b)}\right),
-\end{align}\endgroup
+\end{align}
 where \(\rho_p\) is the check loss in Eq.~\eqref{qdesn:eq:check-loss-main}, and
 \(\mu_\ell\) and \(y_\ell\) denote the oracle quantile and realized outcome
 for pair \(\ell\). Thus fit RMSE and forecast MAE measure recovery of the oracle quantile
@@ -2793,11 +2793,13 @@ computations produce the
 quantile-path draws evaluated by the common criteria above.
 For retained pairs \((\sigma_b,\gamma_b)\),
 \(b=1,\ldots,B_{\mathrm{post}}\), let
-\begingroup\scriptsize\[
-m_{\varepsilon,b}=\sigma_b\{A_p(\gamma_b)+D_p(\gamma_b)\sqrt{2/\pi}\},\qquad
-V_{\varepsilon,b}=\sigma_b^2\{B_p(\gamma_b)+A_p(\gamma_b)^2
+\begin{align*}
+m_{\varepsilon,b}
+&=\sigma_b\{A_p(\gamma_b)+D_p(\gamma_b)\sqrt{2/\pi}\},\\
+V_{\varepsilon,b}
+&=\sigma_b^2\{B_p(\gamma_b)+A_p(\gamma_b)^2
   +D_p(\gamma_b)^2(1-2/\pi)\}.
-\]\endgroup
+\end{align*}
 The rolling-origin filter uses
 \(\bar m_\varepsilon=B_{\mathrm{post}}^{-1}\sum_b m_{\varepsilon,b}\) and
 \(\bar V_\varepsilon=B_{\mathrm{post}}^{-1}
@@ -3161,9 +3163,8 @@ Define an observation weight \(w_i=1\) for historical reference and
 retrospective GloFAS rows. For an issued member at a fixed horizon,
 \(w_i=1/51\). Hence the 51 issued members contribute total weight one at each
 horizon. The executed augmented working likelihood has the form
-\begingroup\scriptsize\begin{equation}
+\begin{equation}
 \begin{aligned}
-\text{Weighted augmented likelihood:}\quad
 L_{\mathrm{aug}}(\Theta)
 \ \propto\
 \prod_{k=1}^{K}\prod_{c}\prod_{i\in\mathcal I_c}
@@ -3173,7 +3174,7 @@ p(v_{i,k}^c\mid\sigma_{c,k})
 \right]^{w_i}.
 \end{aligned}
 \label{qdesn:eq:supp_glofas_weighted_augmented_likelihood}
-\end{equation}\endgroup
+\end{equation}
 This is a complete-data fractional or power-likelihood construction. It
 prevents the issued ensemble from receiving 51 times the weight of one
 historical time point. Because the power is applied before integrating out the
@@ -3472,7 +3473,7 @@ uncertainty analyses, and explicitly joint PriceFM analyses are needed before th
 quantile-vector prior can be interpreted in an application-level benchmark.
 
 Q--DESN combines fixed nonlinear recurrent features with Bayesian regression
-for dynamic conditional quantiles. The results demonstrate conditional-quantile
+for dynamic conditional quantiles. The results document conditional-quantile
 estimation under the specified simulation designs and retrospective
 applications and identify the settings requiring broader validation.
 

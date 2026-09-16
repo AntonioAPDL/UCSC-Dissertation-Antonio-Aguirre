@@ -241,7 +241,7 @@
       "destination": "chapters/05-research-d.tex",
       "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
       "source_sha256": "a909c00dbf27f88746152550fd7117def17eeeeab135411c5f4d95c1cc69f363",
-      "destination_sha256": "87ad4cd93c0c3011e47fced1d738740057b7f0eb2caf821259832f135743472a",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
       "claim_ids": [
         "CLM-MTI-001",
         "CLM-MTI-002",
@@ -259,7 +259,7 @@
       "destination": "chapters/05-research-d.tex",
       "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
       "source_sha256": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb",
-      "destination_sha256": "87ad4cd93c0c3011e47fced1d738740057b7f0eb2caf821259832f135743472a",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
       "claim_ids": [
         "CLM-MTI-001",
         "CLM-MTI-002",
@@ -448,7 +448,7 @@
       "destination": "chapters/05-research-d.tex",
       "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
       "source_sha256": "dff9095c2129cd89e30bb3f7ced4d19e297406600a886da9cfa9ad616ace6350",
-      "destination_sha256": "87ad4cd93c0c3011e47fced1d738740057b7f0eb2caf821259832f135743472a",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
       "claim_ids": [
         "CLM-RQR-001",
         "CLM-RQR-002",
@@ -467,7 +467,7 @@
       "destination": "chapters/05-research-d.tex",
       "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
       "source_sha256": "7b3b734f1e814c012e9ffe06f493adbf54c52cdc097e2c89fe201b2978601b4e",
-      "destination_sha256": "87ad4cd93c0c3011e47fced1d738740057b7f0eb2caf821259832f135743472a",
+      "destination_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
       "claim_ids": [
         "CLM-RQR-001",
         "CLM-RQR-002",

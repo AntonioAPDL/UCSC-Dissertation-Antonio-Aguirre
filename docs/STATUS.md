@@ -6,8 +6,10 @@ structural conversion are complete. The conversion was merged into GitHub
 the GitHub-to-Overleaf handoff worked. No Overleaf build log or artifact has
 been independently inspected. Material-specific reuse permission remains
 unverified and is not implied by that distribution event. The read-only
-scholarly audit is complete; scientific and editorial chapter integration is
-the current stage.
+scholarly audit and the scientific/editorial revision of Chapters 2--5 are
+complete. Chapter-sized changes are merged through Chapter 5 at
+`5d08241`; the global typography and prose pass is complete locally and is the
+current review unit. Dissertation-level framing is next.
 
 ## Completed
 
@@ -81,6 +83,13 @@ the current stage.
   the theory-only status of the regression/dynamic extensions are explicit.
   An inherited opposite-sign midpoint tilt formula was corrected against the
   authoritative root form and score equations.
+- Completed the cross-chapter prose and typography pass. Blanket `scriptsize`
+  rules were removed from tables and algorithms, 36 Chapter 4 equation groups
+  were restored to ordinary display size, and only the dense API table,
+  Chapter 3 algorithms, selected wide tables, and one Q--DESN state recursion
+  retain locally justified compact sizing. Wide formulas were line-broken.
+  The 323-page milestone build has no overfull boxes or oversized floats, and
+  targeted rendered-page inspection found no clipping or collisions.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,
@@ -130,9 +139,6 @@ combined until the extensions gain independent implementation and evidence.
 - The conversion intentionally retains article-style prose, repeated background,
   and some “paper” signposting. These are Phase-2 editorial issues, not reasons
   to reconstruct the chapters from scratch.
-- Several dense imported tables and long QDESN derivations use provisional
-  compact sizing to fit the dissertation page. They compile and were sampled
-  visually, but should be reviewed for final reading size and possible splitting.
 - The introduction, dissertation-wide synthesis, abstract, final title,
   committee fields, and administrative dates remain placeholders.
 
@@ -157,10 +163,10 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
   for exdqlm remains open.
 - `G4` manuscript conversion: complete, merged into GitHub `main`, and reported
   by the author as synchronized to Overleaf.
-- `G5` scientific/editorial integration: research-chapter revision complete;
-  cross-chapter prose/typography review and dissertation-level framing remain.
-  Shared background must be deduplicated before the introduction, synthesis,
-  and abstract are finalized, without weakening source qualifications.
+- `G5` scientific/editorial integration: research-chapter revision and the
+  cross-chapter prose/typography review are complete; dissertation-level
+  framing remains. Shared background must be synthesized in the introduction,
+  synthesis, and abstract without weakening source qualifications.
 - `G6` reuse and submission clearance: open. Confirm granular roles, reuse
   permissions, committee counting, and administrative metadata before final
   circulation or submission. The existing synchronization is not rights
@@ -168,13 +174,12 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-Perform the cross-chapter notation, typography, bibliography, display,
-transition, and prose pass across Chapters 2--5. Then write the dissertation
-introduction, synthesis, and abstract from the stable research chapters and
-resolve the G6 decisions. Chapter 5 already uses conservative TCSP wording and
-theory-only extension language; those evidence boundaries must survive the
-global pass. Major reviewed units use the explicit GitHub/Overleaf handoff in
-`WORKFLOW.md`.
+Write the dissertation introduction, synthesis, and abstract from the stable
+research chapters. Keep contribution language collective while granular roles
+remain unresolved, and preserve the conservative TCSP and theory-only MTI-
+extension boundaries. Then perform the release-tier build and systematic
+frontmatter/chapter-opening/ending inspection. Major reviewed units use the
+explicit GitHub/Overleaf handoff in `WORKFLOW.md`.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
 and final publication permissions remain open. Working text must use accurate

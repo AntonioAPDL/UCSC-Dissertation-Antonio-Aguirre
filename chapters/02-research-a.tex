@@ -467,7 +467,9 @@ These computational controls affect implementation and performance rather than t
 
 \begin{table}[!htbp]
 \centering
-\TableStyle
+% This API reference is the chapter's widest and longest retained table.
+% Compact spacing is used locally so the table remains on one page.
+\CompactTableStyle
 \begin{tabularx}{\textwidth}{
   @{}
   >{\raggedright\arraybackslash}p{0.25\textwidth}
@@ -1174,7 +1176,7 @@ distribution.
  \label{exd:sec:exs}
 
 
-We demonstrate the general workflow and key features of the package through three real-data analyses and one simulation benchmark. The Lake Huron analysis illustrates dynamic model construction, MCMC inference, forecasting, and posterior-predictive synthesis across separately fitted quantiles. The sunspot analysis demonstrates model-component composition, LDVB inference, fitted-model diagnostics, discount-factor comparison, and comparison with MCMC. The Big Tree water-flow analysis compares specifications without covariates, with direct regression effects, and with transfer-function effects, including held-out forecasting. Finally, the simulation example illustrates static exAL regression with shrinkage priors and compares LDVB with MCMC.
+Three real-data analyses and one simulation benchmark illustrate the package workflow. The Lake Huron analysis examines dynamic model construction, MCMC inference, forecasting, and posterior-predictive synthesis across separately fitted quantiles. The sunspot analysis examines model-component composition, LDVB inference, fitted-model diagnostics, discount-factor comparison, and comparison with MCMC. The Big Tree water-flow analysis compares specifications without covariates, with direct regression effects, and with transfer-function effects, including held-out forecasting. Finally, the simulation example evaluates static exAL regression with shrinkage priors and compares LDVB with MCMC.
 
 The package also exposes distribution-level utilities for the exAL error family: \code{dexal()}, \code{pexal()}, \code{qexal()}, and \code{rexal()} evaluate the density, distribution function, quantile function, and random generator, respectively, while  \code{get\_gamma\_bounds()} returns the admissible interval for $\gamma$ at a specified \(p_0\). These utilities are useful for simulation, prior calibration, and direct checks of the exAL distribution, but are not needed for the main fitting, forecasting, diagnostic, or synthesis workflows illustrated below. We use CrI as shorthand for credible interval in figure captions and plotting labels.
 
