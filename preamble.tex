@@ -8,7 +8,7 @@
 \fi
 % Broadly available Times-compatible Type 1 text/math; all actual fonts checked.
 \usepackage{mathptmx}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
 % Small vertical clearance keeps visible glyph bounds inside the 1.25 in minimum.
 \usepackage[letterpaper,left=1.5in,right=1.25in,top=1.30in,bottom=1.35in,
   headheight=0pt,headsep=0pt,footskip=0.4in]{geometry}
@@ -36,10 +36,23 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\normalsize\thepage}
   \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
-\usepackage{graphicx,booktabs}
+\usepackage{graphicx,booktabs,array,tabularx,float,enumitem,longtable,xcolor,etoolbox}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,fit,positioning}
+\usepackage{algorithm,algorithmic}
 \usepackage[font=normalsize,labelfont=bf]{caption}
 \captionsetup{singlelinecheck=false,justification=justified}
+% Article floats were designed for single-spaced journal pages.  Keep tables,
+% figures, and algorithms single-spaced inside the otherwise double-spaced
+% dissertation, as permitted exceptions, so their original displays fit the
+% thesis page without globally shrinking body text.
+\AtBeginEnvironment{table}{\singlespacing\scriptsize}
+\AtBeginEnvironment{figure}{\singlespacing}
+\AtBeginEnvironment{algorithm}{\singlespacing}
+\AtBeginEnvironment{algorithmic}{\singlespacing\scriptsize}
+\AtBeginEnvironment{longtable}{\singlespacing}
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks
 % natbib renews a command the legacy class defines only inside its own list.
 \providecommand{\newblock}{}
 \usepackage[authoryear,round]{natbib}
@@ -50,11 +63,37 @@
 \usepackage{url}
 \urlstyle{same}
 \usepackage[hidelinks,bookmarksnumbered,pdfpagelabels]{hyperref}
-\hypersetup{pdftitle={UCSC dissertation formatting starter},
- pdfauthor={Author metadata unresolved},pdfsubject={Demonstration; not for submission}}
+\hypersetup{pdftitle={\ThesisTitle},pdfauthor={\AuthorName},
+ pdfsubject={Statistical Science dissertation draft}}
 \newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
 \theoremstyle{definition}
-\newtheorem{algorithm}{Algorithm}[chapter] % Prose algorithm, no floating package.
+\newcounter{thesisalgorithm}[chapter]
+\renewcommand{\thethesisalgorithm}{\thechapter.\arabic{thesisalgorithm}}
+\newenvironment{algorithmblock}[1]{%
+  \refstepcounter{thesisalgorithm}%
+  \par\medskip\noindent\textbf{Algorithm~\thethesisalgorithm. #1.}\par\nobreak
+}{\par\medskip}
+% The server TeX installation lacks threeparttable.  These compatible wrappers
+% retain its manuscript table bodies and notes without introducing a package
+% dependency or reducing the dissertation text size.
+\newenvironment{threeparttable}{}{}
+\newenvironment{tablenotes}{%
+  \begin{list}{}{\setlength{\leftmargin}{0.2in}\setlength{\itemsep}{0pt}}%
+}{\end{list}}
+\providecommand{\FloatBarrier}{}
+\providecommand{\pkg}[1]{\textsf{#1}}
+\providecommand{\proglang}[1]{\textsf{#1}}
+\providecommand{\code}[1]{\texttt{\detokenize{#1}}}
+\providecommand{\figalt}[1]{}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\providecommand{\tworowcell}[1]{\smash{\raisebox{-0.5\normalbaselineskip}{#1}}}
+\providecommand{\TableStyle}{\scriptsize\setlength{\tabcolsep}{4pt}%
+  \renewcommand{\arraystretch}{1.08}}
+\providecommand{\CompactTableStyle}{\scriptsize\setlength{\tabcolsep}{2.3pt}%
+  \renewcommand{\arraystretch}{1.0}}
 \newcommand{\TODO}[1]{\par\noindent\textbf{TODO:} #1\par}
 \newcommand{\DemoNotice}{\par\noindent\textbf{Formatting demonstration only.}
  This material is not the candidate's research.\par}
