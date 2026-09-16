@@ -69,7 +69,8 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 4. Phase 3: chapter revisions in order 2, 3, 4, 5 — complete.
 5. Phase 4: cross-chapter prose and typography review — complete.
 6. Phase 5: dissertation introduction, synthesis, and abstract — complete.
-7. Final release validation and explicit GitHub/Overleaf handoff — in progress.
+7. Final release validation and explicit GitHub handoff — complete; independent
+   Overleaf artifact verification remains an author-side handoff check.
 
 Substantive chapter work must record a `REV-*` entry in
 `revision-ledger.json`, update the corresponding current hash, pass the relevant
@@ -377,3 +378,28 @@ The thesis now includes a vector-outline derivative of the same display, with
 both hashes and the transformation recorded in `display-ledger.json`. The
 full assembled-PDF audit finds no Type 3 or Type 0 fonts, and rendered review
 shows no visible change to the plotted evidence.
+
+## Final release result
+
+The release tier passed from a new output directory after rechecking the fixed
+source evidence, editable-derivative controls, citations, labels, and build
+dependencies. Independent examination of the exact accepted PDF found all 344
+pages to be US Letter, all 33 reported fonts embedded, no Type 3 or Type 0
+font, no body-text or footer-geometry violation, and no blocking TeX diagnostic.
+Systematic rendered inspection covered the front matter, all chapter joins,
+and the beginning and end of the bibliography.
+
+That inspection identified one avoidable typographic defect: the final DOI was
+alone on a 345th page. A 0.5 pt reduction in inter-entry bibliography spacing
+removed the stranded line while preserving the single-spaced-entry/visibly-
+separated-entry convention. The release build and independent PDF checks were
+rerun after the change. Exact commands, measurements, artifact hash, and
+inspection coverage are recorded in `VALIDATION.md`.
+
+The scientific/editorial integration is therefore complete within the audited
+evidence boundary. The dissertation deliberately remains in starter-draft
+mode. Final title and administrative metadata, acknowledgments, granular
+collaborator roles, reuse permissions, committee treatment of the software
+chapter, and any required AI-use disclosure are author/committee decisions,
+not editorial facts that this audit can infer. GitHub handoff does not by
+itself verify the content or successful compilation of the Overleaf artifact.

@@ -323,3 +323,59 @@ remain an author task, and `\StarterDrafttrue` therefore remains active. This
 validation does not establish coauthor or publisher reuse permission,
 candidate-specific role allocation, committee approval, research-computation
 reproduction, an Overleaf build, or filing readiness.
+
+## 2026-09-16 final release validation
+
+The release tier was run from an empty timestamped output directory with:
+
+```text
+bash scripts/validate.sh --tier release --audit-root /tmp/dissertation-audit-20260915.xusw2e
+```
+
+It rechecked all eight fixed source snapshots and 102 immutable source blobs,
+the 29 editorial issues, 97 display decisions, 11 bibliography reconciliation
+groups, four import manifests, 398 unique labels, and all 118 cited keys. The
+exact accepted artifact is `build/release-20260916T081243Z/main.pdf`: 344 US
+Letter pages, 18,146,885 bytes, SHA-256
+`30b4e0bb3c3230544e941f7eae82dcabb44f08e9283ae9809aaade45196c9900`.
+The release directory is ignored build output and the PDF is not committed.
+Ordinary pdfTeX creation metadata means a later correct rebuild need not have
+the same byte hash.
+
+The final log has zero undefined citations, undefined references, multiply
+defined labels, missing files, overfull boxes, fatal errors, or emergency
+stops. It retains 41 underfull-box notices, the documented legacy-class caption
+warning, and one automatic `!h`-to-`!ht` float adjustment. Those notices were
+reviewed and do not identify clipped or missing content.
+
+Independent PDF checks found 344 of 344 pages at 612 by 792 points, 33 font
+records all embedded, no Type 3 or Type 0 font, no encryption, and no
+JavaScript. A word-coordinate audit found zero body-text envelope violations
+using 107.4--522.6 pt horizontally and 89--702.6 pt vertically. It found one
+physically centered footer on every page except the unnumbered first two
+leaves: centers range from 305.999 to 306.001 pt on a 612 pt page, and the
+minimum footer-to-bottom clearance is 65.819 pt.
+
+Physical chapter openings are pages 27, 39, 103, 148, 245, and 323; the
+bibliography begins on page 334 and ends on page 344. The title/front-matter
+sequence, first and last contents/list pages, both abstract pages,
+acknowledgments, every chapter opening and ending, the bibliography opening,
+and its final two pages were rasterized. Twenty-three pre-bibliography control
+rasters were pixel-identical to the already inspected framing build. The final
+bibliography opening and ending were then inspected directly. Text, equations,
+tables, figures, headings, and page numbers are legible with no visible
+clipping, collision, or stranded final reference line.
+
+The inspection exposed a DOI stranded alone on a 345th page when bibliography
+entries were separated by 12 pt. Reducing only `\bibsep` to 11.5 pt preserves
+single-spaced entries and a visible near-baseline inter-entry separation while
+placing the complete final entry on page 344. No bibliography content or
+citation changed; the clean release build and all independent checks were
+rerun after this adjustment.
+
+This is a technically validated working dissertation, not a filing-ready
+artifact. The title, committee/dean/date fields, acknowledgments, granular
+contribution statements, publication/reuse clearances, and applicable AI-use
+disclosure remain unresolved, so `\StarterDrafttrue` remains active. No
+research computation was rerun, no research repository was modified, and no
+Overleaf build or artifact was inspected during this release audit.

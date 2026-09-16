@@ -160,6 +160,16 @@
       "summary": "Replaced one Type-3-font rendering of the retained PriceFM regional comparison with a vector-outline derivative of the same immutable source PDF; no plotted value, label, caption, or scientific claim changed.",
       "evidence": "The source asset hash and font-safe derivative hash are recorded in docs/display-ledger.json; per-page pdffonts audit localized the only Type 3 font to this display.",
       "validation": "Fast validation, complete rebuild, all-page PDF font audit, and before/after visual comparison required before release."
+    },
+    {
+      "id": "REV-RELEASE-BIBLIOGRAPHY-20260916",
+      "date": "2026-09-16",
+      "paths": [
+        "preamble.tex"
+      ],
+      "summary": "Reduced bibliography inter-entry separation from 12 pt to 11.5 pt so the complete final reference remains on page 344 instead of leaving its DOI alone on a 345th page; reference content and citation semantics are unchanged.",
+      "evidence": "Rendered inspection of the final two bibliography pages before and after the adjustment; exact artifact and measurements recorded in docs/VALIDATION.md",
+      "validation": "Release-tier rebuild from an empty output directory, blocking-log review, all-page size/font/geometry checks, and final bibliography rendering inspection passed."
     }
   ]
 }
