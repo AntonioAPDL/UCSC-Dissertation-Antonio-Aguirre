@@ -1,0 +1,1156 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-15",
+  "chapter": "ch04-qdesn",
+  "policy": {
+    "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",
+    "excluded": "source code, data, fitted objects, caches, simulations, source histories, and complete output archives",
+    "rights": "local structural conversion only; direct-reuse review required before synchronization, publication, or submission"
+  },
+  "documents": [
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "main.tex",
+      "source_sha256": "99e10d9755fc97dc0ce995bf7285ee6c00c197341e8cda7a5c2483cb6e8d31c4",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All main scientific sections integrated; article wrapper removed.",
+      "section_dispositions": [
+        {
+          "section": "Introduction",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Fixed-Feature Bayesian Quantile Models",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Posterior Computation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Forecasting, Scoring, and Model Selection",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Simulation Studies",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Application: GloFAS Retrospective Streamflow Quantile Forecasting",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Application: Region-Frozen PriceFM Comparison",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Discussion",
+          "disposition": "integrated"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "qdesn-supplement.tex",
+      "source_sha256": "658eeb87924e6bb08923898e7773ddc9a20e1efb87d65808ca9896e29593fe8c",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All technical and empirical support sections integrated topically; only supplement-navigation prose omitted.",
+      "section_dispositions": [
+        {
+          "section": "Purpose and Relation to the Main Article",
+          "disposition": "omitted",
+          "reason": "supplement navigation duplicated by the chapter overview and topical integration"
+        },
+        {
+          "section": "Reservoir Specification, Selection, and Diagnostics",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Distributional Conventions",
+          "disposition": "integrated"
+        },
+        {
+          "section": "DESN Feature Map and Fixed-Design Quantile Regression",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Q--DESN Working Likelihoods, Priors, and Augmented Posterior",
+          "disposition": "integrated"
+        },
+        {
+          "section": "MCMC Full Conditionals",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Variational Bayes and Laplace--Delta Approximation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "ELBO Monitoring",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Joint Quantile-Vector Regression with Regularized-Horseshoe Shrinkage",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Multi-Step Quantile Forecasting and Monotone Rearrangement",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Supplementary Simulation and Application Tables",
+          "disposition": "integrated"
+        },
+        {
+          "section": "GloFAS Latent-Path Ensemble-Likelihood Model with DESN Features",
+          "disposition": "integrated"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "gaussian_desn_scaled_ridge_supplement.tex",
+      "source_sha256": "1c3d08ec2c50ac854d76b6f3af18c2635b5a8c21450898018f78e741c544072c",
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "integration_note": "All Gaussian-baseline and initialization sections integrated before Q--DESN computation.",
+      "section_dispositions": [
+        {
+          "section": "Scope and Relation to Q--DESN",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Fixed DESN Design and Notation",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Distributional Conventions",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Exact Scaled-Ridge Gaussian DESN",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Posterior Predictive Distributions",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Exact Log Marginal Likelihood",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Exact Direct Posterior Sampler",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Use as Initialization for AL and exAL Q--DESN",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Omitted Variants and Why They Are Not Main Derivations",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Implementation Notes",
+          "disposition": "integrated"
+        },
+        {
+          "section": "Validation and Consistency Checks",
+          "disposition": "integrated"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/glofas_application/diagnostics/glofas_part4_independent_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "locator": "figures/glofas_application/diagnostics/glofas_part4_independent_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/glofas_application/diagnostics/glofas_part4_independent_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "05811323e78d478398505a116a8f299b4120fd366f949b6b5627b74965b26b34",
+      "destination_sha256": "05811323e78d478398505a116a8f299b4120fd366f949b6b5627b74965b26b34",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/glofas_application/diagnostics/glofas_part4_joint_al_convergence_trace__glofas_part4_joint_al_sweep10_20260911.pdf",
+      "locator": "figures/glofas_application/diagnostics/glofas_part4_joint_al_convergence_trace__glofas_part4_joint_al_sweep10_20260911.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/glofas_application/diagnostics/glofas_part4_joint_al_convergence_trace__glofas_part4_joint_al_sweep10_20260911.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "a0063b0922ba577b1e259f58e87c838a6268241a2249c36f8a13415e8afc8ed6",
+      "destination_sha256": "a0063b0922ba577b1e259f58e87c838a6268241a2249c36f8a13415e8afc8ed6",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/glofas_application/diagnostics/glofas_part4_joint_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "locator": "figures/glofas_application/diagnostics/glofas_part4_joint_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/glofas_application/diagnostics/glofas_part4_joint_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "159870ecf5962d079fa7e97b2a005421c6d8ec4d6db0963191c38de2f8160e10",
+      "destination_sha256": "159870ecf5962d079fa7e97b2a005421c6d8ec4d6db0963191c38de2f8160e10",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/glofas_application/diagnostics/glofas_part4_normal_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "locator": "figures/glofas_application/diagnostics/glofas_part4_normal_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/glofas_application/diagnostics/glofas_part4_normal_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "f1e668d6c9ccc6c042f6ebad4ed69ad513b996f910c2fd0a1479f5b9c13d565d",
+      "destination_sha256": "f1e668d6c9ccc6c042f6ebad4ed69ad513b996f910c2fd0a1479f5b9c13d565d",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/glofas_application/glofas_part4_joint_al_last30_issued28__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "locator": "figures/glofas_application/glofas_part4_joint_al_last30_issued28__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/glofas_application/glofas_part4_joint_al_last30_issued28__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "84a24127de67055c24b9c88f8728cb76757dbe138fddb67a55ba099fe158f506",
+      "destination_sha256": "84a24127de67055c24b9c88f8728cb76757dbe138fddb67a55ba099fe158f506",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
+      "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "41b149a4e89235c5fc8108cba0014c5a93eedab059084deba4397545ec7570c7",
+      "destination_sha256": "41b149a4e89235c5fc8108cba0014c5a93eedab059084deba4397545ec7570c7",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
+      "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "d4b6a9f9ac2ff27dfe75a13fe2f718973360ad3eb297b0518f948ff8be336050",
+      "destination_sha256": "d4b6a9f9ac2ff27dfe75a13fe2f718973360ad3eb297b0518f948ff8be336050",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
+      "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "ca033231ef61f1de4894d201c38b82a4f7bbab5402cfd4ed33517ea0d7a128ae",
+      "destination_sha256": "ca033231ef61f1de4894d201c38b82a4f7bbab5402cfd4ed33517ea0d7a128ae",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
+      "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "83a5ce9121581f4ca175f636573020e830eb8d9dd12da96a403ed7f6197991d0",
+      "destination_sha256": "83a5ce9121581f4ca175f636573020e830eb8d9dd12da96a403ed7f6197991d0",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
+      "locator": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "0db33a513bfaeb7599c40f3d5c7b816966f288a48f77ae4b3ff0219b20388bea",
+      "destination_sha256": "0db33a513bfaeb7599c40f3d5c7b816966f288a48f77ae4b3ff0219b20388bea",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
+      "locator": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "be2683df9eb9e1b5c128fa792ab45877540d9114688f40f6a71821684d62b85e",
+      "destination_sha256": "be2683df9eb9e1b5c128fa792ab45877540d9114688f40f6a71821684d62b85e",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
+      "locator": "figures/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
+      "material_type": "figure_asset",
+      "destination": "figures/ch04-qdesn/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
+      "handling": "byte-for-byte copy of a manuscript-referenced display asset",
+      "source_sha256": "870f43f594b86e607a93479568deb4943016bb201a870d2a8be9a3388e720413",
+      "destination_sha256": "870f43f594b86e607a93479568deb4943016bb201a870d2a8be9a3388e720413",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/quantile_initialization/quantile_initialization_caption.tex",
+      "locator": "figures/quantile_initialization/quantile_initialization_caption.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "figures/ch04-qdesn/quantile_initialization/quantile_initialization_caption.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "c7c3bbe19155ab518f75242a844f60cbbc7d822fc081c6b85b902cac1a8c2311",
+      "destination_sha256": "c7c3bbe19155ab518f75242a844f60cbbc7d822fc081c6b85b902cac1a8c2311",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/quantile_initialization/quantile_initialization_picture.tex",
+      "locator": "figures/quantile_initialization/quantile_initialization_picture.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "figures/ch04-qdesn/quantile_initialization/quantile_initialization_picture.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "162153aee549d9f2861bca034074f931f2c14ae1f9bcbf335a789129c8963d57",
+      "destination_sha256": "162153aee549d9f2861bca034074f931f2c14ae1f9bcbf335a789129c8963d57",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "figures/quantile_initialization/quantile_initialization_styles.tex",
+      "locator": "figures/quantile_initialization/quantile_initialization_styles.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "figures/ch04-qdesn/quantile_initialization/quantile_initialization_styles.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "f74bb62033dd8aa51e3657b8262efe9273aefae8b66afb08f6e3bacddd4297fe",
+      "destination_sha256": "f74bb62033dd8aa51e3657b8262efe9273aefae8b66afb08f6e3bacddd4297fe",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "gaussian_desn_scaled_ridge_supplement.tex",
+      "locator": "gaussian_desn_scaled_ridge_supplement.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/04-research-c.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "1c3d08ec2c50ac854d76b6f3af18c2635b5a8c21450898018f78e741c544072c",
+      "destination_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "main.tex",
+      "locator": "main.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/04-research-c.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "99e10d9755fc97dc0ce995bf7285ee6c00c197341e8cda7a5c2483cb6e8d31c4",
+      "destination_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "qdesn-supplement.tex",
+      "locator": "qdesn-supplement.tex",
+      "material_type": "manuscript_prose_and_equations",
+      "destination": "chapters/04-research-c.tex",
+      "handling": "journal wrapper removed; article spine retained; supporting sections integrated topically",
+      "source_sha256": "658eeb87924e6bb08923898e7773ddc9a20e1efb87d65808ca9896e29593fe8c",
+      "destination_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/glofas_application_current_outputs.tex",
+      "locator": "tables/glofas_application_current_outputs.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/glofas_application_current_outputs.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "b6df7f966e6f4a2946b680bec65b63ab5a8f18fc38337f3986f91aad9efb11a4",
+      "destination_sha256": "797f4e9eea51267d85de7932d3b0badbdebb7baa4e3d416a90bbd68466a3e692",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/glofas_application_part4_historical_guardrail__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "locator": "tables/glofas_application_part4_historical_guardrail__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/glofas_application_part4_historical_guardrail__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "28b4513427043f03dbcf86051d45f71ca4966d8174a0975a1f4a6ebae170614d",
+      "destination_sha256": "28b4513427043f03dbcf86051d45f71ca4966d8174a0975a1f4a6ebae170614d",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/glofas_application_part4_main_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "locator": "tables/glofas_application_part4_main_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/glofas_application_part4_main_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "fbd0d0399db095f115ef9aebf848ca866666cd9e27c6655ac4c7b5022255b9fb",
+      "destination_sha256": "fbd0d0399db095f115ef9aebf848ca866666cd9e27c6655ac4c7b5022255b9fb",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/glofas_application_part4_supplementary_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "locator": "tables/glofas_application_part4_supplementary_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/glofas_application_part4_supplementary_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "15ff7b9c807a47aff31b097c64e02e6742549f69f9e47074c473325bb1e28385",
+      "destination_sha256": "15ff7b9c807a47aff31b097c64e02e6742549f69f9e47074c473325bb1e28385",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_article_validation_phase153_replication_summary.tex",
+      "locator": "tables/joint_qdesn_article_validation_phase153_replication_summary.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_article_validation_phase153_replication_summary.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "f2768de0639f82bbdfdc805ef068e68621e44f01c3c24711a92f25e2e155a19d",
+      "destination_sha256": "ef447bddd5920e87d711b8d4d00a4fc05fe21552cb3d879b8a51781cdadf450b",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_article_validation_provenance_tables.tex",
+      "locator": "tables/joint_qdesn_article_validation_provenance_tables.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_article_validation_provenance_tables.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "37b7923790d601260259a7e48b097dfc419d294ead8bc606b51d98e901438162",
+      "destination_sha256": "1b69766490f0e73f1a551479c6c83c44a4755e26b6044f26ed2a44bcc8216e52",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_contrast_table.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_contrast_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_contrast_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "d1294023c8303bd77650fc11abe66356973818b4adba710e69b8c0ed0d2722c8",
+      "destination_sha256": "827c3e34fb911e515cbb42a2ed61579737b6bdbbc81f61b0224af99c3feb4a8d",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_crossing_table.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_crossing_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_crossing_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "3afe1449f7cd8f64931069ed446a370c59540d82f7cca32c7b2ef687ed70045e",
+      "destination_sha256": "a442bc14cb2d269ec3c8a2a20da5221c72ffddfba628ebf8039e1c9aef058a16",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_fit_figure.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_fit_figure.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_fit_figure.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "d1ab2ab97ad966e81bd149d44eaff263466fd79b22e28501c1b2954b2b61742e",
+      "destination_sha256": "7cc30dd745f62ccb9a95c110add9cca0076f9f82cea482bc996ea71c5214b95c",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_forecast_figure.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_forecast_figure.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_forecast_figure.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "644139382562dc83097be16a31034f0e6d4bd37831de8f0f8dc68559d2eebd7a",
+      "destination_sha256": "aa2e03cff90ed2ce90440c5d9970be083dbf0a7ebba54b5a255421ba7d1da083",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_oracle_recovery_table.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_oracle_recovery_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_oracle_recovery_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "fb6b5364fa8bff98e781bcc05a78e82c78b8178704e1559ad011fa6e97d53451",
+      "destination_sha256": "fc2bf6c1bbe81a29d6f52be7f3688b48a8aaf7e0e0f695917be6190455a2cf42",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_protocol.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_protocol.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_protocol.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "2785ec50b1f277b358192e6d46004198b25a0008412f323366bfeea9e6c933bd",
+      "destination_sha256": "3e025664477c0901d6e34cd49cca9009a3af412728bf1f8a9d013ee49fd57354",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_score_table.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_score_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_score_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "8878011d0b5129d72f11636c2e4c9ce70d8e43b589c87adb2c9218f0b68d66f3",
+      "destination_sha256": "bd62e8914561da08d587e5399606324f7ca4365a5cbf010319a21e0e26632037",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/joint_qdesn_corrected_v4_secondary_score_table.tex",
+      "locator": "tables/joint_qdesn_corrected_v4_secondary_score_table.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/joint_qdesn_corrected_v4_secondary_score_table.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "6472a07a7af3baef767cccaa7152a91f2d1e5065e6fcc288a355cada03241789",
+      "destination_sha256": "47706c8be924cdbe43042b3bd73eea8a202f80ade8d70e9a19f103134cc461d7",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/pricefm_full_current_outputs.tex",
+      "locator": "tables/pricefm_full_current_outputs.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/pricefm_full_current_outputs.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "b0b485a3668c2b915b16bc01f0baf0485837ed932241ba93eb81ff5f323bd701",
+      "destination_sha256": "9a47608e2ec42db1b206d404386fc973ff30abd8133ec09f489bdb3587d64072",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/pricefm_r98_global_aql_comparison.tex",
+      "locator": "tables/pricefm_r98_global_aql_comparison.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/pricefm_r98_global_aql_comparison.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "aed9fa10da6383d31f256c108d2530384ec57c275a54bc2d6f55754d287473a2",
+      "destination_sha256": "aed9fa10da6383d31f256c108d2530384ec57c275a54bc2d6f55754d287473a2",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/pricefm_r98_main_aql_summary.tex",
+      "locator": "tables/pricefm_r98_main_aql_summary.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/pricefm_r98_main_aql_summary.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "2443dce90b1e6453e6ec38092092b39bbc379927944ef45419233e9ece124e0e",
+      "destination_sha256": "2443dce90b1e6453e6ec38092092b39bbc379927944ef45419233e9ece124e0e",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_metric_dependence_sensitivity.tex",
+      "locator": "tables/qdesn_validation_500obs_metric_dependence_sensitivity.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_metric_dependence_sensitivity.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "74c165ad4b29f00808e058750d8f6a320b5454f97ae7133d1260ae9794d5ee2b",
+      "destination_sha256": "74c165ad4b29f00808e058750d8f6a320b5454f97ae7133d1260ae9794d5ee2b",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_mcmc_fit_metric_interval_figure.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_mcmc_fit_metric_interval_figure.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_mcmc_fit_metric_interval_figure.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "3370a7f07308af8431eed4619b58616072ae661558a1044ea68afd82e3a1b6d7",
+      "destination_sha256": "a31c405388cebe4c22daae40771b1d32c4589e782a0f9213b85b6b8f8f0bb2b3",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_mcmc_forecast_metric_interval_figures.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_mcmc_forecast_metric_interval_figures.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_mcmc_forecast_metric_interval_figures.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "7dfb5ee609026f3a6ddc94bca4d2cc389a3d434e37b86e1e7177a3dad9b3d8cd",
+      "destination_sha256": "7a9fec074cfd4d310dd9f21b2e1ef42e45d1c008e6b464d0f0931f1af7e947a5",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_gausmix.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_gausmix.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_mcmc_metric_intervals_gausmix.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "b35d8cb1275c15cb4fe1f8ce0e75982fa9ba3ca33ccc1ac647e7fc846331d5d3",
+      "destination_sha256": "989d6641385311a99bbbf65565be7843431b4e25efa5a06aa0daf4721fd23f00",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_laplace.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_laplace.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_mcmc_metric_intervals_laplace.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "eefd69eeed5516d7ceff2c90c31384ebb02787be21bb88913035d3485c555ae1",
+      "destination_sha256": "e94e4ae0a17a9b6a2e7e28f9dace20f3f756d882d183a4a7c1f2a66c1c777532",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_normal.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_normal.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_mcmc_metric_intervals_normal.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "8792095682ee331379dc7fb40524e14c68ce6b4129d178984f464a91217affa0",
+      "destination_sha256": "35be8dec2c074aa9d8fafae61053a32938f4832b6b38fab8e4661af38d679ba6",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_paired_metric_interval_tables.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_paired_metric_interval_tables.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_paired_metric_interval_tables.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "3617c13a5d6fadf1346482d12eb6f58c2476a57b6c956ec78800eaca92115769",
+      "destination_sha256": "f1468decb0a71ed9b520cb22180a750e8a7c1ae8b9aa99471e365de6924f1096",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_interval_figures.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_vb_metric_interval_figures.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_vb_metric_interval_figures.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "cfc97c6450eb7bc29946d0040ace87f0ed6a586cbbde24449cf66c87845ddfe9",
+      "destination_sha256": "2a4331531d7956445e8ead1022ede9468503dbf35072f96021da3f4b4d905e0b",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_gausmix.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_gausmix.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_vb_metric_intervals_gausmix.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "6ab585dd0bd2fe3175b96867961e6bb8286354fe50f45360ff96a7bc107ce1b3",
+      "destination_sha256": "614dcc5df15e4bd1523530147b5d612269074248dff889b265832c025a8d532d",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_laplace.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_laplace.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_vb_metric_intervals_laplace.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "c280c416a6a57b97e89e1009da595eb5da38d9282706bb29a8f9143d054980a7",
+      "destination_sha256": "84c2f2df9fc65edb64a8749b4644c2dfca4db868c087204065e7b242e3b20b77",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_normal.tex",
+      "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_normal.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_500obs_v14_vb_metric_intervals_normal.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "82e7b54c220ccd2ac37f8f99bf40176d0fcb1ec9f16ccab2ae9e35ee3b5140d2",
+      "destination_sha256": "ad785a556221feff42870a4f0f3a53f6d3d53c882cc96f5e8d10d6ecdc830b59",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    },
+    {
+      "source_id": "SRC-QDESN",
+      "commit": "757522db0f85815244370ec92a194de132268883",
+      "source_path": "tables/qdesn_validation_mcmc_five_chain_sensitivity.tex",
+      "locator": "tables/qdesn_validation_mcmc_five_chain_sensitivity.tex",
+      "material_type": "display_tex_fragment",
+      "destination": "tables/ch04-qdesn/qdesn_validation_mcmc_five_chain_sensitivity.tex",
+      "handling": "transformed paths, citations, and cross-references; no computation imported",
+      "source_sha256": "5ec43870efe1c1014bafd5888eeb509b60634a46c78d4912e2aec419eed8d92d",
+      "destination_sha256": "df83f3ef3f114bc6cb16d613e671c5bbe4c7eb4ad31be147346d5d540edfd83b",
+      "claim_ids": [
+        "CLM-QDESN-001",
+        "CLM-QDESN-002",
+        "CLM-QDESN-003",
+        "ART-QDESN-004",
+        "ART-QDESN-005",
+        "ART-QDESN-008"
+      ],
+      "rights_status": "UNVERIFIED_LOCAL_ONLY",
+      "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
+    }
+  ]
+}
