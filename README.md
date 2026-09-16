@@ -22,11 +22,34 @@ results are in `docs/VALIDATION.md`. No sibling repository, data file, network
 fetch, R/Python analysis, shell escape or separate figure-generation command
 is required.
 
-Packages: PSNFSS (`mathptmx`), AMS math/fonts/theorems, geometry, setspace,
-fancyhdr, graphicx, booktabs, PGF/TikZ, caption, natbib, url and hyperref;
-base LaTeX encoding and dependencies. The four UCSC class/size files are
-vendored. A reasonably complete TeX Live installation includes these mature
-packages. No installation was performed on the user's machine.
+Packages: PSNFSS (mathptmx), AMS math/fonts/theorems, mathtools, bm, geometry,
+setspace, fancyhdr, graphicx, booktabs, array/tabularx/longtable, float,
+enumitem, xcolor, etoolbox, PGF/TikZ, algorithm/algorithmic, caption, natbib,
+url and hyperref; base LaTeX encoding and dependencies. The four UCSC
+class/size files are vendored. A reasonably complete TeX Live installation
+includes these mature packages. No installation was performed on the user's
+machine.
+
+## Manuscript conversion
+
+Research Chapters 2--5 are local manuscript-first structural conversions at
+the immutable source commits in source-manifest.json. Main article prose is
+the initial baseline; selected supporting proofs, derivations, algorithms,
+diagnostics, tables, and figures are integrated into the chapter bodies. Code,
+data, fitted objects, computation, source histories, and full output archives
+remain external. Imported text and assets are not cleared for external reuse.
+
+Routine thesis builds need only this checkout. To regenerate the conversion
+from the retained exact-commit audit clones, run:
+
+    python3.11 scripts/import_manuscripts.py --audit-root /PATH/TO/AUDIT-CLONES
+    python3.11 scripts/validate_manuscript_imports.py \
+      --audit-root /PATH/TO/AUDIT-CLONES
+
+The validator may also run without --audit-root; that checks the local
+manifests, destinations, citations, labels, dependencies, paths, and file
+types, but cannot recheck source Git blobs. Chapter records are under
+docs/imports/.
 
 For Linux without an existing TeX installation, use the official TeX Live
 installer in a user-owned directory; choose an adequate scheme and add its
@@ -71,12 +94,13 @@ test.
 - `docs/CODEX-KICKOFF.md`: use for the gated source-decision and drafting
   workflow.
 
-`chapters/` contains six structured placeholders, including four research
-slots. The blank second leaf is intentional. The abstract and acknowledgments
-contain instructions only. The appendix contains elementary demonstration
-material that will be removed after supplement material has been integrated
-into the research chapter bodies. Replace its institutional example
-bibliography with verified research references as chapters develop.
+The chapters directory contains an unfinished introduction, four converted
+research chapters, and an unfinished synthesis. The blank second leaf is
+intentional. The abstract and acknowledgments contain instructions only. The
+starter demonstration appendix is no longer part of the document; technical
+supporting material is integrated into the research chapter bodies. The
+consolidated bibliography is generated from the fixed manuscript snapshots
+plus the two administrative starter records.
 Do not disable `\StarterDrafttrue` merely to make an unfinished file look final.
 
 ## Portability and provenance

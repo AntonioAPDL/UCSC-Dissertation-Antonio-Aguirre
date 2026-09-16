@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "recorded_at": "2026-09-15",
-  "status": "AUDIT_COMPLETE_WITH_AUTHOR_DECISIONS_PENDING",
+  "status": "LOCAL_MANUSCRIPT_CONVERSION_COMPLETE_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
     "discovery_snapshot": "Observed remote default-branch head on the audit date",
@@ -11,9 +11,14 @@
   "execution_record": {
     "method": "Eight full-history ordinary Git clones in a temporary server-local audit root outside the thesis and original source trees",
     "original_source_guards": "PASSED",
-    "research_assets_imported": 0,
+    "research_assets_imported": 93,
+    "manuscript_source_records_imported": 9,
+    "total_import_records": 102,
     "full_declared_workflows_reproduced": 0,
     "validation_report": "docs/research-audit-validation.md",
+    "conversion_manifests": "docs/imports/*.json",
+    "conversion_importer": "scripts/import_manuscripts.py",
+    "conversion_validator": "scripts/validate_manuscript_imports.py",
     "decision_record": "docs/research-decisions.md",
     "clone_helper": "scripts/prepare_research_audit_clones.sh"
   },
@@ -57,7 +62,14 @@
       "highest_bounded_evidence": "E3",
       "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
-      "imports": []
+      "imports": [
+        {
+          "chapter": "chapters/04-research-c.tex",
+          "manifest": "docs/imports/ch04-qdesn.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "three manuscript records plus selected current display fragments and claim-relevant figures"
+        }
+      ]
     },
     {
       "id": "SRC-ENVIRON",
@@ -78,7 +90,14 @@
       "highest_bounded_evidence": "E3",
       "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
-      "imports": []
+      "imports": [
+        {
+          "chapter": "chapters/03-research-b.tex",
+          "manifest": "docs/imports/ch03-environ.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "one manuscript record plus manuscript-referenced tables and figures"
+        }
+      ]
     },
     {
       "id": "SRC-RQR",
@@ -98,7 +117,14 @@
       "highest_bounded_evidence": "E3",
       "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
-      "imports": []
+      "imports": [
+        {
+          "chapter": "chapters/05-research-d.tex",
+          "manifest": "docs/imports/ch05-mti.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "RQR main and supplement records plus their selected display assets"
+        }
+      ]
     },
     {
       "id": "SRC-MTI-EXT",
@@ -118,7 +144,14 @@
       "highest_bounded_evidence": "E3",
       "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
-      "imports": []
+      "imports": [
+        {
+          "chapter": "chapters/05-research-d.tex",
+          "manifest": "docs/imports/ch05-mti.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "MTI-EXTENSIONS main and supplement records integrated after the RQR foundation"
+        }
+      ]
     },
     {
       "id": "SRC-EXDQLM-ARTICLE",
@@ -139,7 +172,14 @@
       "highest_bounded_evidence": "E3",
       "inclusion_status": "AUTHOR_DIRECTED_WORKING_SOURCE",
       "rights_status": "UNVERIFIED",
-      "imports": []
+      "imports": [
+        {
+          "chapter": "chapters/02-research-a.tex",
+          "manifest": "docs/imports/ch02-exdqlm.json",
+          "status": "UNVERIFIED_LOCAL_ONLY",
+          "scope": "one article manuscript record plus its nine displayed figures"
+        }
+      ]
     },
     {
       "id": "SRC-EXDQLM-PKG",

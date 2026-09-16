@@ -89,3 +89,44 @@ four-project architecture:
 This revalidation covers metadata and empty chapter scaffolding only. It does
 not validate substantive chapter prose, imported source assets, or the final
 university record spelling.
+
+## Muscat manuscript-first conversion revalidation
+
+Performed 2026-09-15 after local conversion of all four research chapters:
+
+- The documented build script completed successfully under pdfTeX
+  3.14159265-2.6-1.40.19 (TeX Live 2018). After the final chapter-local
+  navigation wording was cleaned up, two additional pdfLaTeX passes stabilized
+  pagination and cross-references.
+- Final output is 367 US Letter pages, 19,926,717 bytes, SHA-256
+  821793008fcb183c59ad9cc42e837c4aac75934ffdd0066b1f3e513dd8878a8e.
+  Research Chapters 2--5 begin on PDF pages 39, 106, 154, and 256.
+- The final log has zero undefined citations, undefined references, duplicate
+  labels, changed-label notices, oversized floats, overfull boxes, pdfTeX
+  warnings, or missing-file errors. Forty-one underfull-box diagnostics remain
+  from conservative line breaking in imported prose, tables, and bibliography;
+  they do not indicate clipping. The known legacy-class caption warning and two
+  automatic !h to !ht float-placement adjustments remain.
+- All 35 PDF fonts are embedded; no Type 3 fonts occur. PDF metadata contains
+  the unresolved working title and the official long author name
+  Jose Antonio Aguirre Perez de Leon.
+- The manuscript-import validator passed against the retained audit root. It
+  checked four chapter manifests, nine source documents, 96 top-level section
+  dispositions, 102 destination records and immutable Git blobs, 54 imported
+  TeX files, 434 unique labels, and 124 cited keys. Dependency, file-type,
+  local-only rights, absolute-path, and secret scans also passed.
+- Chapter openings and representative prose, equation, theorem/proof,
+  algorithm, table, figure, integrated-support, and extension-transition pages
+  were rasterized and visually sampled across all four chapters. The sampled
+  pages showed no clipping or collisions. Dense tables and selected long
+  QDESN derivations use provisional compact typesetting and still require a
+  final human readability review.
+- A case-insensitive scan of Chapters 2--5 finds no stale appendix or
+  supplement navigation. Source supporting material now appears as ordinary
+  chapter sections.
+
+This validation proves a self-contained technical conversion and local build,
+not scientific acceptance, full computational reproduction, contribution-role
+allocation, direct-reuse permission, committee approval, accessibility
+compliance, or filing readiness. The research repositories remain external and
+no source computation was rerun.

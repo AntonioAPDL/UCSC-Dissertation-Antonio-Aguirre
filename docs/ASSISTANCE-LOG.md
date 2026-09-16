@@ -70,3 +70,19 @@ specified bibliography, LaTeX, provenance, validation, commit, and reuse
 controls. It updated planning/status records only. No article or supplement
 text, figure, table, code, data, or result asset was imported, and no build,
 push, publication, or synchronization was performed.
+
+2026-09-15: After the author approved the seven execution defaults, AI
+assistance performed the local manuscript-first structural conversion on
+branch `integration/manuscript-first-20260915`. It read exact Git blobs from
+the five approved audit commits; preserved the article prose as the initial
+chapter baseline; integrated selected proofs, derivations, algorithms,
+diagnostics, and empirical support into the four chapter bodies; copied only
+manuscript-referenced final figures and TeX display fragments; and generated a
+deduplicated dissertation bibliography. It added machine-readable import
+manifests, a deterministic importer, and a validator that checks immutable
+source and destination hashes, dependencies, labels, citations, path safety,
+file types, and local-only reuse status. The assistance made mechanical LaTeX
+and provisional page-fit adaptations but did not invent scientific claims,
+assign undocumented individual roles, run research computation, or establish
+reuse permission. All imports remain local and unverified for direct reuse; no
+push, publication, or Overleaf synchronization was performed.

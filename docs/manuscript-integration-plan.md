@@ -1,6 +1,6 @@
 # Manuscript-first dissertation integration plan
 
-Status: **proposed; no manuscript content imported**
+Status: **seven defaults approved; local structural conversion implemented**
 Prepared: 2026-09-15
 Applies to: the four-project architecture in `chapter-plan.md`
 Evidence: `research-audit.md`, `research-audit-validation.md`,
@@ -390,11 +390,11 @@ Use chapter-scoped paths:
 
 ```text
 figures/ch02-exdqlm/
-figures/ch03-environmetrics/
+figures/ch03-environ/
 figures/ch04-qdesn/
 figures/ch05-mti/
 tables/ch02-exdqlm/
-tables/ch03-environmetrics/
+tables/ch03-environ/
 tables/ch04-qdesn/
 tables/ch05-mti/
 ```
@@ -460,7 +460,7 @@ Create one compact import manifest per chapter under `docs/imports/`:
 
 ```text
 docs/imports/ch02-exdqlm.json
-docs/imports/ch03-environmetrics.json
+docs/imports/ch03-environ.json
 docs/imports/ch04-qdesn.json
 docs/imports/ch05-mti.json
 ```
@@ -584,9 +584,9 @@ The manuscript-first conversion is complete only when:
 - `docs/STATUS.md`, the source manifest, claim evidence, import manifests, and
   assistance log agree with the built PDF.
 
-## 17. Decisions before execution
+## 17. Approved execution decisions
 
-The proposed defaults are:
+On 2026-09-15, the author approved these defaults:
 
 1. perform one local manuscript-first conversion campaign for all four
    chapters;
@@ -599,5 +599,43 @@ The proposed defaults are:
 7. do not push, sync, or externally publish imported text/assets until reuse
    status is reviewed.
 
-Execution should begin only after the author accepts or modifies these seven
-defaults.
+The local implementation follows all seven decisions. No remote or Overleaf
+synchronization was performed.
+
+## 18. Local implementation record
+
+The structural conversion is reproducible through
+`scripts/import_manuscripts.py`. It reads only immutable Git blobs from the
+five approved audit clones, verifies their exact commits, builds a deduplicated
+bibliography, rewrites local citations/labels/dependencies, and emits the four
+chapter files plus chapter-scoped assets. Its output is checked by
+`scripts/validate_manuscript_imports.py`.
+
+The generated records are:
+
+- `docs/imports/ch02-exdqlm.json`;
+- `docs/imports/ch03-environ.json`;
+- `docs/imports/ch04-qdesn.json`; and
+- `docs/imports/ch05-mti.json`.
+
+Together they record nine source manuscripts, 96 top-level section
+dispositions, and 102 imported records. The 93 display dependencies comprise
+only selected TeX table/alias fragments and final PDF/PNG figure assets. No
+research code, data, fitted objects, simulation outputs as datasets, caches,
+environments, source histories, or live cross-repository paths were imported.
+All direct reuse remains marked `UNVERIFIED_LOCAL_ONLY`.
+
+Phase 1 is complete: all four article spines compile in the dissertation;
+supporting proofs, algorithms, derivations, diagnostics, and selected empirical
+displays are integrated by topic; the demonstration appendix is no longer in
+the document; and one bibliography resolves all chapter citations. Dense
+source tables and a small number of long derivations use provisional compact
+typesetting to fit the thesis page and require a later readability pass.
+
+Phases 2 and 3 remain deliberately open. The converted chapters still retain
+article-style signposting and repeated background where fidelity was safer
+than premature rewriting. Subsequent work must review scientific completeness
+and ordering chapter by chapter, deduplicate shared exposition, write the
+dissertation introduction and synthesis, confirm granular contribution roles,
+resolve direct-reuse permissions, and complete administrative metadata before
+any external synchronization or submission.
