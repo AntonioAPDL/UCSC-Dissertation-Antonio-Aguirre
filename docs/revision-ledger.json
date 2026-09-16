@@ -31,9 +31,9 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "77a99dbf3aa9439eab7fe0a9437dab6ee6eb4c93a1100977db9e6961680f5849",
+      "current_sha256": "634e7b165b85ca70afd126e4701812e07384caab6d89d3c282d615c63779942e",
       "state": "EDITED",
-      "revision_ids": ["REV-GLOBAL-BIB-20260916"]
+      "revision_ids": ["REV-GLOBAL-BIB-20260916", "REV-CH04-20260916"]
     },
     {
       "path": "chapters/05-research-d.tex",
@@ -78,6 +78,14 @@
       "paths": ["chapters/03-research-b.tex"],
       "summary": "Converted Chapter 3 from journal navigation to a dissertation application argument; corrected predictive-interval terminology, retained the five-origin and horizon boundaries, consolidated repeated regime and cutoff displays, and summarized secondary parameter evidence in prose.",
       "evidence": "docs/editorial-issues.json; docs/display-ledger.json; fixed Environmetrics manuscript, San Lorenzo data-product, and correction snapshots recorded in source-manifest.json",
+      "validation": "Fast and chapter milestone validation, rendered-page inspection, and final log review required before merge."
+    },
+    {
+      "id": "REV-CH04-20260916",
+      "date": "2026-09-16",
+      "paths": ["chapters/04-research-c.tex"],
+      "summary": "Reorganized Chapter 4 around the Q--DESN contribution before the Gaussian baseline; consolidated repeated main-manuscript and supplementary displays; integrated diagnostics and sensitivity evidence by topic; and preserved the documented simulation, VB--LD, GloFAS, and PriceFM qualifications.",
+      "evidence": "docs/editorial-issues.json; docs/display-ledger.json; fixed Q--DESN, Gaussian-baseline, and application snapshots recorded in source-manifest.json",
       "validation": "Fast and chapter milestone validation, rendered-page inspection, and final log review required before merge."
     }
   ]

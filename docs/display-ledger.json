@@ -498,8 +498,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-quantile-sequential-initialization",
@@ -510,8 +510,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-dgp",
@@ -522,8 +522,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:glofas-application-score",
@@ -534,8 +534,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:glofas-application-forecast-period",
@@ -546,8 +546,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-glofas-part4-family-scores",
@@ -558,8 +558,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-glofas-part4-normal-comparison",
@@ -570,8 +570,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-glofas-part4-independent-comparison",
@@ -582,8 +582,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-glofas-part4-joint-comparison",
@@ -594,8 +594,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-glofas-part4-historical-guardrail",
@@ -606,8 +606,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-glofas-part4-convergence",
@@ -618,8 +618,8 @@
       "disposition": "OMIT",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Remove from the thesis body because it is an implementation diagnostic rather than claim-bearing dissertation evidence.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:pricefm-matched-aql-comparison",
@@ -630,8 +630,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-pricefm-r98-global-comparison",
@@ -642,8 +642,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:supp-pricefm-r98-region-comparison",
@@ -654,8 +654,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:simulation-500obs-mcmc-forecast-mae-intervals",
@@ -666,8 +666,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:simulation-500obs-mcmc-forecast-check-loss-intervals",
@@ -678,8 +678,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:joint-qdesn-corrected-v4-forecast-acrps",
@@ -690,8 +690,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-mcmc-intervals-normal",
@@ -702,8 +702,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-vb-intervals-normal",
@@ -714,8 +714,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-mcmc-intervals-laplace",
@@ -726,8 +726,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-vb-intervals-laplace",
@@ -738,8 +738,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-mcmc-intervals-gausmix",
@@ -750,8 +750,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:simulation-500obs-vb-intervals-gausmix",
@@ -762,8 +762,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:simulation-500obs-mcmc-fit-rmse-intervals",
@@ -774,8 +774,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:simulation-500obs-vb-fit-rmse-intervals",
@@ -786,8 +786,8 @@
       "disposition": "MERGE",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Consolidate with the paired or repeated display so the evidence remains visible without duplicating a separate thesis float.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-independent-mcmc-five-chain-sensitivity",
@@ -798,8 +798,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:joint-qdesn-corrected-v4-score",
@@ -810,8 +810,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:fig:joint-qdesn-corrected-v4-fit-rmse",
@@ -822,8 +822,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:joint-qdesn-corrected-v4-protocol",
@@ -834,8 +834,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-joint-qdesn-corrected-v4-contrasts",
@@ -846,8 +846,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-joint-qdesn-corrected-v4-crossings",
@@ -858,8 +858,8 @@
       "disposition": "KEEP",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-joint-qdesn-corrected-v4-secondary",
@@ -870,8 +870,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:supp-joint-qdesn-corrected-v4-oracle",
@@ -882,8 +882,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "qdesn:tab:joint-qdesn-article-validation-phase153-replication-summary",
@@ -894,8 +894,8 @@
       "disposition": "TEXT-SUMMARY",
       "claim_role": "Q-DESN formulation, numerical behavior, simulation evidence, and two applications",
       "rationale": "Retain the exact evidentiary conclusion and provenance in prose; the full display is secondary to the chapter argument.",
-      "status": "PROVISIONAL_AUDIT_DECISION",
-      "implementation_status": "PENDING"
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     },
     {
       "id": "rqr:tab:interval-functionals",
@@ -1148,6 +1148,30 @@
       "rationale": "Retain as direct evidence for a central chapter definition, method, comparison, or application result.",
       "status": "PROVISIONAL_AUDIT_DECISION",
       "implementation_status": "PENDING"
+    },
+    {
+      "id": "qdesn:fig:simulation-500obs-mcmc-forecast-criteria-thesis",
+      "chapter": "ch04-qdesn",
+      "type": "figure",
+      "source_file": "chapters/04-research-c.tex",
+      "baseline_line": null,
+      "disposition": "MERGE",
+      "claim_role": "two-page thesis display retaining MCMC forecast MAE and check-loss evidence",
+      "rationale": "Combine the paired criteria under one numbered thesis display while retaining both source panels and their inferential qualifications.",
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "id": "qdesn:fig:simulation-500obs-fit-recovery-thesis",
+      "chapter": "ch04-qdesn",
+      "type": "figure",
+      "source_file": "chapters/04-research-c.tex",
+      "baseline_line": null,
+      "disposition": "MERGE",
+      "claim_role": "two-page thesis display contrasting MCMC and approximate variational fit recovery",
+      "rationale": "Combine the paired recovery panels while stating that separately selected specifications prevent a controlled VB--LD approximation-error interpretation.",
+      "status": "CHAPTER_REVISION_COMPLETE",
+      "implementation_status": "IMPLEMENTED"
     }
   ]
 }

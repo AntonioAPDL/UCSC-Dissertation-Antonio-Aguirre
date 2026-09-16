@@ -66,8 +66,8 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 2. Phase 1: read-only scholarly audit and revision ledger — complete.
 3. Phase 2: global architecture, notation, bibliography, and display decisions
    — complete.
-4. Phase 3: chapter revisions in order 2, 3, 4, 5 — Chapter 2 complete;
-   Chapter 3 next.
+4. Phase 3: chapter revisions in order 2, 3, 4, 5 — Chapters 2--4 complete;
+   Chapter 5 next.
 5. Phase 4: cross-chapter prose and typography review.
 6. Phase 5: dissertation introduction, synthesis, and abstract.
 7. Final release validation and explicit GitHub/Overleaf handoff.
@@ -259,3 +259,30 @@ The univariate transfer-active illustration and two secondary source-parameter
 tables are summarized in prose. The chapter continues to state that its
 comparison uses five rolling origins, distinguishes the 28-day GloFAS and
 common 8-day NWS horizons, and is not a dense continuous hindcast.
+
+## Chapter 4 revision result
+
+Chapter 4 now introduces the nonlinear conditional-quantile problem, fixed
+DESN feature map, and Q--DESN regression before using the Gaussian DESN as an
+exact baseline and initialization device. One shared distributional-convention
+section replaces the repeated source sections. Posterior computation, joint
+quantile inference, scoring, simulations, the GloFAS study, and the PriceFM
+comparison now form one thesis argument; source-packet navigation, audit
+headings, and repeated feature-map exposition have been removed.
+
+All 36 Chapter 4 display-ledger records are implemented: 13 KEEP, 17 MERGE,
+five TEXT-SUMMARY, and one OMIT. Paired forecast and fit-recovery panels use
+continued two-page thesis displays. The MCMC family tables remain the
+claim-bearing interval summaries; separately selected variational panels are
+not presented as a controlled approximation-error comparison. Secondary
+GloFAS, PriceFM, five-chain, and joint-simulation displays are consolidated or
+summarized with their exact conclusions retained.
+
+The chapter preserves the evidence boundaries identified by the audit. The
+single-quantile intervals condition on one reproducible dynamic root per
+family and quantile level; VB--LD evidence remains incomplete; diagnostic
+review status is retained for 10 of 32 posterior-score cells and all 16 exAL
+scale-asymmetry assessments. The GloFAS joint AL result is described as
+cap-stabilized rather than strictly converged. The PriceFM comparison remains
+heterogeneous: Q--DESN has lower AQL in 54 of 114 region--fold cases, PriceFM
+in 60, with means 7.217 and 7.039, respectively.

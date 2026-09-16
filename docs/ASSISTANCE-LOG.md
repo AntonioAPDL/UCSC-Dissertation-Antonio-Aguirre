@@ -134,3 +134,13 @@ and implemented all 21 display decisions by pairing repeated regime and cutoff
 panels and summarizing secondary evidence in prose. The chapter validation tier
 and representative rendered-page inspection passed. No research code, data,
 source repository, forecast experiment, or fitted model was changed or rerun.
+
+2026-09-16: AI assistance revised Chapter 4 as a Q--DESN methodological
+dissertation chapter. It placed the inferential target and Q--DESN formulation
+before the exact Gaussian baseline, merged repeated conventions and
+source-packet structure, consolidated repeated simulation and application
+displays, and retained the fixed-root, VB--LD, diagnostic-review, GloFAS
+cap-stabilization, and PriceFM heterogeneity qualifications. The chapter
+validation tier and representative rendered-page inspection passed. No
+research code, data, source repository, simulation, model fit, or forecast
+experiment was changed or rerun.

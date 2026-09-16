@@ -208,7 +208,8 @@
       "proposed_action": "Move the Q-DESN target and model first; retain Gaussian DESN as a baseline/initialization component after the problem and feature construction are established.",
       "source_provenance": "DOC-QDESN-MAIN, DOC-QDESN-SUPP, DOC-QDESN-GAUSS",
       "author_input_required": false,
-      "validation": "section-order and forward-reference audit"
+      "validation": "section-order and forward-reference audit",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-002",
@@ -220,7 +221,8 @@
       "proposed_action": "Retain one chapter-level convention section and move model-specific details to the corresponding likelihood subsection.",
       "source_provenance": "QDESN article and Gaussian supplement",
       "author_input_required": false,
-      "validation": "heading and notation audit"
+      "validation": "heading and notation audit",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-003",
@@ -232,7 +234,8 @@
       "proposed_action": "Integrate claim-bearing content into method, computation, simulation, application, or limitations sections; remove audit/navigation headings.",
       "source_provenance": "DOC-QDESN-SUPP and DOC-QDESN-GAUSS",
       "author_input_required": false,
-      "validation": "section hierarchy review"
+      "validation": "section hierarchy review",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-004",
@@ -244,7 +247,8 @@
       "proposed_action": "Keep rankings descriptive and retain the diagnostic qualifications beside the corresponding results.",
       "source_provenance": "corrected-v4 score, contrast, crossing, and provenance tables",
       "author_input_required": false,
-      "validation": "claim-to-table consistency"
+      "validation": "claim-to-table consistency",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-005",
@@ -256,7 +260,8 @@
       "proposed_action": "State each limitation with the exact model/application scope and avoid a generic scalability or convergence claim.",
       "source_provenance": "fixed QDESN audit snapshot and reviewer audit records",
       "author_input_required": false,
-      "validation": "limitation statements against claim evidence"
+      "validation": "limitation statements against claim evidence",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-006",
@@ -268,7 +273,8 @@
       "proposed_action": "Keep that qualification adjacent to all reported GloFAS score improvements.",
       "source_provenance": "tables/ch04-qdesn/glofas_application_current_outputs.tex",
       "author_input_required": false,
-      "validation": "macro and prose consistency"
+      "validation": "macro and prose consistency",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH04-007",
@@ -280,7 +286,8 @@
       "proposed_action": "Present the comparison as heterogeneous and not as overall Q-DESN superiority.",
       "source_provenance": "tables/ch04-qdesn/pricefm_full_current_outputs.tex",
       "author_input_required": false,
-      "validation": "numbers and wording against current output macros"
+      "validation": "numbers and wording against current output macros",
+      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
     },
     {
       "id": "ED-CH05-001",
