@@ -63,7 +63,7 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 ## Phase sequence
 
 1. Phase 0: lifecycle and edit-safe provenance — complete.
-2. Phase 1: read-only scholarly audit and revision ledger — in progress.
+2. Phase 1: read-only scholarly audit and revision ledger — complete.
 3. Phase 2: global architecture, notation, bibliography, and display decisions.
 4. Phase 3: chapter revisions in order 2, 3, 4, 5.
 5. Phase 4: cross-chapter prose and typography review.
@@ -92,3 +92,112 @@ The following facts may not be inferred:
 
 The detailed Phase 1 issue, display, notation, and bibliography records are
 maintained below as the audit proceeds.
+
+## Phase 1 scholarly audit result
+
+The audit found 29 actionable issues in `editorial-issues.json`: two current
+decision boundaries, 20 additional major issues, and seven moderate issues.
+The two boundaries do not prevent conservative editing:
+
+- candidate-specific contribution prose remains collective until the author
+  confirms granular roles; and
+- Chapter 5 must narrow TCSP/tolerance language to the proved and empirically
+  validated scopes rather than assume the missing stronger result.
+
+Administrative placeholders remain blocking for filing but not for research-
+chapter integration.
+
+### Baseline scale and reader burden
+
+The successful 367-page build contains approximately 36 Roman-numbered
+frontmatter pages and 331 body/bibliography pages. At the conversion baseline:
+
+| Unit | Approximate PDF span | Source size | Principal audit finding |
+| --- | ---: | ---: | --- |
+| Chapter 1 | 2 pages | 16 lines | TODO scaffold only |
+| Chapter 2 | 67 pages | 1,729 lines | sound software/article baseline; technical blocks interrupt the package narrative |
+| Chapter 3 | 48 pages | 706 lines | coherent application; journal headings, interval terminology, and repeated support displays remain |
+| Chapter 4 | 102 pages | 3,500 lines | core Q-DESN method follows a long Gaussian supplement; duplicate conventions and audit/supplement headings remain |
+| Chapter 5 | 99 pages | 2,783 lines | duplicated theorem/proposition and protocol/application material; extension evidence is theory-only |
+| Chapter 6 | 1 page | 9 lines | TODO scaffold only |
+
+The 44 figures and 51 tables create roughly 28 frontmatter list pages. The
+display ledger covers all 95 labeled environments: 46 KEEP, 30 MERGE, 18
+TEXT-SUMMARY, and 1 OMIT. These decisions preserve central definitions,
+comparisons, negative findings, and claim-bearing evidence while removing the
+replication-archive feel of the imported supplements.
+
+### Chapter-level revision architecture
+
+**Chapter 2 — exdqlm.** Keep the contribution software-centered. Establish the
+statistical model and version boundary, then organize the chapter around package
+architecture, inference interfaces, diagnostics/forecasting, and the four
+examples. Integrate derivations beside the implemented interface they justify.
+Retain the Big Tree held-out result in which direct regression outperforms the
+transfer model; do not imply predictive superiority from the training metrics.
+
+**Chapter 3 — Environmetrics application.** Convert headings to thesis style,
+replace paper navigation, and call central bands from synthesized future-response
+distributions posterior predictive bands/intervals. Keep fitted quantile-curve
+credible intervals distinct. Preserve the five-origin limit, separate 28-day
+and common 8-day horizons, and avoid an operational-hindcast claim.
+
+**Chapter 4 — Q-DESN.** Put the inferential target, fixed DESN feature map, and
+Q-DESN formulation before the Gaussian baseline derivation. Use the Gaussian
+model as an exact baseline and initialization device. Merge the two
+distributional-convention sections; integrate supplement/audit material into
+computation, simulation, application, or limitations. Keep overlapping score
+intervals, review-status diagnostics, the cap-stabilized GloFAS fit, and the
+heterogeneous PriceFM comparison explicit.
+
+**Chapter 5 — RQR/MTI.** Merge each duplicated theorem/proposition statement
+with its proof and consolidate the empirical-balance, tolerance-validation, and
+pharmaceutical-application pairs. Preserve generalized updating as distinct
+from an ordinary response likelihood and endpoint draws as distinct from
+posterior predictive response draws. Present MTI extensions as theoretical or
+proposed constructions because the audited repository has no implementation or
+empirical validation.
+
+### Common notation and terminology map
+
+Global macros in `notation.tex` define only genuinely shared objects. Chapter-
+specific symbols remain local when the same letter has a different conditioning
+set or target.
+
+| Concept | Dissertation convention | Boundary to preserve |
+| --- | --- | --- |
+| Quantile level | `\tau` for a generic target; ordered grids use `\tau_1<\cdots<\tau_L` | Do not silently replace source `p`/`p_0` inside package API names or fixed equations |
+| Conditional quantile | `Q_\tau(Y\mid\mathcal F)` with the conditioning information stated locally | Fitted quantile-location curves are not predictive response intervals |
+| Working likelihood | Explicitly call AL/exAL a likelihood or working likelihood according to the chapter's inferential use | Chapter 5 generalized Bayes is loss-based, not an ordinary response likelihood |
+| Posterior approximation | MCMC, VB, and Laplace--Delta are named separately | Approximate intervals must not be described as exact posterior intervals |
+| Prediction | Posterior predictive distribution/draw/interval only for a future-response distribution | Parameter, endpoint, and loss-target draws retain their own names |
+| Tolerance statement | Content `c` and confidence `1-\alpha` stated together | Empirical attainment is not a distribution-free guarantee |
+| Reservoir state | `h_t` or the source-defined bold variant, with dimension and fixed/random status stated | Do not unify reservoir and state-space latent states merely because both are time indexed |
+| Scores | CRPS, average finite-grid check loss/aCRPS, MAE, RMSE, and PPLC named with orientation and evaluation sample | Oracle recovery diagnostics are not proper scores against realized observations |
+
+### Bibliography diagnosis
+
+The baseline has 233 entries and 124 cited keys. The canonical map records 11
+semantic-overlap groups. Most are identical works imported under chapter
+prefixes. Three require more than key deduplication:
+
+- the QDESN Nishimura--Suchard entry contains the DOI and pagination of a
+  different Bayesian Analysis paper;
+- the Environmetrics Yang--Wang--He entry has incorrect full author names and
+  omits the DOI; and
+- the journal record for Bayesian predictive decision synthesis misnames Emily
+  Tallman as Elliott.
+
+The canonicalization pass must update citations before deleting duplicate
+entries and retain this mapping as provenance.
+
+### Acceptance criteria before Chapter 2 editing
+
+- All three editorial ledgers validate.
+- The source and import validators pass, including fixed-blob checks when the
+  retained audit root is available.
+- The chapter revisions can differ from the immutable import hashes without
+  disabling provenance checks.
+- No source repository is a thesis build dependency.
+- Collective attribution, conservative TCSP wording, and unverified reuse
+  status remain explicit.
