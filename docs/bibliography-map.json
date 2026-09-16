@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-16",
+  "policy": "Canonicalize identical works by DOI/title/author/version. Preserve genuinely distinct versions only when the dissertation cites a version-specific fact.",
+  "records": [
+    {
+      "canonical_key": "env-prado2021time",
+      "replace_keys": ["exd-prado_ferreira_west2021"],
+      "action": "MERGE_IDENTICAL_WORK",
+      "basis": "Same book and edition; canonical record contains DOI, ISBN, and complete author names."
+    },
+    {
+      "canonical_key": "exd-chernozhukov2010",
+      "replace_keys": ["env-chernozhukov2010"],
+      "action": "MERGE_IDENTICAL_DOI",
+      "basis": "Same Econometrica article and DOI 10.3982/ECTA7880; canonical DOI is normalized."
+    },
+    {
+      "canonical_key": "exd-yan2025family",
+      "replace_keys": ["exd-yan2017new"],
+      "action": "REMOVE_UNUSED_SUPERSEDED_PREPRINT",
+      "basis": "The 2017 two-author preprint is uncited; the cited 2025 journal article has a changed author list and DOI, so provenance records the version relationship rather than calling the records identical."
+    },
+    {
+      "canonical_key": "exd-nishimura2023shrunken",
+      "replace_keys": ["qdesn-NishimuraSuchard2023SSS"],
+      "action": "REPLACE_ERRONEOUS_DUPLICATE",
+      "basis": "The QDESN record assigns DOI 10.1214/22-BA1320 and pages 1163--1194 to the Nishimura--Suchard title. The verified article is Bayesian Analysis 18(2), 367--390, DOI 10.1214/22-BA1308; DOI BA1320 belongs to a different article.",
+      "verification": "https://projecteuclid.org/journals/bayesian-analysis/volume-18/issue-2/Shrinkage-with-Shrunken-Shoulders--Gibbs-Sampling-Shrinkage-Model-Posteriors/10.1214/22-BA1308.full"
+    },
+    {
+      "canonical_key": "env-yu2001bayesian",
+      "replace_keys": ["exd-yu2001bayesian"],
+      "action": "MERGE_IDENTICAL_WORK",
+      "basis": "Same article; canonical record includes DOI 10.1016/S0167-7152(01)00124-9."
+    },
+    {
+      "canonical_key": "qdesn-KozumiKobayashi2011Gibbs",
+      "replace_keys": ["exd-kozumi2011gibbs"],
+      "action": "MERGE_IDENTICAL_WORK",
+      "basis": "Same article; canonical record includes DOI 10.1080/00949655.2010.496117."
+    },
+    {
+      "canonical_key": "qdesn-Koenker2005",
+      "replace_keys": ["exd-koenkerquantile"],
+      "action": "MERGE_IDENTICAL_WORK",
+      "basis": "Same book; canonical record includes full name, address, and DOI."
+    },
+    {
+      "canonical_key": "env-tallman2024bayesian",
+      "replace_keys": ["env-tallman2023bayesianpredictivedecisionsynthesis"],
+      "action": "REPLACE_PREPRINT_WITH_PUBLISHED_VERSION",
+      "basis": "The cited 2023 preprint corresponds to the 2024 JRSS-B article by Emily Tallman and Mike West, volume 86(2), 340--363, DOI 10.1093/jrsssb/qkad109. The imported journal record's first name Elliott must be corrected to Emily.",
+      "verification": "https://academic.oup.com/jrsssb/article/86/2/340/7329254"
+    },
+    {
+      "canonical_key": "qdesn-YangWangHe2016ALInference",
+      "replace_keys": ["env-yang2016bayesian"],
+      "action": "MERGE_AND_CORRECT_AUTHORS",
+      "basis": "Same article; publisher metadata gives Yunwen Yang, Huixia Judy Wang, and Xuming He, DOI 10.1111/insr.12114.",
+      "verification": "https://onlinelibrary.wiley.com/doi/10.1111/insr.12114"
+    },
+    {
+      "canonical_key": "qdesn-WangHolanWikle2025ESNAreaLevel",
+      "replace_keys": ["qdesn-WangHolanWikle2026AESN"],
+      "action": "REMOVE_UNUSED_PREPRINT_DUPLICATE",
+      "basis": "Both entries have the same title and authors; neither is currently cited, and the 2025 journal record has DOI and publication metadata."
+    },
+    {
+      "canonical_key": "qdesn-YuEtAl2026PriceFM",
+      "replace_keys": ["rqr-YuEtAl2026PriceFM"],
+      "action": "MERGE_IDENTICAL_PREPRINT",
+      "basis": "Same arXiv work and author list; canonical record includes DOI and version note."
+    }
+  ]
+}

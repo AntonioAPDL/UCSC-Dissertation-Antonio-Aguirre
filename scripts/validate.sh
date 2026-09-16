@@ -33,6 +33,7 @@ esac
 
 python3.11 -m unittest tests/test_validate_research_audit.py
 python3.11 scripts/validate_research_audit.py
+python3.11 scripts/validate_editorial_audit.py
 validator=(python3.11 scripts/validate_manuscript_imports.py)
 if [[ -n "$audit_root" ]]; then
   validator+=(--audit-root "$audit_root")

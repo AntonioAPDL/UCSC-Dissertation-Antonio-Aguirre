@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
   "recorded_at": "2026-09-15",
-  "status": "MANUSCRIPT_CONVERSION_SYNCED_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+  "status": "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
     "author_architecture_decision": "COMPLETE",
     "manuscript_conversion": "COMPLETE",
-    "scientific_review": "NOT_STARTED",
+    "scientific_review": "IN_PROGRESS",
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "AUTHOR_REPORTED_COMPLETE",

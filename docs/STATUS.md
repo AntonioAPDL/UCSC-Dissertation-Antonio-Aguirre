@@ -5,8 +5,9 @@ structural conversion are complete. The conversion was merged into GitHub
 `main` at `5def110d009545551e89b7efc9746c61122e8918`; the author reports that
 the GitHub-to-Overleaf handoff worked. No Overleaf build log or artifact has
 been independently inspected. Material-specific reuse permission remains
-unverified and is not implied by that distribution event. Scientific and
-editorial integration is the current stage.
+unverified and is not implied by that distribution event. The read-only
+scholarly audit is complete; scientific and editorial chapter integration is
+the current stage.
 
 ## Completed
 
@@ -54,6 +55,10 @@ editorial integration is the current stage.
 - Repaired lifecycle validation with cross-state invariants and focused tests;
   both audit validators now pass under Python 3.11, including rechecking all
   102 immutable source blobs against the retained audit clones.
+- Completed the post-import scholarly audit: 29 prioritized issues, a common
+  terminology/notation map, 11 bibliography reconciliation groups, and
+  explicit dispositions for all 95 displays are recorded in the connected
+  editorial ledgers.
 - Added `scripts/validate_manuscript_imports.py`. Against the retained audit
   clones it rechecked all 102 source-blob hashes and passed manifest, destination
   hash, dependency, label, citation, file-type, rights-boundary, absolute-path,

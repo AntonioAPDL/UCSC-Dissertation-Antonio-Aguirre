@@ -148,3 +148,24 @@ under Python 3.11:
 
 This validation establishes workflow safety and provenance continuity. It does
 not yet certify revised chapter prose or an Overleaf build.
+
+## 2026-09-16 scholarly-inventory validation
+
+The read-only post-import audit completed before chapter editing. The fast
+validation tier passed with the retained fixed-commit audit root and reported:
+
+- 29 prioritized scientific, editorial, attribution, and presentation issues;
+- explicit dispositions for all 95 labeled displays (46 KEEP, 30 MERGE,
+  18 TEXT-SUMMARY, and 1 OMIT);
+- 11 bibliography reconciliation groups, including three records that need
+  factual metadata correction rather than key-only deduplication; and
+- continued passage of the research-audit and manuscript-import validators,
+  including all 102 immutable source blobs, 434 unique labels, and 124 cited
+  bibliography keys.
+
+The audit is a revision specification, not a certification of the imported
+science. Candidate-specific coauthor roles, material-specific reuse approval,
+the stronger TCSP result, administrative metadata, and an independently
+inspected Overleaf build remain unresolved. The chapter pass must retain
+collective attribution and narrow unsupported claims rather than fill those
+gaps by inference.
