@@ -66,7 +66,8 @@ reproducibility because ordinary pdfTeX creation metadata changes.
 2. Phase 1: read-only scholarly audit and revision ledger — complete.
 3. Phase 2: global architecture, notation, bibliography, and display decisions
    — complete.
-4. Phase 3: chapter revisions in order 2, 3, 4, 5.
+4. Phase 3: chapter revisions in order 2, 3, 4, 5 — Chapter 2 complete;
+   Chapter 3 next.
 5. Phase 4: cross-chapter prose and typography review.
 6. Phase 5: dissertation introduction, synthesis, and abstract.
 7. Final release validation and explicit GitHub/Overleaf handoff.
@@ -222,3 +223,20 @@ Yang--Wang--He records.
 This pass intentionally did not flatten chapter-specific notation or relocate
 technical content before the chapter-level scientific edits. Chapter 2 is the
 next revision unit.
+
+## Chapter 2 revision result
+
+Chapter 2 now follows a dissertation-first software argument. The statistical
+foundations lead to package architecture and object behavior before the detailed
+posterior targets and numerical blocks. Article navigation and references to
+omitted code listings were removed. The package-version boundary distinguishes
+the Chapter 3 application snapshot (1.1.0), this chapter's recorded analysis
+(1.1.1), and the later audited support snapshot (1.1.2).
+
+All 19 Chapter 2 display decisions are implemented. Fourteen central displays
+remain. Three interface/control tables were merged into exact prose, while the
+Lake Huron trace display and the separate Big Tree state display were replaced
+by numerical and inferential summaries already supported by the recorded
+analysis. The Big Tree section continues to report that direct regression has
+the lowest held-out check loss and CRPS; the training diagnostics are not used
+to claim transfer-model superiority.
