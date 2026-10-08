@@ -1,5 +1,23 @@
 # Project status
 
+## 2026-10-08 advisor-directed restructuring proposal
+
+The advisors have requested a reader-first reorganization that removes
+repeated exposition from the main narrative and places long derivations,
+proofs, model details, algorithms, and secondary technical evidence in
+substantial dissertation appendices. The audited implementation design is in
+`reader-first-restructure-plan.md`.
+
+No chapter or appendix content has yet been moved under that plan. The clean
+baseline is `0c394122549e903b19edc8014709a6f4318bee26`, equal to
+`origin/main` when the plan was prepared. The plan recommends retaining the
+four research chapters, adding one shared-conventions appendix and one
+technical appendix for each research chapter, and completing a unit-level
+migration map before editing prose. Its advisor-directed placement policy will
+supersede the earlier no-scientific-appendix default once approved; the
+manuscript-first source, provenance, evidence, and external-computation
+controls remain in force.
+
 As of 2026-09-16: the muscat research-source audit and manuscript-first
 structural conversion are complete. The conversion was merged into GitHub
 `main` at `5def110d009545551e89b7efc9746c61122e8918`; the author reports that
