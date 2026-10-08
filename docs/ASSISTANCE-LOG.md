@@ -201,3 +201,17 @@ that contained only the final DOI; no reference content changed. The accepted
 research computation was rerun, no research repository or research result was
 changed, no unresolved administrative or authorship fact was inferred, and no
 Overleaf build or artifact was inspected.
+
+2026-10-08: AI assistance performed a documentation-only audit of the proposed
+reader-first restructuring after the advisors requested substantial technical
+appendices. It measured the existing chapter structure, compared the proposal
+with the manuscript-first integration and scholarly-audit controls, inspected
+the actual validator and provenance topology, and identified two release risks:
+new appendix files would not currently be covered by all manuscript/display
+checks, and current UCSC filing guidance requires WCAG 2.1 AA while the accepted
+PDF is untagged. It replaced the preliminary restructuring proposal with a
+controlling, gated plan covering chapter-specific placements, active-TeX
+validation, derivative provenance, an AL/exAL compatibility review, migration
+records, accessibility, Git/Overleaf handoff, rollback, and definitions of
+done. No chapter text, appendix content, validation code, provenance schema,
+research repository, data, model, computation, or build output was changed.
