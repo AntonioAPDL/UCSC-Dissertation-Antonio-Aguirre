@@ -1,5 +1,10 @@
 # Evidence-backed four-project dissertation architecture
 
+> Historical architecture record. The four-project selection and source map
+> remain authoritative, but the earlier body-only placement rule is superseded
+> by `reader-first-restructure-plan.md` and the implemented migration in
+> `appendix-migration-map.json`.
+
 Status: **author-directed working architecture; committee and reuse review pending**
 Prepared: 2026-09-15
 Revised: 2026-09-15 after the author's identity and four-project direction
@@ -229,14 +234,14 @@ software workflow, a loss-defined endpoint functional, or a tolerance action.
 Do not rank methods across incomparable targets or convert unfinished work into
 results.
 
-### Integrated technical material — no separate scientific appendix
+### Reader-first technical placement
 
-The research chapters will contain their own derivations, proofs, algorithms,
-validation details, and claim-relevant secondary figures/tables. Supplement
-material will be inserted beside the main result it supports rather than placed
-in a detached dissertation supplement or appendix. The starter's formatting
-demonstration appendix will be removed once the converted chapters replace its
-technical-format examples.
+The research chapters retain the target, central model, principal evidence,
+interpretation, negative findings, and limitations. Detailed derivations,
+proofs, algorithms, and secondary diagnostics are collected in a shared
+concordance appendix and one technical appendix per research chapter. Every
+moved unit has a body bridge and a record in `appendix-migration-map.json`.
+The starter formatting demonstration is inactive.
 
 ## 4. Manuscript-first adaptation plan
 

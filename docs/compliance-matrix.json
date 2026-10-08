@@ -31,9 +31,9 @@
     "source_id": "P1",
     "source_url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/",
     "source_locator": "Dissertation; P2 same section",
-    "proposed_latex_implementation": "Three research placeholders plus integration chapters",
+    "proposed_latex_implementation": "Four substantive project chapters, an integrative introduction and synthesis, and connected technical appendices",
     "verification_method": "Advisor/program assessment of independent contributions and counting",
-    "status": "Text verified; chapter substance unverified"
+    "status": "Program text verified; four substantive project chapters implemented; committee counting judgment pending"
   },
   {
     "id": "A04",
@@ -259,9 +259,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 6-7",
-    "proposed_latex_implementation": "Class abstract environment with TODO only",
+    "proposed_latex_implementation": "Class abstract environment with a 319-word dissertation-level abstract",
     "verification_method": "Layout now; content/length after author draft",
-    "status": "Layout demonstrated; actual abstract absent"
+    "status": "A 319-word substantive abstract is present; final author and committee review pending"
   },
   {
     "id": "F08",
@@ -295,9 +295,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "General margins/type rules, pp. 2-3",
-    "proposed_latex_implementation": "AMS environments; chapter-scoped labels, one elementary proof",
+    "proposed_latex_implementation": "AMS environments with chapter/appendix-scoped equations, theorems, propositions, lemmas, corollaries, and proofs",
     "verification_method": "Compilation, labels and equation placement",
-    "status": "Demonstration only; math verified as elementary identity"
+    "status": "Substantive mathematical content implemented; labels and compiled layout validated"
   },
   {
     "id": "M02",
@@ -307,9 +307,9 @@
     "source_id": null,
     "source_url": null,
     "source_locator": "Editorial choice",
-    "proposed_latex_implementation": "Numbered prose algorithm environment; no extra float dependency",
+    "proposed_latex_implementation": "Chapter-scoped numbered algorithms in the technical appendices; no extra float dependency",
     "verification_method": "Read algorithm and check numbering",
-    "status": "Demonstration only"
+    "status": "Substantive algorithms implemented and compiled"
   },
   {
     "id": "M03",
@@ -319,9 +319,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "p. 3",
-    "proposed_latex_implementation": "Normal floats, 12 pt captions/table text; vector TikZ demo",
+    "proposed_latex_implementation": "Normal floats, readable captions/table text, selected final vector/raster assets, and an accessibility description ledger",
     "verification_method": "All bounds/labels/captions; inspect imported figures individually",
-    "status": "Starter demonstrated; future assets untested"
+    "status": "Active displays compile; fonts and selected rendered pages audited; final accessibility/contrast review pending"
   },
   {
     "id": "M04",
@@ -331,9 +331,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 4, 7-8",
-    "proposed_latex_implementation": "Appendix A before bibliography; no actual supplements",
-    "verification_method": "PDF ordering; cross-references; later supplement inventory",
-    "status": "Demonstration appendix only"
+    "proposed_latex_implementation": "Five scientific appendices after Chapter 6 and before the dissertation-wide bibliography",
+    "verification_method": "Active dependency graph, PDF ordering, cross-references, migration map, and rendered boundary review",
+    "status": "Implemented; Appendices A--E build before the final bibliography"
   },
   {
     "id": "R01",
@@ -379,9 +379,9 @@
     "source_id": null,
     "source_url": null,
     "source_locator": "Editorial practice",
-    "proposed_latex_implementation": "Shared database; later import/key map",
+    "proposed_latex_implementation": "Shared normalized references.bib with a machine-readable reconciliation map",
     "verification_method": "Match important references to source publications",
-    "status": "Two real institutional demonstration records; research references absent"
+    "status": "Research bibliography integrated and citation keys validated; final human bibliographic review still required"
   },
   {
     "id": "E01",
@@ -398,14 +398,14 @@
   {
     "id": "E02",
     "topic": "Search/accessibility",
-    "rule_and_applicability": "Searchable text and bookmarks chosen; no UCSC PDF/A, tagging or numerical PDF-size mandate verified here.",
-    "authority_classification": "implementation choice / unresolved current limits",
-    "source_id": "G1",
-    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
-    "source_locator": "Electronic filing sections; L2 archival recommendations",
-    "proposed_latex_implementation": "hyperref and PDF text; no PDF/A/tagging claim",
-    "verification_method": "Text extraction, outline/page-label check; current office confirmation",
-    "status": "Search/bookmarks tested; conformance tagging not asserted"
+    "rule_and_applicability": "The current Graduate Division notice states that electronic theses and dissertations must conform to WCAG 2.1 Level AA as of April 2026. Searchability alone is insufficient; document structure, reading order, figures, tables, contrast, metadata, embedded fonts, encryption, and manual review are material.",
+    "authority_classification": "current university requirement; implementation route requires technical and manual validation",
+    "source_id": "U4",
+    "source_url": "https://graduate.ucsc.edu/academics/applications-and-forms/",
+    "source_locator": "ETD accessibility notice; compare O5 and T3 for current LaTeX implementation guidance",
+    "proposed_latex_implementation": "Maintain semantic source and reviewed visual descriptions; test a current tagged LuaLaTeX/MathML candidate without changing the accepted pdfLaTeX layout until compatibility is demonstrated",
+    "verification_method": "External accessibility checker plus manual structure, reading-order, table, mathematics, contrast, metadata, font, encryption, and permission checks on the actual filing PDF",
+    "status": "Source ledger complete; muscat TeX Live 2018 artifact is untagged and not claimed conformant; modern tagged build and external/manual audit pending"
   },
   {
     "id": "E03",
@@ -477,7 +477,7 @@
     "source_locator": "p. 3, Previously published material",
     "proposed_latex_implementation": "Controlled imports; acknowledgments and manifest",
     "verification_method": "Actual article/version, contribution records and agreements",
-    "status": "No reuse authorized or performed"
+    "status": "Controlled manuscript derivatives are present; material-specific coauthor/publisher reuse permission remains unverified"
   },
   {
     "id": "C04",

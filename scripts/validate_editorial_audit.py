@@ -13,12 +13,19 @@ ROOT = Path(__file__).resolve().parents[1]
 ISSUES = ROOT / "docs" / "editorial-issues.json"
 DISPLAYS = ROOT / "docs" / "display-ledger.json"
 BIBLIOGRAPHY = ROOT / "docs" / "bibliography-map.json"
-CHAPTERS = {
-    "ch02-exdqlm": ROOT / "chapters" / "02-research-a.tex",
-    "ch03-environ": ROOT / "chapters" / "03-research-b.tex",
-    "ch04-qdesn": ROOT / "chapters" / "04-research-c.tex",
-    "ch05-mti": ROOT / "chapters" / "05-research-d.tex",
-}
+ENTRY_FILES = tuple(
+    ROOT / path
+    for path in (
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/c-hydrology-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "appendices/e-mti-technical.tex",
+    )
+)
 
 
 def fail(errors: list[str]) -> int:
@@ -65,8 +72,21 @@ def current_display_labels() -> set[str]:
                 dependency = Path(f"{dependency}.tex")
             visit(dependency)
 
-    for chapter in CHAPTERS.values():
-        visit(chapter)
+    for entry in ENTRY_FILES:
+        visit(entry)
+    fls = ROOT / "build" / "main.fls"
+    if fls.is_file():
+        for line in fls.read_text(encoding="utf-8", errors="replace").splitlines():
+            if not line.startswith("INPUT "):
+                continue
+            candidate = Path(line[6:]).resolve()
+            try:
+                candidate.relative_to(ROOT.resolve())
+            except ValueError:
+                continue
+            relative = candidate.relative_to(ROOT.resolve())
+            if candidate.suffix == ".tex" and relative.parts[0] in {"tables", "figures"}:
+                visit(candidate)
     return labels
 
 

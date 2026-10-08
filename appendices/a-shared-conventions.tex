@@ -1,0 +1,104 @@
+\chapter{Cross-chapter statistical conventions}
+\label{app:shared-conventions}
+
+This appendix is a concordance, not a replacement for the model definitions in
+Chapters~\ref{ch:research-a}--\ref{ch:research-d}.  The four projects share
+ideas and computational devices, but they do not always use the same latent
+variable scaling, inferential target, scoring rule, or meaning of an interval.
+Keeping those distinctions explicit prevents an algebraic resemblance from
+being read as scientific equivalence.
+
+\section{Targets and update mechanisms}
+
+Let \(p\in(0,1)\) denote a response-quantile level.  In
+Chapters~\ref{ch:research-a}--\ref{ch:research-c}, a fitted location is intended
+to represent a conditional \(p\)-quantile under an AL or exAL working
+likelihood.  A posterior or variational interval for that fitted location is a
+parameter- or state-uncertainty summary.  A response-level predictive interval
+also includes the observation component of the working model.  Neither object
+is, without a separate construction, a frequentist tolerance interval.
+
+Chapter~\ref{ch:research-d} instead begins with a fixed-content interval as the
+estimand.  Its content \(c\) determines the population window, its tilt
+\(\delta\) determines placement through a retained-mean condition, and its
+generalized-Bayes learning rate determines the concentration of a loss-based
+update.  These three quantities are not interchangeable.  In particular, the
+pseudo-AL identity used for computation in that chapter is an augmentation of
+the scalar product loss; it is not an AL response likelihood for either
+endpoint.
+
+\section{AL and exAL latent-variable scales}
+
+Chapters~\ref{ch:research-a} and~\ref{ch:research-c} use the convention
+
+\begin{align*}
+v_t\mid\sigma &\sim \operatorname{Exp}(\text{rate}=1/\sigma),\\
+Y_t\mid v_t,\ldots &\sim
+\mathcal N\{\mu_t+A_pv_t,\;\sigma B_pv_t\},
+\end{align*}
+
+with the corresponding exAL shift and truncated-normal latent variable added
+when required.  Thus \(v_t\) has mean \(\sigma\).  Chapter~\ref{ch:research-b}
+uses a standardized exponential latent variable in parts of its source-aware
+formulation.  Writing \(v_t=\sigma z_t\), with
+\(z_t\sim\operatorname{Exp}(1)\), converts between the two representations and
+changes the displayed Gaussian variance from \(\sigma B_pv_t\) to
+\(B_p\sigma^2z_t\).  Posterior formulas must therefore be read under the local
+convention; factors of \(\sigma\) cannot be transferred between chapters by
+notation alone.
+
+The normal distribution is parameterized by mean and variance throughout the
+dissertation.  Inverse-gamma and generalized inverse Gaussian conventions are
+stated in the technical appendix in which they are used.  The symbol
+\(\sigma\) is consequently a model-specific scale, not a promise that all four
+chapters assign it the same likelihood interpretation or prior.
+
+\section{Multiple quantiles and predictive distributions}
+
+Separately fitted conditional quantiles, a stacked composite working
+likelihood, and a predictive distribution are distinct objects.  The
+\pkg{exdqlm} synthesis in Chapter~\ref{ch:research-a} interpolates and, when
+requested, monotonizes posterior-predictive information from separate fits.
+The hydrologic procedure in Chapter~\ref{ch:research-b} synthesizes
+source-aware predictive information across levels.  Chapter~\ref{ch:research-c}
+also studies a stacked multi-quantile readout and reports crossing before any
+monotone rearrangement.  None of these constructions is described as a unique
+joint distribution unless the chapter supplies the additional distributional
+assumptions needed for that statement.
+
+\section{Scores and empirical comparisons}
+
+The continuous ranked probability score (CRPS) is used only when a predictive
+distribution or response-level sample is available.  The hydrologic chapter
+reports its empirical predictive CRPS under the source-aware forecast design.
+The Q--DESN chapter also uses a finite-grid integrated quantile score, denoted
+there by \(\operatorname{aCRPS}\), over the stated fitted probability range.
+That finite-grid quantity depends on the grid and tail convention and must not
+be compared numerically with a full-distribution CRPS from another study.
+Check loss evaluates a specified conditional quantile.  Interval scores and
+tolerance calibration evaluate still different actions.  Every empirical
+comparison is therefore interpreted within its recorded target, horizon,
+data split, and score definition.
+
+\section{Uncertainty language}
+
+The dissertation uses \emph{credible interval} for posterior uncertainty in a
+parameter, latent state, or fitted functional; \emph{predictive interval} or
+\emph{predictive band} for a future response under the stated model; and
+\emph{tolerance interval} for a procedure calibrated to cover a specified
+population proportion with a specified repeated-sampling confidence.  An
+empirical coverage frequency is evidence about a particular validation design,
+not a proof of a general coverage guarantee.  Likewise, a variational
+approximation is assessed as an approximation to its declared posterior
+target; computational speed does not strengthen the associated scientific
+claim.
+
+\section{Where the complete details reside}
+
+Appendix~\ref{app:exdqlm-technical} gives the exDQLM posterior and software
+calculations; Appendix~\ref{app:hydrology-technical} gives the hydrologic MCMC,
+VB, and secondary diagnostics; Appendix~\ref{app:qdesn-technical} gives the
+Q--DESN prior, posterior, forecasting, and sensitivity calculations; and
+Appendix~\ref{app:mti-technical} gives the interval proofs, calibration
+protocol, and proposed extension derivations.  Those local appendices are
+authoritative whenever this concordance deliberately suppresses notation.

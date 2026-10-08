@@ -379,3 +379,63 @@ contribution statements, publication/reuse clearances, and applicable AI-use
 disclosure remain unresolved, so `\StarterDrafttrue` remains active. No
 research computation was rerun, no research repository was modified, and no
 Overleaf build or artifact was inspected during this release audit.
+
+## 2026-10-08 reader-first restructuring release
+
+The approved reader-first conversion was validated from a fresh timestamped
+output directory with:
+
+```text
+bash scripts/validate.sh --tier release --audit-root /PATH/TO/IMMUTABLE/AUDIT-CLONES
+```
+
+The public record deliberately omits the machine-local audit path. Fresh
+detached clones were checked out at the eight commits already fixed in
+`source-manifest.json`; none of the original research working trees was fetched,
+switched, reset, cleaned, built, or edited. The release gate passed 10 unit
+tests and rechecked eight source records, 32 claim-evidence records, 29
+editorial issues, 97 display decisions, 11 bibliography groups, four chapter
+manifests, nine source documents, 96 section dispositions, and all 102
+immutable imported Git blobs. It also resolved 48 active TeX files, including
+one macro-expanded compiler input; found 421 unique active labels; verified all
+14 body-to-appendix records and bridges; and covered all 33 active visuals in
+the accessibility ledger.
+
+The accepted local release candidate is ignored build output at
+`build/release-20261008T063557Z/main.pdf`: 361 US Letter pages, 18,176,334
+bytes, SHA-256
+`80cee7e8e46f831029d6a810434b47fef742d1be95677e70830e6eca601d476c`.
+Its final log has zero undefined citations or references, multiply defined
+labels, unstable-label notices, missing files, overfull boxes, fatal errors, or
+emergency stops. Forty underfull-box notices remain and were treated as
+line-breaking diagnostics rather than failures. All 33 reported font rows are
+embedded; no Type 3 or Type 0 font is present. The PDF is searchable, uses PDF
+1.5, and is untagged.
+
+The reading body ends on numbered page 203. Appendix A begins on 204,
+Appendices B--E begin on 208, 222, 231, and 296, and the bibliography begins on
+323 and ends on 333. Their corresponding physical PDF pages are 232, 236, 250,
+259, 324, and 351--361. Chapter openings, the Chapter 6/Appendix A boundary,
+all five appendix openings, and both bibliography endpoints were rasterized.
+Direct visual inspection and word-coordinate checks found no clipping,
+collision, stranded heading, or margin anomaly; inspected text bounds remained
+inside the established manuscript envelope. The opening statements of
+Chapters 3--5 were corrected during this review so that they accurately
+describe which technical material is retained in Appendices C--E.
+
+The fallback build now uses four pdfLaTeX passes around BibTeX on muscat's
+legacy TeX Live 2018 installation, because the class writes list and
+cross-reference state late. Release validation rejects a remaining
+`Label(s) may have changed` warning. It also records TeX's `.fls` dependency
+graph and regression-tests missing literal inputs, active duplicate labels,
+inactive demonstration content, macro-expanded inputs, moved displays, and
+absolute machine paths.
+
+This release validates the structural reorganization and preservation of the
+fixed-source evidence. It does not rerun research computation, establish
+material-specific reuse permission, resolve candidate/coauthor role detail,
+verify an Overleaf build, or establish filing readiness. Muscat's PDF is not
+tagged and therefore is not claimed to satisfy WCAG 2.1 AA or PDF/UA. A modern
+tagging-capable build, external accessibility checking, and manual review of
+reading order, mathematics, tables, contrast, metadata, and alternative text
+remain filing gates.

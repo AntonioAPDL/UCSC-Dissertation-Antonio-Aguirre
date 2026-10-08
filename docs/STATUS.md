@@ -1,35 +1,46 @@
 # Project status
 
-## 2026-10-08 final reader-first restructuring proposal, version 3
+## 2026-10-08 reader-first restructuring implementation
 
-The final planning-only execution specification is
-reader-first-restructure-plan.md. It supersedes the two earlier proposals,
-which remain recoverable in Git rather than duplicated here. No chapter,
-scientific appendix, validator, provenance schema, build command, or PDF has
-been changed under the final plan.
+The author approved all sixteen defaults and the fixed eight-source evidence
+set in `reader-first-restructure-plan.md`. The reader-first restructuring is
+implemented and release-validated on `restructure/reader-first-20261008`,
+created from GitHub `main` commit
+`c93d7b3ed9c228811b6b79f13a90b312319b9cf3`. The final GitHub merge and
+Overleaf-pull state are recorded at the end of this handoff rather than inferred
+from an earlier synchronization.
 
-The planning baseline is
-fcb2ca5723a7411e12f677e308dfdd6aed06e93e; the scientific-content baseline
+The approved planning baseline is `c93d7b3ed9c228811b6b79f13a90b312319b9cf3`;
+the scientific-content baseline
 remains 0c394122549e903b19edc8014709a6f4318bee26. The accepted before-state
 artifact remains the recorded 344-page release with SHA-256
 30b4e0bb3c3230544e941f7eae82dcabb44f08e9283ae9809aaade45196c9900.
 
-The final plan retains four research chapters and proposes one
-compatibility-reviewed concordance appendix plus one technical appendix per
-research chapter. Before prose moves, it requires source-snapshot freeze,
-current-documentation reconciliation, hybrid static/compiler-recorded TeX
-dependency validation, an early accessibility feasibility spike, and an
-exhaustive structural migration map.
+The six-chapter reading sequence is retained. Fourteen mapped technical units
+have been moved from Chapters 2--5 into one compatibility-reviewed concordance
+appendix and four project appendices. Body bridges retain the target, central
+model, principal evidence, interpretation, negative findings, and limitations.
+The move is mechanical and manuscript-first; no research computation or source
+repository was changed.
 
-The current accepted PDF is untagged and is not filing-ready under the current
-UCSC WCAG 2.1 AA notice. Muscat's TeX Live 2018 build remains the visual
-regression baseline; a modern accessible candidate route must be tested rather
-than assumed.
+The clean release build succeeds at 361 US Letter pages: the reading body ends
+at numbered page 203, Appendices A--E occupy numbered pages 204--322, and the
+bibliography remains last on numbered pages 323--333. Hybrid
+static/compiler-recorded validation covers macro-expanded inputs, 421 active
+labels, all 14 migration records, and all 33 active visual descriptions. The
+release gate rechecked all 102 immutable source blobs, and the targeted
+chapter/appendix/bibliography boundary render review passed. The exact artifact
+and checks are recorded in `VALIDATION.md` and
+`reader-first-restructure-implementation.md`.
 
-The next decision is approval of the sixteen defaults in Section 19. Until
-then, the advisor-directed restructuring is not implemented. All
-manuscript-first source, provenance, evidence, rights, attribution, and
-external-computation controls remain in force.
+Muscat's TeX Live 2018 PDF remains searchable but untagged. No modern TeX,
+veraPDF, Acrobat, or other conformance checker is available on the server, so
+WCAG 2.1 AA is not claimed. The complete visual-description ledger is ready for
+a modern tagged build and external/manual accessibility review. All source,
+rights, attribution, and external-computation controls remain in force. The
+remaining immediate handoff is the GitHub merge/push followed by an explicit
+Overleaf pull and compile; opening or pushing GitHub does not itself verify an
+Overleaf artifact.
 
 As of 2026-09-16: the muscat research-source audit and manuscript-first
 structural conversion are complete. The conversion was merged into GitHub

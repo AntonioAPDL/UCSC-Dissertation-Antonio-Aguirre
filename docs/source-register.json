@@ -248,5 +248,35 @@
     "locator": "Fall 2026 graduation and filing dates",
     "access_result": "Catalog-linked page could not be retrieved; dates unverified",
     "access_date": "2026-09-15"
+  },
+  {
+    "id": "U4",
+    "title": "Applications and Forms: electronic thesis and dissertation accessibility notice",
+    "issuer": "UCSC Graduate Division",
+    "revision_or_effective_date": "Notice states applicability as of April 2026",
+    "url": "https://graduate.ucsc.edu/academics/applications-and-forms/",
+    "locator": "Electronic theses and dissertations; WCAG 2.1 Level AA notice and checklist",
+    "access_result": "Page read during the 2026-10-08 planning audit; subsequent automated retrieval may be intermittent",
+    "access_date": "2026-10-08"
+  },
+  {
+    "id": "O5",
+    "title": "Creating accessible PDFs in LaTeX",
+    "issuer": "Overleaf Documentation",
+    "revision_or_effective_date": "Live documentation; TeX Live 2025 workflow",
+    "url": "https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs",
+    "locator": "DocumentMetadata, tagging, graphics, tables, MathML, validation, and package compatibility",
+    "access_result": "Full page read",
+    "access_date": "2026-10-08"
+  },
+  {
+    "id": "T3",
+    "title": "Using LaTeX to produce accessible PDF",
+    "issuer": "LaTeX Tagged PDF Project",
+    "revision_or_effective_date": "Guidelines for LaTeX2e 2026-06-01 and 2025-11-01",
+    "url": "https://tagging-project.latex-project.org/documentation/usage-instructions",
+    "locator": "Current-release setup, graphics, tables, lists, and MathML",
+    "access_result": "Full usage instructions read",
+    "access_date": "2026-10-08"
   }
 ]

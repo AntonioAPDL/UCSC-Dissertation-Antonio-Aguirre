@@ -35,15 +35,6 @@ SOURCE_CLONES = {
     "SRC-RQR": "rqr",
     "SRC-MTI-EXT": "mti-extensions",
 }
-CHAPTER_FILES = tuple(
-    PROJECT_ROOT / path
-    for path in (
-        "chapters/02-research-a.tex",
-        "chapters/03-research-b.tex",
-        "chapters/04-research-c.tex",
-        "chapters/05-research-d.tex",
-    )
-)
 ALLOWED_DESTINATION_SUFFIXES = {".tex", ".pdf", ".png", ".jpg", ".jpeg"}
 ALLOWED_MATERIAL_TYPES = {
     "manuscript_prose_and_equations",
@@ -68,11 +59,39 @@ def git_blob(repo: Path, commit: str, source_path: str) -> bytes:
 
 
 def tex_files() -> list[Path]:
-    files = list(CHAPTER_FILES)
+    files: set[Path] = set()
+
+    def visit(path: Path) -> None:
+        path = path.resolve()
+        if path in files or not path.is_file():
+            return
+        files.add(path)
+        text = path.read_text(encoding="utf-8")
+        for argument in re.findall(r"\\(?:input|include)\{([^}]+)\}", text):
+            if "\\" in argument:
+                continue
+            dependency = PROJECT_ROOT / argument
+            if not dependency.suffix:
+                dependency = Path(f"{dependency}.tex")
+            visit(dependency)
+
+    visit(PROJECT_ROOT / "main.tex")
+    fls = PROJECT_ROOT / "build" / "main.fls"
+    if fls.is_file():
+        for line in fls.read_text(encoding="utf-8", errors="replace").splitlines():
+            if not line.startswith("INPUT "):
+                continue
+            dependency = Path(line[6:]).resolve()
+            try:
+                dependency.relative_to(PROJECT_ROOT.resolve())
+            except ValueError:
+                continue
+            if dependency.suffix == ".tex" and dependency.is_file():
+                files.add(dependency)
     for directory in (PROJECT_ROOT / "tables", PROJECT_ROOT / "figures"):
         if directory.exists():
-            files.extend(directory.rglob("*.tex"))
-    return sorted(set(files))
+            files.update(directory.rglob("*.tex"))
+    return sorted(files)
 
 
 def dependency_candidates(argument: str, graphics: bool) -> list[Path]:
@@ -140,7 +159,7 @@ def main() -> int:
             errors.append(f"{where}: current hash does not match {artifact_path}")
         state = artifact.get("state")
         revision_ids = artifact.get("revision_ids")
-        if state not in {"BASELINE_UNREVISED", "EDITED"}:
+        if state not in {"BASELINE_UNREVISED", "EDITED", "DERIVED_NEW"}:
             errors.append(f"{where}: invalid state {state!r}")
         if not isinstance(revision_ids, list):
             errors.append(f"{where}: revision_ids must be an array")
@@ -148,6 +167,8 @@ def main() -> int:
             errors.append(f"{where}: edited artifact requires a revision ID")
         elif state == "BASELINE_UNREVISED" and revision_ids:
             errors.append(f"{where}: unrevised artifact cannot list revisions")
+        elif state == "DERIVED_NEW" and not revision_ids:
+            errors.append(f"{where}: derived artifact requires a revision ID")
         if state == "BASELINE_UNREVISED" and current_hash != artifact.get("baseline_sha256"):
             errors.append(f"{where}: unrevised artifact differs from its baseline")
 
@@ -191,6 +212,15 @@ def main() -> int:
         derivative = manifest.get("editorial_derivative", {})
         if not isinstance(derivative, dict) or derivative.get("revision_ledger") != "docs/revision-ledger.json":
             errors.append(f"{relative_path}: missing revision-ledger linkage")
+        components = derivative.get("current_components", []) if isinstance(derivative, dict) else []
+        if not isinstance(components, list) or len(components) != 2:
+            errors.append(f"{relative_path}: current derivative must identify chapter and appendix components")
+        else:
+            for component in components:
+                if not (PROJECT_ROOT / str(component)).is_file():
+                    errors.append(f"{relative_path}: missing current component {component}")
+        if derivative.get("migration_map") != "docs/appendix-migration-map.json":
+            errors.append(f"{relative_path}: missing appendix migration-map linkage")
         distribution = manifest.get("distribution", {})
         if not isinstance(distribution, dict) or distribution.get("rights_effect") != "NONE":
             errors.append(f"{relative_path}: distribution must be separated from rights")
@@ -339,7 +369,17 @@ def main() -> int:
         ):
             candidates = dependency_candidates(argument.strip(), command == "includegraphics")
             if candidates and not any(candidate.is_file() for candidate in candidates):
-                errors.append(f"{relative}: missing dependency {argument}")
+                external_tex = False
+                if command == "input" and "/" not in argument:
+                    lookup = argument if Path(argument).suffix else f"{argument}.tex"
+                    external_tex = subprocess.run(
+                        ["kpsewhich", lookup],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        check=False,
+                    ).returncode == 0
+                if not external_tex:
+                    errors.append(f"{relative}: missing dependency {argument}")
         for label, pattern in forbidden_patterns.items():
             if pattern.search(text):
                 errors.append(f"{relative}: contains {label}")

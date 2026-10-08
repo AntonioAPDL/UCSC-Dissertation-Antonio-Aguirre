@@ -31,7 +31,7 @@ case "$tier" in
     ;;
 esac
 
-python3.11 -m unittest tests/test_validate_research_audit.py
+python3.11 -m unittest discover -s tests -p 'test_*.py'
 python3.11 scripts/validate_research_audit.py
 python3.11 scripts/validate_editorial_audit.py
 validator=(python3.11 scripts/validate_manuscript_imports.py)
@@ -39,6 +39,7 @@ if [[ -n "$audit_root" ]]; then
   validator+=(--audit-root "$audit_root")
 fi
 "${validator[@]}"
+python3.11 scripts/validate_structure.py
 git diff --check
 
 if [[ "$tier" == "fast" ]]; then
@@ -57,11 +58,16 @@ else
 fi
 
 THESIS_BUILD_DIR="$build_dir" bash scripts/build.sh
+if [[ "$build_dir" != "build" ]]; then
+  mkdir -p build
+  cp "$build_dir/main.fls" build/main.fls
+fi
+python3.11 scripts/validate_structure.py
 log_path="$build_dir/main.log"
 pdf_path="$build_dir/main.pdf"
 
 if rg -n \
-  'LaTeX Warning: (Citation|Reference).*undefined|There were undefined references|multiply defined|! LaTeX Error|Emergency stop|Fatal error' \
+  'LaTeX Warning: (Citation|Reference).*undefined|There were undefined references|Label\(s\) may have changed|multiply defined|! LaTeX Error|Emergency stop|Fatal error' \
   "$log_path"; then
   echo "TeX log contains a blocking diagnostic." >&2
   exit 1

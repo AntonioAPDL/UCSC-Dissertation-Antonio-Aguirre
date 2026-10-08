@@ -20,7 +20,7 @@ the complete rule-to-check mapping readable.
 |---|---|---|---|
 | A01 | metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE | Compare MyUCSC and approved title page | Program verified; personal record unresolved |
 | A02 | Four visible illustrative slots; no roles assumed | Program/Graduate Division confirmation | Open; no committee approved by this project |
-| A03 | Three research placeholders plus integration chapters | Advisor/program assessment of independent contributions and counting | Text verified; chapter substance unverified |
+| A03 | Four substantive project chapters, an integrative introduction and synthesis, and connected technical appendices | Advisor/program assessment of independent contributions and counting | Program text verified; four substantive project chapters implemented; committee counting judgment pending |
 | A04 | No LaTeX change; completion plan | Dated delivery of complete version relative to confirmed D | Rule verified; defense date unresolved |
 | A05 | No LaTeX change | Program scheduling and current forms | Format verified; dates/announcement open |
 
@@ -97,10 +97,10 @@ the complete rule-to-check mapping readable.
 
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
-| M01 | AMS environments; chapter-scoped labels, one elementary proof | Compilation, labels and equation placement | Demonstration only; math verified as elementary identity |
-| M02 | Numbered prose algorithm environment; no extra float dependency | Read algorithm and check numbering | Demonstration only |
-| M03 | Normal floats, 12 pt captions/table text; vector TikZ demo | All bounds/labels/captions; inspect imported figures individually | Starter demonstrated; future assets untested |
-| M04 | Appendix A before bibliography; no actual supplements | PDF ordering; cross-references; later supplement inventory | Demonstration appendix only |
+| M01 | AMS environments with chapter/appendix-scoped equations, theorems, propositions, lemmas, corollaries, and proofs | Compilation, labels and equation placement | Substantive mathematical content implemented; labels and compiled layout validated |
+| M02 | Chapter-scoped numbered algorithms in the technical appendices; no extra float dependency | Read algorithm and check numbering | Substantive algorithms implemented and compiled |
+| M03 | Normal floats, readable captions/table text, selected final vector/raster assets, and an accessibility description ledger | All bounds/labels/captions; inspect imported figures individually | Active displays compile; fonts and selected rendered pages audited; final accessibility/contrast review pending |
+| M04 | Five scientific appendices after Chapter 6 and before the dissertation-wide bibliography | Active dependency graph, PDF ordering, cross-references, migration map, and rendered boundary review | Implemented; Appendices A--E build before the final bibliography |
 
 ## References
 
@@ -116,14 +116,14 @@ the complete rule-to-check mapping readable.
 | R01 | BibTeX plainnat; one references.bib; final bibliography | Check bbl/order, rendered entries and contents | Implemented; citation-system choice provisional |
 | R02 | Single-spaced bibfont; 12 pt separation between entries | Inspect multi-line entries and separation | Implemented; demonstrated |
 | R03 | Single dissertation-wide bibliography selected | Advisor decision if per-chapter references requested | Alternative not implemented |
-| R04 | Shared database; later import/key map | Match important references to source publications | Two real institutional demonstration records; research references absent |
+| R04 | Shared normalized `references.bib` with a machine-readable reconciliation map | Match important references to source publications | Research bibliography integrated and citation keys validated; final human bibliographic review still required |
 
 ## Electronic submission
 
 | ID / topic | Rule and applicability | Authority | Source / locator |
 |---|---|---|---|
 | E01 PDF and fonts | Deposit PDF; required font embedding/type rules apply to imported graphics as well. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 1-2, 8 |
-| E02 Search/accessibility | Searchable text and bookmarks chosen; no UCSC PDF/A, tagging or numerical PDF-size mandate verified here. | implementation choice / unresolved current limits | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); Electronic filing sections; L2 archival recommendations |
+| E02 Search/accessibility | The current Graduate Division notice states that electronic theses and dissertations must conform to WCAG 2.1 Level AA as of April 2026. Searchability alone is insufficient; structure, reading order, figures, tables, contrast, metadata, fonts and encryption must be checked. | current university requirement; implementation route requires technical and manual validation | [U4](https://graduate.ucsc.edu/academics/applications-and-forms/); ETD accessibility notice; compare [O5](https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs) and [T3](https://tagging-project.latex-project.org/documentation/usage-instructions) |
 | E03 Submission channel | ProQuest deposit then eScholarship distribution per Library. | university requirement | [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC); Submitting at UCSC |
 | E04 Fees and embargo | Paid services optional; initial embargo options 6/12/24 months, extension route described. | official recommendation / documented submission options | [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC); Fees; embargoes; copyright |
 | E05 Supplementary files | Describe supplementary files and favor suitable open archival formats. | official recommendation | [L2](https://guides.library.ucsc.edu/etds/supplementaryfiles); File naming, README and formats |
@@ -131,7 +131,7 @@ the complete rule-to-check mapping readable.
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
 | E01 | pdfLaTeX output; font inventory | pdfinfo and pdffonts plus imported-asset checks | Local PDF generated; actual deposit untested |
-| E02 | hyperref and PDF text; no PDF/A/tagging claim | Text extraction, outline/page-label check; current office confirmation | Search/bookmarks tested; conformance tagging not asserted |
+| E02 | Semantic source and reviewed visual descriptions; test a current tagged LuaLaTeX/MathML candidate without changing the accepted pdfLaTeX route until compatibility is demonstrated | External checker plus manual structure, reading-order, table, mathematics, contrast, metadata, font, encryption and permission checks on the filing PDF | Source ledger complete; muscat TeX Live 2018 artifact is untagged and not claimed conformant; modern tagged build and external/manual audit pending |
 | E03 | No submission automation | Current checklist and final acceptance confirmation | Workflow described only |
 | E04 | Candidate decision outside LaTeX | Actual portal choices and rights agreements | Current Library page verified; no selection made |
 | E05 | No data bundled; later separately curated files | File inventory, access/rights checks and descriptive README | Not applicable yet |
@@ -149,5 +149,5 @@ the complete rule-to-check mapping readable.
 |---|---|---|---|
 | C01 | Relative completion plan; no guessed dates | Registrar/Graduate Division current calendar/checklist | Open |
 | C02 | No signatures or forms generated | Graduate Division current forms; final accepted record | Open current procedure |
-| C03 | Controlled imports; acknowledgments and manifest | Actual article/version, contribution records and agreements | No reuse authorized or performed |
+| C03 | Controlled imports, derivative ledger, acknowledgments and manifest | Actual article/version, contribution records and agreements | Controlled manuscript derivatives are present; material-specific coauthor/publisher reuse permission remains unverified |
 | C04 | Assistance log only; no invented formal disclosure | Advisors/program and relevant current policy office | Open |

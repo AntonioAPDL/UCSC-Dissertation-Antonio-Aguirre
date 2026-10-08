@@ -11,6 +11,18 @@ This log is a project practice, not a verified UCSC disclosure format. Confirm
 applicable program, university, publisher and coauthor requirements before
 writing any formal disclosure into the dissertation.
 
+2026-10-08: After the author approved the final reader-first restructuring
+defaults and authorized implementation and synchronization, AI assistance
+moved existing technical article prose from Chapters 2--5 into connected
+scientific appendices, wrote short body bridges and a cross-chapter statistical
+concordance, and preserved claims, qualifications, citations, displays, and
+external-computation boundaries. It created a hash-guarded migration map,
+extended validation to the compiler-recorded TeX graph, and prepared and
+reviewed descriptions for every active visual. No research repository, data,
+fit, or simulation was changed or rerun. The muscat PDF remains untagged, so
+the work does not claim WCAG/PDF-UA conformance or an independently verified
+Overleaf build.
+
 2026-09-15: AI assistance established and audited the muscat Git checkout,
 reconstructed ignore rules, added a build fallback for the available TeX tools,
 added older-pdfTeX Unicode mapping, compiled and inspected the 20-page starter,
@@ -232,3 +244,20 @@ packets, dual-build accessibility controls, branch divergence handling, and
 post-approval change control. No chapter text, scientific appendix, validator,
 provenance schema, build command, research source, data, computation, or PDF
 was changed.
+
+2026-10-08: AI assistance implemented the approved reader-first restructuring
+without changing the fixed research-source snapshots or rerunning research
+computations. Fourteen hash-guarded structural units moved from Chapters 2--5
+into a cross-chapter concordance and four project technical appendices. The
+reading chapters retain the inferential targets, central models, principal
+evidence, interpretations, negative findings, and limitations, with explicit
+appendix bridges. The work added an active/compiler-recorded TeX graph
+validator, migration and accessibility ledgers, regression tests, and a
+convergent clean-build gate. The final 361-page release rechecked all 102
+immutable imported Git blobs, 421 active labels, 14 migrations, and 33 visual
+records; it has no unresolved references/citations, unstable or duplicate
+labels, missing files, overfull boxes, Type 3/Type 0 fonts, or unembedded
+fonts. Targeted chapter, appendix, transition, and bibliography pages were
+rendered and inspected. The muscat PDF remains untagged, so accessibility,
+reuse, granular contribution, administrative, and independently verified
+Overleaf filing gates remain open.

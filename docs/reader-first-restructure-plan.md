@@ -1,8 +1,9 @@
 # Final controlling plan for reader-first dissertation restructuring
 
-**Status:** final proposed execution specification; planning-only. No chapter
-text, scientific appendix, validator, provenance schema, build command, or PDF
-has been changed under this plan.
+**Status:** approved and implemented on 2026-10-08. This file remains the
+controlling execution specification and historical decision record; the
+realized architecture, validation evidence, and remaining author/institutional
+gates are recorded in `reader-first-restructure-implementation.md`.
 
 **Plan version:** 3.0 (final planning revision)
 

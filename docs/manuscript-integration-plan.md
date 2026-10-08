@@ -1,5 +1,11 @@
 # Manuscript-first dissertation integration plan
 
+> Historical conversion record. Its source selection, immutable baselines,
+> asset boundary, and manuscript-first principle remain in force. Its earlier
+> body-only supplement placement is superseded by
+> `reader-first-restructure-plan.md`; implemented moves are recorded in
+> `appendix-migration-map.json`.
+
 Status: **seven defaults approved; local structural conversion implemented**
 Prepared: 2026-09-15
 Applies to: the four-project architecture in `chapter-plan.md`
@@ -66,33 +72,21 @@ snapshot and import only the deliberate delta.
 
 ## 4. Target thesis structure
 
-The final body will be:
+The final reading body is:
 
 1. Introduction and common inferential framework;
 2. Computational infrastructure for flexible dynamic quantile models;
 3. Source-aware correction and synthesis of hydrologic products;
 4. Bayesian quantile deep echo-state networks;
 5. Mean-tilted intervals: targets, tolerance actions, regression, and dynamics;
-6. Synthesis, limitations, and future research; and
-7. one dissertation-wide bibliography.
+6. Synthesis, limitations, and future research.
 
-There will be no scientific appendix or separate dissertation supplement by
-default. The starter's formatting-demonstration appendix will be removed once
-the imported chapters exercise the required formatting features. Material from
-article supplements will be placed in the chapter body according to the maps
-below.
-
-To preserve readable flow, integrated supplement material may appear as:
-
-- a proof immediately after its theorem;
-- a “Computational details” subsection immediately after the method;
-- a “Validation details” subsection immediately after the empirical design;
-- additional tables and figures immediately after the primary result they
-  qualify; or
-- a chapter-closing “Technical qualifications and limitations” section.
-
-This is still one thesis body. Section depth and cross-references provide
-layered reading without creating a detached appendix.
+The reading body is followed by a cross-chapter statistical-conventions
+appendix, one technical appendix per research chapter, and one dissertation-
+wide bibliography. This placement supersedes the original body-only default.
+The source-selection and manuscript-first conversion rules below remain the
+baseline; `reader-first-restructure-plan.md` controls placement and
+`appendix-migration-map.json` records the implemented moves.
 
 ## 5. Universal conversion rules
 
