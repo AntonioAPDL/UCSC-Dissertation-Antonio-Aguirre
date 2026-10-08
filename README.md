@@ -40,9 +40,11 @@ and limitations. Detailed proofs, derivations, algorithms, and secondary
 diagnostics are now collected in five scientific appendices: one cross-chapter
 concordance and one technical appendix per research chapter. Code,
 data, fitted objects, computation, source histories, and full output archives
-remain external. The conversion is on GitHub, and the author reports an
-Overleaf handoff; material-specific permission for final reuse remains
-unverified and is tracked separately from distribution state.
+remain external. The reader-first conversion is on GitHub `main`. The author
+reported an earlier Overleaf handoff, but the new body/appendix restructuring
+still requires an explicit Overleaf pull and compile; material-specific
+permission for final reuse remains unverified and is tracked separately from
+distribution state.
 
 Routine thesis builds need only this checkout. The importer is check-only by
 default so later dissertation edits cannot be overwritten:

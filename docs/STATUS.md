@@ -4,11 +4,10 @@
 
 The author approved all sixteen defaults and the fixed eight-source evidence
 set in `reader-first-restructure-plan.md`. The reader-first restructuring is
-implemented and release-validated on `restructure/reader-first-20261008`,
-created from GitHub `main` commit
-`c93d7b3ed9c228811b6b79f13a90b312319b9cf3`. The final GitHub merge and
-Overleaf-pull state are recorded at the end of this handoff rather than inferred
-from an earlier synchronization.
+implemented, release-validated, and merged into GitHub `main` through merge
+commit `a3ad55e587bfbbd8e5075fb9829fdb1a714421fe`. The work began from
+`c93d7b3ed9c228811b6b79f13a90b312319b9cf3`; the focused branch remains on the
+remote as a recoverable review record.
 
 The approved planning baseline is `c93d7b3ed9c228811b6b79f13a90b312319b9cf3`;
 the scientific-content baseline
@@ -38,9 +37,8 @@ veraPDF, Acrobat, or other conformance checker is available on the server, so
 WCAG 2.1 AA is not claimed. The complete visual-description ledger is ready for
 a modern tagged build and external/manual accessibility review. All source,
 rights, attribution, and external-computation controls remain in force. The
-remaining immediate handoff is the GitHub merge/push followed by an explicit
-Overleaf pull and compile; opening or pushing GitHub does not itself verify an
-Overleaf artifact.
+remaining immediate handoff is an explicit Overleaf pull and compile; pushing
+GitHub does not itself update or verify an Overleaf artifact.
 
 As of 2026-09-16: the muscat research-source audit and manuscript-first
 structural conversion are complete. The conversion was merged into GitHub

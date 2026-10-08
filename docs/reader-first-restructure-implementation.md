@@ -8,6 +8,8 @@
 
 **Scientific-content baseline:** `0c394122549e903b19edc8014709a6f4318bee26`
 
+**GitHub main merge:** `a3ad55e587bfbbd8e5075fb9829fdb1a714421fe`
+
 ## Outcome
 
 The dissertation now has two connected reading layers. Chapters 1--6 form the
@@ -139,6 +141,8 @@ author, advisor, coauthor/publisher, or institutional gates:
 6. after the verified GitHub `main` push, preserve any Overleaf-only edits,
    pull from GitHub, compile `main.tex`, and inspect the Overleaf log/PDF.
 
-GitHub synchronization and Overleaf verification are lifecycle states, not
-evidence of reuse permission or scientific reproduction. `STATUS.md` and
-`source-manifest.json` hold the final state of this handoff.
+The verified branch and explicit merge commit are synchronized to GitHub
+`main`. The new reader-first state has not been pulled or independently
+verified in Overleaf. GitHub synchronization and Overleaf verification are
+lifecycle states, not evidence of reuse permission or scientific reproduction.
+`STATUS.md` and `source-manifest.json` hold the final state of this handoff.
