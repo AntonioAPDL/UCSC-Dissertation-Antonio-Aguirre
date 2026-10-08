@@ -30,12 +30,15 @@ class/size files are vendored. A reasonably complete TeX Live installation
 includes these mature packages. No installation was performed on the user's
 machine.
 
-## Manuscript conversion
+## Manuscript conversion and reader-first structure
 
 Research Chapters 2--5 began as manuscript-first structural conversions at
 the immutable source commits in source-manifest.json. Main article prose is
-the initial baseline; selected supporting proofs, derivations, algorithms,
-diagnostics, tables, and figures are integrated into the chapter bodies. Code,
+the initial baseline. The six-chapter reading body retains each project's
+target, central model, principal evidence, interpretation, negative findings,
+and limitations. Detailed proofs, derivations, algorithms, and secondary
+diagnostics are now collected in five scientific appendices: one cross-chapter
+concordance and one technical appendix per research chapter. Code,
 data, fitted objects, computation, source histories, and full output archives
 remain external. The conversion is on GitHub, and the author reports an
 Overleaf handoff; material-specific permission for final reuse remains
@@ -52,7 +55,8 @@ Baseline regeneration is intentionally restricted to an explicit
 `--regenerate-baseline` invocation from a clean dedicated `regenerate/*`
 branch whose destinations still match the immutable baseline. Editorial
 derivatives and their current hashes are recorded in
-`docs/revision-ledger.json`.
+`docs/revision-ledger.json`; `docs/appendix-migration-map.json` records each
+body-to-appendix move and bridge.
 
 The validator may also run without --audit-root; that checks the local
 manifests, destinations, citations, labels, dependencies, paths, and file
@@ -88,6 +92,9 @@ test.
   plan, including per-repository supplement placement, asset selection,
   bibliography/LaTeX normalization, provenance, execution, and acceptance
   criteria.
+- `docs/reader-first-restructure-implementation.md`: realized body/appendix
+  architecture, migration controls, release evidence, and remaining filing
+  gates for the advisor-directed restructuring.
 - `docs/research-decisions.md`: author-supplied identity/architecture decisions,
   repository-documented collaborators/contributions, and the focused role,
   rights, committee, and drafting confirmations that remain.
@@ -106,8 +113,9 @@ The chapters directory contains a substantive introduction, four converted and
 scientifically revised research chapters, and a dissertation-wide synthesis.
 The global abstract is drafted; the acknowledgments remain an author task. The
 blank second leaf is intentional. The starter demonstration appendix is no
-longer part of the document; technical supporting material is integrated into
-the research chapter bodies. The consolidated bibliography is generated from
+longer part of the document; the active scientific appendices are in
+`appendices/a-shared-conventions.tex` through
+`appendices/e-mti-technical.tex`. The consolidated bibliography is generated from
 the fixed manuscript snapshots plus the two administrative starter records.
 Do not disable `\StarterDrafttrue` until the final title, committee, dean,
 conferral date, acknowledgments, role statements, and reuse decisions have been
@@ -123,3 +131,14 @@ classes and conflicting macros out of imported chapters.
 
 See `TEMPLATE-NOTES.md` and `vendor/ucscthesis/LICENSE` for community-template
 attribution, license and project changes. No institutional approval is implied.
+
+## Accessibility boundary
+
+`docs/accessibility-ledger.json` covers every visual in the active compiler
+graph and records a reviewed text description. The muscat production build uses
+TeX Live 2018 and is searchable but untagged; it is therefore not claimed to
+meet WCAG 2.1 AA or PDF/UA. A filing candidate must be compiled with a current
+tagging-capable TeX environment (or remediated with an equivalent supported
+workflow), checked with an external accessibility checker, and manually
+reviewed for structure, reading order, tables, mathematics, contrast, and
+metadata. See `docs/VALIDATION.md` and the compliance matrix.

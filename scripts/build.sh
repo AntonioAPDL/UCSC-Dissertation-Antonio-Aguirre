@@ -12,7 +12,7 @@ esac
 mkdir -p "$build_dir"
 
 if command -v latexmk >/dev/null 2>&1; then
-  latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error \
+  latexmk -pdf -recorder -interaction=nonstopmode -halt-on-error -file-line-error \
     -outdir="$build_dir" main.tex
 else
   # A complete TeX installation may omit the latexmk Perl driver. Keep the
@@ -23,10 +23,14 @@ else
       exit 1
     }
   done
-  tex_args=(-interaction=nonstopmode -halt-on-error -file-line-error \
+  tex_args=(-recorder -interaction=nonstopmode -halt-on-error -file-line-error \
     -output-directory="$build_dir" main.tex)
   pdflatex "${tex_args[@]}"
   bibtex "$build_dir/main"
   pdflatex "${tex_args[@]}"
+  pdflatex "${tex_args[@]}"
+  # The legacy UCSC class writes some list and cross-reference state late in
+  # the run.  A fourth pass is required for a clean build from an empty output
+  # directory on muscat's TeX Live 2018 installation.
   pdflatex "${tex_args[@]}"
 fi

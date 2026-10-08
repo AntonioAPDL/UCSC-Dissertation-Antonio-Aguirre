@@ -174,3 +174,20 @@ copyright acknowledgment. The committee must also confirm whether the
 software-centered Chapter 2 counts as an independent journal-suitable research
 unit. None of these pending decisions requires reconstructing the chapters from
 scratch.
+
+## G5A — reader-first restructuring authorization
+
+Gate G5A is **COMPLETE**. On 2026-10-08 the author approved the sixteen
+defaults and eight-source snapshot freeze in
+`reader-first-restructure-plan.md`, then authorized implementation, local
+commits, GitHub merge/push, and an Overleaf-facing handoff. The approved
+structure retains the six-chapter reading sequence and adds a shared
+concordance appendix plus one technical appendix for each research project.
+
+The authorization preserves the manuscript-first boundary: article prose is
+the derivative baseline; scientific claims, qualifications, negative results,
+citations, and source identities must not be silently strengthened or dropped;
+code, data, fitted objects, and computation remain external. The move map in
+`appendix-migration-map.json` is the authoritative record of body-to-appendix
+placement. Synchronization remains distinct from reuse permission and from an
+independently verified Overleaf build.

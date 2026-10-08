@@ -12,7 +12,12 @@
   "editorial_derivative": {
     "chapter_path": "chapters/05-research-d.tex",
     "revision_ledger": "docs/revision-ledger.json",
-    "status": "CHAPTER_REVISION_COMPLETE"
+    "status": "CHAPTER_REVISION_COMPLETE",
+    "current_components": [
+      "chapters/05-research-d.tex",
+      "appendices/e-mti-technical.tex"
+    ],
+    "migration_map": "docs/appendix-migration-map.json"
   },
   "distribution": {
     "github": "MERGED_TO_MAIN",

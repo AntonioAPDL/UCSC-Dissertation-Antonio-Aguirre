@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-09-15",
+  "recorded_at": "2026-10-08",
   "status": "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "AUTHOR_REPORTED_COMPLETE",
-    "state_note": "The conversion is present on GitHub main. The author reports a successful GitHub-to-Overleaf handoff; no Overleaf build log or artifact was independently inspected. Distribution state does not establish material-specific reuse permission."
+    "state_note": "The manuscript-first conversion is present on GitHub main and the author reported the earlier Overleaf handoff. The approved reader-first body/appendix restructure is being validated on a dedicated branch; its later synchronization does not establish material-specific reuse permission or an independently verified Overleaf build."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -44,10 +44,12 @@
       "combined MTI foundation, tolerance, regression, and dynamic extensions"
     ],
     "snapshot_state": "Audited commits are working drafting sources; final submission freezes remain replaceable",
-    "integration_mode": "Manuscript-first local conversion: preserve main article bodies, integrate unique supplement material into chapter sections, and keep computation external",
+    "integration_mode": "Manuscript-first reader-first dissertation: preserve article prose as the derivative baseline; retain targets, central models, principal evidence, interpretation, negative findings, and limitations in the reading chapters; move detailed proofs, derivations, algorithms, and secondary diagnostics to connected scientific appendices; keep computation external",
     "asset_boundary": "Only final displayed figures/tables selected for the thesis may be copied; code, data, fitted objects, runs, and full output archives remain external",
     "direct_reuse_state": "Material-specific rights remain pending. The conversion has already been synchronized to GitHub and, according to the author, Overleaf; that distribution event does not establish permission for final publication or submission.",
-    "integration_plan": "docs/manuscript-integration-plan.md"
+    "integration_plan": "docs/reader-first-restructure-plan.md",
+    "migration_map": "docs/appendix-migration-map.json",
+    "accessibility_ledger": "docs/accessibility-ledger.json"
   },
   "sources": [
     {

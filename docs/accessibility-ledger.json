@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-08",
+  "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
+  "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
+  "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
+  "graphics": [
+    {
+      "source_path": "appendices/c-hydrology-technical.tex",
+      "graphic": "figures/ch03-environ/cutoff_2021_01_23_multivariate_synthesis_with_reference_ensembles.png",
+      "figure_label": "env:fig:synthsupport_20210123",
+      "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/c-hydrology-technical.tex",
+      "graphic": "figures/ch03-environ/cutoff_2021_11_12_multivariate_synthesis_with_reference_ensembles.png",
+      "figure_label": "env:fig:synthsupport_20210123",
+      "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/c-hydrology-technical.tex",
+      "graphic": "figures/ch03-environ/cutoff_2021_12_21_multivariate_synthesis_with_reference_ensembles.png",
+      "figure_label": "env:fig:synthsupport_20211221",
+      "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/c-hydrology-technical.tex",
+      "graphic": "figures/ch03-environ/cutoff_2022_05_11_multivariate_synthesis_with_reference_ensembles.png",
+      "figure_label": "env:fig:synthsupport_20211221",
+      "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
+      "figure_label": "qdesn:fig:simulation-500obs-fit-recovery-thesis",
+      "alt_text": "Nine panels compare posterior fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
+      "figure_label": null,
+      "alt_text": "Nine panels compare approximate variational fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentIndependentComparisonFigure",
+      "figure_label": "qdesn:fig:supp-glofas-part4-independent-comparison",
+      "alt_text": "Paired panels compare independent AL and exAL quantile paths before and after the forecast origin. Observed USGS values use filled green circles, withheld values use open green circles, and GloFAS values are orange.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentJointComparisonFigure",
+      "figure_label": null,
+      "alt_text": "Paired panels compare selected Joint AL quantile paths with unqualified Joint exAL sensitivity paths over common historical and forecast dates. A vertical line marks the forecast origin.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\PricefmCurrentRegionFigure",
+      "figure_label": "qdesn:fig:supp-pricefm-r98-region-comparison",
+      "alt_text": "For each of 38 regions, the plot compares mean AQL across three folds for R98 Q--DESN, PriceFM, and historical R92 Q--DESN. The horizontal positions show substantial regional heterogeneity, with PriceFM lower in 22 region means and R98 Q--DESN lower in 16.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex1quants.png",
+      "figure_label": "exd:fig:ex1quants",
+      "alt_text": "Example 1: Lake Huron. Top-left: posterior mean estimates and 95 percent CrIs of the estimated quantiles, plotted with the data (grey). Top-right: forecasted quantile estimates and 95 percent credible intervals (seen after 1972), along with the filtered quantile estimates and 95 percent credible intervals (seen from 1952 to 1972). Bottom-left: synthesized posterior predictive 95 percent interval over the observed period. Bottom-right: observed-period synthesis near the forecast origin (lighter band) and synthesized posterior predictive 95 percent interval over the eight-step forecast window (slightly darker rose band); the vertical dotted line marks the forecast origin.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex2quant.png",
+      "figure_label": "exd:fig:ex2quant",
+      "alt_text": "Example 2: Sunspots. Top: The sunspot time series from 1700 to 1988. Bottom left: posterior mean estimates and 95 percent CrIs of the estimated quantiles from the DQLM (red) and exDQLM (blue), plotted with the data (grey) from 1780 to 1830. Bottom right: Histogram of samples from the approximated posterior distribution of under the exDQLM.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex2checks.png",
+      "figure_label": "exd:fig:ex2checks",
+      "alt_text": "Example 2: Sunspots. The QQ plots (left column), ACF plots of the PIT sequence (center column), and MAP one-step-ahead standardized forecast errors (right column) from the DQLM (red) and exDQLM (blue).",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex3data.png",
+      "figure_label": "exd:fig:ex3data",
+      "alt_text": "Example 3: Big Tree water flow. Top: observed average monthly water flow at the Big Tree gauge of the San Lorenzo River in Santa Cruz County, CA, plotted on the log scale. Bottom: standardized monthly values of the Northern Oscillation Index (NOI) and Atlantic Multidecadal Oscillation (AMO) index. The displayed modeling window spans January 1987 through December 2022, and the vertical dashed line marks the beginning of the held-out forecast window in July 2021.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex3quantcomps.png",
+      "figure_label": "exd:fig:ex3quant",
+      "alt_text": "Example 3: Big Tree water flow. Top: posterior mean estimates and 95 percent CrIs of the fitted 0.15 quantile from the no-covariate baseline M0 (purple), direct-regression model MREG (blue), and transfer-function model MTF (green), plotted with the data (grey) from 2016 to 2020. Middle: posterior mean estimates and 95 percent CrIs of the combined seasonal components implied by the annual, semiannual, and low-frequency harmonics. Bottom: posterior mean estimates and 95 percent CrIs of the direct-regression contribution in MREG and the transfer-function contribution in MTF. The horizontal orange dotted lines are at zero for reference.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex3forecast.png",
+      "figure_label": "exd:fig:ex3forecast",
+      "alt_text": "Example 3: Big Tree water flow. Held-out 18-month conditional forecast display from July 2021 through December 2022. The vertical dot-dashed line marks the forecast origin after the final training month, June 2021. Solid lines indicate posterior mean forecast quantiles and dotted lines indicate pointwise 95 percent CrIs for M0, MREG, and MTF. Held-out observations are shown as orange circles. The forecasts are conditional on the observed holdout-period NOI and AMO values.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/02-research-a.tex",
+      "graphic": "figures/ch02-exdqlm/ex4static.png",
+      "figure_label": "exd:fig:ex4static",
+      "alt_text": "Example 4: sparse static exAL regression under the correlated Gaussian benchmark with the rhs ns prior. Black diamonds denote the true non-intercept coefficients, orange intervals denote LDVB 95 percent posterior intervals, and blue intervals denote MCMC 95 percent posterior intervals. Panels correspond to p_0 = 0.05, 0.25, and 0.50 .",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/forecast_products_context.png",
+      "figure_label": "env:fig:ensembles",
+      "alt_text": "Representative forecast-origin display for the December 25, 2022 cutoff, spanning November 27, 2022 through January 22, 2023 on the (1+x) scale with x in m^3/s. Before the cutoff, the panel shows USGS observations and the NWS and GloFAS retrospective products used for source-discrepancy learning; after the cutoff, it shows held-out USGS verification together with the operational NWS and GloFAS forecast ensembles. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500; they are included as operational magnitude references rather than as historical flood-stage classifications.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/site_context_usgs.png",
+      "figure_label": "env:fig:sanlorenzo",
+      "alt_text": "Observed USGS daily water flow on the (1 + x) scale, with x measured in m^3/s, May 29, 1987 through December 25, 2022. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500, computed from USGS stage-discharge rating 40.0 and transformed to the plotting scale env-cnrfc_btec1,env-usgs_11160500_rating40. They are operational magnitude references for the discharge scale, not historical flood-stage classifications of daily-mean observations.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/covariate_context_precip_soil_gdpc.png",
+      "figure_label": "env:fig:covariates",
+      "alt_text": "Historical daily precipitation [mm], soil moisture [m^3/m^3], and first GDPC score over May 29, 1987 through December 25, 2022.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/retrospective_products_context.png",
+      "figure_label": "env:fig:retrospectives",
+      "alt_text": "Selected GloFAS and NWS retrospective product series over the available pre-cutoff support window for the December 25, 2022 cutoff, May 29, 1987 through December 25, 2022. Displayed flow values use the (1+x) scale with x in m^3/s.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/historical_summary_dry_period.png",
+      "figure_label": "env:fig:dry_quantile",
+      "alt_text": "Selected-model posterior means and 95 percent credible intervals for the 5th (red), 50th (green), and 95th (blue) fitted river-flow quantiles, with daily USGS flow (black). The upper panel covers the 2012--2016 dry period and the lower panel covers the 2017--2019 wet period, both estimated from the December 25, 2022 cutoff exAL-M-T1 model. Horizontal dashed lines are the current-rating NWS minor and major discharge references from Figure env:fig:sanlorenzo.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/historical_summary_wet_period.png",
+      "figure_label": "env:fig:dry_quantile",
+      "alt_text": "Selected-model posterior means and 95 percent credible intervals for the 5th (red), 50th (green), and 95th (blue) fitted river-flow quantiles, with daily USGS flow (black). The upper panel covers the 2012--2016 dry period and the lower panel covers the 2017--2019 wet period, both estimated from the December 25, 2022 cutoff exAL-M-T1 model. Horizontal dashed lines are the current-rating NWS minor and major discharge references from Figure env:fig:sanlorenzo.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/historical_component_80month.png",
+      "figure_label": "env:fig:80_components",
+      "alt_text": "Selected-model posterior mean and 95 percent credible intervals for the long-cycle seasonal component, with period approximately 6.81 years, or about 82 months, estimated from the 2022-12-25 cutoff exAL-M-T1 model. Estimates are shown for the 5th (red), 50th (green), and 95th (blue) quantiles. Shaded regions mark the 2012--2016 dry period and the 2017--2019 wet period.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png",
+      "figure_label": "env:fig:synth1",
+      "alt_text": "Synthesized posterior predictive distribution for river flow on the (1+x) scale, with x measured in m^3/s, at the December 25, 2022 forecast origin under the exAL-M-T1 model. Observed USGS measurements before the origin are shown in green, and held-out USGS verification after the origin is shown in red. The pink band is the central 95 percent posterior predictive band from the synthesized distribution, and the dark center line summarizes the corresponding synthesized center. Thin overlaid lines correspond to displayed forecast quantiles at levels 0.05, 0.20, 0.35, 0.50, 0.65, 0.80, and 0.95. The raw retrospective and forecast products used at this cutoff are shown for context.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/04-research-c.tex",
+      "graphic": "label:qdesn:fig:supp-quantile-sequential-initialization",
+      "figure_label": "qdesn:fig:supp-quantile-sequential-initialization",
+      "alt_text": "A Gaussian ridge regression initializes a Gaussian regularized-horseshoe variational fit, which initializes the median AL regression. Independent AL fits then proceed outward toward both tails; each initializes the exAL fit at the same probability level. Complete independent grids initialize the corresponding joint models, and fitted variational models initialize MCMC.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/04-research-c.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
+      "figure_label": "qdesn:fig:simulation-500obs-mcmc-forecast-criteria-thesis",
+      "alt_text": "Nine panels compare posterior forecast-MAE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/04-research-c.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
+      "figure_label": null,
+      "alt_text": "Nine panels compare posterior forecast-check-loss means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/04-research-c.tex",
+      "graphic": "\\GlofasApplicationCurrentForecastWindowFigure",
+      "figure_label": "qdesn:fig:glofas-application-forecast-period",
+      "alt_text": "Two panels show the seven Joint AL Q--DESN quantile paths over 30 historical dates and 28 forecast dates. The upper panel contrasts observed and withheld USGS values with retrospective and issued GloFAS values. The lower panel shows fitted and observed GloFAS-minus-USGS discrepancies. Historical quantile paths are dashed, forecast paths are solid, and a vertical line marks the forecast origin.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+      "figure_label": "rqr:fig:three-interval-principles",
+      "alt_text": "Three interval-selection principles under left skewness. All panels use the same continuous left-skewed population illustration with content c=0.80 , displayed after standardization. Equal-tailed (ET) intervals balance omitted probabilities, MPI balances omitted first moments, and shortest-contiguous (SH) intervals minimize geometric width. These deterministic population calculations compare functionals; they are not finite-sample or comparative-performance evidence.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/figS01_cross_distribution_recovery.png",
+      "figure_label": "rqr:fig:mean-tilt-map",
+      "alt_text": "Population recovery tilts across symmetric and skewed distributions. Every interval has content c=0.80 . Targets are computed on each raw population law and then displayed after mean/standard-deviation standardization. The top row shows standardized densities with equal-tailed (ET), MPI, and shortest-contiguous (SH) intervals; the bottom row shows the standardized width profile along the MTI family. In the Normal reference case the three targets coincide at / SD(Y)=0 . Under skewness, ET and SH generally require nonzero, distribution-specific recovery tilts, while MPI remains the zero-tilt retained-mean-balance target. The deterministic display is a population map for external target specification.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png",
+      "figure_label": "rqr:fig:mean-tilt-cf-anchors",
+      "alt_text": "Cornish--Fisher recovery-tilt approximation. For content c=0.80 , the solid curves are the population window-to-tilt map and width profile from the left-skewed illustration. Filled markers are the exact population MPI, ET, and SH tilts. Open markers are the first-order Cornish--Fisher approximations computed from true population skewness. The display diagnoses a population approximation for initialization and external tilt selection. Data-driven tilt estimation, MCMC evidence, and response prediction are separate empirical tasks.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/joint_qdesn_corrected_v4_fit_figure.tex",
+      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
+      "figure_label": "qdesn:fig:joint-qdesn-corrected-v4-fit-rmse",
+      "alt_text": "Fitting-sample recovery of the known conditional quantile paths in the corrected joint study. Points are RMSE values for the reported posterior-mean quantile grids, not posterior intervals. Filled symbols denote joint fits, open symbols independent fits, blue , and red . Crossing frequencies and monotone-adjustment magnitudes are reported separately.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/joint_qdesn_corrected_v4_forecast_figure.tex",
+      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
+      "figure_label": "qdesn:fig:joint-qdesn-corrected-v4-forecast-acrps",
+      "alt_text": "Corrected posterior DGP-integrated for the joint multi-quantile study. Colored points are posterior means and horizontal segments are equal-tailed 95 percent intervals. Lower values are better. Filled symbols denote joint fits, open symbols independent fits, blue , and red . Marginal intervals for the numerical winner and runner-up overlap in every setting. Crossing frequencies and monotone-adjustment magnitudes are reported in the integrated technical material.",
+      "description_source": "caption",
+      "status": "REVIEWED"
+    }
+  ]
+}
