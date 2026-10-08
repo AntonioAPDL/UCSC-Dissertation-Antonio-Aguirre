@@ -1,6 +1,31 @@
 # Project status
 
-## 2026-10-08 advisor-directed restructuring proposal
+## 2026-10-08 audited reader-first restructuring proposal, version 2
+
+The fully audited, controlling implementation design is in
+reader-first-restructure-plan.md. No chapter, appendix, validator, provenance
+schema, or build behavior has been changed under that plan. The planning
+baseline is 35e3f17a5aac42a67d0c618107db259fadb8457f; the
+scientific-content baseline remains
+0c394122549e903b19edc8014709a6f4318bee26.
+
+The plan retains four research chapters, proposes one compatibility-reviewed
+shared-conventions appendix and one technical appendix for each research
+chapter, and requires validator improvements plus an exhaustive migration map
+before prose is moved. It also identifies a new filing workstream: current
+UCSC guidance requires WCAG 2.1 AA electronic theses and dissertations, while
+the accepted 344-page PDF reports Tagged: no. That requirement needs an early
+toolchain feasibility test and later content-level accessibility audit; the
+current PDF must not yet be described as filing-ready.
+
+The next decision is approval of the twelve defaults in Section 19 of the
+plan. If approved, implementation begins with synchronization/freeze,
+appendix-aware validation, and the complete migration map. The earlier
+no-scientific-appendix placement default will then be superseded; all
+manuscript-first source, provenance, evidence, rights, and
+external-computation controls remain in force.
+
+## Historical 2026-10-08 preliminary restructuring proposal
 
 The advisors have requested a reader-first reorganization that removes
 repeated exposition from the main narrative and places long derivations,
