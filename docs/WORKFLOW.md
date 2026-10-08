@@ -2,11 +2,14 @@
 
 Verified against linked official documentation on 2026-09-15. The existing
 GitHub repository and muscat Remote-SSH workspace were audited separately in
-`SETUP-AUDIT.md`. The conversion is present on GitHub `main`, and on 2026-09-16
-the author reported that the GitHub-to-Overleaf handoff worked. No Overleaf
-build log or artifact was independently inspected, so compiler/version and
-rendering equivalence remain unverified. Commands below retain placeholders
-where a later handoff must supply an actual branch or reviewed file.
+`SETUP-AUDIT.md`. The reader-first restructuring is present on GitHub `main`
+through merge commit `a3ad55e587bfbbd8e5075fb9829fdb1a714421fe`. The author
+reported that the earlier 2026-09-16 GitHub-to-Overleaf handoff worked, but the
+new body/appendix structure still requires an explicit Overleaf pull and
+compile. No current Overleaf build log or artifact has been independently
+inspected, so compiler/version and rendering equivalence remain unverified.
+Commands below retain placeholders where a later handoff must supply an actual
+branch or reviewed file.
 
 ## 1. Establish the Overleaf side once
 
