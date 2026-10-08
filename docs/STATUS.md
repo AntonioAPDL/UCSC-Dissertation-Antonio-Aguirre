@@ -1,47 +1,35 @@
 # Project status
 
-## 2026-10-08 audited reader-first restructuring proposal, version 2
+## 2026-10-08 final reader-first restructuring proposal, version 3
 
-The fully audited, controlling implementation design is in
-reader-first-restructure-plan.md. No chapter, appendix, validator, provenance
-schema, or build behavior has been changed under that plan. The planning
-baseline is 35e3f17a5aac42a67d0c618107db259fadb8457f; the
-scientific-content baseline remains
-0c394122549e903b19edc8014709a6f4318bee26.
+The final planning-only execution specification is
+reader-first-restructure-plan.md. It supersedes the two earlier proposals,
+which remain recoverable in Git rather than duplicated here. No chapter,
+scientific appendix, validator, provenance schema, build command, or PDF has
+been changed under the final plan.
 
-The plan retains four research chapters, proposes one compatibility-reviewed
-shared-conventions appendix and one technical appendix for each research
-chapter, and requires validator improvements plus an exhaustive migration map
-before prose is moved. It also identifies a new filing workstream: current
-UCSC guidance requires WCAG 2.1 AA electronic theses and dissertations, while
-the accepted 344-page PDF reports Tagged: no. That requirement needs an early
-toolchain feasibility test and later content-level accessibility audit; the
-current PDF must not yet be described as filing-ready.
+The planning baseline is
+fcb2ca5723a7411e12f677e308dfdd6aed06e93e; the scientific-content baseline
+remains 0c394122549e903b19edc8014709a6f4318bee26. The accepted before-state
+artifact remains the recorded 344-page release with SHA-256
+30b4e0bb3c3230544e941f7eae82dcabb44f08e9283ae9809aaade45196c9900.
 
-The next decision is approval of the twelve defaults in Section 19 of the
-plan. If approved, implementation begins with synchronization/freeze,
-appendix-aware validation, and the complete migration map. The earlier
-no-scientific-appendix placement default will then be superseded; all
-manuscript-first source, provenance, evidence, rights, and
+The final plan retains four research chapters and proposes one
+compatibility-reviewed concordance appendix plus one technical appendix per
+research chapter. Before prose moves, it requires source-snapshot freeze,
+current-documentation reconciliation, hybrid static/compiler-recorded TeX
+dependency validation, an early accessibility feasibility spike, and an
+exhaustive structural migration map.
+
+The current accepted PDF is untagged and is not filing-ready under the current
+UCSC WCAG 2.1 AA notice. Muscat's TeX Live 2018 build remains the visual
+regression baseline; a modern accessible candidate route must be tested rather
+than assumed.
+
+The next decision is approval of the sixteen defaults in Section 19. Until
+then, the advisor-directed restructuring is not implemented. All
+manuscript-first source, provenance, evidence, rights, attribution, and
 external-computation controls remain in force.
-
-## Historical 2026-10-08 preliminary restructuring proposal
-
-The advisors have requested a reader-first reorganization that removes
-repeated exposition from the main narrative and places long derivations,
-proofs, model details, algorithms, and secondary technical evidence in
-substantial dissertation appendices. The audited implementation design is in
-`reader-first-restructure-plan.md`.
-
-No chapter or appendix content has yet been moved under that plan. The clean
-baseline is `0c394122549e903b19edc8014709a6f4318bee26`, equal to
-`origin/main` when the plan was prepared. The plan recommends retaining the
-four research chapters, adding one shared-conventions appendix and one
-technical appendix for each research chapter, and completing a unit-level
-migration map before editing prose. Its advisor-directed placement policy will
-supersede the earlier no-scientific-appendix default once approved; the
-manuscript-first source, provenance, evidence, and external-computation
-controls remain in force.
 
 As of 2026-09-16: the muscat research-source audit and manuscript-first
 structural conversion are complete. The conversion was merged into GitHub
@@ -243,14 +231,20 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-The author should now read the integrated dissertation as a dissertation,
-confirm the final title and administrative metadata, supply acknowledgments
-and granular contribution statements, obtain committee and reuse clearances,
-and decide whether the remaining open TCSP/MTI and version-provenance items
-must be resolved before circulation. Keep collective attribution until the
-role record is confirmed. Any resulting major reviewed unit should use the
-explicit GitHub/Overleaf handoff in `WORKFLOW.md`, followed by inspection of
-the actual Overleaf build rather than assuming synchronization proves parity.
+The next restructuring decision is whether to approve the sixteen defaults
+and eight-source snapshot freeze in Section 19 of
+reader-first-restructure-plan.md. No restructuring is authorized by the plan
+itself. If approved, the first implementation tranche is Phases I0--I2:
+synchronize/freeze, reconcile current operational instructions, strengthen
+dependency/provenance validation, perform the accessibility feasibility spike,
+and complete the structural migration map. The map and Chapter 3 pilot
+boundary are reviewed before prose moves.
+
+The title/administrative, contribution, committee, reuse, TCSP/MTI, and
+publication-status tracks remain open in parallel. Keep collective attribution
+until granular roles are confirmed. Any later major reviewed unit must use the
+explicit GitHub/Overleaf handoff in WORKFLOW.md and inspect the actual Overleaf
+artifact rather than treating synchronization as build parity.
 
 Granular candidate/coauthor roles, committee confirmation for counting exdqlm,
 and final publication permissions remain open. Working text must use accurate
