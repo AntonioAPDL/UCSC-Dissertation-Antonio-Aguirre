@@ -1,5 +1,39 @@
 # Project status
 
+## 2026-10-26 current-research refresh
+
+The current remote default branches were compared with the dissertation's
+prior working sources in isolated audit clones. Q--DESN advanced from
+`757522d` to `483e6ed`, RQR-GIBBS from `73887b9` to `4223c6a`, and the
+`exdqlm` article from `d5534e9` to `98cec59`. Environmetrics,
+MTI-EXTENSIONS, the `exdqlm` package, the San Lorenzo reproducibility source,
+and the corrections repository are unchanged.
+
+The manuscript-only refresh is implemented on
+`refresh/current-research-20261026`. Chapter 4 now uses the current Q--DESN
+article, including the 300-target primary evaluation, 500-target sensitivity,
+MQ--DESN crossing/score distinction, Search III GloFAS evidence, and the
+114-case PriceFM comparison. Chapter 5 now uses the calibrated profiled MTI
+procedure and its independent validation instead of the older TCSP framing;
+the unchanged regression/dynamic extension remains explicitly proposed.
+Chapter 2 now reflects the `exdqlm` 1.1.2 rerun and its nine current figures.
+The current main texts remain reader-facing chapter spines, while detailed
+derivations, proofs, algorithms, and supporting diagnostics remain in the
+linked appendices.
+
+The projection is hash guarded and recorded in
+`current-source-refresh-audit.md` and `source-refresh-20261026.json`. It
+imports only manuscript prose and active display dependencies; research code,
+data, fitted objects, caches, simulations, histories, and full output archives
+remain external. Original research working trees were not modified. Public
+source and claim records have been reconciled. The full release gate and
+rendered inspection passed on a 439-page US-Letter PDF with SHA-256
+`92e4c36c451ecfceca2e0674e7d904f40f9b63e863f5799ba4b310dc262391d1`;
+the final log has zero overfull boxes or blocking diagnostics, and all fonts are
+embedded with no Type 3 font. Merge, GitHub push, and the deliberate Overleaf
+pull remain to be completed. Material-specific reuse permission and granular
+coauthor-role confirmation remain open.
+
 ## 2026-10-08 reader-first restructuring implementation
 
 The author approved all sixteen defaults and the fixed eight-source evidence

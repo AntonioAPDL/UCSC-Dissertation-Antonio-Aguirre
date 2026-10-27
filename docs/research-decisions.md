@@ -1,5 +1,18 @@
 # Research inclusion, contribution, rights, and architecture decisions
 
+> **G1 refresh (2026-10-26).** Current drafting sources are Q--DESN
+> `483e6edbec72ec76e48f2259e943e674b76e5041`, RQR-GIBBS
+> `4223c6a3a44f376255bacdca91db71cdf4f3afde`, MTI-EXTENSIONS
+> `f345d946aa5a81b94795838bec58d874a0fdd0c9`, and the `exdqlm` article
+> `98cec593d11bf32715a690ae168086f16160e7f0`. Environmetrics remains at
+> `1272bfc10442a28add5a4c74ff641e9b9a8e9666`. The current RQR article,
+> not the unchanged extension README, controls tolerance-method terminology;
+> Chapter 5 therefore uses the calibrated profiled MTI procedure rather than
+> TCSP. The current `exdqlm` article and package support state are 1.1.2, while
+> the Environmetrics application remains pinned to 1.1.0. These decisions
+> supersede conflicting entries in the historical G1 table below. Rights,
+> granular contribution, ORCID, and final-source-freeze decisions remain open.
+
 Status: **partially resolved by author direction; focused confirmations remain**
 Prepared: 2026-09-15
 Revised: 2026-09-16

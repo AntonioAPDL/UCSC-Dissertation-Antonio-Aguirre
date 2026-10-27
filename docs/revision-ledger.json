@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-08",
+  "recorded_at": "2026-10-26",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -17,13 +17,14 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "ac8f2438467ae498192c68703bee099c0b47b8b6dd026e090f11760603300102",
+      "current_sha256": "c4517bb4425388eb6bf591d9b08fb1906f8fc1423e0d971f366fabffe2b93543",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH02-20260916",
         "REV-GLOBAL-POLISH-20260916",
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
@@ -41,25 +42,27 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "37d4304b17fd5e326e281f2e19bc1a44bf8dd95dd268d7094e1288626d12934a",
+      "current_sha256": "2cca4c58a2d6e58f236e73ce72c045392b13e13561ef6f553859adaf086360d5",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH04-20260916",
         "REV-GLOBAL-POLISH-20260916",
         "REV-RELEASE-FONTS-20260916",
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "2fd9033e73156cb1ee15f03a940d26db42cfac0458e0b094cf342166fa2771d8",
+      "current_sha256": "9bd390ecc1f7e48c4b64151eb45f13d47959c59b973ed83fb927cff5fc5d7a1c",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
         "REV-GLOBAL-POLISH-20260916",
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
@@ -81,13 +84,14 @@
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "4878511125af9db709dc46230fde2b56ef70d7ffe8ac85a1a4d56ab2946bbb08",
+      "current_sha256": "c71f34449ecc66b21eaf219cda33426f5a44795292b49f8a9b7831492f8a2e98",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
       ],
       "revision_ids": [
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
@@ -105,34 +109,226 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "c7bf5852cd301cb427853b634570c699fedc2b2968f7a43d6d0a86e1de87301e",
+      "current_sha256": "d9b45543ae47c0cfb07d3de6f9ba507e30f985badfc99b24d2d9afb3f4433cae",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
       ],
       "revision_ids": [
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "ec4fa6d44b4d288722909a9b7087e90624e420d6f7e8e17c20153e2d356212d6",
+      "current_sha256": "72375d2ba12e00cb9d536720e7748a5b6a643b7afcccb545276432cdad64b1a3",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
       ],
       "revision_ids": [
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-CURRENT-SOURCES-20261026"
       ]
     },
     {
       "path": "references.bib",
       "baseline_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
-      "current_sha256": "9f9ee13601f628b1572cdd7a4050fdde411a576ae40538ee6159e2792e61b960",
+      "current_sha256": "e387c8a403537ecd20378db40bea1bd6b4a0a6be43b5a5c26cedf1956ac74f57",
       "state": "EDITED",
       "revision_ids": [
-        "REV-GLOBAL-BIB-20260916"
+        "REV-GLOBAL-BIB-20260916",
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex1mcmc.png",
+      "baseline_sha256": "3e944af4cd9f324aa6d1e33aaf6e45cf7141ca88f115e6005bf0b0c68c1a8226",
+      "current_sha256": "0c8b5b6f0194cf6f53cf4d1e95839c5464a01cdc8fe8a45e06f2aa82d790852f",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex1quants.png",
+      "baseline_sha256": "9f5e567673510359bfb914dc62e0d7b06dc1d39d45da8ad8cce62025eede0fd7",
+      "current_sha256": "cfd05fbe6ec8aaaca57df5ca013fa3c7760850efff061284a06c786a7c9c4be5",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex2checks.png",
+      "baseline_sha256": "787201095754a0b51fb53071cbb8620636dd09264cef1001ad92cfaa22575ffc",
+      "current_sha256": "4dc6f3e76e2af1aa1875f0eddcfdebaa0157c9c430afd7421545d41a9d0dc7d1",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex2quant.png",
+      "baseline_sha256": "626760606cc0f6cad3d9ba2472aa22db287cff3f61a0d915109b796516395664",
+      "current_sha256": "cbc2defa25840d5fa7a64aa04f1f3b085315f8e93527225579b595002b17cd64",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex3data.png",
+      "baseline_sha256": "991ea67dae857ed3041acb714bd4dae0d544cb625373c9e4de7453b0126ce24a",
+      "current_sha256": "c3ae120a9e0614d8fa2bb6e9579e418096ef406be53f74dcfc27dc7f839a776d",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex3forecast.png",
+      "baseline_sha256": "3116e94d764299f2bbf2be448b38d5a905ba014c2653db3d34ad67a756ec15ee",
+      "current_sha256": "7b674cb2148f6145cbfce5d911ff5696be1a5859a5d27c5e86bc4a4eb16fc121",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex3quantcomps.png",
+      "baseline_sha256": "867d5b164fbd1c40d92bb94a5f3bde3f9b14386bb8037d11d062eb874cc88802",
+      "current_sha256": "7deb2fc6654bcf839eb37c19147a859c0c30ebdad4cac4113c27bc8c3ccf2ded",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex3zetapsi.png",
+      "baseline_sha256": "7c1fe6be896fb637ea851ddd71c588190e7bcb36742d7b3c27a0219d11c04fdd",
+      "current_sha256": "fc4e7b3ca5bb397e64af63db0a5d2c6aa929ad6e77edbbac8640120aea7fdb57",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch02-exdqlm/ex4static.png",
+      "baseline_sha256": "efb7479d3aa7c57d0b4ac4a97eb40f7ec5aaf453c9a228ba3cc0901da9baf7d3",
+      "current_sha256": "3b5c5c416d597e40e52fe2a7c0db57c7e60409048f9e86587e6eb07f4b1888c9",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch04-qdesn/quantile_initialization/quantile_initialization_caption.tex",
+      "baseline_sha256": "c7c3bbe19155ab518f75242a844f60cbbc7d822fc081c6b85b902cac1a8c2311",
+      "current_sha256": "2aa7adc733eebf551499ac077907b5343be3185b275b6ae748b8f2e54a54b7e4",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch04-qdesn/quantile_initialization/quantile_initialization_picture.tex",
+      "baseline_sha256": "162153aee549d9f2861bca034074f931f2c14ae1f9bcbf335a789129c8963d57",
+      "current_sha256": "6e1ab7141d75897a48f056a0d69b28e74fecd089df5284f6a08a87d0fc437a69",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+      "baseline_sha256": "0203812c871391b9953d9025799c53733c45cb180c05a8c93dded33770da301c",
+      "current_sha256": "fd7bb9218cbf832a31b3ff003f9ea0773d2cf8235f92c611e005a5e93e8b98cf",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+      "baseline_sha256": "ad19294e108c3ab44750a55a802cd84c82462484fbc5614dcca517e1a1ba2078",
+      "current_sha256": "6f83908a45c0b540f79bcf9da13b43668b6cd061d570a5a2f8571c7c06d7a913",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+      "baseline_sha256": "95542b6c82712e53abf540344f3db1c8609825f3061c02876f3dc96299d209db",
+      "current_sha256": "a43112fbaccce6a48f2cd31870ba305407ba518faa8fdb7daeb1b1dfdca5d0a5",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
+      "baseline_sha256": "b84f9062b16569f5d3776c68671ae259ec12c49eb14819a1eb0c68a071b98c6c",
+      "current_sha256": "86e924c25f887c1cb4078bb047b55ec34f22d417974bc9e5ff2e42a053f71447",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "baseline_sha256": "c088fb2ed3fedcedab8663577b031f6aa175ff8066d219cb2b9e7e1c30cd72bf",
+      "current_sha256": "39d81c8f24c669dd3f0203c446bc3eb053be67c1da08cb79ced6baf7e1c77a59",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_supplement_summary.tex",
+      "baseline_sha256": "1b93eb290ac7d0c114c6c79e9e69d0f48267a5132a22b7d6c1440447402d6bda",
+      "current_sha256": "b610c939f137d2178c11503a617e5e15310f348eec561e7d2269a5d3554ea518",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_article_dgp_delivery.tex",
+      "baseline_sha256": "ef99ca3e0e2a4f3fa78b47372b6cc2da7a2118e3ee09ac1f82b0e88edc068701",
+      "current_sha256": "e78fc4dd4c5da8721a9ac40721cc5943ebead4f55029c530dc61a0c8af01df85",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_article_dgp_width_ranges.tex",
+      "baseline_sha256": "053fb57937826ab181859a55436caad3c55415fa96810a5fc263a3856a057c22",
+      "current_sha256": "9762dcd0e94613c0b0888cff7586f1a5f9dc3c7e5fa9d18cf907b269e4e5b6d7",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+      "baseline_sha256": "52dc75361dc6ee33618f2ac625cd783fc9e6940f5305c640def86b1b34c050b7",
+      "current_sha256": "d2cf7bfe17e8b70c69b7fd269437fbaf19d9693db1448539307005d8dc874685",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
+      "baseline_sha256": "802e5eb8ead312bb882e9b15de2017bf93ecb3ed35381af437060172ba36b3b2",
+      "current_sha256": "4f69ed30c203acbe169c5b8353b402af9046a1836565714a9756f51be3245337",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CURRENT-SOURCES-20261026"
       ]
     }
   ],
@@ -257,6 +453,158 @@
       "summary": "Implemented the advisor-directed reader-first structure by moving fourteen mapped technical units into connected appendices, retaining concise interpretive bridges in the research chapters, and adding a cross-chapter concordance without changing source snapshots or research computation.",
       "evidence": "docs/reader-first-restructure-plan.md; docs/appendix-migration-map.json; immutable import manifests and claim/display ledgers",
       "validation": "Active-graph, provenance, label, citation, dependency, build, PDF, font, and rendered-page checks required before merge."
+    },
+    {
+      "id": "REV-CURRENT-SOURCES-20261026",
+      "date": "2026-10-26",
+      "paths": [
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "appendices/e-mti-technical.tex",
+        "chapters/02-research-a.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "figures/ch02-exdqlm/ex1mcmc.png",
+        "figures/ch02-exdqlm/ex1quants.png",
+        "figures/ch02-exdqlm/ex2checks.png",
+        "figures/ch02-exdqlm/ex2quant.png",
+        "figures/ch02-exdqlm/ex3data.png",
+        "figures/ch02-exdqlm/ex3forecast.png",
+        "figures/ch02-exdqlm/ex3quantcomps.png",
+        "figures/ch02-exdqlm/ex3zetapsi.png",
+        "figures/ch02-exdqlm/ex4static.png",
+        "figures/ch04-qdesn/glofas_application/glofas_common_window_statistical_labels_20261019.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_calibration.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_combined.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_convergence.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_discrepancy.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_issued.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_editorial_20261013_reference.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_calibration.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_convergence.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_part1.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_part2.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_part3.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_mq_review_20261013_part4.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_calibration.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_convergence.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_part1.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_part2.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_part3.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part1234_final_20261007_part4.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part4_common_window_three_panel_review.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_part4_three_panel_review.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_calibration.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_convergence.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_part1.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_part2.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_part3.pdf",
+        "figures/ch04-qdesn/glofas_application/glofas_search3_review_20261008_part4.pdf",
+        "figures/ch04-qdesn/independent_simulation/independent_forecast_calibration_v1.pdf",
+        "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_check_v1.pdf",
+        "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_mae_v1.pdf",
+        "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_check_v1.pdf",
+        "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_mae_v1.pdf",
+        "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_mcmc_fit_rmse.pdf",
+        "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_vb_fit_rmse.pdf",
+        "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_fit_oracle_rmse.pdf",
+        "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_forecast_dgp_acrps.pdf",
+        "figures/ch04-qdesn/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
+        "figures/ch04-qdesn/pricefm_application/pricefm_regional_aql_editorial_20261013.pdf",
+        "figures/ch04-qdesn/quantile_initialization/quantile_initialization_caption.tex",
+        "figures/ch04-qdesn/quantile_initialization/quantile_initialization_picture.tex",
+        "figures/ch04-qdesn/quantile_initialization/quantile_initialization_styles.tex",
+        "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+        "figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png",
+        "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+        "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+        "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+        "figures/ch05-mti/generated/figS01_cross_distribution_recovery.png",
+        "figures/ch05-mti/generated/figS02_loss_geometry.png",
+        "figures/ch05-mti/generated/figS03_tolerance_population_shortest_intervals.png",
+        "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
+        "figures/ch05-mti/generated/figS05_pharma_application_partition_sensitivity.png",
+        "references.bib",
+        "tables/ch04-qdesn/glofas_application_current_outputs.tex",
+        "tables/ch04-qdesn/glofas_empirical_quantile_frequencies_display.tex",
+        "tables/ch04-qdesn/glofas_figure4_common_window_outputs.tex",
+        "tables/ch04-qdesn/glofas_forecast_correction_main_scores_display.tex",
+        "tables/ch04-qdesn/glofas_issued_prior_settings_display.tex",
+        "tables/ch04-qdesn/glofas_mq_display_overrides.tex",
+        "tables/ch04-qdesn/glofas_reference_discrepancy_priors_display.tex",
+        "tables/ch04-qdesn/glofas_reference_discrepancy_scores_display.tex",
+        "tables/ch04-qdesn/glofas_review_figure_overrides.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_calibration.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_convergence.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_main_scores.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_part123_prior_settings.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_part123_scores.tex",
+        "tables/ch04-qdesn/glofas_search3_mq_prior_settings.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_calibration.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_convergence.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_part123_prior_settings.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_part123_scores.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_part4_scores.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_prior_settings.tex",
+        "tables/ch04-qdesn/glofas_search3_part1234_final_20261007_selected_specifications.tex",
+        "tables/ch04-qdesn/glofas_search3_part4_main_scores_review.tex",
+        "tables/ch04-qdesn/glofas_selected_specifications_display.tex",
+        "tables/ch04-qdesn/glofas_variational_stopping_display.tex",
+        "tables/ch04-qdesn/independent_eval300_results_v1.tex",
+        "tables/ch04-qdesn/independent_forecast_calibration_figure_v1.tex",
+        "tables/ch04-qdesn/independent_forecast_calibration_table_v1.tex",
+        "tables/ch04-qdesn/independent_forecast_dependence_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_gausmix_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_laplace_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_mae_figure_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_normal_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_tables_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval500_mcmc_gausmix_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval500_mcmc_laplace_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval500_mcmc_normal_v1.tex",
+        "tables/ch04-qdesn/independent_train500_eval500_mcmc_tables_v1.tex",
+        "tables/ch04-qdesn/independent_vb_fit_preserved_v1.tex",
+        "tables/ch04-qdesn/pricefm_full_current_outputs.tex",
+        "tables/ch04-qdesn/pricefm_r98_global_aql_comparison.tex",
+        "tables/ch04-qdesn/pricefm_r98_main_aql_summary.tex",
+        "tables/ch04-qdesn/pricefm_regional_comparison_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_contrast_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_crossing_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_design_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_fit_figure_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_oracle_recovery_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_recursive_policy_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_score_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_secondary_score_display.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_vb_score_display.tex",
+        "tables/ch04-qdesn/qdesn_sections5_7_main_display_overrides.tex",
+        "tables/ch04-qdesn/qdesn_sections5_7_supp_display_overrides.tex",
+        "tables/ch04-qdesn/qdesn_single_quantile_mcmc_fit_figure_display.tex",
+        "tables/ch04-qdesn/qdesn_single_quantile_vb_fit_figure_display.tex",
+        "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
+        "tables/ch05-mti/pharma_application_numbers.tex",
+        "tables/ch05-mti/pharma_application_numerical_diagnostics.tex",
+        "tables/ch05-mti/pharma_application_primary_paired_summary.tex",
+        "tables/ch05-mti/pharma_application_primary_sensitivity.tex",
+        "tables/ch05-mti/pharma_application_primary_summary.tex",
+        "tables/ch05-mti/pharma_application_response_diagnostics.tex",
+        "tables/ch05-mti/pharma_application_rsd_paired_summary.tex",
+        "tables/ch05-mti/pharma_application_rsd_sensitivity.tex",
+        "tables/ch05-mti/pharma_application_supplement_summary.tex",
+        "tables/ch05-mti/pharma_campaign_sensitivity.tex",
+        "tables/ch05-mti/pharma_source_numbers.tex",
+        "tables/ch05-mti/tolerance_validation_article_dgp_delivery.tex",
+        "tables/ch05-mti/tolerance_validation_article_dgp_width_ranges.tex",
+        "tables/ch05-mti/tolerance_validation_article_scan_calibration.tex",
+        "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+        "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex"
+      ],
+      "summary": "Projected the current audited Q--DESN, profiled-MTI, and exDQLM article snapshots into the reader-first dissertation, retaining main texts as chapter spines and technical supplements as appendices.",
+      "evidence": "docs/current-source-refresh-audit.md; docs/source-refresh-20261026.json; source-manifest.json",
+      "validation": "Source-blob, structure, citation, dependency, build, PDF, font, and rendered-page checks required before merge."
     }
   ]
 }

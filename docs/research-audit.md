@@ -1,5 +1,13 @@
 # PhD research-source audit
 
+> **Current-source addendum (2026-10-26).** The Q--DESN, RQR/MTI tolerance,
+> and `exdqlm` article authorities have been refreshed to commits `483e6ed`,
+> `4223c6a`, and `98cec59`, respectively. The controlling current findings are
+> in `current-source-refresh-audit.md`, `source-refresh-20261026.json`, and
+> `claim-evidence.json`. The 2026-09-15 text below remains the historical
+> decision audit and must not be used to restore its TCSP, corrected-v4,
+> Search-II, or `exdqlm` 1.1.1 current-state conclusions.
+
 Status: **completed at fixed discovery snapshots; revised for the author's
 four-project direction; focused confirmations pending**
 Audit date: 2026-09-15

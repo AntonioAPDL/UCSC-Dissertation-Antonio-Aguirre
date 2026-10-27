@@ -29,18 +29,19 @@ class StructureValidationTests(unittest.TestCase):
         relative = {str(path.relative_to(ROOT)) for path in files}
         self.assertTrue(dynamic)
         self.assertIn(
-            "tables/ch04-qdesn/glofas_application_current_outputs.tex", relative
+            "tables/ch04-qdesn/current_source_aliases_20261026.tex", relative
         )
 
     def test_moved_keep_display_remains_active(self):
         files, _ = MODULE.active_tex_files()
         text = "\n".join(path.read_text(encoding="utf-8") for path in files)
-        self.assertIn(r"\label{qdesn:fig:supp-pricefm-r98-region-comparison}", text)
+        current_label = "qdesn2026:fig:supp-pricefm-r98-region-comparison"
+        self.assertIn(rf"\label{{{current_label}}}", text)
         ledger = json.loads((ROOT / "docs" / "display-ledger.json").read_text())
         record = next(
             item
             for item in ledger["records"]
-            if item["id"] == "qdesn:fig:supp-pricefm-r98-region-comparison"
+            if item["id"] == current_label
         )
         self.assertEqual("KEEP", record["disposition"])
 
