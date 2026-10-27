@@ -1,10 +1,19 @@
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xr@{}}
+\begin{tabularx}{\textwidth}{@{}lrr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
-Method & Median interval & Width median [95\% range] & Held-out content median [95\% range] & Omitted below/above\\
+Method & Splits & Returned (\%) & Median lower/upper & Width median [95\% range]\\
 \midrule
-TCSP & [0.600, 2.610] & 2.000 [1.527, 2.370] & 96.6 [89.7, 100.0] & 0.0 / 2.3 \\
-MTI-ECM & [0.600, 2.610] & 2.000 [1.527, 2.370] & 96.6 [89.7, 100.0] & 0.0 / 2.3 \\
-Young--Mathew & [0.700, 2.970] & 2.260 [1.572, 2.589] & 95.4 [87.4, 98.9] & 3.4 / 1.1 \\
-Wilks & [0.600, 4.050] & 3.370 [1.818, 3.450] & 98.9 [93.1, 100.0] & 0.0 / 0.0 \\
+MTI (proposed) & 1000 & 100.0 & 0.610 / 2.300 & 1.690 [1.260, 2.220] \\
+Young--Mathew (benchmark) & 1000 & 100.0 & 0.700 / 2.970 & 2.262 [1.572, 2.597] \\
+Wilks (benchmark) & 1000 & 100.0 & 0.600 / 4.050 & 3.400 [2.000, 3.450] \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrr@{}}
+\toprule
+Method & Held-out content median [95\% range] (\%) & Held-out $\ge c$ (\%) & Omitted below/above (\%)\\
+\midrule
+MTI & 95.4 [88.5, 100.0] & 90.6 & 1.1 / 3.4 \\
+Young--Mathew & 95.4 [87.4, 100.0] & 87.9 & 3.4 / 1.1 \\
+Wilks & 98.9 [93.1, 100.0] & 99.3 & 0.0 / 0.0 \\
 \bottomrule
 \end{tabularx}
