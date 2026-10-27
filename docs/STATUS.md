@@ -30,9 +30,10 @@ source and claim records have been reconciled. The full release gate and
 rendered inspection passed on a 439-page US-Letter PDF with SHA-256
 `92e4c36c451ecfceca2e0674e7d904f40f9b63e863f5799ba4b310dc262391d1`;
 the final log has zero overfull boxes or blocking diagnostics, and all fonts are
-embedded with no Type 3 font. Merge, GitHub push, and the deliberate Overleaf
-pull remain to be completed. Material-specific reuse permission and granular
-coauthor-role confirmation remain open.
+embedded with no Type 3 font. The refresh was merged into `main` through
+`98acf4758b65f37b7676cbbcba78d05abde4f6ff`; GitHub remote verification and
+the deliberate Overleaf pull remain separate handoffs. Material-specific reuse
+permission and granular coauthor-role confirmation remain open.
 
 ## 2026-10-08 reader-first restructuring implementation
 

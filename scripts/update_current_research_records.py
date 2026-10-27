@@ -57,15 +57,17 @@ def update_manifest() -> None:
         "The 2026-10-26 current-source refresh supersedes the September working "
         "snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm "
         "software article. The refresh passed full local release validation and "
-        "rendered review and is awaiting merge, GitHub push, and a deliberate "
-        "Overleaf pull. "
+        "rendered review and was merged into main through "
+        "98acf4758b65f37b7676cbbcba78d05abde4f6ff. GitHub remote verification "
+        "and a deliberate Overleaf pull are separate handoffs. "
         "Material-specific reuse permission remains unverified."
     )
     data["execution_record"]["current_source_refresh"] = {
         "record": "docs/source-refresh-20261026.json",
         "audit": "docs/current-source-refresh-audit.md",
         "script": "scripts/refresh_current_research.py",
-        "state": "RELEASE_AND_RENDERED_REVIEW_PASSED",
+        "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
+        "merge_commit": "98acf4758b65f37b7676cbbcba78d05abde4f6ff",
         "distinct_projected_destinations": 94,
         "release": {
             "path": "build/release-20261027T005737Z/main.pdf",

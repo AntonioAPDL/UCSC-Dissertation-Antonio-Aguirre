@@ -2213,5 +2213,10 @@
     "type3_font_records": 0,
     "rendered_review": "PASSED",
     "overleaf_build_inspected": false
+  },
+  "git_integration": {
+    "branch": "refresh/current-research-20261026",
+    "merge_commit": "98acf4758b65f37b7676cbbcba78d05abde4f6ff",
+    "target_branch": "main"
   }
 }

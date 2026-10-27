@@ -9,6 +9,10 @@ Controlling machine records: `../source-manifest.json`,
 
 Reproducible projection: `../scripts/refresh_current_research.py`
 
+Git integration: merged into `main` through
+`98acf4758b65f37b7676cbbcba78d05abde4f6ff`; remote verification and the
+deliberate Overleaf pull are separate handoffs.
+
 ## Purpose and decision
 
 This audit determines whether the dissertation still represents the current
