@@ -51,9 +51,9 @@ and model-specific VB--LD & Known-DGP simulations and retrospective GloFAS and
 PriceFM applications \\
 5: MTI & Fixed-content interval placement; calibrated empirical tolerance
 action & Static endpoints or proposed regression and dynamic endpoint states &
-Generalized Bayes for fixed targets; numerical scan calibration for TCSP &
-Population results, simulation validation, and a descriptive pharmaceutical
-application \\
+Generalized Bayes for fixed targets; convex profiling and calibrated content
+screening & Population results, independent simulation validation, and a
+descriptive pharmaceutical application \\
 \bottomrule
 \end{tabularx}
 \endgroup
@@ -93,11 +93,11 @@ all three quantile-specific comparisons and remains the reference when tail or
 interval behavior is central.
 
 The chapter also makes provenance part of the statistical contract. The
-hydrologic application uses the recorded version 1.1.0 interface, the software
-article is fixed to 1.1.1, and the later 1.1.2 repository state is retained as
-a support snapshot rather than substituted retroactively. This version
-separation is necessary because a package name alone does not identify the
-algorithm, default, or fitted object used in an analysis.
+hydrologic application remains attached to its recorded version 1.1.0
+interface, whereas the current software article reports its final rerun under
+the public 1.1.2 package. The application is not retroactively refitted or
+relabeled. This separation is necessary because a package name alone does not
+identify the algorithm, default, or fitted object used in an analysis.
 
 \subsection{Source-aware hydrologic synthesis}
 
@@ -133,16 +133,18 @@ post-fit monotone correction retain an explicit role.
 
 The simulations document recovery and forecasting under stated data-generating
 mechanisms and selected reservoirs. They do not integrate uncertainty over
-reservoir seeds or provide a universal MCMC--VB approximation comparison. The
-retrospective applications add two distinct forms of evidence. The GloFAS
-analysis produced an ordered issued-window grid with the reported empirical
-coverage at one origin, but it used retrospectively observed covariates and the
-fit reached its iteration cap before the strict outer tolerance. The PriceFM
-comparison froze one selected Q--DESN specification per region across three
-held-out folds; its aggregate score is slightly worse than the matched PriceFM
-score, with differences that vary by region and fold. These results demonstrate
-how the method behaves under the recorded protocols while resisting a broad
-ranking from two bounded applications.
+reservoir seeds or provide a universal MCMC--VB approximation comparison.
+MQ--DESN reduces crossing, but the independent fits have the lowest mean oracle
+score in six of eight mechanisms and the winner--runner-up intervals overlap in
+every mechanism. The retrospective applications add two distinct forms of
+evidence. In the one-origin GloFAS experiment, Q--DESN AL is the descriptive
+score leader relative to the raw issued ensemble, but its nominal 90\% interval
+covers 21 of 28 horizons; MQ--AL covers 22 of 28. The design also conditions on
+realized future PRISM and ERA5 weather. The PriceFM comparison contains 114
+matched region--fold cases: Q--DESN has lower average quantile loss in 54 and
+PriceFM in 60, with a small aggregate difference favoring PriceFM. These
+results demonstrate behavior under the recorded protocols without supporting a
+broad ranking from two bounded applications.
 
 \subsection{Fixed-content placement and tolerance inference}
 
@@ -154,17 +156,20 @@ and shortest intervals appear as distribution-dependent locations on this
 path rather than as universal choices of one fixed tilt.
 
 The tolerance contribution is intentionally separate from this population
-geometry. TCSP numerically calibrates a retained count from a uniform scan and
-then reports the shortest closed order-statistic window at that count. Across
-the feasible cells of the prespecified simulation panel, the frozen procedure
-shows reliable empirical content attainment and substantially less width
-inflation than full-range Wilks intervals in many settings. That evidence is
-repeated-sampling validation, not the missing exact recursion or a finite-
-sample theorem for the adaptive closed-window action. The pharmaceutical study
-illustrates placement and held-out stability on historical batches; it is not
-a regulatory validation study. The regression and dynamic endpoint sections
-extend the target algebra, but without matching software and experiments they
-remain proposed methods.
+geometry. The current procedure profiles fitted content and tilt over a fixed
+grid. A convex midpoint profile computes endpoints, a direct
+Dirichlet-process content probability determines eligibility, and the shortest
+eligible interval is reported. Calibration settings are selected using
+development and assessment samples before evaluation on independent validation
+samples. Across 72 validation cells, profiled MTI attainment ranges from
+95.1\% to 99.3\%; it has smaller mean width than Young--Mathew in 40 cells.
+This is repeated-sampling evidence for a fixed eight-distribution panel, not a
+distribution-free theorem. The pharmaceutical study illustrates placement,
+held-out content, partition sensitivity, and numerical stability on historical
+batches; overlapping splits, possible batch dependence, ties, and unresolved
+measurement units limit interpretation. The regression and dynamic endpoint
+sections extend the target algebra, but without matching software and
+experiments they remain proposed methods.
 
 \section{Cross-cutting lessons}
 \label{sec:synthesis-lessons}
@@ -193,15 +198,16 @@ to support a different claim.
 All four project lines use computation to expose otherwise difficult targets.
 MCMC provides a reference posterior calculation in several models, while VB or
 LDVB reduces cost by optimizing a restricted family. Gaussian augmentation
-enables state simulation and coefficient updates. Numerical scan calibration
-defines the TCSP action. These devices are substantive parts of the procedures,
+enables state simulation and coefficient updates. Convex midpoint profiling,
+direct content screening, and separate cutoff calibration define the current
+MTI tolerance action. These devices are substantive parts of the procedures,
 not neutral implementation details.
 
 Consequently, approximation diagnostics must follow the claim. ELBO behavior,
 iteration limits, and comparisons with MCMC assess aspects of variational
 computation. Score and calibration summaries assess fitted or predictive
-behavior. Uniform-scan calibration and independent simulation assess the
-tolerance action. No single diagnostic validates all three levels. The mixed
+behavior. Separate calibration and independent simulation assess the tolerance
+action. No single diagnostic validates all three levels. The mixed
 results preserved in the research chapters are useful precisely because they
 show where speed, uncertainty, and predictive performance do not move together.
 
@@ -253,11 +259,12 @@ tails and interval widths. The Q--DESN analyses condition on selected fixed
 reservoirs; variability due to reservoir construction and selection is not
 integrated into the reported posterior intervals.
 
-\item \textit{Tolerance theory and endpoint extensions.} The TCSP evidence does
-not yet include an exact action-matched finite-sample proof. Regression and
-dynamic MTI formulations need implementations, numerical diagnostics,
-simulation designs, and target-specific tolerance calibration before empirical
-performance or guarantees can be claimed.
+\item \textit{Tolerance scope and endpoint extensions.} The profiled MTI
+validation is empirical for the fixed eight-distribution panel; it is not a
+distribution-free guarantee for arbitrary populations. Regression and dynamic
+MTI formulations need implementations, numerical diagnostics, simulation
+designs, and target-specific tolerance calibration before empirical performance
+or guarantees can be claimed.
 
 \item \textit{External validity and source stewardship.} Each empirical result
 is tied to a bounded data set and protocol. Final coauthor or publisher reuse
@@ -293,13 +300,15 @@ exogenous uncertainty rather than condition on summaries. Spatial coupling
 across gauges or basins could then test whether source-specific discrepancy
 learning transfers beyond a single site.
 
-A fourth direction is a complete inferential theory for adaptive fixed-content
-interval actions. For TCSP, this includes an exact scan calculation or a proof
-matched to the closed-window rule. For conditional and dynamic intervals, it
-requires distinguishing estimation of a loss-defined endpoint function from
-content calibration and repeated-sampling tolerance confidence. Implementing
-the proposed MTI regression and state-space algorithms is therefore only the
-first step; each target needs a corresponding simulation and diagnostic design.
+A fourth direction is broader theory and validation for adaptive fixed-content
+interval actions. The current profiled rule should be studied beyond the fixed
+eight-distribution panel, with sensitivity to the candidate grid, content
+model, calibration allocation, dependence, discreteness, and ties. For
+conditional and dynamic intervals, estimation of a loss-defined endpoint
+function must remain distinct from content calibration and repeated-sampling
+tolerance confidence. Implementing the proposed MTI regression and state-space
+algorithms is therefore only the first step; each target needs a corresponding
+simulation and diagnostic design.
 
 Finally, the software and provenance work suggests a methodological practice
 for collaborative statistical research: versions, inferential targets, and

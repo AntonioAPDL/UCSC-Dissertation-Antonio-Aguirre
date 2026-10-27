@@ -9,6 +9,7 @@ tagged or that an external WCAG checker has passed it.
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from pathlib import Path
@@ -50,8 +51,24 @@ def plain(text: str) -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="reconcile the existing ledger with the current active TeX graph",
+    )
+    args = parser.parse_args()
+    previous: dict[tuple[str, str], dict[str, object]] = {}
     if OUTPUT.exists():
-        raise SystemExit("refusing to overwrite docs/accessibility-ledger.json")
+        if not args.update:
+            raise SystemExit(
+                "refusing to overwrite docs/accessibility-ledger.json; use --update"
+            )
+        old = json.loads(OUTPUT.read_text(encoding="utf-8"))
+        previous = {
+            (str(item.get("source_path", "")), str(item.get("graphic", ""))): item
+            for item in old.get("graphics", [])
+        }
     files, _ = active_tex_files()
     records: list[dict[str, object]] = []
     for path in sorted(files):
@@ -74,19 +91,25 @@ def main() -> int:
             if not description:
                 description = f"Visual identified by {label or graphics[0]}; description requires author review."
             for graphic in graphics:
-                records.append(
-                    {
-                        "source_path": str(path.relative_to(ROOT)),
+                source_path = str(path.relative_to(ROOT))
+                key = (source_path, graphic.strip())
+                prior = previous.get(key)
+                if prior:
+                    record = dict(prior)
+                    record["figure_label"] = label
+                else:
+                    record = {
+                        "source_path": source_path,
                         "graphic": graphic.strip(),
                         "figure_label": label,
                         "alt_text": description,
                         "description_source": "figalt" if explicit else "caption",
                         "status": "REVIEWED" if explicit else "AUTHOR_REVIEW_REQUIRED",
                     }
-                )
+                records.append(record)
     payload = {
         "schema_version": 1,
-        "recorded_at": "2026-10-08",
+        "recorded_at": "2026-10-26",
         "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
         "conformance_boundary": (
             "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; "

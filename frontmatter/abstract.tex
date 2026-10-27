@@ -21,14 +21,18 @@ The third contribution develops Bayesian quantile deep echo-state networks,
 which combine fixed nonlinear recurrent features with single-level or joint
 quantile regression. MCMC and model-specific variational methods are examined
 through simulations and retrospective GloFAS and PriceFM applications. The
-results support conditional-quantile estimation under the stated designs but
-also expose reservoir-conditioning, forecast-origin, convergence, and regional
-limitations. The fourth contribution studies mean-tilted intervals, a family
-of contiguous fixed-content targets indexed by retained-mean balance. It
-characterizes the mean-preserving member, develops a numerically calibrated
-shortest-path tolerance procedure, and evaluates the frozen procedure through
-simulation and a descriptive pharmaceutical application. Regression and
-dynamic endpoint formulations are derived as proposed extensions.
+multiquantile model reduces crossing without a uniform score gain. At one
+GloFAS forecast origin, Q--DESN improves the reported quantile score over the
+raw ensemble but its nominal interval remains undercovered; across 114 matched
+PriceFM comparisons, each method wins in a substantial fraction of cases. The
+fourth contribution studies mean-tilted intervals, a family of contiguous
+fixed-content targets indexed by retained-mean balance. It characterizes the
+mean-preserving member and develops a calibrated profiled MTI tolerance
+procedure that screens fitted content and tilt using a direct posterior content
+check. Independent simulations support the procedure on a fixed
+eight-distribution panel, and a pharmaceutical application illustrates its
+placement behavior and data limitations. Regression and dynamic endpoint
+formulations are derived as proposed extensions.
 
 Across the four projects, conditionally Gaussian representations make posterior
 simulation and variational approximation practical, but similar computation

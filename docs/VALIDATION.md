@@ -1,5 +1,56 @@
 # Validation record
 
+## 2026-10-26 current-source refresh release
+
+The manuscript-first current-source refresh was validated from a fresh
+timestamped output directory with:
+
+```text
+bash scripts/validate.sh --tier release --audit-root /PATH/TO/IMMUTABLE/AUDIT-CLONES
+```
+
+The public record omits the machine-local audit path. The gate passed 10 unit
+tests; reconciled eight sources, 30 claim records, 29 editorial issues, 102
+active displays, and 11 bibliography groups; rechecked all 102 immutable
+baseline Git blobs; resolved 83 active TeX files, 490 unique active labels, six
+appendix migrations, 47 active visuals, and all 121 cited keys; and confirmed
+that no authentication secret or absolute local source path entered the public
+projection.
+
+The accepted ignored build artifact is
+`build/release-20261027T005737Z/main.pdf`: 439 US-Letter pages, PDF 1.7,
+20,511,580 bytes, SHA-256
+`92e4c36c451ecfceca2e0674e7d904f40f9b63e863f5799ba4b310dc262391d1`.
+Its final log has zero unresolved citations or references, duplicate or
+unstable labels, missing files, PDF-version inclusion warnings, oversized
+floats, overfull boxes, fatal errors, or emergency stops. Thirty underfull-box
+notices remain as benign line-breaking diagnostics. All 52 font records are
+embedded; no Type 3 font remains. The PDF is searchable but untagged.
+
+The clean build initially exposed tall Q--DESN appendix tables, crowded MTI
+sensitivity headers, and a Type 3 DejaVuSans font inside the current PriceFM
+regional-comparison PDF. The refresh script now converts only those tall
+tables to page-breaking `longtable` displays, retains their complete captions
+on the first page and short continuation headers thereafter, adjusts table
+padding and header line breaks without changing values, and creates a recorded
+Ghostscript `NoOutputFonts` rendering derivative of the PriceFM figure. The
+immutable copied source asset remains available. Source and derivative have the
+same 468 by 518.4 point page and were visually compared; plotted data, labels,
+caption, and claim are unchanged.
+
+Rendered review covered the title/front matter; Chapter 4 and 5 openings; the
+principal GloFAS figure; Appendix D and E openings; first and continuation pages
+of the multiquantile score, recursive-policy, variational, and recovery tables;
+both MTI partition-sensitivity tables; the PriceFM source/derivative pair; and
+the final bibliography page. The sampled pages showed no clipping, collision,
+margin breach, stranded continuation caption, or illegible evidence display.
+
+This validation establishes current-source integration and local rendering,
+not computational reruns, coauthor or publisher reuse permission, committee
+approval, filing readiness, a tagged-accessibility claim, or an independently
+inspected Overleaf build. The working title and administrative metadata remain
+unresolved. GitHub push and Overleaf pull are separate handoffs.
+
 Performed 2026-09-15 in a Linux container. This is technical verification of
 this starter, not a verified Overleaf run or institutional approval.
 

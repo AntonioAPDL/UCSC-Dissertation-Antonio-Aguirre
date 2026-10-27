@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-08",
+  "recorded_at": "2026-10-26",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
@@ -39,43 +39,99 @@
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
-      "figure_label": "qdesn:fig:simulation-500obs-fit-recovery-thesis",
-      "alt_text": "Nine panels compare posterior fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
-      "figure_label": null,
-      "alt_text": "Nine panels compare approximate variational fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentIndependentComparisonFigure",
-      "figure_label": "qdesn:fig:supp-glofas-part4-independent-comparison",
-      "alt_text": "Paired panels compare independent AL and exAL quantile paths before and after the forecast origin. Observed USGS values use filled green circles, withheld values use open green circles, and GloFAS values are orange.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentJointComparisonFigure",
-      "figure_label": null,
-      "alt_text": "Paired panels compare selected Joint AL quantile paths with unqualified Joint exAL sensitivity paths over common historical and forecast dates. A vertical line marks the forecast origin.",
+      "graphic": "label:qdesn2026:fig:supp-quantile-sequential-initialization",
+      "figure_label": "qdesn2026:fig:supp-quantile-sequential-initialization",
+      "alt_text": "A Gaussian ridge regression initializes a Gaussian regularized-horseshoe variational fit, which initializes the median AL regression. Independent AL fits then proceed outward toward both tails; each initializes the exAL fit at the same probability level. Complete independent grids initialize MQ--DESN in the multiquantile simulation and GloFAS, not PriceFM. The multiquantile simulation uses VB starts for MCMC under the same model; GloFAS and PriceFM report VB. Prior calibration and development-data selection are separate operations.",
       "description_source": "figalt",
       "status": "REVIEWED"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
       "graphic": "\\PricefmCurrentRegionFigure",
-      "figure_label": "qdesn:fig:supp-pricefm-r98-region-comparison",
+      "figure_label": "qdesn2026:fig:supp-pricefm-r98-region-comparison",
       "alt_text": "For each of 38 regions, the plot compares mean AQL across three folds for R98 Q--DESN, PriceFM, and historical R92 Q--DESN. The horizontal positions show substantial regional heterogeneity, with PriceFM lower in 22 region means and R98 Q--DESN lower in 16.",
       "description_source": "figalt",
       "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentFullComparisonFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part4-all-families",
+      "alt_text": "The full issued-ensemble comparison retains Gaussian and raw GloFAS, Q--DESN and MQ--DESN AL/exAL paths with their original panel scales, historical observations, and held-out measurements.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentPartOneFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part1",
+      "alt_text": "Three panels show 30-day reference-only USGS forecasts from Gaussian, Q--DESN and MQ--DESN AL/exAL families, alongside black observed history and magenta dashed held-out measurements.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentPartTwoFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part2",
+      "alt_text": "Three panels show historical black discrepancy lines and 30-day future discrepancy paths for Gaussian and AL/exAL families. There are no post-cutoff discrepancy observations or scores.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentPartThreeFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part3",
+      "alt_text": "Three family-group panels compare 30-day combined historical USGS quantile forecasts with historical USGS and held-out measurements; all paths are uncrossed.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentConvergenceFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part4-convergence",
+      "alt_text": "Green MQ--DESN (AL) and brown MQ--DESN (exAL) parameter-change traces finish below the specified tolerance at outer iterations 11 and 28, respectively, with three consecutive coordinate iterations satisfying the stopping rule.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/d-qdesn-technical.tex",
+      "graphic": "\\GlofasApplicationCurrentCalibrationFigure",
+      "figure_label": "qdesn2026:fig:supp-glofas-part4-calibration",
+      "alt_text": "Seven empirical-frequency curves lie below the nominal diagonal. MQ--DESN (AL) and Q--DESN (AL) have the highest frequency at p=0.95, while MQ--DESN (exAL) reaches only 0.286 and raw GloFAS remains at zero.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "appendices/e-mti-technical.tex",
+      "graphic": "figures/ch05-mti/generated/figS02_loss_geometry.png",
+      "figure_label": "rqr2026:fig:supp-loss-geometry",
+      "alt_text": "MPI loss geometry and the fixed midpoint tilt. For c=0.80 , m=0 , and h=1 , the residual product is negative exactly inside the interval. The half-width score contracts h for covered observations and expands it for misses. A fixed adds a constant shift to the midpoint score but leaves the half-width score unchanged. These plots use the strict convention (e<0) : filled endpoint marks show the score at y= 1 , while open marks show the one-sided inside limits. These are deterministic pointwise score calculations, not fitted results.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "appendices/e-mti-technical.tex",
+      "graphic": "figures/ch05-mti/generated/figS03_tolerance_population_shortest_intervals.png",
+      "figure_label": "rqr2026:fig:supp-tolerance-population-shortest",
+      "alt_text": "Population shortest-content intervals for the simulation distributions. Horizontal intervals show the shortest population content- c intervals for the centered and scaled simulation laws. The figure supplies the width benchmarks used to interpret the empirical width ranges in the main article.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "appendices/e-mti-technical.tex",
+      "graphic": "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
+      "figure_label": "rqr2026:fig:supp-pharma-rsd",
+      "alt_text": "Interval placement and held-out comparisons for weight RSD. The panels follow the main application figure. The representative split is selected by the same median-distance rule. Thick and thin tail-omission segments show interquartile and empirical 95 percent ranges, with median markers. The response is strongly right-skewed, but an upper one-sided tolerance limit would be more natural for a direct quality-control decision.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "appendices/e-mti-technical.tex",
+      "graphic": "figures/ch05-mti/generated/figS05_pharma_application_partition_sensitivity.png",
+      "figure_label": "rqr2026:fig:supp-pharma-partition-sensitivity",
+      "alt_text": "Sensitivity to training and held-out partitions. Points show median widths or held-out empirical content within each labeled design. Segments give empirical 95 percent ranges for random and grouped splits. The two recorded-order designs each contain one partition and are shown as individual points. Dashed lines mark the requested content c= . The plots describe historical partition sensitivity.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
     },
     {
       "source_path": "chapters/02-research-a.tex",
@@ -199,32 +255,8 @@
     },
     {
       "source_path": "chapters/04-research-c.tex",
-      "graphic": "label:qdesn:fig:supp-quantile-sequential-initialization",
-      "figure_label": "qdesn:fig:supp-quantile-sequential-initialization",
-      "alt_text": "A Gaussian ridge regression initializes a Gaussian regularized-horseshoe variational fit, which initializes the median AL regression. Independent AL fits then proceed outward toward both tails; each initializes the exAL fit at the same probability level. Complete independent grids initialize the corresponding joint models, and fitted variational models initialize MCMC.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/04-research-c.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
-      "figure_label": "qdesn:fig:simulation-500obs-mcmc-forecast-criteria-thesis",
-      "alt_text": "Nine panels compare posterior forecast-MAE means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/04-research-c.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
-      "figure_label": null,
-      "alt_text": "Nine panels compare posterior forecast-check-loss means and 95 percent intervals for four models across three innovation families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/04-research-c.tex",
       "graphic": "\\GlofasApplicationCurrentForecastWindowFigure",
-      "figure_label": "qdesn:fig:glofas-application-forecast-period",
+      "figure_label": "qdesn2026:fig:glofas-application-forecast-period",
       "alt_text": "Two panels show the seven Joint AL Q--DESN quantile paths over 30 historical dates and 28 forecast dates. The upper panel contrasts observed and withheld USGS values with retrospective and issued GloFAS values. The lower panel shows fitted and observed GloFAS-minus-USGS discrepancies. Historical quantile paths are dashed, forecast paths are solid, and a vertical line marks the forecast origin.",
       "description_source": "figalt",
       "status": "REVIEWED"
@@ -232,7 +264,7 @@
     {
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
-      "figure_label": "rqr:fig:three-interval-principles",
+      "figure_label": "rqr2026:fig:three-interval-principles",
       "alt_text": "Three interval-selection principles under left skewness. All panels use the same continuous left-skewed population illustration with content c=0.80 , displayed after standardization. Equal-tailed (ET) intervals balance omitted probabilities, MPI balances omitted first moments, and shortest-contiguous (SH) intervals minimize geometric width. These deterministic population calculations compare functionals; they are not finite-sample or comparative-performance evidence.",
       "description_source": "caption",
       "status": "REVIEWED"
@@ -240,7 +272,7 @@
     {
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/figS01_cross_distribution_recovery.png",
-      "figure_label": "rqr:fig:mean-tilt-map",
+      "figure_label": "rqr2026:fig:mean-tilt-map",
       "alt_text": "Population recovery tilts across symmetric and skewed distributions. Every interval has content c=0.80 . Targets are computed on each raw population law and then displayed after mean/standard-deviation standardization. The top row shows standardized densities with equal-tailed (ET), MPI, and shortest-contiguous (SH) intervals; the bottom row shows the standardized width profile along the MTI family. In the Normal reference case the three targets coincide at / SD(Y)=0 . Under skewness, ET and SH generally require nonzero, distribution-specific recovery tilts, while MPI remains the zero-tilt retained-mean-balance target. The deterministic display is a population map for external target specification.",
       "description_source": "caption",
       "status": "REVIEWED"
@@ -248,25 +280,105 @@
     {
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png",
-      "figure_label": "rqr:fig:mean-tilt-cf-anchors",
+      "figure_label": "rqr2026:fig:mean-tilt-cf-anchors",
       "alt_text": "Cornish--Fisher recovery-tilt approximation. For content c=0.80 , the solid curves are the population window-to-tilt map and width profile from the left-skewed illustration. Filled markers are the exact population MPI, ET, and SH tilts. Open markers are the first-order Cornish--Fisher approximations computed from true population skewness. The display diagnoses a population approximation for initialization and external tilt selection. Data-driven tilt estimation, MCMC evidence, and response prediction are separate empirical tasks.",
       "description_source": "caption",
       "status": "REVIEWED"
     },
     {
-      "source_path": "tables/ch04-qdesn/joint_qdesn_corrected_v4_fit_figure.tex",
-      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
-      "figure_label": "qdesn:fig:joint-qdesn-corrected-v4-fit-rmse",
-      "alt_text": "Fitting-sample recovery of the known conditional quantile paths in the corrected joint study. Points are RMSE values for the reported posterior-mean quantile grids, not posterior intervals. Filled symbols denote joint fits, open symbols independent fits, blue , and red . Crossing frequencies and monotone-adjustment magnitudes are reported separately.",
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+      "figure_label": "rqr2026:fig:tolerance-validation-primary",
+      "alt_text": "Content-attainment by sample size and target content. Intervals not produced are counted as nonattainment. Vertical intervals in the content-attainment panels show the range across distributional scenarios, and the axis is zoomed to 0.85 -- 1.00 . Dashed reference lines mark nominal tolerance confidence 0.95 .",
       "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+      "figure_label": "rqr2026:fig:tolerance-validation-width-ranges",
+      "alt_text": "Interval-width ranges by distribution. Horizontal intervals show empirical 2.5 percent --97.5 percent ranges of interval lengths within each distribution, sample-size/content cell, and method. Crosses mark the mean interval width across the 1000 replications for that method. Dashed gray markers show the corresponding population shortest content- c interval widths under the known simulation laws. The horizontal axis is logarithmic to display light-tailed, heavy-tailed, and strongly skewed cases in one figure; the values remain raw interval lengths.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "chapters/05-research-d.tex",
+      "graphic": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+      "figure_label": "rqr2026:fig:pharma-application-primary",
+      "alt_text": "Interval placement and held-out comparisons for the reported tensile metric. Panel A shows the empirical distribution of all batches and actual fitted intervals from split , selected by the prespecified median-distance rule. The interval rows below the CDF are positioned for display. Panels B and C show paired width and held-out-content differences, MTI minus each benchmark, with crosses marking paired medians. Panel D shows median tail omission, interquartile ranges (thick segments), and empirical 95 percent ranges (thin segments) across random splits.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/independent_forecast_calibration_figure_v1.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/independent_forecast_calibration_v1.pdf",
+      "figure_label": "qdesn2026:fig:supp-independent-quantile-calibration",
+      "alt_text": "Six panels compare empirical response frequencies below posterior-median quantile forecasts with the nominal levels 0.05, 0.25 and 0.50, for four models, three error families and two evaluation periods.",
+      "description_source": "figalt",
       "status": "REVIEWED"
     },
     {
-      "source_path": "tables/ch04-qdesn/joint_qdesn_corrected_v4_forecast_figure.tex",
-      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
-      "figure_label": "qdesn:fig:joint-qdesn-corrected-v4-forecast-acrps",
-      "alt_text": "Corrected posterior DGP-integrated for the joint multi-quantile study. Colored points are posterior means and horizontal segments are equal-tailed 95 percent intervals. Lower values are better. Filled symbols denote joint fits, open symbols independent fits, blue , and red . Marginal intervals for the numerical winner and runner-up overlap in every setting. Crossing frequencies and monotone-adjustment magnitudes are reported in the integrated technical material.",
+      "source_path": "tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_check_v1.pdf",
+      "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-check-loss-intervals",
+      "alt_text": "Nine panels compare four models using mean forecast check loss and 95 percent intervals over 300 scored targets.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/independent_train500_eval300_mcmc_mae_figure_v1.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_mae_v1.pdf",
+      "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-mae-intervals",
+      "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 300 scored targets.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_mae_v1.pdf",
+      "figure_label": "qdesn2026:fig:independent-eval500-forecast_mae",
+      "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 500 scored targets.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_check_v1.pdf",
+      "figure_label": "qdesn2026:fig:independent-eval500-forecast_check",
+      "alt_text": "Nine panels compare four models using mean forecast check loss and 95 percent intervals over 500 scored targets.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/qdesn_multiquantile_fit_figure_display.tex",
+      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_fit_oracle_rmse.pdf",
+      "figure_label": "qdesn2026:fig:joint-qdesn-pure-desn-v2-fit-rmse",
+      "alt_text": "Fitting-sample recovery of known conditional quantile paths in the multiquantile study. Points give the RMSE of monotone posterior-mean grids, not posterior interval summaries. Annotations c give raw adjacent-level crossing percentages before projection. Q--DESN fits levels independently; MQ--DESN estimates their coefficients jointly.",
       "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
+      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_forecast_dgp_acrps.pdf",
+      "figure_label": "qdesn2026:fig:joint-qdesn-pure-desn-v2-forecast-acrps",
+      "alt_text": "Oracle finite-grid in the multiquantile study. Points are posterior means and segments are equal-tailed 95 percent intervals for the score averaged over the common forecast pairs, conditional on each model's averaged future predictors. Lower scores are better. Annotations c give raw adjacent-level crossing percentages for posterior-mean forecast grids. Q--DESN fits levels independently; MQ--DESN estimates their coefficients jointly. The scored grids use the monotone transformation specified in the integrated technical material.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/qdesn_single_quantile_mcmc_fit_figure_display.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_mcmc_fit_rmse.pdf",
+      "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-fit-rmse-intervals",
+      "alt_text": "Nine panels compare posterior fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
+      "status": "REVIEWED"
+    },
+    {
+      "source_path": "tables/ch04-qdesn/qdesn_single_quantile_vb_fit_figure_display.tex",
+      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_vb_fit_rmse.pdf",
+      "figure_label": "qdesn2026:fig:simulation-500obs-vb-fit-rmse-intervals",
+      "alt_text": "Nine panels compare approximate variational fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
+      "description_source": "figalt",
       "status": "REVIEWED"
     }
   ]
