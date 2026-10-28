@@ -912,7 +912,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-technical"
     },
     {
@@ -924,7 +924,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-technical"
     },
     {
@@ -936,7 +936,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-proofs"
     },
     {
@@ -948,7 +948,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-proofs"
     },
     {
@@ -960,7 +960,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-proofs"
     },
     {
@@ -972,7 +972,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -984,7 +984,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -996,7 +996,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-calibration"
     },
     {
@@ -1008,7 +1008,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-calibration"
     },
     {
@@ -1020,7 +1020,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -1032,7 +1032,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -1044,7 +1044,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-extensions"
     },
     {
@@ -1056,7 +1056,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_E",
+      "implementation_commit": "1c61fea",
       "final_location": "app:mti-extensions"
     }
   ],
@@ -14037,9 +14037,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14092,9 +14092,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14145,9 +14145,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14198,9 +14198,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14251,9 +14251,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14304,9 +14304,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14360,9 +14360,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14413,9 +14413,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14466,9 +14466,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14519,9 +14519,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14575,9 +14575,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14628,9 +14628,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14681,9 +14681,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14734,9 +14734,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14790,9 +14790,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14846,9 +14846,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14902,9 +14902,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -14958,9 +14958,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15011,9 +15011,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15064,9 +15064,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15117,9 +15117,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15170,9 +15170,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15223,9 +15223,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15276,9 +15276,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15329,9 +15329,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15384,9 +15384,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15440,9 +15440,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15495,9 +15495,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15550,9 +15550,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15605,9 +15605,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15660,9 +15660,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15715,9 +15715,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15770,9 +15770,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15825,9 +15825,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15880,9 +15880,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15935,9 +15935,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -15990,9 +15990,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -16050,9 +16050,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16110,9 +16110,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16170,9 +16170,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16230,9 +16230,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16290,9 +16290,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16350,9 +16350,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16410,9 +16410,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -18938,9 +18938,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -18995,9 +18995,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19052,9 +19052,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19109,9 +19109,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19168,9 +19168,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19225,9 +19225,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19284,9 +19284,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19341,9 +19341,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19398,9 +19398,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19455,9 +19455,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19512,9 +19512,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19569,9 +19569,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19626,9 +19626,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19683,9 +19683,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19742,9 +19742,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19799,9 +19799,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     },
     {
@@ -19856,9 +19856,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_E",
+        "commit": "1c61fea",
         "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
-        "validation": "Gate G chapter validation and rendered review pending"
+        "validation": "Gate G chapter validation and rendered review"
       }
     }
   ]
