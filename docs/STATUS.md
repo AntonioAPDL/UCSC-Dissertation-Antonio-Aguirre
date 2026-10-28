@@ -1,5 +1,44 @@
 # Project status
 
+## 2026-10-28 final controlling essential-appendix plan
+
+The appendix-length concern raised in advisor feedback has been audited against
+the accepted 414-page release at commit `37b9da0`. Appendices A--E occupy 204
+numbered pages; Appendices D and E account for 177 of them. The principal
+cause is article-supplement depth--especially complete empirical table/figure
+families and repeated computational variants--rather than literal duplicated
+prose.
+
+`essential-appendix-revision-plan.md` is now the final controlling plan for
+this stage. It reconciles the advisor direction with the completed
+reader-first restructuring, audits the accepted compiler graph and current
+validation contracts, and records the exact appendix/display defaults,
+claim-based essentiality rule, protected scientific conclusions, body-link
+repairs, provenance controls, implementation gates, stop conditions, and
+release criteria. It recommends retaining all five chapter-linked appendices
+while using 82--102 compiled appendix pages as a diagnostic envelope rather
+than a quota. Central proofs, nonstandard posterior targets, calibration
+design, mixed or negative results, and claim-changing sensitivities are
+protected. Software-maintainer detail, full table decks, repeated standard
+algebra, and internal article/audit language are candidates for consolidation
+or deactivation.
+
+The plan also resolves a validator/provenance conflict that must be handled
+before TeX changes: historical display and migration decisions remain
+immutable, while a new `appendix-essentiality-map.json` will record current
+compiled inclusion, no-loss locations, and recovery paths. Validator and test
+support for that distinction is the first implementation phase; Appendix C is
+the manuscript pilot before the high-risk Appendix D/E work.
+
+The author approved the plan's sixteen defaults and Phases 0--8 on 2026-10-28.
+Local implementation is now active on
+`editorial/essential-appendices-20261028`. The first deliverable remains
+schema, validator, and test support with no TeX change, followed by the
+complete reviewable essentiality map. Push, merge, and Overleaf
+synchronization remain separately gated. At this checkpoint no appendix
+source, main-text reference, active display, scientific result, or research
+repository has been changed.
+
 ## 2026-10-27 final reader and statistical revision
 
 The advisor-directed final reader revision is implemented on branch
@@ -305,14 +344,15 @@ was run; nothing is classified `E4`. See `research-audit-validation.md` and
 
 ## Next task
 
-The next restructuring decision is whether to approve the sixteen defaults
-and eight-source snapshot freeze in Section 19 of
-reader-first-restructure-plan.md. No restructuring is authorized by the plan
-itself. If approved, the first implementation tranche is Phases I0--I2:
-synchronize/freeze, reconcile current operational instructions, strengthen
-dependency/provenance validation, perform the accessibility feasibility spike,
-and complete the structural migration map. The map and Chapter 3 pilot
-boundary are reviewed before prose moves.
+The next restructuring decision is whether to approve the sixteen defaults in
+Section 13 of `essential-appendix-revision-plan.md` and identify any appendix
+unit that an advisor specifically requires in full. The plan itself does not
+authorize scientific or compiler-graph changes. If approved, the first
+implementation deliverable is backward-compatible essentiality schema,
+validator, and test support with no TeX change, followed by the complete
+`appendix-essentiality-map.json`. Appendix C is then the manuscript pilot;
+Appendices A and B follow only after its rendered review, and Appendices D and
+E remain separate high-risk milestones.
 
 The title/administrative, contribution, committee, reuse, TCSP/MTI, and
 publication-status tracks remain open in parallel. Keep collective attribution

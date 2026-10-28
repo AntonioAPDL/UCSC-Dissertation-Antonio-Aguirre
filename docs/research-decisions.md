@@ -204,3 +204,21 @@ code, data, fitted objects, and computation remain external. The move map in
 `appendix-migration-map.json` is the authoritative record of body-to-appendix
 placement. Synchronization remains distinct from reuse permission and from an
 independently verified Overleaf build.
+
+## G5B — essential-appendix revision authorization
+
+Gate G5B is **AUTHORIZED FOR LOCAL IMPLEMENTATION**. On 2026-10-28 the author
+approved implementation of the final controlling plan in
+`essential-appendix-revision-plan.md`. The authorization covers its sixteen
+defaults and Phases 0--8: validator-first current-inclusion support, a complete
+essentiality and recovery map, selective revision of Appendices A--E, precise
+body links, provenance reconciliation, rendered review, release validation,
+and focused local commits.
+
+The authorization does not change the fixed research-source commits, permit
+research recomputation, establish reuse rights, or authorize a scientific
+correction outside the recorded evidence. Historical migration, source,
+import, display, and accessibility records remain evidence rather than
+content to rewrite for convenience. Push, merge, and Overleaf synchronization
+remain separate lifecycle actions under default 16 and require a later
+explicit instruction.
