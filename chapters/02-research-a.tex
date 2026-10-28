@@ -9,13 +9,13 @@
 
 Quantile regression has become a widely used alternative to mean-based modeling in static settings. However, dynamic quantile methods and accompanying software remain comparatively limited. In Bayesian parametric quantile regression, the asymmetric Laplace (AL) likelihood has played a central role because it is linked to the check-loss function used in classical quantile regression \citep{env-yu2001bayesian,qdesn-Koenker2005} and allows convenient mixture representations for posterior computation. Nevertheless, the AL distribution can be restrictive as an error model. More flexible error distributions have been studied extensively in the Bayesian nonparametric literature \citep{exd-kottas2009bayesian,exd-reich2009flexible,exd-taddy2010bayesian}; however, the resulting methods can be computationally demanding for dynamic models and longer time series.
 
-\citet{exd-yan2025family} introduce the extended asymmetric Laplace (exAL) distribution, a parametric extension of the AL distribution that preserves many of its computational advantages while relaxing some restrictive assumptions. Their work also develops Bayesian exAL regression for static quantile models. Building on the exAL family, \citet{exd-me} developed the extended dynamic quantile linear model (exDQLM) framework for modeling time-varying quantiles, together with Markov chain Monte Carlo (MCMC) and importance-sampling variational Bayes (ISVB) inference and a transfer-function extension for lagged covariate effects. The Laplace--delta variational Bayes (LDVB) implementation considered here follows the general nonconjugate variational inference strategy of \citet{exd-wang2013nonconjugatevb}, specialized to the exAL scale--skewness block; in version 1.1.2, the default LDVB scale--skewness factor is a structured \(q(\gamma)q(\sigma\mid\gamma)\) approximation that keeps the conditional GIG scale structure explicit. Thus, the exAL distribution, the exDQLM state-space model formulation, the MCMC and ISVB algorithms in \citet{exd-me}, and the general nonconjugate variational strategy constitute the principal methodological foundations of the implementation studied here.
+\citet{exd-yan2025family} introduce the extended asymmetric Laplace (exAL) distribution, a parametric extension of the AL distribution that preserves many of its computational advantages while relaxing some restrictive assumptions. Their work also develops Bayesian exAL regression for static quantile models. Building on the exAL family, \citet{exd-me} developed the extended dynamic quantile linear model (exDQLM) for time-varying quantiles, together with Markov chain Monte Carlo (MCMC) and importance-sampling variational Bayes (ISVB) inference and a transfer-function extension for lagged covariate effects. The Laplace--delta variational Bayes (LDVB) implementation considered here follows the general nonconjugate variational inference strategy of \citet{exd-wang2013nonconjugatevb}, specialized to the exAL scale--skewness block; in version 1.1.2, the default LDVB scale--skewness factor is a structured \(q(\gamma)q(\sigma\mid\gamma)\) approximation that keeps the conditional GIG scale structure explicit. Thus, the exAL distribution, the exDQLM state-space model formulation, the MCMC and ISVB algorithms in \citet{exd-me}, and the general nonconjugate variational strategy constitute the principal methodological foundations of the implementation studied here.
 
-The contribution developed in this chapter is software-centered. The \proglang{R} package \pkg{exdqlm} turns these methodological components into an integrated system for specifying, fitting, inspecting, diagnosing, and forecasting with Bayesian dynamic and static quantile models. The package makes five main software contributions:
+The contribution developed in this chapter is software-centered. The \proglang{R} package \pkg{exdqlm} implements these methodological components for specifying, fitting, inspecting, diagnosing, and forecasting with Bayesian dynamic and static quantile models. The package makes five main software contributions:
 \begin{itemize}
 \item a composable model-construction interface for trend, seasonal, regression, and transfer-function components in Bayesian dynamic quantile state-space models;
 \item coordinated MCMC and variational inference interfaces, including scale-collapsed MCMC, LDVB, and ISVB, for dynamic and static fits;
-\item an S3 object workflow for fitted models, post-processing and forecasting objects with \code{print()}, \code{summary()}, \code{plot()}, \code{predict()}, and \code{diagnostics()} methods where appropriate;
+\item S3 interfaces for fitted models, post-processing and forecasting objects with \code{print()}, \code{summary()}, \code{plot()}, \code{predict()}, and \code{diagnostics()} methods where appropriate;
 \item package-level exAL distribution utilities, predictive scoring and calibration diagnostics, and compiled implementations of computationally intensive model-building, posterior sampling and posterior predictive operations, with \proglang{R} fallbacks where applicable; and
 \item support for static AL/exAL regression with shrinkage-prior options, together with scripts and documentation for reproducing the reported analyses.
 \end{itemize}
@@ -169,8 +169,8 @@ where $K_\nu(\cdot)$ is the modified Bessel function of the second kind.
 
 \section{Extended dynamic quantile linear models}
 \label{exd:sec:exdqlm}
-This section provides an overview of extended dynamic quantile linear models (exDQLMs) along with related posterior inference and tools for model diagnostics. The corresponding posterior targets and state augmentation are collected in Appendix~\ref{app:exdqlm-posterior}.
-\subsection{General modeling framework}
+Extended dynamic quantile linear models (exDQLMs) combine quantile-specific observation equations with Gaussian state evolution. Appendix~\ref{app:exdqlm-posterior} records the corresponding posterior targets and state augmentation.
+\subsection{Model, prior, and posterior specification}
 \subsubsection{Model formulation}
 Let \(y_t\) denote a scalar response observed at times \(t=1,\ldots,T\). For each $t$, an extended dynamic quantile linear model (exDQLM) for the $p_0$ quantile is defined by
 \begin{align}
@@ -487,10 +487,6 @@ Three real-data analyses and one simulation benchmark illustrate the package wor
 
 The package also exposes distribution-level utilities for the exAL error family: \code{dexal()}, \code{pexal()}, \code{qexal()}, and \code{rexal()} evaluate the density, distribution function, quantile function, and random generator, respectively, while  \code{get\_gamma\_bounds()} returns the admissible interval for $\gamma$ at a specified \(p_0\). These utilities are useful for simulation, prior calibration, and direct checks of the exAL distribution, but are not needed for the main fitting, forecasting, diagnostic, or synthesis workflows illustrated below. We use CrI as shorthand for credible interval in figure captions and plotting labels.
 
-We begin by loading the \pkg{exdqlm} package used for all examples.
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -500,7 +496,7 @@ We begin by loading the \pkg{exdqlm} package used for all examples.
 
 In this example, we consider the Lake Huron time series from the package \pkg{datasets}. The data are annual measurements of the level (ft) of Lake Huron from 1875 to 1972, shown in Figure \ref{exd:fig:ex1quants}. This example shows how to build a basic state-space structure, specify a prior on $\gamma$, run the MCMC algorithm, and plot estimated quantiles and forecast distributions.
 
-To estimate the dynamic distribution of the data, we consider three quantiles, $p_0=0.95,0.50,$ and $0.05$. We begin by creating the state-space model structure and the prior parameters (i.e. $\mat{F}_t,\mat{G}_t, \mat{m}_0$, and $\mat{C}_0$ discussed in Section \ref{exd:sec:exdqlm}). We choose to model the quantiles with a second order polynomial trend, which we construct with the \code{polytrendMod()} function. The initial level prior is centered at 579 ft, a rounded domain-scale value chosen before fitting rather than the sample mean, and the initial slope prior is centered at zero.
+The analysis targets $p_0=0.95,0.50,$ and $0.05$. A second-order polynomial trend, constructed with \code{polytrendMod()}, defines the state-space structure and the prior quantities $\mat{F}_t,\mat{G}_t, \mat{m}_0$, and $\mat{C}_0$ from Section~\ref{exd:sec:exdqlm}. The initial level prior is centered at 579 ft, a rounded domain-scale value chosen before fitting rather than the sample mean, and the initial slope prior is centered at zero.
 
 
 As an illustration we fix a single discount factor of $0.9$ to define the evolution covariance matrix $\mat{W}_t$.
@@ -537,7 +533,7 @@ The unrestricted median run is used only to assess whether the additional skewne
 
 
 
-The results are \code{exdqlmMCMC} objects that can be used for analysis and forecasting. First we examine the estimated quantiles with the plot method for \code{exdqlmMCMC} objects, seen in the top-left panel of Figure \ref{exd:fig:ex1quants}. This generates a plot of the data with posterior mean estimates and 95\% CrIs of the dynamic quantile. Subsequent quantiles (i.e. $p_0 = 0.50, 0.05$ in this example) can be added to the same axes by calling \code{plot()} on the fitted objects with \code{add = TRUE}.
+The fitted \code{exdqlmMCMC} objects support subsequent analysis and forecasting. The top-left panel of Figure~\ref{exd:fig:ex1quants} shows posterior mean estimates and 95\% CrIs for the three dynamic quantiles. The fitted-object \code{plot()} method places the quantiles on common axes when \code{add = TRUE}.
 
 
 \begin{figure}[!t]
@@ -547,15 +543,14 @@ The results are \code{exdqlmMCMC} objects that can be used for analysis and fore
 \label{exd:fig:ex1quants}
 \end{figure}
 
-Next, we forecast the $k=8$ step-ahead distributions starting in 1972. To do this, we first create the observational vector (\code{fFF}) and evolution matrix (\code{fGG}) that will be used in the forecast updates. In this case both are non-time-varying and identical to those used to estimate the quantile.
+The eight-step-ahead forecast distributions begin in 1972. Their updates use the observational vector \code{fFF} and evolution matrix \code{fGG}; both are time invariant and identical to those used for estimation.
 
 
-We plot the time series data in a narrower range for closer examination. Forecast objects can be created with \code{predict()} on a fitted dynamic model.
-Here we create the forecast objects first and then call \code{plot()} with \code{add = TRUE}. Notice we start the forecast at the last time index of the data, i.e. \code{start.t = length(LakeHuron)}.
+The forecast objects are obtained with \code{predict()} at the final observed time, \code{start.t = length(LakeHuron)}, and are displayed on common axes with \code{plot()} and \code{add = TRUE}.
 
 
 
-This generates a plot of the data with the forecasted quantile estimates and 95\% credible intervals (seen after 1972), along with the filtered quantile estimates and 95\% credible intervals (before 1972), for reference. Results can be seen in the top-right panel of Figure \ref{exd:fig:ex1quants}. The percentage in the CrIs can be modified with the parameter \code{cr.percent}.
+The top-right panel of Figure~\ref{exd:fig:ex1quants} shows the forecast quantile estimates and 95\% CrIs after 1972 together with the filtered estimates before 1972. The \code{cr.percent} argument controls the displayed credible level.
 
 When several quantile models are fitted separately, the package also allows their posterior predictive draws to be combined into a single coherent predictive distribution through \code{quantileSynthesis()}. Each fitted model contributes local predictive information near its target quantile, and the synthesis step interpolates across these quantile-specific draws to obtain one posterior predictive distribution. When independently fitted quantiles induce crossing, optional monotonicity corrections based on isotonic adjustment and monotone rearrangement are available \citep{exd-barlow1972,exd-chernozhukov2010}. The synthesis operates on posterior predictive draws indexed by quantile level, so the input fits need not use identical skewness restrictions. For the Lake Huron example, we combine exDQLM tail fits at \(p_0=0.05\) and \(0.95\) with the fixed-\(\gamma\) DQLM median fit \code{M50.dqlm}.
 
@@ -586,9 +581,9 @@ The second example uses the yearly Sunspot time series from the package \pkg{dat
 
 The data are yearly counts for sunspots from 1700 to 1988, shown in Figure \ref{exd:fig:ex2quant}. In this example we show how to use the \pkg{dlm} package to create the state-space model, combine blocks of a state-space model, apply the LDVB approximation through \code{exdqlmLDVB()}, perform visual model diagnostics to compare the exDQLM with the DQLM, and use those diagnostics for discount-factor selection.
 
-Upper-tail sunspot activity is a natural setting for illustrating dynamic quantile modeling of cyclic count data. We therefore model the \(0.85\) quantile in this example. Although sunspot activity is recorded as a count, we use the continuous exAL working likelihood to model its upper conditional quantile; the example is not intended as a discrete-count likelihood analysis. Again, we begin by building the state-space structure used to estimate the quantile. Here we choose to model the quantile with a first order polynomial trend component as well as a Fourier form seasonal component that incorporates a fundamental period every 11 observations (years), as well as some of its corresponding harmonics. This results in a dynamic model with a total of 9 state parameters, 1 for the first order polynomial component and 8 for the seasonal component. The \pkg{exdqlm} functions are compatible with time-invariant \code{dlm} objects from the \pkg{dlm} package. For example, we create the first order trend component with the function \code{dlmModPoly()} from the \pkg{dlm} package, then use \code{as.exdqlm()} to turn the output into an \code{exdqlm} object.
+Upper-tail sunspot activity provides an example of dynamic quantile modeling for cyclic count data. The analysis targets the \(0.85\) quantile with a continuous exAL working likelihood; it is not a discrete-count likelihood analysis. The state contains a first-order polynomial trend and a Fourier seasonal component with an 11-year fundamental period and its first four harmonics, for a total of 9 state parameters. The \pkg{exdqlm} functions accept time-invariant \code{dlm} objects: \code{dlmModPoly()} constructs the trend component, which \code{as.exdqlm()} converts to an \code{exdqlm} object.
 
-The initial level prior is centered at 50 sunspots, a rounded count-scale value chosen before fitting, with prior standard deviation 50 to keep the level weakly informative on the observed count scale. Next, we construct the seasonal component with our \code{seasMod()} function. Sunspot cycles are commonly modeled with an approximately 11-year period; we include the first four Fourier harmonics in the component.
+The initial level prior is centered at 50 sunspots, a rounded count-scale value chosen before fitting, with prior standard deviation 50 to keep the level weakly informative on the observed count scale. The \code{seasMod()} function constructs the seasonal component with the first four Fourier harmonics of the approximately 11-year sunspot cycle.
 
 To combine the two components into a single state-space structure, we add the two \code{exdqlm} objects.
 
@@ -609,7 +604,7 @@ We call the function \code{exdqlmLDVB()} to obtain the LDVB approximations. We u
 
 The fitted objects can be summarized with the \code{summary()} generic, which reports the model class, sample size, state dimension, discount factors, convergence iterations, and run time. For this dataset of length 289, the DQLM LDVB fit completes more quickly, while the corresponding exDQLM LDVB fit is more computationally demanding because the skewness parameter is estimated rather than fixed. The timing comparison in Table \ref{exd:tab:ex2bench} reports the values from the recorded benchmark setting. These runtimes are fit elapsed times stored in the returned fit objects; they are intended for within-setting comparison and should not be interpreted as machine-independent timing constants.
 
-We can visualize the differences between the two resulting dynamic quantiles with the fitted-object \code{plot()} method, shown in the lower-left panel of Figure \ref{exd:fig:ex2quant}. For clarity we limit that panel to years 1780 to 1830.
+The lower-left panel of Figure~\ref{exd:fig:ex2quant} compares the two fitted dynamic quantiles over 1780--1830 using the fitted-object \code{plot()} method.
 
 
 
@@ -655,7 +650,7 @@ To compare the fast variational approximation with posterior simulation, we fit 
 \label{exd:tab:ex2bench}
 \end{table}
 
-Table \ref{exd:tab:ex2bench} gives a compact runtime-and-diagnostic comparison. \code{print()} on the following data frame will produce the results.
+Table~\ref{exd:tab:ex2bench} gives the runtime-and-diagnostic comparison.
 
 
 
@@ -763,7 +758,7 @@ The final models are fit on January 1987 through June 2021. We use the LDVB impl
 
 
 The upper panel of Figure \ref{exd:fig:ex3quant} compares the fitted \(0.15\)
-quantiles from the three training fits over 2016--2020. We first plot the data, then call \code{plot()} with \code{add = TRUE} on the three fitted objects to draw the model fits on common axes.
+quantiles from the three training fits over 2016--2020. The fitted-object \code{plot()} method with \code{add = TRUE} draws the three model fits on common axes.
 
 
 
@@ -773,8 +768,7 @@ differences: the middle panel shows that the seasonal contribution is similar
 across models, while the lower panel separates the contemporaneous climate-index
 contribution in \code{MREG} from the accumulated transfer contribution in
 \code{MTF}. Component and state views are available from the fitted-object
-\code{plot()} method by specifying the parameter \code{type = "component"} or \code{type = "state"}, respectively. We
-begin with the combined seasonal contribution. Because the seasonal block
+\code{plot()} method by specifying the parameter \code{type = "component"} or \code{type = "state"}, respectively. The combined seasonal contribution is considered first. Because the seasonal block
 contains three harmonics, this contribution is formed from the second through
 seventh elements of the state vector. The middle panel of Figure
 \ref{exd:fig:ex3quant} shows the resulting seasonal estimates for the three models
@@ -889,7 +883,7 @@ Table \ref{exd:tab:ex3} gives a mixed in-sample diagnostic comparison. The direc
 \label{exd:tab:ex3forecastmetrics}
 \end{table}
 
-In the held-out comparison, \code{MREG} has the smallest check loss and CRPS, followed by the no-covariate model \code{M0}; \code{MTF} has the largest value for both metrics. Thus, selecting the transfer parameter \(\lambda\) using training-period PPLC does not make the transfer-function specification the best held-out forecasting model in this example. The purpose of \code{MTF} here is to demonstrate how persistent lagged covariate effects can be specified, inspected, and forecast using the package, rather than to claim predictive superiority over direct regression for these data.
+In the held-out comparison, \code{MREG} has the smallest check loss and CRPS, followed by the no-covariate model \code{M0}; \code{MTF} has the largest value for both metrics. Thus, selecting the transfer parameter \(\lambda\) using training-period PPLC does not make the transfer-function specification the best held-out forecasting model in this example. The \code{MTF} fit illustrates how persistent lagged covariate effects can be specified, inspected, and forecast using the package; it does not establish predictive superiority over direct regression for these data.
 
 \begin{figure}[!htb]
 \centering

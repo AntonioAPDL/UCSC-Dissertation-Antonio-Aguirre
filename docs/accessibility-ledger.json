@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-26",
+  "recorded_at": "2026-10-28",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
@@ -301,25 +301,25 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
       "figure_label": "rqr2026:fig:tolerance-validation-primary",
-      "alt_text": "Content-attainment by sample size and target content. Intervals not produced are counted as nonattainment. Vertical intervals in the content-attainment panels show the range across distributional scenarios, and the axis is zoomed to 0.85 -- 1.00 . Dashed reference lines mark nominal tolerance confidence 0.95 .",
+      "alt_text": "Four panels compare independent-sample content-attainment rates at n=50, 100, 500, and 1000 for the feasible target contents. Green, pink, and black vertical segments give the ranges across the eight simulation distributions for MTI, Young--Mathew, and Wilks, respectively. The vertical scale runs from 0.85 to 1.00, and a horizontal dashed line marks the nominal tolerance confidence 0.95. Wilks is at or near 1.00 in several cells; the MTI and Young--Mathew ranges lie closer to 0.95.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
       "figure_label": "rqr2026:fig:tolerance-validation-width-ranges",
-      "alt_text": "Interval-width ranges by distribution. Horizontal intervals show empirical 2.5 percent --97.5 percent ranges of interval lengths within each distribution, sample-size/content cell, and method. Crosses mark the mean interval width across the 1000 replications for that method. Dashed gray markers show the corresponding population shortest content- c interval widths under the known simulation laws. The horizontal axis is logarithmic to display light-tailed, heavy-tailed, and strongly skewed cases in one figure; the values remain raw interval lengths.",
+      "alt_text": "Nine panels compare interval widths for the feasible sample-size and target-content cells. Within each panel, rows correspond to the Gaussian, Student t(3), exponential, asymmetric-Laplace, two-piece-Normal, Beta, Gamma, and log-normal simulation laws. Green, pink, and black horizontal segments show empirical 2.5--97.5 percent width ranges for MTI, Young--Mathew, and Wilks; crosses mark their mean widths, and short dashed gray markers give the known population shortest-interval widths. The logarithmic horizontal scale retains raw interval lengths and shows that relative width varies substantially by distribution and design cell.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
       "figure_label": "rqr2026:fig:pharma-application-primary",
-      "alt_text": "Interval placement and held-out comparisons for the reported tensile metric. Panel A shows the empirical distribution of all batches and actual fitted intervals from split , selected by the prespecified median-distance rule. The interval rows below the CDF are positioned for display. Panels B and C show paired width and held-out-content differences, MTI minus each benchmark, with crosses marking paired medians. Panel D shows median tail omission, interquartile ranges (thick segments), and empirical 95 percent ranges (thin segments) across random splits.",
+      "alt_text": "Four panels summarize the reported tensile metric for 187 batches and 1000 paired random splits. Panel A shows the empirical CDF and the MTI, Young--Mathew, and Wilks intervals from representative split 665; MTI is left-shifted and narrower than the two benchmarks in that split. Panels B and C plot held-out-content difference against width difference, each defined as MTI minus Young--Mathew or Wilks; most width differences are negative, and crosses mark the paired medians. Panel D shows lower-tail omission with open markers and upper-tail omission with filled markers, together with interquartile and empirical 95 percent ranges for each method.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "tables/ch04-qdesn/independent_forecast_calibration_figure_v1.tex",
@@ -376,9 +376,9 @@
       "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
       "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_forecast_dgp_acrps.pdf",
       "figure_label": "qdesn2026:fig:joint-qdesn-pure-desn-v2-forecast-acrps",
-      "alt_text": "Oracle finite-grid in the multiquantile study. Points are posterior means and segments are equal-tailed 95 percent intervals for the score averaged over the common forecast pairs, conditional on each model's averaged future predictors. Lower scores are better. Annotations c give raw adjacent-level crossing percentages for posterior-mean forecast grids. Q--DESN fits levels independently; MQ--DESN estimates their coefficients jointly. The scored grids use the monotone transformation specified in the integrated technical material.",
+      "alt_text": "Eight panels compare oracle finite-grid average CRPS under asymmetric-Laplace tails, Gaussian-mixture, Laplace, nonlinear-reservoir, Gaussian, persistent-heavy-tail, regime-shift, and Student-t location--scale mechanisms. Each panel has four rows: MQ--DESN and independently fitted Q--DESN under AL and exAL. Points are posterior means and horizontal segments are equal-tailed 95 percent intervals for the score, with smaller values preferred. Filled symbols denote MQ--DESN and open symbols Q--DESN; blue circles denote AL and brown triangles exAL. Right-side annotations give raw adjacent-level crossing percentages before the specified monotone scoring transformation.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_single_quantile_mcmc_fit_figure_display.tex",

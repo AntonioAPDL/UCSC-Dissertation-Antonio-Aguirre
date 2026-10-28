@@ -6,8 +6,8 @@
 
 The four research chapters approach distributional inference from different
 directions. Chapter~\ref{ch:research-a} makes dynamic quantile methodology
-usable through a software and computational workflow. Chapter
-\ref{ch:research-b} uses that framework to correct and synthesize heterogeneous
+usable through a software implementation and a coherent analysis sequence. Chapter
+\ref{ch:research-b} uses that model to correct and synthesize heterogeneous
 hydrologic products. Chapter~\ref{ch:research-c} replaces linear state
 evolution for the quantile location with fixed nonlinear recurrent features.
 Chapter~\ref{ch:research-d} changes the inferential object from pointwise
@@ -77,10 +77,10 @@ generalized-posterior computation retain different inferential meanings.
 \section{What the four projects establish}
 \label{sec:synthesis-findings}
 
-\subsection{From methodology to a usable dynamic quantile workflow}
+\subsection{From methodology to usable dynamic quantile analysis}
 
 Chapter~\ref{ch:research-a} shows how exAL and exDQLM foundations can be
-organized as a coherent analysis workflow. The \pkg{exdqlm} interface connects
+organized as a coherent analysis. The \pkg{exdqlm} interface connects
 model construction, posterior computation, state and component summaries,
 forecasting, calibration diagnostics, predictive scoring, and post-fit
 quantile synthesis. Its examples establish functionality across dynamic and
@@ -147,7 +147,7 @@ covers 21 of 28 horizons; MQ--AL covers 22 of 28. The design also conditions on
 realized future PRISM and ERA5 weather. The PriceFM comparison contains 114
 matched region--fold cases: Q--DESN has lower average quantile loss in 54 and
 PriceFM in 60, with a small aggregate difference favoring PriceFM. These
-results demonstrate behavior under the recorded protocols without supporting a
+results describe behavior under the recorded protocols without supporting a
 broad ranking from two bounded applications.
 
 \subsection{Fixed-content placement and tolerance inference}
@@ -286,7 +286,7 @@ and what a subsequent study would need to establish.
 \section{Directions for future research}
 \label{sec:synthesis-future}
 
-One direction is a joint dynamic framework that combines source-aware
+One direction is a joint dynamic model that combines source-aware
 discrepancy correction, nonlinear recurrent features, and coherent dependence
 across quantile levels. Such a model should be judged against simpler separate-
 quantile fits, include hard or probabilistic monotonicity controls, and report

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-27",
+  "recorded_at": "2026-10-28",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -17,7 +17,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "d1db508ac8452404e709b6318a940b0a698ce184f2fdf5e9bb2b387af55ad435",
+      "current_sha256": "37b93eb9355274ff2eb548c50604e58dd76b6edc60a446527ad3ddcbf8252929",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -26,13 +26,14 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-FINAL-DISSERTATION-POLISH-20261028"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "ad46def55684dbc63e4050e59a64b9287785d43ef2bde126453d3d929fee72f7",
+      "current_sha256": "c632889f8267c223a6e5fca5c05e93b3de65d2833c1babc71aed6d699cd42f79",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -40,13 +41,14 @@
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-FINAL-DISSERTATION-POLISH-20261028"
       ]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "afcbc5948f862fb50283dad92da41c4c5a32117fb8a02008954a30a742140bef",
+      "current_sha256": "ed6424fa9a93441a063fdfe45bebe2469af75f67abb827005c629d5a42bba9f3",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -56,13 +58,14 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-FINAL-DISSERTATION-POLISH-20261028"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "641a4779655117ed877f4a9811ad0ce62b669cb7c7a99d080e03c47c86a01493",
+      "current_sha256": "b8badcb08beabbdd6960a06cf5957e9e35bcfc3e0d5f5060851ee5acae152c15",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -70,7 +73,8 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-FINAL-DISSERTATION-POLISH-20261028"
       ]
     },
     {
@@ -658,6 +662,23 @@
       "summary": "Revises the article-scale appendix layer into five selective technical records while preserving central proofs, nonstandard posterior calculations, claim-changing sensitivity evidence, negative results, and precise body-to-appendix recovery links.",
       "evidence": "docs/essential-appendix-revision-plan.md; docs/appendix-essentiality-map.json; docs/appendix-essentiality-review.md",
       "validation": "Appendix-sized fast, chapter, and rendered-review gates followed by a timestamped release and immutable source-blob validation."
+    },
+    {
+      "id": "REV-FINAL-DISSERTATION-POLISH-20261028",
+      "date": "2026-10-28",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "docs/accessibility-ledger.json"
+      ],
+      "summary": "Removes repeated article-style chapter overviews and redundant computational bridge sections, replaces tutorial and generic implementation phrasing with direct statistical exposition, and confirms source descriptions for four active figures by visual review.",
+      "evidence": "docs/final-dissertation-polish-plan.md; docs/accessibility-ledger.json",
+      "validation": "Fast, release, immutable source-blob, TeX-log, PDF metadata, and rendered-page checks are required before merge."
     }
   ]
 }
