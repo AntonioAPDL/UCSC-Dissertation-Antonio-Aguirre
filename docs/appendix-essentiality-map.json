@@ -389,49 +389,21 @@
       "appendices/a-shared-conventions.tex::heading::section::scores-and-empirical-comparisons::occurrence::1",
       "appendices/a-shared-conventions.tex::heading::section::targets-and-update-mechanisms::occurrence::1",
       "appendices/a-shared-conventions.tex::heading::section::uncertainty-language::occurrence::1",
-      "appendices/a-shared-conventions.tex::heading::section::where-the-complete-details-reside::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::section::forecasting-diagnostics-and-posterior-predictive-synthesis::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::section::ldvb-scale-skewness-implementation-for-exal-models::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::section::nonconjugate-vb-and-computational-details::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::section::posterior-targets-and-model-blocks::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::section::static-regression-with-the-nishimura-suchard-regularized-horseshoe::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::diagnostics::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::dynamic-dqlm-under-the-al-likelihood::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::dynamic-exdqlm-under-the-exal-likelihood::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::forecasting::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::posterior-predictive-synthesis::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::static-al-and-exal-regression::occurrence::1",
-      "appendices/b-exdqlm-technical.tex::heading::subsection::transfer-function-state-augmentation::occurrence::1",
+      "appendices/b-exdqlm-technical.tex::heading::section::forecasting-and-posterior-predictive-synthesis::occurrence::1",
+      "appendices/b-exdqlm-technical.tex::heading::section::posterior-targets-and-state-augmentation::occurrence::1",
+      "appendices/b-exdqlm-technical.tex::heading::section::regularized-horseshoe-block::occurrence::1",
+      "appendices/b-exdqlm-technical.tex::heading::section::structured-scale-skewness-approximation::occurrence::1",
       "appendices/b-exdqlm-technical.tex::label::exd:alg:predictive-synthesis",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:crps_estimator",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:delta_generic",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_dqlm_hierarchy",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_dqlm_joint",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_elbo",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_joint",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_kappa",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_ld_objective",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_ld_transform",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_mf",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_obs",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_vb_precision",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_vb_pseudo",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_vb_vs",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:entropy_ld",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:forecast_postpred",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:ld_gaussian",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:pit_plugin",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:pplc_estimator",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:rhs_ns_elbo",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:rhs_ns_hierarchy",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:rhs_ns_mcmc",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:rhs_ns_precision",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:rhs_ns_vb_updates",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:static_beta_ridge",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_hierarchy",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_mf",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_target",
-      "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_vb_beta",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:tf_aug_state",
       "appendices/c-hydrology-technical.tex::heading::section::laplace-delta-variational-approximation::occurrence::1",
       "appendices/c-hydrology-technical.tex::heading::section::source-indexed-mcmc::occurrence::1",
@@ -729,7 +701,9 @@
       "question_context": "uncertainty. Appendices~\\ref{app:exdqlm-technical}--",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-technical"
     },
     {
       "id": "APPX-BRIDGE-002",
@@ -739,7 +713,9 @@
       "question_context": "\\ref{app:mti-technical} preserve the complete project-specific derivations,",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:mti-technical"
     },
     {
       "id": "APPX-BRIDGE-003",
@@ -749,7 +725,9 @@
       "question_context": "The technical material in Appendix~\\ref{app:exdqlm-technical} connects the package interface with the",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-technical"
     },
     {
       "id": "APPX-BRIDGE-004",
@@ -759,7 +737,9 @@
       "question_context": "This section provides an overview of extended dynamic quantile linear models (exDQLMs) along with related posterior inference and tools for model diagnostics. Additional implementation details and posterior derivations are provided in Appendix~\\ref{app:exdqlm-technical}.",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-technical"
     },
     {
       "id": "APPX-BRIDGE-005",
@@ -769,7 +749,9 @@
       "question_context": "and convergence summaries. Appendix~\\ref{app:exdqlm-technical} describes the",
       "action": "RETARGET",
       "target_label": "app:exdqlm-ldvb",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-ldvb"
     },
     {
       "id": "APPX-BRIDGE-006",
@@ -779,7 +761,9 @@
       "question_context": "Appendix~\\ref{app:exdqlm-technical} gives the complete posterior blocks,",
       "action": "RETARGET",
       "target_label": "app:exdqlm-posterior",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-posterior"
     },
     {
       "id": "APPX-BRIDGE-007",
@@ -789,7 +773,9 @@
       "question_context": "Several development directions follow from these limitations: multivariate-output dynamic quantile models that represent cross-series dependence through a modeled correlation matrix for related time series; further assessment of variational approximation error for the nonconjugate \\((\\gamma,\\sigma)\\) skewness--scale block; nonlinear dynamic quantile modeling beyond the linear state-space form used here; and joint or regularized fitting across quantile levels. The chapter gives the statistical argument and principal evidence, while Appendix~\\ref{app:exdqlm-technical} records the posterior and package-specific computational details needed to interpret the procedures.",
       "action": "RETARGET",
       "target_label": "app:exdqlm-synthesis",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_AB",
+      "final_location": "app:exdqlm-synthesis"
     },
     {
       "id": "APPX-BRIDGE-008",
@@ -1354,8 +1340,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-002",
@@ -1403,8 +1393,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-003",
@@ -1452,8 +1446,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-004",
@@ -1501,8 +1499,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-005",
@@ -1550,8 +1552,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-006",
@@ -1577,7 +1583,7 @@
       "body_references": [],
       "question": "What technical support from this unit is necessary for the corresponding chapter claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "Navigation belongs in the introduction and topical chapter bridges.",
       "target": {
         "path": "appendices/a-shared-conventions.tex",
@@ -1599,8 +1605,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+        "validation": "Gate E chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-007",
@@ -1644,12 +1654,18 @@
         "no_loss_location": "app:b-technical"
       },
       "coverage_keys": [
-        "appendices/b-exdqlm-technical.tex::heading::section::forecasting-diagnostics-and-posterior-predictive-synthesis::occurrence::1"
+        "appendices/b-exdqlm-technical.tex::heading::section::forecasting-diagnostics-and-posterior-predictive-synthesis::occurrence::1",
+        "appendices/b-exdqlm-technical.tex::heading::section::regularized-horseshoe-block::occurrence::1",
+        "appendices/b-exdqlm-technical.tex::heading::section::structured-scale-skewness-approximation::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-008",
@@ -1693,12 +1709,17 @@
         "no_loss_location": "app:exdqlm-posterior"
       },
       "coverage_keys": [
-        "appendices/b-exdqlm-technical.tex::heading::section::nonconjugate-vb-and-computational-details::occurrence::1"
+        "appendices/b-exdqlm-technical.tex::heading::section::nonconjugate-vb-and-computational-details::occurrence::1",
+        "appendices/b-exdqlm-technical.tex::heading::section::posterior-targets-and-state-augmentation::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-009",
@@ -1746,8 +1767,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-010",
@@ -1795,8 +1820,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-011",
@@ -1844,8 +1873,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-012",
@@ -1893,8 +1926,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-013",
@@ -1944,8 +1981,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-014",
@@ -1993,8 +2034,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-015",
@@ -2038,12 +2083,17 @@
         "no_loss_location": "app:exdqlm-synthesis"
       },
       "coverage_keys": [
-        "appendices/b-exdqlm-technical.tex::heading::section::posterior-targets-and-model-blocks::occurrence::1"
+        "appendices/b-exdqlm-technical.tex::heading::section::posterior-targets-and-model-blocks::occurrence::1",
+        "appendices/b-exdqlm-technical.tex::heading::section::forecasting-and-posterior-predictive-synthesis::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-016",
@@ -2091,8 +2141,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-017",
@@ -2140,8 +2194,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-018",
@@ -2189,8 +2247,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-019",
@@ -2240,8 +2302,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-020",
@@ -2269,7 +2335,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2291,8 +2357,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-021",
@@ -2320,7 +2390,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2342,8 +2412,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-022",
@@ -2393,8 +2467,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-023",
@@ -2422,7 +2500,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2444,8 +2522,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-024",
@@ -2473,7 +2555,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2495,8 +2577,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-025",
@@ -2546,8 +2632,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-026",
@@ -2597,8 +2687,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-027",
@@ -2626,7 +2720,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2648,8 +2742,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-028",
@@ -2677,7 +2775,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2699,8 +2797,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-029",
@@ -2750,8 +2852,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-030",
@@ -2801,8 +2907,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-031",
@@ -2830,7 +2940,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -2852,8 +2962,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-032",
@@ -2903,8 +3017,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-033",
@@ -2954,8 +3072,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-034",
@@ -2983,7 +3105,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3005,8 +3127,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-035",
@@ -3056,8 +3182,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-036",
@@ -3085,7 +3215,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3107,8 +3237,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-037",
@@ -3136,7 +3270,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3158,8 +3292,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-038",
@@ -3187,7 +3325,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3209,8 +3347,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-039",
@@ -3238,7 +3380,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3260,8 +3402,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-040",
@@ -3311,8 +3457,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-041",
@@ -3340,7 +3490,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3362,8 +3512,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-042",
@@ -3413,8 +3567,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-043",
@@ -3442,7 +3600,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3464,8 +3622,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-044",
@@ -3493,7 +3655,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3515,8 +3677,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-045",
@@ -3544,7 +3710,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3566,8 +3732,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-046",
@@ -3595,7 +3765,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3617,8 +3787,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-047",
@@ -3646,7 +3820,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The inferential role is retained once; package-maintainer and repeated standard details are unnecessary.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3668,8 +3842,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-048",
@@ -3697,7 +3875,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The structured scale--skewness approximation and its limits are nonstandard and claim-bearing.",
       "target": {
         "path": "appendices/b-exdqlm-technical.tex",
@@ -3719,8 +3897,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-049",
@@ -3770,8 +3952,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_AB",
+        "final_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+        "validation": "Gate E chapter validation and rendered review"
+      }
     },
     {
       "id": "APPX-ESS-050",

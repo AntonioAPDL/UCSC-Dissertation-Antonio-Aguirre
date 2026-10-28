@@ -17,7 +17,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "8ec8c45251c7bf0bf1f9ca6192d2c45f089ca8f9ce310d211faf9a434374c01a",
+      "current_sha256": "d1db508ac8452404e709b6318a940b0a698ce184f2fdf5e9bb2b387af55ad435",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -25,7 +25,8 @@
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
@@ -73,7 +74,7 @@
     {
       "path": "appendices/a-shared-conventions.tex",
       "baseline_sha256": null,
-      "current_sha256": "d784a1b5a5a448612c3d8607fab9e0ec7a0deb4a82f0ee264c395d7ab7c327d7",
+      "current_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/01-introduction.tex",
@@ -83,13 +84,14 @@
         "chapters/05-research-d.tex"
       ],
       "revision_ids": [
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "59a66c7c8c72464cb66a6e159cb319e4cc5468beb4c044512d9d0b1d77acb96f",
+      "current_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
@@ -97,7 +99,8 @@
       "revision_ids": [
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {

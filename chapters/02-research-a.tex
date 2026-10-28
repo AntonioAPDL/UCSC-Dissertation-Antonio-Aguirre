@@ -171,7 +171,7 @@ where $K_\nu(\cdot)$ is the modified Bessel function of the second kind.
 
 \section{Extended dynamic quantile linear models}
 \label{exd:sec:exdqlm}
-This section provides an overview of extended dynamic quantile linear models (exDQLMs) along with related posterior inference and tools for model diagnostics. Additional implementation details and posterior derivations are provided in Appendix~\ref{app:exdqlm-technical}.
+This section provides an overview of extended dynamic quantile linear models (exDQLMs) along with related posterior inference and tools for model diagnostics. The corresponding posterior targets and state augmentation are collected in Appendix~\ref{app:exdqlm-posterior}.
 \subsection{General modeling framework}
 \subsubsection{Model formulation}
 Let \(y_t\) denote a scalar response observed at times \(t=1,\ldots,T\). For each $t$, an extended dynamic quantile linear model (exDQLM) for the $p_0$ quantile is defined by
@@ -472,7 +472,7 @@ are restricted in the recorded benchmarks so that timing and stochastic
 variation have a stated reference condition.
 
 The variational procedures record the evidence lower bound, scale, skewness,
-and convergence summaries. Appendix~\ref{app:exdqlm-technical} describes the
+and convergence summaries. Appendix~\ref{app:exdqlm-ldvb} describes the
 closed-form, structured scale--skewness, and earlier Laplace--delta components,
 together with the posterior blocks and numerical controls needed to interpret
 them. The analyses reported here used \proglang{R} 4.6.0 and
@@ -490,9 +490,9 @@ are formed from posterior state and parameter uncertainty and are evaluated
 with calibration diagnostics and proper scores.  These computational choices
 are part of the method rather than interchangeable software settings.
 
-Appendix~\ref{app:exdqlm-technical} gives the complete posterior blocks,
-nonconjugate VB construction, LDVB scale--skewness implementation,
-regularized-horseshoe updates, and posterior-predictive synthesis algorithm.
+Appendices~\ref{app:exdqlm-posterior}--\ref{app:exdqlm-synthesis} give the
+posterior blocks, nonconjugate scale--skewness construction,
+regularized-horseshoe update, and posterior-predictive synthesis algorithm.
 The examples below retain the primary empirical evidence and the limitations
 needed to interpret those details.
 
@@ -1007,4 +1007,4 @@ The examples illustrate how these interfaces are used in analysis. Lake Huron us
 
 The examples also delineate the current scope of the package. Dynamic models are fitted one quantile level at a time. \code{quantileSynthesis()} combines predictive draws after separate fits and applies monotonicity adjustments when needed; it is not a joint posterior model over multiple quantile levels. LDVB returns samples from fitted variational factors rather than from the exact posterior target, so MCMC remains the reference calculation when posterior tail summaries, interval widths, or approximation error are central. In transfer-function models, lag propagation is controlled by a fixed or grid-selected \(\lambda\); the current implementation does not estimate input-specific lag-decay rates internally. Runtime results are elapsed fitting times under the stated benchmark settings and should be read alongside predictive and calibration diagnostics.
 
-Several development directions follow from these limitations: multivariate-output dynamic quantile models that represent cross-series dependence through a modeled correlation matrix for related time series; further assessment of variational approximation error for the nonconjugate \((\gamma,\sigma)\) skewness--scale block; nonlinear dynamic quantile modeling beyond the linear state-space form used here; and joint or regularized fitting across quantile levels. The chapter gives the statistical argument and principal evidence, while Appendix~\ref{app:exdqlm-technical} records the posterior and package-specific computational details needed to interpret the procedures.
+Several development directions follow from these limitations: multivariate-output dynamic quantile models that represent cross-series dependence through a modeled correlation matrix for related time series; further assessment of variational approximation error for the nonconjugate \((\gamma,\sigma)\) skewness--scale block; nonlinear dynamic quantile modeling beyond the linear state-space form used here; and joint or regularized fitting across quantile levels. The chapter gives the statistical argument and principal evidence, while Appendices~\ref{app:exdqlm-posterior}--\ref{app:exdqlm-synthesis} record the posterior and computational details needed to interpret the procedures.
