@@ -1,5 +1,29 @@
 # Project status
 
+## 2026-10-28 Dissertation Reading Committee confirmed
+
+The official revised Dissertation Reading Committee was approved by Graduate
+Division and updated in AIS on 2026-10-09; Statistics Graduate Advising
+forwarded the confirmation on 2026-10-12. The approved nomination lists Raquel
+Prado first as chair, followed by Bruno Sansó, Paul Parker, and Athanasios
+Kottas. `metadata.tex` and the draft title-page committee block now use those
+names and that confirmed chair role.
+
+This administrative update does not assert that the dissertation itself has
+been approved. The official dissertation title, conferral month/year, current
+dean name and title, signatures, acknowledgments, ORCID, reuse permissions, and
+tagged-PDF accessibility review remain open. `\StarterDrafttrue` therefore
+remains active.
+
+The release gate passed all 18 tests and all 102 immutable source-blob checks.
+The accepted ignored artifact is
+`build/release-20261028T192313Z/main.pdf`: 254 US-Letter pages, 16,491,666
+bytes, SHA-256
+`00b19e103360973e89ab490fdc7dae7849c6078fe0c9c269d50332f55cbeb2cf`.
+It has zero overfull boxes or blocking diagnostics. The title page was
+rasterized and inspected; the four committee names, chair designation, accent,
+rules, margins, and unresolved-field notice are legible and correctly placed.
+
 ## 2026-10-28 final comprehensive polish released and synchronized
 
 The final reader-facing polish is implemented on
@@ -31,7 +55,7 @@ It has zero overfull boxes or blocking diagnostics, 25 underfull-box notices,
 32 embedded font rows, and no Type 3 font. Twenty-one representative release
 pages passed rendered inspection. The PDF remains untagged.
 
-The official title, committee/dean/date fields, acknowledgments, ORCID,
+The official title, dean/date fields, acknowledgments, ORCID,
 granular candidate/coauthor roles, material-specific reuse permission, and a
 modern tagged-PDF accessibility check remain open. The feature branch was
 fast-forwarded into `main` and pushed without rewriting history. The initial

@@ -94,6 +94,20 @@
         "pdf_version": "1.7",
         "tracked": false
       }
+    },
+    "committee_metadata_update": {
+      "state": "RELEASE_VALIDATED_GITHUB_HANDOFF_PENDING",
+      "authority": "Graduate Division-approved revised Dissertation Reading Committee recorded in AIS",
+      "approval_date": "2026-10-09",
+      "confirmation_forwarded": "2026-10-12",
+      "release": {
+        "path": "build/release-20261028T192313Z/main.pdf",
+        "sha256": "00b19e103360973e89ab490fdc7dae7849c6078fe0c9c269d50332f55cbeb2cf",
+        "pages": 254,
+        "bytes": 16491666,
+        "pdf_version": "1.7",
+        "tracked": false
+      }
     }
   },
   "author_direction": {
@@ -101,6 +115,19 @@
     "official_long_name": "Jose Antonio Aguirre Perez de Leon",
     "primary_scholarly_name": "Antonio de Leon",
     "cross_source_identity_note": "Antonio De Leon in manuscripts and Antonio Aguirre in package metadata refer to the dissertation candidate",
+    "approved_dissertation_reading_committee": {
+      "approval_date": "2026-10-09",
+      "recorded_in": "AIS",
+      "confirmation_forwarded": "2026-10-12",
+      "chair": "Raquel Prado",
+      "members": [
+        "Raquel Prado",
+        "Bruno Sansó",
+        "Paul Parker",
+        "Athanasios Kottas"
+      ],
+      "boundary": "Committee appointment is approved; dissertation approval, title, conferral date, dean wording, and signatures remain unresolved."
+    },
     "working_architecture": [
       "exdqlm software and computational workflow",
       "Environmetrics hydrologic correction and predictive synthesis",

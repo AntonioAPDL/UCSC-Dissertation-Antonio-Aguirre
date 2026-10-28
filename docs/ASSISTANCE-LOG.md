@@ -315,3 +315,15 @@ After every release gate passed, the focused branch was fast-forwarded into
 `main` and pushed without force; local, tracking, and directly queried GitHub
 branch tips were equal with zero divergence. No Overleaf pull or build was
 performed.
+
+2026-10-28: At the author's request, AI assistance searched the connected
+Gmail account for the authoritative Dissertation Reading Committee record. It
+distinguished the current Fall 2026 committee from the older qualifying-exam
+committee, checked the submitted nomination, and verified the Graduate
+Division message stating that the revised committee was approved and updated
+in AIS on 2026-10-09. The thesis metadata now lists Raquel Prado as chair,
+followed by Bruno Sansó, Paul Parker, and Athanasios Kottas. The draft title
+page identifies these names as the Dissertation Reading Committee without
+asserting that the dissertation itself is approved. No private email address,
+student identifier, signature, or attached administrative form was added to
+the repository.

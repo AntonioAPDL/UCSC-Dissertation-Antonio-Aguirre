@@ -1,5 +1,36 @@
 # Validation record
 
+## 2026-10-28 approved-committee metadata release
+
+The Dissertation Reading Committee metadata update was validated from a fresh
+timestamped release directory against the retained current-source audit
+clones. The gate passed all 18 tests, rechecked all 102 immutable imported Git
+blobs, resolved all 116 cited keys, and retained the validated graph of 43
+active TeX files, 257 active labels, six migration records, and 30 active
+visual records.
+
+The accepted ignored artifact is
+`build/release-20261028T192313Z/main.pdf`: 254 US-Letter pages, 16,491,666
+bytes, PDF 1.7, SHA-256
+`00b19e103360973e89ab490fdc7dae7849c6078fe0c9c269d50332f55cbeb2cf`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. The PDF
+remains searchable, unencrypted, and untagged.
+
+The title page was extracted and rasterized at 150 dpi. Direct inspection
+confirmed the official long candidate name and the committee block: Raquel
+Prado, Chair; Bruno Sansó; Paul Parker; and Athanasios Kottas. The accent,
+signature rules, margins, line spacing, and unresolved-field notice are
+legible, with no clipping or collision. The page identifies an approved
+Dissertation Reading Committee but does not assert that the dissertation has
+been approved. The title, conferral date, dean fields, and signatures remain
+explicit placeholders.
+
+The private administrative messages and nomination attachment used to verify
+the committee were not copied into the repository. This release records only
+the approved names, role, approval dates, and the boundary between committee
+appointment and dissertation approval.
+
 ## 2026-10-28 final comprehensive polish release
 
 The final dissertation polish was validated from a new timestamped output

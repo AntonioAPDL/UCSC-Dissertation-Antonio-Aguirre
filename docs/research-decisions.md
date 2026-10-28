@@ -66,6 +66,23 @@ Author-supplied decisions:
   bibliographic spellings where necessary for accurate citation.
 - ORCID: **PENDING**.
 
+## G2 — approved Dissertation Reading Committee
+
+Graduate Division approved the revised Dissertation Reading Committee and
+updated it in AIS on 2026-10-09. Statistics Graduate Advising forwarded that
+confirmation on 2026-10-12. The submitted nomination and accompanying advising
+record establish the following order and role:
+
+1. Raquel Prado, Chair;
+2. Bruno Sansó;
+3. Paul Parker; and
+4. Athanasios Kottas.
+
+This resolves committee membership and the chair designation for the current
+draft. It does not constitute approval of the dissertation, settle the final
+title or conferral date, identify the current dean/signature wording, or resolve
+the separate substantive judgment about how the research chapters count.
+
 ## G2 — documented collaborators and project contributions
 
 The following statements come directly from author lists, correspondence or

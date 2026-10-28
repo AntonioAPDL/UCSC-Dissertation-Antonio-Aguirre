@@ -11,7 +11,7 @@ the complete rule-to-check mapping readable.
 | ID / topic | Rule and applicability | Authority | Source / locator |
 |---|---|---|---|
 | A01 Degree wording | PhD field is Statistical Science; confirm candidate record. | program requirement | [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/); Program title; G1 pp. 5-6 |
-| A02 Committee/cohort | 2021 and current coadvisor committee-size clauses differ; use approved appointment and applicable ruling. | unresolved | [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/); Reading Committee; compare P1 same section |
+| A02 Committee/cohort | Use the committee appointment approved by Graduate Division and recorded in AIS. | approved candidate record | Graduate Division approval dated 2026-10-09, forwarded by Statistics Graduate Advising 2026-10-12; approved nomination form |
 | A03 Research chapters | At least three journal-suitable chapters is stated with should; accepted papers are not specified. | program requirement (stated expectation: should) | [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/); Dissertation; P2 same section |
 | A04 Committee lead time | Completed dissertation must reach reading committee at least one month before defense. | program requirement | [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/); Dissertation; P2 same section |
 | A05 Defense | Public presentation followed by private examination. Announcement lead time not verified. | program requirement / unresolved logistics | [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/); Dissertation |
@@ -19,7 +19,7 @@ the complete rule-to-check mapping readable.
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
 | A01 | metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE | Compare MyUCSC and approved title page | Program verified; personal record unresolved |
-| A02 | Four visible illustrative slots; no roles assumed | Program/Graduate Division confirmation | Open; no committee approved by this project |
+| A02 | Four confirmed committee names; Raquel Prado listed first as chair | Compare metadata and title-page block with approved nomination | Verified against the Graduate Division-approved revised committee |
 | A03 | Four substantive project chapters, an integrative introduction and synthesis, and connected technical appendices | Advisor/program assessment of independent contributions and counting | Program text verified; four substantive project chapters implemented; committee counting judgment pending |
 | A04 | No LaTeX change; completion plan | Dated delivery of complete version relative to confirmed D | Rule verified; defense date unresolved |
 | A05 | No LaTeX change | Program scheduling and current forms | Format verified; dates/announcement open |
@@ -78,7 +78,7 @@ the complete rule-to-check mapping readable.
 |---|---|---|---|
 | F01 | Explicit main.tex sequence; unused optional sections absent | Compare PDF sequence and source root | Implemented |
 | F02 | pagenumbering roman; empty first two; Arabic reset before chapter 1 | PDF labels, extracted footer numbers and visual review | Implemented; tested |
-| F03 | Adapted integrated title block; starter does not assert approval | Current sample and confirmed committee comparison | Structure demonstrated; metadata/approval open |
+| F03 | Adapted integrated title block with confirmed reading committee; starter does not assert dissertation approval | Current sample, confirmed committee, and final approval comparison | Committee metadata verified; dissertation title and approval remain open |
 | F04 | Central placeholders; planned Fall would use December only after confirmation | Student record and conferral term | Unresolved personal fields |
 | F05 | Dean placeholders; no signature images | Graduate Division current instructions | Open; historical names deliberately not copied |
 | F06 | Blank page ii, no printed number | PDF second page and numbering | Implemented; notice decision remains author choice |
