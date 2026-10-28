@@ -117,7 +117,8 @@
       "figure_label": "rqr2026:fig:supp-loss-geometry",
       "alt_text": "MPI loss geometry and the fixed midpoint tilt. For c=0.80 , m=0 , and h=1 , the residual product is negative exactly inside the interval. The half-width score contracts h for covered observations and expands it for misses. A fixed adds a constant shift to the midpoint score but leaves the half-width score unchanged. These plots use the strict convention (e<0) : filled endpoint marks show the score at y= 1 , while open marks show the one-sided inside limits. These are deterministic pointwise score calculations, not fitted results.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "AUTHOR_REVIEW_REQUIRED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/e-mti-technical.tex",
@@ -125,7 +126,8 @@
       "figure_label": "rqr2026:fig:supp-tolerance-population-shortest",
       "alt_text": "Population shortest-content intervals for the simulation distributions. Horizontal intervals show the shortest population content- c intervals for the centered and scaled simulation laws. The figure supplies the width benchmarks used to interpret the empirical width ranges in the main article.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "AUTHOR_REVIEW_REQUIRED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/e-mti-technical.tex",
@@ -133,7 +135,7 @@
       "figure_label": "rqr2026:fig:supp-pharma-rsd",
       "alt_text": "Interval placement and held-out comparisons for weight RSD. The panels follow the main application figure. The representative split is selected by the same median-distance rule. Thick and thin tail-omission segments show interquartile and empirical 95 percent ranges, with median markers. The response is strongly right-skewed, but an upper one-sided tolerance limit would be more natural for a direct quality-control decision.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "appendices/e-mti-technical.tex",
@@ -141,7 +143,7 @@
       "figure_label": "rqr2026:fig:supp-pharma-partition-sensitivity",
       "alt_text": "Sensitivity to training and held-out partitions. Points show median widths or held-out empirical content within each labeled design. Segments give empirical 95 percent ranges for random and grouped splits. The two recorded-order designs each contain one partition and are shown as individual points. Dashed lines mark the requested content c= . The plots describe historical partition sensitivity.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "REVIEWED"
     },
     {
       "source_path": "chapters/02-research-a.tex",

@@ -1,191 +1,76 @@
-\chapter{Technical details for mean-preserving and mean-tilted intervals}
+\chapter{Proofs, calibration, and computation for mean-tilted intervals}
 \label{app:mti-technical}
 
 % migration-id: MIG-CH05-CURRENT-RQR
 % migration-id: MIG-CH05-CURRENT-MTI-EXT
-This appendix preserves the proofs, profile calculation, content checks, calibration protocol, application diagnostics, and proposed regression and dynamic computations supporting Chapter~\ref{ch:research-d}.
+This appendix supplies the proofs, profile calculation, calibration record,
+application sensitivities, and proposed endpoint computations used in
+Chapter~\ref{ch:research-d}. The principal statistical statements appear in
+that chapter. Supporting results are stated here when their assumptions or
+conclusions are needed only for the technical argument.
 
-\section{Foundations, profiled computation, and validation details}
-\subsection{Fixed-Content Interval Targets}
-\label{rqr2026:sec:supp-interval-functionals}
+\section{Population and empirical results}
+\label{app:mti-proofs}
 
-The population interval class is most transparent on the probability scale.
-Suppress \(x\) and write
+\subsection{Endpoint scores and the quantile-window target}
+
+Suppress the conditioning variable and write
 \[
-I_c(u)=[Q(u),Q(u+c)],\qquad
-M_c(u)=\frac{1}{c}\int_u^{u+c}Q(v)\,dv,\qquad
-W_c(u)=Q(u+c)-Q(u).
+ I_c(u)=[Q(u),Q(u+c)],\qquad
+ M_c(u)=\frac{1}{c}\int_u^{u+c}Q(v)\,dv,
+ \qquad 0\le u\le 1-c.
 \]
-The equal-tailed interval fixes \(u_{\mathrm{ET}}=(1-c)/2\). MPI
-solves \(M_c(u_{\mathrm{MPI}})=\mu\). Define the possibly set-valued collection
-of shortest contiguous windows by
-\[
-S_{\mathrm{SH}}
-=\argmin_{0\le u\le1-c}W_c(u).
-\]
-If a positive density exists at an interior \(u_{\mathrm{SH}}\in
-S_{\mathrm{SH}}\), then
-\[
-W_c'(u_{\mathrm{SH}})
-=\frac{1}{f\{Q(u_{\mathrm{SH}}+c)\}}
--\frac{1}{f\{Q(u_{\mathrm{SH}})\}}=0,
-\]
-so the endpoint densities agree. For a continuous strictly unimodal density
-and a unique regular shortest interval, this interval agrees with the
-corresponding highest-density interval. Under multimodality, a highest-density
-region can be disconnected; the present construction remains restricted to
-one contiguous interval
-\citep{rqr-BrehmerGneiting2021Intervals}.
-
-Under a symmetric unimodal distribution, all three intervals coincide. Under
-asymmetry, their widths need not coincide; only the shortest interval is
-ordered against the other two by definition. The standard interval score is
-aligned with the central equal-tailed target and is not a target-neutral score
-for this comparison
-\citep{exd-gneiting2007,rqr-BrehmerGneiting2021Intervals,rqr-FisslerEtAl2021SetValued}.
-
-\subsection{Mean-Preserving Interval Scores}
-\label{rqr2026:sec:supp-population-target}
-
-The derivation starts from the endpoint scores because those scores determine
-both content and placement. Fix a covariate value \(x\), a desired content
-\(c\in(0,1)\), and endpoints
-\(a=L(x)<U(x)=b\). The pointwise loss is
-\begin{equation}
-\ell_c(a,b;y)
-=
-\begin{cases}
-(1-c)(y-a)(b-y), & a<y<b,\\
-c(y-a)(y-b), & y\le a\ \text{or}\ y\ge b.
-\end{cases}
-\label{rqr2026:eq:supp-mpi-loss-piecewise}
-\end{equation}
-Equivalently, with
-\(e(a,b;y)=(y-a)(y-b)\) and
-\(\rho_c(r)=r\{c-\ind(r<0)\}\),
-\begin{equation}
-\ell_c(a,b;y)=\rho_c\{e(a,b;y)\}.
-\label{rqr2026:eq:supp-mpi-product-check}
-\end{equation}
-The check function is applied to the product residual. Its index \(c\) denotes
-the desired interval content rather than a prescribed response-quantile level
-for either endpoint or a generalized-Bayes learning rate. The loss is symmetric
-in its two roots; ordering is used only for the endpoint interpretation.
-
-Define \(I_{a,b}(Y)=\ind(a<Y<b)\). Away from the two roots, the derivative of
-the check loss with respect to its scalar argument is
-\(c-I_{a,b}(Y)\). Assume
-\(\E(Y^2\mid X=x)<\infty\), the conditional risk is differentiable at an
-interior stationary point, differentiation and conditional expectation may be
-interchanged, and the conditional distribution places no mass at \(a\) or
-\(b\). Since
-\[
-\frac{\partial}{\partial a}(Y-a)(Y-b)=b-Y,
-\qquad
-\frac{\partial}{\partial b}(Y-a)(Y-b)=a-Y,
-\]
-the pointwise first-order conditions are
+For endpoints \(a<b\), let \(I_{a,b}(Y)=\ind(a<Y<b)\). Away from endpoint
+atoms, the derivative of the MPI check loss with respect to its scalar product
+residual is \(c-I_{a,b}(Y)\). Under the differentiability conditions of
+Proposition~\ref{rqr2026:prop:population-characterization}, the endpoint score
+equations are
 \begin{align}
-\E\left[\{c-I_{a,b}(Y)\}(b-Y)\mid X=x\right]&=0,
-\label{rqr2026:eq:pop-foc-a}\\
-\E\left[\{c-I_{a,b}(Y)\}(a-Y)\mid X=x\right]&=0.
-\label{rqr2026:eq:pop-foc-b}
+ \E[\{c-I_{a,b}(Y)\}(b-Y)]&=0,\label{rqr2026:eq:pop-foc-a}\\
+ \E[\{c-I_{a,b}(Y)\}(a-Y)]&=0.\label{rqr2026:eq:pop-foc-b}
 \end{align}
-Subtracting \eqref{rqr2026:eq:pop-foc-b} from \eqref{rqr2026:eq:pop-foc-a} and using
-\(b-a>0\) gives
-\[
-\Pr\{a<Y<b\mid X=x\}=c.
-\]
-Substitution into either first-order condition then gives
-\[
-\E\{Y\ind(a<Y<b)\mid X=x\}=c\E(Y\mid X=x).
-\]
-
-The second equation is equivalently
-\[
-\E(Y\mid a<Y<b,X=x)=\E(Y\mid X=x)
-\]
-and
-\(\operatorname{Cov}\{Y,I_{a,b}(Y)\mid X=x\}=0\). This covariance statement is
-compatible with dependence, asymmetry, and unequal-tailed endpoints. The
-coverage implication is established by \citet{rqr-PouplinEtAl2024RQR}; the
-conditional first-moment implication is a further consequence of their
-first-order system.
-
-Let \(\mu_x=\E(Y\mid X=x)\). Since
-\(\E(Y-\mu_x\mid X=x)=0\), the first-moment equation is also equivalent to
+Their difference gives \(\Pr(a<Y<b)=c\), and substitution gives
+\(\E\{YI_{a,b}(Y)\}=c\mu\). Equivalently,
 \begin{equation}
-\E[\{\mu_x-Y\}\ind(Y<a)\mid X=x]
-=
-\E[\{Y-\mu_x\}\ind(Y>b)\mid X=x].
-\label{rqr2026:eq:rqr-tail-moment-balance}
+ \E[\{\mu-Y\}\ind(Y<a)]
+ =\E[\{Y-\mu\}\ind(Y>b)].
+ \label{rqr2026:eq:rqr-tail-moment-balance}
 \end{equation}
-Thus MPI balances omitted tail probability multiplied by average
-tail displacement from the conditional mean. The two omitted tail probabilities
-may differ.
+Thus the omitted tails need not have equal probabilities; their first moments
+about the mean balance.
 
-\begin{theorem}[Quantile-window identification]
-\label{rqr2026:thm:supp-quantile-window}
-Suppose, in addition, that \(F_x\) is continuous and strictly increasing on
-its support, and let \(Q_x=F_x^{-1}\). Define
+\subsection{Proof of Theorem~\ref{rqr2026:thm:quantile-window}}
+
+Modulo probability-zero portions outside the support, every contiguous
+interval having content \(c\) has the quantile-window form \(I_c(u)\). If
+\(v>u\), then
 \[
-M_{c,x}(u)=\frac{1}{c}\int_u^{u+c}Q_x(v)\,dv,
-\qquad 0\le u\le1-c.
+ M_c(v)-M_c(u)
+ =\frac{1}{c}\int_0^c\{Q(v+s)-Q(u+s)\}\,ds>0.
 \]
-Then \(M_{c,x}\) is strictly increasing, and there is a unique \(u_c(x)\)
-satisfying \(M_{c,x}\{u_c(x)\}=\mu_x\). The corresponding interval is
-\[
-\left[Q_x\{u_c(x)\},Q_x\{u_c(x)+c\}\right].
-\]
-\end{theorem}
-
-\begin{proof}
-Modulo conditional probability-zero portions outside the support, every
-contiguous interval having content \(c\) has the displayed
-quantile-window form. If \(v>u\), then
-\[
-M_{c,x}(v)-M_{c,x}(u)
-=\frac{1}{c}\int_0^c
-\{Q_x(v+s)-Q_x(u+s)\}\,ds>0.
-\]
-The average of the lowest conditional \(c\)-fraction is below \(\mu_x\), and
-the average of the highest conditional \(c\)-fraction is above \(\mu_x\), for
-a nondegenerate distribution with finite mean. Continuity and strict
-monotonicity therefore give existence and uniqueness. The first-moment
-equation identifies the stated endpoints.
-\end{proof}
-
-If \(F_x\) is symmetric about \(\mu_x\), then
-\(Q_x(1-v)=2\mu_x-Q_x(v)\). The window beginning at
-\((1-c)/2\) has retained mean \(\mu_x\), so uniqueness gives the equal-tailed
-interval. Conversely, coincidence at one coverage level does not establish
-global symmetry.
-
-The distribution conditional on interval membership and its complementary
-tail distribution both have mean \(\mu_x\). This is a first-moment statement,
-not independence between \(Y\) and interval membership. It also clarifies why
-the endpoint midpoint need not equal \(\mu_x\) under asymmetry.
+The average of the lowest \(c\)-fraction is below \(\mu\), and the average of
+the highest \(c\)-fraction is above \(\mu\), for a nondegenerate distribution
+with finite mean. Continuity and strict monotonicity therefore give existence
+and uniqueness of \(u_c\) satisfying \(M_c(u_c)=\mu\). The first-moment score
+equation identifies the endpoints \(Q(u_c)\) and \(Q(u_c+c)\). If the law is
+symmetric about \(\mu\), the window beginning at \((1-c)/2\) has retained mean
+\(\mu\), so uniqueness gives the equal-tailed interval.
 
 \begin{proposition}[Mean-preserving contraction]
 \label{rqr2026:prop:supp-convex-order}
 Let \(Y_{\mathrm{in}}\) and \(Y_{\mathrm{out}}\) have the conditional
 distributions of \(Y\) given \(a<Y<b\) and \(Y\notin(a,b)\), respectively,
-at a regular MPI target. For every convex function \(\varphi\) for
-which the required expectations exist,
+at a regular MPI target. For every convex function \(\varphi\) for which the
+required expectations exist,
 \[
-\E\{\varphi(Y_{\mathrm{in}})\}
-\le
-\E\{\varphi(Y)\}
-\le
-\E\{\varphi(Y_{\mathrm{out}})\}.
+ \E\{\varphi(Y_{\mathrm{in}})\}
+ \le \E\{\varphi(Y)\}
+ \le \E\{\varphi(Y_{\mathrm{out}})\}.
 \]
 Consequently,
-\[
-Y_{\mathrm{in}}\preceq_{\mathrm{cx}}Y
-\preceq_{\mathrm{cx}}Y_{\mathrm{out}}.
-\]
-If second moments exist, the same ordering holds for the corresponding
-variances.
+\(Y_{\mathrm{in}}\preceq_{\mathrm{cx}}Y
+\preceq_{\mathrm{cx}}Y_{\mathrm{out}}\). If second moments exist, the same
+ordering holds for the corresponding variances.
 \end{proposition}
 
 \begin{proof}
@@ -193,1017 +78,368 @@ Let \(s_\varphi\) be the affine secant through
 \(\{a,\varphi(a)\}\) and \(\{b,\varphi(b)\}\). Convexity gives
 \(\varphi(y)\le s_\varphi(y)\) on \([a,b]\) and
 \(\varphi(y)\ge s_\varphi(y)\) outside that interval. Both conditional
-distributions have mean \(\mu_x\), so
+distributions have mean \(\mu\), so
 \[
-\E\{\varphi(Y_{\mathrm{in}})\}
-\le s_\varphi(\mu_x)
-\le \E\{\varphi(Y_{\mathrm{out}})\}.
+ \E\{\varphi(Y_{\mathrm{in}})\}
+ \le s_\varphi(\mu)
+ \le \E\{\varphi(Y_{\mathrm{out}})\}.
 \]
-The full conditional distribution is their mixture with weights \(c\) and
-\(1-c\), which places its convex expectation between the two. Taking
-\(\varphi(y)=(y-\mu_x)^2\) gives the variance statement.
+The full distribution is their mixture with weights \(c\) and \(1-c\), which
+places its convex expectation between the two. Taking
+\(\varphi(y)=(y-\mu)^2\) gives the variance statement.
 \end{proof}
 
-\subsubsection{Interval Paths and Tail Sensitivity}
+The regular MPI path is nested. With \(L_c=Q(u_c)\) and
+\(U_c=Q(u_c+c)\), differentiation of
+\(\int_{u_c}^{u_c+c}\{Q(v)-\mu\}\,dv=0\) gives
+\[
+ \frac{du_c}{dc}=-\frac{U_c-\mu}{U_c-L_c}<0,
+ \qquad
+ \frac{d(u_c+c)}{dc}=\frac{\mu-L_c}{U_c-L_c}>0.
+\]
+The limit \(L_c,U_c\to\mu\) as \(c\downarrow0\) additionally requires local
+support at the mean. For example, a symmetric law supported on
+\([-2,-1]\cup[1,2]\) has an MPI window that straddles the gap even as its
+content tends to zero. Under a positive affine transformation
+\(Y^\star=r+sY\), \(s>0\), the endpoints transform affinely, the tilt becomes
+\(s\delta\), and a generalized-Bayes learning rate becomes
+\(\omega_{\mathrm R}/s^2\). Nonlinear monotone transformations generally
+change the target.
 
-Retain the quantile-window characterization and assume, for this derivative
-calculation, connected support and positive continuous density at the relevant
-endpoint quantiles. Write \(u_c\) for the MPI index, and set
-\(L_c=Q(u_c)\) and \(U_c=Q(u_c+c)\). Differentiating
+At endpoint atoms, directional half-width derivatives give only
 \[
-\int_{u_c}^{u_c+c}\{Q(v)-\mu\}\,dv=0
+ \Pr(a<Y<b)\le c\le\Pr(a\le Y\le b).
 \]
-with respect to \(c\), at regular interior values, gives
-\[
-\frac{du_c}{dc}
-=-\frac{U_c-\mu}{U_c-L_c}<0,
-\qquad
-\frac{d(u_c+c)}{dc}
-=\frac{\mu-L_c}{U_c-L_c}>0.
-\]
-The MPI population intervals are therefore nested as content
-increases, with analogous one-sided statements at isolated nonsmooth support
-transitions. If \(p_\mu=F(\mu)\) satisfies \(Q(p_\mu)=\mu\) and \(Q\) is
-continuous at \(p_\mu\), then \(Q(u_c)\le\mu\le Q(u_c+c)\), so
-\(p_\mu\in[u_c,u_c+c]\). Since this probability window has length \(c\),
-\[
-L_c\longrightarrow\mu,\qquad U_c\longrightarrow\mu
-\quad\text{as }c\downarrow0.
-\]
-This zero-content limit needs the local support condition above. It is false
-under the quantile-window assumptions alone: for the symmetric distribution
-with density \(1/2\) on \([-2,-1]\cup[1,2]\), \(\mu=0\) and the MPI
-window has \(u_c=(1-c)/2\), hence \(L_c=-1-c\) and \(U_c=1+c\), so the
-zero-content limit straddles the support gap rather than contracting to
-\(\mu\). The corrected zero-content limit is a property of the population
-interval path; the
-midpoint at a fixed positive \(c\) is not generally the mean, and independent
-fits at several content levels do not by themselves define joint
-generalized-posterior draws of that path.
+Exact retained-mean equality then requires a joint subgradient allocation.
+For restricted regression roots, the score equations are design-weighted
+projections and need not imply conditional coverage at each covariate value.
 
-For \(Y^\star=r+sY\), \(s>0\), the MPI endpoints transform as
-\[
-L_c^\star=r+sL_c,\qquad U_c^\star=r+sU_c.
-\]
-For the tilted family, \(\delta^\star=s\delta\) and
-\[
-\ell^\star_{c,\delta^\star}
-(r+sa,r+sb;r+sy)
-=s^2\ell_{c,\delta}(a,b;y).
-\]
-Thus the population target is positive-affine equivariant. A corresponding
-generalized posterior uses the transformed prior and
-\(\omega_{\mathrm R}^\star=\omega_{\mathrm R}/s^2\). Conversely, if the
-original response is standardized as \(\widetilde Y=(Y-r)/s\), use
-\(\widetilde\delta=\delta/s\) and
-\(\widetilde\omega_{\mathrm R}=\omega_{\mathrm R}s^2\).
-Nonlinear monotone transformations generally change the mean-preserving
-functional rather than merely re-expressing it.
+\subsection{Mean tilt and profiled identification}
 
-Finally, with fixed endpoints,
-\(\rho_c\{(y-a)(y-b)\}=O(y^2)\) as \(|y|\to\infty\), and the endpoint scores
-grow linearly in \(|y|\). MPI is distribution-free in the sense that it does
-not posit a parametric response density. Its retained-mean target still depends
-on second moments, so the finite-second-moment assumption and response-scale
-choice are scientifically consequential.
-
-Endpoint atoms require directional conditions. Write
-\(m=(a+b)/2\), \(h=(b-a)/2>0\), so
-\(e=(Y-m)^2-h^2\). The left and right derivatives in \(h\) are
-\[
-D_-R_x(m,h)=2h\{\Pr(a<Y<b\mid x)-c\},
-\]
-and
-\[
-D_+R_x(m,h)=2h\{\Pr(a\le Y\le b\mid x)-c\}.
-\]
-At a local minimum, \(D_-R_x\le0\le D_+R_x\), and therefore
-\[
-\Pr(a<Y<b\mid X=x)\le c\le\Pr(a\le Y\le b\mid X=x).
-\]
-Without a separate joint subgradient and endpoint-mass allocation analysis,
-these directional conditions do not imply the exact retained-mean equality
-derived above under endpoint continuity.
-If \(a=b=m\), then \(e=(Y-m)^2\) and the risk is
-\(c\E\{(Y-m)^2\mid X=x\}\); the coincident-root target is the conditional
-mean when the second moment exists.
-
-These implications are conditional, pointwise, and assumption dependent. They
-do not follow by treating estimated data-dependent endpoints as fixed. For
-linear roots \(\eta_k(X)=X^\top\beta_k\), the corresponding population score
-conditions are instead
+For fixed response-scale tilt \(\delta\), the MTI loss is
 \begin{align}
-\E\left[X\{c-I_{\eta_1,\eta_2}(Y)\}(\eta_2-Y)\right]&=0,\\
-\E\left[X\{c-I_{\eta_1,\eta_2}(Y)\}(\eta_1-Y)\right]&=0,
+ \ell_{c,\delta}^{\mathrm{MTI}}(m,h;y)
+ &=\rho_c\{(y-m)^2-h^2\}-2c\delta(m-y),
+ \label{rqr2026:eq:mean-tilted-loss-midpoint}\\
+ \ell_{c,\delta}^{\mathrm{MTI}}(a,b;y)
+ &=\rho_c\{(y-a)(y-b)\}-c\delta(a+b-2y).
+ \label{rqr2026:eq:mean-tilted-loss-roots}
 \end{align}
-where \(I_{\eta_1,\eta_2}(Y)\) indicates that \(Y\) lies between the
-unordered roots. These design-weighted projection equations need not imply
-conditional coverage for every \(x\).
+The tilt changes placement but not the content score.
 
-The finite-sample unbiasedness calculation in
-\citet{rqr-PouplinEtAl2024RQR} treats fitted, data-dependent endpoints as fixed,
-and its zero-gradient argument does not cover nonsmooth optima when an
-observation coincides with a fitted root. We therefore do not use that
-calculation as a finite-sample guarantee; such a result requires a separate
-empirical-process analysis.
+\subsubsection{Proof of Proposition~\ref{rqr2026:prop:mean-tilt}}
 
-\subsection{Mean-Tilted Interval Loss and Target}
-\label{rqr2026:sec:supp-mean-tilt}
-
-The MTI loss is the fixed-tilt generalization of MPI. It keeps the MPI content
-score and shifts only the retained-mean equation; setting \(\delta=0\) recovers
-the MPI loss. For a fixed mean tilt \(\delta\in\R\), define
-\begin{equation}
-\ell_{c,\delta}^{\mathrm{MTI}}(m,h;y)
-=\rho_c\{(y-m)^2-h^2\}-2c\delta(m-y),
-\label{rqr2026:eq:mean-tilted-loss-midpoint}
-\end{equation}
-or, equivalently,
-\begin{equation}
-\ell_{c,\delta}^{\mathrm{MTI}}(a,b;y)
-=\rho_c\{(y-a)(y-b)\}-c\delta(a+b-2y).
-\label{rqr2026:eq:mean-tilted-loss-roots}
-\end{equation}
-The second form is invariant to exchanging the raw root labels. The tilt has
-response units so that both terms in the loss have squared-response units, and
-nonzero \(\delta\) changes the target placement rather than the content score.
-For restricted linear roots \(\eta_k(X)=X^\top\beta_k\) and an externally
-fixed \(\delta(X)\), the population score equations are
-\begin{align}
-\E\!\left[
-X\left\{\{c-I_{\eta_1,\eta_2}(Y)\}(\eta_2-Y)-c\delta(X)\right\}
-\right]&=0,\\
-\E\!\left[
-X\left\{\{c-I_{\eta_1,\eta_2}(Y)\}(\eta_1-Y)-c\delta(X)\right\}
-\right]&=0.
-\end{align}
-They are design-weighted projection equations. Pointwise conditional content
-and retained-mean identities require a sufficiently rich predictor class and
-the unrestricted conditions below.
-
-\subsubsection{Fixed-Content Mean-Tilted Target}
-
-The next proposition records the population score equations supported by the
-mean-tilted loss. It is the integrated counterpart of
-the fixed-content mean-tilt proposition in the main article.
-
-\begin{proposition}[Fixed-content mean-tilted target]
-\label{rqr2026:prop:supp-mean-tilt}
-Under the regularity conditions in
-Section~\ref{rqr2026:sec:supp-population-target}, a nondegenerate interior
-stationary point \((m_\delta,h_\delta)\) satisfies
-\[
-\Pr(|Y-m_\delta|<h_\delta)=c
-\]
-and
-\[
-\E(Y\mid |Y-m_\delta|<h_\delta)=\mu+\delta.
-\]
-If \(F\) is continuous and strictly increasing on its support and \(\delta\)
-lies strictly between the endpoint values of the admissible range, the unique
-interior lower-tail index is the solution of
-\[
-M_c(u_\delta)=\mu+\delta.
-\]
-Endpoint tilts are understood as boundary limits and satisfy the corresponding
-one-sided stationarity conditions.
-\end{proposition}
-
-\begin{proof}
 Let \(I_{m,h}(Y)=\ind(|Y-m|<h)\). Away from endpoint atoms,
-\begin{align}
-\frac{\partial}{\partial h}\E\{\ell_{c,\delta}(m,h;Y)\}
-&=2h\{\Pr(I_{m,h}=1)-c\},\\
-\frac{\partial}{\partial m}\E\{\ell_{c,\delta}(m,h;Y)\}
-&=2\E[(m-Y)\{c-I_{m,h}(Y)\}]-2c\delta.
-\end{align}
+\begin{align*}
+ \frac{\partial}{\partial h}\E\{\ell_{c,\delta}(m,h;Y)\}
+ &=2h\{\Pr(I_{m,h}=1)-c\},\\
+ \frac{\partial}{\partial m}\E\{\ell_{c,\delta}(m,h;Y)\}
+ &=2\E[(m-Y)\{c-I_{m,h}(Y)\}]-2c\delta.
+\end{align*}
 The first equation gives content \(c\). Substitution into the second gives
-\(\E\{YI_{m,h}(Y)\}=c(\mu+\delta)\), which is the retained-mean equation.
-Theorem~\ref{rqr2026:thm:supp-quantile-window} and strict monotonicity of \(M_c\)
-give the quantile-window statement.
-\end{proof}
+\(\E\{YI_{m,h}(Y)\}=c(\mu+\delta)\). Strict monotonicity of \(M_c\)
+then gives the unique interior quantile-window index.
 
 \begin{lemma}[Profile radius and envelope derivative]
 \label{rqr2026:lem:supp-profile-radius}
-Suppose that the support closure of \(F\) is an interval
-\([\ell,r]\), where either endpoint may be infinite, \(F\) is continuous and
-strictly increasing and absolutely continuous between its support endpoints,
-its density is positive and continuous on the support interior, and
-\(\E(Y^2)<\infty\). Extend \(F\) by zero and one beyond finite support
-endpoints. For every \(m\in\R\), there is a unique \(h_c(m)>0\) satisfying
+Suppose the support closure is an interval, \(F\) is absolutely continuous
+and strictly increasing between its support endpoints, its density is positive
+and continuous on the support interior, and \(\E(Y^2)<\infty\). Extend \(F\)
+by zero and one beyond finite support endpoints. For every \(m\in\R\), there
+is a unique \(h_c(m)>0\) satisfying
+\(\Pr\{|Y-m|<h_c(m)\}=c\). The radius is continuous in \(m\) and
+differentiable when both roots are interior. If
 \[
-\Pr\{|Y-m|<h_c(m)\}=c.
+ \overline R_{c,\delta}(m)
+ =\E\{\ell_{c,\delta}(m,h_c(m);Y)\},
+ \qquad u_c(m)=F\{m-h_c(m)\},
 \]
-The map \(m\mapsto h_c(m)\) is continuous and is differentiable whenever its
-two roots are interior to the support. Define
-\[
-\overline R_{c,\delta}(m)
-=
-\E\{\ell_{c,\delta}(m,h_c(m);Y)\}.
-\]
-Also let \(u_c(m)=F\{m-h_c(m)\}\). Then
+then
 \begin{equation}
-\overline R_{c,\delta}'(m)
-=2c\left[M_c\{u_c(m)\}-\mu-\delta\right],
-\label{rqr2026:eq:supp-profiled-risk-derivative}
+ \overline R_{c,\delta}'(m)
+ =2c[M_c\{u_c(m)\}-\mu-\delta],
+ \label{rqr2026:eq:supp-profiled-risk-derivative}
 \end{equation}
-where both roots are interior, with the corresponding one-sided derivatives
-when a root crosses a finite support endpoint.
+with corresponding one-sided derivatives when a root crosses a finite support
+endpoint.
 \end{lemma}
 
 \begin{proof}
-For fixed \(m\), the map
+For fixed \(m\),
+\(H_m(h)=F(m+h)-F(m-h)\) is continuous, begins at zero, and converges to
+one. Interval support and strict increase imply a unique crossing of \(c\).
+Continuity of the inverse follows from the same strict-crossing argument. When
+both roots are interior, the implicit-function theorem applies because
 \[
-H_m(h)=F(m+h)-F(m-h),\qquad h\ge0,
+ \frac{\partial H_m(h)}{\partial h}=f(m+h)+f(m-h)>0.
 \]
-is continuous, begins at zero, and converges to one. Interval support and
-strict increase imply that \(H_m\) passes through every value in \((0,1)\)
-strictly: any plateau can occur only before the expanding interval reaches
-the support or after it contains the full support. Thus \(H_m(h)=c\) has one
-solution. Continuity of this inverse in \(m\) follows by the same strict
-crossing argument. When both roots are interior, the implicit-function
-theorem applies because
-\[
-\frac{\partial H_m(h)}{\partial h}
-=f(m+h)+f(m-h)>0.
-\]
-
-For fixed \(m\), write \(Z_m=(Y-m)^2\) and \(q=h^2\). The subgradient interval
+For fixed \(m\), put \(Z_m=(Y-m)^2\) and \(q=h^2\). The subgradient interval
 of \(q\mapsto\E\{\rho_c(Z_m-q)\}\) is
 \[
-\left[\Pr(Z_m<q)-c,\ \Pr(Z_m\le q)-c\right].
+ [\Pr(Z_m<q)-c,\ \Pr(Z_m\le q)-c],
 \]
-Continuity makes \(q=h_c(m)^2\) its unique minimizer. On a compact
-neighborhood of \(m\), the partial midpoint score is dominated by a constant
-multiple of \(1+|Y|\), which is integrable. Differentiation under the
-expectation is therefore valid away from the probability-zero endpoints.
-The standard two-sided profiling inequalities, evaluated once at
-\(h_c(m)\) and once at \(h_c(m+s)\), together with continuity of \(h_c\),
-give the envelope derivative
+so continuity makes \(q=h_c(m)^2\) its unique minimizer. On compact
+neighborhoods of \(m\), the midpoint score is dominated by an integrable
+multiple of \(1+|Y|\). The profiling inequalities and continuity of \(h_c\)
+therefore give
 \begin{align*}
-\overline R_{c,\delta}'(m)
-&=
-2\E\!\left[(m-Y)
-\{c-\ind(m-h_c(m)<Y<m+h_c(m))\}\right]-2c\delta\\
-&=
-2c\left[M_c\{u_c(m)\}-\mu-\delta\right].
+ \overline R_{c,\delta}'(m)
+ &=2\E[(m-Y)\{c-I_{m,h_c(m)}(Y)\}]-2c\delta\\
+ &=2c[M_c\{u_c(m)\}-\mu-\delta].
 \end{align*}
-The same inequalities give one-sided derivatives at a finite-support
-transition.
+The same argument gives the one-sided derivatives at support transitions.
 \end{proof}
 
-\begin{theorem}[Global profiled-risk identification]
-\label{rqr2026:thm:supp-profiled-risk}
-Under the conditions of Lemma~\ref{rqr2026:lem:supp-profile-radius}, set
-\(u_c(m)=F\{m-h_c(m)\}\), so \(u_c(m)\in[0,1-c]\). For
-\[
-\delta_-:=M_c(0)-\mu<\delta<
-\delta_+:=M_c(1-c)-\mu,
-\]
-the expected loss has a unique global minimizer over finite ordered roots. Its
-index \(u_\delta\in(0,1-c)\) satisfies
-\[
-M_c(u_\delta)=\mu+\delta.
-\]
-Nondegeneracy gives \(\delta_-<0<\delta_+\), so MPI is an interior
-member. The two raw root-label permutations represent the same ordered
-interval.
-\end{theorem}
+\subsubsection{Proof of Theorem~\ref{rqr2026:thm:profiled-mean-tilt}}
 
-\begin{proof}
-Write \(a_c(m)=m-h_c(m)\) and \(b_c(m)=m+h_c(m)\). Continuity gives
+Write \(a_c(m)=m-h_c(m)\), \(b_c(m)=m+h_c(m)\), and
+\(u_c(m)=F\{a_c(m)\}\). For \(0<u_c(m)<1-c\),
 \[
-F\{b_c(m)\}-F\{a_c(m)\}=c,
+ m=\frac{Q\{u_c(m)\}+Q\{u_c(m)+c\}}{2}=:m_c\{u_c(m)\}.
 \]
-so \(F\{b_c(m)\}=u_c(m)+c\). When \(0<u_c(m)<1-c\),
-\[
-a_c(m)=Q\{u_c(m)\},\qquad
-b_c(m)=Q\{u_c(m)+c\},
-\]
-and therefore
-\[
-m=m_c\{u_c(m)\}
-:=\frac{Q\{u_c(m)\}+Q\{u_c(m)+c\}}{2}.
-\]
-The map \(m_c(u)\) is strictly increasing. If a root extends beyond a finite
-support endpoint, \(u_c(m)\) is clamped at \(0\) or \(1-c\); hence \(u_c\) is
-globally nondecreasing.
+The map \(m_c(u)\) is strictly increasing. When a root extends beyond a finite
+support endpoint, \(u_c(m)\) is clamped at zero or \(1-c\); hence \(u_c\) is
+globally nondecreasing. Lemma~\ref{rqr2026:lem:supp-profile-radius} and strict
+monotonicity of \(M_c\) show that the profiled derivative is negative before
+the unique solution of \(M_c(u)=\mu+\delta\) and positive afterward. The
+profile therefore has a unique global midpoint minimizer, and the fixed-\(m\)
+argument gives its unique positive radius.
 
-Lemma~\ref{rqr2026:lem:supp-profile-radius} gives
-\eqref{rqr2026:eq:supp-profiled-risk-derivative}. Strict monotonicity of \(Q\) also
-gives, for \(v>u\),
+The admissible population range is
 \[
-M_c(v)-M_c(u)
-=\frac{1}{c}\int_0^c\{Q(v+s)-Q(u+s)\}\,ds>0.
+ M_c(0)-\mu\le\delta\le M_c(1-c)-\mu.
 \]
-For an interior admissible tilt, the profiled derivative is therefore negative
-before the unique solution of \(M_c(u)=\mu+\delta\) and positive afterward.
-The profiled risk has a unique global midpoint minimizer, and the preceding
-fixed-\(m\) argument gives its unique positive half-width. This proves joint
-global identification of the ordered roots.
-\end{proof}
+Interior tilts correspond one-to-one with finite-root quantile windows. At a
+boundary tilt, an infinite support endpoint yields a semi-infinite limiting
+interval; a finite endpoint requires a support constraint to select an
+otherwise inactive root. Outside the closed range, the unrestricted risk is
+unbounded below along the corresponding escaping-root direction.
 
-The admissible population tilt range is
+The recovery tilts for MPI and the equal-tailed interval are
 \[
-M_c(0)-\mu\le\delta\le M_c(1-c)-\mu,
+ \delta_{\mathrm{MPI}}=0,
+ \qquad
+ \delta_{\mathrm{ET}}=M_c\{(1-c)/2\}-\mu.
 \]
-and both endpoint values are finite under the assumed second moment. Interior
-tilts correspond one-to-one with finite-root quantile windows. At
-\(\delta_- = M_c(0)-\mu\), the lower boundary member is
-\([Q(0),Q(c)]\). If \(Q(0)=-\infty\), it is a semi-infinite limiting interval
-with a finite population-risk infimum. If \(Q(0)\) is finite, every pair
-\((a,Q(c))\) with
-\(a\le Q(0)\) has the same population loss, so a support constraint is needed
-to choose a unique inactive lower root. The upper boundary has the symmetric
-qualification. For
-\(\delta<\delta_-\) or \(\delta>\delta_+\), the unrestricted population risk
-is unbounded below along the corresponding escaping-root direction and has no
-finite global target.
+For the shortest contiguous windows
+\(S_{\mathrm{SH}}=\argmin_u\{Q(u+c)-Q(u)\}\), the recovery-tilt set is
+\(\{M_c(u)-\mu:u\in S_{\mathrm{SH}}\}\). These are population identities;
+estimating a recovery tilt requires a separate selection rule.
 
-MPI and equal-tailed recovery use
+For a standardized near-Normal family with small skewness \(\gamma_1\), the
+first-order Cornish--Fisher calculation gives
 \[
-\delta_{\mathrm{MPI}}=0,\qquad
-\delta_{\mathrm{ET}}=M_c\{(1-c)/2\}-\mu,
+ d_{\mathrm{ET}}^{\mathrm{CF}}
+ \approx-\frac{\gamma_1}{3}K_c,
+ \qquad
+ d_{\mathrm{SH}}^{\mathrm{CF}}
+ \approx-\gamma_1K_c,
+ \qquad
+ K_c=\frac{q_c\phi(q_c)}{c},
+ \quad q_c=\Phi^{-1}\{(1+c)/2\},
 \]
-whereas shortest-contiguous recovery is generally set-valued. Define
-\[
-\Delta_{\mathrm{SH}}
-=
-\{M_c(u)-\mu:u\in S_{\mathrm{SH}}\}.
-\]
-If \(S_{\mathrm{SH}}\) is a singleton, its element and tilt are denoted
-by \(u_{\mathrm{SH}}\) and \(\delta_{\mathrm{SH}}\). These identities establish
-population representation. Finite-sample recovery-tilt estimation requires an
-external selection protocol.
+where \(d=\delta/\sigma\). The approximation requires a quantile expansion
+with a controlled remainder; small skewness alone does not control higher
+cumulants or support-boundary behavior. It is therefore an initialization or
+population comparison, not a finite-sample selection guarantee.
 
-Implicit differentiation yields
-\[
-\frac{du_\delta}{d\delta}
-=\frac{c}{W_c(u_\delta)}
-\]
-and
-\[
-\frac{dW_c(u_\delta)}{d\delta}
-=\frac{c\,W_c'(u_\delta)}{W_c(u_\delta)}.
-\]
-Hence profiling population width along the interior admissible tilt path
-identifies any interior shortest-contiguous member. Boundary members use the
-one-sided closure described above, and the statement does not extend
-the target to disconnected highest-density regions.
+\subsection{Fractional empirical balance}
 
-\subsubsection{Cornish--Fisher Tilt Approximations}
-\label{rqr2026:sec:supp-cf-tilt}
-
-The recovery identities also give a simple initialization approximation. Let
-\(Z=(Y-\mu)/\sigma\) have small standardized skewness \(\gamma_1\), and let
-\(z_p=\Phi^{-1}(p)\). The formal first-order Cornish--Fisher expansion
-\citep{rqr-CornishFisher1937}
-\[
-Q_Z(p)
- \approx
-z_p+\frac{\gamma_1}{6}(z_p^2-1)
-\]
-approximates the quantile function of \(Z\) around the standard Normal law.
-For content \(c\), define
-\[
-q_c=\Phi^{-1}\{(1+c)/2\},\qquad
-K_c=q_c\phi(q_c)/c.
-\]
-Integrating the expansion over the equal-tailed probability window gives
-\[
-d_{\mathrm{ET}}^{\mathrm{CF}}
-\approx
--\frac{\gamma_1}{3}K_c,
-\qquad d=\delta/\sigma.
-\]
-Applying the same expansion to the shortest-window first-order condition
-\(W_c'(u)=0\) and then evaluating the retained-window mean gives
-\[
-d_{\mathrm{SH}}^{\mathrm{CF}}
-\approx
--\gamma_1K_c.
-\]
-Thus the shortest-oriented first-order tilt is three times the equal-tailed
-one on the standardized scale. The sign convention is useful for checking
-numerical calculations: right skewness gives negative recovery tilts, while left
-skewness gives positive recovery tilts.
-
-These displays are used as first-order approximations, not as a universal remainder
-theorem. An \(O(\epsilon^2)\) statement is defensible only for an explicitly
-indexed near-Normal family \(F_\epsilon\) whose quantile function and
-derivative admit a uniform expansion
-\[
-Q_\epsilon(p)
-=z_p+\epsilon\kappa_3(z_p^2-1)/6+r_\epsilon(p),
-\qquad
-\sup_p\{|r_\epsilon(p)|+|\partial_pr_\epsilon(p)|\}=O(\epsilon^2),
-\]
-on a neighborhood of the central window, with
-\(\gamma_1(F_\epsilon)=\epsilon\kappa_3+O(\epsilon^2)\). Small skewness by
-itself does not control higher cumulants or the quantile remainder.
-
-For a known population law these formulas use the true \(\gamma_1\) and
-\(\sigma\). A finite-sample plug-in version may replace them by the adjusted
-Fisher--Pearson skewness \(\widehat\gamma_1\) and training standard deviation
-\(\widehat\sigma\):
-\[
-\widehat d_{\mathrm{SH}}^{\mathrm{CF}}
-=
--\widehat\gamma_1K_c,\qquad
-\widehat d_{\mathrm{ET}}^{\mathrm{CF}}
-=
-\widehat d_{\mathrm{SH}}^{\mathrm{CF}}/3,\qquad
-\widehat\delta=\widehat\sigma\,\widehat d.
-\]
-The plug-in quantities are fixed tilt choices for initialization and external
-validation. A posterior treatment of tilt, or reuse of
-the MPI hierarchical-scale update at nonzero tilt, would require a separate
-model. Strong skewness, finite-support boundary solutions, and heavy-tailed
-cases can move the first-order shortest approximation outside the admissible
-finite-root tilt range. For this reason, the numerical summaries include adjusted
-skewness, excess kurtosis, standardized sixth moment, probability-window
-clipping, boundary proximity, and bootstrap sensitivity summaries. The main
-article's deterministic Cornish--Fisher figure and population comparison table
-illustrate both near-Normal accuracy and material departures under stronger
-skewness or support-boundary geometry. These calculations assess the
-approximation, while empirical validation and held-out selection rules require
-separate study. The table reports the population values used to produce
-the display.
-
-The tilt indexes the estimand and is initially treated like a fixed quantile
-level. A scalar tilt generally defines only a restricted global target in a
-regression model; pointwise equal-tailed or shortest recovery generally
-requires \(\delta(x)\). Sampling \(\delta\) as an ordinary unknown would mix
-different interval functionals. Data-driven tilt selection therefore requires
-a separate selection rule based on independent test data. Under
-positive affine transformation \(Y^\star=r+sY\), the corresponding target uses
-\(\delta^\star=s\delta\), as stated in
-Section~\ref{rqr2026:sec:supp-population-target}.
-
-These population equations do not establish finite-sample propriety under
-arbitrary root priors. For a fixed learning rate and a finite-dimensional
-Gaussian root prior, the MPI loss is nonnegative and the tilt is
-linear in the roots. The resulting generalized posterior is proper because a
-Gaussian density has finite exponential moments in every linear direction. This covers
-the initial ridge fixed-design model and finite-horizon Gaussian state model.
-Nonzero tilt under heavier-tailed shrinkage priors requires a separate
-coercivity or propriety result.
-
-\subsection{Empirical Balance}
-\label{rqr2026:sec:supp-static-theory}
-
-\subsubsection{Fractional Empirical Balance}
-
-Finite-sample score balance is fractional because observations may lie exactly
-on fitted roots. For intercept-only roots and fixed \(\delta\), define
-\[
-R_n(a,b)
-=\sum_{i=1}^n
-\left[
-\rho_c\{(y_i-a)(y_i-b)\}
--c\delta(a+b-2y_i)
-\right],
-\qquad a<b.
-\]
-Let \((\widehat a,\widehat b)\) be an interior subgradient-stationary point.
-For each observation, choose
-\[
-s_i\in\partial\rho_c(\widehat e_i),
-\qquad
-\widehat e_i=(y_i-\widehat a)(y_i-\widehat b),
-\]
-where \(s_i=c-1\) if \(\widehat e_i<0\), \(s_i=c\) if
-\(\widehat e_i>0\), and \(s_i\in[c-1,c]\) if \(\widehat e_i=0\). Set
-\(\widehat q_i=c-s_i\). Then
-\(\widehat q_i=1\) strictly inside the fitted interval,
-\(\widehat q_i=0\) strictly outside, and
-\(\widehat q_i\in[0,1]\) only at fitted roots.
+For an intercept-only fit, let
+\(e_i=(y_i-a)(y_i-b)\) and choose
+\(s_i\in\partial\rho_c(e_i)\). Put \(q_i=c-s_i\), so \(q_i=1\)
+strictly inside the interval, \(q_i=0\) strictly outside, and
+\(q_i\in[0,1]\) only at a fitted root.
 
 \begin{theorem}[Exact fractional empirical balance]
 \label{rqr2026:thm:supp-fractional-balance}
-At any interior subgradient-stationary intercept-only MTI solution,
-there are allocations \(\widehat q_i\in[0,1]\) with the membership convention
-above such that
+At an interior subgradient-stationary intercept-only MTI solution, allocations
+\(q_i\in[0,1]\) can be chosen such that
 \[
-\sum_{i=1}^n\widehat q_i=nc,
-\qquad
-\sum_{i=1}^n\widehat q_i y_i
-=nc(\overline y+\delta).
+ \sum_{i=1}^nq_i=nc,
+ \qquad
+ \sum_{i=1}^nq_iy_i=nc(\overline y+\delta).
 \]
 \end{theorem}
 
 \begin{proof}
 The endpoint subgradient equations are
 \[
-\sum_{i=1}^n s_i(\widehat b-y_i)-nc\delta=0,
-\qquad
-\sum_{i=1}^n s_i(\widehat a-y_i)-nc\delta=0.
+ \sum_i s_i(b-y_i)-nc\delta=0,
+ \qquad
+ \sum_i s_i(a-y_i)-nc\delta=0.
 \]
-Subtracting them and using \(\widehat b-\widehat a>0\) gives
-\(\sum_i s_i=0\), hence \(\sum_i\widehat q_i=nc\). Substituting this identity
-back into either endpoint equation gives
-\[
-\sum_{i=1}^n(\widehat q_i-c)y_i=nc\delta,
-\]
-which is the retained-mean balance.
+Their difference gives \(\sum_i s_i=0\), hence \(\sum_iq_i=nc\).
+Substitution into either endpoint equation gives the retained-mean identity.
 \end{proof}
 
-If \(B_n=\#\{i:\widehat e_i=0\}\), then the theorem immediately implies
+If \(B_n\) observations lie at fitted roots, then
 \[
-P_n(\widehat a<Y<\widehat b)\le c\le
-P_n(\widehat a\le Y\le\widehat b),
-\qquad
-\left|P_n(\widehat a<Y<\widehat b)-c\right|\le B_n/n.
+ P_n(a<Y<b)\le c\le P_n(a\le Y\le b),
+ \qquad |P_n(a<Y<b)-c|\le B_n/n.
 \]
-For iid intercept-only data, Massart's sharp DKW inequality
-\citep{rqr-Massart1990DKW} gives, with probability at least \(1-\alpha\),
+For iid intercept-only data, Massart's DKW inequality implies, with probability
+at least \(1-\alpha\),
 \[
-\left|\Pr_F(\widehat a<Y<\widehat b)-c\right|
-\le
-\frac{B_n}{n}+
-\sqrt{\frac{2\log(2/\alpha)}{n}}.
+ |\Pr_F(a<Y<b)-c|
+ \le \frac{B_n}{n}+\sqrt{\frac{2\log(2/\alpha)}{n}}.
 \]
-The bound is conservative and high probability. Exact nominal future coverage
-and restricted-regression extensions require separate arguments.
+This is a conservative high-probability bound, not exact future coverage or a
+restricted-regression result.
 
-For linear roots in a globally ordered chart, the same subgradient selection
-gives
-\begin{align}
-\sum_i X_i\left[(c-\widehat q_i)(\widehat b_i-y_i)-c\delta_i\right]&=0,\\
-\sum_i X_i\left[(c-\widehat q_i)(\widehat a_i-y_i)-c\delta_i\right]&=0.
-\end{align}
-Subtracting yields the width-weighted calibration equation
+The width-regularized RQR-W objective of
+\citet{rqr-PouplinEtAl2024RQR} adds
+\(\lambda_W(b-a)^2/2\) to a product-residual check loss at level \(q\).
+Its interior score equations give
 \[
-\sum_i X_i\widehat w_i(c-\widehat q_i)=0,
-\qquad \widehat w_i=\widehat b_i-\widehat a_i.
+ \Pr(a<Y<b)=q-2\lambda_W,
+ \qquad
+ \E(Y\mid a<Y<b)
+ =\mu+\frac{2\lambda_W}{c}(\mu-m),
 \]
-This is the finite-sample analogue of the restricted population score. Pointwise
-conditional coverage requires correct specification and a sufficiently rich
-predictor class.
+after setting \(q=c+2\lambda_W\). Thus the penalty generally changes both
+content and placement; it is not merely a tie-breaker among MPI intervals.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/ch05-mti/generated/figS02_loss_geometry.png}
-\caption{\textbf{MPI loss geometry and the fixed midpoint tilt.}
-For \(c=0.80\), \(m=0\), and \(h=1\), the residual product is negative exactly
-inside the interval. The half-width score contracts \(h\) for covered
-observations and expands it for misses. A fixed \(\delta\) adds a constant
-shift to the midpoint score but leaves the half-width score unchanged. These
-plots use the strict convention \(\ind(e<0)\): filled endpoint marks show the
-score at \(y=\pm1\), while open marks show the one-sided inside limits. These
-are deterministic pointwise score calculations, not fitted results.}
-\label{rqr2026:fig:supp-loss-geometry}
-\end{figure}
+\section{Profile computation and content checking}
+\label{app:mti-profile-computation}
 
-\subsection{Width-Regularized Interval Loss}
-\label{rqr2026:sec:supp-rqr-w}
-
-The width-regularized variant in \citet{rqr-PouplinEtAl2024RQR} has a different
-population score system from the MPI loss. For comparison, they use the RQR-W
-population objective
+For a fixed fitted content \(q\), tilt \(\delta\), learning rate
+\(\omega_{\mathrm R}\), and independent zero-mean Gaussian root priors with
+precision \(\lambda>0\), the intercept-only criterion is
 \[
-\E\left[\rho_q\{(Y-a)(Y-b)\}\right]
-+\frac{\lambda_W}{2}(b-a)^2,
-\qquad \lambda_W\ge0.
-\]
-In the present terminology, RQR-W is a width-regularized modification of the
-MPI loss, not the MPI loss itself.
-At a nondegenerate interior stationary point, subtracting the two endpoint
-score equations gives
-\[
-\Pr(a<Y<b)=q-2\lambda_W.
-\]
-Thus \(q=c+2\lambda_W\) restores content \(c\), subject to
-\(0\le\lambda_W<(1-c)/2\). The midpoint equation then gives
-\[
-\E(Y\mid a<Y<b)
-=\mu+\frac{2\lambda_W}{c}(\mu-m),
-\qquad m=\frac{a+b}{2}.
-\]
-Except in special symmetric cases, RQR-W therefore changes the
-mean-preserving placement equation. It is a coverage-corrected compromise
-between MPI risk and squared width, not a tie-breaker among
-unidentified MPI minimizers.
-
-More generally, if a differentiable width penalty \(P(w)\), \(w=b-a\), is
-added to a check loss at level \(q\), the coverage equation is
-\[
-\Pr(a<Y<b)=q-\frac{2P'(w)}{w}.
-\]
-A correction independent of the distribution and realized width is possible
-only when \(P'(w)/w\) is constant, which yields a quadratic penalty up to an
-additive constant. This explains both the form of RQR-W and why its path does
-not generally coincide with the shortest-contiguous path.
-
-\subsection{Fixed-Target MTI Computation}
-\label{rqr2026:sec:supp-mti-ecm}
-
-The validation study computes endpoint estimates by minimizing a penalized
-MTI criterion for each fixed content and tilt. Section~\ref{rqr2026:sec:supp-profiled-intercept}
-gives the scalar convex-profile representation used in that calculation.
-We first record an alternative expectation/conditional maximization (ECM)
-derivation, which explains the augmentation but is not used to produce the
-reported candidate endpoints. The complete interval-selection rule is
-assessed on independent simulation samples.
-
-For \(e_i=(y_i-\eta_{1i})(y_i-\eta_{2i})\), the fixed-target MTI loss is
-\[
-L_{n,q,\delta}
-=\sum_{i=1}^n\left[
-\rho_q(e_i)-q\delta(\eta_{1i}+\eta_{2i}-2y_i)
-\right],
-\qquad
-\rho_q(r)=r\{q-\ind(r<0)\}.
-\]
-With fixed learning rate \(\omega_{\mathrm R}\), the generalized-posterior
-kernel is proportional to
-\[
-\exp\{-\omega_{\mathrm R}L_{n,q,\delta}(\theta)\}\pi_0(\theta).
-\]
-The validation calculations are intercept-only, so \(\theta=(a,b)\) before the
-two roots are sorted into lower and upper endpoints.
-
-\subsubsection{An Alternative ECM Calculation}
-
-The pseudo-asymmetric-Laplace representation gives a convenient quadratic
-conditional calculation. Define
-\[
-\sigma_{\mathrm R}=\omega_{\mathrm R}^{-1},\qquad
-\xi_q=\frac{1-2q}{q(1-q)},\qquad
-\phi_q=\frac{2}{q(1-q)}.
-\]
-Then
-\begin{align}
-&\frac{q(1-q)}{\sigma_{\mathrm R}}
-\exp\{-\rho_q(e_i)/\sigma_{\mathrm R}\}\notag\\
-&\quad=\int_0^\infty
-\Normal\!\left(e_i\mid\xi_qv_i,\phi_q\sigma_{\mathrm R}v_i\right)
-\Exp\!\left(v_i\mid\mathrm{rate}=1/\sigma_{\mathrm R}\right)\,dv_i.
-\label{rqr2026:eq:supp-pseudo-al-mixture}
-\end{align}
-The latent scale is computational; it augments a loss factor rather than a
-sampling distribution for \(Y_i\).
-
-Under the \(\GIG(\nu,A,B)\) convention proportional to
-\(v^{\nu-1}\exp\{-(Av+B/v)/2\}\), the conditional scale law has
-\[
-v_i\mid\cdot\sim
-\GIG\left\{
-\frac12,\
-\frac{1}{2\sigma_{\mathrm R}q(1-q)},\
-\frac{q(1-q)e_i^2}{2\sigma_{\mathrm R}}
-\right\}.
-\]
-For \(e_i\ne0\),
-\[
-\tau_i=E(v_i^{-1}\mid\cdot)=\frac{1}{q(1-q)|e_i|}.
-\]
-The numerical ECM calculation uses a small response-product scale floor when
-\(e_i\) is near zero and objective backtracking after each accepted cycle.
-An ECM implementation can initialize each candidate from empirical
-shortest-window endpoints shifted by its tilt. Multiple initializations can
-be compared through the same penalized objective.
-
-\begin{algorithmblock}{Alternative fixed-target ECM calculation}
-\begin{enumerate}[leftmargin=2.2em,itemsep=0.3em,parsep=0pt]
-\item Fix \(q\), \(\delta\), \(\omega_{\mathrm R}\), the ridge prior precision,
-and deterministic starting roots.
-\item At the current roots, compute product residuals \(e_i\) and inverse-scale
-moments \(\tau_i\), using the prespecified numerical floor only when needed.
-\item Holding one root fixed, solve the Gaussian conditional maximization for
-the other root. Repeat with the roles exchanged.
-\item Accept a full cycle when the exact penalized objective does not increase
-beyond the prespecified numerical allowance, using backtracking if necessary.
-\item Return the final endpoint estimates and sort the two raw roots to report the
-candidate interval. If multiple starts are requested, select the fit with the
-smallest exact penalized objective.
-\end{enumerate}
-\end{algorithmblock}
-
-The fitted content \(q\) and tilt \(\delta\) index fixed-target generalized
-posteriors. The procedure profiles over their grid on each training sample.
-Grid settings and the DP probability threshold are calibrated separately and
-then applied unchanged to independent validation replications.
-
-\subsubsection{The Penalized Intercept Criterion}
-\label{rqr2026:sec:supp-profiled-intercept}
-
-The reported estimates use the following profile representation. Let the two
-roots have independent zero-mean Gaussian priors with
-common precision \(\lambda>0\), and fix \(q\), \(\delta\), and
-\(\omega_{\mathrm R}>0\). Their negative log generalized-posterior criterion,
-up to a constant, is
-\[
-J(a,b)=\omega_{\mathrm R}\sum_i
-\left[\rho_q\{(y_i-a)(y_i-b)\}-q\delta(a+b-2y_i)\right]
-+\frac{\lambda}{2}(a^2+b^2).
+ J(a,b)=\omega_{\mathrm R}\sum_i
+ [\rho_q\{(y_i-a)(y_i-b)\}-q\delta(a+b-2y_i)]
+ +\frac{\lambda}{2}(a^2+b^2).
 \]
 Write \(m=(a+b)/2\), \(t=(b-a)^2/4\), and
-\(s=nq-\lambda/\omega_{\mathrm R}\). The variable \(t\) is a squared
-half-width used to minimize this same criterion; no transformed-density mode
-is introduced.
+\(s=nq-\lambda/\omega_{\mathrm R}\).
 
 \begin{proposition}[Convex midpoint profile]
 \label{rqr2026:prop:supp-convex-intercept-profile}
-Suppose \(0<s<n\), and put
-\(W_s=\{w\in[0,1]^n:\sum_iw_i=s\}\). For a fixed midpoint, a minimizing
+Suppose \(0<s<n\), and let
+\(W_s=\{w\in[0,1]^n:\sum_iw_i=s\}\). For fixed \(m\), a minimizing
 \(t\ge0\) is an empirical \(s/n\) quantile of the squared distances
-\((y_i-m)^2\). The profiled criterion has the representation
+\((y_i-m)^2\). Moreover,
 \begin{align*}
-\min_{t\ge0}J(m,t)
-={}&2\lambda m^2+\max_{w\in W_s}\{A(w)+B(w)m\},\\
-A(w)={}&\omega_{\mathrm R}
-\left[q\sum_i y_i^2-\sum_iw_i y_i^2+2q\delta\sum_i y_i\right],\\
-B(w)={}&2\omega_{\mathrm R}
-\left[\sum_iw_i y_i-q\sum_i y_i-nq\delta\right].
+ \min_{t\ge0}J(m,t)
+ &=2\lambda m^2+\max_{w\in W_s}\{A(w)+B(w)m\},\\
+ A(w)&=\omega_{\mathrm R}
+ [q\textstyle\sum_i y_i^2-\sum_iw_i y_i^2+2q\delta\sum_i y_i],\\
+ B(w)&=2\omega_{\mathrm R}
+ [\textstyle\sum_iw_i y_i-q\sum_i y_i-nq\delta].
 \end{align*}
-It is strongly convex in \(m\), so its minimizing midpoint is unique.
+The profile is strongly convex in \(m\), so its minimizing midpoint is unique.
 The minimizing squared half-width can be nonunique at an empirical quantile.
 \end{proposition}
 
 \begin{proof}
 For \(z_i=(y_i-m)^2\), write
-\(\rho_q(z_i-t)=qz_i-qt+(t-z_i)_+\). Minimization in \(t\) gives
+\(\rho_q(z_i-t)=qz_i-qt+(t-z_i)_+\). Then
 \[
-\min_{t\ge0}\left\{\sum_i(t-z_i)_+-st\right\}
-=-\min_{w\in W_s}\sum_iw_i z_i.
+ \min_{t\ge0}\{\textstyle\sum_i(t-z_i)_+-st\}
+ =-\min_{w\in W_s}\textstyle\sum_iw_iz_i.
 \]
-To verify the identity, order the \(z_i\), assign weight one to the smallest
-\(\lfloor s\rfloor\) values, and assign the remaining mass at the next value.
-The one-sided derivatives in \(t\) bracket zero at the corresponding quantile.
-Expansion of the squared distances gives the displayed profile because
+The identity follows by assigning unit weight to the smallest
+\(\lfloor s\rfloor\) distances and the remaining mass to the next distance;
+the one-sided derivatives in \(t\) bracket zero at that quantile. Expanding
+the squared distances gives the displayed profile because
 \(\omega_{\mathrm R}(nq-s)=\lambda\). A maximum of affine functions is
-convex; adding \(2\lambda m^2\) gives strong convexity. If \(s\le0\),
-zero is a minimizing squared half-width and the midpoint follows from a
-scalar quadratic.
+convex, and \(2\lambda m^2\) makes the profile strongly convex.
 \end{proof}
 
-At a distinct-root joint subgradient-stationary point, the penalized equations
-give fractional allocations satisfying
+The calculation minimizes this scalar profile, chooses the lower squared
+radius at a tie, and checks the final objective against a convex lower bound
+with relative tolerance \(10^{-8}\). The reported validation and application
+use \(\omega_{\mathrm R}=1\), \(\lambda=10^{-4}\), and zero prior means.
+The effective mass \(s\) also determines the content-grid refinement. These
+settings are fixed before interval selection.
+
+For a fixed closed interval \(I\), a direct Dirichlet-process model
+\(F\sim\mathrm{DP}(a,H)\) gives, by conjugacy,
 \[
-\sum_iw_i=nq-\lambda/\omega_{\mathrm R},\qquad
-\sum_iw_i y_i=nq(\overline y+\delta)
--\frac{\lambda}{\omega_{\mathrm R}}(a+b).
+ F(I)\mid D_n\sim
+ \mathrm{Beta}\{aH(I)+N_n(I),a(1-H(I))+n-N_n(I)\}.
 \]
-These equations explain the prior contributions to empirical balance.
-They also supply a global optimality check for this intercept criterion:
-\(\rho_q(e_i)\ge(q-w_i)e_i\) is exact at a compatible stationary pair
-\((a_0,b_0)\), and substitution gives
+The analysis uses \(a=1\) and \(H=\Normal(0,4^2)\) on the fitting scale. The
+Beta survival probability determines candidate eligibility. It is a posterior
+content statement under this response-distribution model, not a
+distribution-free tolerance guarantee.
+
+\section{Calibration and feasibility}
+\label{app:mti-calibration}
+
+The tolerance study uses iid continuous samples, paired method comparisons,
+and the nine feasible cells
 \[
-J(a,b)\ge J(a_0,b_0)+\frac{\lambda}{2}
-\{(a+b)-(a_0+b_0)\}^2.
+\begin{aligned}
+(n,c)\in\{&
+(50,.90),(100,.90),(100,.95),\\
+&(500,.90),(500,.95),(500,.99),\\
+&(1000,.90),(1000,.95),(1000,.99)\}.
+\end{aligned}
 \]
-This argument requires distinct roots and a joint compatible subgradient
-selection. At collapsed roots, the squared-radius boundary condition must
-also be checked. Unequal prior precisions and regression require separate
-arguments.
+The panel consists of Gaussian and Student \(t_3\) references and six
+asymmetric laws: exponential, asymmetric Laplace with quantile level \(0.10\),
+two-piece Normal with scale ratio \(1{:}12\), Beta\((1,8)\),
+Gamma\((0.5,1)\), and log-normal with log-scale standard deviation \(1.25\).
+Each law is centered and scaled before sampling.
 
-\paragraph{Profile calculation and numerical checks.}
-For each fixed \((q,\delta)\), the numerical calculation minimizes the scalar
-midpoint profile and chooses the lower minimizing squared radius at a tie.
-The endpoints are \(m-\sqrt t,m+\sqrt t\). A lower objective bound from the
-convex profile supplies a relative objective-gap check, with tolerance
-\(10^{-8}\). Every candidate must pass before interval selection. The
-calculation uses \(\omega_{\mathrm R}=1\), \(\lambda=10^{-4}\), and zero
-prior means throughout the reported simulation and application.
-
-The content grid is refined using \(s=nq-\lambda/\omega_{\mathrm R}\).
-Within its initial range, each interval \((r-1,r)\) of positive effective
-observation mass receives an interior content if none was already present.
-Original contents are retained, and duplicate contents are removed. At each
-content, the tilt candidates are zero, the balanced fractional shortest-window
-tilt, and seven equally spaced positions from the minimum to the maximum
-empirical admissible tilt. These are fixed search rules, rather than choices
-made using validation outcomes. The reported shortest-candidate property
-applies to this finite search.
-
-\subsection{Direct DP Content Check}
-\label{rqr2026:sec:supp-direct-dp-check}
-
-The MTI comparator uses a model-based content-probability check during calibration.
-For a fixed closed interval \(I=[l,u]\), let \(N_n(I)=\sum_{i=1}^n\ind(Y_i\in I)\).
-Under the direct Dirichlet-process model
-\[
-F\sim\mathrm{DP}(a,H),\qquad
-Y_i\mid F\stackrel{\mathrm{iid}}{\sim}F,
-\]
-with fixed \(a>0\) and fixed base distribution \(H\), conjugacy gives an exact
-posterior law for the interval content. The reported calculations use
-\(a=1\) and \(H=\Normal(0,4^2)\), fixed on the response scale used for fitting.
-
-\begin{proposition}[Direct DP fixed-interval content law]
-\label{rqr2026:prop:supp-dp-content-law}
-For fixed \(I=[l,u]\),
-\[
-F(I)\mid D_n\sim
-\mathrm{Beta}\{aH(I)+N_n(I),a(1-H(I))+n-N_n(I)\}.
-\]
-Consequently \(p_n(I;c)=\Pr\{F(I)\ge c\mid D_n\}\) is available from a Beta
-survival probability.
-\end{proposition}
-
-\begin{proof}
-Dirichlet-process conjugacy gives
-\[
-F\mid D_n\sim \mathrm{DP}(a+n,H_n),\qquad
-H_n=\frac{aH+\sum_{i=1}^n\delta_{Y_i}}{a+n}.
-\]
-For the partition \((I,I^c)\), the finite-dimensional distribution of a
-Dirichlet process is Dirichlet with parameters
-\((a+n)H_n(I)=aH(I)+N_n(I)\) and
-\((a+n)H_n(I^c)=a\{1-H(I)\}+n-N_n(I)\). The first coordinate is the stated
-Beta distribution.
-\end{proof}
-
-The direct DP check determines eligible MTI candidates for each training
-sample. Its threshold is chosen in a separate calibration run and fixed before
-independent validation. The Beta identity is a posterior probability statement
-under the DP response-distribution model. The repeated-sampling behavior of
-the selected interval is assessed empirically.
-
-\subsection{Tolerance-Validation Protocol and Feasibility}
-\label{rqr2026:sec:supp-tolerance-validation-protocol}
-
-The primary tolerance validation is restricted to iid continuous univariate
-samples. The comparison includes the calibrated MTI rule, Young--Mathew
-interpolation, and Wilks full-range intervals. MTI
-profiles fixed-target endpoint fits over fitted content and retained-mean tilt,
-then applies a direct Dirichlet-process fixed-interval content probability
-threshold. Its cutoff is determined by simultaneous simulation-calibration
-bounds. The scan reference below initializes the content grid. Young--Mathew and Wilks are classical order-statistic
-comparators. Regression and dynamic tolerance calibration require additional
-results because the fitted intervals vary with covariates or time.
-
-The simulation design fixes tolerance confidence \(1-\alpha=0.95\) and uses
-explicit feasible design cells:
-\[
-  \begin{aligned}
-  (n,c)\in\{&
-  (50,0.90),(100,0.90),(100,0.95),\\
-  &(500,0.90),(500,0.95),(500,0.99),\\
-  &(1000,0.90),(1000,0.95),(1000,0.99)\}.
-  \end{aligned}
-\]
-The distributional panel contains two symmetric reference distributions and six
-asymmetric simulation distributions. The symmetric reference distributions are
-Gaussian and Student \(t_3\). The asymmetric simulation distributions are
-exponential, asymmetric Laplace with \(\tau=0.10\), two-piece Normal with scale
-ratio \(1{:}12\), Beta\((1,8)\), Gamma\((0.5,1)\), and log-normal with
-log-scale standard deviation \(1.25\). All laws are centered and scaled before
-sampling. Within each cell, all three methods use common random samples,
-independent of threshold development and calibration assessment. The
-reproducibility materials include the code version, simulation settings,
-package versions, random seeds, calibration files, and numerical summaries.
-The article comparison uses the three methods from this paired independent
-validation. The reported rows contribute 216,000
-replication-level method evaluations over the 72 distribution-level cells used in the main
-comparison. A frozen earlier MTI specification is evaluated on the same samples
-as a numerical comparison in the reproducibility materials. All simulations completed, and all three reported methods produced
-an interval in every replication. The manuscript tables and figures are
-computed directly from these replication-level simulation outputs and the
-corresponding scan-calibration outputs. The scenario-range table in the main
-article is summarized across distributions within each \((n,c)\) cell, while
-the integrated tables retain the distribution-level content-attainment and width
-summaries.
-Table~\ref{rqr2026:tab:supp-primary-dgp-delivery} gives the distribution-level
-content-attainment percentages before aggregation, and
-Table~\ref{rqr2026:tab:supp-primary-dgp-width-ranges} reports the corresponding
-distribution-level 2.5\%--97.5\% ranges of interval lengths. The
-replication-level data file records indicators of interval production,
-infeasibility indicators, and raw width summaries for each
-distribution-level cell as reproducibility information.
-
-\paragraph{Threshold development and assessment.}
-For each setting, 32 development samples per distribution determine a finite
-cutoff menu from 25 empirical quantiles of candidate posterior probabilities
-and the requested tolerance confidence. A separate 24,000 samples per
-distribution assess every cutoff. We select the smallest cutoff that returns
-every interval and whose one-sided exact binomial lower bound for attainment
-is at least \(0.95\) in every distribution.
-
-Seven of nine settings pass the initial assessment. A fixed follow-up uses
-fresh development and assessment samples for \(n=50,c=0.90\) and
-\(n=100,c=0.95\).
-For these two settings, the development menu also includes the smallest,
-across development samples, of the largest candidate content probability.
-Each gap between adjacent probability knots is subdivided into four intervals
-on the logit scale. This produces 105 assessed cutoffs in each setting.
-The follow-up retains the original seven cutoffs exactly.
-
-The total Monte Carlo error probability is \(0.05\). Half is allocated across
-all original nine settings, eight distributions, and 26 cutoffs, giving
-per-comparison error \(0.025/(9\cdot8\cdot26)\). The retained seven
-cutoffs still pass these tighter bounds. The other half is allocated to the
-two fresh settings, eight distributions, and the \(M\) cutoffs determined by
-independent development, giving \(0.025/(2\cdot8\cdot M)\). The union bound
-controls the combined calibration error. This calculation concerns the fixed
-simulation panel. Table~\ref{rqr2026:tab:supp-mti-profile-policy} records the resulting
-cutoffs, smallest calibration lower bounds, and independent validation ranges.
-
-\paragraph{Independent uncertainty assessment.}
-The cutoff is fixed before the 1000 validation samples per case are generated.
-Pointwise exact 95\% binomial intervals accompany each attainment estimate.
-For MTI, simultaneous two-sided intervals across 72 cases allocate
-\(0.05/(2\cdot72)\) to each tail. Their lower bounds exceed \(0.95\) in
-38 cases; 34 include \(0.95\), and none has an upper bound below it.
-The smallest point estimate, \(951/1000\), occurs for Student \(t_3\) at
-\(n=500,c=0.99\), with pointwise interval approximately
-\([0.9357,0.9635]\). Inconclusive validation intervals reflect Monte Carlo
-precision and are reported alongside the larger calibration assessment.
-
-\begingroup
-\TableStyle
-\input{tables/ch05-mti/tolerance_validation_article_dgp_delivery.tex}
-\endgroup
-
-\input{tables/ch05-mti/tolerance_validation_article_dgp_width_ranges.tex}
-
-The population benchmark used in the main width figure is shown in
-Figure~\ref{rqr2026:fig:supp-tolerance-population-shortest}. For each simulation law
-and content level, this interval is the shortest interval with population
-content \(c\) under the known distribution after centering and scaling. It
-provides a lower width reference for the empirical intervals, rather than a
-sample-based tolerance procedure.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{figures/ch05-mti/generated/figS03_tolerance_population_shortest_intervals.png}
-\caption{\textbf{Population shortest-content intervals for the simulation
-distributions.} Horizontal intervals show the shortest population content-\(c\)
-intervals for the centered and scaled simulation laws. The figure supplies the
-width benchmarks used to interpret the empirical width ranges in the main
-article.}
-\label{rqr2026:fig:supp-tolerance-population-shortest}
-\end{figure}
-
-These results provide empirical repeated-sampling evidence for the selected
-profile rule. A distribution-free tolerance theorem for MTI remains to be
-established.
+For each cell, independent development samples define a finite cutoff menu.
+Every cutoff is assessed on 24,000 new samples from each distribution. The
+selected cutoff is the smallest one that returns every interval and whose
+simultaneous one-sided exact binomial lower bound for content attainment is at
+least \(0.95\) for every distribution. Seven cells pass the initial
+assessment. A prespecified follow-up uses fresh development and assessment
+samples for \((50,.90)\) and \((100,.95)\), while retaining the seven earlier
+cutoffs. Half of the total Monte Carlo error probability \(0.05\) is allocated
+over the initial nine cells, eight distributions, and 26 cutoffs; half is
+allocated over the two follow-up cells, eight distributions, and their
+independently determined cutoff menus. The union bound controls the combined
+calibration error for this finite panel.
 
 \input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}
 
-\paragraph{Scan reference for the fitted-content search.}
-The reference retained count \(k\) is chosen before seeing the replicated
-samples. For independent \(U_i\sim\mathrm{Unif}(0,1)\), define
+The cutoff is fixed before 1,000 independent validation samples per
+distribution and cell are generated. Of the 72 simultaneous validation
+intervals, 38 have lower bounds above \(0.95\), 34 include \(0.95\), and none
+has an upper bound below \(0.95\). The smallest point estimate is
+\(951/1000\), for Student \(t_3\) at \(n=500,c=.99\). These results are
+repeated-sampling evidence for the prespecified panel; they do not establish a
+distribution-free tolerance theorem for MTI.
+
+The fitted-content search begins from a scan-calibrated retained count. For
+independent \(U_i\sim\mathrm{Unif}(0,1)\), define
 \[
-M_n(c)=\max_{0\le s\le1-c}\#\{i:U_i\in[s,s+c]\},\qquad
-k_{n,c,\alpha}=\min\{k:\Pr(M_n(c)<k)\ge1-\alpha\}.
+ M_n(c)=\max_{0\le r\le1-c}\#\{i:U_i\in[r,r+c]\},
+ \qquad
+ k_{n,c,\alpha}=\min\{k:\Pr(M_n(c)<k)\ge1-\alpha\}.
 \]
-For ordered observations \(Y_{(1)}\le\cdots\le Y_{(n)}\), the scan-reference
-window is
-\[
-I^{\mathrm{ref}}_n=[Y_{(j_0)},Y_{(j_0+k-1)}],\qquad
-j_0=\min\argmin_{1\le j\le n-k+1}\{Y_{(j+k-1)}-Y_{(j)}\}.
-\]
-This reference provides \(k/n\) for the initial fitted-content search.
-The reported MTI endpoints are obtained from the selected profile fit.
-Its fitted content can differ from
-\(k/n\), and its interval does not inherit the scan reference's tolerance
-argument.
+The corresponding shortest observed \(k\)-window supplies \(k/n\) as a search
+reference; the selected MTI interval is still obtained from the profile fit
+and does not inherit the scan reference's tolerance argument.
 
-Table~\ref{rqr2026:tab:supp-scan-reference} records the
-retained counts, retained fractions, content buffers, and lower confidence
-bounds used in the simulation design. Adaptive Clopper--Pearson calibration
-selects the retained count for each feasible sample-size/content cell before
-any distribution-specific replications are evaluated. The numerical calculation
-adjusts one-sided Clopper--Pearson lower bounds over retained counts and
-adaptive looks; numerical confidence is distinct from tolerance confidence.
-The full-range probability is evaluated analytically. Exact evaluation of the
-scan distribution remains a numerical problem.
-
-When \(k=n\), the reference window is the full sample range. This occurs for
-\((n,c)=(50,0.90),(100,0.95)\), and \((500,0.99)\). The MTI search still
-uses fitted contents strictly below one, including fractional contents between
-\((n-1)/n\) and one. The closed-window reference contains \(k\) observations
-under continuity; the alternative half-open convention
-\((Y_{(j)},Y_{(j+k)}]\) has different indices and requires its own calibration.
-
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
-\caption{\textbf{Scan reference for the MTI fitted-content search.} The retained
-count \(k\) is selected by adaptive Clopper--Pearson Monte Carlo scan
-calibration. The content buffer is \(k/n-c\).}
+\caption{\textbf{Scan reference for the fitted-content search.} The retained
+count is selected by adaptive Clopper--Pearson Monte Carlo calibration. The
+content buffer is \(k/n-c\).}
 \label{rqr2026:tab:supp-scan-reference}
 \TableStyle
 \input{tables/ch05-mti/tolerance_validation_article_scan_calibration.tex}
 \end{table}
 
-Small-sample feasibility is governed by the full-range two-sided order-statistic
-coverage probability
+Small-sample feasibility for sample-bounded two-sided order-statistic intervals
+is governed by
 \[
-  \Pr_F^n\{F(Y_{(n)})-F(Y_{(1)})\ge c\}
-  =
-  1-n(1-c)c^{n-1}-c^n .
+ \Pr_F^n\{F(Y_{(n)})-F(Y_{(1)})\ge c\}
+ =1-n(1-c)c^{n-1}-c^n.
 \]
-The smallest \(n\) satisfying this inequality depends on both content and
-tolerance confidence. Table~\ref{rqr2026:tab:supp-full-range-thresholds} lists the
-thresholds used to design the simulation study.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{\textbf{Full-range feasibility thresholds.} Entries are the smallest
-sample sizes for which the sample-range interval \([Y_{(1)},Y_{(n)}]\) reaches
-the stated two-sided distribution-free content/confidence pair.}
+sample sizes at which the sample range reaches the stated content and
+tolerance-confidence pair.}
 \label{rqr2026:tab:supp-full-range-thresholds}
 \TableStyle
 \begin{tabular}{@{}lrrr@{}}
@@ -1216,470 +452,173 @@ Tolerance confidence & \(c=0.90\) & \(c=0.95\) & \(c=0.99\)\\
 \end{tabular}
 \end{table}
 
-This distinction matters for interpreting the small sample sizes in
-\citet{rqr-PourmohamadRichardsonSanso2026CalibratedBNP}. The values
-\((38,77,388)\) are appropriate at \(90\%\) tolerance confidence. A
-\(95\%\)-confidence design needs the larger thresholds \((46,93,473)\). The
-simulation design therefore lists the feasible cells explicitly instead of
-forming a Cartesian product of sample sizes and contents. This prevents the
-comparison from treating structural infeasibility of the sample-bounded
-order-statistic procedures as a method failure. It does not establish the
-same feasibility boundary for the model-based MTI procedure.
-The Young--Mathew comparator is evaluated through the \texttt{tolerance}
-package's \texttt{nptol.int(..., method = "YM")} function. The completed
-run used \texttt{tolerance} version 3.0.0, and the package version is included
-in the method reproducibility record.
+The distinction between the two rows is material: the smaller thresholds do
+not support a \(95\%\)-confidence statement. The validation design therefore
+uses explicit feasible cells instead of a Cartesian product of sample sizes
+and contents.
 
-\subsection{Pharmaceutical Application Details}
-\label{rqr2026:sec:supp-pharma-application}
+\section{Pharmaceutical application sensitivities}
+\label{app:mti-application-sensitivity}
 
-\paragraph{Data and paired partitions.}
-The application uses the manufacturing data described by
-\citet{rqr-ZagarMihelic2022PharmaManufacturing} and version 1 of the public
-\texttt{Laboratory.csv} file \citep{rqr-ZagarMihelic2021LaboratoryCsv}. The source
-contains \PharmaRawBatches{} batches and \PharmaRawFields{} recorded fields.
-File size, MD5, and SHA256 are verified before extracting product code
-\PharmaProductCode{}, which gives \PharmaBatches{} batches. The main response
-is the reported film-coated-tablet tensile metric. Tablet-core
-weight relative standard deviation (RSD) provides a more asymmetric
-supplementary example. The recorded active pharmaceutical ingredient (API)
-batch identifier defines one grouping used below. The file contains ties,
-and the batch records may be dependent.
+The application uses the public manufacturing records of
+\citet{rqr-ZagarMihelic2022PharmaManufacturing} and the associated laboratory
+file \citep{rqr-ZagarMihelic2021LaboratoryCsv}. The reported tensile metric is
+reproducible from batch summaries when \(3.14\) is used in place of \(\pi\),
+but its physical unit and measurement window remain unresolved. Some recorded
+average hardness values lie outside their recorded extrema. The public
+definitions do not establish that the summaries concern identical tablets,
+units, or measurement windows. The values are therefore retained as recorded,
+and the application is interpreted as historical variation rather than a
+verified quality-control rule. Ties, overlapping partitions, possible batch
+dependence, and exclusion of batches without final quality results further
+limit a direct iid tolerance interpretation.
 
-The source defines tensile strength using average hardness and maximum tablet
-dimensions. Its numerical values reproduce from these batch summaries using
-\(3.14\) in place of \(\pi\), to rounding precision. This ratio of summaries
-need not equal the average of tablet-specific tensile strengths. In product
-code \PharmaProductCode{}, \PharmaFctHardnessQuestions{} film-coated average
-hardness values exceed their recorded maxima, and
-\PharmaCoreHardnessQuestions{} core averages fall below their recorded minima.
-If the summaries concern the same tablets, units, and measurement window,
-these orderings are inconsistent. The public definitions do not establish
-those conditions. We preserve all values and treat the derived response's
-physical interpretation as unresolved. The source describes in-specification
-historical variation and excludes batches without final quality results;
-these records do not represent every attempted production batch.
+Tablet-core weight RSD supplies a more asymmetric placement example. MTI has
+median width \PharmaRsdMtiWidth{}, compared with \PharmaRsdYmWidth{} for
+Young--Mathew and \PharmaRsdWilksWidth{} for Wilks. Its median tail omissions
+are \PharmaRsdMtiLowerOmitted\% below and
+\PharmaRsdMtiUpperOmitted\% above, compared with
+\PharmaRsdYmLowerOmitted\% and \PharmaRsdYmUpperOmitted\% for
+Young--Mathew. Because larger RSD is scientifically adverse, a one-sided upper
+tolerance limit would be more appropriate for a direct quality-control
+decision; the two-sided result describes interval placement only.
 
-\begin{table}[H]
-\centering
-\caption{\textbf{Response diagnostics for product code \PharmaProductCode{}.}
-The reported tensile metric is used in the main article. Weight RSD has a
-stronger asymmetric-placement interpretation. Film-coated-tablet hardness has
-more ties and is excluded.}
-\label{rqr2026:tab:supp-pharma-response-diagnostics}
-\TableStyle
-\input{tables/ch05-mti/pharma_application_response_diagnostics.tex}
-\end{table}
-
-For each primary random split, every method uses the same \PharmaTrain{}
-training batches and \PharmaHeldout{} withheld batches. The two responses use
-identical partitions. Each split is generated from its recorded seed; changing
-worker order leaves its membership unchanged. The requested population
-content is \(c=\PharmaContent\), and nominal tolerance confidence is
-\(\PharmaConfidence\). The selected MTI rule uses posterior content
-probability threshold \(\PharmaScreen\) and internal retained-count reference
-\(k=\PharmaRetained\). This internal calibration anchor is used to construct
-the fitted-content search. Fitted content and tilt vary within each sample
-under the preassigned rule; fitting settings and the calibration rule are
-unchanged across responses and partitions.
-
-\paragraph{Representative split.}
-The displayed intervals come from an actual random split chosen separately
-for each response by a prespecified median-distance rule. For every split in
-which all three methods return intervals, collect each method's lower and
-upper endpoints, width, held-out empirical content, and two tail-omission
-fractions as components \(x_{sj}\). Let \(m_j\) be the across-split median
-of component \(j\), and let \(d_j\) be its median absolute deviation (MAD). A zero
-MAD is replaced by the interquartile range; a remaining zero scale is replaced
-by one. The selected split minimizes
-\[
-  \sum_j \left\{(x_{sj}-m_j)/d_j\right\}^2,
-\]
-with ties resolved by the smallest split identifier. Training and held-out
-indices and the selection score are retained with the results. This rule
-selects split \PharmaTensileRepresentative{} for the tensile metric and
-split \PharmaRsdRepresentative{} for weight RSD.
-
-\paragraph{Interval placement for weight RSD.}
-The RSD response has sample skewness \PharmaRsdSkewness{}. MTI has median
-width \PharmaRsdMtiWidth{}, compared with \PharmaRsdYmWidth{} for
-Young--Mathew and \PharmaRsdWilksWidth{} for Wilks. The median paired width
-difference against Young--Mathew is \PharmaRsdPairedYmWidthDifference{}.
-The tail allocation explains part of this difference: MTI omits median
-fractions \PharmaRsdMtiLowerOmitted\% below and
-\PharmaRsdMtiUpperOmitted\% above, while Young--Mathew omits
-\PharmaRsdYmLowerOmitted\% and \PharmaRsdYmUpperOmitted\%, respectively.
-A shorter interval can exclude more of the scientifically adverse upper
-tail. An upper one-sided tolerance limit would be more natural for a direct
-quality-control decision; the present two-sided analysis describes placement
-on the historical data.
-
-\begin{table}[H]
-\centering
-\caption{\textbf{Weight-RSD application.} Intervals use \PharmaTrain{}
-training and \PharmaHeldout{} held-out batches over \PharmaSplits{} paired
-random splits. Bracketed ranges are empirical 2.5\%--97.5\% quantiles.
-Held-out \(\ge c\) is the percentage of all splits with empirical content at
-least \(c\). The splits reuse one finite dataset and are not independent
-sampling replications.}
-\label{rqr2026:tab:supp-pharma-rsd}
-\TableStyle
-\input{tables/ch05-mti/pharma_application_supplement_summary.tex}
-\end{table}
-
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png}
 \caption{\textbf{Interval placement and held-out comparisons for weight RSD.}
-The panels follow the main application figure. The representative split
-\PharmaRsdRepresentative{} is selected by the same median-distance rule.
-Thick and thin tail-omission segments show interquartile and empirical 95\%
-ranges, with median markers. The response is strongly right-skewed, but an
-upper one-sided tolerance limit would be more natural for a direct
-quality-control decision.}
+The representative split follows the prespecified median-distance rule. Thick
+and thin tail-omission segments show interquartile and empirical \(95\%\)
+ranges, with median markers. The response is strongly right-skewed; an upper
+one-sided tolerance limit would be preferable for a direct quality-control
+decision.}
 \label{rqr2026:fig:supp-pharma-rsd}
 \end{figure}
 
-The paired comparisons below use MTI minus the named benchmark for endpoint,
-width, content, and omission differences. The width ratio divides MTI
-width by benchmark width. They summarize the observed paired split
-distributions without treating overlapping splits as independent observations.
+Sensitivity partitions use forward and reverse recorded order and grouped
+production-month or active-ingredient batches, always with
+\PharmaTrain{} training observations. The reverse recorded-order partition
+gives MTI tensile-metric held-out content
+\PharmaTensileReverseContent\%, while the forward recorded-order partition
+gives RSD held-out content \PharmaRsdForwardContent\%. These changes show that
+the empirical application depends materially on the partition. They cannot
+separate dependence from distributional change across the recorded batches.
 
-\input{tables/ch05-mti/pharma_application_primary_paired_summary.tex}
-\input{tables/ch05-mti/pharma_application_rsd_paired_summary.tex}
-
-\paragraph{Partition sensitivities.}
-Forward recorded order trains on the first \PharmaTrain{} batches in recorded
-batch order, with original row order breaking ties, and holds out the final
-\PharmaHeldout{}. Reverse recorded order trains on the final \PharmaTrain{} and
-holds out the first \PharmaHeldout{}. Each is a single labeled partition.
-Production-month and API-batch sensitivities keep whole groups on one side of
-the training boundary. Response-independent allocation conditional on exactly
-\PharmaTrain{} training batches gives up to \PharmaGroupedSplits{} unique
-partitions for each grouping. Fixed seeds and removal of duplicate
-partitions determine the reported sets before fitting. Exact training size
-preserves the sample-size cell of the fixed calibration rule.
-These orderings use batch identifiers and source rows. Ambiguous process date
-strings and unresolved relationships between production stages prevent a
-verified calendar interpretation.
-
-Tables~\ref{rqr2026:tab:supp-pharma-primary-sensitivity}
-and~\ref{rqr2026:tab:supp-pharma-rsd-sensitivity} give actual split counts and
-summaries for each design. The recorded-order cases show that partition choice
-can materially change held-out empirical content. For MTI, reverse
-order gives tensile-metric content \PharmaTensileReverseContent\%;
-forward order gives RSD content \PharmaRsdForwardContent\%.
-These comparisons describe variation across the recorded batches and are
-insufficient to distinguish dependence from changes in the batch distribution.
-
-\input{tables/ch05-mti/pharma_application_primary_sensitivity.tex}
-\input{tables/ch05-mti/pharma_application_rsd_sensitivity.tex}
-
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/figS05_pharma_application_partition_sensitivity.png}
 \caption{\textbf{Sensitivity to training and held-out partitions.} Points show
-median widths or held-out empirical content within each labeled design.
-Segments give empirical 95\% ranges for random and grouped splits. The two
-recorded-order designs each contain one partition and are shown as individual
-points. Dashed lines mark the requested content \(c=\PharmaContent\).
-The plots describe historical partition sensitivity.}
+median widths or held-out empirical content within each partition design;
+segments give empirical \(95\%\) ranges for random and grouped splits. The
+recorded-order designs each contain one partition. Dashed lines mark requested
+content.}
 \label{rqr2026:fig:supp-pharma-partition-sensitivity}
 \end{figure}
 
-\paragraph{Production campaigns.}
-The associated process archive \citep{rqr-ZagarMihelic2021Process} maps all
-\PharmaBatches{} batches uniquely to \PharmaCampaigns{} manufacturing
-campaigns, containing 2--12 batches each. Campaigns can cross recorded months
-and share API lots. Every random partition shares campaigns; the median number
-of withheld batches in represented campaigns is
-\PharmaRandomSharedHeldout{} of \PharmaHeldout{}. This identifies the
-production groups represented on both sides, without establishing either
-dependence or independence.
+All production campaigns are represented on both sides of every primary
+random partition. The campaign-disjoint sensitivity still shares some
+active-ingredient batches. Accordingly, attainment frequencies from these
+overlapping partitions neither estimate nominal tolerance confidence nor
+isolate a campaign effect. All selected fixed-target profiles satisfy the
+prespecified objective-gap check, and an independent recalculation reproduces
+the selected profiles, content probabilities, and held-out contents. These
+numerical checks do not remove the substantive limitations of the data and
+partition design.
 
-As a retrospective sensitivity, we retain every existing month-grouped
-partition with no shared campaign. This response-independent criterion selects
-\PharmaCampaignDisjointMonths{} partitions; all \PharmaGroupedSplits{} original
-month partitions remain in the comparison. Table~\ref{rqr2026:tab:supp-pharma-campaign}
-reports the corresponding widths, empirical content, and omissions together.
-For MTI the selected subset has median held-out content
-\PharmaCampaignTensileContent\% for the tensile metric and
-\PharmaCampaignRsdContent\% for RSD. These are overlapping partitions of one
-historical dataset. Moreover, \PharmaCampaignDisjointApiShared{} selected
-partitions still share API lots. Their content-attainment frequencies do not
-estimate nominal tolerance confidence or isolate a causal campaign effect.
+\section{Proposed regression and dynamic endpoint computation}
+\label{app:mti-extensions}
 
-\begin{table}[H]
-\centering
-\caption{\textbf{Retrospective sensitivity to campaign sharing.} Both sets
-use existing month-grouped partitions with \PharmaTrain{} training and
-\PharmaHeldout{} withheld batches; no intervals are refitted. Brackets give
-empirical 2.5\%--97.5\% width quantiles. Content is median held-out empirical
-content; \(\ge c\) is the percentage of partitions meeting the requested
-content. Below/above gives median omitted fractions. Content, attainment, and
-omissions are percentages.
-The subset is retrospective and the partitions are not independent samples.}
-\label{rqr2026:tab:supp-pharma-campaign}
-\input{tables/ch05-mti/pharma_campaign_sensitivity.tex}
-\end{table}
-
-\paragraph{Numerical diagnostics.}
-Every selected MTI fit retains its content, tilt, posterior content
-probability, candidate counts, profile iterations, and relative objective gap.
-All candidate fits must satisfy the objective-gap tolerance
-\(\PharmaObjectiveTolerance\) before the interval is selected. The
-selected-fit numerical criterion is met in \PharmaTensileConverged{} of
-\PharmaTensileReturned{} returned tensile-metric fits and
-\PharmaRsdConverged{} of \PharmaRsdReturned{} returned RSD fits.
-The main summaries retain every split. Independent recalculation verifies
-all 3004 selected fixed-target profiles, posterior content probabilities,
-and held-out contents; comparator intervals agree with the original analysis
-on the same observations. These numerical checks concern the computed
-criterion and do not remove the application limitations from overlapping
-partitions, ties, and possible dependence.
-
-\begin{table}[H]
-\centering
-\caption{\textbf{MTI numerical diagnostics for primary random splits.}
-Numerical summaries are medians with empirical 95\% ranges among returned
-fits. Return counts and the convergence flag are reported separately.}
-\label{rqr2026:tab:supp-pharma-numerical}
-\TableStyle
-\input{tables/ch05-mti/pharma_application_numerical_diagnostics.tex}
-\end{table}
-
-Failed interval calculations, if any, remain in the results and count as
-nonattainment; endpoint and width summaries condition on interval return.
-The recorded posterior content probability is a calculation under the DP
-model. Held-out empirical content is evaluated on finite withheld batches,
-and the nominal tolerance-confidence assessment remains the separate
-simulation study.
-
-\subsection{Reproducibility and Validation Limits}
-\label{rqr2026:sec:supp-reproducibility}
-
-The reproducibility materials separate mathematical statements, numerical
-construction, and repeated-sampling evidence. The proofs above support the
-population MPI and MTI identities, the fractional empirical score balance, and
-the direct DP fixed-interval content law under their stated assumptions. The
-scan-reference retained counts are calibrated before the replicated samples are analyzed.
-The MTI content-probability cutoff is selected in a separate
-calibration run and then applied unchanged in the independent validation run.
-
-The validation evidence is confined to iid continuous univariate samples from
-the prespecified simulation distributions. It does not establish tolerance
-validity for regression intervals, dynamic endpoint states, dependent samples,
-or response-predictive distributions. Those extensions require their own
-targets, assumptions, algorithms, diagnostics, and validation designs.
-\section{Regression and dynamic endpoint computation}
-\subsection{Notation and Targets}
-\label{mti:sec:supp-targets}
-
-For an observation \(y_i\) and raw roots \(\eta_{1i}\) and \(\eta_{2i}\),
-define
+For raw endpoint functions \(\eta_{1i}\) and \(\eta_{2i}\), define
+\(e_i=(y_i-\eta_{1i})(y_i-\eta_{2i})\). With fixed content \(c\), tilt
+\(\delta_i\), and learning rate \(\omega_{\mathrm R}\), the update is
 \[
-e_i=(y_i-\eta_{1i})(y_i-\eta_{2i}),\qquad
-\rho_c(r)=r\{c-\ind(r<0)\}.
+ \pi(\theta\mid D)
+ \propto
+ \exp\{-\omega_{\mathrm R}L_{c,\delta}(\theta)\}\pi_0(\theta).
 \]
-The MPI loss is \(\rho_c(e_i)\). With fixed tilt \(\delta_i\), the MTI loss is
-\[
-\rho_c(e_i)-c\delta_i(\eta_{1i}+\eta_{2i}-2y_i).
-\]
-The cumulative loss over observed indices \(I_{\mathrm{obs}}\) is denoted by
-\(L_{c,\delta}(\theta)\). The fixed-target generalized posterior is
-\[
-\pi(\theta\mid D)
-\propto
-\exp\{-\omega_{\mathrm R}L_{c,\delta}(\theta)\}\pi_0(\theta).
-\]
-The symbols \(c\), \(\delta\), and \(\omega_{\mathrm R}\) have different roles:
-content, retained-mean tilt, and learning rate, respectively.
+The three quantities index different objects: interval content, placement,
+and loss-update strength. This distribution is a generalized posterior for
+endpoint functions, not a response likelihood.
 
-\subsection{Root Labels and Endpoint Summaries}
-\label{mti:sec:supp-labels}
-
-The product-residual loss is invariant to exchanging the two raw roots. With
-exchangeable root priors, the unordered pair is identified but the labels
-``root 1'' and ``root 2'' are not. Endpoint summaries are therefore computed
-after sorting the roots at the evaluation points:
+Because the product-residual loss is invariant to exchanging the roots,
+endpoint summaries sort them at each evaluation point:
 \[
-L_i=\min(\eta_{1i},\eta_{2i}),\qquad
-U_i=\max(\eta_{1i},\eta_{2i}),\qquad
-W_i=U_i-L_i.
+ L_i=\min(\eta_{1i},\eta_{2i}),\qquad
+ U_i=\max(\eta_{1i},\eta_{2i}).
+\]
+For linear roots, \(\beta_m=(\beta_1+\beta_2)/2\) is label invariant and
+\(\beta_s=(\beta_2-\beta_1)/2\) changes sign under a root swap, with
+\[
+ L(x)=x^\top\beta_m-|x^\top\beta_s|,
+ \qquad
+ U(x)=x^\top\beta_m+|x^\top\beta_s|.
 \]
 
-For static linear roots, define
+The product-residual check factor has the normal--exponential representation
+\begin{align*}
+ &\frac{c(1-c)}{\sigma_{\mathrm R}}
+ \exp\{-\rho_c(e_i)/\sigma_{\mathrm R}\}\\
+ &\quad=\int_0^\infty
+ \Normal(e_i\mid\xi_cv_i,\phi_c\sigma_{\mathrm R}v_i)
+ \Exp(v_i\mid\mathrm{rate}=1/\sigma_{\mathrm R})\,dv_i,
+\end{align*}
+where
+\(\sigma_{\mathrm R}=\omega_{\mathrm R}^{-1}\),
+\(\xi_c=(1-2c)/\{c(1-c)\}\), and
+\(\phi_c=2/\{c(1-c)\}\). Under the
+\(\GIG(\nu,A,B)\) convention,
 \[
-\beta_m=\frac{\beta_1+\beta_2}{2},\qquad
-\beta_s=\frac{\beta_2-\beta_1}{2}.
+ v_i\mid\cdot\sim
+ \GIG\left\{\frac12,
+ \frac{1}{2\sigma_{\mathrm R}c(1-c)},
+ \frac{c(1-c)e_i^2}{2\sigma_{\mathrm R}}\right\}.
 \]
-Then \(M(x)=x^\top\beta_m\), \(S(x)=x^\top\beta_s\), and
+The scale is computational and is not a latent response variable.
+
+Let \(X\) denote the observed design matrix and
+\(W_v=\diag\{(\phi_c\sigma_{\mathrm R}v_i)^{-1}\}\). Conditional on the
+second root, put
 \[
-L(x)=M(x)-|S(x)|,\qquad
-U(x)=M(x)+|S(x)|,\qquad
-W(x)=2|S(x)|.
+ A_1=\diag(y-\eta_2)X,
+ \qquad z_1=y\circ(y-\eta_2)-\xi_cv.
 \]
-The midpoint coefficient \(\beta_m\) is root-label invariant. The signed gap
-coefficient \(\beta_s\) changes sign under a root swap. Lower- and
-upper-endpoint coefficient summaries require a declared design region where the
-two roots remain ordered.
-
-\subsection{Pseudo-AL Augmentation}
-\label{mti:sec:supp-pseudo-al}
-
-Let
+For Gaussian prior canonical parameters \((Q_{01},h_{01})\), the first root
+has
 \[
-\sigma_{\mathrm R}=\omega_{\mathrm R}^{-1},\qquad
-\xi_c=\frac{1-2c}{c(1-c)},\qquad
-\phi_c=\frac{2}{c(1-c)}.
+ Q_1=Q_{01}+A_1^\top W_vA_1,
+ \qquad
+ h_1=h_{01}+A_1^\top W_vz_1
+       +\omega_{\mathrm R}cX^\top\delta,
 \]
-The single-observation loss factor satisfies
-\begin{align}
-&\frac{c(1-c)}{\sigma_{\mathrm R}}
-\exp\{-\rho_c(e_i)/\sigma_{\mathrm R}\}\notag\\
-&\quad=\int_0^\infty
-\Normal(e_i\mid \xi_cv_i,\phi_c\sigma_{\mathrm R}v_i)
-\Exp(v_i\mid\mathrm{rate}=1/\sigma_{\mathrm R})\,dv_i .
-\end{align}
-Thus
+and \(\beta_1\mid\cdot\sim\Normal(Q_1^{-1}h_1,Q_1^{-1})\). The second-root
+update exchanges labels. The fixed tilt shifts the canonical vector but not
+the precision. Proper Gaussian priors give a finite normalizing constant in
+finite dimension because the tilt is linear in the roots.
+
+An ECM mode calculation replaces \(v_i^{-1}\) by
+\(\{c(1-c)|e_i|\}^{-1}\), with a prespecified floor near zero, and alternates
+the two Gaussian conditional systems. Each cycle is accepted only when the
+exact penalized objective decreases. A conditionally Gaussian shrinkage prior
+can enter through its current prior precision, but nonzero tilt with
+heavy-tailed random scales requires a separate propriety argument.
+
+Deterministic basis expansions use the same formulas after replacing \(X\) by
+the fixed basis matrix; uncertainty is conditional on that construction. For
+time-varying endpoints,
 \[
-v_i\mid\cdot\sim
-\GIG\left\{
-\frac12,\
-\frac{1}{2\sigma_{\mathrm R}c(1-c)},\
-\frac{c(1-c)e_i^2}{2\sigma_{\mathrm R}}
-\right\}.
+ \eta_{jt}=f_t^\top\theta_{jt},
+ \qquad
+ \theta_{jt}=G_t\theta_{j,t-1}+\varepsilon_{jt},
+ \qquad j=1,2.
 \]
-The latent scales are part of the computational representation of a
-loss-based update. They are not latent response variables.
+Conditional on one complete root path and the scales, the other path has a
+linear Gaussian representation, which permits alternating
+forward-filtering backward-sampling updates. Discount factors and component
+scales belong to the state prior and must be fixed or modeled explicitly.
 
-\subsection{Gaussian Root Updates and Fixed Tilt}
-\label{mti:sec:supp-static-updates}
-
-Let \(\mat X_{\mathrm{obs}}\) be the observed design matrix and let
-\(\mat W_v=\diag\{(\phi_c\sigma_{\mathrm R}v_i)^{-1}:i\in I_{\mathrm{obs}}\}\).
-Conditional on the second root, define
-\[
-\mat A_1=\diag(\vect y_{\mathrm{obs}}-\vect\eta_{2,\mathrm{obs}})
-\mat X_{\mathrm{obs}},
-\qquad
-\vect z_1=\vect y_{\mathrm{obs}}\circ
-(\vect y_{\mathrm{obs}}-\vect\eta_{2,\mathrm{obs}})-\xi_c\vect v.
-\]
-For Gaussian prior canonical parameters \((\mat Q_{01},\vect h_{01})\),
-\[
-\mat Q_1=\mat Q_{01}+\mat A_1^\top\mat W_v\mat A_1,\qquad
-\vect h_1=\vect h_{01}+\mat A_1^\top\mat W_v\vect z_1.
-\]
-Hence
-\[
-\beta_1\mid\cdot\sim
-\Normal(\mat Q_1^{-1}\vect h_1,\mat Q_1^{-1}).
-\]
-The second root is updated by exchanging labels.
-
-For fixed nonzero tilt, let \(\vect\delta_{\mathrm{obs}}\) be fixed over the
-observed design. The precision matrix is unchanged, and the canonical vector is
-shifted to
-\[
-\vect h_1^{\mathrm{MTI}}
-=\vect h_1+
-\omega_{\mathrm R}c\mat X_{\mathrm{obs}}^\top\vect\delta_{\mathrm{obs}},
-\]
-with the same shift for the second root. Proper Gaussian priors give a finite
-normalizing constant in finite dimension because the tilt is linear in the
-roots.
-
-\subsection{ECM Mode Calculation}
-\label{mti:sec:supp-ecm}
-
-The ECM calculation maximizes the fixed generalized-posterior kernel. It uses
-the exact inverse-scale moment
-\[
-\tau_i=E(v_i^{-1}\mid\cdot)=\frac{1}{c(1-c)|e_i|}
-\]
-away from \(e_i=0\), with a prespecified numerical floor near zero. Holding
-\(\beta_2\) fixed, set
-\[
-\mat B_1=\diag(\vect y_{\mathrm{obs}}-\vect\eta_{2,\mathrm{obs}})
-\mat X_{\mathrm{obs}},
-\qquad
-\vect r_1=\vect y_{\mathrm{obs}}^{\,2}
--\vect y_{\mathrm{obs}}\circ\vect\eta_{2,\mathrm{obs}}.
-\]
-With ridge prior precision \(\mat P_1\), the conditional maximization solves
-\[
-\left\{\mat P_1+
-\frac{1}{\phi_c\sigma_{\mathrm R}}\mat B_1^\top\diag(\vect\tau)\mat B_1
-\right\}\beta_1
-=
-\frac{1}{\phi_c\sigma_{\mathrm R}}
-\mat B_1^\top\{\diag(\vect\tau)\vect r_1-\xi_c\vect 1\}
-+\omega_{\mathrm R}c\mat X_{\mathrm{obs}}^\top\vect\delta_{\mathrm{obs}}.
-\]
-The second root uses the same equation with labels exchanged. A full ECM cycle
-updates the latent-scale moments, solves the two conditional Gaussian systems,
-and accepts the result only if the exact penalized objective decreases.
-
-\subsection{Conditionally Gaussian Shrinkage}
-\label{mti:sec:supp-shrinkage}
-
-The zero-tilt MPI sampler can use a conditionally Gaussian regularized
-horseshoe prior through the Nishimura--Suchard representation
-\citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS,exd-nishimura2023shrunken}.
-Conditional on the local, global, and slab-scale states, each root coefficient
-block has a Gaussian prior precision and therefore fits directly into the
-Gaussian update above. This construction is stated for MPI. Extending nonzero
-tilt through random shrinkage scales requires its own propriety and diagnostic
-checks.
-
-\subsection{Deterministic Basis Expansions}
-\label{mti:sec:supp-features}
-
-Let \(\mat X_{\mathrm F}\) denote a deterministic basis matrix obtained before
-the endpoint update is fitted. The static formulas apply with
-\(\mat X_{\mathrm{obs}}\) replaced by the observed rows of
-\(\mat X_{\mathrm F}\). Echo-state and deep echo-state basis functions
-\citep{qdesn-Jaeger2001EchoState,qdesn-GallicchioMicheliPedrelli2018DeepESNDesign} are one
-source of such a matrix. The recurrent representation is part of the design
-construction; posterior uncertainty in the endpoint model is conditional on the
-chosen basis unless the basis-generation mechanism is included in the
-model.
-
-\subsection{Dynamic Endpoint-State Updates}
-\label{mti:sec:supp-dynamic}
-
-A dynamic endpoint model replaces static coefficients by root-specific state
-trajectories,
-\[
-\eta_{jt}=f_t^\top\theta_{jt},\qquad
-\theta_{jt}=G_t\theta_{j,t-1}+\varepsilon_{jt},\qquad j=1,2.
-\]
-Gaussian initial and evolution distributions give a Gaussian prior over each
-root path. Because the product residual contains both endpoint paths, the joint
-augmented log density is quartic in the two paths. Conditional on one complete
-path, however, the other path has a linear Gaussian observation equation.
-Root-specific forward-filtering backward-sampling can therefore be alternated
-within the specified fixed-target generalized posterior
-\citep{env-goncalves}.
-
-Discount factors and component scales are part of the state prior. Fixed values
-or precomputed templates define a fixed target. Adaptive choices are best
-reported as sensitivity analyses unless they are embedded in a fully specified
-probability model.
-
-\subsection{Diagnostics and Validation Limits}
-\label{mti:sec:supp-diagnostics}
-
-MCMC summaries should report multiple-chain convergence diagnostics, effective
-sample sizes, Monte Carlo error, root-label handling, and endpoint functional
-summaries. ECM summaries should report objective descent, iteration counts,
-stopping criteria, final roots, fitted content, tilt, and sensitivity to
-starting values. Basis-expansion analyses should report how the basis was
-chosen. Dynamic analyses should report state-prior choices, smoothing
-diagnostics, and whether discount or scale values were fixed in advance.
-
-These diagnostics assess computation for a fixed endpoint target. They do not
-establish tolerance validity or response-predictive calibration. Such claims
-require a separate validation design aligned with the intended statistical
-statement.
+These extensions remain theoretical proposals: they have no matched
+implementation, simulation study, or application. A future assessment must
+report root-label handling, convergence or objective descent, fixed-target
+loss, empirical content, width, basis or state-prior selection, and
+sensitivity to initialization. Tolerance validity and response prediction
+require separate, claim-matched models and validation designs.

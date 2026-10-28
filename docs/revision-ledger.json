@@ -62,14 +62,15 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "ef28f523dabd1854ddde7a5c6a3558892ec8a01a21ea8868d9ec9b6616cf099a",
+      "current_sha256": "acbe43591d5ee1c71147299c10d98790cd9d9368b18af81d357285cbe1af39f5",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
@@ -135,14 +136,15 @@
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "72375d2ba12e00cb9d536720e7748a5b6a643b7afcccb545276432cdad64b1a3",
+      "current_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
       ],
       "revision_ids": [
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {

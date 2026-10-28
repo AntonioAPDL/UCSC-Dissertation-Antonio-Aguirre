@@ -451,70 +451,35 @@
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:simulation-dgp",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-glofas-search3-specifications",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-reservoir-selection",
-      "appendices/e-mti-technical.tex::heading::section::foundations-profiled-computation-and-validation-details::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::section::regression-and-dynamic-endpoint-computation::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::conditionally-gaussian-shrinkage::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::deterministic-basis-expansions::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::diagnostics-and-validation-limits::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::direct-dp-content-check::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::dynamic-endpoint-state-updates::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::ecm-mode-calculation::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::empirical-balance::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::fixed-target-mti-computation::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::gaussian-root-updates-and-fixed-tilt::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::mean-preserving-interval-scores::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::mean-tilted-interval-loss-and-target::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::notation-and-targets::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::pharmaceutical-application-details::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::pseudo-al-augmentation::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::reproducibility-and-validation-limits::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::root-labels-and-endpoint-summaries::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::tolerance-validation-protocol-and-feasibility::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::width-regularized-interval-loss::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::an-alternative-ecm-calculation::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::cornish-fisher-tilt-approximations::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::fixed-content-mean-tilted-target::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::fractional-empirical-balance::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::interval-paths-and-tail-sensitivity::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsubsection::the-penalized-intercept-criterion::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::calibration-and-feasibility::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::pharmaceutical-application-sensitivities::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::population-and-empirical-results::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::proposed-regression-and-dynamic-endpoint-computation::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::endpoint-scores-and-the-quantile-window-target::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::mean-tilt-and-profiled-identification::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsubsection::proof-of-proposition-rqr2026-prop-mean-tilt::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsubsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:mean-tilted-loss-midpoint",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:mean-tilted-loss-roots",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:pop-foc-a",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:pop-foc-b",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:rqr-tail-moment-balance",
-      "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-mpi-loss-piecewise",
-      "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-mpi-product-check",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-profiled-risk-derivative",
-      "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-pseudo-al-mixture",
-      "appendices/e-mti-technical.tex::label::rqr2026:fig:supp-loss-geometry",
       "appendices/e-mti-technical.tex::label::rqr2026:fig:supp-pharma-partition-sensitivity",
       "appendices/e-mti-technical.tex::label::rqr2026:fig:supp-pharma-rsd",
-      "appendices/e-mti-technical.tex::label::rqr2026:fig:supp-tolerance-population-shortest",
       "appendices/e-mti-technical.tex::label::rqr2026:lem:supp-profile-radius",
       "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-intercept-profile",
       "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-order",
-      "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-dp-content-law",
-      "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-mean-tilt",
       "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-full-range-thresholds",
-      "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-pharma-campaign",
-      "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-pharma-numerical",
-      "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-pharma-response-diagnostics",
-      "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-pharma-rsd",
       "appendices/e-mti-technical.tex::label::rqr2026:tab:supp-scan-reference",
       "appendices/e-mti-technical.tex::label::rqr2026:thm:supp-fractional-balance",
-      "appendices/e-mti-technical.tex::label::rqr2026:thm:supp-profiled-risk",
-      "appendices/e-mti-technical.tex::label::rqr2026:thm:supp-quantile-window",
       "display::qdesn2026:fig:independent-eval500-forecast_check",
       "display::qdesn2026:fig:supp-independent-quantile-calibration",
       "display::qdesn2026:tab:joint-qdesn-pure-desn-v2-recursive-policy",
-      "display::rqr2026:tab:supp-mti-profile-policy",
-      "display::rqr2026:tab:supp-pharma-primary-paired",
-      "display::rqr2026:tab:supp-pharma-primary-sensitivity",
-      "display::rqr2026:tab:supp-pharma-rsd-paired",
-      "display::rqr2026:tab:supp-pharma-rsd-sensitivity",
-      "display::rqr2026:tab:supp-primary-dgp-delivery",
-      "display::rqr2026:tab:supp-primary-dgp-width-ranges"
+      "display::rqr2026:tab:supp-mti-profile-policy"
     ]
   },
   "body_bridge_inventory": [
@@ -946,7 +911,9 @@
       "question_context": "\\noindent\\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. Proofs, calibration details, and computational derivations are preserved in Appendix~\\ref{app:mti-technical}.}",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-technical"
     },
     {
       "id": "APPX-BRIDGE-037",
@@ -956,7 +923,9 @@
       "question_context": "tolerance study and derived in Appendix~\\ref{app:mti-technical}; they do not",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-technical"
     },
     {
       "id": "APPX-BRIDGE-038",
@@ -966,7 +935,9 @@
       "question_context": "mean. Appendix~\\ref{app:mti-technical} further shows that the retained core is a mean-preserving",
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-proofs"
     },
     {
       "id": "APPX-BRIDGE-039",
@@ -976,7 +947,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} proves these results and records the restricted score",
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-proofs"
     },
     {
       "id": "APPX-BRIDGE-040",
@@ -986,7 +959,9 @@
       "question_context": "differentiating the profiled risk; Appendix~\\ref{app:mti-technical} gives the radius and",
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-proofs"
     },
     {
       "id": "APPX-BRIDGE-041",
@@ -996,7 +971,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} gives the corresponding penalized identities.",
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-profile-computation"
     },
     {
       "id": "APPX-BRIDGE-042",
@@ -1006,7 +983,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} gives the profile identity and computational details. It also",
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-profile-computation"
     },
     {
       "id": "APPX-BRIDGE-043",
@@ -1016,7 +995,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} gives the allocation and selected cutoffs. This calibration",
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-calibration"
     },
     {
       "id": "APPX-BRIDGE-044",
@@ -1026,7 +1007,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} gives the distribution-level content-attainment and width tables behind these",
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-calibration"
     },
     {
       "id": "APPX-BRIDGE-045",
@@ -1036,7 +1019,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical} examines forward and reverse recorded-order partitions and",
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-application-sensitivity"
     },
     {
       "id": "APPX-BRIDGE-046",
@@ -1046,7 +1031,9 @@
       "question_context": "Appendix~\\ref{app:mti-technical}. The tablet-core weight relative standard",
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-application-sensitivity"
     },
     {
       "id": "APPX-BRIDGE-047",
@@ -1056,7 +1043,9 @@
       "question_context": "\\(Y\\). Appendix~\\ref{app:mti-technical} records the latent-scale law, Gaussian",
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-extensions"
     },
     {
       "id": "APPX-BRIDGE-048",
@@ -1066,7 +1055,9 @@
       "question_context": "given in Appendix~\\ref{app:mti-technical}.",
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_E",
+      "final_location": "app:mti-extensions"
     }
   ],
   "protected_conclusions": [
@@ -14039,12 +14030,17 @@
         "no_loss_location": "app:mti-calibration"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::section::foundations-profiled-computation-and-validation-details::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::section::foundations-profiled-computation-and-validation-details::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::calibration-and-feasibility::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-258",
@@ -14088,12 +14084,18 @@
         "no_loss_location": "app:mti-proofs"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::subsection::dynamic-endpoint-state-updates::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::dynamic-endpoint-state-updates::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsubsection::proof-of-proposition-rqr2026-prop-mean-tilt::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-259",
@@ -14141,8 +14143,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-260",
@@ -14190,8 +14196,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-261",
@@ -14239,8 +14249,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-262",
@@ -14288,8 +14302,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-263",
@@ -14333,12 +14351,19 @@
         "no_loss_location": "app:e-technical"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::subsubsection::cornish-fisher-tilt-approximations::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsubsection::cornish-fisher-tilt-approximations::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::population-and-empirical-results::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::endpoint-scores-and-the-quantile-window-target::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-264",
@@ -14386,8 +14411,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-265",
@@ -14435,8 +14464,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-266",
@@ -14484,8 +14517,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-267",
@@ -14529,12 +14566,19 @@
         "no_loss_location": "app:mti-profile-computation"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::mean-tilt-and-profiled-identification::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsubsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-268",
@@ -14560,7 +14604,7 @@
       "body_references": [],
       "question": "What technical support from this unit is necessary for the corresponding chapter claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The reported calculation uses the retained profiled route or the material is internal validation inventory.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -14582,8 +14626,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-269",
@@ -14631,8 +14679,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-270",
@@ -14680,8 +14732,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-271",
@@ -14732,8 +14788,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-272",
@@ -14779,12 +14839,17 @@
         "no_loss_location": "app:mti-application-sensitivity"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::subsection::tolerance-validation-protocol-and-feasibility::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::tolerance-validation-protocol-and-feasibility::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::pharmaceutical-application-sensitivities::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-273",
@@ -14810,7 +14875,7 @@
       "body_references": [],
       "question": "What technical support from this unit is necessary for the corresponding chapter claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The reported calculation uses the retained profiled route or the material is internal validation inventory.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -14835,8 +14900,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-274",
@@ -14882,12 +14951,17 @@
         "no_loss_location": "app:mti-extensions"
       },
       "coverage_keys": [
-        "appendices/e-mti-technical.tex::heading::section::regression-and-dynamic-endpoint-computation::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::section::regression-and-dynamic-endpoint-computation::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::proposed-regression-and-dynamic-endpoint-computation::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-275",
@@ -14935,8 +15009,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-276",
@@ -14984,8 +15062,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-277",
@@ -15033,8 +15115,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-278",
@@ -15082,8 +15168,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-279",
@@ -15131,8 +15221,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-280",
@@ -15180,8 +15274,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-281",
@@ -15229,8 +15327,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-282",
@@ -15280,8 +15382,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-283",
@@ -15332,8 +15438,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-284",
@@ -15383,8 +15493,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-285",
@@ -15434,8 +15548,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-286",
@@ -15485,8 +15603,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-287",
@@ -15536,8 +15658,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-288",
@@ -15587,8 +15713,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-289",
@@ -15616,7 +15746,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The scientific distinction remains, but repeated exposition or standard calculation can be shortened.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -15638,8 +15768,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-290",
@@ -15667,7 +15801,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The scientific distinction remains, but repeated exposition or standard calculation can be shortened.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -15689,8 +15823,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-291",
@@ -15740,8 +15878,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-292",
@@ -15769,7 +15911,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The reported calculation uses the retained profiled route or the material is internal validation inventory.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -15791,8 +15933,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-297",
@@ -15842,8 +15988,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
         "appendix_role": "STATEMENT_AND_PROOF",
@@ -15898,8 +16048,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
         "appendix_role": "STATEMENT_AND_PROOF",
@@ -15954,8 +16108,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
         "appendix_role": "STATEMENT_AND_PROOF",
@@ -15988,7 +16146,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16010,8 +16168,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
         "appendix_role": "STATEMENT_AND_PROOF",
@@ -16044,7 +16206,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16066,8 +16228,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
         "appendix_role": "PROOF_ONLY",
@@ -16122,8 +16288,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
         "appendix_role": "STATEMENT_AND_PROOF",
@@ -16156,7 +16326,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16178,8 +16348,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
         "appendix_role": "PROOF_ONLY",
@@ -16212,7 +16386,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16234,8 +16408,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {},
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
         "appendix_role": "PROOF_ONLY",
@@ -18736,7 +18914,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -18758,8 +18936,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-355",
@@ -18789,7 +18971,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -18811,8 +18993,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-356",
@@ -18842,7 +19028,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -18864,8 +19050,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-357",
@@ -18895,7 +19085,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -18917,8 +19107,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-358",
@@ -18972,8 +19166,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-359",
@@ -19025,8 +19223,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-360",
@@ -19080,8 +19282,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-361",
@@ -19111,7 +19317,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19133,8 +19339,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-362",
@@ -19164,7 +19374,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19186,8 +19396,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-363",
@@ -19217,7 +19431,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19239,8 +19453,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-364",
@@ -19270,7 +19488,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19292,8 +19510,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-365",
@@ -19345,8 +19567,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-366",
@@ -19376,7 +19602,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19398,8 +19624,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-367",
@@ -19429,7 +19659,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19451,8 +19681,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-368",
@@ -19506,8 +19740,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-369",
@@ -19537,7 +19775,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19559,8 +19797,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     },
     {
       "id": "APPX-ESS-370",
@@ -19590,7 +19832,7 @@
       "body_references": [],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -19612,8 +19854,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_E",
+        "final_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+        "validation": "Gate G chapter validation and rendered review pending"
+      }
     }
   ]
 }

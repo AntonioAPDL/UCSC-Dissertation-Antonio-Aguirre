@@ -2,7 +2,7 @@
 \label{ch:research-d}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. Proofs, calibration details, and computational derivations are preserved in Appendix~\ref{app:mti-technical}.}
+\noindent\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. The supporting proofs, calibration record, and computational derivations appear in Sections~\ref{app:mti-proofs}, \ref{app:mti-calibration}, and~\ref{app:mti-extensions} of Appendix~\ref{app:mti-technical}.}
 \end{singlespace}
 
 \section{Chapter overview}
@@ -85,7 +85,7 @@ specified distributional panel; a distribution-free guarantee for the selected
 interval requires further theory. The same loss also supports proposed
 generalized-Bayes endpoint regression, basis-expansion endpoint models, and
 time-varying endpoint models. These extensions are summarized after the
-tolerance study and derived in Appendix~\ref{app:mti-technical}; they do not
+tolerance study and derived in Section~\ref{app:mti-extensions}; they do not
 inherit its empirical calibration.
 
 The contributions are as follows. First, the residual-product loss is shown to
@@ -295,7 +295,8 @@ identity balances first-moment mass around the conditional mean:
 Tail probabilities may differ; MPI balances their first moments around
 \(\mu_x\). The retained core and its excluded complement consequently have the
 same conditional mean, although the endpoint midpoint may differ from that
-mean. Appendix~\ref{app:mti-technical} further shows that the retained core is a mean-preserving
+mean. Proposition~\ref{rqr2026:prop:supp-convex-order} in
+Section~\ref{app:mti-proofs} further shows that the retained core is a mean-preserving
 contraction of the full distribution in convex order. A finite first moment is
 enough for the retained-mean identity once the endpoint scores are valid. The
 stronger second-moment assumption ensures that the expected MPI loss
@@ -332,7 +333,7 @@ If \(F_x\) is symmetric about \(\mu_x\), then
 This theorem identifies the unique regular stationary window.
 Theorem~\ref{rqr2026:thm:profiled-mean-tilt} below strengthens that statement to
 the unique global expected-loss minimizer by profiling over the half-width.
-Appendix~\ref{app:mti-technical} proves these results and records the restricted score
+Section~\ref{app:mti-proofs} proves these results and records the restricted score
 equations. Under the connected-support and local positive-density conditions
 used in Theorem~\ref{rqr2026:thm:profiled-mean-tilt}, the regular unrestricted
 population intervals form a nested path. If the conditional quantile function
@@ -406,7 +407,7 @@ M_c(u_\delta)=\mu+\delta.
 
 The score equations identify stationary points. Global identification follows
 by profiling over the unique content-\(c\) radius at each midpoint and
-differentiating the profiled risk; Appendix~\ref{app:mti-technical} gives the radius and
+differentiating the profiled risk; Section~\ref{app:mti-proofs} gives the radius and
 envelope-derivative argument.
 
 \begin{theorem}[Global identification of the MTI target]
@@ -596,7 +597,7 @@ Thus the fitted training interval has exact fractional content and exact
 fractional retained-mean balance in its empirical estimating equations.
 These identities concern the unpenalized criterion. Gaussian root penalties
 contribute additional terms to the estimating equations used in computation;
-Appendix~\ref{app:mti-technical} gives the corresponding penalized identities.
+Section~\ref{app:mti-profile-computation} gives the corresponding penalized identities.
 Population content requires a probability argument beyond this score identity.
 In the iid intercept-only case, the Dvoretzky--Kiefer--Wolfowitz inequality gives
 a conservative high-probability population-content bound
@@ -626,11 +627,10 @@ from \(m\). The resulting midpoint criterion is strongly convex when
 \(\lambda>0\). We minimize this scalar profile and recover the endpoints,
 checking the objective gap against a relative tolerance of \(10^{-8}\).
 The validation uses \(\omega_{\mathrm R}=1\) and \(\lambda=10^{-4}\).
-Appendix~\ref{app:mti-technical} gives the profile identity and computational details. It also
-derives expectation/conditional maximization (ECM) as an alternative calculation
-\citep{rqr-DempsterLairdRubin1977EM,rqr-MengRubin1993ECM}. Broader Gibbs,
-regression, basis-expansion, and time-varying endpoint models are developed in the
-companion computation paper.
+Section~\ref{app:mti-profile-computation} gives the profile identity and its
+objective-gap check. Broader Gibbs, ECM, regression, basis-expansion, and
+time-varying endpoint calculations are summarized in
+Section~\ref{app:mti-extensions}.
 
 \paragraph{Direct content-probability check.}
 MTI uses a response-distribution posterior probability to check the content
@@ -708,7 +708,7 @@ of at least \(1-\alpha\). The bound accounts for the number of distributions,
 settings, and assessed cutoffs. A follow-up specified before fresh sampling resolves two settings
 using more finely spaced development cutoffs, while preserving seven earlier
 choices and controlling the combined Monte Carlo error at \(0.05\).
-Appendix~\ref{app:mti-technical} gives the allocation and selected cutoffs. This calibration
+Section~\ref{app:mti-calibration} gives the allocation and selected cutoffs. This calibration
 concerns the complete interval-selection rule on the finite distributional
 panel. All choices are fixed before independent validation.
 
@@ -901,9 +901,10 @@ their endpoints agree in 99.0\%, 98.2\%, and 94.7\% of samples at
 \((n,c)=(50,0.90),(100,0.95),(500,0.99)\), respectively.
 These cases illustrate the limited observed width gain near that boundary.
 
-Appendix~\ref{app:mti-technical} gives the distribution-level content-attainment and width tables behind these
-summaries, the selected MTI calibration summary, the scan-reference counts,
-and the full-range feasibility thresholds used to choose the simulation design.
+Section~\ref{app:mti-calibration} records the selected MTI policy,
+scan-reference counts, and full-range feasibility thresholds used to choose
+the simulation design. The distribution-level results are summarized above
+through their ranges and simultaneous uncertainty statements.
 The excluded small-sample cells fall outside the region where a sample-bounded
 two-sided distribution-free tolerance statement can be supported at confidence \(0.95\).
 Other variants are kept outside the primary comparison.
@@ -1002,7 +1003,7 @@ Young--Mathew. Their tail allocations differ: MTI omits median fractions
 respectively. Width and empirical content should therefore be read together
 with endpoint placement.
 
-Appendix~\ref{app:mti-technical} examines forward and reverse recorded-order partitions and
+Section~\ref{app:mti-application-sensitivity} examines forward and reverse recorded-order partitions and
 \PharmaGroupedSplits{} unique partitions that keep either production months
 or active pharmaceutical ingredient (API) batches intact. All retain the same
 training size. For example, reverse recorded order gives MTI held-out content
@@ -1010,7 +1011,7 @@ of \PharmaTensileReverseContent\%, illustrating sensitivity to the partition.
 The profile objective-gap criterion is met in
 \PharmaTensileConverged{} of \PharmaTensileReturned{} returned tensile-metric
 fits. Numerical diagnostics and tablet-core weight sensitivity are reported in
-Appendix~\ref{app:mti-technical}. The tablet-core weight relative standard
+Section~\ref{app:mti-application-sensitivity}. The tablet-core weight relative standard
 deviation (RSD) example illustrates stronger asymmetry; its
 upper-adverse interpretation would favor a one-sided
 upper tolerance limit for a direct quality-control decision.
@@ -1056,7 +1057,7 @@ update for either root given the other. It supports Gibbs computation and a
 deterministic ECM mode calculation under proper Gaussian priors. The
 representation augments the loss factor in
 Equation~\eqref{mti:eq:generalized-posterior}; it is not a sampling density for
-\(Y\). Appendix~\ref{app:mti-technical} records the latent-scale law, Gaussian
+\(Y\). Section~\ref{app:mti-extensions} records the latent-scale law, Gaussian
 canonical parameters, fixed-tilt shift, shrinkage construction for the
 zero-tilt case, and numerical safeguards.
 
@@ -1069,8 +1070,8 @@ root-specific state trajectories,
 \]
 with Gaussian state innovations. Conditional on one complete root path and the
 latent scales, the other path has a linear Gaussian representation, motivating
-alternating forward-filtering backward-sampling updates. The full derivation is
-given in Appendix~\ref{app:mti-technical}.
+alternating forward-filtering backward-sampling updates. The conditional
+derivation is given in Section~\ref{app:mti-extensions}.
 
 These constructions remain proposed methods. The derivations have no matched
 implementation, simulation study, or application.
