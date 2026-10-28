@@ -311,3 +311,7 @@ blocking diagnostics and no Type 3 font, and passed a 21-page rendered review.
 No research repository or computation was changed; exact artifact and
 remaining filing, reuse, role, accessibility, and Overleaf limits are recorded
 in `VALIDATION.md` and `final-dissertation-polish-plan.md`.
+After every release gate passed, the focused branch was fast-forwarded into
+`main` and pushed without force; local, tracking, and directly queried GitHub
+branch tips were equal with zero divergence. No Overleaf pull or build was
+performed.

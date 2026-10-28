@@ -1,6 +1,6 @@
 # Project status
 
-## 2026-10-28 final comprehensive polish release validated
+## 2026-10-28 final comprehensive polish released and synchronized
 
 The final reader-facing polish is implemented on
 `editorial/final-dissertation-polish-20261028` from the verified `main` and
@@ -33,9 +33,13 @@ pages passed rendered inspection. The PDF remains untagged.
 
 The official title, committee/dean/date fields, acknowledgments, ORCID,
 granular candidate/coauthor roles, material-specific reuse permission, and a
-modern tagged-PDF accessibility check remain open. The release-validated
-feature branch is ready for the authorized GitHub handoff. An Overleaf pull,
-compile, and rendered review remain a separate user action.
+modern tagged-PDF accessibility check remain open. The feature branch was
+fast-forwarded into `main` and pushed without rewriting history. The initial
+post-push check resolved local `main`, `origin/main`, and GitHub `main` to
+`8ebd827b6fdefea70a6ad7282a23ca86cb22ae94`, with zero divergence and a clean
+worktree. This documentation-only synchronization record follows that release
+commit. An Overleaf pull, compile, and rendered review remain a separate user
+action.
 
 ## 2026-10-28 essential-appendix revision complete
 
