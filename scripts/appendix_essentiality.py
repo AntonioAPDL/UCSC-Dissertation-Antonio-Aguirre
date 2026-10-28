@@ -22,6 +22,34 @@ UNIT_TYPES = {
 }
 
 
+def _slug(text: str) -> str:
+    text = re.sub(r"\\[A-Za-z@]+\*?", " ", text)
+    text = re.sub(r"[^A-Za-z0-9]+", "-", text).strip("-").lower()
+    return text or "untitled"
+
+
+def appendix_unit_inventory(root: Path, appendix_paths: list[str]) -> set[str]:
+    """Inventory reader-facing appendix units that require a map disposition."""
+
+    keys: set[str] = set()
+    for relative in appendix_paths:
+        path = root / relative
+        text = path.read_text(encoding="utf-8")
+        heading_counts: dict[str, int] = {}
+        for line in text.splitlines():
+            match = re.match(
+                r"\\(section|subsection|subsubsection)\{(.+)\}\s*$", line.strip()
+            )
+            if match:
+                base = f"{relative}::heading::{match.group(1)}::{_slug(match.group(2))}"
+                heading_counts[base] = heading_counts.get(base, 0) + 1
+                keys.add(f"{base}::occurrence::{heading_counts[base]}")
+        for label in re.findall(r"\\label\{([^}]+)\}", text):
+            if re.search(r"(?::eq:|:EQ:|:alg(?::|$)|:fig:|:tab:|:thm:|:prop:|:lem:|:cor:)", label):
+                keys.add(f"{relative}::label::{label}")
+    return keys
+
+
 def load_optional(path: Path) -> dict:
     """Load an optional JSON record without changing legacy validation."""
 
@@ -185,8 +213,10 @@ def validate_payload(
     if missing_conclusions:
         errors.append("protected conclusions lack a responsible record: " + ", ".join(sorted(missing_conclusions)))
     if active_unit_keys is not None:
+        coverage = payload.get("coverage", {})
+        baseline_units = set(coverage.get("baseline_unit_keys", [])) if isinstance(coverage, dict) else set()
         missing_units = active_unit_keys - covered_units
-        extra_units = covered_units - active_unit_keys
+        extra_units = covered_units - active_unit_keys - baseline_units
         if missing_units:
             errors.append("active appendix units missing from map: " + ", ".join(sorted(missing_units)))
         if extra_units:

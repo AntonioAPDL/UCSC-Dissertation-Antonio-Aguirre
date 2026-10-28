@@ -208,6 +208,15 @@ class StructureValidationTests(unittest.TestCase):
                 destination.read_text(encoding="utf-8"),
             )
 
+    def test_active_appendix_unit_requires_map_coverage(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            payload = self.essentiality_fixture(root)
+            errors = ESSENTIALITY.validate_payload(
+                payload, root, active_unit_keys={"fixture-unit", "uncovered-unit"}
+            )
+            self.assertTrue(any("missing from map" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

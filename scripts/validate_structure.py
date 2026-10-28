@@ -12,6 +12,7 @@ from collections import Counter
 from pathlib import Path
 
 from appendix_essentiality import (
+    appendix_unit_inventory,
     approved_inactive_display_ids,
     load_optional,
     validate_payload,
@@ -30,6 +31,7 @@ APPENDICES = (
     "appendices/d-qdesn-technical",
     "appendices/e-mti-technical",
 )
+APPENDIX_PATHS = [f"{path}.tex" for path in APPENDICES]
 
 
 def uncomment(text: str) -> str:
@@ -265,6 +267,7 @@ def main() -> int:
                 ROOT,
                 active_labels=set(labels),
                 body_references=body_reference_labels(),
+                active_unit_keys=appendix_unit_inventory(ROOT, APPENDIX_PATHS),
             )
         )
 
