@@ -292,3 +292,22 @@ fonts; appendix boundaries and retained evidence were rendered and inspected.
 No research computation was rerun, no research repository was changed, and no
 push, merge, GitHub synchronization, or Overleaf synchronization was
 performed.
+
+2026-10-28: AI assistance completed the final comprehensive dissertation
+polish from the accepted 261-page essential-appendix baseline. It first froze
+an evidence-based plan, then removed four repeated chapter overviews and two
+redundant computational bridge sections while preserving their unique inputs,
+labels, and appendix links. It revised only bounded reader-facing prose:
+Chapter 2 now describes statistical computation without unshown-command
+narration; Chapter 3 presents the exAL representation readably and distinguishes
+the model, reference MCMC calculation, variational approximation, retrospective
+design, and forecast synthesis; Chapters 1, 4, 5, and 6 use more exact
+statistical nouns and bounded empirical language. Four active source-level
+figure descriptions were confirmed by visual review. No equation, result,
+theorem, table or figure value, evaluation window, citation set, attribution,
+appendix content, or source snapshot changed. The clean 254-page release passed
+18 tests and all 102 immutable source-blob checks, has zero overfull boxes or
+blocking diagnostics and no Type 3 font, and passed a 21-page rendered review.
+No research repository or computation was changed; exact artifact and
+remaining filing, reuse, role, accessibility, and Overleaf limits are recorded
+in `VALIDATION.md` and `final-dissertation-polish-plan.md`.

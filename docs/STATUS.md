@@ -1,5 +1,42 @@
 # Project status
 
+## 2026-10-28 final comprehensive polish release validated
+
+The final reader-facing polish is implemented on
+`editorial/final-dissertation-polish-20261028` from the verified `main` and
+`origin/main` baseline
+`6541686e44891982dbc4591ed11558d2f87ccc9a`. The controlling audit and exact
+intervention are in `final-dissertation-polish-plan.md`. The plan,
+deduplication, and bounded prose/ledger commits are `9c63586`, `00915a4`, and
+`4b63ff9`, respectively.
+
+The revision removes the four repeated research-chapter overview sections and
+two redundant computational bridge sections, preserves the unique inputs,
+historical labels, and appendix links they contained, and replaces remaining
+tutorial or generic implementation phrasing with exact statistical
+exposition. The Chapter 3 exAL stochastic representation is now displayed and
+readable. Four active source-level figure descriptions were checked against
+the rendered displays. No scientific result, equation, theorem, table or
+figure value, evaluation design, citation set, attribution, or source snapshot
+changed. Appendices A--E remain 52 numbered pages.
+
+The clean release gate passed 18 tests, rechecked all 102 immutable imported
+Git blobs, resolved all 116 cited keys, and covered 43 active TeX files, 257
+active labels, six migration records, and 30 active visual records. The
+accepted ignored artifact is
+`build/release-20261028T190946Z/main.pdf`: 254 US-Letter pages, 16,491,650
+bytes, SHA-256
+`28898586b38c3db7ccc4c16d88fd846bdb0578aef0f3fe0fa9bb5d679e1300e7`.
+It has zero overfull boxes or blocking diagnostics, 25 underfull-box notices,
+32 embedded font rows, and no Type 3 font. Twenty-one representative release
+pages passed rendered inspection. The PDF remains untagged.
+
+The official title, committee/dean/date fields, acknowledgments, ORCID,
+granular candidate/coauthor roles, material-specific reuse permission, and a
+modern tagged-PDF accessibility check remain open. The release-validated
+feature branch is ready for the authorized GitHub handoff. An Overleaf pull,
+compile, and rendered review remain a separate user action.
+
 ## 2026-10-28 essential-appendix revision complete
 
 The advisor-directed appendix revision is implemented on
@@ -39,8 +76,9 @@ appendix openings, retained tables and figures, the Appendix E ending, and the
 bibliography transition. Exact artifact details are in `VALIDATION.md`.
 
 No research computation was rerun and no research repository was modified.
-Push, merge, GitHub synchronization, and Overleaf synchronization remain
-separately gated and were not performed in this stage.
+At the end of this historical appendix-only stage, push, merge, GitHub
+synchronization, and Overleaf synchronization had not yet been performed; the
+newer lifecycle state is recorded above.
 
 ## 2026-10-27 final reader and statistical revision
 

@@ -1,5 +1,48 @@
 # Validation record
 
+## 2026-10-28 final comprehensive polish release
+
+The final dissertation polish was validated from a new timestamped output
+directory with the release tier and the retained five-clone current-source
+audit root. The public record omits that machine-local path. The gate passed
+18 unit tests; reconciled eight research sources, 30 claim-evidence records,
+29 historical editorial issues, 102 display decisions, and 11 bibliography
+groups; checked four chapter manifests, nine source documents, and 96 section
+dispositions; and rechecked all 102 imported records against their immutable
+Git blobs. It resolved all 116 cited keys and covered 43 active TeX files, 257
+unique active labels, six migration records, and 30 active visual records.
+
+The accepted ignored artifact is
+`build/release-20261028T190946Z/main.pdf`: 254 US-Letter pages, 16,491,650
+bytes, PDF 1.7, SHA-256
+`28898586b38c3db7ccc4c16d88fd846bdb0578aef0f3fe0fa9bb5d679e1300e7`.
+The title metadata retains the unresolved placeholder and the official author
+field remains `Jose Antonio Aguirre Perez de Leon`. The PDF is searchable,
+unencrypted, and untagged.
+
+The final log has zero unresolved citations or references, multiply defined or
+unstable labels, missing files, overfull boxes, fatal errors, or emergency
+stops. It contains 25 underfull-box notices and the documented legacy-class
+caption warning. All 32 reported font rows are embedded and no Type 3 font is
+present.
+
+The research chapters begin on physical pages 36, 80, 118, and 145; Chapter 6
+begins on physical page 180. Appendices A--E begin on physical pages 192, 196,
+202, 205, and 226 and occupy numbered pages 169--220, exactly 52 pages. The
+bibliography begins on physical page 244 and ends on page 254. Twenty-one
+release pages covering the title/front matter, every chapter opening and
+ending, the revised Chapter 3 exAL display, every appendix opening, the
+bibliography opening, and the last page were rasterized. Their pixels match
+the corresponding chapter-tier review images exactly. Direct inspection and
+PDF word-coordinate checks found no clipping, collision, missing glyph,
+stranded heading, margin violation, or unreadable display.
+
+This release validates the bounded organizational and prose revision. It does
+not establish filing readiness, material-specific reuse permission, granular
+candidate/coauthor roles, an accessible tagged PDF, or a successful Overleaf
+pull and build. No research repository was changed and no research
+computation was rerun.
+
 ## 2026-10-28 essential-appendix release
 
 The approved essential-appendix revision was validated from a fresh,

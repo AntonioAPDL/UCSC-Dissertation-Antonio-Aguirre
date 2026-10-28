@@ -1,6 +1,6 @@
 # Final dissertation polish plan
 
-Status: IMPLEMENTATION AUTHORIZED; manuscript edits have not begun  
+Status: IMPLEMENTED AND RELEASE VALIDATED; GITHUB HANDOFF PENDING
 Prepared: 2026-10-28  
 Working branch: `editorial/final-dissertation-polish-20261028`  
 Baseline: `main` and `origin/main` at
@@ -206,3 +206,60 @@ all active visuals and references remain coherent, fast and release validation
 pass, the new PDF is inspected and recorded, lifecycle documentation describes
 the actual state, and the verified main-branch commit is available on GitHub
 for a deliberate Overleaf pull.
+
+## 7. Implementation and release record
+
+Implementation followed the bounded intervention in Section 3. The focused
+commit sequence through the manuscript and ledger work is:
+
+- `9c63586`: freeze this controlling plan before manuscript editing;
+- `00915a4`: remove the four repeated chapter overviews and the two redundant
+  computational bridge sections while preserving their unique labels, inputs,
+  and appendix links; and
+- `4b63ff9`: complete the statistical-prose pass and confirm four active figure
+  descriptions against the rendered displays.
+
+The resulting dissertation retains the six-chapter and five-appendix
+architecture. Chapter 1 now describes a shared statistical perspective rather
+than a single common framework. Chapter 2 opens with the software contribution
+and then the statistical model, without unshown-command narration. Chapter 3
+uses a readable displayed exAL representation and object-first descriptions of
+MCMC, variational approximation, and retrospective forecast synthesis.
+Chapters 4 and 5 retain their evidence boundaries with only local precision
+edits. Chapter 6 compares the four projects with exact statistical nouns and
+bounded empirical language. The abstract's scientific claims are unchanged.
+
+No equation, numerical result, table value, figure, probability level,
+evaluation window, theorem, proof, source snapshot, citation set, author
+attribution, or appendix content was changed. The appendices remain exactly 52
+numbered pages, 169--220 in the revised pagination. The historical
+`docs/editorial-issues.json` register was not rewritten because this pass
+introduced no new unresolved scientific issue; the final-polish actions and
+derivative hashes are recorded in the revision ledger instead.
+
+Release validation used the retained immutable current-source clones and
+passed all 18 tests, all 102 source-blob comparisons, citation and bibliography
+checks, active-structure and accessibility-ledger checks, and path/secret
+controls. The accepted ignored artifact is
+`build/release-20261028T190946Z/main.pdf`, 254 US-Letter pages and 16,491,650
+bytes, with SHA-256
+`28898586b38c3db7ccc4c16d88fd846bdb0578aef0f3fe0fa9bb5d679e1300e7`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 32
+reported font rows are embedded and no Type 3 font occurs. The PDF remains
+untagged.
+
+Twenty-one release pages covering front matter, every chapter opening and
+ending, the revised exAL display, every appendix opening, the bibliography
+opening, and the final page were rasterized. They are pixel-identical to the
+corresponding pages inspected in the chapter-tier artifact. Direct visual
+review found no clipping, collision, missing glyph, margin violation, stranded
+heading, or unreadable display. PDF word coordinates independently confirmed
+that the apparent crop in two image previews was a preview-display artifact,
+not content outside the page.
+
+The remaining decisions are deliberately unchanged: official title,
+committee/dean/date fields, acknowledgments, ORCID, granular candidate and
+coauthor roles, material-specific reuse permission, and a modern tagged-PDF
+accessibility review. A GitHub push does not verify an Overleaf pull, build, or
+rendered artifact; those remain a separate handoff.

@@ -222,3 +222,19 @@ import, display, and accessibility records remain evidence rather than
 content to rewrite for convenience. Push, merge, and Overleaf synchronization
 remain separate lifecycle actions under default 16 and require a later
 explicit instruction.
+
+## G5C — final comprehensive polish and GitHub handoff
+
+Gate G5C is **AUTHORIZED AND LOCALLY COMPLETE**. On 2026-10-28 the author
+authorized the attached final-polish specification from start to finish,
+including focused commits, release validation, a reviewed integration into
+`main`, and a non-forced GitHub push after all gates pass. The controlling
+record is `final-dissertation-polish-plan.md`.
+
+The authorization is editorial and organizational. It does not permit new
+research computation, changes to research repositories or fixed source
+snapshots, stronger scientific claims, inferred collaborator roles, new reuse
+rights, or an automatic Overleaf synchronization. The local implementation and
+release gates are complete; the GitHub synchronization result is recorded in
+the project status after remote verification. The user must still pull and
+compile the verified `main` branch in Overleaf.
