@@ -111,9 +111,10 @@
       }
     },
     "fall_2026_filing_metadata_update": {
-      "state": "IMPLEMENTED_RELEASE_VALIDATED",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "authority": "Signed Fall 2026 degree application, July 2026 UCSC preparation guide, and candidate-specific Graduate Division instructions",
       "candidate_instruction_date": "2026-10-15",
+      "release_bearing_sync_commit": "11834fdefed023de98063b93ea10ef0eb67f562e",
       "confirmed_title_page_date": "December 2026",
       "confirmed_dean_name": "Donald Smith",
       "confirmed_dean_title": "Interim Vice Provost and Dean of Graduate Studies",
