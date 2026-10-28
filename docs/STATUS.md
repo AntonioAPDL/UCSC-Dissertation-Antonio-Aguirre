@@ -1,5 +1,33 @@
 # Project status
 
+## 2026-10-27 final reader and statistical revision
+
+The advisor-directed final reader revision is implemented on branch
+`editorial/final-reader-statistical-revision-20261027` from clean baseline
+`f82c7bce192d51dbc686070533647780cacbd5dc`.  The controlling plan and exact
+implementation record are `final-reader-statistical-revision-plan.md` and
+`final-reader-statistical-revision-implementation.md`.
+
+The six-chapter architecture and four research projects are retained.  Chapter
+2 now emphasizes statistical computation and software rather than an API
+manual; Chapter 3 discloses the globally specified retrospective design;
+Chapter 4 discloses its development-informed simulation selection and the
+dependence among origin--horizon pairs; Chapter 5 has one narrative and one
+discussion, with detailed regression/dynamic derivations represented once in
+Appendix E; and Chapter 6 compares evaluation maturity across projects.  The
+duplicate MTI sign error and malformed appendix references are corrected.
+
+Appendix displays remain active and locally referenced but no longer dominate
+the global lists of figures and tables.  The final release gate passed on a
+414-page US-Letter PDF; the abstract begins on Roman page xxii rather than
+xxxviii in the accepted 2026-10-26 artifact.  The release rechecked all 102
+immutable source blobs, has no blocking diagnostics or overfull boxes, embeds
+all 52 reported font rows with no Type 3 font, and passed targeted rendered-page
+inspection.  The accepted ignored artifact and exact hash are recorded in
+`VALIDATION.md`.  No research computation was rerun and no source repository
+was changed.  GitHub merge verification and the separate Overleaf pull remain
+handoff facts to record after synchronization.
+
 ## 2026-10-26 current-research refresh
 
 The current remote default branches were compared with the dissertation's

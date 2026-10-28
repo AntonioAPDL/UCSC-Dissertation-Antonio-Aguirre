@@ -7,10 +7,10 @@ The chapter retains the inferential target, central model, principal
 evidence, interpretation, and limitations needed for a continuous read.
 
 % migration-id: MIG-CH02-01
-\section{Nonconjugate VB and backend notes}
+\section{Nonconjugate VB and computational details}
 \label{exd:sec:numerical_blocks}
 
-For the legacy Laplace--delta factor, let $z$ denote the transformed
+For the earlier Laplace--delta factor, let $z$ denote the transformed
 nonconjugate parameter vector with mode
 $\hat z$ and negative Hessian $\mat{H}$ at the mode. The LDVB block uses
 \begin{equation}
@@ -50,17 +50,16 @@ The MCMC routines use bounded one-dimensional slice sampling for selected
 nonconjugate skewness updates. Under the default scale-collapsed kernel, the
 slice sampler is applied on the bounded logit scale after analytically
 integrating out \(\sigma\), and \(\sigma\) is then redrawn from its exact GIG
-conditional distribution. Legacy slice and MH kernels remain available through
+conditional distribution. Previous slice and MH kernels remain available through
 \code{mh.proposal}; their target kernels are the conditional log posteriors
 induced by the exAL augmentation.
 
 \label{exd:sec:app_backend_options}
-The package also exposes backend options for C++ Kalman recursions, builders,
+The package also provides alternative computational implementations for C++ Kalman recursions, builders,
 latent-variable samplers, posterior predictive simulation, and MCMC routing.
 These include the \code{exdqlm.use\_cpp\_*} option family, such as
 \code{exdqlm.use\_cpp\_kf}, and the \code{exdqlm.cpp\_threads} thread cap.
-They are documented in the package help pages and README because they are
-runtime controls rather than additional model assumptions.
+These are numerical controls rather than additional model assumptions.
 
 \section{Posterior targets and model blocks}
 
@@ -326,7 +325,7 @@ quadrature weights for \(q(\gamma)\) and GIG moments for
 \(\gamma\) from this discrete representation and then drawing \(\sigma\) from
 the corresponding conditional GIG distribution.
 
-The legacy Laplace--delta factor instead uses transformed coordinates
+The earlier Laplace--delta factor instead uses transformed coordinates
 \[
 \ell_\sigma=\log\sigma,\qquad z_\gamma=
 \logit\left(\frac{\gamma-L}{U-L}\right).
@@ -342,7 +341,7 @@ h_z(\ell_\sigma,z_\gamma)
 +\ell_\sigma+\log(U-L)+\log r+\log(1-r).
 \label{exd:eq:dyn_exdqlm_ld_objective}
 \end{align}
-The legacy factor maximizes this objective, uses the local Hessian to form a
+The earlier factor maximizes this objective, uses the local Hessian to form a
 Gaussian approximation on $(\ell_\sigma,z_\gamma)$, and evaluates needed
 expectations by the delta method. The returned LDVB objects include the
 scale--skewness factor description, derived moments, ELBO trace, and
