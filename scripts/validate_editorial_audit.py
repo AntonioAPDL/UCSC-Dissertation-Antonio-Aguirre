@@ -8,11 +8,14 @@ import re
 import sys
 from pathlib import Path
 
+from appendix_essentiality import approved_inactive_display_ids, load_optional
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ISSUES = ROOT / "docs" / "editorial-issues.json"
 DISPLAYS = ROOT / "docs" / "display-ledger.json"
 BIBLIOGRAPHY = ROOT / "docs" / "bibliography-map.json"
+ESSENTIALITY = ROOT / "docs" / "appendix-essentiality-map.json"
 ENTRY_FILES = tuple(
     ROOT / path
     for path in (
@@ -98,11 +101,34 @@ def bibliography_keys() -> set[str]:
     }
 
 
+def display_presence_errors(
+    records: list[dict], current: set[str], essentiality: dict
+) -> list[str]:
+    errors: list[str] = []
+    approved_inactive = approved_inactive_display_ids(essentiality)
+    for record in records:
+        ident = record.get("id")
+        if record.get("implementation_status") == "PENDING" and ident not in current:
+            errors.append(f"pending display is absent: {ident}")
+        if (
+            record.get("disposition") == "KEEP"
+            and ident not in current
+            and ident not in approved_inactive
+        ):
+            errors.append(f"KEEP display is absent: {ident}")
+    return errors
+
+
 def main() -> int:
     errors: list[str] = []
     issues = load(ISSUES, errors)
     displays = load(DISPLAYS, errors)
     bibliography = load(BIBLIOGRAPHY, errors)
+    try:
+        essentiality = load_optional(ESSENTIALITY)
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        errors.append(f"{ESSENTIALITY.relative_to(ROOT)}: {exc}")
+        essentiality = {}
 
     issue_ids: set[str] = set()
     for index, record in enumerate(issues.get("records", [])):
@@ -156,11 +182,7 @@ def main() -> int:
     unrecorded = sorted(current - display_ids)
     if unrecorded:
         errors.append("unrecorded current displays: " + ", ".join(unrecorded))
-    for record in displays.get("records", []):
-        if record.get("implementation_status") == "PENDING" and record.get("id") not in current:
-            errors.append(f"pending display is absent: {record.get('id')}")
-        if record.get("disposition") == "KEEP" and record.get("id") not in current:
-            errors.append(f"KEEP display is absent: {record.get('id')}")
+    errors.extend(display_presence_errors(displays.get("records", []), current, essentiality))
 
     bib_keys = bibliography_keys()
     mapped_replacements: set[str] = set()

@@ -11,11 +11,18 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from appendix_essentiality import (
+    approved_inactive_display_ids,
+    load_optional,
+    validate_payload,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MAIN = ROOT / "main.tex"
 MIGRATION = ROOT / "docs" / "appendix-migration-map.json"
 ACCESSIBILITY = ROOT / "docs" / "accessibility-ledger.json"
+ESSENTIALITY = ROOT / "docs" / "appendix-essentiality-map.json"
 APPENDICES = (
     "appendices/a-shared-conventions",
     "appendices/b-exdqlm-technical",
@@ -122,6 +129,55 @@ def graphic_records(files: set[Path]) -> set[tuple[str, str]]:
     return records
 
 
+def body_reference_labels(root: Path = ROOT) -> set[str]:
+    references: set[str] = set()
+    for path in sorted((root / "chapters").glob("*.tex")):
+        text = uncomment(path.read_text(encoding="utf-8"))
+        for argument in re.findall(r"\\(?:ref|eqref|pageref|autoref)\{([^}]+)\}", text):
+            references.update(part.strip() for part in argument.split(",") if part.strip())
+    return references
+
+
+def accessibility_errors(
+    accessibility: dict,
+    active_graphics: set[tuple[str, str]],
+    essentiality: dict,
+) -> tuple[list[str], set[tuple[str, str]]]:
+    errors: list[str] = []
+    ledger_keys: set[tuple[str, str]] = set()
+    active_ledger_keys: set[tuple[str, str]] = set()
+    approved_inactive = approved_inactive_display_ids(essentiality)
+    for index, record in enumerate(accessibility.get("graphics", [])):
+        where = f"docs/accessibility-ledger.json:graphics[{index}]"
+        key = (str(record.get("source_path", "")), str(record.get("graphic", "")))
+        if key in ledger_keys:
+            errors.append(f"{where}: duplicate graphic record")
+        ledger_keys.add(key)
+        if not record.get("alt_text"):
+            errors.append(f"{where}: missing alt_text")
+        if record.get("status") not in {"REVIEWED", "AUTHOR_REVIEW_REQUIRED"}:
+            errors.append(f"{where}: invalid status")
+        inclusion = record.get("current_inclusion", "ACTIVE")
+        if inclusion not in {"ACTIVE", "INACTIVE"}:
+            errors.append(f"{where}: invalid current_inclusion")
+            continue
+        label = record.get("figure_label")
+        if inclusion == "INACTIVE":
+            if key in active_graphics:
+                errors.append(f"{where}: inactive accessibility record is still active")
+            if label not in approved_inactive:
+                errors.append(f"{where}: inactive record lacks an implemented essentiality decision")
+        else:
+            active_ledger_keys.add(key)
+    missing_graphics = sorted(active_graphics - active_ledger_keys)
+    stale_graphics = sorted(active_ledger_keys - active_graphics)
+    if missing_graphics:
+        errors.append("active graphics missing from accessibility ledger: " + repr(missing_graphics))
+    if stale_graphics:
+        errors.append("inactive graphics marked active in accessibility ledger: " + repr(stale_graphics))
+    return errors, active_ledger_keys
+
+
 def main() -> int:
     errors: list[str] = []
     files, dynamic_inputs, missing_inputs = active_tex_graph()
@@ -197,27 +253,27 @@ def main() -> int:
         if record.get("disposition") != "MOVE_APPENDIX":
             errors.append(f"{where}: unsupported disposition")
 
+    try:
+        essentiality = load_optional(ESSENTIALITY)
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        errors.append(f"{ESSENTIALITY.relative_to(ROOT)}: {exc}")
+        essentiality = {}
+    if essentiality:
+        errors.extend(
+            validate_payload(
+                essentiality,
+                ROOT,
+                active_labels=set(labels),
+                body_references=body_reference_labels(),
+            )
+        )
+
     accessibility = load(ACCESSIBILITY, errors)
     if accessibility.get("schema_version") != 1:
         errors.append("accessibility ledger must use schema_version 1")
-    ledger_keys: set[tuple[str, str]] = set()
-    for index, record in enumerate(accessibility.get("graphics", [])):
-        where = f"docs/accessibility-ledger.json:graphics[{index}]"
-        key = (str(record.get("source_path", "")), str(record.get("graphic", "")))
-        if key in ledger_keys:
-            errors.append(f"{where}: duplicate graphic record")
-        ledger_keys.add(key)
-        if not record.get("alt_text"):
-            errors.append(f"{where}: missing alt_text")
-        if record.get("status") not in {"REVIEWED", "AUTHOR_REVIEW_REQUIRED"}:
-            errors.append(f"{where}: invalid status")
     active_graphics = graphic_records(files)
-    missing_graphics = sorted(active_graphics - ledger_keys)
-    stale_graphics = sorted(ledger_keys - active_graphics)
-    if missing_graphics:
-        errors.append("active graphics missing from accessibility ledger: " + repr(missing_graphics))
-    if stale_graphics:
-        errors.append("inactive graphics in accessibility ledger: " + repr(stale_graphics))
+    accessibility_result, _ = accessibility_errors(accessibility, active_graphics, essentiality)
+    errors.extend(accessibility_result)
 
     if errors:
         print("Structure validation: FAIL", file=sys.stderr)
