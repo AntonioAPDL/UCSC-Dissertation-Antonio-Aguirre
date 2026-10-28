@@ -659,7 +659,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:qdesn-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-technical"
     },
     {
@@ -671,7 +671,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:qdesn-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-technical"
     },
     {
@@ -683,7 +683,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -695,7 +695,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -707,7 +707,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -719,7 +719,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -731,7 +731,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -743,7 +743,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -755,7 +755,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -767,7 +767,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -779,7 +779,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -791,7 +791,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -803,7 +803,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -815,7 +815,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -827,7 +827,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -839,7 +839,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -851,7 +851,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -863,7 +863,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -875,7 +875,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -887,7 +887,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -899,7 +899,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -911,7 +911,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -923,7 +923,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-pricefm-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-pricefm-support"
     },
     {
@@ -935,7 +935,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-pricefm-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_D",
+      "implementation_commit": "b47ddc0",
       "final_location": "app:qdesn-pricefm-support"
     },
     {
@@ -4265,7 +4265,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4318,7 +4318,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4371,7 +4371,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4425,7 +4425,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4478,7 +4478,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4531,7 +4531,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4586,7 +4586,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4639,7 +4639,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4695,7 +4695,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4748,7 +4748,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4801,7 +4801,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4854,7 +4854,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4907,7 +4907,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -4960,7 +4960,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5013,7 +5013,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5066,7 +5066,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5119,7 +5119,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5172,7 +5172,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5225,7 +5225,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5278,7 +5278,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5332,7 +5332,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5385,7 +5385,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5438,7 +5438,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5491,7 +5491,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5544,7 +5544,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5597,7 +5597,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5650,7 +5650,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5703,7 +5703,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5756,7 +5756,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5809,7 +5809,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5862,7 +5862,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5915,7 +5915,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -5968,7 +5968,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6021,7 +6021,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6074,7 +6074,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6127,7 +6127,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6181,7 +6181,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6235,7 +6235,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6288,7 +6288,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6341,7 +6341,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6394,7 +6394,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6447,7 +6447,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6500,7 +6500,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6553,7 +6553,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6606,7 +6606,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6659,7 +6659,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6712,7 +6712,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6765,7 +6765,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6818,7 +6818,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6871,7 +6871,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6924,7 +6924,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -6977,7 +6977,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7030,7 +7030,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7083,7 +7083,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7136,7 +7136,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7189,7 +7189,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7242,7 +7242,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7295,7 +7295,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7348,7 +7348,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7401,7 +7401,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7454,7 +7454,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7507,7 +7507,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7560,7 +7560,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7613,7 +7613,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7666,7 +7666,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7719,7 +7719,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7774,7 +7774,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7829,7 +7829,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7884,7 +7884,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7939,7 +7939,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -7994,7 +7994,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8049,7 +8049,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8104,7 +8104,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8159,7 +8159,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8214,7 +8214,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8269,7 +8269,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8324,7 +8324,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8379,7 +8379,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8434,7 +8434,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8489,7 +8489,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8544,7 +8544,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8599,7 +8599,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8654,7 +8654,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8709,7 +8709,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8764,7 +8764,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8819,7 +8819,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8874,7 +8874,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8929,7 +8929,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -8984,7 +8984,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9039,7 +9039,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9094,7 +9094,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9149,7 +9149,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9204,7 +9204,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9259,7 +9259,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9314,7 +9314,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9369,7 +9369,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9424,7 +9424,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9479,7 +9479,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9534,7 +9534,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9589,7 +9589,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9644,7 +9644,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9699,7 +9699,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9754,7 +9754,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9809,7 +9809,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9864,7 +9864,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9919,7 +9919,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -9974,7 +9974,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10029,7 +10029,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10084,7 +10084,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10139,7 +10139,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10194,7 +10194,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10249,7 +10249,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10304,7 +10304,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10359,7 +10359,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10414,7 +10414,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10469,7 +10469,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10524,7 +10524,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10579,7 +10579,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10634,7 +10634,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10689,7 +10689,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10744,7 +10744,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10799,7 +10799,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10854,7 +10854,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10909,7 +10909,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -10964,7 +10964,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11019,7 +11019,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11074,7 +11074,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11129,7 +11129,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11184,7 +11184,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11239,7 +11239,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11294,7 +11294,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11349,7 +11349,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11404,7 +11404,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11459,7 +11459,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11514,7 +11514,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11569,7 +11569,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11624,7 +11624,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11679,7 +11679,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11734,7 +11734,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11789,7 +11789,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11844,7 +11844,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11899,7 +11899,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -11954,7 +11954,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12009,7 +12009,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12064,7 +12064,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12119,7 +12119,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12174,7 +12174,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12229,7 +12229,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12284,7 +12284,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12339,7 +12339,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12394,7 +12394,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12449,7 +12449,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12504,7 +12504,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12559,7 +12559,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12614,7 +12614,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12669,7 +12669,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12724,7 +12724,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12779,7 +12779,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12834,7 +12834,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12889,7 +12889,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12944,7 +12944,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -12999,7 +12999,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13054,7 +13054,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13109,7 +13109,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13164,7 +13164,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13219,7 +13219,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13274,7 +13274,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13329,7 +13329,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13384,7 +13384,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13439,7 +13439,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13494,7 +13494,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13549,7 +13549,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13604,7 +13604,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13659,7 +13659,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13714,7 +13714,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13769,7 +13769,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13824,7 +13824,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13879,7 +13879,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13934,7 +13934,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -13989,7 +13989,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16414,7 +16414,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16471,7 +16471,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16528,7 +16528,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16585,7 +16585,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16642,7 +16642,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16699,7 +16699,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16756,7 +16756,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16813,7 +16813,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16870,7 +16870,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16927,7 +16927,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -16986,7 +16986,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17043,7 +17043,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17100,7 +17100,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17157,7 +17157,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17214,7 +17214,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17271,7 +17271,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17328,7 +17328,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17385,7 +17385,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17442,7 +17442,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17499,7 +17499,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17559,7 +17559,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17616,7 +17616,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17673,7 +17673,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17730,7 +17730,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17787,7 +17787,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17844,7 +17844,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17901,7 +17901,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -17958,7 +17958,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18017,7 +18017,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18074,7 +18074,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18131,7 +18131,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18188,7 +18188,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18245,7 +18245,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18302,7 +18302,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18359,7 +18359,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18416,7 +18416,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18473,7 +18473,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18530,7 +18530,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18587,7 +18587,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18644,7 +18644,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
@@ -18703,7 +18703,7 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_D",
+        "commit": "b47ddc0",
         "final_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
         "validation": "Gate F chapter validation and rendered review"
       }
