@@ -2,8 +2,10 @@
 
 **State:** implemented and release validated
 
-**Baseline thesis commit:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`  
-**Accepted PDF:** 414 pages, with 204 appendix pages  
+**Baseline thesis commit:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`
+
+**Accepted PDF:** 414 pages, with 204 appendix pages
+
 **Accepted PDF SHA-256:**
 `49b0bc25f5c4b46c474379d3b7f33bfbfd01a3a28cb77660db63a4a8c5f0e409`
 

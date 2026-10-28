@@ -4,11 +4,15 @@
 
 **Plan state:** approved and implemented on 2026-10-28; Phases 0--8 and all
 sixteen defaults passed their gates, while push, merge, and Overleaf
-synchronization remain separately gated  
-**Prepared:** 2026-10-28  
+synchronization remain separately gated
+
+**Prepared:** 2026-10-28
+
 **Repository baseline:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`
-(`main`, equal to `origin/main` when audited)  
-**Accepted baseline PDF:** `build/release-20261028T044714Z/main.pdf`  
+(`main`, equal to `origin/main` when audited)
+
+**Accepted baseline PDF:** `build/release-20261028T044714Z/main.pdf`
+
 **PDF SHA-256:**
 `49b0bc25f5c4b46c474379d3b7f33bfbfd01a3a28cb77660db63a4a8c5f0e409`
 

@@ -230,4 +230,3 @@ def validate_payload(
         if unexpectedly_active:
             errors.append("inactive labels remain active: " + ", ".join(sorted(unexpectedly_active)))
     return errors
-
