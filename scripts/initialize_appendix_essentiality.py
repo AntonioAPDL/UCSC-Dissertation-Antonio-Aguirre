@@ -187,7 +187,7 @@ def target_label(appendix: str, title: str) -> str:
     choices = {
         "A": [("", "app:shared-conventions")],
         "B": [("ldvb", "app:exdqlm-ldvb"), ("forecast", "app:exdqlm-synthesis"), ("posterior", "app:exdqlm-posterior")],
-        "C": [("markov", "app:hydrology-mcmc"), ("variational", "app:hydrology-vb"), ("parameter", "app:hydrology-parameters")],
+        "C": [("markov", "app:hydrology-mcmc"), ("variational", "app:hydrology-vb"), ("parameter", "env:app:sourceparams")],
         "D": [("glofas", "app:qdesn-glofas-support"), ("pricefm", "app:qdesn-pricefm-support"), ("gaussian", "app:qdesn-gaussian-baseline"), ("reservoir", "app:qdesn-simulation-support"), ("simulation", "app:qdesn-simulation-support"), ("independent", "app:qdesn-simulation-support"), ("recursive-policy", "app:qdesn-simulation-support"), ("forecast", "app:qdesn-simulation-support"), ("calibration", "app:qdesn-simulation-support"), ("mcmc", "app:qdesn-computation"), ("variational", "app:qdesn-computation"), ("posterior", "app:qdesn-posterior"), ("likelihood", "app:qdesn-posterior")],
         "E": [("regression", "app:mti-extensions"), ("dynamic", "app:mti-extensions"), ("pharma", "app:mti-application-sensitivity"), ("mti-profile-policy", "app:mti-calibration"), ("scan-reference", "app:mti-calibration"), ("full-range-thresholds", "app:mti-calibration"), ("tolerance", "app:mti-calibration"), ("validation", "app:mti-calibration"), ("computation", "app:mti-profile-computation"), ("ecm", "app:mti-profile-computation"), ("interval", "app:mti-proofs"), ("mean", "app:mti-proofs"), ("empirical", "app:mti-proofs")],
     }

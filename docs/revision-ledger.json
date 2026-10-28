@@ -31,14 +31,15 @@
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
+      "current_sha256": "ad46def55684dbc63e4050e59a64b9287785d43ef2bde126453d3d929fee72f7",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH03-20260916",
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
@@ -102,13 +103,14 @@
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "57f90d27789617be72928f045100a214eee95deb21b41721d9fa14441bc993e5",
+      "current_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
       ],
       "revision_ids": [
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
@@ -630,6 +632,25 @@
       "summary": "Completed the final reader-first statistical revision: corrected local mathematical and reference defects, aligned evaluation claims with their development histories, removed article and production language, compressed software-manual and duplicated MTI material, and limited global display lists to the main argument.",
       "evidence": "docs/final-reader-statistical-revision-plan.md; docs/final-reader-statistical-revision-implementation.md; docs/claim-evidence.json; docs/display-ledger.json",
       "validation": "Fast, chapter, release, immutable source-blob, PDF-text, font, geometry, and targeted rendered-page checks passed before merge."
+    },
+    {
+      "id": "REV-ESSENTIAL-APPENDICES-20261028",
+      "date": "2026-10-28",
+      "paths": [
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "appendices/a-shared-conventions.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/c-hydrology-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "summary": "Revises the article-scale appendix layer into five selective technical records while preserving central proofs, nonstandard posterior calculations, claim-changing sensitivity evidence, negative results, and precise body-to-appendix recovery links.",
+      "evidence": "docs/essential-appendix-revision-plan.md; docs/appendix-essentiality-map.json; docs/appendix-essentiality-review.md",
+      "validation": "Appendix-sized fast, chapter, and rendered-review gates followed by a timestamped release and immutable source-blob validation."
     }
   ]
 }

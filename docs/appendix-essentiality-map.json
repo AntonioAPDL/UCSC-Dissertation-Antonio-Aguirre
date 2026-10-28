@@ -433,15 +433,9 @@
       "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_target",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:static_exal_vb_beta",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:tf_aug_state",
-      "appendices/c-hydrology-technical.tex::heading::section::cutoff-specific-predictive-synthesis-panels::occurrence::1",
-      "appendices/c-hydrology-technical.tex::heading::section::markov-chain-monte-carlo-algorithms::occurrence::1",
-      "appendices/c-hydrology-technical.tex::heading::section::source-specific-exal-parameter-summaries::occurrence::1",
-      "appendices/c-hydrology-technical.tex::heading::section::variational-bayes-algorithms::occurrence::1",
-      "appendices/c-hydrology-technical.tex::label::env:alg:Alg2",
+      "appendices/c-hydrology-technical.tex::heading::section::laplace-delta-variational-approximation::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::section::source-indexed-mcmc::occurrence::1",
       "appendices/c-hydrology-technical.tex::label::env:alg:Alg3",
-      "appendices/c-hydrology-technical.tex::label::env:alg:Alg4",
-      "appendices/c-hydrology-technical.tex::label::env:fig:synthsupport_20210123",
-      "appendices/c-hydrology-technical.tex::label::env:fig:synthsupport_20211221",
       "appendices/d-qdesn-technical.tex::heading::section::gaussian-baseline-and-initialization-details::occurrence::1",
       "appendices/d-qdesn-technical.tex::heading::section::q-desn-and-mq-desn-technical-development::occurrence::1",
       "appendices/d-qdesn-technical.tex::heading::subsection::desn-feature-map-and-fixed-design-quantile-regression::occurrence::1",
@@ -805,7 +799,9 @@
       "question_context": "\\noindent\\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans'o. The inferential target, model, principal evidence, interpretation, and limitations remain here; complete algorithms, detailed sensitivity analyses, parameter summaries, and additional forecast-origin panels are retained in Appendix~\\ref{app:hydrology-technical}.}",
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:hydrology-technical",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_C",
+      "final_location": "app:hydrology-technical"
     },
     {
       "id": "APPX-BRIDGE-009",
@@ -815,7 +811,9 @@
       "question_context": "Appendix~\\ref{app:hydrology-technical} gives the complete update equations and",
       "action": "RETARGET",
       "target_label": "app:hydrology-mcmc",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_C",
+      "final_location": "app:hydrology-mcmc"
     },
     {
       "id": "APPX-BRIDGE-010",
@@ -825,7 +823,9 @@
       "question_context": "Appendix~\\ref{app:hydrology-technical}.",
       "action": "RETARGET",
       "target_label": "app:hydrology-vb",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_C",
+      "final_location": "app:hydrology-vb"
     },
     {
       "id": "APPX-BRIDGE-011",
@@ -835,7 +835,9 @@
       "question_context": "Appendix~\\ref{app:hydrology-technical}, where their narrower diagnostic role",
       "action": "REPLACE_WITH_BODY_EVIDENCE",
       "target_label": "",
-      "status": "APPROVED"
+      "status": "IMPLEMENTED",
+      "implementation_commit": "WORKTREE_PHASE_C",
+      "final_location": "body evidence at the former bridge location"
     },
     {
       "id": "APPX-BRIDGE-012",
@@ -3813,12 +3815,17 @@
         "no_loss_location": "app:hydrology-mcmc"
       },
       "coverage_keys": [
-        "appendices/c-hydrology-technical.tex::heading::section::variational-bayes-algorithms::occurrence::1"
+        "appendices/c-hydrology-technical.tex::heading::section::variational-bayes-algorithms::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::section::source-indexed-mcmc::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-051",
@@ -3862,12 +3869,17 @@
         "no_loss_location": "app:hydrology-vb"
       },
       "coverage_keys": [
-        "appendices/c-hydrology-technical.tex::heading::section::source-specific-exal-parameter-summaries::occurrence::1"
+        "appendices/c-hydrology-technical.tex::heading::section::source-specific-exal-parameter-summaries::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::section::laplace-delta-variational-approximation::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-052",
@@ -3900,7 +3912,7 @@
         "heading": "Source-specific exAL parameter summaries",
         "label": ""
       },
-      "required_body_bridge": "app:hydrology-parameters",
+      "required_body_bridge": "env:app:sourceparams",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -3908,15 +3920,19 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/c-hydrology-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:hydrology-parameters"
+        "no_loss_location": "env:app:sourceparams"
       },
       "coverage_keys": [
         "appendices/c-hydrology-technical.tex::heading::section::markov-chain-monte-carlo-algorithms::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-053",
@@ -3942,7 +3958,7 @@
       "body_references": [],
       "question": "What technical support from this unit is necessary for the corresponding chapter claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The body reports all five origins and already retains a representative synthesis display.",
       "target": {
         "path": "appendices/c-hydrology-technical.tex",
@@ -3964,8 +3980,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-054",
@@ -3995,7 +4015,7 @@
       ],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "One integrated algorithm is sufficient; standard filtering and smoothing recursions can be cited.",
       "target": {
         "path": "appendices/c-hydrology-technical.tex",
@@ -4017,8 +4037,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-055",
@@ -4068,8 +4092,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-056",
@@ -4097,7 +4125,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "CONDENSE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "One integrated algorithm is sufficient; standard filtering and smoothing recursions can be cited.",
       "target": {
         "path": "appendices/c-hydrology-technical.tex",
@@ -4119,8 +4147,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-059",
@@ -15448,7 +15480,7 @@
       ],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/c-hydrology-technical.tex",
@@ -15472,8 +15504,12 @@
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-312",
@@ -15505,7 +15541,7 @@
       ],
       "question": "Does this display provide evidence that changes or qualifies a dissertation claim?",
       "disposition": "DEACTIVATE",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The claim is visible in the body or a retained display; the full display remains recoverable from the baseline.",
       "target": {
         "path": "appendices/c-hydrology-technical.tex",
@@ -15527,8 +15563,12 @@
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
-      "status": "APPROVED",
-      "implementation": {}
+      "status": "IMPLEMENTED",
+      "implementation": {
+        "commit": "WORKTREE_PHASE_C",
+        "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+        "validation": "Gate D fast and chapter validation"
+      }
     },
     {
       "id": "APPX-ESS-313",

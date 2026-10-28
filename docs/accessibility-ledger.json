@@ -11,7 +11,8 @@
       "figure_label": "env:fig:synthsupport_20210123",
       "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/c-hydrology-technical.tex",
@@ -19,7 +20,8 @@
       "figure_label": "env:fig:synthsupport_20210123",
       "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/c-hydrology-technical.tex",
@@ -27,7 +29,8 @@
       "figure_label": "env:fig:synthsupport_20211221",
       "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/c-hydrology-technical.tex",
@@ -35,7 +38,8 @@
       "figure_label": "env:fig:synthsupport_20211221",
       "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",

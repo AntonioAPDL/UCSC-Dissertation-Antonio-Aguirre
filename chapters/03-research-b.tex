@@ -2,7 +2,7 @@
 \label{ch:research-b}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans'o. The inferential target, model, principal evidence, interpretation, and limitations remain here; complete algorithms, detailed sensitivity analyses, parameter summaries, and additional forecast-origin panels are retained in Appendix~\ref{app:hydrology-technical}.}
+\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans'o. The inferential target, model, principal evidence, interpretation, and limitations remain here; Appendix~\ref{app:hydrology-technical} records the source-indexed MCMC and variational calculations needed to interpret the reported inference.}
 \end{singlespace}
 
 \section{Chapter overview}
@@ -171,7 +171,7 @@ Further details regarding prior specification and discount factors are provided 
 \subsection{Posterior computation}
 \label{env:subsec:postinf}
 Initially, we explored the posterior distribution of all model parameters using a Markov chain Monte Carlo (MCMC) algorithm.
-Algorithm~\ref{env:alg1} gives the core MCMC updates in a compact source-indexed notation. As indicated by Equation~\ref{env:eq:compact_est_obs}, during the pre-cutoff observation window the response variables are the USGS observations and retrospective products. After the cutoff, Equation~\ref{env:eq:compact_fc_obs} applies and the response variables correspond to the forecast products. Careful bookkeeping is needed because forecast horizons differ across agencies. Gibbs sampling is facilitated by the fact that all full posterior conditionals are available in closed form except for the channel-specific skewness parameters \(\gamma^s\), \(s\in\mathcal{J}_0\). For these, we use a Metropolis--Hastings random walk on an unconstrained reparameterization. Posterior sampling of the state parameters relies on a modified Forward Filtering Backward Sampling (FFBS) algorithm that leverages their conditional normality (see Algorithm~\ref{env:alg:Alg2}).
+Algorithm~\ref{env:alg1} in Appendix~\ref{app:hydrology-mcmc} gives the core MCMC updates in a compact source-indexed notation. As indicated by Equation~\ref{env:eq:compact_est_obs}, during the pre-cutoff observation window the response variables are the USGS observations and retrospective products. After the cutoff, Equation~\ref{env:eq:compact_fc_obs} applies and the response variables correspond to the forecast products. Careful bookkeeping is needed because forecast horizons differ across agencies. Gibbs sampling is facilitated by the fact that all full posterior conditionals are available in closed form except for the channel-specific skewness parameters \(\gamma^s\), \(s\in\mathcal{J}_0\). For these, we use a Metropolis--Hastings random walk on an unconstrained reparameterization. The state path is sampled by standard forward filtering and backward sampling under conditional Gaussianity \citep{env-prado2021time}.
 
 %\subsubsection{Variational Bayes Implementation} \label{env:subsec:vb}
 
@@ -197,8 +197,9 @@ q(\boldsymbol{\alpha})
 Second-order delta expansions provide the moments of
 \(q(\boldsymbol{\alpha})\) required by the conjugate updates. The algorithm
 alternates these steps until the monitored evidence lower bound stabilizes.
-Appendix~\ref{app:hydrology-technical} gives the complete update equations and
-implementation pseudocode.
+Appendix~\ref{app:hydrology-vb} records the corresponding source-indexed
+variational updates and the boundary between the posterior target and its
+Laplace--delta approximation.
 
 Our approach fits a separate state-space model for each target quantile level, which allows the seven quantile-specific models used in the application to be fitted in parallel. In the San Lorenzo application, the full quantile set can be refit once observations, retrospective products, forecast products, and forecast covariates have been staged; the recorded runs take about two hours end-to-end on a Linux server with 64 cores and 503 GiB of RAM. These timings use the practical runtime fields \texttt{runtime\_sec\_total} and \texttt{runtime\_sec}; they are combined wall-clock measurements because fitting and forecasting were not timed separately, and they are hardware- and implementation-dependent. The main computational cost arises from repeated filtering and smoothing operations and increases with the length of the time series and the dimension of the latent state. These recorded timings do not establish an operational deployment claim.
 
@@ -253,9 +254,9 @@ subsequent synthesis across quantile levels.  The empirical comparisons below
 therefore evaluate a fixed model-and-algorithm contract rather than a generic
 post-processing rule.
 
-The complete full-conditionals, filtering and smoothing recursions, and
-stepwise MCMC and VB algorithms appear in
-Appendix~\ref{app:hydrology-technical}.
+The source-indexed MCMC and variational calculations appear in
+Appendix~\ref{app:hydrology-mcmc} and
+Appendix~\ref{app:hydrology-vb}, respectively.
 
 \section{San Lorenzo River application}
 %\section{APPLICATION DATA AND FORECASTING DESIGN}
@@ -485,18 +486,17 @@ and forecast-window covariates change. The corresponding univariate
 transfer-active reference excludes both retrospective-product and forecast-
 product source channels; it is retained as a secondary diagnostic, whereas the
 multivariate display and the horizon-matched score tables provide
-the claim-bearing evidence here. Figure~\ref{env:fig:synthsupport_20210123}
-and Figure~\ref{env:fig:synthsupport_20211221} collect the other four
-cutoff-specific multivariate panels in paired displays.
+the claim-bearing evidence here. The origin-specific score tables report all
+five forecast origins; the representative display is not treated as a
+separate replication of that comparison.
 
 \subsection{Additional diagnostic evidence}
 \label{environ:sec:body-additional-diagnostics}
 
-Source-specific exAL summaries and cutoff-specific predictive-synthesis panels
-support the interpretation above but are not required to follow the principal
-five-origin comparison.  They are collected in
-Appendix~\ref{app:hydrology-technical}, where their narrower diagnostic role
-and the distinct evaluation horizons remain explicit.
+Source-specific exAL summaries support the interpretation above but are not
+comparative forecast evidence. Appendix~\ref{env:app:sourceparams} records
+their likelihood-level role, while the two score tables retain the distinct
+28-day and common 8-day evaluation questions across all five origins.
 
 \section{Chapter summary and limitations}
 \label{env:sec5}
