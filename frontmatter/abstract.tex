@@ -7,7 +7,7 @@ inferential object, information set, update, and validation claim are specified
 separately so that fitted quantiles, posterior predictive distributions,
 endpoint uncertainty, and tolerance intervals are not conflated.
 
-The first contribution is an integrated \proglang{R} workflow for extended
+The first contribution is the \pkg{exdqlm} \proglang{R} package for extended
 dynamic quantile linear models. It connects composable state-space models with
 MCMC and variational inference, diagnostics, forecasting, post-fit predictive
 synthesis, and static shrinkage regression. The second contribution applies
@@ -38,8 +38,8 @@ Across the four projects, conditionally Gaussian representations make posterior
 simulation and variational approximation practical, but similar computation
 does not imply identical inference. Asymmetric-Laplace working likelihoods,
 generalized posteriors for loss-defined endpoints, predictive synthesis, and
-repeated-sampling tolerance calibration support different claims. The combined
-results show how distributional targets can be modeled and evaluated without
+repeated-sampling tolerance calibration support different claims. Together,
+the studies illustrate how distributional targets can be modeled and evaluated without
 erasing those distinctions, and they identify the additional theory and
 multi-origin validation required for broader predictive and tolerance claims.
 \end{abstract}

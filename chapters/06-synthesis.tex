@@ -43,12 +43,12 @@ diagnostics, held-out scores, and exact version contract \\
 3: hydrology & Source-corrected conditional quantiles and a synthesized
 future-response distribution & Shared latent quantile process with source-
 specific discrepancies and transfer covariates & exAL dynamic model with LDVB
-and supporting MCMC algorithms & Five forecast origins; separate 28-day and
-common 8-day comparisons \\
+and supporting MCMC algorithms & Five retrospective forecast origins under a
+globally specified model; separate 28-day and common 8-day comparisons \\
 4: Q--DESN & Single or joint conditional quantiles & Fixed deep-reservoir
 features followed by Bayesian regression & AL/exAL working likelihood; MCMC
-and model-specific VB--LD & Known-DGP simulations and retrospective GloFAS and
-PriceFM applications \\
+and model-specific VB--LD & Development-informed known-DGP simulations and
+retrospective GloFAS and PriceFM applications \\
 5: MTI & Fixed-content interval placement; calibrated empirical tolerance
 action & Static endpoints or proposed regression and dynamic endpoint states &
 Generalized Bayes for fixed targets; convex profiling and calibrated content
@@ -105,7 +105,9 @@ Chapter~\ref{ch:research-b} provides the most direct link between the software
 and an applied forecasting problem. Its principal empirical finding is that the
 selected multivariate exAL specification with an active forecast-window
 transfer component attains the lowest 28-day CRPS among the compared Bayesian
-variants at each of the five retained origins. The shorter common eight-day
+variants at each of the five retained origins. This is a retrospective
+comparison under one globally frozen specification, not a prospective
+origin-by-origin tuning experiment. The shorter common eight-day
 comparison against NWS products is deliberately reported separately and gives
 more heterogeneous results. Thus the evidence supports source-aware correction
 and synthesis in the studied 28-day design without implying improvement over
@@ -132,7 +134,9 @@ reduce crossing but does not impose monotonicity, so crossing diagnostics and
 post-fit monotone correction retain an explicit role.
 
 The simulations document recovery and forecasting under stated data-generating
-mechanisms and selected reservoirs. They do not integrate uncertainty over
+mechanisms and selected reservoirs. The primary 300-target window and reported
+reservoirs were chosen after exploratory work on the evaluation series, so the
+results are development-informed rather than confirmatory. They do not integrate uncertainty over
 reservoir seeds or provide a universal MCMC--VB approximation comparison.
 MQ--DESN reduces crossing, but the independent fits have the lowest mean oracle
 score in six of eight mechanisms and the winner--runner-up intervals overlap in
@@ -211,24 +215,27 @@ action. No single diagnostic validates all three levels. The mixed
 results preserved in the research chapters are useful precisely because they
 show where speed, uncertainty, and predictive performance do not move together.
 
-\subsection{Provenance is part of empirical meaning}
+\subsection{Versioned evaluation protocols are part of empirical meaning}
 
-The application results depend on source versions, forecast origins, horizon
-definitions, covariate availability, reservoir selections, and evaluation
-protocols. The dissertation therefore records exact manuscript and package
-snapshots and treats the external research repositories as the computational
-authority. Selected tables and figures are readable within the thesis, but
-code, data, fitted objects, and full output archives are not duplicated here.
+Empirical results depend on the fitted model version, forecast origin, horizon,
+covariate availability, feature selection, and scoring protocol. Those details
+are not merely computational metadata: changing them changes the statistical
+comparison. The hydrologic application therefore remains attached to the
+\pkg{exdqlm} 1.1.0 analysis under which it was fitted, whereas Chapter~2's
+software examples use version 1.1.2. Likewise, Q--DESN results are interpreted
+under their recorded reservoir selection and future-input conditions rather
+than as properties of the method name alone.
 
-This separation avoids turning the dissertation into a second, divergent
-research monorepository. It also narrows reproducibility claims. The thesis
-build is self-contained and the imported scientific artifacts have recorded
-source hashes. That establishes document provenance and technical buildability;
-it does not establish bitwise regeneration of every scientific result or grant
-permission to redistribute every source asset outside the approved setting.
-The project-specific appendices preserve derivations and secondary evidence in
-the same source-controlled record, while the research repositories remain the
-authority for code, data, fitted objects, and computation.
+The evaluation designs also differ in maturity. Chapter~2 uses demonstrations,
+diagnostic screening, one held-out water-flow comparison, and one independent
+static holdout. Chapter~3 gives a five-origin retrospective comparison of a
+globally specified model; the origin-specific response fits exclude future
+USGS outcomes, but the specification used development information through the
+representative 2022 origin. Chapter~4 combines development-informed simulation
+experiments with one-origin GloFAS and three-fold PriceFM applications. Chapter~5
+uses separate calibration and validation samples for a frozen tolerance rule
+across a fixed eight-distribution panel. These designs support different claim
+strengths and should not be summarized by a single label such as “validated.”
 
 \section{Limitations shared across the dissertation}
 \label{sec:synthesis-limitations}
@@ -313,7 +320,7 @@ simulation and diagnostic design.
 Finally, the software and provenance work suggests a methodological practice
 for collaborative statistical research: versions, inferential targets, and
 evidence levels should be recorded together. A reproducible command can still
-answer the wrong statistical question if it regenerates an artifact whose
+answer the wrong statistical question if it regenerates a reported result whose
 target or information set is unclear. Conversely, a carefully delimited result
 can remain scientifically useful even when full raw-data reconstruction is not
 available, provided that the limitation is visible and the supporting snapshot

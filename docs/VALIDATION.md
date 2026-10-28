@@ -490,3 +490,49 @@ tagged and therefore is not claimed to satisfy WCAG 2.1 AA or PDF/UA. A modern
 tagging-capable build, external accessibility checking, and manual review of
 reading order, mathematics, tables, contrast, metadata, and alternative text
 remain filing gates.
+
+## 2026-10-28 final reader and statistical revision release
+
+The advisor-directed reader and statistical revision was validated from a new
+timestamped output directory with the release tier and the five immutable audit
+clones used by the current import manifests. The machine-local audit path is
+intentionally omitted from this public record. The gate passed 10 unit tests;
+rechecked eight source records, 30 claim-evidence records, 29 prioritized
+editorial issues, 102 display decisions, four import manifests, nine source
+documents, 96 section dispositions, and all 102 imported Git blobs; verified
+120 cited keys; and resolved 83 active TeX files, 482 active labels, six
+migration records, and 47 active visual records.
+
+The accepted ignored artifact is
+`build/release-20261028T044714Z/main.pdf`: 414 US-Letter pages, 20,457,322
+bytes, PDF 1.7, SHA-256
+`49b0bc25f5c4b46c474379d3b7f33bfbfd01a3a28cb77660db63a4a8c5f0e409`.
+The final log has zero undefined citations or references, unstable or multiply
+defined labels, missing files, overfull boxes, pdfTeX warnings, fatal errors,
+or emergency stops. It retains 26 underfull-box notices, two automatic
+`!h`-to-`!ht` adjustments, and the documented legacy-class caption warning;
+none indicates lost or clipped content. All 52 reported font rows are embedded
+and no Type 3 font is present. The PDF remains untagged.
+
+PDF-text inspection found none of the malformed appendix strings or internal
+production terms targeted by this revision. The title page, contents, figure
+and table lists, abstract, acknowledgments, all six chapter openings, all five
+appendix openings, the corrected statistical passages, the Chapter 5
+body-to-extension transition, and both bibliography endpoints were rasterized
+and reviewed. The chapter openings are physical pages 25, 37, 84, 123, 151,
+and 187; Appendices A--E open on physical pages 199, 203, 217, 226, and 337;
+the bibliography occupies physical pages 403--414. The inspected headings,
+text, equations, page numbers, and transitions are legible without visible
+clipping, collision, or stranded content. Appendix displays remain numbered
+and locally referenceable but are excluded from the global lists, reducing the
+front matter from the prior 38 Roman-numbered pages to 24; the abstract now
+begins on page xxii.
+
+This release validates the thesis source and local muscat artifact, not filing
+readiness. The title, committee/dean/date fields and acknowledgments remain
+explicitly unresolved; material-specific reuse permission and granular
+candidate/coauthor roles remain open; and no research computation or source
+repository was changed. The untagged PDF still requires a modern accessible
+build and external/manual accessibility review. A GitHub push does not itself
+verify an Overleaf pull, compile, or rendered artifact, so that remains a
+separate handoff.

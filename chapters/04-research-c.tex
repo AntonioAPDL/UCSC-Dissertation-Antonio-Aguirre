@@ -2,7 +2,7 @@
 \label{ch:research-c}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It follows the current article at the audited 2026-10-26 source snapshot. The main article supplies the reader-facing spine; complete distributional conventions, posterior derivations, algorithms, and supporting diagnostics are preserved in Appendix~\ref{app:qdesn-technical}.}
+\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; complete distributional conventions, posterior derivations, algorithms, and supporting diagnostics are preserved in Appendix~\ref{app:qdesn-technical}.}
 \end{singlespace}
 
 \section{Chapter overview}
@@ -153,7 +153,7 @@ evidence. Derivations and additional results are in Appendix~\ref{app:qdesn-tech
 
 % ============================================================
 
-\section{Fixed-Feature Bayesian Quantile Models}
+\section{Fixed-feature Bayesian quantile models}
 \label{qdesn2026:sec:model}
 
 \subsection{Single-level quantile regression}
@@ -329,7 +329,7 @@ restrictions used in each analysis.
 
 % ============================================================
 
-\section{Posterior Computation}
+\section{Posterior computation}
 \label{qdesn2026:sec:inference}
 
 Conditional on the design, the posterior combines the likelihood in
@@ -384,7 +384,7 @@ approximation used in the multiquantile simulation.
 
 % ============================================================
 
-\section{Forecasting, Scoring, and Model Selection}
+\section{Forecasting, scoring, and model selection}
 \label{qdesn2026:sec:forecast}
 
 \subsection{Multi-step quantile forecasts}
@@ -400,7 +400,7 @@ updates. At a fitted probability level \(p\), posterior or variational draw
 +\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}\).
 A marginal posterior predictive quantile instead integrates the response
 distribution over parameter and future-path uncertainty before taking its
-quantile. Appendix~\ref{app:qdesn-technical}ary study descriptions specify the response laws
+quantile. The simulation-study descriptions in Appendix~\ref{app:qdesn-technical} specify the response laws
 used to generate future lags.
 
 \subsection{Forecast scores}
@@ -515,7 +515,7 @@ effects under a common input history
 
 % ============================================================
 
-\section{Simulation Studies}
+\section{Simulation studies}
 \label{qdesn2026:sec:simulation}
 
 \noindent
@@ -562,11 +562,14 @@ following 300 observations, giving ten origins and 300 scored origin--horizon
 pairs. Forecasts are issued every 30 observations for horizons of up to
 30 steps. A sensitivity analysis extends evaluation to the first 500
 observations, with the last forecast truncated at that boundary. This shorter
-primary evaluation period was adopted after exploratory assessment of the
-longer period; historical analyses remain documented in the reproducibility
-record. All methods use the same pairs within each evaluation. Parameters are not
+primary period was adopted after exploratory assessment of the longer series;
+the comparison is therefore development-informed rather than an untouched
+confirmatory validation. All methods use the same pairs within each evaluation. Parameters are not
 refitted between origins; newly available responses update the states or
-recurrent features used for forecasting.
+recurrent features used for forecasting. The 300 origin--horizon pairs within
+a family and quantile level come from one simulated trajectory, not 300
+independent simulation replications. Posterior score intervals are therefore
+conditional summaries for that trajectory and fitted model.
 
 We compare Q--DESN under AL and exAL likelihoods, both with RHS coefficient
 regularization, with DQLM and exDQLM fitted using \pkg{exdqlm}
@@ -577,10 +580,13 @@ through recurrent features rather than an explicitly specified state
 transition. Separate DESN specifications were selected for the reported
 criteria; historical refinement also used forecast performance on the
 evaluation series. Appendix~\ref{app:qdesn-technical} describes this selection.
+Consequently, the score comparisons characterize the frozen, selected
+specifications on these simulated series; they are exploratory evidence rather
+than performance on an untouched confirmation set.
 
 Check loss evaluates the quantile forecasts against realized responses over
 the common forecast pairs. The main comparison summarizes its posterior
-distribution. additional results assess recovery of the known
+distribution. Additional results assess recovery of the known
 state-conditional quantile path using mean absolute error (MAE), together
 with empirical quantile frequencies and fitting-sample recovery.
 
@@ -612,12 +618,15 @@ held common across the four regressions. Each regression then uses 500
 fitting observations, followed by forecast evaluation.
 
 The comparison spans 33 origins and 30 horizons per origin, giving 990 common
-origin--horizon pairs. At each origin, observed history initializes the
+origin--horizon pairs from one evaluation trajectory per mechanism. These
+pairs are temporally dependent and are not independent simulation replications.
+At each origin, observed history initializes the
 reservoir, and future responses are generated recursively. Oracle
 \(\aCRPS\), defined in Eq.~\eqref{qdesn2026:eq:dgp-integrated-score-main}, evaluates
 the quantile forecasts against the known conditional response distribution.
 The reported intervals summarize posterior uncertainty in the score averaged
-over these pairs, conditional on the averaged future predictors defined in
+over these pairs, conditional on the realized trajectory, fitted model, and
+averaged future predictors defined in
 Section~\ref{qdesn2026:sec:forecast}. Appendix~\ref{app:qdesn-technical}
 gives the generating mechanisms, computational details, and sensitivity to
 draw-specific recursive forecasting.
@@ -647,7 +656,7 @@ Gaussian and asymmetric-tail dynamics. Appendix~\ref{app:qdesn-technical} gives 
 score comparisons, quantile-crossing diagnostics, and recursive-feature
 sensitivity.
 
-\section{Application: Streamflow Quantile Forecast Correction}
+\section{Application: streamflow quantile forecast correction}
 \label{qdesn2026:sec:data}
 
 Daily river-discharge measurements from the United States Geological Survey
@@ -790,7 +799,7 @@ line.}
 
 % Finish the streamflow displays before introducing the next application.
 
-\section{Application: Electricity-Price Quantile Forecasting}
+\section{Application: electricity-price quantile forecasting}
 \label{qdesn2026:sec:pricefm-application}
 
 Day-ahead electricity prices vary with demand, renewable generation, and
@@ -810,10 +819,10 @@ resolution from 1~January~2022 through 1~January~2026.
 The comparison contains \PricefmFullRegionFolds{} region--fold evaluations,
 spanning \PricefmFullRegions{} European bidding regions and
 \PricefmFullFolds{} rolling folds. For each region, one Q--DESN specification
-was selected using temporal validation periods within the first training
-interval. The first outer validation period determined the AL or exAL family.
+was selected using temporal development periods within the first fitting
+interval. The first outer development period determined the AL or exAL family.
 The DESN specification, shrinkage settings, predictors, and AL or exAL
-likelihood were then held fixed across that region's three test folds.
+likelihood were then held fixed across that region's three evaluation folds.
 Each daily forecast origin has 96 quarter-hourly targets.
 
 Each evaluation is scored on the fold-aligned held-out timestamps and
@@ -838,7 +847,7 @@ evaluations, rather than pooling all timestamps.
 The predictors include the released load, solar, and wind forecast
 covariates; spatial specifications also use neighboring-region features or
 their summaries. Their issue-time vintages were not independently verified.
-Appendix~\ref{app:qdesn-technical} records the fold dates, training-only preprocessing, and
+Appendix~\ref{app:qdesn-technical} records the fold dates, fitting-period preprocessing, and
 selection history.
 
 \subsection{Results}
@@ -858,7 +867,7 @@ comparisons and the historical sensitivity analysis.
 \caption{Matched electricity-price forecast comparison. Entries are unweighted
 summaries across region--fold evaluations,
 overall and by fold. The Q--DESN specification for each region was selected
-using training and validation data and held fixed across its three test folds.
+using fitting and development data and held fixed across its three evaluation folds.
 Here \(\Delta\) AQL is Q--DESN minus PriceFM, so negative values favor Q--DESN.
 AQL is in EUR/MWh; all scores use matched held-out timestamps and the same
 seven probability levels.}
@@ -879,7 +888,7 @@ accessible through Bayesian regression calculations without treating every
 network weight as an unknown parameter. The AL augmentation supports
 Gibbs-based computation, while VB makes repeated regression fits practical.
 
-The single-quantile comparison is most favorable to Q--DESN at the median,
+The development-informed single-quantile comparison is most favorable to Q--DESN at the median,
 with likelihood preferences varying by observation-error family. In the
 multiquantile study, MQ--DESN improves the ordering of posterior-mean
 forecast grids, especially under exAL, while independent regressions have
@@ -893,7 +902,7 @@ with GloFAS products at one retrospective forecast origin. Q--DESN under AL
 has the lowest descriptive issued-window
 score, but its nominal 90\% interval covers 75\% of the issued-window
 observations. The electricity-price comparison holds each regional
-specification fixed across three test folds and has slightly higher aggregate
+specification fixed across three evaluation folds and has slightly higher aggregate
 AQL than PriceFM, with substantial fold and region variation. The
 applications retain their stated information sets: realized weather for
 streamflow correction and supplied covariates with unverified issue-time

@@ -32,7 +32,7 @@
       "locator": "Results and Discussion; five-cutoff benchmark tables",
       "evidence_level": "E2",
       "verification_status": "manuscript, frozen HE2 manifest, and generated-table contract are internally consistent",
-      "qualification": "This is a five-origin retrospective comparison, not a dense operational hindcast or proof of general superiority.",
+      "qualification": "This is a five-origin retrospective comparison under a globally frozen specification selected with development information through the representative December 2022 origin; it is not a strict pseudo-operational or dense hindcast, or proof of general superiority.",
       "dissertation_disposition": "central empirical claim with scope qualification"
     },
     {
@@ -175,7 +175,7 @@
       "locator": "Single-quantile simulation design and results",
       "evidence_level": "E2",
       "verification_status": "main text, display aliases, and supplement sensitivity sections agree",
-      "qualification": "The older 1000-target framing is not part of the current article result line.",
+      "qualification": "The older 1000-target framing is not part of the current article result line. The 300-target primary window and reported DESN specifications followed exploratory assessment of the evaluation series, so the comparison is development-informed rather than confirmatory.",
       "dissertation_disposition": "current Chapter 4 simulation contract"
     },
     {

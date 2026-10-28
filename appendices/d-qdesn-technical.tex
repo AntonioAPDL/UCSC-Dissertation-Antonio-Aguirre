@@ -3354,17 +3354,17 @@ or reservoir-design issue, not a posterior-derivation issue.
 \item The initialized AL/exAL scale in \eqref{qdesn2026:gauss:eq:init_sigma} must be strictly
 positive.
 \item The initialized exAL shape value must lie in the quantile-dependent
-support \((L,U)\). If \(0\) is represented only as a boundary case in code, use
-a small interior jitter around zero.
+support \((L,U)\). If a numerical implementation treats \(0\) only as a
+boundary case, use a small interior perturbation around zero.
 \item If RHS shrinkage scales are initialized by
 \eqref{qdesn2026:gauss:eq:init_tau_rhs}--\eqref{qdesn2026:gauss:eq:init_zeta_rhs}, all scales must be finite and
 positive.
 \end{enumerate}
 
-\subsubsection{Final self-audit}
+\subsubsection{Scope of the exact Gaussian formulation}
 
-This note keeps only the scaled-ridge Gaussian DESN as the main model because
-it is the version with an exact closed-form posterior. It does not present
+The principal Gaussian formulation uses the scaled-ridge DESN because this
+version has an exact closed-form posterior. The analysis does not require
 Gibbs, CAVI, or ELBO algorithms for the main model because those methods are
 unnecessary approximations or redundant samplers for an analytically available
 posterior. Unscaled ridge and \texttt{rhs\_ns} priors are described only to

@@ -1,8 +1,8 @@
-\chapter{Mean-tilted intervals: calibrated tolerance inference and dynamic extensions}
+\chapter{Mean-tilted intervals and calibrated tolerance inference}
 \label{ch:research-d}
 
 \begin{singlespace}
-\noindent\textit{This chapter combines two closely related manuscript lines by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The current tolerance article provides the population foundations and calibrated profiled MTI procedure. The companion extension manuscript develops generalized-Bayes regression and dynamic endpoint models. Proofs, calibration details, and computational derivations are preserved in Appendix~\ref{app:mti-technical}.}
+\noindent\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. Proofs, calibration details, and computational derivations are preserved in Appendix~\ref{app:mti-technical}.}
 \end{singlespace}
 
 \section{Chapter overview}
@@ -82,10 +82,11 @@ bounds for content attainment of at least the requested tolerance confidence
 across the eight calibration distributions. The resulting fixed rule is then
 evaluated on independent samples. These calculations provide evidence for the
 specified distributional panel; a distribution-free guarantee for the selected
-interval requires further theory. A companion
-manuscript develops generalized-Bayes endpoint regression, basis-expansion
-endpoint models, and time-varying endpoint models; the present paper keeps only the
-parts needed for fixed-content geometry and iid tolerance validation.
+interval requires further theory. The same loss also supports proposed
+generalized-Bayes endpoint regression, basis-expansion endpoint models, and
+time-varying endpoint models. These extensions are summarized after the
+tolerance study and derived in Appendix~\ref{app:mti-technical}; they do not
+inherit its empirical calibration.
 
 The contributions are as follows. First, the residual-product loss is shown to
 target MPI, and MTI is shown to generalize MPI by indexing admissible contiguous
@@ -109,17 +110,19 @@ forecast object \citep{exd-gneiting2007,qdesn-Gneiting2011,qdesn-GneitingKatzfus
 the usual interval score targets an equal-tailed interval and is secondary here
 \citep{rqr-BrehmerGneiting2021Intervals}.
 
-The paper proceeds as follows. Section~\ref{rqr2026:sec:interval-functionals} defines
+The chapter proceeds as follows. Section~\ref{rqr2026:sec:interval-functionals} defines
 the fixed-content interval class. Sections~\ref{rqr2026:sec:mpi-loss}
 and~\ref{rqr2026:sec:mti-loss} identify the MPI target and the MTI placement family.
 Section~\ref{rqr2026:sec:static-theory-statements} records the empirical balance
 identity and the fixed-target generalized-Bayes criterion used in the validation study.
 Section~\ref{rqr2026:sec:mti-tolerance} defines the calibrated MTI tolerance procedure
 and its scan reference. Section~\ref{rqr2026:sec:evaluation} gives the independent
-validation design, Section~\ref{rqr2026:sec:pharma-application} presents the
-pharmaceutical application, and Section~\ref{rqr2026:sec:discussion} concludes.
+validation design, and Section~\ref{rqr2026:sec:pharma-application} presents the
+pharmaceutical application. A compact extension section then connects the
+fixed-target loss to regression and dynamic endpoints before the unified
+discussion in Section~\ref{rqr2026:sec:discussion}.
 
-\section{Fixed-Content Interval Targets}
+\section{Fixed-content interval targets}
 \label{rqr2026:sec:interval-functionals}
 
 Let \(Y\) have a nondegenerate continuous distribution with finite mean
@@ -182,7 +185,7 @@ finite-sample or comparative-performance evidence.}
 \label{rqr2026:fig:three-interval-principles}
 \end{figure}
 
-\section{The Mean-Preserving Interval Target}
+\section{The mean-preserving interval target}
 \label{rqr2026:sec:mpi-loss}
 
 The residual-product loss becomes a statistical procedure once its target is
@@ -360,7 +363,7 @@ fitted endpoints: the endpoints depend on the data, and the empirical
 objective is nonsmooth when an observation coincides with a root. Finite-sample
 or asymptotic guarantees require a separate empirical-process argument.
 
-\section{Mean-Tilted Intervals}
+\section{Mean-tilted intervals}
 \label{rqr2026:sec:mti-loss}
 
 The MTI family is the fixed-tilt generalization of MPI. It preserves the MPI
@@ -566,7 +569,7 @@ posterior proper. This argument covers ridge regression with proper Gaussian
 root priors. Heavier-tailed shrinkage priors and dependent root processes
 require separate propriety analyses before nonzero tilt is considered.
 
-\section{Empirical Balance and Fixed-Target Computation}
+\section{Empirical balance and fixed-target computation}
 \label{rqr2026:sec:static-theory-statements}
 
 The population theory above concerns unrestricted fixed-content intervals. A
@@ -639,7 +642,7 @@ candidates during the fitted-content and tilt search. Its probability threshold
 is chosen in a separate calibration run. The resulting tolerance performance
 is then assessed on independent simulation samples.
 
-\section{Calibrated MTI Tolerance Intervals}
+\section{Calibrated MTI tolerance intervals}
 \label{rqr2026:sec:mti-tolerance}
 
 The preceding theory fixes population content and interval placement. A
@@ -766,7 +769,7 @@ conditions. The implemented MTI procedure evaluates its finite grid directly;
 it does not require these derivatives. Boundary and nonunique shortest
 intervals require separate treatment.
 
-\section{Validation Design}
+\section{Validation design}
 \label{rqr2026:sec:evaluation}
 
 The validation study assesses population content attainment and interval width
@@ -905,7 +908,7 @@ The excluded small-sample cells fall outside the region where a sample-bounded
 two-sided distribution-free tolerance statement can be supported at confidence \(0.95\).
 Other variants are kept outside the primary comparison.
 
-\section{Pharmaceutical Batch Application}
+\section{Pharmaceutical batch application}
 \label{rqr2026:sec:pharma-application}
 \input{tables/ch05-mti/pharma_application_numbers.tex}
 \input{tables/ch05-mti/pharma_source_numbers.tex}
@@ -1006,166 +1009,22 @@ training size. For example, reverse recorded order gives MTI held-out content
 of \PharmaTensileReverseContent\%, illustrating sensitivity to the partition.
 The profile objective-gap criterion is met in
 \PharmaTensileConverged{} of \PharmaTensileReturned{} returned tensile-metric
-fits. Numerical diagnostics are reported in Appendix~ef{app:mti-technical}. Appendix~\ref{app:mti-technical}ary tablet-core weight relative
-standard deviation (RSD) example illustrates stronger asymmetry; its
+fits. Numerical diagnostics and tablet-core weight sensitivity are reported in
+Appendix~\ref{app:mti-technical}. The tablet-core weight relative standard
+deviation (RSD) example illustrates stronger asymmetry; its
 upper-adverse interpretation would favor a one-sided
 upper tolerance limit for a direct quality-control decision.
+\section{Proposed regression and dynamic endpoint extensions}
+\label{mti:sec:extensions}
 
-\section{Discussion}
-\label{rqr2026:sec:discussion}
-
-Probability content alone determines a class of interval placements. MPI selects
-the mean-preserving member under the stated population conditions. MTI
-generalizes MPI by making retained-mean balance a fixed coordinate:
-\(\delta=0\) returns MPI, and admissible nonzero tilts specify other contiguous
-content-\(c\) windows. Equal-tailed and shortest-contiguous intervals are
-therefore distribution-specific members of the same placement family.
-
-MTI uses this placement family to search for short tolerance intervals.
-Fixed-target endpoint estimates under the generalized-Bayes criterion are combined with a DP
-posterior content check, and a separate calibration run fixes the selection
-rule before validation. The independent study finds content attainment above
-nominal tolerance confidence in all reported cells, with smaller mean widths
-than Young--Mathew in two thirds of the asymmetric cells. The independent
-confidence bounds remain inconclusive in 34 of the 72 cases. These findings are
-specific to the calibrated rule and the simulation design. The finite grid,
-finite numerical calculation, and empirical calibration limit any broader
-optimality or distribution-free interpretation.
-
-The separation between target, computation, and tolerance guarantees is essential. MTI
-identifies which fixed-content interval is being estimated. A generalized
-posterior describes uncertainty for a fixed loss-defined target. A response
-model, such as a direct Dirichlet-process posterior for \(F\), gives
-model-based content probabilities. The full MTI selection rule is assessed
-by its repeated-sampling content-attainment rate. Establishing a theorem for
-this selected interval requires an argument beyond either fixed-target
-calculation.
-
-The pharmaceutical application has a narrower role. It demonstrates how the
-precalibrated procedures behave on historical batch data, while the
-repeated-sampling tolerance evidence comes from the simulation design.
-Unresolved measurement definitions and shared production campaigns limit the
-physical and future-production interpretation of these comparisons.
-
-The tolerance evidence is confined to iid continuous univariate simulations;
-the historical pharmaceutical example has a descriptive role. Boundary tilts
-can lead to one-sided limits or inactive roots, and tilts
-outside the admissible range do not define a finite unrestricted target.
-Regression-family and dynamic tolerance calibration, selected-interval
-asymptotics, and the relation between posterior content checks and frequentist
-tolerance confidence require further study. The companion manuscript develops
-endpoint regression and dynamic computation under their own assumptions and
-evaluation designs.
-\section{Regression and dynamic endpoint extensions}
-\noindent
-Mean-tilted intervals (MTI) provide a fixed-content family of interval targets
-indexed by retained-mean balance. This paper develops generalized-Bayes
-computation for using those targets in regression and time-varying endpoint
-models after content and tilt have been specified. The update combines a prior
-with an exponentiated residual-product check loss, yielding uncertainty
-summaries for endpoint functions rather than a response-distribution model.
-
-The pseudo-AL normal--exponential representation gives
-generalized-inverse-Gaussian latent-scale updates and Gaussian conditional
-updates for one root when the other is fixed. The same representation gives
-deterministic ECM equations for generalized-posterior modes. We present ridge
-endpoint regression, a conditionally Gaussian shrinkage construction for the
-zero-tilt case, deterministic basis-expansion endpoint models, and dynamic linear
-endpoint states updated by alternating forward-filtering backward-sampling
-steps. These methods extend the MTI target from iid intervals to regression and
-dynamic settings; tolerance guarantees and response prediction require
-separate calibration or response models.
-
-The extension manuscript predates the final profiled tolerance procedure reported above. Its regression and dynamic constructions are conditional on a specified content and tilt and remain proposals until implemented and validated; they do not inherit the empirical tolerance attainment of the fixed-target study.
-
-\subsection{Introduction}
-\label{mti:sec:introduction}
-
-Intervals with the same probability content can represent different statistical
-targets. Equal-tailed, mean-preserving, and shortest-contiguous intervals share
-content but differ in endpoint placement. The preceding sections develop this geometry and the calibrated profiled
-MTI tolerance procedure.
-The present paper focuses on a different question: once a fixed-content target
-has been specified, how can endpoint functions be estimated and summarized in
-regression and time-varying settings?
-
-The starting point is the residual-product criterion introduced by
-\citet{rqr-PouplinEtAl2024RQR}. For ordered endpoints \(a<b\), the product
-residual \((y-a)(y-b)\) is negative exactly when \(y\) lies inside the interval.
-With a check loss applied to this scalar residual, the unrestricted population
-score equations identify the mean-preserving interval (MPI). MTI generalizes
-MPI by adding a fixed retained-mean tilt \(\delta\), so that different
-admissible fixed-content windows are represented by different tilt values.
-
-This paper treats MPI and MTI as loss-defined targets. For a fixed content
-\(c\), tilt \(\delta\), and learning rate \(\omega_{\mathrm R}\), a
-generalized posterior is obtained by updating a prior with
-\(\exp\{-\omega_{\mathrm R}L_{c,\delta,n}\}\)
-\citep{rqr-BissiriHolmesWalker2016GeneralBayes}. This update is useful for
-regularization and uncertainty summaries for endpoint functions. Because the
-update targets endpoints, posterior endpoint draws should be interpreted as
-uncertainty summaries for the interval functional. Repeated-sampling tolerance
-statements require a separate calibration layer.
-
-The contributions are threefold. First, we formulate static endpoint regression
-for MPI and fixed-tilt MTI, including the root-label symmetry and the
-midpoint-gap summaries needed for interpretation. Second, we derive a
-pseudo-asymmetric-Laplace augmentation that gives Gaussian conditional root
-updates, generalized-inverse-Gaussian latent-scale updates, and a deterministic
-ECM mode algorithm. Third, we show how the same fixed-target computation extends
-to deterministic basis expansions and to dynamic linear endpoint states through
-alternating root-specific smoothing updates.
-
-The formal setting is deliberately bounded. Nonzero tilt is treated as fixed before
-fitting or selected by an external rule. The conditionally Gaussian shrinkage
-construction is stated for the MPI case unless an additional propriety argument
-is supplied. Dynamic endpoint models describe time-varying interval-root
-functionals under the chosen loss and prior; they do not inherit the iid
-tolerance guarantee studied in the companion paper.
-
-\subsection{Fixed-Content Targets and Generalized Bayes}
-\label{mti:sec:targets}
-
-Let \(Y\) have a continuous distribution with finite mean \(\mu\), and let
-\(c\in(0,1)\) denote the desired interval content. For endpoints \(a<b\), define
-\[
-e(a,b;y)=(y-a)(y-b),
-\qquad
-\rho_c(r)=r\{c-\ind(r<0)\}.
-\]
-The MPI loss is
-\[
-\ell_c^{\mathrm{MPI}}(a,b;y)=\rho_c\{e(a,b;y)\}.
-\]
-At an unrestricted regular population stationary point, the score equations
-give
-\[
-\Pr(a<Y<b)=c,
-\qquad
-\E(Y\mid a<Y<b)=\mu.
-\]
-Thus MPI selects the content-\(c\) interval whose retained mean equals the full
-mean.
-
-MTI replaces zero retained-mean balance by a fixed offset. In midpoint and
-half-width coordinates \(a=m-h\), \(b=m+h\), the fixed-tilt loss can be written
-\[
-\ell_{c,\delta}(m,h;y)
-=\rho_c\{(y-m)^2-h^2\}-2c\delta(y-m).
-\]
-At a regular unrestricted stationary point,
-\[
-\Pr(|Y-m|<h)=c,
-\qquad
-\E(Y\mid |Y-m|<h)=\mu+\delta .
-\]
-The tilt \(\delta\) is part of the target specification. Treating it as an
-ordinary unknown inside the same posterior would average over distinct interval
-targets.
-
-For data \(D_n=\{(x_i,y_i):i=1,\ldots,n\}\), write the two raw root functions as
-\(\eta_1(x;\theta_1)\) and \(\eta_2(x;\theta_2)\). Given fixed
-\((c,\delta,\omega_{\mathrm R})\), the generalized posterior is
+The fixed-target MTI loss also defines endpoint functions when interval
+placement varies with predictors or time. These extensions address estimation
+of a chosen content--tilt target; they do not automatically produce a response
+distribution or a tolerance guarantee. For observations
+\(D_n=\{(x_i,y_i):i=1,\ldots,n\}\), let the two raw endpoint functions be
+\(\eta_1(x;\theta_1)\) and \(\eta_2(x;\theta_2)\). Given fixed content \(c\),
+tilt \(\delta\), learning rate \(\omega_{\mathrm R}\), and prior
+\(\pi_0\), the generalized posterior is
 \begin{equation}
 \pi(\theta_1,\theta_2\mid D_n)
 \propto
@@ -1173,214 +1032,97 @@ For data \(D_n=\{(x_i,y_i):i=1,\ldots,n\}\), write the two raw root functions as
 \pi_0(\theta_1,\theta_2).
 \label{mti:eq:generalized-posterior}
 \end{equation}
-The learning rate controls the scale of the loss update. It is distinct from
-the content \(c\), the tilt \(\delta\), and any response-distribution parameter.
+The learning rate controls the scale of the loss update and is distinct from
+content, tilt, and any response-distribution parameter.
 
-\subsection{Static Endpoint Regression}
-\label{mti:sec:static-regression}
+For static linear endpoint regression, the raw roots are
+\(\eta_j(x)=x^\top\beta_j\), \(j=1,2\). Because the loss is unchanged when the
+root labels are exchanged, interpretation is based on sorted fitted endpoints
+\[
+L(x)=\min\{\eta_1(x),\eta_2(x)\},\qquad
+U(x)=\max\{\eta_1(x),\eta_2(x)\}.
+\]
+Equivalently, midpoint and signed-gap coefficients
+\(\beta_m=(\beta_1+\beta_2)/2\) and
+\(\beta_s=(\beta_2-\beta_1)/2\) give
+\(L(x)=x^\top\beta_m-|x^\top\beta_s|\) and
+\(U(x)=x^\top\beta_m+|x^\top\beta_s|\).
+A coefficient-wise lower/upper interpretation is justified only over a design
+region where the root ordering does not change.
 
-In static linear endpoint regression, the raw roots are
-\[
-\eta_{1i}=x_i^\top\beta_1,\qquad
-\eta_{2i}=x_i^\top\beta_2.
-\]
-The loss is symmetric in the two roots. Lower and upper endpoints are therefore
-reported after sorting the fitted root values,
-\[
-L_i=\min(\eta_{1i},\eta_{2i}),\qquad
-U_i=\max(\eta_{1i},\eta_{2i}),\qquad
-W_i=U_i-L_i.
-\]
-This sorting is applied to endpoint functionals, not to individual regression
-coefficients.
+A normal--exponential representation of the product-residual check loss gives
+generalized-inverse-Gaussian latent-scale updates and a Gaussian conditional
+update for either root given the other. It supports Gibbs computation and a
+deterministic ECM mode calculation under proper Gaussian priors. The
+representation augments the loss factor in
+Equation~\eqref{mti:eq:generalized-posterior}; it is not a sampling density for
+\(Y\). Appendix~\ref{app:mti-technical} records the latent-scale law, Gaussian
+canonical parameters, fixed-tilt shift, shrinkage construction for the
+zero-tilt case, and numerical safeguards.
 
-The midpoint-gap coordinates clarify which summaries are invariant to root
-labels:
-\[
-\beta_m=\frac{\beta_1+\beta_2}{2},
-\qquad
-\beta_s=\frac{\beta_2-\beta_1}{2}.
-\]
-At a design row \(x\),
-\[
-M(x)=x^\top\beta_m,\qquad
-S(x)=x^\top\beta_s,
-\]
-and
-\[
-L(x)=M(x)-|S(x)|,\qquad
-U(x)=M(x)+|S(x)|,\qquad
-W(x)=2|S(x)|.
-\]
-The vector \(\beta_m\) is the coefficient vector for the geometric midpoint.
-The signed vector \(\beta_s\) is an orientation coordinate for the gap. A direct
-lower-endpoint and upper-endpoint coefficient interpretation requires a design
-region where one root remains below the other.
-
-Ridge priors give a regularized default for fixed-dimensional endpoint regression.
-Let
-\[
-\beta_j\sim\Normal(b_{0j},P_{0j}^{-1}),\qquad j=1,2,
-\]
-with proper precision matrices \(P_{0j}\). Proper Gaussian priors are also
-useful for fixed nonzero tilt because the tilt term is linear in the root
-parameters and the Gaussian prior has finite moment-generating functions in
-finite dimensions.
-
-\subsection{Pseudo-AL Computation}
-\label{mti:sec:pseudo-al}
-
-The product-residual check loss admits a normal-exponential representation
-analogous to the asymmetric-Laplace construction used in Bayesian quantile
-regression \citep{env-yu2001bayesian,qdesn-KozumiKobayashi2011Gibbs}. Let
-\[
-\sigma_{\mathrm R}=\omega_{\mathrm R}^{-1},\qquad
-\xi_c=\frac{1-2c}{c(1-c)},\qquad
-\phi_c=\frac{2}{c(1-c)}.
-\]
-For \(e_i=(y_i-\eta_{1i})(y_i-\eta_{2i})\),
-\begin{align}
-&\frac{c(1-c)}{\sigma_{\mathrm R}}
-\exp\{-\rho_c(e_i)/\sigma_{\mathrm R}\}\notag\\
-&\quad=
-\int_0^\infty
-\Normal(e_i\mid \xi_cv_i,\phi_c\sigma_{\mathrm R}v_i)
-\Exp(v_i\mid\mathrm{rate}=1/\sigma_{\mathrm R})\,dv_i .
-\label{mti:eq:pseudo-al}
-\end{align}
-This identity augments the generalized-posterior factor in
-\eqref{mti:eq:generalized-posterior}. The resulting kernel is defined on product
-residuals and should be interpreted as a loss factor for endpoints; a sampling
-density for \(Y_i\) would require an additional response model.
-
-The latent-scale full conditional is
-\[
-v_i\mid\cdot\sim
-\GIG\left\{
-\frac12,\
-\frac{1}{2\sigma_{\mathrm R}c(1-c)},\
-\frac{c(1-c)e_i^2}{2\sigma_{\mathrm R}}
-\right\}.
-\]
-Conditional on \((v_i)\) and one root, the other root has a Gaussian update.
-For example, holding \(\eta_2\) fixed, define
-\[
-\mat A_1=\diag(y_i-\eta_{2i})\mat X,\qquad
-z_1=y\circ(y-\eta_2)-\xi_c v.
-\]
-With weight matrix
-\[
-\mat W_v=\diag\{(\phi_c\sigma_{\mathrm R}v_i)^{-1}\},
-\]
-the canonical parameters for \(\beta_1\) are
-\[
-\mat Q_1=P_{01}+\mat A_1^\top\mat W_v\mat A_1,
-\qquad
-h_1=P_{01}b_{01}+\mat A_1^\top\mat W_v z_1.
-\]
-The conditional update is
-\[
-\beta_1\mid\cdot\sim \Normal(\mat Q_1^{-1}h_1,\mat Q_1^{-1}).
-\]
-The update for \(\beta_2\) is obtained by exchanging root labels.
-
-For fixed nonzero tilt, the conditional precision is unchanged and the
-canonical vector receives the additive shift
-\[
-h_1^{\mathrm{MTI}}
-=h_1+\omega_{\mathrm R}c\mat X^\top\delta ,
-\]
-with the same form for the second root. This is the main computational
-convenience of the fixed-tilt construction.
-
-The same augmentation yields an ECM mode calculation
-\citep{rqr-DempsterLairdRubin1977EM,rqr-MengRubin1993ECM}. For \(e_i\ne0\),
-\[
-E(v_i^{-1}\mid\cdot)=\frac{1}{c(1-c)|e_i|}.
-\]
-Using these inverse-scale moments, the conditional maximization for each root
-is a Gaussian ridge solve. The numerical implementation uses objective
-backtracking and deterministic multi-start selection, because the joint
-criterion is not globally quadratic in the two roots.
-
-\subsection{Basis Expansions and Time-Varying Endpoints}
-\label{mti:sec:extensions}
-
-Deterministic basis expansions use the static regression equations with a
-larger fixed design matrix. For example, a precomputed echo-state or deep
-echo-state representation supplies a deterministic nonlinear basis
-\(h_i\), after which the root functions are
-\[
-\eta_{1i}=h_i^\top\beta_1,\qquad
-\eta_{2i}=h_i^\top\beta_2.
-\]
-The recurrent basis construction is part of the predictor representation. The
-generalized posterior remains the fixed-target endpoint update in
-\eqref{mti:eq:generalized-posterior}. The choices used to form the basis should be
-stated as part of the validation design.
-
-Time-varying endpoint models replace static coefficients by root-specific state
-trajectories. A basic dynamic linear specification is
+Deterministic basis expansions use the same equations after replacing the
+design rows by fixed basis vectors. Time-varying endpoints instead use two
+root-specific state trajectories,
 \[
 \eta_{jt}=f_t^\top\theta_{jt},\qquad
 \theta_{jt}=G_t\theta_{j,t-1}+\varepsilon_{jt},\qquad j=1,2,
 \]
-with Gaussian state innovations. The stacked prior over both root paths is
-Gaussian. The product residual makes the joint augmented log density quartic in
-the two paths together, but conditional on one complete root path the other path
-has a linear Gaussian observation equation. Alternating root-specific
-forward-filtering backward-sampling steps therefore gives a natural blocked
-sampler for the specified fixed-target generalized posterior
-\citep{env-goncalves}.
+with Gaussian state innovations. Conditional on one complete root path and the
+latent scales, the other path has a linear Gaussian representation, motivating
+alternating forward-filtering backward-sampling updates. The full derivation is
+given in Appendix~\ref{app:mti-technical}.
 
-Discount factors and component scales affect the state prior and hence the
-posterior target. Fixed discount templates can be treated as part of the model
-specification. Adaptive discount or scale selection changes the inferential
-target unless the selection rule is stated as part of a larger model or as a
-separate sensitivity analysis.
+These constructions remain proposed methods. The derivations have no matched
+implementation, simulation study, or application.
+Endpoint regression should be evaluated using recovery of known endpoint
+functions, held-out MTI loss, empirical content, and width. A dynamic analysis
+must additionally state its basis or state prior and the rule used to select
+discount factors. Repeated-sampling tolerance claims require a separate,
+action-matched calibration study; predictive claims require a specified
+response-distribution model. Neither is supplied by the generalized posterior
+alone.
 
-\subsection{Uncertainty Calibration and Diagnostics}
-\label{mti:sec:diagnostics}
+\section{Discussion}
+\label{rqr2026:sec:discussion}
 
-The generalized posterior in \eqref{mti:eq:generalized-posterior} is centered at a
-loss-defined target under standard local conditions, but its curvature
-covariance need not equal the frequentist sandwich covariance. In fixed
-dimension, open-faced-sandwich adjustment \citep{rqr-Shaby2014OpenFacedSandwich}
-can be used as a post-processing calibration for differentiable coefficient or
-endpoint summaries when consistent curvature and score-variance estimates are
-available. This adjustment calibrates generalized-posterior uncertainty; it is
-separate from any response-distribution model used for prediction.
+Probability content determines a class of interval placements. Under the stated
+population conditions, MPI selects the member whose retained mean equals the
+population mean. MTI makes retained-mean balance an explicit coordinate:
+\(\delta=0\) returns MPI, while admissible nonzero tilts specify other
+contiguous content-\(c\) windows. Equal-tailed and shortest-contiguous
+intervals are distribution-specific members of this placement family rather
+than universally equivalent targets.
 
-For MCMC calculations, reporting should include the number of chains, warmup and
-retained draws, convergence diagnostics, effective sample sizes, and any
-root-label handling. For ECM calculations, reporting should include the
-selected content and tilt, the final objective value, the number of iterations,
-the stopping rule, and stability checks across starting values. For deterministic
-basis-expansion and time-varying endpoint models, the basis construction, state prior,
-and validation protocol should be stated before empirical comparisons are made.
+The calibrated procedure uses this family to search for short tolerance
+intervals. Fixed-target endpoint estimates are combined with a direct
+Dirichlet-process posterior content check, and a separate calibration run fixes
+the selection rule before validation. In the independent study, empirical
+content attainment exceeds the nominal tolerance confidence in every reported
+cell, and MTI has smaller mean width than Young--Mathew in two thirds of the
+asymmetric cells. The independent confidence bounds remain inconclusive in 34
+of the 72 cases. These findings apply to the frozen procedure and the stated
+eight-distribution design. The finite grid, numerical calculation, and
+simulation calibration do not establish broader optimality or a
+distribution-free theorem.
 
-Empirical evaluation must match the target. Endpoint regression can be assessed
-through held-out MTI loss, empirical content, interval width, and recovery of
-known endpoint functions in simulation. Tolerance validation requires an explicitly calibrated content--confidence
-procedure, such as the profiled MTI procedure developed earlier in this
-chapter; its empirical attainment does not transfer automatically to the
-regression and dynamic endpoint proposals. Forecast evaluation requires a response-distribution model or a
-clearly defined predictive interval rule.
+The separation among target, computation, and tolerance confidence is
+essential. MTI identifies the fixed-content interval being estimated. A
+generalized posterior describes uncertainty for a fixed loss-defined target.
+A response model, such as the Dirichlet-process posterior used for the content
+screen, gives model-based content probabilities. The selected tolerance action
+is evaluated by repeated-sampling content attainment. A guarantee for that
+selected action requires an argument beyond fixed-target posterior computation.
 
-\subsection{Discussion}
-\label{mti:sec:discussion}
+The pharmaceutical analysis has a narrower, descriptive role. It shows how the
+precalibrated procedures place endpoints on historical batch measurements and
+how held-out content changes with the partition. Overlapping splits, possible
+batch dependence, ties, unresolved measurement definitions, and shared
+production campaigns restrict its interpretation for future production.
 
-MTI provides a way to specify fixed-content interval placement through
-retained-mean balance. The generalized-Bayes construction developed here turns a
-chosen fixed-content target into regularized endpoint regression, deterministic
-basis-expansion endpoint models, and time-varying endpoint models. The pseudo-AL augmentation
-gives practical Gibbs and ECM computations while preserving the distinction
-between a loss update and a response likelihood.
-
-The main limitation is also the main organizing principle: content, endpoint
-uncertainty, and tolerance confidence are different statistical statements.
-Nonzero tilt should be fixed or selected by a separate rule before fitting.
-Regression and time-varying endpoint models require their own validation before
-claims about repeated-sampling tolerance behavior are made. This separation
-keeps the computation extensible without overstating what the interval targets
-imply.
+The tolerance evidence is confined to iid continuous univariate simulations,
+and boundary tilts can lead to one-sided limits or inactive roots. The proposed
+regression and dynamic endpoint models generalize the loss-defined target, not
+the validation result. Implementations, numerical diagnostics, simulation
+designs, and target-specific calibration are required before empirical
+performance or repeated-sampling tolerance behavior can be claimed for those
+extensions.

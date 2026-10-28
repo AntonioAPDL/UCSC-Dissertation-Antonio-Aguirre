@@ -327,10 +327,10 @@
       "type": "table",
       "source_file": "chapters/02-research-a.tex",
       "baseline_line": 605,
-      "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the 2026-10-26 manuscript-first refresh as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "disposition": "OMIT",
+      "claim_role": "function-level API catalogue; no scientific result or inferential claim",
+      "rationale": "Removed in the final reader revision because the package reference documentation is the appropriate authority for function signatures and S3 class details; the chapter retains the statistical design principles and points to Appendix B for posterior and numerical details.",
+      "status": "FINAL_READER_REVISION",
       "implementation_status": "IMPLEMENTED"
     },
     {

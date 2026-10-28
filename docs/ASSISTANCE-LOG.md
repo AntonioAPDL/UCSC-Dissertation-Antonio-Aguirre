@@ -261,3 +261,18 @@ fonts. Targeted chapter, appendix, transition, and bibliography pages were
 rendered and inspected. The muscat PDF remains untagged, so accessibility,
 reuse, granular contribution, administrative, and independently verified
 Overleaf filing gates remain open.
+
+2026-10-27: AI assistance performed and implemented the final reader and
+statistical revision requested after advisor review. It corrected the
+duplicated MTI loss sign and malformed appendix references; disclosed the
+retrospective global specification in Chapter 3 and the development-informed
+selection and dependent score pairs in Chapter 4; standardized inverse-gamma,
+proper-score, KL-diagnostic, and prior language; compressed the Chapter 2 API
+catalogue; and replaced Chapter 5's duplicated second article sequence with a
+short proposed-extension section connected to the complete Appendix E
+derivations. It also rewrote internal production language as reader-facing
+statistical conditions, added a cross-project evaluation-maturity comparison,
+and limited the global figure/table lists to main-text displays. No research
+model, simulation, data analysis, application fit, or source repository was
+changed or rerun. Exact validation, artifact, and synchronization results are
+recorded in `docs/VALIDATION.md` and Git history.

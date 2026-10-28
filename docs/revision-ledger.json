@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-26",
+  "recorded_at": "2026-10-27",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -17,32 +17,34 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "c4517bb4425388eb6bf591d9b08fb1906f8fc1423e0d971f366fabffe2b93543",
+      "current_sha256": "8ec8c45251c7bf0bf1f9ca6192d2c45f089ca8f9ce310d211faf9a434374c01a",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH02-20260916",
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "fe9c0de11372c892269571e898490d675afc6db5f29d353a71b2d846abc89448",
+      "current_sha256": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CH03-20260916",
         "REV-GLOBAL-POLISH-20260916",
-        "REV-READER-FIRST-20261008"
+        "REV-READER-FIRST-20261008",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "2cca4c58a2d6e58f236e73ce72c045392b13e13561ef6f553859adaf086360d5",
+      "current_sha256": "4200138b731291296969161af1dfc46d9d6ed0049c040b11b97e9b31452126c0",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -50,19 +52,21 @@
         "REV-GLOBAL-POLISH-20260916",
         "REV-RELEASE-FONTS-20260916",
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "9bd390ecc1f7e48c4b64151eb45f13d47959c59b973ed83fb927cff5fc5d7a1c",
+      "current_sha256": "ef28f523dabd1854ddde7a5c6a3558892ec8a01a21ea8868d9ec9b6616cf099a",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
         "REV-GLOBAL-POLISH-20260916",
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
@@ -84,14 +88,15 @@
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "c71f34449ecc66b21eaf219cda33426f5a44795292b49f8a9b7831492f8a2e98",
+      "current_sha256": "59a66c7c8c72464cb66a6e159cb319e4cc5468beb4c044512d9d0b1d77acb96f",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
       ],
       "revision_ids": [
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
@@ -109,14 +114,15 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "d9b45543ae47c0cfb07d3de6f9ba507e30f985badfc99b24d2d9afb3f4433cae",
+      "current_sha256": "2eced56a4dacde87fdbca62e884a9bbb07160dbc0797420dbe35029dc3258962",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
       ],
       "revision_ids": [
         "REV-READER-FIRST-20261008",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-FINAL-READER-STATISTICAL-20261027"
       ]
     },
     {
@@ -605,6 +611,25 @@
       "summary": "Projected the current audited Q--DESN, profiled-MTI, and exDQLM article snapshots into the reader-first dissertation, retaining main texts as chapter spines and technical supplements as appendices.",
       "evidence": "docs/current-source-refresh-audit.md; docs/source-refresh-20261026.json; source-manifest.json",
       "validation": "Source-blob, structure, citation, dependency, build, PDF, font, and rendered-page checks required before merge."
+    },
+    {
+      "id": "REV-FINAL-READER-STATISTICAL-20261027",
+      "date": "2026-10-27",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "main.tex"
+      ],
+      "summary": "Completed the final reader-first statistical revision: corrected local mathematical and reference defects, aligned evaluation claims with their development histories, removed article and production language, compressed software-manual and duplicated MTI material, and limited global display lists to the main argument.",
+      "evidence": "docs/final-reader-statistical-revision-plan.md; docs/final-reader-statistical-revision-implementation.md; docs/claim-evidence.json; docs/display-ledger.json",
+      "validation": "Fast, chapter, release, immutable source-blob, PDF-text, font, geometry, and targeted rendered-page checks passed before merge."
     }
   ]
 }

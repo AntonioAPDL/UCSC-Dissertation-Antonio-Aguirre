@@ -24,7 +24,7 @@ response-distribution modeling difficult or undesirable?
 \end{quote}
 
 The four research chapters address different parts of this question. The first
-develops a software workflow for established extended dynamic quantile linear
+develops statistical software for established extended dynamic quantile linear
 models. The second uses those models to correct and synthesize heterogeneous
 hydrologic products. The third combines fixed nonlinear recurrent features with
 Bayesian quantile regression. The fourth studies fixed-content interval
@@ -231,7 +231,7 @@ two endpoint states. Those states index a loss-defined interval functional;
 they are not latent quantiles in an exDQLM and do not constitute a response-
 distribution state-space model. Alternating Gaussian state updates provide a
 proposed computational route conditional on the other endpoint path. The
-audited source supplies derivations but not a matching implementation or
+current derivation has no matching implementation or
 empirical study, so the chapter presents this construction as proposed work.
 
 Across these representations, the status of future inputs is material. A
@@ -296,16 +296,15 @@ generated every imported result.
 \section{Contribution map and evidentiary boundaries}
 \label{sec:intro-contributions}
 
-The research chapters are based on collaborative projects. Repository evidence
-identifies Antonio de Leon as first author of the four manuscript lines and
-documents Raquel Prado and Bruno Sans\'o as coauthors throughout; Raquel Barata
-is additionally a coauthor of the \pkg{exdqlm} software article. The available
-records establish project-level contributions but do not allocate every
-conceptual, theoretical, computational, empirical, or writing task among the
-coauthors. The contribution map below therefore uses collective or chapter-
-centered language. It does not assign unverified individual roles.
+The research chapters are based on collaborative projects led in their
+manuscript form by Antonio de Leon. Raquel Prado and Bruno Sans\'o are coauthors
+of all four project lines, and Raquel Barata is additionally a coauthor of the
+\pkg{exdqlm} software study. Because the chapters synthesize joint work, the
+contribution map below uses collective or chapter-centered language rather
+than assigning undocumented individual roles.
 
-Chapter~\ref{ch:research-a} contributes an integrated \proglang{R} workflow for
+Chapter~\ref{ch:research-a} contributes the integrated \pkg{exdqlm} \proglang{R}
+software for
 specifying, fitting, diagnosing, forecasting, and reproducing dynamic and
 static Bayesian quantile analyses. Its contribution is software-centered. The
 exAL distribution and static exAL foundations are attributed to Yan and
@@ -320,8 +319,9 @@ Chapter~\ref{ch:research-b} contributes a source-aware application framework
 for correcting and synthesizing hydrologic products. It represents observations,
 retrospective products, operational ensembles, and forecast covariates according
 to their distinct roles, then evaluates the resulting predictive synthesis at
-five forecast origins. The evidence supports conclusions for that versioned,
-retrospective design. It is not a dense hindcast or a demonstration of deployed
+five forecast origins under one globally specified model. The evidence supports
+conclusions for that versioned, retrospective design. It is not a strict
+pseudo-operational or dense hindcast, or a demonstration of deployed
 operational performance, and the future exogenous ensembles enter through
 deterministic summaries rather than a joint uncertainty model.
 
@@ -331,8 +331,8 @@ formulations, MCMC and model-specific variational computation, simulations,
 and two retrospective applications. The fixed-reservoir formulation builds on
 the echo-state-network literature rather than claiming the reservoir architecture
 itself as new. The empirical findings are specific to the stated designs; the
-GloFAS analysis has one forecast origin, and the PriceFM comparison varies by
-region and held-out fold.
+simulations are development-informed, the GloFAS analysis has one forecast
+origin, and the PriceFM comparison varies by region and held-out fold.
 
 Chapter~\ref{ch:research-d} characterizes the mean-preserving interval induced
 by an antecedent residual-product criterion, develops the mean-tilted interval
@@ -343,23 +343,22 @@ shortest eligible interval. Its settings are fixed using development and
 assessment samples before independent validation. The resulting evidence is
 empirical for the stated eight-distribution panel rather than a
 distribution-free theorem. The chapter also derives regression and dynamic
-endpoint extensions; these remain proposed because the audited snapshot
-contains no matched implementation or empirical validation.
+endpoint extensions; these remain proposed because no matched implementation
+or empirical validation is currently available.
 
-Two additional boundaries apply dissertation-wide. First, the article prose,
-equations, and selected display assets were integrated from jointly authored
-source manuscripts with recorded provenance. Final coauthor or publisher reuse
-clearance remains pending and is not implied by repository access or by a GitHub
-or Overleaf handoff. Second, code, data, fitted objects, and full computation
-remain in their versioned research repositories. The dissertation is
-self-contained as a readable document, but it is not a replacement for those
-external replication archives.
+Two additional boundaries apply dissertation-wide. First, the scientific
+arguments and displays arise from jointly authored projects and retain their
+collective attribution. Second, code, data, fitted objects, and full
+computational studies are maintained separately from this readable statistical
+account. The chapters state the model versions and evaluation conditions needed
+to interpret their results without making the dissertation depend on those
+computational materials.
 
 \section{Organization of the dissertation}
 \label{sec:intro-organization}
 
-Chapter~\ref{ch:research-a} presents the \pkg{exdqlm} software and computational
-workflow. It begins with the inherited exAL and exDQLM foundations, connects the
+Chapter~\ref{ch:research-a} presents the \pkg{exdqlm} software and statistical
+computation. It begins with the inherited exAL and exDQLM foundations, connects the
 implemented interfaces to their statistical targets, and uses dynamic and
 static examples to examine fitting, forecasting, diagnostics, synthesis, and
 the tradeoff between MCMC and variational approximation.

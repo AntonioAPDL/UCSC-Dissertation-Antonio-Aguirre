@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "plan_id": "reader-first-current-source-refresh-v4",
-  "implemented_at": "2026-10-26",
+  "plan_id": "reader-first-final-statistical-revision-v5",
+  "implemented_at": "2026-10-27",
   "planning_baseline_commit": "c93d7b3ed9c228811b6b79f13a90b312319b9cf3",
   "scientific_content_baseline_commit": "0c394122549e903b19edc8014709a6f4318bee26",
   "accepted_before_artifact": {
@@ -73,7 +73,7 @@
         "exd:sec:static_ridge"
       ],
       "source_file_sha256_before": "0ca289a793bd6b9e1e5427a16b7cb818a4afdfbbe46eade38fca52b513d23e54",
-      "source_file_sha256_after": "ac8f2438467ae498192c68703bee099c0b47b8b6dd026e090f11760603300102",
+      "source_file_sha256_after": "c7a605aaac80a0d8b5203e9de961dc07e42e84eb4ba162464bcbad5621ccf40b",
       "destination_file_sha256_after": "4878511125af9db709dc46230fde2b56ef70d7ffe8ac85a1a4d56ab2946bbb08"
     },
     {
@@ -97,7 +97,7 @@
         "env:alg:Alg4"
       ],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
-      "source_file_sha256_after": "fe9c0de11372c892269571e898490d675afc6db5f29d353a71b2d846abc89448",
+      "source_file_sha256_after": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
       "destination_file_sha256_after": "57f90d27789617be72928f045100a214eee95deb21b41721d9fa14441bc993e5"
     },
     {
@@ -121,7 +121,7 @@
         "env:fig:synthsupport_20211221"
       ],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
-      "source_file_sha256_after": "fe9c0de11372c892269571e898490d675afc6db5f29d353a71b2d846abc89448",
+      "source_file_sha256_after": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
       "destination_file_sha256_after": "57f90d27789617be72928f045100a214eee95deb21b41721d9fa14441bc993e5"
     },
     {
@@ -139,7 +139,7 @@
       "destination_heading": "Q--DESN and MQ--DESN technical development",
       "appendix_label": "app:qdesn-technical",
       "risk": "high",
-      "source_file_sha256_after": "2cca4c58a2d6e58f236e73ce72c045392b13e13561ef6f553859adaf086360d5",
+      "source_file_sha256_after": "4200138b731291296969161af1dfc46d9d6ed0049c040b11b97e9b31452126c0",
       "destination_file_sha256_after": "d9b45543ae47c0cfb07d3de6f9ba507e30f985badfc99b24d2d9afb3f4433cae"
     },
     {
@@ -157,7 +157,7 @@
       "destination_heading": "Foundations, profiled computation, and validation details",
       "appendix_label": "app:mti-technical",
       "risk": "high",
-      "source_file_sha256_after": "9bd390ecc1f7e48c4b64151eb45f13d47959c59b973ed83fb927cff5fc5d7a1c",
+      "source_file_sha256_after": "ef28f523dabd1854ddde7a5c6a3558892ec8a01a21ea8868d9ec9b6616cf099a",
       "destination_file_sha256_after": "72375d2ba12e00cb9d536720e7748a5b6a643b7afcccb545276432cdad64b1a3"
     },
     {
@@ -175,7 +175,7 @@
       "destination_heading": "Regression and dynamic endpoint computation",
       "appendix_label": "app:mti-technical",
       "risk": "high",
-      "source_file_sha256_after": "9bd390ecc1f7e48c4b64151eb45f13d47959c59b973ed83fb927cff5fc5d7a1c",
+      "source_file_sha256_after": "ef28f523dabd1854ddde7a5c6a3558892ec8a01a21ea8868d9ec9b6616cf099a",
       "destination_file_sha256_after": "72375d2ba12e00cb9d536720e7748a5b6a643b7afcccb545276432cdad64b1a3"
     }
   ]
