@@ -1,5 +1,60 @@
 # Validation record
 
+## 2026-10-28 essential-appendix release
+
+The approved essential-appendix revision was validated from a fresh,
+timestamped output directory with:
+
+```text
+bash scripts/validate.sh --tier release --audit-root /PATH/TO/IMMUTABLE/AUDIT-CHECKOUTS
+```
+
+The public record omits the disposable machine-local audit path. Two intact
+local Git histories and three disposable no-checkout verification clones
+supplied the fixed historical objects without modifying any research working
+tree. The gate passed 18 unit tests; reconciled eight sources, 30 evidence
+records, 29 prioritized editorial issues, 102 historical display decisions,
+and 11 bibliography groups; and rechecked all 102 imported records against
+their immutable source Git blobs. Structure validation covered 43 active TeX
+files, including two compiler-resolved macro inputs, 257 unique active labels,
+six migration records, 30 active graphic or visual records, and all 116 cited
+keys.
+
+The accepted ignored artifact is
+`build/release-20261028T064248Z/main.pdf`: 261 US-Letter pages, PDF 1.7,
+16,502,013 bytes, SHA-256
+`19ffa613857ba95d95e905e6c7782abb0d35321f434ee449ee8f94cf9ff14e1f`.
+The final log has no unresolved citations or references, duplicate or unstable
+labels, missing files, overfull boxes, fatal errors, or emergency stops.
+Twenty-five underfull-box notices remain as benign line-breaking diagnostics.
+All 32 reported font rows are embedded and no Type 3 font occurs. The PDF is
+searchable but untagged.
+
+The final appendix sequence occupies numbered pages 175--226: Appendix A,
+175--178; Appendix B, 179--184; Appendix C, 185--187; Appendix D, 188--208;
+and Appendix E, 209--226. This is 52 appendix pages, down from 204 in the
+accepted 414-page baseline. The full dissertation is 153 pages shorter; 152
+of those pages come from the selective appendix revision and one from final
+bibliography reflow. No smaller type, margin reduction, or content-obscuring
+layout was used.
+
+Rendered review sampled physical PDF pages 199, 209, 212, 220, 231, 233, 243,
+250, and 251. These cover the Appendix A, C, D, and E openings; a retained
+Q--DESN specification table; a retained calibration figure; the calibrated
+MTI policy table; the end of the proposed-extension discussion; and the
+bibliography transition. Earlier chapter-gate inspections also covered the
+Appendix B opening, Appendix C algorithms, all retained Appendix D and E
+display classes, and the relevant chapter bridges. The sampled pages show no
+clipping, collision, margin breach, illegible table, stranded continuation,
+or malformed appendix transition. A PDF text scan found none of the internal
+revision phrases prohibited by the plan in the reader-facing document.
+
+This release validates the selected technical record and its provenance. It
+does not assert a tagged-accessibility result, material-specific reuse
+permission, committee approval, filing readiness, a research recomputation,
+or an independently inspected Overleaf build. Push, merge, and Overleaf pull
+remain separate handoffs.
+
 ## 2026-10-26 current-source refresh release
 
 The manuscript-first current-source refresh was validated from a fresh

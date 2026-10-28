@@ -1,43 +1,46 @@
 # Project status
 
-## 2026-10-28 final controlling essential-appendix plan
+## 2026-10-28 essential-appendix revision complete
 
-The appendix-length concern raised in advisor feedback has been audited against
-the accepted 414-page release at commit `37b9da0`. Appendices A--E occupy 204
-numbered pages; Appendices D and E account for 177 of them. The principal
-cause is article-supplement depth--especially complete empirical table/figure
-families and repeated computational variants--rather than literal duplicated
-prose.
+The advisor-directed appendix revision is implemented on
+`editorial/essential-appendices-20261028` from the accepted thesis baseline
+`37b9da0fdb16168dff07efdc9454886f8467f6cd`. The controlling specification is
+`essential-appendix-revision-plan.md`; the unit-level decisions and recovery
+paths are in `appendix-essentiality-map.json`. All 340 mapped units are marked
+`IMPLEMENTED`: 104 were retained, 161 condensed, 16 summarized, and 59
+deactivated from the compiled graph. Historical migration, display, import,
+accessibility, and source records remain intact.
 
-`essential-appendix-revision-plan.md` is now the final controlling plan for
-this stage. It reconciles the advisor direction with the completed
-reader-first restructuring, audits the accepted compiler graph and current
-validation contracts, and records the exact appendix/display defaults,
-claim-based essentiality rule, protected scientific conclusions, body-link
-repairs, provenance controls, implementation gates, stop conditions, and
-release criteria. It recommends retaining all five chapter-linked appendices
-while using 82--102 compiled appendix pages as a diagnostic envelope rather
-than a quota. Central proofs, nonstandard posterior targets, calibration
-design, mixed or negative results, and claim-changing sensitivities are
-protected. Software-maintainer detail, full table decks, repeated standard
-algebra, and internal article/audit language are candidates for consolidation
-or deactivation.
+The five chapter-linked appendices remain in place, but now occupy 52 numbered
+pages (175--226) instead of 204. Appendix A uses four pages, Appendix B six,
+Appendix C three, Appendix D 21, and Appendix E 18. The complete dissertation
+is 261 pages rather than 414. Appendix D retains exactly eight claim-bearing
+supporting displays; Appendix E retains exactly five. Complete result decks,
+repeated standard algebra, software-maintainer inventory, and development
+diagnostics no longer interrupt the compiled dissertation, while their source
+history and recovery locations remain recorded.
 
-The plan also resolves a validator/provenance conflict that must be handled
-before TeX changes: historical display and migration decisions remain
-immutable, while a new `appendix-essentiality-map.json` will record current
-compiled inclusion, no-loss locations, and recovery paths. Validator and test
-support for that distinction is the first implementation phase; Appendix C is
-the manuscript pilot before the high-risk Appendix D/E work.
+The body-to-appendix links now point to topical sections. The three principal
+Chapter 5 results retain authoritative statements in the chapter and proof-only
+destinations in Appendix E; four supporting formal results retain complete
+statements and proofs. The direct Dirichlet-process content result is stated as
+the exact Beta law with its interpretation. No inferential target, likelihood
+interpretation, theorem scope, numerical result, attribution, or evidence
+strength was changed. Proposed MTI regression and dynamic extensions remain
+explicitly theoretical and unvalidated.
 
-The author approved the plan's sixteen defaults and Phases 0--8 on 2026-10-28.
-Local implementation is now active on
-`editorial/essential-appendices-20261028`. The first deliverable remains
-schema, validator, and test support with no TeX change, followed by the
-complete reviewable essentiality map. Push, merge, and Overleaf
-synchronization remain separately gated. At this checkpoint no appendix
-source, main-text reference, active display, scientific result, or research
-repository has been changed.
+The full release gate passed with 18 unit tests, all 102 immutable imported
+source blobs rechecked, 43 active TeX files, 257 unique active labels, six
+migration records, 30 active visual records, and all 116 cited keys resolved.
+The accepted ignored release is a 261-page US-Letter PDF with zero overfull
+boxes or blocking citation/reference diagnostics. All 32 reported font rows
+are embedded and no Type 3 font occurs. Systematic rendered inspection covered
+appendix openings, retained tables and figures, the Appendix E ending, and the
+bibliography transition. Exact artifact details are in `VALIDATION.md`.
+
+No research computation was rerun and no research repository was modified.
+Push, merge, GitHub synchronization, and Overleaf synchronization remain
+separately gated and were not performed in this stage.
 
 ## 2026-10-27 final reader and statistical revision
 

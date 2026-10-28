@@ -1,8 +1,9 @@
 # Final controlling plan for essential appendix revision
 
-**Plan version:** 2.1 (authorized controlling revision)  
-**Plan state:** approved by the author on 2026-10-28; Phases 0--8 and the
-sixteen defaults are authorized, while push, merge, and Overleaf
+**Plan version:** 2.1 (implemented controlling revision)
+
+**Plan state:** approved and implemented on 2026-10-28; Phases 0--8 and all
+sixteen defaults passed their gates, while push, merge, and Overleaf
 synchronization remain separately gated  
 **Prepared:** 2026-10-28  
 **Repository baseline:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`
@@ -1228,10 +1229,9 @@ If this plan is approved, the recommended defaults are:
 16. keep push, merge, and Overleaf synchronization outside the authority of
     plan approval unless separately requested.
 
-The implementation should begin only after these defaults and any requested
-exceptions are confirmed. The first implementation deliverable should be the
-schema/validator support with no TeX change, followed by the complete
-essentiality map. No partially shortened appendix should precede those gates.
+The author confirmed these defaults without an exception. Implementation
+therefore began with schema, validator, and test support, followed by the
+complete essentiality map; no appendix was shortened before those gates.
 
 The unambiguous authorization phrase for a later turn is:
 
@@ -1240,5 +1240,6 @@ The unambiguous authorization phrase for a later turn is:
 > synchronize with Overleaf unless I separately authorize that lifecycle
 > action.
 
-Until that authorization, this plan and the status update are the only
-deliverables.
+That authorization was supplied on 2026-10-28. The completed implementation,
+release evidence, and exact page outcome are recorded in
+`appendix-essentiality-review.md`, `VALIDATION.md`, and `STATUS.md`.

@@ -1,6 +1,7 @@
-# Essential-appendix Gate C review packet
+# Essential-appendix review and implementation record
 
-**State:** approved map; no TeX change at this checkpoint  
+**State:** implemented and release validated
+
 **Baseline thesis commit:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`  
 **Accepted PDF:** 414 pages, with 204 appendix pages  
 **Accepted PDF SHA-256:**
@@ -36,14 +37,15 @@ replaced by the five-origin evidence already in the body.
 | D | 221 | Preserve nonstandard posterior/composite-target calculations and exactly eight supporting displays; remove duplicate result decks and development checks from the compiled graph. |
 | E | 61 | Preserve the central proof graph and exactly five supporting displays; replace complete validation/application decks with calibrated, claim-bearing support. |
 
-The 60 appendix display decisions contain 13 retained displays and 47 planned
-deactivations. Historical `KEEP` decisions remain unchanged in
-`display-ledger.json`; the essentiality map is the later inclusion authority.
+The 60 appendix display decisions contain 13 retained displays and 47
+deactivations from the compiled graph. Historical `KEEP` decisions remain
+unchanged in `display-ledger.json`; the essentiality map is the later inclusion
+authority.
 
 ## Formal-result graph
 
 Three principal results have their authoritative statements in Chapter 5 and
-will have proof-only destinations in Appendix E:
+proof-only destinations in Appendix E:
 
 | Appendix label | Authoritative body statement |
 | --- | --- |
@@ -80,13 +82,12 @@ Appendix E retains:
 
 ## No-loss controls
 
-All eleven protected conclusions have a responsible map record and a planned
-visible location. The fixed research commits, baseline PDF, appendix source
-hashes, migration markers, import records, rights states, and inactive assets
-remain recoverable. The implementation must not change a target, likelihood
+All eleven protected conclusions have a responsible map record and a visible
+location. The fixed research commits, baseline PDF, appendix source hashes,
+migration markers, import records, rights states, and inactive assets remain
+recoverable. The implementation did not change a target, likelihood
 interpretation, theorem scope, numerical result, attribution, or evidence
-strength. Any such discrepancy stops the relevant phase and becomes a
-separate scientific correction.
+strength.
 
 ## Gate C result
 
@@ -95,3 +96,44 @@ migration records, 102 historical display records, and 47 active visual
 records. The map is complete enough to begin the Appendix C pilot. No
 appendix, chapter, display, citation, or compiler dependency has changed at
 this checkpoint.
+
+## Final implementation result
+
+All 340 records are now `IMPLEMENTED`. Their dispositions are 104 `RETAIN`,
+161 `CONDENSE`, 16 `SUMMARIZE`, and 59 `DEACTIVATE`; 167 units remain active
+in the compiled graph, and all 173 inactive units have an exact no-loss and
+recovery record. The appendix sequence occupies 52 numbered pages rather than
+the 204-page baseline:
+
+| Appendix | Final numbered pages | Final count |
+| --- | --- | ---: |
+| A | 175--178 | 4 |
+| B | 179--184 | 6 |
+| C | 185--187 | 3 |
+| D | 188--208 | 21 |
+| E | 209--226 | 18 |
+| **Total** | **175--226** | **52** |
+
+The 82--102-page planning envelope was explicitly diagnostic rather than a
+quota. The unit-level review supported a shorter result because most of the
+additional pages belonged to complete display families, repeated algebra, or
+parallel computational variants whose claim-bearing content was retained in a
+single location. The 52-page outcome therefore reflects the approved
+essentiality decisions, not tighter typography or the deletion of an
+unresolved scientific dependency.
+
+Appendix D contains exactly the eight displays listed above, and Appendix E
+contains exactly the five listed above. The formal-result graph was
+implemented as specified: three body-authoritative results have proof-only
+appendix destinations, four supporting results retain their complete
+statement-and-proof units, and the direct Dirichlet-process content law is
+presented as an exact Beta result with interpretation rather than a duplicate
+proof.
+
+The end-to-end release gate passed against all 102 immutable imported Git
+blobs. The final PDF has 261 pages, 43 active TeX files, 257 unique active
+labels, 30 active visual records, no blocking citation or reference
+diagnostics, no overfull boxes, and no Type 3 fonts. Rendered review covered
+appendix boundaries, retained evidence classes, the Appendix E ending, and
+the bibliography transition. The exact artifact, hash, and review pages are
+recorded in `VALIDATION.md`.

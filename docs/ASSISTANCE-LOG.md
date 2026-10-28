@@ -276,3 +276,19 @@ and limited the global figure/table lists to main-text displays. No research
 model, simulation, data analysis, application fit, or source repository was
 changed or rerun. Exact validation, artifact, and synchronization results are
 recorded in `docs/VALIDATION.md` and Git history.
+
+2026-10-28: AI assistance implemented the author-approved essential-appendix
+revision after a unit-level scientific and provenance audit. It added a
+validated current-inclusion layer without rewriting historical migration or
+display decisions, classified all 340 appendix units, and selectively retained,
+condensed, summarized, or deactivated material according to its role in a
+specific dissertation claim. The five chapter-linked appendices were reduced
+from 204 to 52 numbered pages while preserving central proofs, nonstandard
+posterior calculations, calibration design, mixed or negative results,
+claim-changing sensitivities, exact body links, and recovery records. The
+release gate rechecked all 102 immutable imported Git blobs and produced a
+261-page PDF with no blocking references, citations, overfull boxes, or Type 3
+fonts; appendix boundaries and retained evidence were rendered and inspected.
+No research computation was rerun, no research repository was changed, and no
+push, merge, GitHub synchronization, or Overleaf synchronization was
+performed.
