@@ -800,7 +800,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:hydrology-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_C",
+      "implementation_commit": "b2b0344",
       "final_location": "app:hydrology-technical"
     },
     {
@@ -812,7 +812,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-mcmc",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_C",
+      "implementation_commit": "b2b0344",
       "final_location": "app:hydrology-mcmc"
     },
     {
@@ -824,7 +824,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-vb",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_C",
+      "implementation_commit": "b2b0344",
       "final_location": "app:hydrology-vb"
     },
     {
@@ -836,7 +836,7 @@
       "action": "REPLACE_WITH_BODY_EVIDENCE",
       "target_label": "",
       "status": "IMPLEMENTED",
-      "implementation_commit": "WORKTREE_PHASE_C",
+      "implementation_commit": "b2b0344",
       "final_location": "body evidence at the former bridge location"
     },
     {
@@ -3822,9 +3822,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -3876,9 +3876,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -3929,9 +3929,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -3982,9 +3982,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -4039,9 +4039,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -4094,9 +4094,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -4149,9 +4149,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -15506,9 +15506,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
@@ -15565,9 +15565,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "WORKTREE_PHASE_C",
+        "commit": "b2b0344",
         "final_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
-        "validation": "Gate D fast and chapter validation"
+        "validation": "Gate D chapter validation and rendered review"
       }
     },
     {
