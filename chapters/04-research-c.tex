@@ -2,7 +2,7 @@
 \label{ch:research-c}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; complete distributional conventions, posterior derivations, algorithms, and supporting diagnostics are preserved in Appendix~\ref{app:qdesn-technical}.}
+\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; the posterior definitions, nonstandard computations, and claim-relevant sensitivity evidence are collected in Appendix~\ref{app:qdesn-technical}.}
 \end{singlespace}
 
 \section{Chapter overview}
@@ -149,7 +149,8 @@ neural model. Sections~%
 \ref{qdesn2026:sec:model}--%
 \ref{qdesn2026:sec:forecast} define the model, computation, and forecast evaluation;
 Sections~\ref{qdesn2026:sec:simulation}--\ref{qdesn2026:sec:pricefm-application} give the
-evidence. Derivations and additional results are in Appendix~\ref{app:qdesn-technical}.
+evidence. Posterior derivations and supporting results are in
+Appendices~\ref{app:qdesn-posterior}--\ref{app:qdesn-simulation-support}.
 
 % ============================================================
 
@@ -228,8 +229,8 @@ transients are determined from fitting information and held fixed.
 
 The predictors used in each simulation or application are chosen reservoir
 layers, transformations of their states, and direct inputs where included.
-Appendix~\ref{app:qdesn-technical} specifies these choices, sparse weight generation, and
-preprocessing. For observed fitting inputs, the resulting design matrix
+Appendix~\ref{app:qdesn-simulation-support} summarizes the selection criteria
+and reservoir diagnostics. For observed fitting inputs, the resulting design matrix
 \(\mat X=(\vect x_1,\ldots,\vect x_T)^\top\) is fixed. Future rows follow
 the forecasting rule in Section~\ref{qdesn2026:sec:forecast}.
 
@@ -260,14 +261,15 @@ Nishimura--Suchard product form of the regularized horseshoe
 The local and global scale factors use the half-Cauchy auxiliary hierarchy,
 with reference scales one and \(\tau_0\), respectively; \(\zeta^2\) bounds the
 coefficient variances in Eq.~\eqref{qdesn2026:eq:rhs-var}. The complete product hierarchy
-and slab treatment are given in Appendix~\ref{app:qdesn-technical}.
+and slab treatment are given in Appendix~\ref{app:qdesn-posterior}.
 
 The fixed hyperprior scale \(\tau_0\) controls prior shrinkage through the
 random global scale \(\tau\). For standardized predictors, a Gaussian
 regression calculation provides a reference for \(\tau_0\) from a residual standard
 deviation, fitting-sample size, and a prior reference number of coefficients
 expected to escape strong shrinkage \citep{qdesn-PiironenVehtari2017RHS}; the
-formula and its derivation are given in Appendix~\ref{app:qdesn-technical}.
+calibration principle and study-specific choices are recorded in
+Appendix~\ref{app:qdesn-posterior}.
 
 \subsection{Multiquantile regression (MQ--DESN)}
 \label{qdesn2026:subsec:joint-qdesn}
@@ -323,8 +325,9 @@ ensure noncrossing: the adjacent location gap
 =(\beta_{0k}-\beta_{0,k-1})
 +\tilde{\vect x}_t^\top(\vect\beta_k-\vect\beta_{k-1})
 \]
-can be negative. Appendix~\ref{app:qdesn-technical} gives
-the complete hierarchy, its precision matrix, and the intercept-order
+can be negative. Appendix~\ref{app:qdesn-posterior} gives
+the fitted hierarchy and its precision matrix, while
+Appendix~\ref{app:qdesn-computation} records the intercept-order
 restrictions used in each analysis.
 
 % ============================================================
@@ -351,7 +354,7 @@ B_{p_0}(\gamma)\sigma v_t\right).
 \end{alignedat}
 \label{qdesn2026:eq:qdesn-aug}
 \end{equation}\endgroup
-Appendix~\ref{app:qdesn-technical}'s ``Distributional Conventions'' section defines the
+Appendix~\ref{app:qdesn-posterior} defines the
 probability-specific functions \(A_{p_0}\), \(B_{p_0}\), and \(D_{p_0}\);
 \(D_{p_0}\) is the latent-shift coefficient. Here \(\TN(0,1)\) denotes a
 standard Normal distribution truncated to \((0,\infty)\), and the second
@@ -377,7 +380,7 @@ scores and forecast summaries, and quantile-crossing diagnostics.
 
 Variational Bayes approximates the posterior through model-specific factors
 and supports fast repeated fitting. Completed variational fits can supply
-starting values for MCMC under the corresponding model. Appendix~\ref{app:qdesn-technical}
+starting values for MCMC under the corresponding model. Appendix~\ref{app:qdesn-computation}
 gives the factors and updates, including the Laplace--Delta approximation
 of \citet{exd-wang2013nonconjugatevb} and the structured scale--shape
 approximation used in the multiquantile simulation.
@@ -400,7 +403,7 @@ updates. At a fitted probability level \(p\), posterior or variational draw
 +\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}\).
 A marginal posterior predictive quantile instead integrates the response
 distribution over parameter and future-path uncertainty before taking its
-quantile. The simulation-study descriptions in Appendix~\ref{app:qdesn-technical} specify the response laws
+quantile. Appendix~\ref{app:qdesn-simulation-support} specifies the response laws
 used to generate future lags.
 
 \subsection{Forecast scores}
@@ -409,7 +412,8 @@ Write \(\vect q^*=(q_1^*,\ldots,q_K^*)^\top\) for the quantile forecasts at
 evaluation levels \(p_1,\ldots,p_K\), including any monotone adjustment
 specified for the analysis. In the multiquantile simulation, equal-weight
 isotonic projection orders each estimated grid to
-address crossings; the projection is defined in Appendix~\ref{app:qdesn-technical}.
+address crossings; the projection and scoring range are defined in
+Appendix~\ref{app:qdesn-simulation-support}.
 
 For a quantile forecast \(q\) at level \(p\), let \(e=y-q\) be the forecast
 error and define the check loss by
@@ -471,8 +475,8 @@ Common simulated DGP paths approximate the expectations over future
 responses. For the primary calculation, each model's future predictors are
 averaged over simulated response paths before posterior coefficient draws
 are evaluated. Score intervals condition on these averaged predictors.
-Appendix~\ref{app:qdesn-technical} reports draw-specific recursive forecasts and numerical
-integration checks.
+Appendix~\ref{app:qdesn-simulation-support} reports the draw-specific
+recursive-forecast sensitivity.
 
 \subsection{DESN specification and selection}
 \label{qdesn2026:sec:selection}
@@ -525,9 +529,9 @@ quantile paths. The first follows the error-family comparisons of
 compares single-level Q--DESN with dynamic linear baselines. The second
 compares independent Q--DESN and MQ--DESN regressions using the same selected
 DESN specification and reservoir realization. We use \(p\) for a single level and \(p_k\), \(k=1,\ldots,K\),
-for a grid. Main-text figures report MCMC forecast summaries; Appendix~\ref{app:qdesn-technical}
-contains fitting-sample recovery, numerical tables, a longer-window sensitivity
-analysis, and approximate VB fitting results.
+for a grid. Main-text figures report the primary MCMC forecast summaries;
+Appendix~\ref{app:qdesn-simulation-support} retains the longer-window,
+calibration, and recursive-path sensitivities needed to qualify them.
 
 \subsection{Single-quantile simulation design}
 
@@ -554,8 +558,8 @@ The evolution matrix \(\mat G_\theta\) propagates a local linear trend and
 seasonal harmonics, following the construction of \citet{exd-west1997bayesian};
 \(\mat W_\theta\) controls their random changes over time. Within each
 family, the latent quantile path is shared across the three levels, with only
-the error-centering constant changing. Appendix~\ref{app:qdesn-technical} gives the complete
-generating specification.
+the error-centering constant changing. Appendix~\ref{app:qdesn-simulation-support}
+records the family-specific generating distributions and initial states.
 
 Each model is fitted to 500 observations. The primary evaluation uses the
 following 300 observations, giving ten origins and 300 scored origin--horizon
@@ -579,7 +583,7 @@ for assessing whether Q--DESN can represent linear temporal dependence
 through recurrent features rather than an explicitly specified state
 transition. Separate DESN specifications were selected for the reported
 criteria; historical refinement also used forecast performance on the
-evaluation series. Appendix~\ref{app:qdesn-technical} describes this selection.
+evaluation series. Appendix~\ref{app:qdesn-simulation-support} describes this selection.
 Consequently, the score comparisons characterize the frozen, selected
 specifications on these simulated series; they are exploratory evidence rather
 than performance on an untouched confirmation set.
@@ -600,9 +604,9 @@ summarizes posterior distributions of average forecast check loss.
 These results support the ability of recurrent features to achieve
 competitive check-loss performance under linear state dynamics, without
 specifying the generating trend and seasonal transition explicitly.
-The 500-target sensitivity preserves the overall pattern. Appendix~\ref{app:qdesn-technical}
-reports the numerical comparisons, quantile-path recovery, and empirical
-quantile frequencies, retaining MCMC and VB fitting results.
+The 500-target sensitivity preserves the overall pattern.
+Appendix~\ref{app:qdesn-simulation-support} reports its check-loss comparison
+and the empirical quantile frequencies.
 
 \input{tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex}
 
@@ -627,8 +631,8 @@ the quantile forecasts against the known conditional response distribution.
 The reported intervals summarize posterior uncertainty in the score averaged
 over these pairs, conditional on the realized trajectory, fitted model, and
 averaged future predictors defined in
-Section~\ref{qdesn2026:sec:forecast}. Appendix~\ref{app:qdesn-technical}
-gives the generating mechanisms, computational details, and sensitivity to
+Section~\ref{qdesn2026:sec:forecast}. Appendix~\ref{app:qdesn-simulation-support}
+gives the generating mechanisms and sensitivity to
 draw-specific recursive forecasting.
 
 \subsection{Multiquantile results}
@@ -652,9 +656,8 @@ Both multiquantile coefficient sharing and the exAL likelihood are associated
 with fewer crossings in this comparison. The improvement in ordering is
 more consistent than the score gains: independent regressions have the
 lowest mean oracle score in six mechanisms, whereas MQ--DESN leads for
-Gaussian and asymmetric-tail dynamics. Appendix~\ref{app:qdesn-technical} gives the complete
-score comparisons, quantile-crossing diagnostics, and recursive-feature
-sensitivity.
+Gaussian and asymmetric-tail dynamics. Appendix~\ref{app:qdesn-simulation-support}
+gives the recursive-feature sensitivity and its uncertainty interpretation.
 
 \section{Application: streamflow quantile forecast correction}
 \label{qdesn2026:sec:data}
@@ -686,8 +689,9 @@ Precipitation predictors come from the Parameter-elevation Regressions on
 Independent Slopes Model (PRISM), and soil-moisture predictors from ERA5,
 the fifth-generation reanalysis of the European Centre for Medium-Range
 Weather Forecasts (ECMWF). Both use realized values during the forecast
-window; future USGS measurements are reserved for scoring. Appendix~\ref{app:qdesn-technical}
-gives the full historical record and preprocessing.
+window; future USGS measurements are reserved for scoring.
+Appendix~\ref{app:qdesn-glofas-support} records the historical selection and
+forecast-window information boundary.
 
 \subsection{Quantile-based forecast correction}
 
@@ -712,7 +716,7 @@ g_{T+h,e}^{\mathrm{ens}}\mid\cdot&\sim
 The unknown future reference path is treated as latent and enters the lagged
 inputs to both DESN feature maps. Issued members inform this path through the
 location relation in Eq.~\eqref{qdesn2026:eq:glofas-part4-main}, with equal weights
-totaling one at each horizon. Appendix~\ref{app:qdesn-technical} specifies the weighted
+totaling one at each horizon. Appendix~\ref{app:qdesn-glofas-support} specifies the weighted
 augmentation and latent-path approximation.
 
 The comparison uses the seven levels \(0.05\), \(0.20\), \(0.35\), \(0.50\),
@@ -728,8 +732,9 @@ development and confirmation periods, without using the held-out issued
 window. Posterior inference then accounts for the regression parameters
 and the latent future streamflow path. The long historical record and
 high-dimensional regressions make MCMC computationally demanding, so we
-use VB to approximate this posterior. Appendix~\ref{app:qdesn-technical} describes the
-approximation and the convergence criteria satisfied by both MQ--DESN fits.
+use VB to approximate this posterior. Appendices~\ref{app:qdesn-computation}
+and~\ref{app:qdesn-glofas-support} describe the approximation and the
+convergence criteria satisfied by both MQ--DESN fits.
 
 \subsection{Forecast correction results}
 
@@ -747,13 +752,14 @@ nominal proportion. Gaussian DESN with ridge regularization covers only
 3 of 28, despite its relatively low score. Only 8 of 28 observations fall
 below the MQ--DESN exAL forecast at level 0.95.
 All seven reported issued-window quantile grids are ordered without a
-crossing correction. Appendix~\ref{app:qdesn-technical} reports level-specific coverage and
-additional forecasts from the reference and discrepancy components.
+crossing correction. Appendix~\ref{app:qdesn-glofas-support} reports the
+level-specific calibration evidence.
 
 Figure~\ref{qdesn2026:fig:glofas-application-forecast-period} shows the observations and
 issued ensemble, followed by Q--DESN under AL and the illustrative Gaussian ridge
 baseline over the same historical and forecast window and on a common vertical
-scale. Appendix~\ref{app:qdesn-technical} retains the full-family figure.
+scale. Appendix~\ref{app:qdesn-glofas-support} retains the calibration
+diagnostic that qualifies the score ranking.
 
 \begin{table}[!htbp]
 \centering
@@ -847,8 +853,8 @@ evaluations, rather than pooling all timestamps.
 The predictors include the released load, solar, and wind forecast
 covariates; spatial specifications also use neighboring-region features or
 their summaries. Their issue-time vintages were not independently verified.
-Appendix~\ref{app:qdesn-technical} records the fold dates, fitting-period preprocessing, and
-selection history.
+Appendix~\ref{app:qdesn-pricefm-support} records the fitting-period selection
+history and its information-availability limitation.
 
 \subsection{Results}
 
@@ -859,7 +865,7 @@ Q--DESN has lower AQL in \PricefmFullQdesnWins{} of
 \PricefmFullRegionFolds{} comparisons, but its aggregate loss is slightly
 higher. Table~\ref{qdesn2026:tab:pricefm-matched-aql-comparison} shows the variation
 across folds: Q--DESN is marginally lower in the second fold, whereas
-PriceFM is lower in the first and third. Appendix~\ref{app:qdesn-technical} reports regional
+PriceFM is lower in the first and third. Appendix~\ref{app:qdesn-pricefm-support} reports regional
 comparisons and the historical sensitivity analysis.
 
 \begin{table}[!htbp]

@@ -47,7 +47,8 @@
       "figure_label": "qdesn2026:fig:supp-quantile-sequential-initialization",
       "alt_text": "A Gaussian ridge regression initializes a Gaussian regularized-horseshoe variational fit, which initializes the median AL regression. Independent AL fits then proceed outward toward both tails; each initializes the exAL fit at the same probability level. Complete independent grids initialize MQ--DESN in the multiquantile simulation and GloFAS, not PriceFM. The multiquantile simulation uses VB starts for MCMC under the same model; GloFAS and PriceFM report VB. Prior calibration and development-data selection are separate operations.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -63,7 +64,8 @@
       "figure_label": "qdesn2026:fig:supp-glofas-part4-all-families",
       "alt_text": "The full issued-ensemble comparison retains Gaussian and raw GloFAS, Q--DESN and MQ--DESN AL/exAL paths with their original panel scales, historical observations, and held-out measurements.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -71,7 +73,8 @@
       "figure_label": "qdesn2026:fig:supp-glofas-part1",
       "alt_text": "Three panels show 30-day reference-only USGS forecasts from Gaussian, Q--DESN and MQ--DESN AL/exAL families, alongside black observed history and magenta dashed held-out measurements.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -79,7 +82,8 @@
       "figure_label": "qdesn2026:fig:supp-glofas-part2",
       "alt_text": "Three panels show historical black discrepancy lines and 30-day future discrepancy paths for Gaussian and AL/exAL families. There are no post-cutoff discrepancy observations or scores.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -87,7 +91,8 @@
       "figure_label": "qdesn2026:fig:supp-glofas-part3",
       "alt_text": "Three family-group panels compare 30-day combined historical USGS quantile forecasts with historical USGS and held-out measurements; all paths are uncrossed.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -95,7 +100,8 @@
       "figure_label": "qdesn2026:fig:supp-glofas-part4-convergence",
       "alt_text": "Green MQ--DESN (AL) and brown MQ--DESN (exAL) parameter-change traces finish below the specified tolerance at outer iterations 11 and 28, respectively, with three consecutive coordinate iterations satisfying the stopping rule.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/d-qdesn-technical.tex",
@@ -335,7 +341,8 @@
       "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-mae-intervals",
       "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 300 scored targets.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
@@ -343,7 +350,8 @@
       "figure_label": "qdesn2026:fig:independent-eval500-forecast_mae",
       "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 500 scored targets.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
@@ -359,7 +367,8 @@
       "figure_label": "qdesn2026:fig:joint-qdesn-pure-desn-v2-fit-rmse",
       "alt_text": "Fitting-sample recovery of known conditional quantile paths in the multiquantile study. Points give the RMSE of monotone posterior-mean grids, not posterior interval summaries. Annotations c give raw adjacent-level crossing percentages before projection. Q--DESN fits levels independently; MQ--DESN estimates their coefficients jointly.",
       "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED"
+      "status": "AUTHOR_REVIEW_REQUIRED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
@@ -375,7 +384,8 @@
       "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-fit-rmse-intervals",
       "alt_text": "Nine panels compare posterior fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_single_quantile_vb_fit_figure_display.tex",
@@ -383,7 +393,8 @@
       "figure_label": "qdesn2026:fig:simulation-500obs-vb-fit-rmse-intervals",
       "alt_text": "Nine panels compare approximate variational fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     }
   ]
 }

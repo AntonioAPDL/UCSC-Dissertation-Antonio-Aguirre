@@ -46,7 +46,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "4200138b731291296969161af1dfc46d9d6ed0049c040b11b97e9b31452126c0",
+      "current_sha256": "afcbc5948f862fb50283dad92da41c4c5a32117fb8a02008954a30a742140bef",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -55,7 +55,8 @@
         "REV-RELEASE-FONTS-20260916",
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
@@ -119,7 +120,7 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "2eced56a4dacde87fdbca62e884a9bbb07160dbc0797420dbe35029dc3258962",
+      "current_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -127,7 +128,8 @@
       "revision_ids": [
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-FINAL-READER-STATISTICAL-20261027"
+        "REV-FINAL-READER-STATISTICAL-20261027",
+        "REV-ESSENTIAL-APPENDICES-20261028"
       ]
     },
     {
