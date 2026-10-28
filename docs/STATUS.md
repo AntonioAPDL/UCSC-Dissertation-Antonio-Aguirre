@@ -25,8 +25,10 @@ immutable source blobs, has no blocking diagnostics or overfull boxes, embeds
 all 52 reported font rows with no Type 3 font, and passed targeted rendered-page
 inspection.  The accepted ignored artifact and exact hash are recorded in
 `VALIDATION.md`.  No research computation was rerun and no source repository
-was changed.  GitHub merge verification and the separate Overleaf pull remain
-handoff facts to record after synchronization.
+was changed.  The revision was merged and pushed to GitHub `main` through
+`bb9d346061c598f802a4827683499892083e306a`, and the remote branch tip was
+verified.  A deliberate Overleaf pull, compile, and rendered review remain a
+separate handoff.
 
 ## 2026-10-26 current-research refresh
 

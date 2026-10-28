@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-10-26",
+  "recorded_at": "2026-10-28",
   "status": "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-10-26 current-source refresh supersedes the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The refresh passed full local release validation and rendered review and was merged into main through 98acf4758b65f37b7676cbbcba78d05abde4f6ff. GitHub remote verification and a deliberate Overleaf pull are separate handoffs. Material-specific reuse permission remains unverified."
+    "state_note": "The 2026-10-26 current-source refresh supersedes the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The final reader and statistical revision passed full local release validation and rendered review and was merged and pushed to GitHub main through bb9d346061c598f802a4827683499892083e306a. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission remains unverified."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -50,6 +50,20 @@
         "path": "build/release-20261027T005737Z/main.pdf",
         "sha256": "92e4c36c451ecfceca2e0674e7d904f40f9b63e863f5799ba4b310dc262391d1",
         "pages": 439,
+        "pdf_version": "1.7",
+        "tracked": false
+      }
+    },
+    "final_reader_revision": {
+      "plan": "docs/final-reader-statistical-revision-plan.md",
+      "implementation": "docs/final-reader-statistical-revision-implementation.md",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
+      "branch_commit": "4d9eed7a1a22aa9bfef5996bf4609d0b124fe72b",
+      "merge_commit": "bb9d346061c598f802a4827683499892083e306a",
+      "release": {
+        "path": "build/release-20261028T044714Z/main.pdf",
+        "sha256": "49b0bc25f5c4b46c474379d3b7f33bfbfd01a3a28cb77660db63a4a8c5f0e409",
+        "pages": 414,
         "pdf_version": "1.7",
         "tracked": false
       }
