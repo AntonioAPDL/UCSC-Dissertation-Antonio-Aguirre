@@ -5,8 +5,6 @@
 \noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans'o. The inferential target, model, principal evidence, interpretation, and limitations remain here; Appendix~\ref{app:hydrology-technical} records the source-indexed MCMC and variational calculations needed to interpret the reported inference.}
 \end{singlespace}
 
-\section{Chapter overview}
-River-flow forecasting requires predictive distributions that remain informative in both routine and extreme conditions. We develop a Bayesian quantile-based correction-and-synthesis framework built on Dynamic Quantile Linear Models (DQLMs). The framework links U.S. Geological Survey (USGS) observations, retrospective products, and ensemble forecast products through a shared latent quantile process, learns dynamic discrepancies for each external source, and combines quantile-specific posterior predictions into a single predictive distribution. We also adapt variational Bayes inference to the extended dynamic quantile linear model using Laplace--Delta approximations for non-conjugate parameters. The methodology is illustrated using daily flow for the San Lorenzo River together with products from the European Centre for Medium-Range Weather Forecasts (ECMWF) Global Flood Awareness System (GloFAS) and the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS), with emphasis on medium-range forecasting and uncertainty quantification across multiple quantile levels.
 \section{Problem setting and contribution}
 
 River flow forecasts are essential for flood preparedness, drought monitoring, reservoir operations, and water-supply planning. In regions such as Santa Cruz, California, forecast accuracy depends on both hydrological and meteorological information. These two uncertainty sources are related but distinct. Hydrological uncertainty arises from model structure, parameters, states, and observations, whereas meteorological uncertainty enters through imperfect precipitation and related atmospheric forcing fields \citep{env-tarek2021daily,env-thiboult2016accounting,env-kim2019hybrid,env-haiden2021evaluation}. A useful statistical forecasting framework should keep these roles clear while accounting for their interaction in the final predictive distribution.
@@ -170,6 +168,7 @@ Further details regarding prior specification and discount factors are provided 
 
 \subsection{Posterior computation}
 \label{env:subsec:postinf}
+\label{environ:sec:body-computation}
 Initially, we explored the posterior distribution of all model parameters using a Markov chain Monte Carlo (MCMC) algorithm.
 Algorithm~\ref{env:alg1} in Appendix~\ref{app:hydrology-mcmc} gives the core MCMC updates in a compact source-indexed notation. As indicated by Equation~\ref{env:eq:compact_est_obs}, during the pre-cutoff observation window the response variables are the USGS observations and retrospective products. After the cutoff, Equation~\ref{env:eq:compact_fc_obs} applies and the response variables correspond to the forecast products. Careful bookkeeping is needed because forecast horizons differ across agencies. Gibbs sampling is facilitated by the fact that all full posterior conditionals are available in closed form except for the channel-specific skewness parameters \(\gamma^s\), \(s\in\mathcal{J}_0\). For these, we use a Metropolis--Hastings random walk on an unconstrained reparameterization. The state path is sampled by standard forward filtering and backward sampling under conditional Gaussianity \citep{env-prado2021time}.
 
@@ -243,20 +242,6 @@ where \(\rho_u\) is the quantile score, or check loss. Thus, the CRPS is a natur
 \rho_{u_s}\!\left(y_t-z_{t,(s)}\right).
 \]
 The same calculation is used for synthesized posterior predictive samples and for raw forecast ensembles, with \(S\) equal to the number of available sample draws or ensemble members at that lead. If the predictive distribution is a point mass at \(x\), the CRPS reduces to \(|y-x|\); averaging this quantity across forecast cases gives the mean absolute error. CRPS is also used in the preliminary pre-cutoff calibration of the transfer-persistence parameter \(\lambda\), as described in Subsection~\ref{env:subsec:specification}.
-
-\section{Computational implementation}
-\label{environ:sec:body-computation}
-
-Inference is carried out with the MCMC and variational procedures induced by
-the source-aware state-space model.  Both approaches preserve the distinction
-between the response process, source-specific latent quantities, and the
-subsequent synthesis across quantile levels.  The empirical comparisons below
-therefore evaluate a fixed model-and-algorithm contract rather than a generic
-post-processing rule.
-
-The source-indexed MCMC and variational calculations appear in
-Appendix~\ref{app:hydrology-mcmc} and
-Appendix~\ref{app:hydrology-vb}, respectively.
 
 \section{San Lorenzo River application}
 %\section{APPLICATION DATA AND FORECASTING DESIGN}

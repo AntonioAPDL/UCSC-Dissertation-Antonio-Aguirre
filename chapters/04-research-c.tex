@@ -5,31 +5,6 @@
 \noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; the posterior definitions, nonstandard computations, and claim-relevant sensitivity evidence are collected in Appendix~\ref{app:qdesn-technical}.}
 \end{singlespace}
 
-\section{Chapter overview}
-\normalsize
-\noindent
-Quantile forecasts for nonlinear time series must accommodate complex temporal
-dependence. We develop quantile deep echo state networks (Q--DESN) as Bayesian
-quantile regressions on specified nonlinear temporal features. Conditional on
-a reservoir realization, the quantile location is linear in regression
-coefficients, with ridge or regularized-horseshoe regularization. Asymmetric
-Laplace (AL) and extended asymmetric Laplace likelihoods support independent
-quantile regressions and the multiquantile deep echo state network
-(MQ--DESN), which estimates quantile-specific regression coefficients jointly
-by shrinking adjacent slope differences. Posterior computation uses Markov
-chain Monte Carlo and model-specific variational approximations. Two
-simulations examine quantile-path recovery, forecast scores, and ordering.
-Q--DESN achieves competitive forecast loss under linear dynamics; multiquantile
-shrinkage reduces crossings without uniform score gains.
-In a retrospective streamflow application, Q--DESN combines gauge records
-with Global Flood Awareness System ensembles and reduces quantile forecast
-loss relative to the uncorrected ensemble.
-The electricity-price application compares region-specific regressions with
-matched forecasts from the pretrained neural model PriceFM.
-Across 114 matched region--fold comparisons, Q--DESN has the lower average quantile loss in 54 cases and PriceFM in 60; the aggregate difference slightly favors PriceFM and varies across regions and folds.
-
-The chapter distinguishes single-level Q--DESN from MQ--DESN, whose composite likelihood reuses the observed response across quantile levels and is not a normalized joint response likelihood. Empirical comparisons are reported for their stated targets and evaluation windows; no uniform dominance claim is made.
-
 \input{tables/ch04-qdesn/current_source_aliases_20261026.tex}
 \input{figures/ch04-qdesn/quantile_initialization/quantile_initialization_styles.tex}
 

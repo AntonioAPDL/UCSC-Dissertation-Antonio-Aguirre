@@ -5,31 +5,6 @@
 \noindent\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. The supporting proofs, calibration record, and computational derivations appear in Sections~\ref{app:mti-proofs}, \ref{app:mti-calibration}, and~\ref{app:mti-extensions} of Appendix~\ref{app:mti-technical}.}
 \end{singlespace}
 
-\section{Chapter overview}
-\noindent
-Intervals with the same probability content can have different endpoint
-placements and widths. This matters for tolerance inference, where a reported
-interval must also satisfy a repeated-sampling content--confidence statement.
-We develop mean-tilted intervals (MTIs), a fixed-content family indexed by
-retained-mean balance. The zero-tilt member is the mean-preserving interval
-(MPI) induced by the residual-product criterion of Pouplin et al.; nonzero
-tilts move through admissible contiguous windows, including
-distribution-specific central and shortest intervals.
-
-For tolerance inference, we develop a calibrated MTI procedure that profiles
-fitted content and tilt over a prespecified grid. A convex-profile calculation
-estimates endpoints under a penalized MTI criterion.
-A Dirichlet-process posterior content check determines eligible candidates. The
-shortest eligible fitted interval is reported. Calibration settings are fixed
-before independent validation; their repeated-sampling performance is assessed
-empirically. In iid simulations at tolerance
-confidence \(0.95\), we compare MTI, Young--Mathew interpolation, and
-Wilks intervals across feasible content--sample-size cells and eight continuous
-distributions. The study emphasizes skewed distributions, where placement
-matters most, and excludes cells where the sample range cannot support the
-requested two-sided distribution-free statement.
-A historical pharmaceutical application illustrates endpoint placement for a
-reported batch metric, held-out empirical content, and partition sensitivity.
 \section{Introduction}
 \label{rqr2026:sec:introduction}
 

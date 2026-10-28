@@ -5,8 +5,6 @@
 \noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Barata, Raquel Prado, and Bruno Sans'o. Methodological foundations inherited from earlier exAL and exDQLM work are attributed in the text.}
 \end{singlespace}
 
-\section{Chapter overview}
-We present the \proglang{R} package \pkg{exdqlm} for Bayesian quantile regression, with primary emphasis on dynamic state-space quantile models for time series. The package is built around extended dynamic quantile linear models (exDQLMs), which use the extended asymmetric Laplace (exAL) family, a parametric extension of the asymmetric Laplace (AL) distribution commonly used in quantile regression. The software provides posterior simulation via Markov chain Monte Carlo (MCMC) and fast approximate posterior inference via Laplace--delta variational Bayes (LDVB), supporting posterior uncertainty quantification while also providing a computationally efficient option for longer time series. The same package interface supports static exAL quantile regression with regularized priors, dynamic transfer-function models for nonlinear input effects at a given quantile, post hoc posterior-predictive synthesis across separately fitted quantiles, forecasting, and quantitative and visual diagnostics for model evaluation.
 \section{Software contribution and scope}
 
 Quantile regression has become a widely used alternative to mean-based modeling in static settings. However, dynamic quantile methods and accompanying software remain comparatively limited. In Bayesian parametric quantile regression, the asymmetric Laplace (AL) likelihood has played a central role because it is linked to the check-loss function used in classical quantile regression \citep{env-yu2001bayesian,qdesn-Koenker2005} and allows convenient mixture representations for posterior computation. Nevertheless, the AL distribution can be restrictive as an error model. More flexible error distributions have been studied extensively in the Bayesian nonparametric literature \citep{exd-kottas2009bayesian,exd-reich2009flexible,exd-taddy2010bayesian}; however, the resulting methods can be computationally demanding for dynamic models and longer time series.
@@ -443,6 +441,7 @@ where $\mat{a}_{\tilde{t}}(k) = \mat{G}_{\tilde{t}+k} \mat{a}_{\tilde{t}}(k-1)$,
 
 \section{Software design and numerical implementation}
 \label{exd:sec:design}
+\label{exdqlm:sec:body-inference}
 
 The software separates statistical model specification from posterior
 computation. Trend, seasonal, regression, and transfer components define a
@@ -479,22 +478,6 @@ them. The analyses reported here used \proglang{R} 4.6.0 and
 \pkg{exdqlm} 1.1.2 on x86\_64 Linux, fixed random-number settings, and recorded
 seeds. Reported run times are elapsed fitting times on that reference platform,
 not machine-independent properties of the methods.
-
-\section{Inference, diagnostics, and predictive use}
-\label{exdqlm:sec:body-inference}
-
-The implemented workflow supports exact or sampling-based updates where they
-are available and explicitly nonconjugate variational blocks where the exAL
-scale--asymmetry structure requires approximation.  Forecast distributions
-are formed from posterior state and parameter uncertainty and are evaluated
-with calibration diagnostics and proper scores.  These computational choices
-are part of the method rather than interchangeable software settings.
-
-Appendices~\ref{app:exdqlm-posterior}--\ref{app:exdqlm-synthesis} give the
-posterior blocks, nonconjugate scale--skewness construction,
-regularized-horseshoe update, and posterior-predictive synthesis algorithm.
-The examples below retain the primary empirical evidence and the limitations
-needed to interpret those details.
 
 \section{Examples}
  \label{exd:sec:exs}
