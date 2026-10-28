@@ -23,6 +23,11 @@ bytes, SHA-256
 It has zero overfull boxes or blocking diagnostics. The title page was
 rasterized and inspected; the four committee names, chair designation, accent,
 rules, margins, and unresolved-field notice are legible and correctly placed.
+The release-bearing update was fast-forwarded into `main` and pushed without
+force. Local `main`, `origin/main`, and the directly queried GitHub branch were
+all verified at `4864f55afde300541b5fb6d6b9bccd921f01ce2c` with zero
+ahead/behind divergence and a clean worktree. This synchronization note is the
+only tracked follow-up to that verified release commit.
 
 ## 2026-10-28 final comprehensive polish released and synchronized
 

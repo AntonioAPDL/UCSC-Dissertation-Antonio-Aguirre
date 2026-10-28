@@ -96,10 +96,11 @@
       }
     },
     "committee_metadata_update": {
-      "state": "RELEASE_VALIDATED_GITHUB_HANDOFF_PENDING",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "authority": "Graduate Division-approved revised Dissertation Reading Committee recorded in AIS",
       "approval_date": "2026-10-09",
       "confirmation_forwarded": "2026-10-12",
+      "release_bearing_sync_commit": "4864f55afde300541b5fb6d6b9bccd921f01ce2c",
       "release": {
         "path": "build/release-20261028T192313Z/main.pdf",
         "sha256": "00b19e103360973e89ab490fdc7dae7849c6078fe0c9c269d50332f55cbeb2cf",
