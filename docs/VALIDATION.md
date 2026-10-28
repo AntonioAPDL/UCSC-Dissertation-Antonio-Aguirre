@@ -1,5 +1,40 @@
 # Validation record
 
+## 2026-10-28 Fall 2026 filing-metadata release
+
+The Fall 2026 date and dean update was validated from a fresh timestamped
+release directory. Because the earlier temporary audit-root record no longer
+contained usable repositories, the release used fresh temporary no-checkout
+clones of the five explicitly authorized source repositories and removed them
+after validation. No original research working tree was fetched, checked out,
+or changed. The gate passed all 18 tests, rechecked all 102 immutable imported
+Git blobs, resolved all 116 cited keys, and retained the validated graph of 43
+active TeX files, 257 active labels, six migration records, and 30 active
+visual records.
+
+The accepted ignored artifact is
+`build/release-20261028T193327Z/main.pdf`: 254 US-Letter pages, 16,491,675
+bytes, PDF 1.7, SHA-256
+`b46b49ed32b6d5f70e4caf44695cf1181b0e0f952dfdf6d3e088f3f57db91672`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 32 font
+rows are embedded and no Type 3 font occurs. The PDF remains untagged.
+
+The title page was extracted and rasterized at 150 dpi. Direct inspection
+confirmed `December 2026`, Donald Smith, the exact two-line title `Interim Vice
+Provost and Dean of Graduate Studies`, the official candidate name, and the
+four-member committee block. Text, rules, spacing, margins, and the draft
+notice are legible without clipping or collision. The exact dissertation title
+remains an explicit placeholder, and the page does not assert dissertation
+approval. The blank copyright leaf remains an allowed author choice.
+
+Private email contents, student identifiers, addresses, signatures, and
+administrative attachments were not added to the repository. This release
+validates the local source and rendering; it does not supply the missing title,
+committee approval/signatures, reuse/contribution acknowledgments, a
+candidate-specific MyUCSC degree-field comparison, an Overleaf build, or an
+accessible tagged filing PDF.
+
 ## 2026-10-28 approved-committee metadata release
 
 The Dissertation Reading Committee metadata update was validated from a fresh

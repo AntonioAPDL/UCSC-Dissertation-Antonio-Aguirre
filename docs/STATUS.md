@@ -1,5 +1,49 @@
 # Project status
 
+## 2026-10-28 Fall 2026 filing metadata confirmed
+
+The signed doctoral-degree application confirms the university-record name,
+Statistics department, Ph.D. application, and Fall 2026 conferral term.
+Graduate Division's 2026-10-15 candidate instructions require the title-page
+date `December 2026` and identify the dean block as `Donald Smith`, `Interim
+Vice Provost and Dean of Graduate Studies`. The attached formatting-revision
+guide confirms that the dean's title belongs below his name, the ProQuest copy
+must be unsigned, and the separately emailed approval page must contain all
+committee signatures on one page. `metadata.tex` now uses these exact date and
+dean fields. Private identifiers, addresses, signatures, and email contents
+were not copied into the repository.
+
+The current July 2026 Dissertation and Thesis Preparation Guidelines were
+also inspected. They retain the implemented margins, pagination, ordering,
+abstract, and bibliography rules and list Statistical Science as an approved
+Ph.D. discipline. The personal MyUCSC degree field itself was not present in
+the reviewed email attachments, so a final record comparison remains prudent.
+
+Committee correspondence confirms the defense for Monday, November 30, 2026
+at 10:00 a.m. Pacific and records a planned complete-dissertation delivery on
+Friday, November 6. That interval is 24 days, shorter than the catalog's stated
+minimum of one month. No reviewed record expressly waives or interprets that
+rule; Statistics Graduate Advising or the appropriate program authority should
+confirm the schedule in writing.
+
+The exact dissertation title was not present in the degree application,
+committee nomination, filing instructions, defense scheduling thread, or
+other located correspondence. The title remains an explicit placeholder and
+`\StarterDrafttrue` remains active. Dissertation approval/signatures,
+required reuse/contribution acknowledgments, material-specific permissions,
+and the tagged-PDF accessibility review also remain open. The copyright leaf
+is optional and remains blank pending the author's preference.
+
+The full release gate passed all 18 tests and rechecked all 102 immutable
+source blobs from fresh temporary no-checkout audit clones. The accepted
+ignored artifact is `build/release-20261028T193327Z/main.pdf`: 254 US-Letter
+pages, 16,491,675 bytes, SHA-256
+`b46b49ed32b6d5f70e4caf44695cf1181b0e0f952dfdf6d3e088f3f57db91672`.
+It has zero overfull boxes or blocking diagnostics, all 32 font rows are
+embedded, and no Type 3 font occurs. The rendered title page was inspected and
+the confirmed date/dean block is legible without clipping or collision. The
+PDF remains untagged.
+
 ## 2026-10-28 Dissertation Reading Committee confirmed
 
 The official revised Dissertation Reading Committee was approved by Graduate
@@ -10,10 +54,10 @@ Kottas. `metadata.tex` and the draft title-page committee block now use those
 names and that confirmed chair role.
 
 This administrative update does not assert that the dissertation itself has
-been approved. The official dissertation title, conferral month/year, current
-dean name and title, signatures, acknowledgments, ORCID, reuse permissions, and
-tagged-PDF accessibility review remain open. `\StarterDrafttrue` therefore
-remains active.
+been approved. The official dissertation title, signatures, acknowledgments,
+ORCID, reuse permissions, and tagged-PDF accessibility review remain open.
+`\StarterDrafttrue` therefore remains active. The later filing-metadata entry
+above supersedes this entry's then-open date and dean fields.
 
 The release gate passed all 18 tests and all 102 immutable source-blob checks.
 The accepted ignored artifact is

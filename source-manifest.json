@@ -109,6 +109,30 @@
         "pdf_version": "1.7",
         "tracked": false
       }
+    },
+    "fall_2026_filing_metadata_update": {
+      "state": "IMPLEMENTED_RELEASE_VALIDATED",
+      "authority": "Signed Fall 2026 degree application, July 2026 UCSC preparation guide, and candidate-specific Graduate Division instructions",
+      "candidate_instruction_date": "2026-10-15",
+      "confirmed_title_page_date": "December 2026",
+      "confirmed_dean_name": "Donald Smith",
+      "confirmed_dean_title": "Interim Vice Provost and Dean of Graduate Studies",
+      "completion_deadline": "2026-12-11",
+      "release": {
+        "path": "build/release-20261028T193327Z/main.pdf",
+        "sha256": "b46b49ed32b6d5f70e4caf44695cf1181b0e0f952dfdf6d3e088f3f57db91672",
+        "pages": 254,
+        "bytes": 16491675,
+        "pdf_version": "1.7",
+        "tracked": false
+      },
+      "privacy_boundary": "No student identifier, address, signature, private email address, or administrative attachment is stored in the public repository.",
+      "open_fields": [
+        "exact dissertation title",
+        "dissertation approval and committee signatures",
+        "candidate-specific MyUCSC degree-field comparison",
+        "required reuse and contribution acknowledgments"
+      ]
     }
   },
   "author_direction": {
@@ -127,7 +151,20 @@
         "Paul Parker",
         "Athanasios Kottas"
       ],
-      "boundary": "Committee appointment is approved; dissertation approval, title, conferral date, dean wording, and signatures remain unresolved."
+      "boundary": "Committee appointment, December 2026 title-page date, and Donald Smith dean wording are confirmed; dissertation approval, exact title, and signatures remain unresolved."
+    },
+    "fall_2026_filing": {
+      "degree_application_term": "Fall 2026",
+      "title_page_date": "December 2026",
+      "completion_deadline": "2026-12-11",
+      "dean_name": "Donald Smith",
+      "dean_title": "Interim Vice Provost and Dean of Graduate Studies",
+      "proquest_copy": "unsigned",
+      "signed_title_page_route": "separate email to Graduate Division",
+      "defense": "2026-11-30 10:00 America/Los_Angeles",
+      "planned_complete_draft_delivery": "2026-11-06",
+      "schedule_issue": "The planned delivery is 24 days before the defense, shorter than the catalog's stated one-month minimum; obtain a written program determination.",
+      "title_state": "not found in the reviewed administrative records or correspondence"
     },
     "working_architecture": [
       "exdqlm software and computational workflow",

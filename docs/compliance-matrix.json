@@ -14,14 +14,14 @@
   {
     "id": "A02",
     "topic": "Committee/cohort",
-    "rule_and_applicability": "2021 and current coadvisor committee-size clauses differ; use approved appointment and applicable ruling.",
-    "authority_classification": "unresolved",
-    "source_id": "P2",
-    "source_url": "https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/",
-    "source_locator": "Reading Committee; compare P1 same section",
-    "proposed_latex_implementation": "Four visible illustrative slots; no roles assumed",
-    "verification_method": "Program/Graduate Division confirmation",
-    "status": "Open; no committee approved by this project"
+    "rule_and_applicability": "Use the committee appointment approved by Graduate Division and recorded in AIS.",
+    "authority_classification": "approved candidate record",
+    "source_id": null,
+    "source_url": null,
+    "source_locator": "Graduate Division approval dated 2026-10-09; approved nomination form",
+    "proposed_latex_implementation": "Four confirmed committee names with Raquel Prado first as chair",
+    "verification_method": "Compare metadata and title-page block with approved nomination",
+    "status": "Verified against the Graduate Division-approved revised committee"
   },
   {
     "id": "A03",
@@ -45,7 +45,7 @@
     "source_locator": "Dissertation; P2 same section",
     "proposed_latex_implementation": "No LaTeX change; completion plan",
     "verification_method": "Dated delivery of complete version relative to confirmed D",
-    "status": "Rule verified; defense date unresolved"
+    "status": "Defense confirmed for 2026-11-30; planned 2026-11-06 delivery is 24 days earlier and requires a written program determination"
   },
   {
     "id": "A05",
@@ -57,7 +57,7 @@
     "source_locator": "Dissertation",
     "proposed_latex_implementation": "No LaTeX change",
     "verification_method": "Program scheduling and current forms",
-    "status": "Format verified; dates/announcement open"
+    "status": "Defense time confirmed for 2026-11-30 at 10:00 a.m. Pacific; venue/announcement record remains open"
   },
   {
     "id": "L01",
@@ -209,35 +209,35 @@
     "rule_and_applicability": "Use required institution/degree wording and integrated approval sample; filed PDF unsigned.",
     "authority_classification": "university requirement",
     "source_id": "G1",
-    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
-    "source_locator": "p. 4 and sample p. 10",
-    "proposed_latex_implementation": "Adapted integrated title block; starter does not assert approval",
-    "verification_method": "Current sample and confirmed committee comparison",
-    "status": "Structure demonstrated; metadata/approval open"
+    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
+    "source_locator": "p. 4 and sample p. 11",
+    "proposed_latex_implementation": "Adapted integrated title block with confirmed committee; starter does not assert approval",
+    "verification_method": "Current sample, confirmed committee, and final approval comparison",
+    "status": "Committee/date/dean metadata verified; dissertation title and approval remain open"
   },
   {
     "id": "F04",
     "topic": "Name and dates",
-    "rule_and_applicability": "Full candidate name; title-page date follows conferral quarter: March/June/September/December.",
+    "rule_and_applicability": "Full candidate name; title-page date follows conferral quarter: March/June/August/December.",
     "authority_classification": "university requirement",
     "source_id": "G1",
-    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
-    "source_locator": "pp. 4-6",
-    "proposed_latex_implementation": "Central placeholders; planned Fall would use December only after confirmation",
-    "verification_method": "Student record and conferral term",
-    "status": "Unresolved personal fields"
+    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
+    "source_locator": "pp. 4-5",
+    "proposed_latex_implementation": "University-record name and December 2026 title-page date centralized in metadata.tex",
+    "verification_method": "Signed Fall 2026 degree application and current filing notice",
+    "status": "Name and title-page date verified; final title remains open"
   },
   {
     "id": "F05",
     "topic": "Dean and signatures",
-    "rule_and_applicability": "Current dean, title, signatory and routing must be verified; 2021 personnel/process may be stale.",
-    "authority_classification": "unresolved",
+    "rule_and_applicability": "For Fall 2026 use Donald Smith with Interim Vice Provost and Dean of Graduate Studies below his name; ProQuest copy unsigned; email one separately signed title page to Graduate Division.",
+    "authority_classification": "current university requirement",
     "source_id": "G1",
-    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
-    "source_locator": "p. 4 and sample p. 10; compare U1",
-    "proposed_latex_implementation": "Dean placeholders; no signature images",
+    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
+    "source_locator": "pp. 4, 11; candidate-specific Graduate Division instructions dated 2026-10-15",
+    "proposed_latex_implementation": "Donald Smith and exact two-line title centralized; no signature images",
     "verification_method": "Graduate Division current instructions",
-    "status": "Open; historical names deliberately not copied"
+    "status": "Dean wording and unsigned ProQuest route verified; committee approval/signatures remain future actions"
   },
   {
     "id": "F06",
@@ -446,26 +446,26 @@
   {
     "id": "C01",
     "topic": "Graduation/filing dates",
-    "rule_and_applicability": "Application, initial submission, correction and final acceptance are separate milestones; exact Fall 2026 dates unverified.",
-    "authority_classification": "unresolved",
-    "source_id": "U3",
-    "source_url": "https://registrar.ucsc.edu/calendars-resources/academic-calendar/",
-    "source_locator": "Current calendar inaccessible; G1 pp. 1, 8",
-    "proposed_latex_implementation": "Relative completion plan; no guessed dates",
-    "verification_method": "Registrar/Graduate Division current calendar/checklist",
-    "status": "Open"
+    "rule_and_applicability": "Fall 2026 candidates must complete requirements by December 11, 2026; upload, formatting review/corrections, and final acceptance remain distinct milestones.",
+    "authority_classification": "current candidate-specific university instruction",
+    "source_id": "G1",
+    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
+    "source_locator": "Graduate Division candidate email dated 2026-10-15; G1 pp. 1, 9",
+    "proposed_latex_implementation": "December 11, 2026 completion deadline recorded; no submission automation",
+    "verification_method": "Graduate Division formatting correspondence and final acceptance record",
+    "status": "Deadline verified; actual upload, corrections, and acceptance remain open"
   },
   {
     "id": "C02",
     "topic": "Revisions/signatures/surveys",
-    "rule_and_applicability": "Obtain approvals and required submission materials; older guide describes surveys and signed title routing. Confirm current checklist.",
-    "authority_classification": "university requirement / unresolved current procedure",
+    "rule_and_applicability": "Submit through ProQuest; email the separately signed title page to Graduate Division; complete the Survey of Earned Doctorates and UCSC Exit Survey; remain responsive through final acceptance.",
+    "authority_classification": "current university requirement",
     "source_id": "G1",
-    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
-    "source_locator": "pp. 4, 8; U1",
-    "proposed_latex_implementation": "No signatures or forms generated",
-    "verification_method": "Graduate Division current forms; final accepted record",
-    "status": "Open current procedure"
+    "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
+    "source_locator": "Graduate Division candidate email dated 2026-10-15; G1 pp. 4, 9",
+    "proposed_latex_implementation": "No signatures or forms generated; unsigned public build retained",
+    "verification_method": "One-page signed title page, both survey receipts, and final accepted record",
+    "status": "Current procedure verified; completion evidence remains open"
   },
   {
     "id": "C03",

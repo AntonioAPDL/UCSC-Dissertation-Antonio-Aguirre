@@ -1,6 +1,11 @@
 # UCSC Statistical Science PhD: dissertation foundation audit
 
-Research and implementation date: **15 September 2026**. Prepared for Toni, a Fall 2021 entrant planning around Fall 2026 completion. The author later supplied the official long name, **Jose Antonio Aguirre Perez de Leon**, and scholarly name, **Antonio de Leon**. Conferral quarter, defense date and committee appointments remain unconfirmed.
+Research and implementation date: **15 September 2026**; administrative
+evidence refreshed **28 October 2026**. Prepared for Toni, a Fall 2021 entrant
+with a confirmed Fall 2026 degree application. The official long name is
+**Jose Antonio Aguirre Perez de Leon** and the scholarly name is **Antonio de
+Leon**. The approved reading committee, December 2026 title-page date, dean
+wording, filing deadline, and defense date are now confirmed as recorded below.
 
 ## Executive decisions
 
@@ -8,7 +13,11 @@ The repository began as a self-contained writing foundation and now contains an 
 
 The current and 2021 catalogs both describe a dissertation that **should** contain at least three chapters of journal-suitable work and require delivery of the completed dissertation to the reading committee at least one month before the defense. Neither statement requires three accepted articles. The committee-size language differs between those catalogs, so an entry-year assumption cannot settle the candidate's approved committee. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
 
-Use the current Library-linked preparation PDF as the documented formatting baseline. Its own revision is July 2021; its CDN folder says 2024, and search snippets can display more recent dates. Those are not evidence of a revised rule. Current Graduate Division forms, deadlines, dean and signature routing could not all be retrieved. Those unresolved procedural items are separated from the implemented layout. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf) [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
+Use the July 2026 Graduate Division preparation PDF as the formatting baseline.
+Graduate Division supplied that exact guide to the candidate on 2026-10-15,
+together with the Fall 2026 deadline and signature/submission route. It
+requires December 2026 on this title page and identifies Donald Smith as
+Interim Vice Provost and Dean of Graduate Studies. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf) [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
 
 Use the pinned community `ucscthesis` class with small project-level corrections. Use native Overleaf GitHub synchronization. The initial report proposed creating the GitHub repository from a new Overleaf project; that repository now exists, so the current GitHub-first import/preservation route in `docs/WORKFLOW.md` supersedes that bootstrap step. Keep research repositories separate and import only reviewed, attributed assets at recorded commits.
 
@@ -22,9 +31,23 @@ This audit uses six categories: university requirement, program requirement, off
 
 The formal catalog program is **Statistical Science Ph.D.** The guide lists **Statistical Science** among degree fields. The title page therefore uses DOCTOR OF PHILOSOPHY in STATISTICAL SCIENCE, subject to checking the actual student record. “Statistics” is the department name; the older “Statistics and Applied Mathematics” appearing in historical dissertations is not copied into this candidate's metadata. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/) [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
 
-The 2021-2022 catalog describes an advisor or coadvisors plus at least two additional readers, explicitly yielding at least four committee members with two coadvisors. The current catalog permits two graduate-faculty coadvisors plus at least one additional graduate-faculty reader. Conditions differ for an external coadvisor. Both require the prescribed approvals. These are differences in policy text, not evidence that the candidate's committee must now be changed. Obtain the existing approved reading-committee record and a program/Graduate Division determination of the applicable rule. Four illustrative metadata slots make no appointment or approval. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
+The 2021-2022 catalog describes an advisor or coadvisors plus at least two
+additional readers, while the current catalog uses different coadvisor
+language. The candidate-specific administrative record now controls this
+question: Graduate Division approved the revised four-member committee and
+updated AIS on 2026-10-09, with Raquel Prado first as chair, followed by Bruno
+Sansó, Paul Parker, and Athanasios Kottas. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
 
-The complete current Graduate Division checklist and Baskin planning page were inaccessible during repeated retrieval attempts. The Registrar's catalog-linked calendar was also unavailable. No Fall 2026 deadline, defense-announcement lead time, current dean name, or current signature route is asserted. Searches did not establish a UCSC dissertation-specific generative-AI disclosure rule; that is an evidence gap, not a finding that no policy exists. No policy from another campus or an undergraduate catalog-rights policy is substituted. [U1](https://graduate.ucsc.edu/) [U2](https://grad.engineering.ucsc.edu/advising/planning-to-graduate/) [U3](https://registrar.ucsc.edu/calendars-resources/academic-calendar/)
+Candidate-specific Graduate Division instructions establish December 11, 2026
+as the deadline to complete all requirements; require an unsigned ProQuest
+copy and a separately emailed, single-page title page bearing the committee
+signatures; require the Survey of Earned Doctorates and UCSC Exit Survey; and
+identify Donald Smith's exact title. Defense correspondence establishes
+November 30, 2026 at 10:00 a.m. Pacific. The planned November 6 delivery is
+only 24 days before the defense, however, and no reviewed record expressly
+waives the catalog's one-month delivery rule. Obtain a written program
+determination. Searches still did not establish a UCSC dissertation-specific
+generative-AI disclosure rule. [U1](https://graduate.ucsc.edu/) [U2](https://grad.engineering.ucsc.edu/advising/planning-to-graduate/) [U3](https://registrar.ucsc.edu/calendars-resources/academic-calendar/)
 
 ## 2. Formatting and deposit decisions
 
@@ -44,7 +67,16 @@ Landscape content must retain a correctly oriented portrait-positioned page numb
 
 Order: integrated title/approval page; copyright or blank leaf; contents; figure/table lists when applicable; abstract; optional dedication/acknowledgments; text; endnotes if used; appendices; supplement list if applicable; final bibliography. The demonstration includes acknowledgment instructions because coauthored reuse is likely, and a blank second leaf. It adds no separate approval page that would shift the contents to iv. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
 
-The official title-page sample is the model for institution, degree and conferral-date layout. The filed title page is unsigned; current collection of signatures must be confirmed separately. The starter deliberately replaces approval assertions with an unconfirmed block. For Fall conferral the guide prescribes December on the title page, regardless of the defense month; the quarter itself is not yet confirmed. The author supplied the long name “Jose Antonio Aguirre Perez de Leon”; its match to the final university record and any required diacritics should still be checked before filing. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
+The official title-page sample is the model for institution, degree and date
+layout. The signed degree application confirms the university-record name and
+Fall 2026 application; the current guide and candidate instructions therefore
+fix the displayed date as December 2026. They also fix the dean block as Donald
+Smith, with `Interim Vice Provost and Dean of Graduate Studies` beneath his
+name. The ProQuest copy is unsigned; the separately emailed approval page must
+carry all committee signatures on one page. The draft deliberately avoids an
+approval assertion until that future approval. The exact dissertation title
+was not found and remains the sole unresolved bibliographic field on page one.
+[G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf)
 
 The abstract has its own heading, dissertation title and author, double spacing and Roman numbering. The guide does not impose a hard PDF abstract word limit; it recommends staying within 350 words for print indexing. A global dissertation abstract is necessary even when source articles have abstracts. Dedication is optional. Acknowledgments must accurately handle contributions and reuse when those provisions apply. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
 
@@ -121,35 +153,55 @@ Open the dissertation as the active Codex working project on muscat and verify t
 
 ## 7. Completion plan and decisions
 
-Let D be the unconfirmed defense date and F the confirmed final-acceptance deadline for the intended conferral term. **D minus one month is the catalog's completed-dissertation delivery requirement**, not merely a suggested outline review. Do not replace “one month” with a guessed fixed day count. Work backward from both D and F; a late defense can leave too little time for revisions even if the one-month rule is met. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
+The defense is confirmed for November 30, 2026 and Graduate Division's
+completion deadline is December 11, 2026. The catalog states that the completed
+dissertation must reach the reading committee at least one month before the
+defense. The correspondence instead records a planned November 6 delivery, a
+24-day interval. Do not treat the committee's scheduling agreement as an
+implicit waiver; obtain a written program determination and, if necessary,
+move delivery earlier or adjust the defense. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
 
 | When / priority | Action and responsible party | Evidence or output |
 |---|---|---|
-| Now | Candidate and Statistics graduate coordinator confirm approved committee, degree record and applicable cohort rules. | Existing committee appointment plus documented determination; metadata updated. |
-| Now | Candidate and Graduate Division obtain current guideline/checklist and Fall 2026 dates. | Verified application, initial filing, correction and final-acceptance deadlines; signature/dean instructions. |
+| Now | Candidate supplies the exact dissertation title and checks that MyUCSC names the degree field Statistical Science. | Final page-one title and candidate-specific degree-record comparison. |
+| Immediate | Candidate obtains a written program determination on the November 6 delivery / November 30 defense interval. | Confirmation of compliance, earlier delivery, or revised defense date. |
 | Before substantive drafting | Candidate runs the Codex source audit and decides the chapter plan with advisors. | Contribution inventory, source-to-chapter map and resolved overlap questions. |
 | Planning buffer: roughly D minus 8-10 weeks | Send advisors a coherent full draft and settle major gaps. This is an editorial buffer, not a UCSC deadline. | Reviewed dissertation-level argument and revision plan. |
-| No later than D minus one month | Deliver the completed dissertation to the reading committee. | Dated delivery record and complete version. |
-| Before D, exact lead time unresolved | Arrange public announcement and defense logistics with Statistics/Baskin. | Approved date, venue, announcement and required forms. |
-| D and afterward, before F | Public presentation, private examination, requested revisions, signatures and filing checks. | Committee-approved final version, administrative forms, current surveys/checklist. |
-| Before applicable term deadlines | Apply for graduation; obtain any formatting precheck; submit to ProQuest; address corrections and verify final acceptance. | Actual acceptance, not just an upload receipt. |
+| At the program-confirmed compliant date | Deliver the completed dissertation to the reading committee. | Dated delivery record and complete version. |
+| Before November 30 | Confirm venue, public announcement, and defense logistics with Statistics/Baskin. | Published announcement, venue/link, and required forms. |
+| November 30 and afterward | Public presentation, private examination, requested revisions, and signatures. | Committee-approved final version and one-page signed title page. |
+| By December 11 | Submit through ProQuest, email the signed title page, complete both required surveys, address formatting corrections, and verify final acceptance. | Actual acceptance, not just an upload receipt. |
 
 Unresolved decisions are intentionally narrow:
 
-1. **Statistics graduate director/coordinator and Graduate Division:** Which reading-committee rule governs this Fall 2021 entrant, and what is the currently approved committee with exact chair/cochair roles? The two catalogs differ.
-2. **Advisors/program:** Do the three proposed research units count as sufficiently distinct journal-suitable chapters? May material from one paper be divided, and how should overlap and coauthored contributions be documented? No manuscript audit has yet answered this.
-3. **Graduate Division, via the Library-listed `gss-group@ucsc.edu`:** Is the July 2021 Library-linked guide still the controlling preparation document? Supply the current checklist, title sample, dean wording, signature route and all Fall 2026 filing milestones. Inaccessible pages prevent reliable current answers.
-4. **Candidate:** Confirm official full name, final title, intended conferral quarter, defense date, approved committee record and authoritative local manuscript versions. A Fall plan alone does not finalize title-page dates.
-5. **Advisors/program and appropriate research policy office:** What current rules and disclosures apply to AI-assisted dissertation research, writing and editing? Keep an assistance log meanwhile; do not invent an institutional disclosure statement.
-6. **Candidate/coauthors/Library research support:** Which articles and figures will be reused, what versions and rights apply, and is an embargo needed? The Library lists `research@library.ucsc.edu` for publication questions. Public GitHub access is insufficient evidence of these permissions. [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
+1. **Candidate:** Supply the exact dissertation title and confirm the MyUCSC
+   degree-field label. The university-record name, Fall 2026 term, committee,
+   December 2026 date, and dean wording are resolved.
+2. **Statistics program:** Confirm in writing whether the planned November 6
+   delivery satisfies the one-month rule for the November 30 defense; otherwise
+   establish an earlier delivery or revised defense date.
+3. **Advisors/program:** Confirm that the four implemented project chapters are
+   sufficiently distinct journal-suitable units and approve the detailed
+   candidate-contribution statements.
+4. **Candidate/coauthors/rights holders:** Complete the required acknowledgment
+   of reused coauthored material, granular candidate contributions, applicable
+   permissions, and any embargo decision. Public GitHub access is insufficient
+   evidence of permission. [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
+5. **Advisors/program and appropriate research policy office:** Determine any
+   current disclosure required for AI-assisted writing and editing. Keep the
+   assistance log meanwhile; do not invent an institutional statement.
 
 No messages were sent, remote repositories created, Overleaf projects linked, or research repositories edited. The delivered package completes the requirements-and-scaffold stage; substantive drafting begins only after the concrete source audit and chapter decision described in `docs/CODEX-KICKOFF.md`.
 
 ## 8. Source register and reproducibility
 
-Every source below was accessed or attempted on 2026-09-15. Dates describe the document, not the crawler. Complete structured metadata is in `docs/source-register.json`. G1 was downloaded in full; policy pages and product documentation were read; the three dissertation examples were examined at the specified passages. Template commits are pinned. Repository checks were metadata-only. Unavailable sources are explicitly retained to show the evidence gap.
+The original sources were accessed or attempted on 2026-09-15; G1 and the
+candidate-specific administrative evidence were refreshed on 2026-10-28.
+Dates describe the document, not the crawler. Complete public structured
+metadata is in `docs/source-register.json`; private messages and forms are not
+stored in this repository.
 
-**G1 - [Dissertation and Thesis Preparation Guidelines](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf).** UCSC Division of Graduate Studies. July 2021 revision printed in PDF; Library currently links this copy. Locator: All 11 PDF pages, including title-page sample on p. 10. Full PDF downloaded and read; current linked copy, not proof that no newer rule exists.
+**G1 - [Dissertation and Thesis Preparation Guidelines](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf).** UCSC Division of Graduate Studies. July 2026. Locator: All 12 PDF pages, including title-page sample on p. 11. Full current PDF read; Graduate Division supplied the same URL to the candidate on 2026-10-15.
 
 **P1 - [Statistical Science Ph.D., current General Catalog](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/).** UCSC Statistics / General Catalog. 2026-2027 catalog at access. Locator: Dissertation; Dissertation Reading Committee; Applying for Graduation. Full program text read.
 

@@ -79,9 +79,24 @@ record establish the following order and role:
 4. Athanasios Kottas.
 
 This resolves committee membership and the chair designation for the current
-draft. It does not constitute approval of the dissertation, settle the final
-title or conferral date, identify the current dean/signature wording, or resolve
-the separate substantive judgment about how the research chapters count.
+draft. The signed Fall 2026 degree application and Graduate Division's current
+filing notice also establish the title-page date as December 2026 and the dean
+block as Donald Smith, Interim Vice Provost and Dean of Graduate Studies. These
+records do not constitute approval of the dissertation, settle the final title,
+provide committee signatures, or resolve the separate substantive judgment
+about how the research chapters count.
+
+## G2 — filing and defense dates
+
+The candidate's approved scheduling correspondence records the defense for
+Monday, November 30, 2026 at 10:00 a.m. Pacific and a planned delivery of the
+complete dissertation on Friday, November 6. The 24-day interval is shorter
+than the catalog statement that the completed dissertation must reach the
+reading committee at least one month before the defense. Committee agreement
+to the meeting and delivery dates is documented, but no record reviewed here
+expressly waives or interprets the catalog rule. The candidate should obtain a
+written determination from Statistics Graduate Advising or the appropriate
+program authority before relying on the November 6 date.
 
 ## G2 — documented collaborators and project contributions
 

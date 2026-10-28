@@ -21,8 +21,8 @@ the complete rule-to-check mapping readable.
 | A01 | metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE | Compare MyUCSC and approved title page | Program verified; personal record unresolved |
 | A02 | Four confirmed committee names; Raquel Prado listed first as chair | Compare metadata and title-page block with approved nomination | Verified against the Graduate Division-approved revised committee |
 | A03 | Four substantive project chapters, an integrative introduction and synthesis, and connected technical appendices | Advisor/program assessment of independent contributions and counting | Program text verified; four substantive project chapters implemented; committee counting judgment pending |
-| A04 | No LaTeX change; completion plan | Dated delivery of complete version relative to confirmed D | Rule verified; defense date unresolved |
-| A05 | No LaTeX change | Program scheduling and current forms | Format verified; dates/announcement open |
+| A04 | No LaTeX change; completion plan | Dated delivery of complete version relative to confirmed D | Defense confirmed for 2026-11-30; planned 2026-11-06 delivery is 24 days earlier and requires a written program determination |
+| A05 | No LaTeX change | Program scheduling and current forms | Defense time confirmed for 2026-11-30 at 10:00 a.m. Pacific; venue/announcement record remains open |
 
 ## Page layout
 
@@ -67,8 +67,8 @@ the complete rule-to-check mapping readable.
 | F01 Order | Title; copyright/blank; contents; lists; abstract; dedication/acknowledgments; text; conditional endnotes; appendices; conditional supplement list; bibliography. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 4, Order of required/optional sections |
 | F02 Pagination | Title i and second leaf ii counted, numbers hidden; TOC starts iii; Roman front matter; Arabic 1 restarts main text and continues through end. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 2, 4, 6 |
 | F03 Title/approval | Use required institution/degree wording and integrated approval sample; filed PDF unsigned. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 4 and sample p. 10 |
-| F04 Name and dates | Full candidate name; title-page date follows conferral quarter: March/June/September/December. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 4-6 |
-| F05 Dean and signatures | Current dean, title, signatory and routing must be verified; 2021 personnel/process may be stale. | unresolved | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 4 and sample p. 10; compare U1 |
+| F04 Name and dates | Full candidate name; title-page date follows conferral quarter: March/June/August/December. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf); pp. 4-5 |
+| F05 Dean and signatures | For Fall 2026 use Donald Smith with `Interim Vice Provost and Dean of Graduate Studies` below his name; ProQuest copy unsigned; email one separately signed title page to Graduate Division. | current university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf); pp. 4, 11; candidate-specific Graduate Division instructions dated 2026-10-15 |
 | F06 Copyright leaf | Copyright notice optional; otherwise retain a blank counted second leaf. | university requirement / optional notice | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 6 |
 | F07 Abstract | Global abstract with heading/title/name, double spacing and Roman numbering. No hard PDF word cap found; <=350 is indexing recommendation. | university requirement / official recommendation | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 6-7 |
 | F08 Dedication/acknowledgments | Optional personal pages; reuse/contribution requirements can make acknowledgments necessary for reused material. | university requirement (conditional) / optional | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 3, 6-7 |
@@ -78,9 +78,9 @@ the complete rule-to-check mapping readable.
 |---|---|---|---|
 | F01 | Explicit main.tex sequence; unused optional sections absent | Compare PDF sequence and source root | Implemented |
 | F02 | pagenumbering roman; empty first two; Arabic reset before chapter 1 | PDF labels, extracted footer numbers and visual review | Implemented; tested |
-| F03 | Adapted integrated title block with confirmed reading committee; starter does not assert dissertation approval | Current sample, confirmed committee, and final approval comparison | Committee metadata verified; dissertation title and approval remain open |
-| F04 | Central placeholders; planned Fall would use December only after confirmation | Student record and conferral term | Unresolved personal fields |
-| F05 | Dean placeholders; no signature images | Graduate Division current instructions | Open; historical names deliberately not copied |
+| F03 | Adapted integrated title block with confirmed reading committee; starter does not assert dissertation approval | Current sample, confirmed committee, and final approval comparison | Committee/date/dean metadata verified; dissertation title and approval remain open |
+| F04 | University-record name and December 2026 title-page date centralized in metadata.tex | Signed Fall 2026 degree application and current filing notice | Name and title-page date verified; final title remains open |
+| F05 | Donald Smith and exact two-line title centralized; no signature images | Current guide and candidate-specific Graduate Division instructions | Dean wording and unsigned ProQuest route verified; committee approval/signatures remain future actions |
 | F06 | Blank page ii, no printed number | PDF second page and numbering | Implemented; notice decision remains author choice |
 | F07 | Class abstract environment with 319-word dissertation-level abstract | Word count, compiled layout and rendered-page review | Substantive draft implemented; final title remains unresolved |
 | F08 | Acknowledgment instructions only; no dedication | Author content and rights/contribution review | No acknowledgments invented |
@@ -140,14 +140,14 @@ the complete rule-to-check mapping readable.
 
 | ID / topic | Rule and applicability | Authority | Source / locator |
 |---|---|---|---|
-| C01 Graduation/filing dates | Application, initial submission, correction and final acceptance are separate milestones; exact Fall 2026 dates unverified. | unresolved | [U3](https://registrar.ucsc.edu/calendars-resources/academic-calendar/); Current calendar inaccessible; G1 pp. 1, 8 |
-| C02 Revisions/signatures/surveys | Obtain approvals and required submission materials; older guide describes surveys and signed title routing. Confirm current checklist. | university requirement / unresolved current procedure | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 4, 8; U1 |
+| C01 Graduation/filing dates | Fall 2026 candidates must complete requirements by December 11, 2026; upload, formatting review/corrections, and final acceptance remain distinct milestones. | current candidate-specific university instruction | Graduate Division candidate email dated 2026-10-15; [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf), pp. 1, 9 |
+| C02 Revisions/signatures/surveys | Submit through ProQuest; email the separately signed title page to Graduate Division; complete the Survey of Earned Doctorates and UCSC Exit Survey; remain responsive through final acceptance. | current university requirement | Graduate Division candidate email dated 2026-10-15; [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf), pp. 4, 9 |
 | C03 Article/coauthor reuse | Department/committee approval, integrative account, candidate contribution and applicable coauthor/copyright permissions. | university requirement (conditional) | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 3, Previously published material |
 | C04 AI use/disclosure | No dissertation-specific UCSC rule established in accessible sources; confirm actual policy. | unresolved | [U1](https://graduate.ucsc.edu/); Current policy evidence unavailable |
 
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
-| C01 | Relative completion plan; no guessed dates | Registrar/Graduate Division current calendar/checklist | Open |
-| C02 | No signatures or forms generated | Graduate Division current forms; final accepted record | Open current procedure |
+| C01 | December 11, 2026 completion deadline recorded; no submission automation | Graduate Division formatting correspondence and final acceptance record | Deadline verified; actual upload, corrections, and acceptance remain open |
+| C02 | No signatures or forms generated; unsigned public build retained | One-page signed title page, both survey receipts, and final accepted record | Current procedure verified; completion evidence remains open |
 | C03 | Controlled imports, derivative ledger, acknowledgments and manifest | Actual article/version, contribution records and agreements | Controlled manuscript derivatives are present; material-specific coauthor/publisher reuse permission remains unverified |
 | C04 | Assistance log only; no invented formal disclosure | Advisors/program and relevant current policy office | Open |

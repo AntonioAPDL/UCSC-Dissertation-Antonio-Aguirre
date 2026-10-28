@@ -119,9 +119,10 @@ longer part of the document; the active scientific appendices are in
 `appendices/a-shared-conventions.tex` through
 `appendices/e-mti-technical.tex`. The consolidated bibliography is generated from
 the fixed manuscript snapshots plus the two administrative starter records.
-Do not disable `\StarterDrafttrue` until the final title, committee, dean,
-conferral date, acknowledgments, role statements, and reuse decisions have been
-confirmed and the filing version has been checked.
+Do not disable `\StarterDrafttrue` until the final title, dissertation approval,
+acknowledgments, role statements, and reuse decisions have been confirmed and
+the filing version has been checked. The committee, December 2026 date, and
+current dean wording are confirmed in `metadata.tex`.
 
 ## Portability and provenance
 
