@@ -199,7 +199,7 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 2, 4, 6",
-    "proposed_latex_implementation": "pagenumbering roman; empty first two; Arabic reset before chapter 1",
+    "proposed_latex_implementation": "pagenumbering roman; title/copyright leaves unnumbered; Arabic reset before chapter 1",
     "verification_method": "PDF labels, extracted footer numbers and visual review",
     "status": "Implemented; tested"
   },
@@ -211,9 +211,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
     "source_locator": "p. 4 and sample p. 11",
-    "proposed_latex_implementation": "Adapted integrated title block with confirmed committee; starter does not assert approval",
-    "verification_method": "Current sample, confirmed committee, and final approval comparison",
-    "status": "Committee/date/dean metadata verified; dissertation title and approval remain open"
+    "proposed_latex_implementation": "Integrated title block uses the official unsigned approval wording and confirmed committee; no signature images",
+    "verification_method": "Current sample, confirmed committee, and final signed-page comparison",
+    "status": "Title/committee/date/dean metadata verified; signatures and institutional approval remain open"
   },
   {
     "id": "F04",
@@ -271,9 +271,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 3, 6-7",
-    "proposed_latex_implementation": "Acknowledgment instructions only; no dedication",
+    "proposed_latex_implementation": "Optional acknowledgment and dedication pages omitted from the committee copy",
     "verification_method": "Author content and rights/contribution review",
-    "status": "No acknowledgments invented"
+    "status": "No drafting instructions or invented acknowledgments appear; required contribution/reuse language remains open"
   },
   {
     "id": "F09",

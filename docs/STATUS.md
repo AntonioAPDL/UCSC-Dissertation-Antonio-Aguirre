@@ -1,5 +1,37 @@
 # Project status
 
+## 2026-10-28 committee-facing copy cleanup
+
+The compiled dissertation now presents only reader-facing material suitable
+for circulation to the Dissertation Reading Committee. The title page uses the
+official July 2026 UCSC sample wording, `The Dissertation of [candidate] is
+approved:`, with unsigned rules for the four confirmed committee members and
+the dean. The internal `FORMATTING STARTER` and `Not for submission` banner has
+been removed. This is the required unsigned approval-page form; actual approval
+still depends on committee signatures and the university process.
+
+The optional acknowledgment section is omitted until the author supplies
+approved text. Its former `TODO` instructions no longer appear in the compiled
+document. The PDF subject metadata no longer labels the dissertation a draft,
+and internal production wording in the introduction and synthesis has been
+replaced by reader-facing statements without changing any scientific claim.
+Pending contribution/reuse acknowledgments, permissions, signatures, and
+accessibility work remain explicit in repository documentation rather than in
+the committee copy.
+
+The accepted ignored artifact is
+`build/release-20261029T003603Z/main.pdf`: 253 US-Letter pages, 16,490,993
+bytes, PDF 1.7, SHA-256
+`9e66646575830c2c363dba98f5602dcec87658bfd6ec01d132d7558fdb0e0149`.
+All 18 tests and the chapter validation gate passed. The final log has 25
+underfull-box notices, zero overfull boxes, and zero blocking diagnostics; all
+32 font rows are embedded and no Type 3 font occurs. A full extracted-text scan
+found none of the targeted drafting or production markers. The title,
+copyright, abstract-opening, and Chapter 1 opening pages were rasterized and
+inspected without clipping, collision, abnormal spacing, or missing content.
+The PDF remains untagged, so this is a committee-facing copy rather than the
+accessibility-validated filing artifact.
+
 ## 2026-10-28 dissertation title and copyright selected
 
 The final title is **Statistical Inference for Conditional Quantiles and
@@ -21,7 +53,8 @@ The author selected the standard copyright notice. Page ii now displays
 arrangement. This notice does not assert that the optional ProQuest copyright-
 registration service has been purchased. Personal and required reuse/
 contribution acknowledgments remain unwritten, and dissertation approval and
-signatures remain future actions; `\StarterDrafttrue` therefore remains active.
+signatures remain future actions. The later committee-copy cleanup above keeps
+those items in the internal status record without printing a drafting banner.
 
 The fresh release gate passed all 18 tests and rechecked all 102 immutable
 source blobs. The accepted ignored artifact is
@@ -72,7 +105,8 @@ other located correspondence. The later author-selected title and copyright
 entry above supersedes this historical open-title state. Dissertation
 approval/signatures, required reuse/contribution acknowledgments,
 material-specific permissions, and the tagged-PDF accessibility review remain
-open, so `\StarterDrafttrue` remains active.
+open. The later committee-copy cleanup above supersedes the visible draft mode
+used for this historical release.
 
 The full release gate passed all 18 tests and rechecked all 102 immutable
 source blobs from fresh temporary no-checkout audit clones. The accepted
@@ -102,8 +136,9 @@ names and that confirmed chair role.
 This administrative update does not assert that the dissertation itself has
 been approved. The official dissertation title, signatures, acknowledgments,
 ORCID, reuse permissions, and tagged-PDF accessibility review remain open.
-`\StarterDrafttrue` therefore remains active. The later filing-metadata entry
-above supersedes this entry's then-open date and dean fields.
+At this historical release, `\StarterDrafttrue` therefore remained active. The
+later filing-metadata and committee-copy entries above supersede its then-open
+fields and visible draft mode.
 
 The release gate passed all 18 tests and all 102 immutable source-blob checks.
 The accepted ignored artifact is

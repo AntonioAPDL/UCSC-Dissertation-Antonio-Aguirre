@@ -1,6 +1,8 @@
-# UCSC dissertation starter
+# UCSC Statistical Science dissertation
 
-Audited 2026-09-15. **Formatting starter, not a dissertation approved for filing.**
+Established 2026-09-15 and continuously audited. This repository contains the
+working dissertation source; institutional approval and filing remain separate
+administrative outcomes.
 
 Start with `docs/REQUIREMENTS-REPORT.md`, then `docs/WORKFLOW.md`. The report
 contains the completion plan and specific questions for the candidate,
@@ -113,17 +115,19 @@ test.
 
 The chapters directory contains a substantive introduction, four converted and
 scientifically revised research chapters, and a dissertation-wide synthesis.
-The global abstract is drafted; the acknowledgments remain an author task. The
-blank second leaf is intentional. The starter demonstration appendix is no
-longer part of the document; the active scientific appendices are in
+The global abstract is drafted. Optional acknowledgments are omitted from the
+compiled committee copy until author-approved text is available, and the second
+leaf contains the author-selected copyright notice. The starter demonstration
+appendix is no longer part of the document; the active scientific appendices are in
 `appendices/a-shared-conventions.tex` through
 `appendices/e-mti-technical.tex`. The consolidated bibliography is generated from
 the fixed manuscript snapshots plus the two administrative starter records.
-Do not disable `\StarterDrafttrue` until dissertation approval,
-acknowledgments, role statements, and reuse decisions have been confirmed and
-the filing version has been checked. The title, degree field, committee,
-December 2026 date, current dean wording, and copyright notice are confirmed in
-the front-matter sources.
+The title page follows the official unsigned approval-page wording and contains
+no signature images. The title, degree field, committee, December 2026 date,
+current dean wording, and copyright notice are confirmed in the front-matter
+sources. Approval, contribution acknowledgments, reuse decisions, and the
+filing-version accessibility check remain tracked in the project documentation
+rather than printed as drafting notices in the dissertation.
 
 ## Portability and provenance
 

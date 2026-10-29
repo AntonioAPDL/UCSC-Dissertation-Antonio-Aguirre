@@ -1,5 +1,39 @@
 # Validation record
 
+## 2026-10-28 committee-facing copy release
+
+The reader-facing cleanup was validated with the chapter gate and a fresh
+timestamped build. All 18 tests passed; the research, editorial, manuscript-
+import, and active-structure validators passed; all 116 cited keys resolved;
+and the active graph contains 42 TeX files, 257 labels, six migration records,
+and 30 visual records. The one-file reduction is the intentionally inactive
+optional acknowledgment source.
+
+The accepted ignored artifact is
+`build/release-20261029T003603Z/main.pdf`: 253 US-Letter pages, 16,490,993
+bytes, PDF 1.7, SHA-256
+`9e66646575830c2c363dba98f5602dcec87658bfd6ec01d132d7558fdb0e0149`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 32 font
+rows are embedded, no Type 3 font occurs, and the file is searchable and
+unencrypted. Its title, author, and subject metadata identify the dissertation
+without a draft label. The PDF remains untagged.
+
+A complete extracted-text scan found no instance of the targeted starter
+banner, submission warning, TODO/placeholder language, internal validation or
+migration terms, or collaboration-tool names. The sole match for `repository`
+is a cited NOAA URL and is not production language. Physical pages 1, 2, 21,
+and 23 were rasterized at 150 dpi. Direct inspection confirmed the official
+unsigned approval wording and natural line spacing for the long candidate
+name, the copyright notice, the abstract header, and the direct transition from
+the abstract to Chapter 1. There is no empty or instructional acknowledgment
+page and no clipping, collision, malformed glyph, or missing material.
+
+This is a committee-facing release, not proof of committee approval or filing
+acceptance. Signatures, final contribution/reuse acknowledgments and
+permissions, and WCAG 2.1 AA validation of a tagged filing PDF remain separate
+requirements.
+
 ## 2026-10-28 dissertation-title and copyright release
 
 The author-selected dissertation title and copyright notice were validated in

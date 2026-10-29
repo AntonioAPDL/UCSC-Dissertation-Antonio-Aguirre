@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-10-26 current-source refresh supersedes the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The essential-appendix revision is on main at 6541686e44891982dbc4591ed11558d2f87ccc9a. The final comprehensive polish passed full local release validation and rendered review, was fast-forwarded into main, and passed the local/tracking/remote branch equality check at the release-bearing commit 8ebd827b6fdefea70a6ad7282a23ca86cb22ae94. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission remains unverified."
+    "state_note": "The 2026-10-26 current-source refresh supersedes the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The essential-appendix revision and final comprehensive polish are integrated on main. The committee-facing cleanup removes drafting notices and the instructional acknowledgment page, uses the official unsigned approval wording, and passed local chapter validation and rendered review in the recorded release. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission, final contribution/reuse acknowledgments, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -156,6 +156,37 @@
         "dissertation approval and committee signatures",
         "required reuse and contribution acknowledgments",
         "tagged-PDF accessibility review"
+      ]
+    },
+    "committee_copy_cleanup": {
+      "state": "RELEASE_VALIDATED",
+      "authority": "Author direction and the July 2026 UCSC dissertation title-page sample",
+      "reader_facing_changes": [
+        "removed the formatting-starter and not-for-submission banner",
+        "used the official unsigned approval-page wording",
+        "omitted the optional acknowledgment section until author-approved text exists",
+        "removed the draft label from PDF subject metadata",
+        "replaced internal production wording in the introduction and synthesis"
+      ],
+      "release": {
+        "path": "build/release-20261029T003603Z/main.pdf",
+        "sha256": "9e66646575830c2c363dba98f5602dcec87658bfd6ec01d132d7558fdb0e0149",
+        "pages": 253,
+        "bytes": 16490993,
+        "pdf_version": "1.7",
+        "tracked": false
+      },
+      "rendered_review": [
+        "title page",
+        "copyright page",
+        "abstract opening",
+        "Chapter 1 opening"
+      ],
+      "open_fields": [
+        "committee signatures and institutional approval",
+        "final contribution and reuse acknowledgments",
+        "material-specific reuse permissions",
+        "tagged-PDF accessibility validation"
       ]
     }
   },
