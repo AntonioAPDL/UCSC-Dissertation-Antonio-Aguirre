@@ -33,6 +33,13 @@ embedded, and no Type 3 font occurs. Rendered inspection of the title,
 copyright, and abstract-opening pages found no clipping, collision, malformed
 glyph, or inconsistent identifying text. The PDF remains untagged.
 
+The release-bearing commit
+`7e890a16d622120b21b0f6da233f16f710d8ad30` was committed directly to
+`main` after confirming zero remote divergence and was pushed to GitHub by a
+fast-forward update. No branch merge was necessary. This documentation-only
+synchronization record follows that release commit; an Overleaf pull and
+independent compile remain separate user actions.
+
 ## 2026-10-28 Fall 2026 filing metadata confirmed
 
 The signed doctoral-degree application confirms the university-record name,

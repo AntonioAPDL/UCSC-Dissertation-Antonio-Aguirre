@@ -134,8 +134,9 @@
       ]
     },
     "title_and_copyright_update": {
-      "state": "RELEASE_VALIDATED",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "authority": "Author direction after dissertation-wide scope review; degree field cross-checked against entry-year and current UCSC catalogs and the July 2026 filing guide",
+      "release_bearing_sync_commit": "7e890a16d622120b21b0f6da233f16f710d8ad30",
       "dissertation_title": "Statistical Inference for Conditional Quantiles and Fixed-Content Intervals: Models, Computation, and Applications",
       "copyright_notice": "Copyright © by Jose Antonio Aguirre Perez de Leon 2026",
       "release": {
