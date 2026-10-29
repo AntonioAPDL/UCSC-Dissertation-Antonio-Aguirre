@@ -32,6 +32,13 @@ inspected without clipping, collision, abnormal spacing, or missing content.
 The PDF remains untagged, so this is a committee-facing copy rather than the
 accessibility-validated filing artifact.
 
+The release-bearing commit
+`c8d255c4c1536ec9e6968691dc0d5429efef139f` was committed directly to
+`main` after confirming zero remote divergence and pushed to GitHub by a
+fast-forward update. No merge commit was required. This documentation-only
+synchronization record follows that release commit; the Overleaf pull and
+independent compile remain separate user actions.
+
 ## 2026-10-28 dissertation title and copyright selected
 
 The final title is **Statistical Inference for Conditional Quantiles and

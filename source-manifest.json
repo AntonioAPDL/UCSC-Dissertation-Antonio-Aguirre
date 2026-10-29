@@ -159,8 +159,9 @@
       ]
     },
     "committee_copy_cleanup": {
-      "state": "RELEASE_VALIDATED",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "authority": "Author direction and the July 2026 UCSC dissertation title-page sample",
+      "release_bearing_sync_commit": "c8d255c4c1536ec9e6968691dc0d5429efef139f",
       "reader_facing_changes": [
         "removed the formatting-starter and not-for-submission banner",
         "used the official unsigned approval-page wording",
