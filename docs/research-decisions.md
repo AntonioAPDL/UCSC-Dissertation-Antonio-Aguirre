@@ -98,6 +98,19 @@ expressly waives or interprets the catalog rule. The candidate should obtain a
 written determination from Statistics Graduate Advising or the appropriate
 program authority before relying on the November 6 date.
 
+## G2 — dissertation title and copyright leaf
+
+After review of the dissertation abstract, four research chapters, and common
+title conventions, the author delegated and approved the final title:
+**Statistical Inference for Conditional Quantiles and Fixed-Content Intervals:
+Models, Computation, and Applications**. The title states the two principal
+inferential object classes and signals the dissertation's methodological,
+computational, and applied scope without presenting the work as artificial
+intelligence or engineering research. The author also directed the project to
+use the standard 2026 copyright notice for Jose Antonio Aguirre Perez de Leon
+on the unnumbered, counted page ii. Copyright registration remains a separate
+optional filing decision.
+
 ## G2 — documented collaborators and project contributions
 
 The following statements come directly from author lists, correspondence or

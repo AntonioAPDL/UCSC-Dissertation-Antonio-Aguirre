@@ -29,7 +29,14 @@ University formatting and deposit instructions govern the submitted document; th
 
 This audit uses six categories: university requirement, program requirement, official recommendation, observed practice, implementation choice, and unresolved. A program's use of “should” is retained as an expectation rather than rewritten as “must.” Each matrix row records its scope, source, implementation and check. No universal precedence rule or graduate catalog-rights rule was verified that resolves every conflict by date.
 
-The formal catalog program is **Statistical Science Ph.D.** The guide lists **Statistical Science** among degree fields. The title page therefore uses DOCTOR OF PHILOSOPHY in STATISTICAL SCIENCE, subject to checking the actual student record. “Statistics” is the department name; the older “Statistics and Applied Mathematics” appearing in historical dissertations is not copied into this candidate's metadata. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/) [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
+The formal program and degree field are **Statistical Science Ph.D.** The Fall
+2021 entry-year catalog and current catalog both use that exact program name
+and state that students obtain a Ph.D. in statistical science; the July 2026
+guide lists Statistical Science among the permitted title-page disciplines.
+The title page therefore correctly uses DOCTOR OF PHILOSOPHY in STATISTICAL
+SCIENCE. “Statistics” is the department name, not the degree field, and the
+older “Statistics and Applied Mathematics” field does not apply to this
+candidate's entry-year program. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/) [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf)
 
 The 2021-2022 catalog describes an advisor or coadvisors plus at least two
 additional readers, while the current catalog uses different coadvisor
@@ -74,8 +81,11 @@ fix the displayed date as December 2026. They also fix the dean block as Donald
 Smith, with `Interim Vice Provost and Dean of Graduate Studies` beneath his
 name. The ProQuest copy is unsigned; the separately emailed approval page must
 carry all committee signatures on one page. The draft deliberately avoids an
-approval assertion until that future approval. The exact dissertation title
-was not found and remains the sole unresolved bibliographic field on page one.
+approval assertion until that future approval. The author-selected title is
+**Statistical Inference for Conditional Quantiles and Fixed-Content Intervals:
+Models, Computation, and Applications**. It matches the dissertation abstract,
+four research units, and statistically oriented scope; page one now has no
+unresolved bibliographic field.
 [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf)
 
 The abstract has its own heading, dissertation title and author, double spacing and Roman numbering. The guide does not impose a hard PDF abstract word limit; it recommends staying within 350 words for print indexing. A global dissertation abstract is necessary even when source articles have abstracts. Dedication is optional. Acknowledgments must accurately handle contributions and reuse when those provisions apply. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
@@ -84,7 +94,14 @@ The bibliography is last, after appendices, and alphabetized by author. The guid
 
 ### Submission, reuse and distribution
 
-The Library describes submission through ProQuest and automatic forwarding to eScholarship. The paid ProQuest open-access option, copyright registration service and printed copies are optional; the ordinary route provides eScholarship open access without those purchases. Copyright notice, ownership and paid registration are different concepts. A blank copyright leaf does not waive copyright. Initial embargo choices are six months, one year or two years; the Library describes an extension request through Graduate Division before expiry. Metadata remains public. Verify the current selection with the candidate and any publisher agreements. [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
+The Library describes submission through ProQuest and automatic forwarding to
+eScholarship. The paid ProQuest open-access option, copyright registration
+service and printed copies are optional; the ordinary route provides
+eScholarship open access without those purchases. Copyright notice, ownership
+and paid registration are different concepts. The author selected the standard
+2026 copyright notice on page ii; this does not purchase or assert registration.
+Initial embargo choices are six months, one year or two years, and must still
+be reconciled with publisher agreements. [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
 
 The guide permits previously published/coauthored material subject to committee/department approval, suitable graduate research and an integrative account. Record the candidate's contribution, source article and applicable permissions. Advisor-only coauthorship is acknowledged; the guide contains additional permission provisions for other coauthors and copyright holders. Confirm the actual agreement and version rather than inferring permission from GitHub ownership or a software license. Reformat imported material into the dissertation's margins and continuous pagination. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
 
@@ -163,7 +180,7 @@ move delivery earlier or adjust the defense. [P1](https://catalog.ucsc.edu/en/cu
 
 | When / priority | Action and responsible party | Evidence or output |
 |---|---|---|
-| Now | Candidate supplies the exact dissertation title and checks that MyUCSC names the degree field Statistical Science. | Final page-one title and candidate-specific degree-record comparison. |
+| Now | Preserve the confirmed title, Statistical Science degree field, official name, December 2026 date, committee, and dean block through final approval. | Approved title page compared with the validated draft metadata. |
 | Immediate | Candidate obtains a written program determination on the November 6 delivery / November 30 defense interval. | Confirmation of compliance, earlier delivery, or revised defense date. |
 | Before substantive drafting | Candidate runs the Codex source audit and decides the chapter plan with advisors. | Contribution inventory, source-to-chapter map and resolved overlap questions. |
 | Planning buffer: roughly D minus 8-10 weeks | Send advisors a coherent full draft and settle major gaps. This is an editorial buffer, not a UCSC deadline. | Reviewed dissertation-level argument and revision plan. |
@@ -174,20 +191,17 @@ move delivery earlier or adjust the defense. [P1](https://catalog.ucsc.edu/en/cu
 
 Unresolved decisions are intentionally narrow:
 
-1. **Candidate:** Supply the exact dissertation title and confirm the MyUCSC
-   degree-field label. The university-record name, Fall 2026 term, committee,
-   December 2026 date, and dean wording are resolved.
-2. **Statistics program:** Confirm in writing whether the planned November 6
+1. **Statistics program:** Confirm in writing whether the planned November 6
    delivery satisfies the one-month rule for the November 30 defense; otherwise
    establish an earlier delivery or revised defense date.
-3. **Advisors/program:** Confirm that the four implemented project chapters are
+2. **Advisors/program:** Confirm that the four implemented project chapters are
    sufficiently distinct journal-suitable units and approve the detailed
    candidate-contribution statements.
-4. **Candidate/coauthors/rights holders:** Complete the required acknowledgment
+3. **Candidate/coauthors/rights holders:** Complete the required acknowledgment
    of reused coauthored material, granular candidate contributions, applicable
    permissions, and any embargo decision. Public GitHub access is insufficient
    evidence of permission. [L1](https://guides.library.ucsc.edu/etds/submitting-at-UCSC)
-5. **Advisors/program and appropriate research policy office:** Determine any
+4. **Advisors/program and appropriate research policy office:** Determine any
    current disclosure required for AI-assisted writing and editing. Keep the
    assistance log meanwhile; do not invent an institutional statement.
 

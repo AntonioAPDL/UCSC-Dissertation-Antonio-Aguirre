@@ -342,3 +342,17 @@ invented. No private message, student identifier, address, signature, or
 administrative attachment was copied into the repository. Validation used
 temporary no-checkout audit clones and rechecked all 102 immutable source
 blobs; it did not change or run research code or computation.
+
+2026-10-28: The author delegated the final dissertation-title choice and
+directed use of the standard 2026 copyright notice. AI assistance reviewed the
+dissertation-level abstract and four research chapters and selected
+“Statistical Inference for Conditional Quantiles and Fixed-Content Intervals:
+Models, Computation, and Applications” to state the two principal inferential
+targets and the methodological, computational, and applied scope. It verified
+Statistical Science against the Fall 2021 entry-year catalog, current catalog,
+and July 2026 filing guide; placed the official long name and year in the
+copyright leaf; and kept acknowledgments empty rather than inventing content.
+The clean 254-page release passed all 18 tests and all 102 immutable source-
+blob checks, has no blocking diagnostics or overfull boxes, and passed rendered
+inspection of the title, copyright, and abstract-opening pages. No scientific
+claim, research source, data, code, result, or computation changed.

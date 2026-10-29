@@ -18,7 +18,7 @@ the complete rule-to-check mapping readable.
 
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
-| A01 | metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE | Compare MyUCSC and approved title page | Program verified; personal record unresolved |
+| A01 | metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE | Compare entry-year/current catalogs, current filing guide, and final approved title page | Degree field verified across both applicable catalogs and the filing guide; final approval-page comparison remains |
 | A02 | Four confirmed committee names; Raquel Prado listed first as chair | Compare metadata and title-page block with approved nomination | Verified against the Graduate Division-approved revised committee |
 | A03 | Four substantive project chapters, an integrative introduction and synthesis, and connected technical appendices | Advisor/program assessment of independent contributions and counting | Program text verified; four substantive project chapters implemented; committee counting judgment pending |
 | A04 | No LaTeX change; completion plan | Dated delivery of complete version relative to confirmed D | Defense confirmed for 2026-11-30; planned 2026-11-06 delivery is 24 days earlier and requires a written program determination |
@@ -79,10 +79,10 @@ the complete rule-to-check mapping readable.
 | F01 | Explicit main.tex sequence; unused optional sections absent | Compare PDF sequence and source root | Implemented |
 | F02 | pagenumbering roman; empty first two; Arabic reset before chapter 1 | PDF labels, extracted footer numbers and visual review | Implemented; tested |
 | F03 | Adapted integrated title block with confirmed reading committee; starter does not assert dissertation approval | Current sample, confirmed committee, and final approval comparison | Committee/date/dean metadata verified; dissertation title and approval remain open |
-| F04 | University-record name and December 2026 title-page date centralized in metadata.tex | Signed Fall 2026 degree application and current filing notice | Name and title-page date verified; final title remains open |
+| F04 | University-record name, author-selected dissertation title, and December 2026 date centralized in metadata.tex | Signed Fall 2026 degree application, current filing notice, applicable catalogs, and author decision | Name, title, degree field, and title-page date verified; dissertation approval remains open |
 | F05 | Donald Smith and exact two-line title centralized; no signature images | Current guide and candidate-specific Graduate Division instructions | Dean wording and unsigned ProQuest route verified; committee approval/signatures remain future actions |
-| F06 | Blank page ii, no printed number | PDF second page and numbering | Implemented; notice decision remains author choice |
-| F07 | Class abstract environment with 319-word dissertation-level abstract | Word count, compiled layout and rendered-page review | Substantive draft implemented; final title remains unresolved |
+| F06 | Standard copyright notice on counted, unnumbered page ii | PDF second page, text extraction, and rendered review | Author-selected notice implemented; optional registration remains a separate filing choice |
+| F07 | Class abstract environment with 319-word dissertation-level abstract and final dissertation title/name | Word count, compiled layout and rendered-page review | Substantive abstract and identifying header implemented; final author/committee review remains |
 | F08 | Acknowledgment instructions only; no dedication | Author content and rights/contribution review | No acknowledgments invented |
 | F09 | Automatic TOC, LoF and LoT; double spacing | Resolve reruns and compare page references | Implemented and demonstrated |
 

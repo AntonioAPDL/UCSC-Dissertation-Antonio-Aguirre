@@ -1,5 +1,38 @@
 # Project status
 
+## 2026-10-28 dissertation title and copyright selected
+
+The final title is **Statistical Inference for Conditional Quantiles and
+Fixed-Content Intervals: Models, Computation, and Applications**. It is derived
+from the dissertation-level abstract and the four implemented research
+chapters: conditional-quantile models unify Chapters 2--4, fixed-content
+interval inference identifies Chapter 5, and the subtitle accurately covers
+the methodological, computational, and applied contributions without recasting
+the dissertation as engineering or artificial-intelligence research.
+
+The degree field remains `STATISTICAL SCIENCE`. This is not an inference from
+the department name: both the candidate's Fall 2021 entry-year catalog and the
+current catalog name the degree Statistical Science Ph.D., and the July 2026
+filing guide lists Statistical Science as an authorized title-page discipline.
+The title page now has no unresolved bibliographic field.
+
+The author selected the standard copyright notice. Page ii now displays
+`Copyright ©`, the official author name, and `2026` in the current UCSC sample
+arrangement. This notice does not assert that the optional ProQuest copyright-
+registration service has been purchased. Personal and required reuse/
+contribution acknowledgments remain unwritten, and dissertation approval and
+signatures remain future actions; `\StarterDrafttrue` therefore remains active.
+
+The fresh release gate passed all 18 tests and rechecked all 102 immutable
+source blobs. The accepted ignored artifact is
+`build/release-20261029T001526Z/main.pdf`: 254 US-Letter pages, 16,491,932
+bytes, SHA-256
+`9ef215b006fe4c845b9e1941e04c39258f6d9374d3d1ac99b343d4e65c1722c8`.
+It has zero overfull boxes or blocking diagnostics, all 32 font rows are
+embedded, and no Type 3 font occurs. Rendered inspection of the title,
+copyright, and abstract-opening pages found no clipping, collision, malformed
+glyph, or inconsistent identifying text. The PDF remains untagged.
+
 ## 2026-10-28 Fall 2026 filing metadata confirmed
 
 The signed doctoral-degree application confirms the university-record name,
@@ -28,11 +61,11 @@ confirm the schedule in writing.
 
 The exact dissertation title was not present in the degree application,
 committee nomination, filing instructions, defense scheduling thread, or
-other located correspondence. The title remains an explicit placeholder and
-`\StarterDrafttrue` remains active. Dissertation approval/signatures,
-required reuse/contribution acknowledgments, material-specific permissions,
-and the tagged-PDF accessibility review also remain open. The copyright leaf
-is optional and remains blank pending the author's preference.
+other located correspondence. The later author-selected title and copyright
+entry above supersedes this historical open-title state. Dissertation
+approval/signatures, required reuse/contribution acknowledgments,
+material-specific permissions, and the tagged-PDF accessibility review remain
+open, so `\StarterDrafttrue` remains active.
 
 The full release gate passed all 18 tests and rechecked all 102 immutable
 source blobs from fresh temporary no-checkout audit clones. The accepted

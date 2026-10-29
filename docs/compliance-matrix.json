@@ -8,8 +8,8 @@
     "source_url": "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/",
     "source_locator": "Program title; G1 pp. 5-6",
     "proposed_latex_implementation": "metadata.tex uses DOCTOR OF PHILOSOPHY / STATISTICAL SCIENCE",
-    "verification_method": "Compare MyUCSC and approved title page",
-    "status": "Program verified; personal record unresolved"
+    "verification_method": "Compare entry-year/current catalogs, current filing guide, and final approved title page",
+    "status": "Degree field verified across both applicable catalogs and the filing guide; final approval-page comparison remains"
   },
   {
     "id": "A02",
@@ -223,9 +223,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf",
     "source_locator": "pp. 4-5",
-    "proposed_latex_implementation": "University-record name and December 2026 title-page date centralized in metadata.tex",
-    "verification_method": "Signed Fall 2026 degree application and current filing notice",
-    "status": "Name and title-page date verified; final title remains open"
+    "proposed_latex_implementation": "University-record name, author-selected dissertation title, and December 2026 date centralized in metadata.tex",
+    "verification_method": "Signed Fall 2026 degree application, current filing notice, applicable catalogs, and author decision",
+    "status": "Name, title, degree field, and title-page date verified; dissertation approval remains open"
   },
   {
     "id": "F05",
@@ -247,9 +247,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "p. 6",
-    "proposed_latex_implementation": "Blank page ii, no printed number",
-    "verification_method": "PDF second page and numbering",
-    "status": "Implemented; notice decision remains author choice"
+    "proposed_latex_implementation": "Standard copyright notice on counted, unnumbered page ii",
+    "verification_method": "PDF second page, text extraction, and rendered review",
+    "status": "Author-selected notice implemented; optional registration remains a separate filing choice"
   },
   {
     "id": "F07",
@@ -259,9 +259,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 6-7",
-    "proposed_latex_implementation": "Class abstract environment with a 319-word dissertation-level abstract",
-    "verification_method": "Layout now; content/length after author draft",
-    "status": "A 319-word substantive abstract is present; final author and committee review pending"
+    "proposed_latex_implementation": "Class abstract environment with a 319-word dissertation-level abstract and final dissertation title/name",
+    "verification_method": "Word count, compiled layout and rendered-page review",
+    "status": "Substantive abstract and identifying header implemented; final author/committee review remains"
   },
   {
     "id": "F08",

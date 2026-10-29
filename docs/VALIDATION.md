@@ -1,5 +1,38 @@
 # Validation record
 
+## 2026-10-28 dissertation-title and copyright release
+
+The author-selected dissertation title and copyright notice were validated in
+a fresh timestamped release directory. The release used disposable
+no-checkout clones of the five explicitly authorized source repositories for
+immutable-blob verification; it did not fetch, switch, build, or modify an
+original research working tree. The gate passed all 18 tests, rechecked all
+102 imported Git blobs, resolved all 116 cited keys, and retained the
+validated graph of 43 active TeX files, 257 active labels, six migration
+records, and 30 active visual records.
+
+The accepted ignored artifact is
+`build/release-20261029T001526Z/main.pdf`: 254 US-Letter pages, 16,491,932
+bytes, PDF 1.7, SHA-256
+`9ef215b006fe4c845b9e1941e04c39258f6d9374d3d1ac99b343d4e65c1722c8`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 32 font
+rows are embedded and no Type 3 font occurs. The PDF is searchable,
+unencrypted, and untagged.
+
+Physical PDF pages 1, 2, and 21 were extracted and rasterized at 150 dpi.
+Direct inspection confirmed the complete three-line title, the Statistical
+Science degree field, the official candidate name, the centered copyright
+notice, and the matching abstract header. Text, rules, spacing, margins, and
+glyphs are legible, with no clipping or collision. Page ii remains counted
+and unnumbered. The title page still states that dissertation approval is
+unresolved; the copyright notice does not assert optional registration.
+
+This release validates local source and rendering. It does not establish
+dissertation approval, signatures, reuse permission, contribution
+acknowledgments, an accessible tagged filing PDF, or a successful Overleaf
+pull and build.
+
 ## 2026-10-28 Fall 2026 filing-metadata release
 
 The Fall 2026 date and dean update was validated from a fresh timestamped

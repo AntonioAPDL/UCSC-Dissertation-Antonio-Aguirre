@@ -129,10 +129,32 @@
       },
       "privacy_boundary": "No student identifier, address, signature, private email address, or administrative attachment is stored in the public repository.",
       "open_fields": [
-        "exact dissertation title",
         "dissertation approval and committee signatures",
-        "candidate-specific MyUCSC degree-field comparison",
         "required reuse and contribution acknowledgments"
+      ]
+    },
+    "title_and_copyright_update": {
+      "state": "RELEASE_VALIDATED",
+      "authority": "Author direction after dissertation-wide scope review; degree field cross-checked against entry-year and current UCSC catalogs and the July 2026 filing guide",
+      "dissertation_title": "Statistical Inference for Conditional Quantiles and Fixed-Content Intervals: Models, Computation, and Applications",
+      "copyright_notice": "Copyright © by Jose Antonio Aguirre Perez de Leon 2026",
+      "release": {
+        "path": "build/release-20261029T001526Z/main.pdf",
+        "sha256": "9ef215b006fe4c845b9e1941e04c39258f6d9374d3d1ac99b343d4e65c1722c8",
+        "pages": 254,
+        "bytes": 16491932,
+        "pdf_version": "1.7",
+        "tracked": false
+      },
+      "rendered_review": [
+        "title page",
+        "copyright page",
+        "abstract opening"
+      ],
+      "open_fields": [
+        "dissertation approval and committee signatures",
+        "required reuse and contribution acknowledgments",
+        "tagged-PDF accessibility review"
       ]
     }
   },
@@ -152,7 +174,7 @@
         "Paul Parker",
         "Athanasios Kottas"
       ],
-      "boundary": "Committee appointment, December 2026 title-page date, and Donald Smith dean wording are confirmed; dissertation approval, exact title, and signatures remain unresolved."
+      "boundary": "Committee appointment, dissertation title, Statistical Science degree field, December 2026 title-page date, Donald Smith dean wording, and copyright notice are confirmed; dissertation approval and signatures remain unresolved."
     },
     "fall_2026_filing": {
       "degree_application_term": "Fall 2026",
@@ -165,7 +187,10 @@
       "defense": "2026-11-30 10:00 America/Los_Angeles",
       "planned_complete_draft_delivery": "2026-11-06",
       "schedule_issue": "The planned delivery is 24 days before the defense, shorter than the catalog's stated one-month minimum; obtain a written program determination.",
-      "title_state": "not found in the reviewed administrative records or correspondence"
+      "dissertation_title": "Statistical Inference for Conditional Quantiles and Fixed-Content Intervals: Models, Computation, and Applications",
+      "title_state": "author-selected after dissertation-wide scope review",
+      "copyright_notice": "Copyright © by Jose Antonio Aguirre Perez de Leon 2026",
+      "copyright_registration_state": "optional filing decision; not asserted"
     },
     "working_architecture": [
       "exdqlm software and computational workflow",
