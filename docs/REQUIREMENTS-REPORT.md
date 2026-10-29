@@ -9,7 +9,7 @@ wording, filing deadline, and defense date are now confirmed as recorded below.
 
 ## Executive decisions
 
-The repository began as a self-contained writing foundation and now contains an integrative introduction, four substantive manuscript-derived research chapters, a synthesis, five scientific appendices, and a dissertation-wide bibliography. The abstract is drafted; acknowledgments, final administrative metadata, granular role statements, reuse clearances, and an accessibility-conformant filing artifact remain open. It is not ready for institutional filing.
+The repository began as a self-contained writing foundation and now contains an integrative introduction, four substantive manuscript-derived research chapters, a synthesis, five scientific appendices, and a dissertation-wide bibliography. The title and administrative metadata are populated, the abstract is drafted, and the optional acknowledgment section is omitted until author-approved text exists. Granular role statements, reuse clearances, signatures, and an accessibility-conformant filing artifact remain open. It is not yet ready for institutional filing.
 
 The current and 2021 catalogs both describe a dissertation that **should** contain at least three chapters of journal-suitable work and require delivery of the completed dissertation to the reading committee at least one month before the defense. Neither statement requires three accepted articles. The committee-size language differs between those catalogs, so an entry-year assumption cannot settle the candidate's approved committee. [P1](https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/statistics/statistical-science-phd/) [P2](https://catalog.ucsc.edu/en/2021-2022/general-catalog/academic-units/baskin-school-of-engineering/statistics/statistical-science-phd/)
 
@@ -72,7 +72,7 @@ Landscape content must retain a correctly oriented portrait-positioned page numb
 
 ### Front matter and references
 
-Order: integrated title/approval page; copyright or blank leaf; contents; figure/table lists when applicable; abstract; optional dedication/acknowledgments; text; endnotes if used; appendices; supplement list if applicable; final bibliography. The demonstration includes acknowledgment instructions because coauthored reuse is likely, and a blank second leaf. It adds no separate approval page that would shift the contents to iv. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
+Order: integrated title/approval page; copyright or blank leaf; contents; figure/table lists when applicable; abstract; optional dedication/acknowledgments; text; endnotes if used; appendices; supplement list if applicable; final bibliography. The current committee copy includes the author-selected copyright notice and omits the optional acknowledgment section rather than printing drafting instructions. It adds no separate approval page that would shift the contents to iv. [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf)
 
 The official title-page sample is the model for institution, degree and date
 layout. The signed degree application confirms the university-record name and
@@ -80,8 +80,11 @@ Fall 2026 application; the current guide and candidate instructions therefore
 fix the displayed date as December 2026. They also fix the dean block as Donald
 Smith, with `Interim Vice Provost and Dean of Graduate Studies` beneath his
 name. The ProQuest copy is unsigned; the separately emailed approval page must
-carry all committee signatures on one page. The draft deliberately avoids an
-approval assertion until that future approval. The author-selected title is
+carry all committee signatures on one page. The title page uses the official
+sample wording, `The Dissertation of [candidate] is approved:`, while leaving
+all signature rules unsigned. The wording is part of the required form;
+approval is established by the separate signed page and institutional process,
+not by an internal drafting banner. The author-selected title is
 **Statistical Inference for Conditional Quantiles and Fixed-Content Intervals:
 Models, Computation, and Applications**. It matches the dissertation abstract,
 four research units, and statistically oriented scope; page one now has no

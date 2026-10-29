@@ -66,7 +66,7 @@ the complete rule-to-check mapping readable.
 |---|---|---|---|
 | F01 Order | Title; copyright/blank; contents; lists; abstract; dedication/acknowledgments; text; conditional endnotes; appendices; conditional supplement list; bibliography. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 4, Order of required/optional sections |
 | F02 Pagination | Title i and second leaf ii counted, numbers hidden; TOC starts iii; Roman front matter; Arabic 1 restarts main text and continues through end. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); pp. 2, 4, 6 |
-| F03 Title/approval | Use required institution/degree wording and integrated approval sample; filed PDF unsigned. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 4 and sample p. 10 |
+| F03 Title/approval | Use required institution/degree wording and integrated approval sample; filed PDF unsigned. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf); p. 4 and sample p. 11 |
 | F04 Name and dates | Full candidate name; title-page date follows conferral quarter: March/June/August/December. | university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf); pp. 4-5 |
 | F05 Dean and signatures | For Fall 2026 use Donald Smith with `Interim Vice Provost and Dean of Graduate Studies` below his name; ProQuest copy unsigned; email one separately signed title page to Graduate Division. | current university requirement | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2026/07/Dissertation-guidelines-7.26.pdf); pp. 4, 11; candidate-specific Graduate Division instructions dated 2026-10-15 |
 | F06 Copyright leaf | Copyright notice optional; otherwise retain a blank counted second leaf. | university requirement / optional notice | [G1](https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf); p. 6 |
@@ -77,13 +77,13 @@ the complete rule-to-check mapping readable.
 | ID | Implementation | Verification | Status / issue |
 |---|---|---|---|
 | F01 | Explicit main.tex sequence; unused optional sections absent | Compare PDF sequence and source root | Implemented |
-| F02 | pagenumbering roman; empty first two; Arabic reset before chapter 1 | PDF labels, extracted footer numbers and visual review | Implemented; tested |
-| F03 | Adapted integrated title block with confirmed reading committee; starter does not assert dissertation approval | Current sample, confirmed committee, and final approval comparison | Committee/date/dean metadata verified; dissertation title and approval remain open |
+| F02 | pagenumbering roman; title/copyright leaves unnumbered; Arabic reset before chapter 1 | PDF labels, extracted footer numbers and visual review | Implemented; tested |
+| F03 | Integrated title block uses the official unsigned approval wording and confirmed committee; no signature images | Current sample, confirmed committee, and final signed-page comparison | Title/committee/date/dean metadata verified; signatures and institutional approval remain open |
 | F04 | University-record name, author-selected dissertation title, and December 2026 date centralized in metadata.tex | Signed Fall 2026 degree application, current filing notice, applicable catalogs, and author decision | Name, title, degree field, and title-page date verified; dissertation approval remains open |
 | F05 | Donald Smith and exact two-line title centralized; no signature images | Current guide and candidate-specific Graduate Division instructions | Dean wording and unsigned ProQuest route verified; committee approval/signatures remain future actions |
 | F06 | Standard copyright notice on counted, unnumbered page ii | PDF second page, text extraction, and rendered review | Author-selected notice implemented; optional registration remains a separate filing choice |
 | F07 | Class abstract environment with 319-word dissertation-level abstract and final dissertation title/name | Word count, compiled layout and rendered-page review | Substantive abstract and identifying header implemented; final author/committee review remains |
-| F08 | Acknowledgment instructions only; no dedication | Author content and rights/contribution review | No acknowledgments invented |
+| F08 | Optional acknowledgment and dedication pages omitted from the committee copy | Author content and rights/contribution review | No drafting instructions or invented acknowledgments appear; required contribution/reuse language remains open |
 | F09 | Automatic TOC, LoF and LoT; double spacing | Resolve reruns and compare page references | Implemented and demonstrated |
 
 ## Mathematical content

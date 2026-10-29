@@ -356,3 +356,17 @@ The clean 254-page release passed all 18 tests and all 102 immutable source-
 blob checks, has no blocking diagnostics or overfull boxes, and passed rendered
 inspection of the title, copyright, and abstract-opening pages. No scientific
 claim, research source, data, code, result, or computation changed.
+
+2026-10-28: At the author's direction, AI assistance prepared a clean
+committee-facing dissertation copy. It compared the title page with the July
+2026 UCSC sample, removed the formatting-starter and submission-warning banner,
+used the official unsigned approval wording, omitted the optional acknowledgment
+section rather than exposing TODO instructions, and replaced the PDF subject's
+draft label. Two internal production phrases in the introduction and synthesis
+were rewritten as reader-facing scientific statements without changing their
+claims. The 253-page release passed all 18 tests and the chapter validation
+gate, contained no targeted drafting/production markers, and passed rendered
+inspection of the title, copyright, abstract-opening, and Chapter 1 opening
+pages. No acknowledgment was invented, no signature image or completed
+approval record was introduced, and no research model, result, source, data,
+code, or computation changed.
