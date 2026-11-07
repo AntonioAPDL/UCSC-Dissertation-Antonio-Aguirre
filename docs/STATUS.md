@@ -37,9 +37,14 @@ source-blob checks. The final log has 25 underfull-box notices, zero overfull
 boxes, and zero blocking diagnostics; all
 fonts are embedded and no Type 3 font occurs. Five affected pages were
 rasterized and inspected without clipping, collision, duplicate captions, or
-unreadable displays. The PDF remains untagged. GitHub synchronization is the
-remaining release action; an Overleaf pull and compile remain separate user
-actions.
+unreadable displays. The PDF remains untagged.
+
+The content and provenance release was fast-forwarded into `main` and pushed
+without force. Local `main`, `origin/main`, and the directly queried GitHub
+branch were verified at `61bbf83734eda77d9d69f4e8af063d6b9cfe9220` with
+zero ahead/behind divergence. This documentation-only synchronization record
+follows that verified release commit. An Overleaf pull and compile remain
+separate user actions.
 
 ## 2026-10-28 committee-facing copy cleanup
 
