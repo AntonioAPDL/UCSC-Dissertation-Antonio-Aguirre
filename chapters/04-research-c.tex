@@ -125,7 +125,8 @@ neural model. Sections~%
 \ref{qdesn2026:sec:forecast} define the model, computation, and forecast evaluation;
 Sections~\ref{qdesn2026:sec:simulation}--\ref{qdesn2026:sec:pricefm-application} give the
 evidence. Posterior derivations and supporting results are in
-Appendices~\ref{app:qdesn-posterior}--\ref{app:qdesn-simulation-support}.
+Sections~\ref{app:qdesn-posterior}--\ref{app:qdesn-simulation-support} of
+Appendix~\ref{app:qdesn-technical}.
 
 % ============================================================
 
@@ -204,8 +205,8 @@ transients are determined from fitting information and held fixed.
 
 The predictors used in each simulation or application are chosen reservoir
 layers, transformations of their states, and direct inputs where included.
-Appendix~\ref{app:qdesn-simulation-support} summarizes the selection criteria
-and reservoir diagnostics. For observed fitting inputs, the resulting design matrix
+Appendix~\ref{app:qdesn-simulation-support} records how development-informed
+selection limits the simulation evidence. For observed fitting inputs, the resulting design matrix
 \(\mat X=(\vect x_1,\ldots,\vect x_T)^\top\) is fixed. Future rows follow
 the forecasting rule in Section~\ref{qdesn2026:sec:forecast}.
 
@@ -235,15 +236,16 @@ Nishimura--Suchard product form of the regularized horseshoe
 \end{equation}
 The local and global scale factors use the half-Cauchy auxiliary hierarchy,
 with reference scales one and \(\tau_0\), respectively; \(\zeta^2\) bounds the
-coefficient variances in Eq.~\eqref{qdesn2026:eq:rhs-var}. The complete product hierarchy
-and slab treatment are given in Appendix~\ref{app:qdesn-posterior}.
+coefficient variances in Eq.~\eqref{qdesn2026:eq:rhs-var}. The resulting
+slab-bounded precision and its role in the fitted hierarchy are summarized in
+Appendix~\ref{app:qdesn-posterior}.
 
 The fixed hyperprior scale \(\tau_0\) controls prior shrinkage through the
 random global scale \(\tau\). For standardized predictors, a Gaussian
 regression calculation provides a reference for \(\tau_0\) from a residual standard
 deviation, fitting-sample size, and a prior reference number of coefficients
 expected to escape strong shrinkage \citep{qdesn-PiironenVehtari2017RHS}; the
-calibration principle and study-specific choices are recorded in
+calibration principle is summarized in
 Appendix~\ref{app:qdesn-posterior}.
 
 \subsection{Multiquantile regression (MQ--DESN)}
@@ -378,8 +380,7 @@ updates. At a fitted probability level \(p\), posterior or variational draw
 +\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}\).
 A marginal posterior predictive quantile instead integrates the response
 distribution over parameter and future-path uncertainty before taking its
-quantile. Appendix~\ref{app:qdesn-simulation-support} specifies the response laws
-used to generate future lags.
+quantile.
 
 \subsection{Forecast scores}
 
@@ -505,8 +506,8 @@ compares single-level Q--DESN with dynamic linear baselines. The second
 compares independent Q--DESN and MQ--DESN regressions using the same selected
 DESN specification and reservoir realization. We use \(p\) for a single level and \(p_k\), \(k=1,\ldots,K\),
 for a grid. Main-text figures report the primary MCMC forecast summaries;
-Appendix~\ref{app:qdesn-simulation-support} retains the longer-window,
-calibration, and recursive-path sensitivities needed to qualify them.
+Appendix~\ref{app:qdesn-simulation-support} consolidates the longer-window,
+calibration, recursive-path, and crossing qualifications.
 
 \subsection{Single-quantile simulation design}
 
@@ -533,8 +534,7 @@ The evolution matrix \(\mat G_\theta\) propagates a local linear trend and
 seasonal harmonics, following the construction of \citet{exd-west1997bayesian};
 \(\mat W_\theta\) controls their random changes over time. Within each
 family, the latent quantile path is shared across the three levels, with only
-the error-centering constant changing. Appendix~\ref{app:qdesn-simulation-support}
-records the family-specific generating distributions and initial states.
+the error-centering constant changing.
 
 Each model is fitted to 500 observations. The primary evaluation uses the
 following 300 observations, giving ten origins and 300 scored origin--horizon
@@ -580,8 +580,8 @@ These results support the ability of recurrent features to achieve
 competitive check-loss performance under linear state dynamics, without
 specifying the generating trend and seasonal transition explicitly.
 The 500-target sensitivity preserves the overall pattern.
-Appendix~\ref{app:qdesn-simulation-support} reports its check-loss comparison
-and the empirical quantile frequencies.
+Appendix~\ref{app:qdesn-simulation-support} records this result together with
+the empirical-frequency qualification.
 
 \input{tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex}
 
@@ -607,8 +607,7 @@ The reported intervals summarize posterior uncertainty in the score averaged
 over these pairs, conditional on the realized trajectory, fitted model, and
 averaged future predictors defined in
 Section~\ref{qdesn2026:sec:forecast}. Appendix~\ref{app:qdesn-simulation-support}
-gives the generating mechanisms and sensitivity to
-draw-specific recursive forecasting.
+summarizes the sensitivity to draw-specific recursive forecasting.
 
 \subsection{Multiquantile results}
 
@@ -745,7 +744,7 @@ This is the marginal response quantile under the ensemble-conditioned
 approximation, not a conditional location evaluated at one generated history.
 No additional response-noise term is added. Separate level-specific path
 factors can cross, and no post-hoc projection is applied in this application.
-Appendices~\ref{app:qdesn-computation} and~\ref{app:qdesn-glofas-support}
+Sections~\ref{app:qdesn-computation} and~\ref{app:qdesn-glofas-support}
 give the retained covariance terms and numerical stopping criteria.
 
 \subsection{Forecast correction results}
