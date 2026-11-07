@@ -1,221 +1,105 @@
 \chapter{Posterior computation for flexible dynamic quantile models}
 \label{app:exdqlm-technical}
 
-This appendix collects the posterior blocks that distinguish the procedures in
-Chapter~\ref{ch:research-a}: the exAL scale--skewness approximation, the
-transfer-function augmentation, the regularized-horseshoe update, and
-posterior-predictive synthesis. Standard Gaussian filtering, smoothing, and
-backward-sampling recursions follow \citet{exd-west1997bayesian} and are not
-reproduced here. Distributional conventions are stated in
-Subsection~\ref{exd:sec:app_distributional_conventions}.
+This appendix records the nonstandard calculations used in
+Chapter~\ref{ch:research-a}. Standard Gaussian filtering, smoothing, and
+backward sampling follow \citet{exd-west1997bayesian} and are not reproduced.
 
 % migration-id: MIG-CH02-01
 \section{Posterior targets and state augmentation}
 \label{app:exdqlm-posterior}
 
-For the dynamic quantile linear model, the augmented AL hierarchy is
+For the dynamic model, the exAL augmentation is
 \begin{align}
-y_t\mid\vect{\theta}_t,\sigma,v_t
-&\sim
-\N\left\{\mat{F}_t^\top\vect{\theta}_t+A(p_0)v_t,
-\ \sigma B(p_0)v_t\right\},\nonumber\\
-\vect{\theta}_t\mid\vect{\theta}_{t-1}
-&\sim \N(\mat{G}_t\vect{\theta}_{t-1},\mat{W}_t),
-\qquad
-v_t\mid\sigma\sim\Exp(\text{rate}=1/\sigma).
-\label{exd:eq:dyn_dqlm_hierarchy}
-\end{align}
-Its posterior density is proportional to the initial-state and scale priors
-times the product of the observation, latent-scale, and state-evolution
-densities. Conditional on \((\sigma,\vect v)\), this is a Gaussian state-space
-model with observation offset \(A(p_0)v_t\) and variance
-\(\sigma B(p_0)v_t\).
-
-The exDQLM adds \(s_t\sim\TNp(0,1)\) and replaces the observation equation by
-\begin{equation}
-y_t\mid\vect{\theta}_t,\sigma,\gamma,v_t,s_t
-\sim
-\N\left\{
-\mat{F}_t^\top\vect{\theta}_t+C_\gamma\sigma|\gamma|s_t+A_\gamma v_t,
-\ \sigma B_\gamma v_t
-\right\}.
-\label{exd:eq:dyn_exdqlm_obs}
-\end{equation}
-Thus the joint target is
-\begin{align}
-p(\vect{\theta}_{0:T},\vect v,\vect s,\sigma,\gamma\mid\vect y)
-&\propto p(\vect{\theta}_0)p(\sigma)\pi_\gamma(\gamma)
-\prod_{t=1}^T p(y_t\mid\vect{\theta}_t,\sigma,\gamma,v_t,s_t)
-\nonumber\\[-2pt]
-&\quad{}\times
-\prod_{t=1}^T p(v_t\mid\sigma)p(s_t)
-p(\vect{\theta}_t\mid\vect{\theta}_{t-1}).
+y_t\mid\vect\theta_t,\sigma,\gamma,v_t,s_t
+&\sim\N\{\mat F_t^\top\vect\theta_t+C_\gamma\sigma|\gamma|s_t
+ +A_\gamma v_t,\,\sigma B_\gamma v_t\},\nonumber\\
+v_t\mid\sigma&\sim\Exp(\text{rate}=1/\sigma),
+&s_t&\sim\TNp(0,1),\nonumber\\
+\vect\theta_t\mid\vect\theta_{t-1}
+&\sim\N(\mat G_t\vect\theta_{t-1},\mat W_t).
 \label{exd:eq:dyn_exdqlm_joint}
 \end{align}
-Given the augmentation variables and scale--skewness parameters, the state
-trajectory again has a Gaussian full conditional.
+Conditional on \((\sigma,\gamma,\vect v,\vect s)\), the state trajectory has
+a Gaussian full conditional. Fixing \(\gamma=0\) removes \(s_t\) and gives
+the AL model. Static regression replaces the state location by
+\(\vect x_i^\top\vect\beta\) and uses the corresponding weighted Gaussian
+coefficient update.
 
-For transfer-function models, let
-\(\mat x_t=(x_{1t},\ldots,x_{kt})^\top\). The base state is augmented by the
-accumulated effect \(\zeta_t\) and instantaneous coefficients
-\(\vect\psi_t\):
+For transfer-function models, append the accumulated input effect \(\zeta_t\)
+and instantaneous coefficients \(\vect\psi_t\) to the base state. Their
+evolution block is
 \begin{equation}
-\vect{\theta}^{\mathrm{aug}}_t
+\begin{pmatrix}\zeta_t\\\vect\psi_t\end{pmatrix}
 =
-(\vect{\theta}^{\mathrm{base}\top}_t,\zeta_t,\vect\psi_t^\top)^\top,
-\qquad
-\mat G^{tf}_t=
-\begin{pmatrix}
-\lambda & \mat x_t^\top\\
-\mat 0_k & \mat I_k
-\end{pmatrix}.
+\begin{pmatrix}\lambda&\mat x_t^\top\\\mat 0_k&\mat I_k\end{pmatrix}
+\begin{pmatrix}\zeta_{t-1}\\\vect\psi_{t-1}\end{pmatrix}
++\text{Gaussian innovation}.
 \label{exd:eq:tf_aug_state}
 \end{equation}
-Consequently,
-\(\zeta_t=\lambda\zeta_{t-1}+\mat x_t^\top\vect\psi_{t-1}+\omega_t\),
-while \(\vect\psi_t\) follows a random walk. Once this block is appended, the
-same dynamic MCMC or variational calculations apply. In the static model,
-\(\mat F_t^\top\vect\theta_t\) is replaced by
-\(\vect x_i^\top\vect\beta\); conditional on the augmentation variables, the
-coefficient update is weighted Gaussian regression.
+The same state-space calculations then apply to the enlarged trajectory.
+
+For static sparse regression, the regularized horseshoe gives effective
+prior precision
+\[
+\omega_j^{\mathrm{prior}}
+=\tau^{-2}\lambda_j^{-2}+\zeta^{-2}.
+\]
+The half-Cauchy auxiliary representation supplies inverse-gamma scale updates
+\citep{exd-nishimura2023shrunken}; it changes the coefficient precision but
+not the likelihood target.
 
 \section{Structured scale--skewness approximation}
 \label{app:exdqlm-ldvb}
 
-The nonconjugate component of the exAL posterior is the
-\((\sigma,\gamma)\) block. The dynamic variational family is
-\begin{equation}
-q(\vect{\theta}_{0:T},\vect v,\vect s,\sigma,\gamma)
-=q(\vect{\theta}_{0:T})
-\prod_{t=1}^Tq(v_t)q(s_t)\,
-q_{\sigma\gamma}(\sigma,\gamma),
-\label{exd:eq:dyn_exdqlm_mf}
-\end{equation}
-with \(q(\vect\beta)\) replacing the state factor in static regression. The
-current default preserves dependence through the structured factor
-\(q(\gamma)q(\sigma\mid\gamma)\). For each admissible \(\gamma\), the
-conditional scale factor has a GIG kernel. Numerical quadrature on the bounded
-logit coordinate
+The nonconjugate component is the \((\sigma,\gamma)\) block. The current
+variational approximation uses
 \[
-z_\gamma=\logit\{(\gamma-L)/(U-L)\}
+q(\vect\theta_{0:T})\prod_{t=1}^Tq(v_t)q(s_t)\,
+q(\gamma)q(\sigma\mid\gamma),
 \]
-approximates \(q(\gamma)\), and conditional GIG moments supply the required
-scale expectations. Approximate draws first select \(\gamma\) using the
-quadrature weights and then draw \(\sigma\) from the corresponding GIG factor.
+with \(q(\vect\beta)\) replacing the state factor in static regression.
+For each admissible \(\gamma\), the conditional scale factor has a GIG
+kernel. Quadrature on the bounded logit coordinate for \(\gamma\) supplies
+the weights, conditional GIG moments, and approximate joint draws.
 
-The conjugate coordinates require the following scale--skewness moments:
+The Gaussian state coordinate requires the mixed moments
 \begin{align}
-\kappa_1 &= \E\{1/(\sigma B_\gamma)\},&
-\kappa_2 &= \E\{A_\gamma/(\sigma B_\gamma)\},&
-\kappa_3 &= \E\{A_\gamma^2/(\sigma B_\gamma)\},\nonumber\\
-\kappa_4 &= \E\{C_\gamma|\gamma|/B_\gamma\},&
-\kappa_5 &= \E\{\sigma C_\gamma^2\gamma^2/B_\gamma\},&
-\kappa_6 &= \E\{A_\gamma C_\gamma|\gamma|/B_\gamma\}.
+\kappa_1&=\E\{1/(\sigma B_\gamma)\},&
+\kappa_2&=\E\{A_\gamma/(\sigma B_\gamma)\},&
+\kappa_4&=\E\{C_\gamma|\gamma|/B_\gamma\}.
 \label{exd:eq:dyn_exdqlm_kappa}
 \end{align}
-If \(m_{1/v,t}=\E(v_t^{-1})\) and \(\bar s_t=\E(s_t)\), the Gaussian
-state update uses precision and pseudo-response
+If \(m_{1/v,t}=\E(v_t^{-1})\) and
+\(\bar s_t=\E(s_t)\), its conditional precision and pseudo-response are
 \begin{equation}
 \phi_t=\kappa_1m_{1/v,t},
 \qquad
 y_t^{\mathrm{VB}}
-=\frac{y_t\phi_t-\kappa_2-\kappa_4\bar s_t m_{1/v,t}}{\phi_t}.
+=\{y_t\phi_t-\kappa_2-\kappa_4\bar s_tm_{1/v,t}\}/\phi_t.
 \label{exd:eq:dyn_exdqlm_vb_pseudo}
 \end{equation}
-This converts the state coordinate into a standard Gaussian filtering and
-smoothing update.
+The remaining coordinates are GIG for \(v_t\), positive-truncated normal for
+\(s_t\), and inverse-gamma for conjugate scale auxiliaries. Their rates use
+current state, residual, and mixed scale--skewness moments. The structured
+factor preserves dependence that would be lost by multiplying separate
+expectations of \(\sigma\) and \(\gamma\).
 
-Let \(m_{\eta,t}=\E(\mat F_t^\top\vect\theta_t)\),
-\(S_{\eta,t}=\Var(\mat F_t^\top\vect\theta_t)\), and
-\(S_{\Delta,t}=(y_t-m_{\eta,t})^2+S_{\eta,t}\). The remaining latent factors
-are
-\begin{align}
-q(v_t)&=\GIG\left(
-\tfrac12,
-\kappa_1S_{\Delta,t}-2\kappa_4(y_t-m_{\eta,t})\E(s_t)
-+\kappa_5\E(s_t^2),
-\kappa_3+2\E(\sigma^{-1})
-\right),\nonumber\\
-q(s_t)&=\TNp(\mu_{s,t}^{\mathrm{VB}},V_{s,t}^{\mathrm{VB}}),
-\qquad
-V_{s,t}^{\mathrm{VB}}=\{1+\kappa_5\E(v_t^{-1})\}^{-1},\nonumber\\
-\mu_{s,t}^{\mathrm{VB}}
-&=V_{s,t}^{\mathrm{VB}}
-\{\kappa_4(y_t-m_{\eta,t})\E(v_t^{-1})-\kappa_6\}.
-\label{exd:eq:dyn_exdqlm_vb_vs}
-\end{align}
-Static regression replaces the state moments by
-\(\vect x_i^\top\vect m_\beta\) and
-\(\vect x_i^\top\mat\Sigma_\beta\vect x_i\).
-
-The earlier Laplace--delta factor instead approximates transformed
-\((\log\sigma,z_\gamma)\) coordinates by a Gaussian at the local mode and
-uses second-order delta moments. It is retained for comparison, whereas the
-structured factor is the default because it preserves the conditional scale
-kernel. Both are approximations to the declared posterior target; MCMC remains
-the reference when tail behavior or interval width is consequential.
-
-\section{Regularized-horseshoe block}
-\label{app:exdqlm-horseshoe}
-
-For static regression, the \code{rhs\_ns} option uses the conditionally
-conjugate regularized horseshoe of \citet{exd-nishimura2023shrunken}. If
-\(\mathcal A\) indexes the coefficients subject to shrinkage, then
-\begin{align}
-\beta_j\mid\tau^2,\lambda_j^2,\zeta^2
-&\propto
-\N(\beta_j\mid0,\tau^2\lambda_j^2)
-\N(\beta_j\mid0,\zeta^2),\nonumber\\
-\lambda_j^2\mid\nu_j&\sim\IG(1/2,1/\nu_j),&
-\nu_j&\sim\IG(1/2,1),\nonumber\\
-\tau^2\mid\xi&\sim\IG(1/2,1/\xi),&
-\xi&\sim\IG(1/2,1/\tau_0^2),\nonumber\\
-\zeta^2&\sim\IG(a_\zeta,b_\zeta).&&
-\label{exd:eq:rhs_ns_hierarchy}
-\end{align}
-The active prior precision is
-\begin{equation}
-\omega_j^{\mathrm{prior}}
-=\frac{1}{\tau^2\lambda_j^2}+\frac{1}{\zeta^2}.
-\label{exd:eq:rhs_ns_precision}
-\end{equation}
-The MCMC full conditionals for \(\lambda_j^2,\nu_j,\tau^2,\xi\), and a
-random \(\zeta^2\) are inverse-gamma. Their mean-field counterparts have the
-same families, with rates obtained by replacing squared coefficients and
-inverse scales by their current expectations. Hence this shrinkage block adds
-closed-form coordinate updates to either the static AL or exAL calculation;
-it does not alter the likelihood target.
+The earlier Laplace--delta method instead approximates transformed
+\((\log\sigma,\gamma)\) coordinates by a Gaussian at a local mode and uses
+second-order delta moments. Both methods approximate the declared posterior;
+MCMC remains the reference when posterior tails or interval widths are
+consequential.
 
 \section{Forecasting and posterior-predictive synthesis}
 \label{app:exdqlm-synthesis}
 
-At forecast origin \(\tilde t\), each posterior or variational draw propagates
-the state distribution through the evolution equation. Response-level draws
-then satisfy
-\begin{equation}
-Y_{\tilde t+k}^{\mathrm{rep},(m)}
-\sim
-\exAL_{p_0}\{
-\mat F_{\tilde t+k}^\top\vect\theta_{\tilde t+k}^{(m)},
-\sigma^{(m)},\gamma^{(m)}
-\},
-\label{exd:eq:forecast_postpred}
-\end{equation}
-with \(\gamma^{(m)}=0\) in the AL special case. Calibration plots use
-one-step-ahead standardized forecast errors. CRPS is computed from
-response-level predictive draws through the integrated quantile-score
-identity, whereas PPLC evaluates check loss at the fitted level. These
-quantities therefore assess different aspects of predictive performance.
+At a forecast origin, each posterior or variational draw propagates the state
+through its evolution equation and then draws a future response from the
+corresponding AL or exAL observation model. These are response-level draws,
+not draws of the fitted quantile location alone.
 
-The synthesis step combines predictive draws from separately fitted models at
-ordered levels \(p_1<\cdots<p_K\). It is a post hoc predictive construction,
-not a joint multi-quantile posterior.
-
-\begin{algorithmblock}{Posterior-predictive synthesis}
-\label{exd:alg:predictive-synthesis}
-Extract response-level posterior-predictive draws at each fitted level; form
-the quantile-specific curve for each time point and draw index; apply the
-requested monotonicity correction if the fitted curve crosses; interpolate
-over probability levels; and return synthesized draws and predictive
-summaries on a common scale.
-\end{algorithmblock}
+Quantile synthesis combines separately fitted levels by correcting crossings
+as requested and interpolating level-specific predictive curves on a common
+response scale. It remains a post-fit construction, not a joint multiquantile
+posterior.

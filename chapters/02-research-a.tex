@@ -79,11 +79,10 @@ The chapter first establishes the distributional and state-space model, then des
 \label{exd:sec:app_scope}
 
 The technical material in Appendix~\ref{app:exdqlm-technical} connects the package interface with the
-posterior targets and computations implemented in \pkg{exdqlm}. It records the
-distributional conventions, compact dynamic and static posterior targets, the
-LDVB scale--skewness block, the static
-\code{rhs\_ns} shrinkage block, diagnostic and scoring quantities, and the
-posterior-predictive synthesis algorithm. Standard Gaussian filtering,
+posterior targets and computations implemented in \pkg{exdqlm}. It records a
+compact augmented target, the transfer-function state block, the structured
+LDVB scale--skewness calculation, the effective static shrinkage precision,
+and the distinction between posterior prediction and post-fit synthesis. Standard Gaussian filtering,
 smoothing, and backward-sampling recursions are cited rather than rederived.
 Function-level arguments and computational controls are documented in the package
 help pages, and the replication materials provide executable code for the
