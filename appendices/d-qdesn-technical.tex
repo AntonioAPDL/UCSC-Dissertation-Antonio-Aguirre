@@ -390,7 +390,7 @@ The 500-target scope was adopted after inspecting the longer-period results,
 so it is a sensitivity analysis rather than a prespecified second validation
 sample.
 
-\input{tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex}
+\input{tables/ch04-qdesn/independent_train500_eval300_mcmc_mae_figure_v1.tex}
 
 Empirical frequencies complement the score comparisons. Each target uses the
 posterior-median fitted quantile, and the reported frequency is the fraction
@@ -414,6 +414,7 @@ matrix and is not generally the quantile function of a complete posterior
 predictive distribution.
 
 \input{tables/ch04-qdesn/qdesn_multiquantile_recursive_policy_display.tex}
+\input{tables/ch04-qdesn/qdesn_multiquantile_crossing_display.tex}
 
 The averaged-design intervals are narrower in 28 of 32 comparisons, with
 median width ratio 0.7364, because the trajectory-specific calculation
@@ -427,33 +428,58 @@ isotonic projection.
 \section{PriceFM comparison}
 \label{app:qdesn-pricefm-support}
 
-The PriceFM comparison evaluates average quantile loss over 38 regions and
-three temporal folds. Reservoir and shrinkage selection uses three expanding
-development periods within the first fold's training span; the outer first-fold
-validation period chooses AL or exAL. One regional specification is then fixed
-for all three test folds. The same calendar periods had appeared in an earlier
-historical analysis, so the present rule is prospective only relative to the
-fixed comparison, not to previously unseen dates.
+For each of the \PricefmFullRegions{} regions, the candidate set contains
+Q--DESN and MQ--DESN under AL and exAL, all fitted by VB with RHS priors.
+Q--DESN estimates the seven quantile regressions independently; MQ--DESN
+estimates their coefficients jointly within a region. Neither formulation
+fits a joint posterior across regional response series.
 
-Predictors use released load, solar, and wind columns described as day-ahead
-forecasts. Their issue-time availability was not independently verified;
-therefore, the comparison does not establish operational information parity.
-Training-only median and interquartile-range scaling is used. Eleven regions
-select AL and 27 select exAL. Mean AQL is 7.217 for Q--DESN and 7.039 for
-PriceFM; Q--DESN is lower in 54 of 114 region--fold comparisons and 16 of 38
-region means. Its fold-level advantage occurs only in fold 2.
+Three successive validation periods within the original Fold~1 training span
+(September--December~2023, January--April~2024 and May--August~2024) select
+the reservoir specification, RHS scale and predictors for each candidate.
+Outer Fold~1 validation (September--December~2024) selects the candidate with
+the lowest AQL over the seven probability levels. This region-specific choice
+remains fixed across the three test folds, with coefficients refitted using
+each fold's training observations. The dates had been examined previously, so
+this fixed rule does not make them unseen periods.
 
-\begin{figure}[!htbp]
+\begin{table}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{\PricefmCurrentRegionFigure}
-\caption{Mean AQL over three test folds by PriceFM region. Blue squares show
-Q--DESN under its fixed regional specification, green circles show matched
-PriceFM forecasts, and gray crosses show the historical case-specific
-Q--DESN sensitivity. Lower values are better.}
-\figalt{Across 38 regions, PriceFM has lower mean AQL in 22 and fixed-regional
-Q--DESN in 16, with substantial regional heterogeneity.}
-\label{qdesn2026:fig:supp-pricefm-r98-region-comparison}
-\end{figure}
+\TableStyle
+\caption{Outer validation and test periods for the PriceFM comparison. The
+test periods form a chronological partition of 2025. DESN training starts on
+1~January~2022 and ends at the corresponding validation boundary. End dates
+are excluded; target counts are per region.}
+\label{qdesn2026:tab:supp-pricefm-fold-design}
+\begin{tabular}{@{}cllr@{}}
+\toprule
+Fold & Validation period & Test period & Test targets \\
+\midrule
+1 & 2024-09-01 to 2025-01-01 & 2025-01-01 to 2025-05-01 & 11,520 \\
+2 & 2025-01-01 to 2025-05-01 & 2025-05-01 to 2025-09-01 & 11,808 \\
+3 & 2025-05-01 to 2025-09-01 & 2025-09-01 to 2026-01-01 & 11,712 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Historical inputs contain target-region price, load, solar and wind. Spatial
+specifications concatenate neighboring histories or add their means, with or
+without standard deviations; some use the target region alone. Predictor and
+response scaling uses training medians and interquartile ranges. Released
+future load, solar and wind columns are identified as day-ahead forecasts by
+\citet{qdesn-YuEtAl2026PriceFM}, but their issue-time availability was not
+independently verified. Forecasts evaluate the variational coefficient means
+at the direct multihorizon design and reverse the response transformation to
+EUR/MWh; future prices are not recursively simulated.
+
+The selected likelihood is AL in \PricefmCurrentAlRegions{} regions and exAL
+in \PricefmCurrentExalRegions{}. PriceFM forecasts are reproduced using the
+authors' public code and scored on the same region--fold cases and probability
+levels. Mean AQL is \PricefmFullMeanSelectedAql{} for the selected DESN models
+and \PricefmFullMeanPricefmAql{} for PriceFM, a reduction of
+\PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The selected DESN mean is
+lower in each of the three fold summaries. This comparison does not establish
+operational information parity or paired inferential uncertainty.
 
 \section{GloFAS reference--discrepancy correction}
 \label{app:qdesn-glofas-support}
@@ -488,64 +514,77 @@ excluded from selection.}
 \input{\GlofasApplicationCurrentSpecificationsTable}
 \end{table}
 
-For source \(c\), the AL augmentation has latent scale
-\(v_{i,k}^c\sim\Exp(1/\sigma_{c,k})\) and Gaussian conditional observation
-with location \(\vect h_i^{c\top}\vect\theta_k+A_{0,k}v_{i,k}^c\) and
-variance \(\sigma_{c,k}B_{0,k}v_{i,k}^c\). Historical rows have weight one;
-each issued member has weight \(1/51\), so the members at a horizon have total
-weight one. The fitted target is
+For probability level \(p_k\), let \(f_{Y,k}\) and \(f_{G,k}\) denote the
+reference and GloFAS AL or exAL densities. Conditional on the parameters and
+the recursively constructed predictor histories, the forecast-window target
+is
 \begin{equation}
-L_{\mathrm{aug}}(\Theta)\propto
-\prod_{k,c}\prod_{i\in\mathcal I_c}
-\{p(z_i^c\mid v_{i,k}^c,\Theta_k)
-p(v_{i,k}^c\mid\sigma_{c,k})\}^{w_i}.
-\label{qdesn2026:eq:supp_glofas_weighted_augmented_likelihood}
+\begin{aligned}
+L_k(\Theta_k,\vect y_F)
+&=\prod_{t=1}^{T}f_{Y,k}(y_t\mid q_{k,t})
+  \prod_{t=1}^{T}f_{G,k}(g_t^{\mathrm{ret}}\mid q_{k,t}+d_{k,t})\\
+&\quad\times\prod_{h=1}^{28}f_{Y,k}(y_{T+h}\mid q_{k,T+h})
+  \prod_{h=1}^{28}\prod_{e=1}^{51}
+  f_{G,k}(g_{T+h,e}^{\mathrm{ens}}\mid q_{k,T+h}+d_{k,T+h}).
+\end{aligned}
+\label{qdesn2026:eq:supp_glofas_unit_member_target}
 \end{equation}
-This is a complete-data fractional update. Because the power is applied before
-integrating out the mixture variables, it is not claimed to be an exact
-fractional marginal AL posterior.
+The future-reference factors form a normalized sequential response
+distribution because every predictor depends only on earlier responses. No
+Gaussian future-path prior replaces this distribution. Each issued member has
+unit weight and is conditionally independent given the parameters, path and
+preceding histories. The 1,428 issued-member factors therefore represent
+replicate information under the working conditional-independence assumption;
+the model does not add a residual member-dependence term.
 
-The issued-ensemble quantile fits use a Gaussian future-path prior estimated
-from 500 recursive paths under the combined historical Gaussian model. Neither
-issued members nor withheld USGS observations enter that prior. At each
-coordinate update, reservoir features are linearized around the current path
-mode. If \(\widetilde\ell_F\) is the resulting surrogate, then
+Stack \(\vect b_k=(\vect\beta_k^\top,\vect\delta_k^\top)^\top\), and define
+\(\vect h_t^Y=(\vect x_t^{\mathrm{ref}\top},\vect0^\top)^\top\) and
+\(\vect h_t^G=(\vect x_t^{\mathrm{ref}\top},
+\vect x_t^{\mathrm{disc}\top})^\top\). Conditional on the path, the
+augmentation in Section~\ref{app:qdesn-posterior} applies separately to both
+sources. The source counts are
+\(n_Y=12{,}455+28=12{,}483\) and
+\(n_G=12{,}455+28\times51=13{,}883\); the future-reference responses remain
+latent rather than supplied observations. Thus an AL scale prior
+\(\sigma_c\sim\IG(a_c,b_c)\) yields shape \(a_c+3n_c/2\), whereas a Gaussian
+variance prior yields shape \(a_c+n_c/2\) for \(\sigma_c^2\). The coefficient
+update sums canonical precision and linear terms across both sources and
+retains reference--discrepancy covariance.
+
+Linearizing the random design around the current path mean gives the local
+quadratic expected augmented log density \(\widetilde\ell_{F,k}\). The path
+factor is
 \begin{equation}
-\mat K_F=-\nabla^2\widetilde\ell_F(\widehat{\vect y}_F),
-\qquad
-q_F(\vect y_F)\approx
-\Normal(\widehat{\vect y}_F,\mat K_F^{-1}).
+q_{F,k}\approx\Normal(\vect m_k,\mat V_k),\qquad
+\mat V_k^{-1}=-\nabla^2\widetilde\ell_{F,k}+\epsilon\mat I_{28}.
 \label{qdesn2026:eq:supp_glofas_future_path_factor}
 \end{equation}
-For design Jacobian \(\mat J_i\) and \(\mat V_F=\mat K_F^{-1}\), the
-remaining updates use
+For \(\vect a_i^c=\vect h_i^c(\vect m)\), design Jacobian \(\mat J_i\), and
+coordinate vector \(\vect e_h\), the propagated moments are
 \begin{equation}
-\E(\vect h_i^c\vect h_i^{c\top})\approx
-\vect a_i^c\vect a_i^{c\top}+\mat J_i\mat V_F\mat J_i^\top.
+\begin{aligned}
+\E(\vect h_i^c)&\approx\vect a_i^c,\\
+\E(\vect h_i^c\vect h_i^{c\top})
+&\approx\vect a_i^c\vect a_i^{c\top}+\mat J_i\mat V\mat J_i^\top,\\
+\E(\vect h_i^c y_{T+h})
+&\approx\vect a_i^c m_h+\mat J_i\mat V\vect e_h.
+\end{aligned}
 \label{qdesn2026:eq:supp_glofas_future_path_delta}
 \end{equation}
-Repeated first-order updates give a local Gaussian--delta approximation, not
-an exact Laplace approximation to the nonlinear posterior.
+The last term retains response--design covariance; coefficient covariance also
+enters the path update. Repeated first-order updates give a local
+Gaussian--Delta approximation. The numerical ridge stabilizes the calculation
+but does not define a replacement future model.
 
-Both MQ--DESN fits meet their stated inner and outer stopping criteria. Over
-the 28 held-out horizons, Q--DESN under AL has the lowest descriptive grid
-score, but its nominal 90\% interval covers 0.750 of the outcomes. MQ--DESN
-under AL covers 0.786. At \(p=0.95\), the empirical frequency for MQ--DESN
-under exAL is 0.286, compared with 0.750 for Q--DESN under AL. Thus the score
-ranking does not remove the pronounced upper-tail calibration failure.
-
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=0.98\textwidth]{\GlofasApplicationCurrentCalibrationFigure}
-\caption{Issued-window empirical quantile frequencies for 28 held-out USGS
-outcomes. The diagonal is the nominal frequency. The forecast period was not
-used for model selection. Q--DESN under AL has the lowest grid score but
-remains undercovered; MQ--DESN under exAL has particularly low frequencies
-below its upper fitted quantiles.}
-\figalt{Seven empirical-frequency curves lie mainly below the nominal
-diagonal; MQ--DESN exAL reaches 0.286 at p=0.95.}
-\label{qdesn2026:fig:supp-glofas-part4-calibration}
-\end{figure}
+Each forecast is the marginal response quantile
+\(m_{k,h}+\Phi^{-1}(p_k)\sqrt{V_{k,hh}}\), without additional response noise.
+Separate path factors need not yield an ordered assembled grid, and no
+post-hoc projection is applied. Compatible earlier fits provide starting
+moments only. The MQ--DESN calculation requires all inner fits to finish,
+outer parameter change below \(10^{-3}\), relative change of every RHS block
+at most \(10^{-3}\), and three consecutive complete passes satisfying these
+tolerances after global-scale updates begin. These stopping rules assess
+numerical convergence, not approximation accuracy.
 
 \section{Exact Gaussian baseline and initialization}
 \label{app:qdesn-gaussian-baseline}

@@ -5,7 +5,7 @@
 \noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; the posterior definitions, nonstandard computations, and claim-relevant sensitivity evidence are collected in Appendix~\ref{app:qdesn-technical}.}
 \end{singlespace}
 
-\input{tables/ch04-qdesn/current_source_aliases_20261026.tex}
+\input{tables/ch04-qdesn/current_source_aliases_20261106.tex}
 \input{figures/ch04-qdesn/quantile_initialization/quantile_initialization_styles.tex}
 
 \section{Introduction}
@@ -670,84 +670,111 @@ forecast-window information boundary.
 
 \subsection{Quantile-based forecast correction}
 
-Two fixed DESN feature maps represent the reference process and the
-GloFAS-minus-USGS discrepancy. For probability level \(p\), write
-\(q_{p,t}=\vect x_t^{\mathrm{ref}\top}\vect\beta_p\) for the reference
-quantile and \(d_{p,t}=\vect x_t^{\mathrm{disc}\top}\vect\delta_p\) for the
-level-specific location adjustment. Under AL, the historical and issued
-likelihoods have the locations
+At probability level \(p\), the gauge and GloFAS regressions share the
+reference location \(q_{p,t}\). The GloFAS location adds an adjustment
+\(d_{p,t}\) representing its discrepancy from the reference. Let
+\(\vect x_t^{\mathrm{ref}}\) and \(\vect x_t^{\mathrm{disc}}\) be predictor
+vectors from two fixed DESNs, each including an intercept, with coefficients
+\(\vect\beta_p\) and \(\vect\delta_p\). Write
+\(\vect y_F=(y_{T+1},\ldots,y_{T+H})^\top\) for the unknown reference path
+over the \(H=28\) forecast days. Under AL, the historical and forecast-window
+likelihoods are
 \begin{equation}
 \begin{aligned}
+\text{Reference location:}\quad
+q_{p,t}&=\vect x_t^{\mathrm{ref}\top}\vect\beta_p,\\
+\text{Location adjustment:}\quad
+d_{p,t}&=\vect x_t^{\mathrm{disc}\top}\vect\delta_p,\\
 \text{Reference history:}\quad
-y_t\mid\cdot&\sim\AL_p(q_{p,t},\sigma_Y),\\
+y_t\mid\cdot&\sim\AL_p(q_{p,t},\sigma_{Y,p}),\\
 \text{Retrospective GloFAS:}\quad
-g_t^{\mathrm{ret}}\mid\cdot&\sim\AL_p(q_{p,t}+d_{p,t},\sigma_G),\\
+g_t^{\mathrm{ret}}\mid\cdot&\sim\AL_p(q_{p,t}+d_{p,t},\sigma_{G,p}),\\
+\text{Future reference:}\quad
+y_{T+h}\mid\cdot&\sim\AL_p(q_{p,T+h},\sigma_{Y,p}),\\
 \text{Issued member:}\quad
 g_{T+h,e}^{\mathrm{ens}}\mid\cdot&\sim
-\AL_p(q_{p,T+h}+d_{p,T+h},\sigma_G).
+\AL_p(q_{p,T+h}+d_{p,T+h},\sigma_{G,p}).
 \end{aligned}
 \label{qdesn2026:eq:glofas-part4-main}
 \end{equation}
-The unknown future reference path is treated as latent and enters the lagged
-inputs to both DESN feature maps. Issued members inform this path through the
-location relation in Eq.~\eqref{qdesn2026:eq:glofas-part4-main}, with equal weights
-totaling one at each horizon. Appendix~\ref{app:qdesn-glofas-support} specifies the weighted
-augmentation and latent-path approximation.
+The exAL fits use the corresponding shape-extended likelihood with
+source-specific scales and shapes. The historical and issued GloFAS products
+share their source parameters, whereas the reference series has its own.
+
+The reference DESN transforms gauge-history and weather inputs. The second
+DESN transforms the history of
+\(a_t=g_t^{\mathrm{ret}}-y_t\) and weather inputs. Beyond the forecast origin,
+both maps require response lags that have not yet been observed. For a
+candidate path \(\vect y_F\), the discrepancy reservoir uses earlier values of
+\(\bar g_{T+j}^{\mathrm{ens}}-y_{T+j}\), where
+\(\bar g_{T+j}^{\mathrm{ens}}=51^{-1}\sum_e g_{T+j,e}^{\mathrm{ens}}\).
+The ensemble mean constructs a lagged input; it is not a likelihood weight.
+Every historical observation, future-reference response, and issued ensemble
+member contributes one ordinary likelihood factor. Thus the forecast window
+contains 28 latent reference factors and \(28\times51=1428\) member factors.
+
+Because the reference predictors at horizon \(h\) depend only on earlier
+responses, the product of future-reference factors defines a normalized
+sequential distribution for \(\vect y_F\). The issued members update this
+distribution and the regression parameters jointly. No Gaussian
+future-path prior replaces the response distribution. The construction carries
+uncertainty in unobserved response lags into both DESN predictor vectors.
 
 The comparison uses the seven levels \(0.05\), \(0.20\), \(0.35\), \(0.50\),
 \(0.65\), \(0.80\), and \(0.95\). Q--DESN fits the levels separately under
 AL or exAL; MQ--DESN applies adjacent-quantile RHS shrinkage within the
-reference and discrepancy coefficient paths. The exAL families replace the
-AL likelihood in Eq.~\eqref{qdesn2026:eq:glofas-part4-main} by its shape-extended
-counterpart. Gaussian DESN baselines with ridge or RHS regularization and the
-raw GloFAS ensemble complete the comparison.
+reference and discrepancy coefficient paths, retaining a separate future-path
+factor for each level. Gaussian DESN baselines with ridge or RHS regularization
+and the raw GloFAS ensemble complete the comparison.
 
 The reservoir and prior specifications were selected using historical
 development and confirmation periods, without using the held-out issued
-window. Posterior inference then accounts for the regression parameters
-and the latent future streamflow path. The long historical record and
-high-dimensional regressions make MCMC computationally demanding, so we
-use VB to approximate this posterior. Appendices~\ref{app:qdesn-computation}
-and~\ref{app:qdesn-glofas-support} describe the approximation and the
-convergence criteria satisfied by both MQ--DESN fits.
+window. Compatible earlier fits supply starting moments for the variational
+calculation; they do not replace the stated priors. VB alternates regression
+updates with a local Gaussian--Delta update of each level-specific future
+path. If its retained mean and covariance are \(\vect m_p\) and \(\mat V_p\),
+the reported response quantile is
+\begin{equation}
+\begin{aligned}
+q_{F,p}(\vect y_F)&\approx\Normal(\vect m_p,\mat V_p),\\
+\widehat q_{p,h}&=m_{p,h}+\Phi^{-1}(p)\sqrt{V_{p,hh}}.
+\end{aligned}
+\label{qdesn2026:eq:glofas-reference-forecast-main}
+\end{equation}
+This is the marginal response quantile under the ensemble-conditioned
+approximation, not a conditional location evaluated at one generated history.
+No additional response-noise term is added. Separate level-specific path
+factors can cross, and no post-hoc projection is applied in this application.
+Appendices~\ref{app:qdesn-computation} and~\ref{app:qdesn-glofas-support}
+give the retained covariance terms and numerical stopping criteria.
 
 \subsection{Forecast correction results}
 
-Table~\ref{qdesn2026:tab:glofas-application-score} gives the complete seven-family
-comparison on the same issued window. Q--DESN under AL is the descriptive
-leader, with grid \(\aCRPS\) of \GlofasApplicationCurrentQdesnAcrps{},
-compared with \GlofasApplicationCurrentRawAcrps{} for raw GloFAS.
-Q--DESN under exAL and Gaussian DESN with ridge regularization have the next
-lowest scores; Gaussian DESN with RHS regularization scores worse than raw GloFAS.
+All six fitted models have lower grid \(\aCRPS\) than the raw ensemble, and
+all four quantile regressions improve on both Gaussian baselines
+(Table~\ref{qdesn2026:tab:glofas-application-score}). The quantile-model
+scores range from \GlofasApplicationCurrentQdesnAcrps{} to
+\GlofasApplicationCurrentJointExalAcrps{}, compared with
+\GlofasApplicationCurrentNormalRhsAcrps{} for Gaussian RHS,
+\GlofasApplicationCurrentNormalRidgeAcrps{} for Gaussian ridge, and
+\GlofasApplicationCurrentRawAcrps{} for raw GloFAS. Q--DESN under AL has
+the lowest loss, \GlofasApplicationCurrentAcrpsReduction{} below the raw
+ensemble. MQ--DESN remains close to independent estimation: its AL and exAL
+scores are approximately 3\% and 2\% higher than the corresponding independent
+fits. These are one-origin descriptive comparisons and do not establish a
+general ranking across forecast origins.
 
-Score and calibration give different assessments. Q--DESN under AL has
-coverage of 21 of 28 observations for the nominal 90\% interval. MQ--DESN under AL
-covers 22, the largest count among fitted families, but both fall below the
-nominal proportion. Gaussian DESN with ridge regularization covers only
-3 of 28, despite its relatively low score. Only 8 of 28 observations fall
-below the MQ--DESN exAL forecast at level 0.95.
-All seven reported issued-window quantile grids are ordered without a
-crossing correction. Appendix~\ref{app:qdesn-glofas-support} reports the
-level-specific calibration evidence.
-
-Figure~\ref{qdesn2026:fig:glofas-application-forecast-period} shows the observations and
-issued ensemble, followed by Q--DESN under AL and the illustrative Gaussian ridge
-baseline over the same historical and forecast window and on a common vertical
-scale. Appendix~\ref{app:qdesn-glofas-support} retains the calibration
-diagnostic that qualifies the score ranking.
+Figure~\ref{qdesn2026:fig:glofas-application-forecast-period} shows the
+observations, issued ensemble, and Q--DESN forecasts under AL over the common
+historical and forecast window.
 
 \begin{table}[!htbp]
 \centering
 \TableStyle
-\caption{Quantile forecast correction at the 25 December 2022 origin. Scores use the
-28 issued horizons on the \(\log(1+\mathrm{flow})\) scale, with flow in
-\(\mathrm{m}^3/\mathrm{s}\), and the grid
-\(0.05,0.20,0.35,0.50,0.65,0.80,0.95\).
-Mean check loss weights the seven levels equally; grid \(\aCRPS\) uses
-the unnormalized trapezoidal weights in Eq.~\eqref{qdesn2026:eq:acrps-main}.
-Coverage is the observed proportion between the reported 0.05 and 0.95
-quantiles. All seven models are evaluated on the same dates; lower scores
-are better.}
+\caption{Streamflow forecast comparison. Grid \(\aCRPS\) is evaluated on
+the \(\log(1+\mathrm{flow})\) scale and averaged with equal weight over the
+\GlofasApplicationCurrentScoredHorizons{} issued horizons. All seven models
+use the same dates and quantile grid; lower scores are better.}
 \label{qdesn2026:tab:glofas-application-score}
 \input{\GlofasApplicationCurrentScoreTable}
 \end{table}
@@ -755,26 +782,19 @@ are better.}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.94\textwidth]{\GlofasApplicationCurrentForecastWindowFigure}
-\caption{Streamflow data and two quantile forecasts at the
-25 December 2022 origin. (a) USGS observations, retrospective GloFAS, and all
-51 issued ensemble paths. (b) Q--DESN (AL) and (c) Gaussian DESN (ridge) show seven
-quantile levels over the same 30 historical days and 28 issued horizons.
-Before the origin, curves are posterior-mean fitted conditional quantiles;
-afterward, they show forecasts informed by the issued ensemble. Axes are common, and
-the vertical dashed line marks the origin.
-Filled green points denote historical USGS; open dark-red points are used
-only for evaluation. Orange identifies GloFAS products. Blue curves show
-the quantile levels, with the median emphasized.
-The outer paths bound a nominal 90\% quantile interval, not a credible band;
-no crossing correction is applied. The analysis conditions on realized
-future weather.}
-\figalt{Three stacked panels share a vertical scale. The first shows green
-filled historical USGS points, orange retrospective GloFAS and 51 issued
-ensemble paths, and dark-red open held-out USGS points. The second and third
-show seven blue quantile curves for Q--DESN (AL) and Gaussian DESN (ridge) over
-the same 30 historical and 28 forecast dates. Historical and held-out points
-are repeated, and all three panels share the date range and forecast-origin
-line.}
+\caption{Streamflow observations and quantile forecasts at the 25 December
+2022 origin. Panel (a) shows USGS observations, retrospective GloFAS and all
+51 issued members. Panel (b) shows Q--DESN (AL) quantiles at seven levels.
+Both panels use the same 30 historical days and 28 issued horizons on a common
+vertical scale; the vertical line marks the origin. Historical curves are
+fitted conditional quantiles and future curves are forecast summaries. The
+curves are quantile estimates, not credible limits. Future weather is
+realized.}
+\figalt{Two stacked panels use the same date range and vertical scale. The
+first shows historical USGS observations, retrospective GloFAS, 51 issued
+ensemble paths and held-out USGS observations. The second shows seven
+Q--DESN (AL) quantile curves over the same 30 historical and 28 forecast
+dates. A vertical line marks the forecast origin in both panels.}
 \label{qdesn2026:fig:glofas-application-forecast-period}
 \end{figure}
 
@@ -789,28 +809,51 @@ associated price uncertainty. Foundation models use pretraining to learn
 representations that can be reused across related series. PriceFM specializes
 this approach to probabilistic electricity-price forecasting with regional
 covariates and transmission-network information \citep{qdesn-YuEtAl2026PriceFM}.
-Its authors also provide a European benchmark, which we use to compare
-independent Q--DESN forecasts with the released PriceFM predictions.
-Version~4 contains day-ahead price records and load, solar, and wind forecast
-covariates at 15-minute
-resolution from 1~January~2022 through 1~January~2026.
+In leave-one-region-out experiments, its authors report lower average quantile
+loss than Chronos, Moirai and TimesFM variants, using matched probability
+levels for the TimesFM comparisons. We use the European benchmark to compare
+the quantile DESN models with PriceFM forecasts reproduced from the authors'
+public code. Version~4 contains day-ahead price records and load, solar, and
+wind forecast covariates at 15-minute resolution from 1~January~2022 through
+1~January~2026.
 
 \subsection{Comparison design}
 
-The comparison contains \PricefmFullRegionFolds{} region--fold evaluations,
-spanning \PricefmFullRegions{} European bidding regions and
-\PricefmFullFolds{} rolling folds. For each region, one Q--DESN specification
-was selected using temporal development periods within the first fitting
-interval. The first outer development period determined the AL or exAL family.
-The DESN specification, shrinkage settings, predictors, and AL or exAL
-likelihood were then held fixed across that region's three evaluation folds.
-Each daily forecast origin has 96 quarter-hourly targets.
+The \PricefmFullFolds{} test folds partition 2025 into consecutive,
+nonoverlapping four-month blocks: January--April, May--August and
+September--December. Evaluating each of the \PricefmFullRegions{} European
+bidding regions in every block gives \PricefmFullRegionFolds{} region--fold
+evaluations. DESN training begins on 1~January~2022 and expands across folds,
+ending at the start of the four-month validation period immediately preceding
+each test block. Appendix~\ref{app:qdesn-pricefm-support} gives the exact
+boundaries.
+
+For each region, we fit four candidates: Q--DESN and MQ--DESN under AL and
+exAL, all with RHS priors. Q--DESN fits the levels separately; MQ--DESN shares
+information across levels within a region. Temporal validation periods inside
+the first training interval select the reservoir, shrinkage settings and
+predictors for each candidate. The first outer validation period selects the
+candidate with the lowest AQL. This region-specific choice remains fixed
+across all three test folds, while the regression coefficients are refitted
+using each fold's training observations. We call the resulting procedure the
+selected DESN model.
+
+Historical inputs contain regional prices, load, solar and wind. Selected
+spatial specifications also use neighboring-region histories or summaries,
+so one regional response can depend on connected-market information without
+fitting the regional responses jointly. Future inputs contain the released
+load, solar and wind forecasts. These columns are identified as day-ahead
+forecasts by \citet{qdesn-YuEtAl2026PriceFM}; their issue-time vintages were
+not independently verified. Each daily origin has 96 quarter-hourly targets.
+The regressions use direct multihorizon predictors rather than recursively
+generated future prices.
 
 Each evaluation is scored on the fold-aligned held-out timestamps and
 probability levels \PricefmFullPaperQuantiles. We use average quantile loss
 (AQL) to compare forecasts. Throughout this section,
-\(\Delta\) AQL denotes Q--DESN AQL minus PriceFM AQL. Negative values indicate
-lower Q--DESN AQL; positive values indicate lower PriceFM AQL.
+\(\Delta\) AQL denotes selected DESN AQL minus reproduced PriceFM AQL.
+Negative values indicate lower DESN AQL; positive values indicate lower
+PriceFM AQL.
 For region \(r\) and fold \(f\), with \(N_{r,f}\) scored timestamps, the score is
 \begin{equation}
 \text{Average quantile loss:}\quad
@@ -822,38 +865,30 @@ For region \(r\) and fold \(f\), with \(N_{r,f}\) scored timestamps, the score i
 where \(K=7\) and both outcomes and forecasts are in euros per megawatt-hour
 (EUR/MWh).
 Unlike \(\aCRPS\), AQL equally weights the probability levels and has no
-factor of two. Aggregate scores give equal weight to the 114 region--fold
-evaluations, rather than pooling all timestamps.
-
-The predictors include the released load, solar, and wind forecast
-covariates; spatial specifications also use neighboring-region features or
-their summaries. Their issue-time vintages were not independently verified.
-Appendix~\ref{app:qdesn-pricefm-support} records the fitting-period selection
-history and its information-availability limitation.
+factor of two. Aggregate scores give equal weight to the
+\PricefmFullRegionFolds{} region--fold evaluations, rather than pooling all
+timestamps.
 
 \subsection{Results}
 
-The mean Q--DESN AQL is
-\PricefmFullMeanQdesnAql{}, compared with \PricefmFullMeanPricefmAql{} for
-PriceFM, giving mean \(\Delta\) AQL \PricefmFullMeanDeltaAql{}.
-Q--DESN has lower AQL in \PricefmFullQdesnWins{} of
-\PricefmFullRegionFolds{} comparisons, but its aggregate loss is slightly
-higher. Table~\ref{qdesn2026:tab:pricefm-matched-aql-comparison} shows the variation
-across folds: Q--DESN is marginally lower in the second fold, whereas
-PriceFM is lower in the first and third. Appendix~\ref{app:qdesn-pricefm-support} reports regional
-comparisons and the historical sensitivity analysis.
+Mean AQL is \PricefmFullMeanSelectedAql{} for the selected DESN models and
+\PricefmFullMeanPricefmAql{} for the reproduced PriceFM forecasts, a reduction
+of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The ordering is consistent
+across the three fold summaries, whose mean differences range from
+\(-0.365\) to \(-0.341\) EUR/MWh
+(Table~\ref{qdesn2026:tab:pricefm-matched-aql-comparison}). The comparison is
+descriptive: the dates had been examined previously, and the matched forecast
+sets do not provide paired uncertainty intervals.
 
 \begin{table}[!htbp]
 \centering
-\caption{Matched electricity-price forecast comparison. Entries are unweighted
-summaries across region--fold evaluations,
-overall and by fold. The Q--DESN specification for each region was selected
-using fitting and development data and held fixed across its three evaluation folds.
-Here \(\Delta\) AQL is Q--DESN minus PriceFM, so negative values favor Q--DESN.
-AQL is in EUR/MWh; all scores use matched held-out timestamps and the same
-seven probability levels.}
+\caption{Electricity-price forecast comparison over the three consecutive
+test blocks of 2025. DESN denotes the regional validation choice among
+Q--DESN and MQ--DESN under AL and exAL with RHS priors. PriceFM forecasts are
+reproduced from the authors' public code. Scores weight region--fold cases
+equally; \(\Delta\) is DESN minus PriceFM, in EUR/MWh.}
 \label{qdesn2026:tab:pricefm-matched-aql-comparison}
-\input{tables/ch04-qdesn/pricefm_r98_main_aql_summary.tex}
+\input{\PricefmCurrentMainSummaryTable}
 \end{table}
 
 % ============================================================
@@ -878,15 +913,25 @@ benefit of adjacent-coefficient regularization for quantile ordering from its
 less consistent gains in forecast scores.
 
 The applications illustrate different uses of the regression. For streamflow
-correction, the reference--discrepancy regression combines gauge measurements
-with GloFAS products at one retrospective forecast origin. Q--DESN under AL
-has the lowest descriptive issued-window
-score, but its nominal 90\% interval covers 75\% of the issued-window
-observations. The electricity-price comparison holds each regional
-specification fixed across three evaluation folds and has slightly higher aggregate
-AQL than PriceFM, with substantial fold and region variation. The
-applications retain their stated information sets: realized weather for
-streamflow correction and supplied covariates with unverified issue-time
+correction, the reference--discrepancy model combines gauge measurements with
+GloFAS products at one retrospective forecast origin. All six fitted models
+improve on the raw ensemble over the 28 issued horizons, and the four quantile
+models outperform both Gaussian baselines. Q--DESN under AL has the lowest
+grid \(\aCRPS\), \GlofasApplicationCurrentAcrpsReduction{} below the raw
+ensemble. Independent fits perform slightly better within each likelihood:
+MQ--DESN scores are approximately 3\% higher under AL and 2\% higher under
+exAL. Together with the crossing reductions in the simulations, this suggests
+a possible tradeoff between adjacent-coefficient regularization for quantile
+coherence and forecast accuracy; it does not establish a universal ordering.
+
+For electricity prices, validation selects among Q--DESN and MQ--DESN under
+AL and exAL with RHS priors. The selected models have mean AQL
+\PricefmFullMeanSelectedAql{}, compared with
+\PricefmFullMeanPricefmAql{} for PriceFM forecasts reproduced from public
+code, a reduction of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The
+selected DESN mean is lower in all three fold summaries. The applications
+retain their stated information sets: realized future weather for streamflow
+correction and supplied forecast covariates with unverified issue-time
 vintages for electricity prices.
 
 Further work should assess variation across repeated simulated series and

@@ -141,14 +141,18 @@ reservoir seeds or provide a universal MCMC--VB approximation comparison.
 MQ--DESN reduces crossing, but the independent fits have the lowest mean oracle
 score in six of eight mechanisms and the winner--runner-up intervals overlap in
 every mechanism. The retrospective applications add two distinct forms of
-evidence. In the one-origin GloFAS experiment, Q--DESN AL is the descriptive
-score leader relative to the raw issued ensemble, but its nominal 90\% interval
-covers 21 of 28 horizons; MQ--AL covers 22 of 28. The design also conditions on
-realized future PRISM and ERA5 weather. The PriceFM comparison contains 114
-matched region--fold cases: Q--DESN has lower average quantile loss in 54 and
-PriceFM in 60, with a small aggregate difference favoring PriceFM. These
-results describe behavior under the recorded protocols without supporting a
-broad ranking from two bounded applications.
+evidence. In the one-origin GloFAS experiment, all six fitted models improve
+on the raw ensemble, the four quantile regressions improve on both Gaussian
+baselines, and Q--DESN under AL has the lowest grid \(\aCRPS\), 50.2\% below
+the raw ensemble. Independent fits score slightly better than their
+multiquantile counterparts within each likelihood. The design conditions on
+realized future PRISM and ERA5 weather. In the PriceFM comparison, validation
+selects among Q--DESN and MQ--DESN under AL and exAL for each of 38 regions.
+Across 114 region--fold cases, the selected DESN mean AQL is 6.687 compared
+with 7.039 for reproduced PriceFM forecasts, a 5.0\% reduction, and is lower
+in all three fold summaries. These results describe behavior under the
+recorded protocols without supporting a broad ranking from two bounded
+applications.
 
 \subsection{Fixed-content placement and tolerance inference}
 

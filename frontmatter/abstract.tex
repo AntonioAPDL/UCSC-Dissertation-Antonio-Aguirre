@@ -22,9 +22,13 @@ which combine fixed nonlinear recurrent features with single-level or joint
 quantile regression. MCMC and model-specific variational methods are examined
 through simulations and retrospective GloFAS and PriceFM applications. The
 multiquantile model reduces crossing without a uniform score gain. At one
-GloFAS forecast origin, Q--DESN improves the reported quantile score over the
-raw ensemble but its nominal interval remains undercovered; across 114 matched
-PriceFM comparisons, each method wins in a substantial fraction of cases. The
+GloFAS forecast origin, all six fitted models improve on the raw ensemble and
+the four quantile regressions improve on both Gaussian baselines; Q--DESN under
+AL has the lowest grid score. In the 114-case PriceFM experiment, regional
+validation selects among independent and multiquantile AL and exAL models; the
+selected DESN procedure has lower mean average quantile loss in each of the
+three fold summaries and by 5.0\% overall. These comparisons are descriptive
+for the recorded designs. The
 fourth contribution studies mean-tilted intervals, a family of contiguous
 fixed-content targets indexed by retained-mean balance. It characterizes the
 mean-preserving member and develops a calibrated profiled MTI tolerance
