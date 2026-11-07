@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-10-26 current-source refresh supersedes the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The essential-appendix revision and final comprehensive polish are integrated on main. The committee-facing cleanup removes drafting notices and the instructional acknowledgment page, uses the official unsigned approval wording, and passed local chapter validation and rendered review in the recorded release. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission, final contribution/reuse acknowledgments, signatures, and tagged-PDF accessibility validation remain open."
+    "state_note": "The 2026-10-26 current-source refresh and 2026-11-06 Q--DESN authority refresh supersede the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The essential-appendix revision, final comprehensive polish, and committee-copy finalization are integrated. The committee copy uses official unsigned approval wording and includes evidence-bounded chapter attribution and prior-dissemination acknowledgments. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -188,6 +188,43 @@
         "final contribution and reuse acknowledgments",
         "material-specific reuse permissions",
         "tagged-PDF accessibility validation"
+      ]
+    },
+    "committee_copy_finalization": {
+      "state": "BRANCH_RELEASE_VALIDATED",
+      "authority": "Author direction, the current manuscript records, public dissemination records, and the July 2026 UCSC dissertation guidance",
+      "plan": "docs/committee-copy-finalization-plan.md",
+      "reader_facing_changes": [
+        "added project-level scholarly attribution and prior-dissemination acknowledgments without inventing individual task allocations",
+        "identified each chapter's source manuscript and collaborators",
+        "normalized the candidate's scholarly name as Antonio de Leon in editable records",
+        "reduced the abstract to 333 words",
+        "replaced full-caption global-list entries with concise navigation captions while preserving body captions"
+      ],
+      "release": {
+        "path": "build/release-20261107T062045Z/main.pdf",
+        "sha256": "941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2",
+        "pages": 221,
+        "bytes": 15695810,
+        "pdf_version": "1.7",
+        "tracked": false
+      },
+      "rendered_review": [
+        "title and copyright pages",
+        "both figure-list pages",
+        "both table-list pages",
+        "both abstract pages",
+        "both acknowledgment pages",
+        "all research-chapter openings",
+        "synthesis and appendix openings",
+        "bibliography endpoints"
+      ],
+      "open_fields": [
+        "committee signatures and institutional approval",
+        "material-specific reuse permissions",
+        "task-level contribution detail not allocated by the manuscript records",
+        "tagged-PDF accessibility validation",
+        "independent Overleaf pull and compile"
       ]
     }
   },

@@ -2,7 +2,7 @@
 \label{ch:research-b}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans'o. The inferential target, model, principal evidence, interpretation, and limitations remain here; Appendix~\ref{app:hydrology-technical} records the source-indexed MCMC and variational calculations needed to interpret the reported inference.}
+\noindent\textit{This chapter adapts material from \emph{Bayesian Quantile-Based Correction and Synthesis of Hydrologic Products}, joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o \citep{qdesn-DeLeonPradoSanso2026HydrologicProducts}. The inferential target, model, principal evidence, interpretation, and limitations remain here; Appendix~\ref{app:hydrology-technical} records the source-indexed MCMC and variational calculations needed to interpret the reported inference.}
 \end{singlespace}
 
 \section{Problem setting and contribution}
@@ -20,7 +20,7 @@ We study this model using daily river flow for the San Lorenzo River in Californ
 \begin{figure}[hbt!]
 \centering
 \centerline{\includegraphics[width=\textwidth]{figures/ch03-environ/forecast_products_context.png}}
-\caption{
+\caption[Forecast-origin information structure]{
 Representative forecast-origin display for the December 25, 2022 cutoff, spanning November 27, 2022 through January 22, 2023 on the $\log(1+x)$ scale with $x$ in m$^3$/s. Before the cutoff, the panel shows USGS observations and the NWS and GloFAS retrospective products used for source-discrepancy learning; after the cutoff, it shows held-out USGS verification together with the operational NWS and GloFAS forecast ensembles. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500; they are included as operational magnitude references rather than as historical flood-stage classifications.
 }
 \label{env:fig:ensembles}
@@ -268,7 +268,7 @@ The San Lorenzo River is a major water resource for the Santa Cruz area and is r
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch03-environ/site_context_usgs.png}
-\caption{
+\caption[San Lorenzo River flow and discharge references]{
 Observed USGS daily water flow on the $\log(1 + x)$ scale, with $x$ measured in m$^3$/s, May 29, 1987 through December 25, 2022. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500, computed from USGS stage-discharge rating 40.0 and transformed to the plotting scale \citep{env-cnrfc_btec1,env-usgs_11160500_rating40}. They are operational magnitude references for the discharge scale, not historical flood-stage classifications of daily-mean observations.
 }
 \label{env:fig:sanlorenzo}
@@ -285,7 +285,7 @@ The broader climate summary is constructed from monthly climate and environmenta
 \begin{figure}[hbt!]
 \centering
 \centerline{\includegraphics[width=\textwidth]{figures/ch03-environ/covariate_context_precip_soil_gdpc.png}}
-\caption{
+\caption[Hydrometeorological covariates and GDPC factor]{
 Historical daily precipitation [mm], soil moisture [m$^3$/m$^3$], and first GDPC score over May 29, 1987 through December 25, 2022.}
 \label{env:fig:covariates}
 \end{figure}
@@ -299,7 +299,7 @@ The operational forecast products are used only after a cutoff date. The NWS ens
 \begin{figure}[hbt!]
 \centering
 \centerline{\includegraphics[width=\textwidth]{figures/ch03-environ/retrospective_products_context.png}}
-\caption{Selected GloFAS and NWS retrospective product series over the available pre-cutoff support window for the December 25, 2022 cutoff, May 29, 1987 through December 25, 2022. Displayed flow values use the $\log(1+x)$ scale with $x$ in m$^3$/s.}
+\caption[Retrospective GloFAS and NWS series]{Selected GloFAS and NWS retrospective product series over the available pre-cutoff support window for the December 25, 2022 cutoff, May 29, 1987 through December 25, 2022. Displayed flow values use the $\log(1+x)$ scale with $x$ in m$^3$/s.}
 \label{env:fig:retrospectives}
 \end{figure}
 
@@ -445,7 +445,7 @@ A complementary diagnostic is the long-cycle seasonal state. Figure~\ref{env:fig
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch03-environ/historical_component_80month.png}
-\caption{
+\caption[Long-cycle seasonal component]{
 Selected-model posterior mean and 95\% credible intervals for the long-cycle seasonal component, with period approximately 6.81 years, or about 82 months, estimated from the 2022-12-25 cutoff exAL-M-T1 model. Estimates are shown for the 5th (red), 50th (green), and 95th (blue) quantiles. Shaded regions mark the 2012--2016 dry period and the 2017--2019 wet period.
 }
 \label{env:fig:80_components}
@@ -466,7 +466,7 @@ given forecast origin.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch03-environ/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png}
-\caption{
+\caption[River-flow predictive synthesis]{
 Synthesized posterior predictive distribution for river flow on the $\log(1+x)$ scale, with $x$ measured in m$^3$/s, at the December 25, 2022 forecast origin under the exAL-M-T1 model. Observed USGS measurements before the origin are shown in green, and held-out USGS verification after the origin is shown in red. The pink band is the central 95\% posterior predictive band from the synthesized distribution, and the dark center line summarizes the corresponding synthesized center. Thin overlaid lines correspond to displayed forecast quantiles at levels 0.05, 0.20, 0.35, 0.50, 0.65, 0.80, and 0.95. The raw retrospective and forecast products used at this cutoff are shown for context.
 }
 \label{env:fig:synth1}

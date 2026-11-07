@@ -1,5 +1,53 @@
 # Validation record
 
+## 2026-11-07 committee-copy finalization release
+
+The committee-copy release implements the six approved actions: evidence-bounded
+contribution attribution, scholarly-name correction, chapter-level
+prior-dissemination notices, abstract compression, concise figure/table list
+entries, and full technical and rendered validation. The acknowledgment names
+all documented collaborators and records only roles supported by the source
+record. It deliberately leaves individual task allocations unstated where the
+manuscripts do not provide them.
+
+The abstract contains 333 words. The 23 figure entries and 20 table entries
+retain their complete body captions but now have concise optional list
+captions. Each global list occupies two physical pages; the baseline lists
+occupied eight and five. The four research-chapter openings identify their
+associated manuscript or preprint and render Antonio de Leon and Bruno Sansó
+consistently.
+
+The release tier passed 19 tests; reconciled nine research sources and 31
+claim-evidence records; validated 55 displays and 11 bibliography groups;
+checked four chapter manifests, nine source documents, 96 section
+dispositions, 102 imported records, six current-source projections, and 108
+immutable source blobs; resolved all 119 cited keys; and validated 38 active
+TeX files, 216 unique labels, six migration records, and 24 active visuals.
+
+The accepted ignored artifact is
+\`build/release-20261107T062045Z/main.pdf\`: 221 US-Letter pages, 15,695,810
+bytes, PDF 1.7, SHA-256
+\`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2\`.
+The final log has 26 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 24 font
+rows are embedded and no Type 3 font occurs. The PDF is searchable,
+unencrypted, and untagged.
+
+Physical pages 1--14, 27, 71, 109, 137, 172, 184, 210, and 221 were included in
+the rendered-review set. They cover the title and copyright leaves, contents
+boundary, both pages of both global lists, both abstract pages, both
+acknowledgment pages, every research-chapter opening, the synthesis and
+appendix openings, and the bibliography endpoints. Direct inspection found no
+clipping, collision, malformed glyph, abnormal margin, or unreadable material.
+Extracted-text scans found no collaboration-tool names, prompts,
+artificial-intelligence terminology, or drafting instructions in the compiled
+dissertation.
+
+This release validates the local committee copy and its fixed-source
+provenance. It does not establish committee approval, material-specific reuse
+permission, an independently compiled Overleaf artifact, or a tagged
+accessibility-conformant filing PDF.
+
 ## 2026-11-07 final appendix-curation release
 
 The five technical appendices were reconstructed from the approved

@@ -1,5 +1,45 @@
 # Project status
 
+## 2026-11-07 committee-copy finalization validated
+
+The six approved committee-copy actions are complete. A formal scholarly
+acknowledgment now identifies the manuscript and collaborators associated with
+each research chapter, records the candidate's documented first-author,
+corresponding-author, and package-author status, and distinguishes inherited
+methods from the jointly authored project contributions. Because the source
+records do not allocate theory, software, data, simulation, or writing tasks
+among individual coauthors, no such allocation was invented. The candidate's
+editable scholarly name now appears as Antonio de Leon, and the malformed
+Sansó accents in the chapter notices are corrected.
+
+The abstract is 333 words. All 43 main-text figures and tables retain their
+complete body captions but use concise global-list entries. The List of Figures
+and List of Tables now occupy two pages each rather than eight and five pages.
+The resulting PDF contains 221 pages, including a two-page scholarly
+acknowledgment; the scientific chapters, 26-page appendix sequence, results,
+display numbers, and numerical claims are unchanged.
+
+The accepted ignored artifact is
+\`build/release-20261107T062045Z/main.pdf\`: 221 US-Letter pages, 15,695,810
+bytes, PDF 1.7, SHA-256
+\`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2\`.
+All 19 tests and all validators pass, including 108 immutable source-blob
+checks. The active graph contains 38 TeX files, 216 unique labels, six
+migration records, and 24 visual records; all 119 cited keys resolve. The final
+log has 26 underfull notices, no overfull boxes, and no blocking diagnostics.
+All 24 font rows are embedded and no Type 3 font occurs. Rendered inspection
+covered the title and copyright pages, both display lists, the abstract,
+acknowledgment, all research-chapter openings, the synthesis and appendix
+openings, and both bibliography endpoints. No clipping, collision, malformed
+glyph, or reader-facing drafting/automation language was found.
+
+The remaining items are not reasons to delay advisor circulation: the author
+must independently pull and compile the revision in Overleaf; committee
+approval and signatures remain future actions; material-specific reuse
+permissions and any finer task-level contribution statement still require
+author/coauthor confirmation; and the final filing PDF remains untagged and
+must complete the university accessibility review.
+
 ## 2026-11-07 final appendix curation validated
 
 The advisor-directed appendix curation is complete. The five thematic

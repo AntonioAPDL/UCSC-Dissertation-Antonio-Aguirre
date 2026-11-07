@@ -382,3 +382,21 @@ the 19-test fast gate and rendered-page review. The 227-page release has no
 blocking TeX diagnostics, overfull boxes, Type 3 fonts, or reader-facing
 drafting, collaboration-tool, prompt, or artificial-intelligence language.
 No research computation, research repository, data, or fitted object changed.
+
+2026-11-07: AI assistance completed the author-approved committee-copy
+finalization. It audited the existing contribution map, manuscript records,
+bibliography, source manifest, package metadata, abstract, global display
+lists, and current rendered artifact before editing. It added a formal
+scholarly acknowledgment and chapter-level prior-dissemination notices,
+normalized the candidate's editable scholarly name, corrected two collaborator
+accent errors, compressed the abstract to 333 words, and supplied concise list
+captions for all 43 main-text displays while leaving their full body captions
+and scientific content unchanged. Because the source record does not assign
+individual theory, code, data, simulation, or writing tasks, the
+acknowledgment describes those contributions at the joint-project level rather
+than inventing roles. The release gate rechecked 108 immutable source blobs and
+produced a 221-page PDF with no blocking TeX diagnostics, overfull boxes,
+unembedded or Type 3 fonts, or reader-facing drafting, collaboration-tool,
+prompt, or artificial-intelligence language. Front matter, chapter openings,
+appendix and bibliography boundaries were rendered and inspected. No research
+calculation, source repository, data, result, or fitted object changed.

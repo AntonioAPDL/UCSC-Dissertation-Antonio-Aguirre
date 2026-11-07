@@ -17,7 +17,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "0935b745157698ddc1ab9a97bd2d59fddcb3069ba94b3b1b4905b81d2cd70d25",
+      "current_sha256": "b913b61d48bc3d3ddf21353b0ecb48aa29fa77a347e9a099505162b64ca53a6b",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -28,13 +28,14 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-COMMITTEE-COPY-20261107"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "c632889f8267c223a6e5fca5c05e93b3de65d2833c1babc71aed6d699cd42f79",
+      "current_sha256": "4d4d2708b5b91ff1d8e5917b2848d1db79cbdcd379bdf41a11e304e2a9118858",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -43,13 +44,14 @@
         "REV-READER-FIRST-20261008",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-FINAL-DISSERTATION-POLISH-20261028"
+        "REV-FINAL-DISSERTATION-POLISH-20261028",
+        "REV-COMMITTEE-COPY-20261107"
       ]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "e343e4daf3c6fc3ed8ed8cd6c33895f30c575e9a3120823836a2cd10da64f30c",
+      "current_sha256": "0a985db41ba6d87296537e34773172f1a5ba550cb14a5310eda538a111bc4d95",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -62,13 +64,14 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-QDESN-AUTHORITY-20261106",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-COMMITTEE-COPY-20261107"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "daf944840620794617d89f524c8574a5496f3c2c7d86afb6014e094790012823",
+      "current_sha256": "eb7cc5d089fe79d3e307d14f0aa63ee8dad88fa590808343a4e2014425a7b13c",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -78,7 +81,8 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-COMMITTEE-COPY-20261107"
       ]
     },
     {
@@ -164,11 +168,12 @@
     {
       "path": "references.bib",
       "baseline_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
-      "current_sha256": "e387c8a403537ecd20378db40bea1bd6b4a0a6be43b5a5c26cedf1956ac74f57",
+      "current_sha256": "324d74f5002f804c47c37684daa8924ffbd1866e7f3c5e18b678d1d93c8084f6",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-COMMITTEE-COPY-20261107"
       ]
     },
     {
@@ -354,10 +359,65 @@
     {
       "path": "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
       "baseline_sha256": "802e5eb8ead312bb882e9b15de2017bf93ecb3ed35381af437060172ba36b3b2",
-      "current_sha256": "4f69ed30c203acbe169c5b8353b402af9046a1836565714a9756f51be3245337",
+      "current_sha256": "739257f879f338e3df2121efe006afb50613d40862229e7d20e0631b746a568e",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/benchmark_crps_main_table.tex",
+      "baseline_sha256": "467695006a6ab917e63882d9d7177f31fc63f6fe4d9fabadbe9130a671a93486",
+      "current_sha256": "2c036ebd99364f8335c7fa20b92925121fb4bd37cb3687bd93aecd4c8cdd0df3",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/benchmark_crps_nws_horizon_table.tex",
+      "baseline_sha256": "ffe4c9935aca5a2e518a3acc317b14daddd8e1f4b5410ba716a3f98758e24568",
+      "current_sha256": "062726017a96c2eb6797ab78cf25e134c2b24d6b2cb3bb85679978f0c13c9d5f",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/he3_ablation_crps_main_table.tex",
+      "baseline_sha256": "e5b07e0c5178db9cf5b1b52b1ed5cac63a101bdd04a41cddcb0d5dd52ddb7762",
+      "current_sha256": "8a951d195d0532217093003e49348967959e11b323ded6d00b777d8c76dc2d20",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/he3_ablation_crps_nws_horizon_table.tex",
+      "baseline_sha256": "f1266fb790be0f723bc4f0c3a3dc9992c6c64e8688f0cc3de81a59689ddca986",
+      "current_sha256": "145074b506baa8b78d68609878e0ed873262ac7dbaf83c3436b024470929d25a",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/he4_quantile_check_loss_main_table.tex",
+      "baseline_sha256": "9bd5f449d69b45572b6b9a8a8ae4478890dd9b21c3c9862b9497997d72fd9bba",
+      "current_sha256": "d8d28c72d8198c01a1473559c54bbbdf7fe0daab953d592cbd11bc7778319323",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch03-environ/generated_tex/representative_covariate_effects_table.tex",
+      "baseline_sha256": "bd1589e9f4263a7a26090bac5de65f4b519cdcdf7e36cadea3ac0f895566f959",
+      "current_sha256": "69ccbdcf3e2f5d4d6a9b41a0c363f6191ee8934cdb9c2ae266c9d6dc7f6e5312",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-COMMITTEE-COPY-20261107"
       ]
     }
   ],
@@ -720,6 +780,34 @@
       "summary": "Condenses the five technical appendices to the calculations, proofs, empirical qualifications, and three tables needed to interpret the dissertation while preserving explicit chapter bridges and recoverable historical sources.",
       "evidence": "docs/essential-appendix-revision-plan.md; docs/appendix-essentiality-map.json; docs/appendix-essentiality-review.md",
       "validation": "Appendix-sized commits, structural and provenance validation, clean TeX builds, log and font checks, and rendered inspection of appendix boundaries, retained tables, proof pages, and the bibliography transition."
+    },
+    {
+      "id": "REV-COMMITTEE-COPY-20261107",
+      "date": "2026-11-07",
+      "paths": [
+        "main.tex",
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "references.bib",
+        "tables/ch03-environ/generated_tex/benchmark_crps_main_table.tex",
+        "tables/ch03-environ/generated_tex/benchmark_crps_nws_horizon_table.tex",
+        "tables/ch03-environ/generated_tex/he3_ablation_crps_main_table.tex",
+        "tables/ch03-environ/generated_tex/he3_ablation_crps_nws_horizon_table.tex",
+        "tables/ch03-environ/generated_tex/he4_quantile_check_loss_main_table.tex",
+        "tables/ch03-environ/generated_tex/representative_covariate_effects_table.tex",
+        "tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex",
+        "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
+        "tables/ch05-mti/mean_tilt_cf_mini_study.tex"
+      ],
+      "summary": "Prepares the advisor-review copy by adding evidence-bounded scholarly attribution, shortening the abstract, normalizing the candidate's publication name, and replacing article-length list entries with concise reader-facing captions while preserving full captions in the chapters.",
+      "evidence": "docs/committee-copy-finalization-plan.md; docs/imports/*.json; source-manifest.json; cited manuscript records",
+      "validation": "Fast and chapter validation, clean timestamped build, bibliography and reference checks, PDF text and font diagnostics, and rendered inspection of front matter and display lists required before merge."
     }
   ]
 }

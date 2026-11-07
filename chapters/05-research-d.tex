@@ -2,7 +2,7 @@
 \label{ch:research-d}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on two closely related projects by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. The supporting proofs, calibration record, and computational derivations appear in Sections~\ref{app:mti-proofs}, \ref{app:mti-calibration}, and~\ref{app:mti-extensions} of Appendix~\ref{app:mti-technical}.}
+\noindent\textit{This chapter combines material from \emph{Mean-Tilted Intervals: Short Tolerance Intervals} and \emph{Mean-Tilted Intervals: Regression and Dynamic Models}, joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o \citep{rqr-deleon2026short,rqr-deleon2026extensions}. The main argument develops the population foundations and calibrated profiled MTI procedure; a final section states the proposed regression and dynamic endpoint extensions. The supporting proofs, calibration record, and computational derivations appear in Sections~\ref{app:mti-proofs}, \ref{app:mti-calibration}, and~\ref{app:mti-extensions} of Appendix~\ref{app:mti-technical}.}
 \end{singlespace}
 
 \section{Introduction}
@@ -119,7 +119,7 @@ Table~\ref{rqr2026:tab:interval-functionals} summarizes these three principal
 placement rules.
 \begin{table}[h!]
 \centering
-\caption{\textbf{Three contiguous fixed-content interval functionals.}}
+\caption[Three fixed-content interval functionals]{\textbf{Three contiguous fixed-content interval functionals.}}
 \label{rqr2026:tab:interval-functionals}
 \TableStyle
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.19\textwidth}
@@ -150,7 +150,7 @@ distribution.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig01_three_balance_principles.png}
-\caption{\textbf{Three interval-selection principles under left skewness.}
+\caption[Interval-selection principles under left skewness]{\textbf{Three interval-selection principles under left skewness.}
 All panels use the same continuous left-skewed population illustration with
 content \(c=0.80\), displayed after standardization. Equal-tailed (ET)
 intervals balance omitted probabilities, MPI balances omitted first
@@ -457,7 +457,7 @@ approximation layer.
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/figS01_cross_distribution_recovery.png}
-\caption{\textbf{Population recovery tilts across symmetric and skewed
+\caption[Population recovery tilts and width profiles]{\textbf{Population recovery tilts across symmetric and skewed
 distributions.}
 Every interval has content \(c=0.80\). Targets are computed on each raw
 population law and then displayed after mean/standard-deviation
@@ -497,7 +497,7 @@ population skewness rather than a sample estimate.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png}
-\caption{\textbf{Cornish--Fisher recovery-tilt approximation.}
+\caption[Cornish--Fisher recovery-tilt approximation]{\textbf{Cornish--Fisher recovery-tilt approximation.}
 For content \(c=0.80\), the solid curves are the population window-to-tilt
 map and width profile from the left-skewed illustration. Filled markers are
 the exact population MPI, ET, and SH tilts. Open markers are the first-order
@@ -815,7 +815,7 @@ sample-based tolerance procedure.
 
 \begin{table}[!htbp]
 \centering
-\caption{\textbf{Independent-sample tolerance validation.} Results are shown by
+\caption[Independent-sample tolerance validation]{\textbf{Independent-sample tolerance validation.} Results are shown by
 feasible sample-size/content cell and method. Each row summarizes the range
 across eight simulation distributions at tolerance confidence \(0.95\). All three
 reported methods produced an interval in every replication in this run.}
@@ -827,7 +827,7 @@ reported methods produced an interval in every replication in this run.}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig04_tolerance_validation_primary.png}
-\caption{\textbf{Content-attainment by sample size and target content.}
+\caption[Content attainment by sample size and content]{\textbf{Content-attainment by sample size and target content.}
 Intervals not produced are counted as nonattainment.
 Vertical intervals in the content-attainment panels show the range across
 distributional scenarios, and the axis is zoomed to \(0.85\)--\(1.00\).
@@ -838,7 +838,7 @@ Dashed reference lines mark nominal tolerance confidence \(0.95\).}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png}
-\caption{\textbf{Interval-width ranges by distribution.} Horizontal intervals show empirical
+\caption[Interval-width ranges by distribution]{\textbf{Interval-width ranges by distribution.} Horizontal intervals show empirical
 2.5\%--97.5\% ranges of interval lengths within each distribution,
 sample-size/content cell, and method. Crosses mark the mean interval width
 across the 1000 replications for that method. Dashed gray markers show the corresponding
@@ -935,7 +935,7 @@ describe variation within this historical production setting.
 
 \begin{table}[!htbp]
 \centering
-\caption{\textbf{Reported pharmaceutical tensile metric.} Intervals are
+\caption[Pharmaceutical tensile-metric intervals]{\textbf{Reported pharmaceutical tensile metric.} Intervals are
 fit on \PharmaTrain{} batches and evaluated on \PharmaHeldout{} withheld
 batches over \PharmaSplits{} paired random splits. These splits reuse one
 finite dataset and are not independent sampling replications. Bracketed ranges
@@ -952,7 +952,7 @@ omissions are reported separately.}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png}
-\caption{\textbf{Interval placement and held-out comparisons for the reported
+\caption[Pharmaceutical interval placement and holdout comparison]{\textbf{Interval placement and held-out comparisons for the reported
 tensile metric.} Panel A shows the empirical distribution of all \PharmaBatches{}
 batches and actual fitted intervals from split
 \PharmaTensileRepresentative{}, selected by the prespecified median-distance

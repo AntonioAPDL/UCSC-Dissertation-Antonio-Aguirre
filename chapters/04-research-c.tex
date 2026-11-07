@@ -2,7 +2,7 @@
 \label{ch:research-c}
 
 \begin{singlespace}
-\noindent\textit{This chapter is based on joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o. It presents the current Q--DESN study; the posterior definitions, nonstandard computations, and claim-relevant sensitivity evidence are collected in Appendix~\ref{app:qdesn-technical}.}
+\noindent\textit{This chapter adapts material from the working manuscript \emph{Bayesian Quantile Regression with Deep Echo State Network Features}, joint work by Antonio de Leon, Raquel Prado, and Bruno Sans\'o \citep{qdesn-deleon2026qdesn}. It presents the current Q--DESN study; the posterior definitions, nonstandard computations, and claim-relevant sensitivity evidence are collected in Appendix~\ref{app:qdesn-technical}.}
 \end{singlespace}
 
 \input{tables/ch04-qdesn/current_source_aliases_20261106.tex}
@@ -770,7 +770,7 @@ historical and forecast window.
 \begin{table}[!htbp]
 \centering
 \TableStyle
-\caption{Streamflow forecast comparison. Grid \(\aCRPS\) is evaluated on
+\caption[Streamflow forecast comparison]{Streamflow forecast comparison. Grid \(\aCRPS\) is evaluated on
 the \(\log(1+\mathrm{flow})\) scale and averaged with equal weight over the
 \GlofasApplicationCurrentScoredHorizons{} issued horizons. All seven models
 use the same dates and quantile grid; lower scores are better.}
@@ -781,7 +781,7 @@ use the same dates and quantile grid; lower scores are better.}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.94\textwidth]{\GlofasApplicationCurrentForecastWindowFigure}
-\caption{Streamflow observations and quantile forecasts at the 25 December
+\caption[Streamflow observations and quantile forecasts]{Streamflow observations and quantile forecasts at the 25 December
 2022 origin. Panel (a) shows USGS observations, retrospective GloFAS and all
 51 issued members. Panel (b) shows Q--DESN (AL) quantiles at seven levels.
 Both panels use the same 30 historical days and 28 issued horizons on a common
@@ -881,7 +881,7 @@ sets do not provide paired uncertainty intervals.
 
 \begin{table}[!htbp]
 \centering
-\caption{Electricity-price forecast comparison over the three consecutive
+\caption[Electricity-price forecast comparison]{Electricity-price forecast comparison over the three consecutive
 test blocks of 2025. DESN denotes the regional validation choice among
 Q--DESN and MQ--DESN under AL and exAL with RHS priors. PriceFM forecasts are
 reproduced from the authors' public code. Scores weight region--fold cases
