@@ -40,6 +40,13 @@ permissions and any finer task-level contribution statement still require
 author/coauthor confirmation; and the final filing PDF remains untagged and
 must complete the university accessibility review.
 
+The release-bearing commit
+\`81a4068005065d79a8945cae751ca6e72f9004d8\` was fast-forwarded into
+\`main\` and pushed without force. Local \`main\`, \`origin/main\`, and the
+directly queried remote branch were equal at that commit with zero divergence.
+This documentation-only synchronization record follows the verified release;
+the Overleaf pull and compile remain separate user actions.
+
 ## 2026-11-07 final appendix curation validated
 
 The advisor-directed appendix curation is complete. The five thematic

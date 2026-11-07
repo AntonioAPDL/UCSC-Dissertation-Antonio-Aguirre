@@ -191,8 +191,9 @@
       ]
     },
     "committee_copy_finalization": {
-      "state": "BRANCH_RELEASE_VALIDATED",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "authority": "Author direction, the current manuscript records, public dissemination records, and the July 2026 UCSC dissertation guidance",
+      "release_bearing_sync_commit": "81a4068005065d79a8945cae751ca6e72f9004d8",
       "plan": "docs/committee-copy-finalization-plan.md",
       "reader_facing_changes": [
         "added project-level scholarly attribution and prior-dissemination acknowledgments without inventing individual task allocations",
