@@ -42,6 +42,14 @@ The content is recorded in five appendix-sized commits, from
 historical recovery locations, and rendered-review evidence are recorded in
 `appendix-essentiality-map.json` and `appendix-essentiality-review.md`.
 
+The complete appendix-curation release was fast-forwarded into `main` and
+pushed without force. Local `main`, `origin/main`, and the directly queried
+GitHub branch were verified at
+`af016072f27065f358f12c288dba39481b760d20`, with zero ahead/behind
+divergence. This documentation-only synchronization record follows that
+verified release commit. An Overleaf pull and compile remain separate user
+actions.
+
 ## 2026-11-06 QDESN authority refresh validated
 
 Chapter 4 and Appendix D now use
