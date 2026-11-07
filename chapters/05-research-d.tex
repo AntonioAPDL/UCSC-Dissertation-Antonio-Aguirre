@@ -603,9 +603,8 @@ from \(m\). The resulting midpoint criterion is strongly convex when
 checking the objective gap against a relative tolerance of \(10^{-8}\).
 The validation uses \(\omega_{\mathrm R}=1\) and \(\lambda=10^{-4}\).
 Section~\ref{app:mti-profile-computation} gives the profile identity and its
-objective-gap check. Broader Gibbs, ECM, regression, basis-expansion, and
-time-varying endpoint calculations are summarized in
-Section~\ref{app:mti-extensions}.
+objective-gap check. The conditional computations for proposed regression and
+time-varying endpoints are summarized in Section~\ref{app:mti-extensions}.
 
 \paragraph{Direct content-probability check.}
 MTI uses a response-distribution posterior probability to check the content
@@ -876,9 +875,8 @@ their endpoints agree in 99.0\%, 98.2\%, and 94.7\% of samples at
 \((n,c)=(50,0.90),(100,0.95),(500,0.99)\), respectively.
 These cases illustrate the limited observed width gain near that boundary.
 
-Section~\ref{app:mti-calibration} records the selected MTI policy,
-scan-reference counts, and full-range feasibility thresholds used to choose
-the simulation design. The distribution-level results are summarized above
+Section~\ref{app:mti-calibration} records the selected MTI policy and the
+full-range feasibility calculation used to choose the simulation design. The distribution-level results are summarized above
 through their ranges and simultaneous uncertainty statements.
 The excluded small-sample cells fall outside the region where a sample-bounded
 two-sided distribution-free tolerance statement can be supported at confidence \(0.95\).
@@ -978,18 +976,18 @@ Young--Mathew. Their tail allocations differ: MTI omits median fractions
 respectively. Width and empirical content should therefore be read together
 with endpoint placement.
 
-Section~\ref{app:mti-application-sensitivity} examines forward and reverse recorded-order partitions and
-\PharmaGroupedSplits{} unique partitions that keep either production months
+Forward and reverse recorded-order partitions and
+\PharmaGroupedSplits{} unique partitions keep either production months
 or active pharmaceutical ingredient (API) batches intact. All retain the same
 training size. For example, reverse recorded order gives MTI held-out content
 of \PharmaTensileReverseContent\%, illustrating sensitivity to the partition.
 The profile objective-gap criterion is met in
 \PharmaTensileConverged{} of \PharmaTensileReturned{} returned tensile-metric
-fits. Numerical diagnostics and tablet-core weight sensitivity are reported in
-Section~\ref{app:mti-application-sensitivity}. The tablet-core weight relative standard
-deviation (RSD) example illustrates stronger asymmetry; its
-upper-adverse interpretation would favor a one-sided
-upper tolerance limit for a direct quality-control decision.
+fits. The tablet-core weight relative standard deviation (RSD) provides a more
+asymmetric placement example, but its upper-adverse interpretation would favor
+a one-sided upper tolerance limit for a direct quality-control decision. These
+partition comparisons are descriptive: overlapping groups cannot separate
+batch dependence from distributional change.
 \section{Proposed regression and dynamic endpoint extensions}
 \label{mti:sec:extensions}
 
@@ -1033,8 +1031,8 @@ deterministic ECM mode calculation under proper Gaussian priors. The
 representation augments the loss factor in
 Equation~\eqref{mti:eq:generalized-posterior}; it is not a sampling density for
 \(Y\). Section~\ref{app:mti-extensions} records the latent-scale law, Gaussian
-canonical parameters, fixed-tilt shift, shrinkage construction for the
-zero-tilt case, and numerical safeguards.
+canonical parameters, fixed-tilt shift, and the conditions under which the
+conditional update is well defined.
 
 Deterministic basis expansions use the same equations after replacing the
 design rows by fixed basis vectors. Time-varying endpoints instead use two
