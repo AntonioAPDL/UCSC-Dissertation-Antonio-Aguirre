@@ -2,96 +2,57 @@
 \label{app:hydrology-technical}
 
 The source-aware model in Chapter~\ref{ch:research-b} is conditionally
-Gaussian after augmenting each exAL observation. This appendix records the
-source-indexed MCMC and variational calculations needed to distinguish exact
-sampling from the Laplace--delta approximation. Standard filtering,
-backward-sampling, and smoothing recursions follow
-\citet{env-prado2021time} and are not repeated line by line.
+Gaussian after exAL augmentation. This appendix records the source-indexed
+updates and the boundary between exact posterior sampling and the
+Laplace--delta approximation. Standard filtering and backward sampling
+follow \citet{env-prado2021time}.
 
 % migration-id: MIG-CH03-01
 \section{Source-indexed MCMC}
 \label{app:hydrology-mcmc}
 
-Let \(\mathcal J_0=\{0\}\cup\mathcal J\), where \(j=0\) denotes USGS and
-\(j\in\mathcal J\) denotes an external source. Before a forecast origin,
-write \(y_t^0=y_t^o\) and \(y_t^j=z_t^j\), with selector
-\(\mathbf h_{t,j}\). In the forecast window, \(y_{T+k}^j\) denotes the
-active source-specific forecast quantity and \(\mathbf e_{T+k,j}\) its
-selector. The functions \(A^j=A(\gamma^j;p_0)\),
-\(B^j=B(\gamma^j;p_0)\), and \(C^j=C(\gamma^j;p_0)\) are defined by the
-exAL representation in Subsection~\ref{env:subsec:exal}.
+Let \(\mathcal J_0=\{0\}\cup\mathcal J\), where source zero denotes USGS
+and \(j\in\mathcal J\) denotes an external product. Before the forecast
+origin, source-specific observations enter through their historical selectors.
+Within the forecast window, the active selector changes with the products
+available at each lead. Unequal agency horizons therefore change the
+observation vector; unavailable products are not treated as observations from
+a common rectangular panel.
 
-Conditional on \((v_t^j,s_t^j,\sigma^j,\gamma^j)\), the observation vector
-has a Gaussian mean shift and diagonal covariance. The complete state path is
-therefore drawn by one forward-filtering backward-sampling step. The latent
-scales have generalized inverse Gaussian full conditionals, the positive
-shifts have truncated-normal full conditionals, and the scale parameters have
-generalized inverse Gaussian full conditionals under the stated prior. Only
-the bounded skewness parameters require Metropolis--Hastings updates.
+Conditional on \((v_t^j,s_t^j,\sigma^j,\gamma^j)\), all active observations
+have Gaussian mean shifts and diagonal conditional covariance. The complete
+state path is then drawn by one forward-filtering backward-sampling step.
 
 \begin{algorithmblock}{Source-indexed MCMC sampler}
 \label{env:alg1}
-\begin{algorithmic}
-\STATE Initialize the state path and all source-specific latent and likelihood parameters.
-\FOR{each retained MCMC iteration}
-  \STATE Draw \(\boldsymbol\eta_{0:T}\) by FFBS from the conditionally Gaussian state-space model.
-  \FOR{\(j\in\mathcal J_0\)}
-    \STATE Draw each \(v_t^j\) from its GIG conditional using the current source residual.
-    \STATE Draw each \(s_t^j\) from its positive-truncated normal conditional.
-    \STATE Draw \(\sigma^j\) from its GIG conditional.
-    \STATE Update \(\gamma^j\) by a random walk on an unconstrained transformation of its bounded support.
-  \ENDFOR
-  \STATE Propagate the sampled state and source-specific parameters through the available forecast horizons.
-\ENDFOR
-\STATE Return retained state, parameter, and posterior-predictive draws.
-\end{algorithmic}
+Initialize the state path and source-specific latent and likelihood
+parameters. At each iteration, draw the state path by FFBS; for every active
+source, draw the latent scales from their GIG conditionals, the positive shifts
+from truncated-normal conditionals, and the scale from its stated conditional;
+update bounded skewness by a random walk on an unconstrained transformation;
+and propagate the retained state and source parameters through the horizons
+available from that source.
 \end{algorithmblock}
-
-The forecast-window update uses only sources available at each lead. Unequal
-agency horizons therefore change the active selector and observation vector;
-they do not convert unavailable products into missing observations from a
-common rectangular panel.
 
 \section{Laplace--delta variational approximation}
 \label{app:hydrology-vb}
 
-The variational factorization separates the latent Gaussian state path,
-source-specific augmentation variables, and low-dimensional nonconjugate
-scale--skewness blocks. Conditional conjugacy gives closed-form updates for
-the state, \(v_t^j\), and \(s_t^j\) factors. For each source, the log factor
-for the transformed \((\sigma^j,\gamma^j)\) block is optimized numerically;
-its local negative Hessian supplies a Gaussian Laplace approximation, and
-second-order delta calculations provide the moments required by the remaining
-coordinates. Thus, LDVB approximates the posterior target used by MCMC; it is
-not an exact posterior sampler.
+The variational family separates the Gaussian state path, source-specific
+augmentations, and low-dimensional scale--skewness blocks. Variational
+filtering and smoothing update the state, while \(v_t^j\) and \(s_t^j\)
+retain GIG and positive-truncated-normal factors. For each source, a Gaussian
+Laplace approximation to the transformed \((\sigma^j,\gamma^j)\) factor and
+second-order delta calculations provide the remaining moments.
 
-\begin{algorithmblock}{Source-indexed LDVB updates}
-\label{env:alg:Alg3}
-\begin{algorithmic}
-\STATE Initialize all factors, the maximum iteration count, and convergence tolerances.
-\REPEAT
-  \STATE Update the Gaussian state factors by variational filtering and smoothing.
-  \FOR{\(j\in\mathcal J_0\)}
-    \STATE Update the GIG factors for \(v_t^j\) from current state and scale--skewness moments.
-    \STATE Update the positive-truncated normal factors for \(s_t^j\).
-    \STATE Optimize the transformed scale--skewness factor and update its Laplace--delta moments.
-  \ENDFOR
-  \STATE Recompute the evidence lower bound and monitored state, scale, and skewness changes.
-\UNTIL{the required consecutive updates satisfy every tolerance, or the iteration limit is reached}
-\STATE Return variational state, parameter, and posterior-predictive summaries.
-\end{algorithmic}
-\end{algorithmblock}
-
-Filtering and smoothing use the same source-indexed conditional moments as
-the sampler, with expectations under the current variational factors in place
-of sampled quantities. Approximation error is most consequential for posterior
-tails and interval accuracy in the nonconjugate blocks; MCMC remains the
-reference calculation for those questions.
+Thus LDVB approximates the MCMC posterior target rather than sampling it
+exactly. Its principal risk concerns tail summaries and interval widths in the
+nonconjugate blocks. Convergence requires consecutive joint tolerances for the
+objective, states, scales, and skewness coordinates.
 
 % migration-id: MIG-CH03-02
 \paragraph{Source-specific likelihood parameters.}
 \label{env:app:sourceparams}
-At the representative December 25, 2022 origin, the fitted exAL scale and
-skewness parameters vary by source and probability level. They describe the
-source-specific observation models, not weights in predictive synthesis. The
-chapter's five-origin score tables provide the comparative forecast evidence.
+The fitted exAL scales and skewness parameters describe source-specific
+observation models, not predictive-synthesis weights. Comparative forecast
+evidence comes from the five-origin score tables in
+Chapter~\ref{ch:research-b}.
