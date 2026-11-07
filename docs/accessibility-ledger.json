@@ -11,7 +11,8 @@
       "figure_label": "rqr2026:fig:supp-pharma-rsd",
       "alt_text": "Interval placement and held-out comparisons for weight RSD. The panels follow the main application figure. The representative split is selected by the same median-distance rule. Thick and thin tail-omission segments show interquartile and empirical 95 percent ranges, with median markers. The response is strongly right-skewed, but an upper one-sided tolerance limit would be more natural for a direct quality-control decision.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "appendices/e-mti-technical.tex",
@@ -19,7 +20,8 @@
       "figure_label": "rqr2026:fig:supp-pharma-partition-sensitivity",
       "alt_text": "Sensitivity to training and held-out partitions. Points show median widths or held-out empirical content within each labeled design. Segments give empirical 95 percent ranges for random and grouped splits. The two recorded-order designs each contain one partition and are shown as individual points. Dashed lines mark the requested content c= . The plots describe historical partition sensitivity.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "chapters/02-research-a.tex",
@@ -203,7 +205,8 @@
       "figure_label": "qdesn2026:fig:supp-independent-quantile-calibration",
       "alt_text": "Six panels compare empirical response frequencies below posterior-median quantile forecasts with the nominal levels 0.05, 0.25 and 0.50, for four models, three error families and two evaluation periods.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex",
@@ -219,7 +222,8 @@
       "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-mae-intervals",
       "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 300 scored targets.",
       "description_source": "figalt",
-      "status": "REVIEWED"
+      "status": "REVIEWED",
+      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",

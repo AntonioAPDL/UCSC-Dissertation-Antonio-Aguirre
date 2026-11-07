@@ -1,5 +1,47 @@
 # Validation record
 
+## 2026-11-07 final appendix-curation release
+
+The five technical appendices were reconstructed from the approved
+essentiality plan and the current research chapters. Their numbered-page span
+is 170--195: Appendix A occupies 170--171, B occupies 172--174, C occupies
+175--176, D occupies 177--185, and E occupies 186--195. The sequence therefore
+contains 26 pages, compared with 52 in the preceding 253-page release. The
+complete dissertation now contains 227 pages.
+
+The appendix display set contains only the Q--DESN sensitivity summary,
+PriceFM fold design, and MTI calibrated-policy table. All inactive appendix
+displays retain implemented recovery records. The strengthened structural
+validator rejects a deactivated unit that remains active. The fast gate passed
+19 tests; reconciled nine research sources and 31 claim-evidence records;
+validated 55 current displays and 11 bibliography groups; checked four chapter
+manifests, nine source documents, 96 section dispositions, 102 imported
+records, and six current-source projections; resolved all 116 cited keys; and
+validated 37 active TeX files, 216 unique labels, six migration records, and 24
+visual records.
+
+The accepted ignored artifact is
+`build/release-20261107T051553Z/main.pdf`: 227 US-Letter pages, 15,714,474
+bytes, PDF 1.7, SHA-256
+`505d326622ae657615cde95e42e7387b7732737d1f9be3ba120cb506ebe42c66`.
+The final log has 24 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All 24
+reported fonts are embedded and no Type 3 font occurs. The file is searchable,
+unencrypted, and untagged.
+
+Physical PDF pages 191--198, 204--207, 211, 216, and 217 were sampled for
+rendered review. These pages cover every appendix opening and ending, the
+Q--DESN sensitivity and PriceFM tables, representative proof and computation
+pages, and the bibliography transition. Direct inspection found no clipping,
+collision, malformed glyph, stranded heading, one-line spill page, or
+unreadable display. An extracted-text scan found no drafting markers,
+collaboration-tool names, artificial-intelligence terminology, prompts, or
+production instructions.
+
+This release validates the local source, provenance, and rendering. It does
+not rerun research computation, establish reuse permission, produce a tagged
+accessibility-conformant filing PDF, or verify an Overleaf pull and compile.
+
 ## 2026-11-06 QDESN authority-refresh release
 
 The refreshed QDESN source was inspected and compiled in a fresh isolated

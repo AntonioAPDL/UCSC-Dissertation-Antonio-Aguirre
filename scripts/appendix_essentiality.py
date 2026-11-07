@@ -158,6 +158,11 @@ def validate_payload(
             errors.append(f"{where}: invalid disposition")
         if record.get("current_inclusion") not in INCLUSION_STATES:
             errors.append(f"{where}: invalid current_inclusion")
+        if (
+            record.get("disposition") == "DEACTIVATE"
+            and record.get("current_inclusion") == "ACTIVE"
+        ):
+            errors.append(f"{where}: DEACTIVATE unit cannot remain ACTIVE")
         if record.get("status") not in RECORD_STATES:
             errors.append(f"{where}: invalid status")
 

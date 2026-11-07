@@ -656,6 +656,18 @@
       "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
       "status": "CURRENT_SOURCE_REFRESH",
       "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "id": "qdesn2026:tab:supp-sensitivity-summary",
+      "chapter": "ch04-qdesn",
+      "type": "table",
+      "source_file": "appendices/d-qdesn-technical.tex",
+      "baseline_line": 198,
+      "disposition": "KEEP",
+      "claim_role": "compact summary of claim-changing simulation sensitivity results",
+      "rationale": "This single table preserves the qualifications needed to interpret the Chapter 4 simulation evidence without repeating the complete source display deck.",
+      "status": "APPENDIX_CURATION_20261107",
+      "implementation_status": "IMPLEMENTED"
     }
   ]
 }

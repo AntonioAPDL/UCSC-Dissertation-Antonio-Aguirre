@@ -370,3 +370,15 @@ inspection of the title, copyright, abstract-opening, and Chapter 1 opening
 pages. No acknowledgment was invented, no signature image or completed
 approval record was introduced, and no research model, result, source, data,
 code, or computation changed.
+
+2026-11-07: AI assistance implemented the author-approved final appendix
+curation. The five appendices were reduced from 52 to 26 numbered pages by
+consolidating repeated calculations and parallel display families while
+retaining the central proofs, nonstandard posterior calculations, numerical
+qualifications, negative findings, and specific body links. The work used five
+appendix-sized commits, reconciled the essentiality, display, accessibility,
+and derivative ledgers, strengthened the inactive-unit validator, and passed
+the 19-test fast gate and rendered-page review. The 227-page release has no
+blocking TeX diagnostics, overfull boxes, Type 3 fonts, or reader-facing
+drafting, collaboration-tool, prompt, or artificial-intelligence language.
+No research computation, research repository, data, or fitted object changed.

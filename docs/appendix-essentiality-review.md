@@ -1,18 +1,45 @@
 # Essential-appendix review and implementation record
 
-**State:** implemented and release validated
+**State:** implemented and locally validated
 
-**Baseline thesis commit:** `37b9da0fdb16168dff07efdc9454886f8467f6cd`
+**Pre-curation thesis commit:**
+`6906f9e6bfa20bc2ffc40cbb3575558c0ef16307`
 
-**Accepted PDF:** 414 pages, with 204 appendix pages
+**Pre-curation PDF:** 253 pages, with 52 numbered appendix pages
 
-**Accepted PDF SHA-256:**
-`49b0bc25f5c4b46c474379d3b7f33bfbfd01a3a28cb77660db63a4a8c5f0e409`
+**Pre-curation PDF SHA-256:**
+`920f729693533463e1852f76f574232006a78cf64034236ca11ce4294c60ed4c`
 
-## Coverage
+**Curated PDF:** 227 pages, with 26 numbered appendix pages
 
-`appendix-essentiality-map.json` assigns one record to every inventoried
-appendix unit:
+**Curated PDF SHA-256:**
+`505d326622ae657615cde95e42e7387b7732737d1f9be3ba120cb506ebe42c66`
+
+## Outcome
+
+The five-appendix architecture is retained because each appendix serves a
+distinct research chapter or cross-chapter purpose. The revision reduces the
+appendix sequence by half without changing the principal inferential targets,
+theorem scope, reported numerical results, attribution, or evidence strength.
+The reduction comes from consolidating repeated calculations, replacing
+parallel display families with concise qualifications, and keeping standard
+derivations in their cited sources.
+
+| Appendix | Before | After | Reader-facing role |
+| --- | ---: | ---: | --- |
+| A | 4 pages | 2 pages | Cross-chapter distinctions among targets, latent scales, multiple-quantile constructions, and uncertainty statements. |
+| B | 6 pages | 3 pages | exDQLM posterior target, transfer-function and shrinkage blocks, structured LDVB approximation, and post-fit synthesis. |
+| C | 3 pages | 2 pages | Source-indexed MCMC, Laplace--delta approximation boundary, and interpretation of source-specific likelihood parameters. |
+| D | 21 pages | 9 pages | Q--DESN posterior/composite target, nonstandard computation, claim-changing simulation qualifications, PriceFM fold design, and GloFAS path approximation. |
+| E | 18 pages | 10 pages | MPI/MTI proof graph, profile computation, finite-panel calibration, feasibility, and proposed endpoint computations. |
+| **Total** | **52 pages** | **26 pages** | |
+
+The complete dissertation is 227 pages rather than 253. No smaller type,
+reduced line spacing, or margin change was used to obtain the reduction.
+
+## Inclusion record
+
+`appendix-essentiality-map.json` now contains 341 unit records:
 
 | Unit type | Records |
 | --- | ---: |
@@ -20,122 +47,81 @@ appendix unit:
 | Algorithm | 8 |
 | Labeled equation group | 149 |
 | Theorem or proposition with proof obligation | 8 |
-| Appendix display | 60 |
-| **Total** | **340** |
+| Appendix display | 61 |
+| **Total** | **341** |
 
-The map contains 48 baseline body bridges: two in the introduction, five in
-Chapter 2, four in Chapter 3, 24 in Chapter 4, and 13 in Chapter 5. Forty are
-retargeted to topical destinations, seven remain truthful chapter-level
-bridges, and the final Chapter 3 promise of additional cutoff panels is
-replaced by the five-origin evidence already in the body.
+The final dispositions are 96 `RETAIN`, 161 `CONDENSE`, 17 `SUMMARIZE`, and
+67 `DEACTIVATE`. There are 128 active mapped units and 213 inactive historical
+units. Each inactive unit retains a source path, baseline commit, page range,
+and no-loss location. The validator now rejects a `DEACTIVATE` decision that
+remains active.
 
-## Appendix decisions
+## Retained appendix displays
 
-| Appendix | Mapped units | Principal action |
-| --- | ---: | --- |
-| A | 6 | Retain a compact statistical concordance; remove directory prose. |
-| B | 43 | Preserve posterior, LDVB, transfer-function, shrinkage, and synthesis support while removing package-maintainer inventory. |
-| C | 9 | Consolidate four algorithm blocks to one MCMC and one variational outline; deactivate two additional cutoff figures. |
-| D | 221 | Preserve nonstandard posterior/composite-target calculations and exactly eight supporting displays; remove duplicate result decks and development checks from the compiled graph. |
-| E | 61 | Preserve the central proof graph and exactly five supporting displays; replace complete validation/application decks with calibrated, claim-bearing support. |
+Only three appendix displays remain:
 
-The 60 appendix display decisions contain 13 retained displays and 47
-deactivations from the compiled graph. Historical `KEEP` decisions remain
-unchanged in `display-ledger.json`; the essentiality map is the later inclusion
-authority.
+1. `qdesn2026:tab:supp-sensitivity-summary`, a four-row consolidation of the
+   single-quantile, recursive-predictor, multiquantile-score, and ordering
+   qualifications;
+2. `qdesn2026:tab:supp-pricefm-fold-design`, the exact PriceFM validation and
+   test boundaries; and
+3. `rqr2026:tab:supp-mti-profile-policy`, the calibrated finite-panel MTI
+   policy.
+
+Appendices A--C contain no figure or table, Appendix D contains the two tables
+above, and Appendix E contains the policy table. No appendix figure remains.
+Claim-bearing conclusions formerly carried by longer display families are
+stated in the corresponding research chapter or in the compact Q--DESN table.
 
 ## Formal-result graph
 
-Three principal results have their authoritative statements in Chapter 5 and
-proof-only destinations in Appendix E:
+Chapter 5 retains the authoritative statements of the principal population
+results, with their proofs in Appendix E. The appendix also retains complete
+statements and proofs for mean-preserving contraction, the profile-radius
+lemma, exact fractional empirical balance, and the convex midpoint profile.
+Standard Dirichlet-process conjugacy is represented by its exact Beta law and
+its interpretation rather than by a duplicated proof.
 
-| Appendix label | Authoritative body statement |
-| --- | --- |
-| `rqr2026:thm:supp-quantile-window` | `rqr2026:thm:quantile-window` |
-| `rqr2026:prop:supp-mean-tilt` | `rqr2026:prop:mean-tilt` |
-| `rqr2026:thm:supp-profiled-risk` | `rqr2026:thm:profiled-mean-tilt` |
+## Body links and prose
 
-The mean-preserving contraction, profile-radius lemma, fractional empirical
-balance theorem, and convex midpoint profile remain complete supporting
-statement-and-proof units in Appendix E. The direct DP content law is reduced
-to its Beta law and interpretation because standard DP conjugacy supplies the
-proof.
+Chapter bridges now point to the relevant appendix section rather than to an
+undifferentiated technical archive. The Q--DESN chapter distinguishes sections
+within Appendix D, and the MTI chapter distinguishes proof, computation,
+calibration, and extension sections. Removed labels are not cited by the active
+manuscript. The compiled dissertation contains no drafting markers,
+collaboration-tool names, artificial-intelligence terminology, or production
+instructions.
 
-## Exact appendix display outcome
+Software and implementation terminology remains only where it is part of the
+statistical software contribution, a stated numerical method, or a documented
+limitation. The research prose otherwise uses statistical targets,
+assumptions, computations, and empirical findings directly.
 
-Appendix C retains no additional forecast figure. Appendix D retains:
+## Implementation commits
 
-1. `qdesn2026:tab:supp-reservoir-selection`;
-2. `qdesn2026:tab:simulation-dgp`;
-3. `qdesn2026:fig:independent-eval500-forecast_check`;
-4. `qdesn2026:fig:supp-independent-quantile-calibration`;
-5. `qdesn2026:tab:joint-qdesn-pure-desn-v2-recursive-policy`;
-6. `qdesn2026:fig:supp-pricefm-r98-region-comparison`;
-7. `qdesn2026:tab:supp-glofas-search3-specifications`; and
-8. `qdesn2026:fig:supp-glofas-part4-calibration`.
+The scholarly changes are separated by appendix:
 
-Appendix E retains:
+- Appendix A and its Chapter 1 bridge: `d1a03494c8bab944f4933274cf8d18d3abec63a1`;
+- Appendix B and its Chapter 2 bridges: `c7d8e19da4bd92cdd574fb083714ff2b28b1e885`;
+- Appendix C: `2595a74356993dc70c32f74e2809dec31cfa5bc5`;
+- Appendix D and its Chapter 4 bridges: `b1332ddda22a7bec913de320de0b686527b015f9`; and
+- Appendix E and its Chapter 5 bridges: `c472f67e91cb2094c46217447cd2b7bad5494d59`.
 
-1. `rqr2026:tab:supp-mti-profile-policy`;
-2. `rqr2026:tab:supp-scan-reference`;
-3. `rqr2026:tab:supp-full-range-thresholds`;
-4. `rqr2026:fig:supp-pharma-rsd`; and
-5. `rqr2026:fig:supp-pharma-partition-sensitivity`.
+## Validation
 
-## No-loss controls
+The fast gate passes 19 tests and all research, editorial, manuscript-import,
+and structure validators. The active graph contains 37 TeX files, 216 unique
+labels, six migration records, and 24 graphic or visual records, all covered by
+the accessibility ledger. The final TeX log has 24 underfull-box notices, no
+overfull boxes, and no blocking citation, reference, label, file, or fatal
+diagnostic. All 24 reported fonts are embedded and no Type 3 font occurs.
 
-All eleven protected conclusions have a responsible map record and a visible
-location. The fixed research commits, baseline PDF, appendix source hashes,
-migration markers, import records, rights states, and inactive assets remain
-recoverable. The implementation did not change a target, likelihood
-interpretation, theorem scope, numerical result, attribution, or evidence
-strength.
+Rendered inspection covered every appendix opening and ending, the retained
+Q--DESN and PriceFM tables, representative proof and equation pages, and the
+appendix-to-bibliography transition. No clipped text, collision, stranded
+heading, one-line spill page, unreadable table, or malformed glyph was found.
 
-## Gate C result
-
-The fast validation gate passes with 18 tests, 340 mapped units, six preserved
-migration records, 102 historical display records, and 47 active visual
-records. The map is complete enough to begin the Appendix C pilot. No
-appendix, chapter, display, citation, or compiler dependency has changed at
-this checkpoint.
-
-## Final implementation result
-
-All 340 records are now `IMPLEMENTED`. Their dispositions are 104 `RETAIN`,
-161 `CONDENSE`, 16 `SUMMARIZE`, and 59 `DEACTIVATE`; 167 units remain active
-in the compiled graph, and all 173 inactive units have an exact no-loss and
-recovery record. The appendix sequence occupies 52 numbered pages rather than
-the 204-page baseline:
-
-| Appendix | Final numbered pages | Final count |
-| --- | --- | ---: |
-| A | 175--178 | 4 |
-| B | 179--184 | 6 |
-| C | 185--187 | 3 |
-| D | 188--208 | 21 |
-| E | 209--226 | 18 |
-| **Total** | **175--226** | **52** |
-
-The 82--102-page planning envelope was explicitly diagnostic rather than a
-quota. The unit-level review supported a shorter result because most of the
-additional pages belonged to complete display families, repeated algebra, or
-parallel computational variants whose claim-bearing content was retained in a
-single location. The 52-page outcome therefore reflects the approved
-essentiality decisions, not tighter typography or the deletion of an
-unresolved scientific dependency.
-
-Appendix D contains exactly the eight displays listed above, and Appendix E
-contains exactly the five listed above. The formal-result graph was
-implemented as specified: three body-authoritative results have proof-only
-appendix destinations, four supporting results retain their complete
-statement-and-proof units, and the direct Dirichlet-process content law is
-presented as an exact Beta result with interpretation rather than a duplicate
-proof.
-
-The end-to-end release gate passed against all 102 immutable imported Git
-blobs. The final PDF has 261 pages, 43 active TeX files, 257 unique active
-labels, 30 active visual records, no blocking citation or reference
-diagnostics, no overfull boxes, and no Type 3 fonts. Rendered review covered
-appendix boundaries, retained evidence classes, the Appendix E ending, and
-the bibliography transition. The exact artifact, hash, and review pages are
-recorded in `VALIDATION.md`.
+The validation establishes a self-contained local dissertation build. It does
+not rerun research simulations, establish material-specific reuse permission,
+produce a tagged accessibility-conformant filing PDF, or verify an Overleaf
+pull and compile.

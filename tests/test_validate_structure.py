@@ -191,6 +191,16 @@ class StructureValidationTests(unittest.TestCase):
             errors = ESSENTIALITY.validate_payload(payload, root)
             self.assertTrue(any("missing recovery" in error for error in errors))
 
+    def test_deactivated_record_cannot_remain_active(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            payload = self.essentiality_fixture(root)
+            payload["records"][0]["current_inclusion"] = "ACTIVE"
+            errors = ESSENTIALITY.validate_payload(payload, root)
+            self.assertTrue(
+                any("DEACTIVATE unit cannot remain ACTIVE" in error for error in errors)
+            )
+
     def test_protected_conclusion_requires_responsible_record(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

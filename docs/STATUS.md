@@ -1,5 +1,47 @@
 # Project status
 
+## 2026-11-07 final appendix curation validated
+
+The advisor-directed appendix curation is complete. The five thematic
+appendices remain, but their combined length is 26 numbered pages rather than
+52. Appendix A is a two-page statistical concordance; Appendix B retains the
+exDQLM posterior, structured LDVB, and synthesis calculations in three pages;
+Appendix C retains the source-indexed MCMC and Laplace--delta boundary in two
+pages; Appendix D retains the Q--DESN posterior/composite target, computation,
+essential sensitivity summary, PriceFM fold design, and GloFAS approximation
+in nine pages; and Appendix E retains the MTI proof graph, profile calculation,
+calibration, feasibility, and proposed endpoint computations in ten pages.
+
+Only three appendix displays remain: the compact Q--DESN sensitivity table,
+the PriceFM fold table, and the calibrated MTI policy table. No appendix figure
+remains. Removed display families remain recoverable through the essentiality
+map and their recorded Git baseline. Chapter bridges point to specific topical
+destinations, and no inactive label is cited by the active manuscript.
+
+The accepted ignored artifact is
+`build/release-20261107T051553Z/main.pdf`: 227 US-Letter pages, 15,714,474
+bytes, PDF 1.7, SHA-256
+`505d326622ae657615cde95e42e7387b7732737d1f9be3ba120cb506ebe42c66`.
+All 19 tests and the fast validation gate pass. The active graph contains 37
+TeX files, 216 unique labels, six migration records, and 24 visual records.
+The final log has 24 underfull-box notices, no overfull boxes, and no blocking
+diagnostics; all 24 fonts are embedded and no Type 3 font occurs. Rendered
+inspection covered every appendix boundary, all retained appendix tables,
+representative proof and equation pages, and the bibliography transition.
+
+An extracted-text scan found no drafting markers, collaboration-tool names,
+artificial-intelligence terminology, prompts, or production instructions in
+the compiled dissertation. Software and implementation terminology remains
+only where substantively required by the statistical software chapter,
+numerical methods, or stated research limitations. No research computation,
+source repository, data, or fitted object changed.
+
+The content is recorded in five appendix-sized commits, from
+`d1a03494c8bab944f4933274cf8d18d3abec63a1` through
+`c472f67e91cb2094c46217447cd2b7bad5494d59`. Exact unit dispositions,
+historical recovery locations, and rendered-review evidence are recorded in
+`appendix-essentiality-map.json` and `appendix-essentiality-review.md`.
+
 ## 2026-11-06 QDESN authority refresh validated
 
 Chapter 4 and Appendix D now use

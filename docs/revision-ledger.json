@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-28",
+  "recorded_at": "2026-11-07",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -17,7 +17,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "37b93eb9355274ff2eb548c50604e58dd76b6edc60a446527ad3ddcbf8252929",
+      "current_sha256": "0935b745157698ddc1ab9a97bd2d59fddcb3069ba94b3b1b4905b81d2cd70d25",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -27,7 +27,8 @@
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-FINAL-DISSERTATION-POLISH-20261028"
+        "REV-FINAL-DISSERTATION-POLISH-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
@@ -48,7 +49,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "d743c8b380f4292a09255c849a426043a57f205dc973fbefb359e4184b544c70",
+      "current_sha256": "e343e4daf3c6fc3ed8ed8cd6c33895f30c575e9a3120823836a2cd10da64f30c",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -60,13 +61,14 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
-        "REV-QDESN-AUTHORITY-20261106"
+        "REV-QDESN-AUTHORITY-20261106",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "b8badcb08beabbdd6960a06cf5957e9e35bcfc3e0d5f5060851ee5acae152c15",
+      "current_sha256": "daf944840620794617d89f524c8574a5496f3c2c7d86afb6014e094790012823",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -75,13 +77,14 @@
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-FINAL-DISSERTATION-POLISH-20261028"
+        "REV-FINAL-DISSERTATION-POLISH-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "appendices/a-shared-conventions.tex",
       "baseline_sha256": null,
-      "current_sha256": "b12ac9903f9810e793b022f60849e09f6c86408bf900eff8155ac3229f9d461c",
+      "current_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/01-introduction.tex",
@@ -92,13 +95,14 @@
       ],
       "revision_ids": [
         "REV-READER-FIRST-20261008",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "425a3bfc60481ff073dd8090bb63f5de01ad4c778ade7f683dca6e411a2ca20d",
+      "current_sha256": "79d14015d487faed83a1cb3e57c8409a077099db881b0a6431df7896e4cf715c",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
@@ -107,26 +111,28 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "a9d6242cf84754139227654ab5ebf9994dab9d1f99aa85b94c0822f2c69eda13",
+      "current_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
       ],
       "revision_ids": [
         "REV-READER-FIRST-20261008",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "9beab5f1b24fb2d908c3cc7cca6decd3f012034b6a90b5472dc358b2b3ec5c43",
+      "current_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -136,13 +142,14 @@
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-QDESN-AUTHORITY-20261106"
+        "REV-QDESN-AUTHORITY-20261106",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "aef3bae4e94c8a876864568206f60a8cc2622ee2ad7d3cf717a7a4078e7bec25",
+      "current_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
@@ -150,7 +157,8 @@
       "revision_ids": [
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-APPENDIX-CURATION-20261107"
       ]
     },
     {
@@ -694,6 +702,24 @@
       "summary": "Migrates Chapter 4 from the legacy QDESN article to the author-designated authority, updating the GloFAS target and path approximation together with the current GloFAS and PriceFM empirical contracts.",
       "evidence": "docs/qdesn-authority-refresh-20261106.md; docs/source-refresh-20261106.json; docs/claim-evidence.json",
       "validation": "Source builds, thesis validators, stale-claim searches, frozen Chapter 3 hashes, PDF diagnostics, and rendered inspection are required before merge."
+    },
+    {
+      "id": "REV-APPENDIX-CURATION-20261107",
+      "date": "2026-11-07",
+      "paths": [
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "appendices/a-shared-conventions.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/c-hydrology-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "summary": "Condenses the five technical appendices to the calculations, proofs, empirical qualifications, and three tables needed to interpret the dissertation while preserving explicit chapter bridges and recoverable historical sources.",
+      "evidence": "docs/essential-appendix-revision-plan.md; docs/appendix-essentiality-map.json; docs/appendix-essentiality-review.md",
+      "validation": "Appendix-sized commits, structural and provenance validation, clean TeX builds, log and font checks, and rendered inspection of appendix boundaries, retained tables, proof pages, and the bibliography transition."
     }
   ]
 }
