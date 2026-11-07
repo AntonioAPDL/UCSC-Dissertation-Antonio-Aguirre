@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import datetime as dt
 import json
 import hashlib
 from pathlib import Path
@@ -56,7 +57,7 @@ def main() -> int:
             "disposition": "KEEP",
             "claim_role": f"current manuscript evidence retained in the {placement}",
             "rationale": (
-                "Retained by the 2026-10-26 manuscript-first refresh as an active "
+                "Retained by the current manuscript-first source projection as an active "
                 "main-text or claim-relevant supporting display."
             ),
             "status": "CURRENT_SOURCE_REFRESH",
@@ -92,7 +93,7 @@ def main() -> int:
         records.append(record)
     payload = {
         "schema_version": 1,
-        "recorded_at": "2026-10-26",
+        "recorded_at": dt.date.today().isoformat(),
         "scope": (
             "All labeled figure, table, and longtable environments transitively "
             "included by research Chapters 2--5 and their technical appendices "

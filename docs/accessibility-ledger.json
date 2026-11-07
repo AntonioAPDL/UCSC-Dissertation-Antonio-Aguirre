@@ -1,134 +1,10 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-28",
+  "recorded_at": "2026-11-06",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
   "graphics": [
-    {
-      "source_path": "appendices/c-hydrology-technical.tex",
-      "graphic": "figures/ch03-environ/cutoff_2021_01_23_multivariate_synthesis_with_reference_ensembles.png",
-      "figure_label": "env:fig:synthsupport_20210123",
-      "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/c-hydrology-technical.tex",
-      "graphic": "figures/ch03-environ/cutoff_2021_11_12_multivariate_synthesis_with_reference_ensembles.png",
-      "figure_label": "env:fig:synthsupport_20210123",
-      "alt_text": "Predictive synthesis under exAL-M-T1 at the January 23 (upper) and November 12, 2021 (lower) cutoffs. Green denotes pre-origin USGS measurements, red denotes held-out USGS verification, the pink region is the central 95 percent posterior predictive band, and thin lines are the seven displayed synthesized quantiles. Raw retrospective and forecast products provide cutoff-specific reference overlays.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/c-hydrology-technical.tex",
-      "graphic": "figures/ch03-environ/cutoff_2021_12_21_multivariate_synthesis_with_reference_ensembles.png",
-      "figure_label": "env:fig:synthsupport_20211221",
-      "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/c-hydrology-technical.tex",
-      "graphic": "figures/ch03-environ/cutoff_2022_05_11_multivariate_synthesis_with_reference_ensembles.png",
-      "figure_label": "env:fig:synthsupport_20211221",
-      "alt_text": "Predictive synthesis under exAL-M-T1 at the December 21, 2021 (upper) and May 11, 2022 (lower) cutoffs. Colors, bands, quantile curves, and reference overlays have the same meanings as in Figure env:fig:synthsupport_20210123.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "label:qdesn2026:fig:supp-quantile-sequential-initialization",
-      "figure_label": "qdesn2026:fig:supp-quantile-sequential-initialization",
-      "alt_text": "A Gaussian ridge regression initializes a Gaussian regularized-horseshoe variational fit, which initializes the median AL regression. Independent AL fits then proceed outward toward both tails; each initializes the exAL fit at the same probability level. Complete independent grids initialize MQ--DESN in the multiquantile simulation and GloFAS, not PriceFM. The multiquantile simulation uses VB starts for MCMC under the same model; GloFAS and PriceFM report VB. Prior calibration and development-data selection are separate operations.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\PricefmCurrentRegionFigure",
-      "figure_label": "qdesn2026:fig:supp-pricefm-r98-region-comparison",
-      "alt_text": "For each of 38 regions, the plot compares mean AQL across three folds for R98 Q--DESN, PriceFM, and historical R92 Q--DESN. The horizontal positions show substantial regional heterogeneity, with PriceFM lower in 22 region means and R98 Q--DESN lower in 16.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentFullComparisonFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part4-all-families",
-      "alt_text": "The full issued-ensemble comparison retains Gaussian and raw GloFAS, Q--DESN and MQ--DESN AL/exAL paths with their original panel scales, historical observations, and held-out measurements.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentPartOneFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part1",
-      "alt_text": "Three panels show 30-day reference-only USGS forecasts from Gaussian, Q--DESN and MQ--DESN AL/exAL families, alongside black observed history and magenta dashed held-out measurements.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentPartTwoFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part2",
-      "alt_text": "Three panels show historical black discrepancy lines and 30-day future discrepancy paths for Gaussian and AL/exAL families. There are no post-cutoff discrepancy observations or scores.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentPartThreeFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part3",
-      "alt_text": "Three family-group panels compare 30-day combined historical USGS quantile forecasts with historical USGS and held-out measurements; all paths are uncrossed.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentConvergenceFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part4-convergence",
-      "alt_text": "Green MQ--DESN (AL) and brown MQ--DESN (exAL) parameter-change traces finish below the specified tolerance at outer iterations 11 and 28, respectively, with three consecutive coordinate iterations satisfying the stopping rule.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/d-qdesn-technical.tex",
-      "graphic": "\\GlofasApplicationCurrentCalibrationFigure",
-      "figure_label": "qdesn2026:fig:supp-glofas-part4-calibration",
-      "alt_text": "Seven empirical-frequency curves lie below the nominal diagonal. MQ--DESN (AL) and Q--DESN (AL) have the highest frequency at p=0.95, while MQ--DESN (exAL) reaches only 0.286 and raw GloFAS remains at zero.",
-      "description_source": "figalt",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "appendices/e-mti-technical.tex",
-      "graphic": "figures/ch05-mti/generated/figS02_loss_geometry.png",
-      "figure_label": "rqr2026:fig:supp-loss-geometry",
-      "alt_text": "MPI loss geometry and the fixed midpoint tilt. For c=0.80 , m=0 , and h=1 , the residual product is negative exactly inside the interval. The half-width score contracts h for covered observations and expands it for misses. A fixed adds a constant shift to the midpoint score but leaves the half-width score unchanged. These plots use the strict convention (e<0) : filled endpoint marks show the score at y= 1 , while open marks show the one-sided inside limits. These are deterministic pointwise score calculations, not fitted results.",
-      "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/e-mti-technical.tex",
-      "graphic": "figures/ch05-mti/generated/figS03_tolerance_population_shortest_intervals.png",
-      "figure_label": "rqr2026:fig:supp-tolerance-population-shortest",
-      "alt_text": "Population shortest-content intervals for the simulation distributions. Horizontal intervals show the shortest population content- c intervals for the centered and scaled simulation laws. The figure supplies the width benchmarks used to interpret the empirical width ranges in the main article.",
-      "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED",
-      "current_inclusion": "INACTIVE"
-    },
     {
       "source_path": "appendices/e-mti-technical.tex",
       "graphic": "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
@@ -269,7 +145,7 @@
       "source_path": "chapters/04-research-c.tex",
       "graphic": "\\GlofasApplicationCurrentForecastWindowFigure",
       "figure_label": "qdesn2026:fig:glofas-application-forecast-period",
-      "alt_text": "Two panels show the seven Joint AL Q--DESN quantile paths over 30 historical dates and 28 forecast dates. The upper panel contrasts observed and withheld USGS values with retrospective and issued GloFAS values. The lower panel shows fitted and observed GloFAS-minus-USGS discrepancies. Historical quantile paths are dashed, forecast paths are solid, and a vertical line marks the forecast origin.",
+      "alt_text": "Two stacked panels use the same date range and vertical scale. The first shows historical USGS observations, retrospective GloFAS, 51 issued ensemble paths and held-out USGS observations. The second shows seven Q--DESN (AL) quantile curves over the same 30 historical and 28 forecast dates. A vertical line marks the forecast origin in both panels.",
       "description_source": "figalt",
       "status": "REVIEWED"
     },
@@ -343,34 +219,7 @@
       "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-mae-intervals",
       "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 300 scored targets.",
       "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_mae_v1.pdf",
-      "figure_label": "qdesn2026:fig:independent-eval500-forecast_mae",
-      "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 500 scored targets.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/independent_train500_eval500_mcmc_figures_v1.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval500_mcmc_forecast_check_v1.pdf",
-      "figure_label": "qdesn2026:fig:independent-eval500-forecast_check",
-      "alt_text": "Nine panels compare four models using mean forecast check loss and 95 percent intervals over 500 scored targets.",
-      "description_source": "figalt",
       "status": "REVIEWED"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/qdesn_multiquantile_fit_figure_display.tex",
-      "graphic": "figures/ch04-qdesn/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_fit_oracle_rmse.pdf",
-      "figure_label": "qdesn2026:fig:joint-qdesn-pure-desn-v2-fit-rmse",
-      "alt_text": "Fitting-sample recovery of known conditional quantile paths in the multiquantile study. Points give the RMSE of monotone posterior-mean grids, not posterior interval summaries. Annotations c give raw adjacent-level crossing percentages before projection. Q--DESN fits levels independently; MQ--DESN estimates their coefficients jointly.",
-      "description_source": "caption",
-      "status": "AUTHOR_REVIEW_REQUIRED",
-      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",
@@ -379,24 +228,6 @@
       "alt_text": "Eight panels compare oracle finite-grid average CRPS under asymmetric-Laplace tails, Gaussian-mixture, Laplace, nonlinear-reservoir, Gaussian, persistent-heavy-tail, regime-shift, and Student-t location--scale mechanisms. Each panel has four rows: MQ--DESN and independently fitted Q--DESN under AL and exAL. Points are posterior means and horizontal segments are equal-tailed 95 percent intervals for the score, with smaller values preferred. Filled symbols denote MQ--DESN and open symbols Q--DESN; blue circles denote AL and brown triangles exAL. Right-side annotations give raw adjacent-level crossing percentages before the specified monotone scoring transformation.",
       "description_source": "caption",
       "status": "REVIEWED"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/qdesn_single_quantile_mcmc_fit_figure_display.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_mcmc_fit_rmse.pdf",
-      "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-fit-rmse-intervals",
-      "alt_text": "Nine panels compare posterior fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/qdesn_single_quantile_vb_fit_figure_display.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/qdesn_pro_review_vb_fit_rmse.pdf",
-      "figure_label": "qdesn2026:fig:simulation-500obs-vb-fit-rmse-intervals",
-      "alt_text": "Nine panels compare approximate variational fitting-sample quantile-path RMSE means and 95 percent intervals for four models across three observation-error families and three probability levels. Lower values are better.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
     }
   ]
 }

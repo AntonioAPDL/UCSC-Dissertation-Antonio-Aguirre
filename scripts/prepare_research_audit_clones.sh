@@ -75,6 +75,9 @@ clone_at_commit() {
 clone_at_commit qdesn \
   https://github.com/AntonioAPDL/Article-Q-DESN---Version-2 \
   757522db0f85815244370ec92a194de132268883
+clone_at_commit qdesn-current \
+  https://github.com/AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis \
+  aa613b056b054edd9347eeb4739bd4bce0c92818
 clone_at_commit environmetrics \
   https://github.com/AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2 \
   1272bfc10442a28add5a4c74ff641e9b9a8e9666

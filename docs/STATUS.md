@@ -1,5 +1,46 @@
 # Project status
 
+## 2026-11-06 QDESN authority refresh validated
+
+Chapter 4 and Appendix D now use
+`AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis`
+at commit `aa613b056b054edd9347eeb4739bd4bce0c92818` as the active QDESN
+authority. `Article-Q-DESN---Version-2` is retained only as historical and
+computational provenance. The content-bearing dissertation commit is
+`b7bb3187f1cbf1e918b0cd1474244c117e36531d`.
+
+The streamflow application now states the unit-weight issued-member target,
+the 28 latent future-reference factors and 1,428 issued-member factors, the
+retained covariance terms, and the marginal response-quantile forecast. Its
+current comparison reports grid aCRPS values 0.7156, 0.7371, 0.8266, and
+0.8431 for the four quantile models, compared with 1.02 and 1.18 for the
+Gaussian baselines and 1.4360 for raw GloFAS. Q--DESN under AL is 50.2% below
+the raw ensemble. The PriceFM application now uses region-specific validation
+among Q--DESN and MQ--DESN under AL and exAL, fixed over three 2025 test folds:
+the selected DESN mean AQL is 6.687 versus 7.039 for reproduced PriceFM
+forecasts, a reduction of 0.352 EUR/MWh (5.0%). The abstract and Chapter 6 use
+the same bounded conclusions.
+
+Fresh isolated clones confirmed that the RQR-GIBBS, MTI-EXTENSIONS, exdqlm JSS,
+and exdqlm package authorities remain at their recorded manuscript or package
+states, so Chapters 2 and 5 required no content change. The Chapter 3 source,
+appendix, figure tree, and table tree remained byte-for-byte at their frozen
+Git objects. No research code, data, fitted object, cache, simulation archive,
+or repository history was imported.
+
+The accepted ignored artifact is
+`build/release-20261107T042021Z/main.pdf`: 253 US-Letter pages, 16,235,653
+bytes, PDF 1.7, SHA-256
+`920f729693533463e1852f76f574232006a78cf64034236ca11ce4294c60ed4c`.
+All 18 tests and all repository validators pass, including 108 immutable
+source-blob checks. The final log has 25 underfull-box notices, zero overfull
+boxes, and zero blocking diagnostics; all
+fonts are embedded and no Type 3 font occurs. Five affected pages were
+rasterized and inspected without clipping, collision, duplicate captions, or
+unreadable displays. The PDF remains untagged. GitHub synchronization is the
+remaining release action; an Overleaf pull and compile remain separate user
+actions.
+
 ## 2026-10-28 committee-facing copy cleanup
 
 The compiled dissertation now presents only reader-facing material suitable

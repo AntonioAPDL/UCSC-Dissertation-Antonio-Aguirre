@@ -45,13 +45,13 @@ class StructureValidationTests(unittest.TestCase):
         relative = {str(path.relative_to(ROOT)) for path in files}
         self.assertTrue(dynamic)
         self.assertIn(
-            "tables/ch04-qdesn/current_source_aliases_20261026.tex", relative
+            "tables/ch04-qdesn/current_source_aliases_20261106.tex", relative
         )
 
-    def test_moved_keep_display_remains_active(self):
+    def test_current_qdesn_display_remains_active(self):
         files, _ = MODULE.active_tex_files()
         text = "\n".join(path.read_text(encoding="utf-8") for path in files)
-        current_label = "qdesn2026:fig:supp-pricefm-r98-region-comparison"
+        current_label = "qdesn2026:fig:glofas-application-forecast-period"
         self.assertIn(rf"\label{{{current_label}}}", text)
         ledger = json.loads((ROOT / "docs" / "display-ledger.json").read_text())
         record = next(

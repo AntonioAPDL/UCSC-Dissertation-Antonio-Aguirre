@@ -48,7 +48,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "ed6424fa9a93441a063fdfe45bebe2469af75f67abb827005c629d5a42bba9f3",
+      "current_sha256": "d743c8b380f4292a09255c849a426043a57f205dc973fbefb359e4184b544c70",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -59,7 +59,8 @@
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-FINAL-DISSERTATION-POLISH-20261028"
+        "REV-FINAL-DISSERTATION-POLISH-20261028",
+        "REV-QDESN-AUTHORITY-20261106"
       ]
     },
     {
@@ -125,7 +126,7 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "2a57ceedbb9a429fe8538c9d31c05d895c99f27a0f344735e4a0024b43b93433",
+      "current_sha256": "9beab5f1b24fb2d908c3cc7cca6decd3f012034b6a90b5472dc358b2b3ec5c43",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -134,7 +135,8 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
-        "REV-ESSENTIAL-APPENDICES-20261028"
+        "REV-ESSENTIAL-APPENDICES-20261028",
+        "REV-QDESN-AUTHORITY-20261106"
       ]
     },
     {
@@ -679,6 +681,19 @@
       "summary": "Removes repeated article-style chapter overviews and redundant computational bridge sections, replaces tutorial and generic implementation phrasing with direct statistical exposition, and confirms source descriptions for four active figures by visual review.",
       "evidence": "docs/final-dissertation-polish-plan.md; docs/accessibility-ledger.json",
       "validation": "Fast, release, immutable source-blob, TeX-log, PDF metadata, and rendered-page checks are required before merge."
+    },
+    {
+      "id": "REV-QDESN-AUTHORITY-20261106",
+      "date": "2026-11-06",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "chapters/04-research-c.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "summary": "Migrates Chapter 4 from the legacy QDESN article to the author-designated authority, updating the GloFAS target and path approximation together with the current GloFAS and PriceFM empirical contracts.",
+      "evidence": "docs/qdesn-authority-refresh-20261106.md; docs/source-refresh-20261106.json; docs/claim-evidence.json",
+      "validation": "Source builds, thesis validators, stale-claim searches, frozen Chapter 3 hashes, PDF diagnostics, and rendered inspection are required before merge."
     }
   ]
 }

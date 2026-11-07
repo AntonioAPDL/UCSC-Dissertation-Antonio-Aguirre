@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-06",
+  "thesis_baseline": "93914e59cbf0b7ae62dbf13eaf0154cd8a5543f1",
+  "status": "IMPLEMENTED_RELEASE_VALIDATED",
+  "implementation_commit": "b7bb3187f1cbf1e918b0cd1474244c117e36531d",
+  "authority_change": {
+    "active_source_id": "SRC-QDESN",
+    "repository": "AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis",
+    "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+    "legacy_source_id": "SRC-QDESN-LEGACY",
+    "legacy_repository": "AntonioAPDL/Article-Q-DESN---Version-2",
+    "legacy_head": "82a8e70b1306aa2f36cf67ac8da65e6052df2c91",
+    "comparison_method": "content and hash comparison because the authoritative repository has independent Git history"
+  },
+  "source_documents": {
+    "main.tex": "4a9e1dadb308953cfe9549b01e513b975345fef14c521c31e50757b30028d7cf",
+    "qdesn-supplement.tex": "2e5e4f671185a627f629bdd021ff0dc79833b38c62dd441a074a170b2e71243c",
+    "refs.bib": "a12e207f55b3e0cac083ca2556223311fe7dc38a0e2cbfe904727412ea6e704c"
+  },
+  "source_build": {
+    "engine": "pdfTeX 3.14159265-2.6-1.40.19, TeX Live 2018",
+    "main_pages": 38,
+    "supplement_pages": 31,
+    "unresolved_citations": 0,
+    "unresolved_references": 0
+  },
+  "current_empirical_contract": {
+    "glofas_grid_acrps": {
+      "qdesn_al": 0.7156,
+      "mqdesn_al": 0.7371,
+      "qdesn_exal": 0.8266,
+      "mqdesn_exal": 0.8431,
+      "gaussian_rhs": 1.02,
+      "gaussian_ridge": 1.18,
+      "raw_glofas": 1.436,
+      "qdesn_al_reduction_percent": 50.2
+    },
+    "pricefm": {
+      "regions": 38,
+      "folds": 3,
+      "region_fold_cases": 114,
+      "selected_desn_mean_aql": 6.687,
+      "pricefm_mean_aql": 7.039,
+      "reduction_eur_mwh": 0.352,
+      "reduction_percent": 5.0,
+      "fold_differences": [-0.365, -0.341, -0.35]
+    }
+  },
+  "unchanged_authorities": [
+    {
+      "source_id": "SRC-RQR",
+      "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+      "documents": {
+        "main.tex": "6e80e83b140c73301506ffc7388a725c66d3bb593529921401287b3c80137f0d",
+        "rqr-gibbs-supplement.tex": "a2b296af5482cd7c8d571fbd2d9221e0122aaa0be4531d78601f4c8a1ef0c339"
+      }
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "documents": {
+        "main.tex": "a909c00dbf27f88746152550fd7117def17eeeeab135411c5f4d95c1cc69f363",
+        "mti-extensions-supplement.tex": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb"
+      }
+    },
+    {
+      "source_id": "SRC-EXDQLM-ARTICLE",
+      "commit": "98cec593d11bf32715a690ae168086f16160e7f0",
+      "documents": {
+        "exdqlm-jss.tex": "eac79a94ab29a9644b2db6e98a719746d6685c8db4ef4c017dfac5eefff4095c"
+      }
+    },
+    {
+      "source_id": "SRC-EXDQLM-PKG",
+      "commit": "e51045a4324901cced27ca2aaa22569afbc8e0e6"
+    }
+  ],
+  "frozen_chapter_3": {
+    "chapters/03-research-b.tex": "85ed8219597648edd34e7aa8e6884243aef017a9",
+    "appendices/c-hydrology-technical.tex": "9529faec7cb6828ec41c688c2c45ae0821d63c06",
+    "figures/ch03-environ": "4ab337bd505ab7054406a2fa5225036038aa83ae",
+    "tables/ch03-environ": "35cfaaa56ce9cbad1adcf9d1c6439c4cb1bea25b"
+  },
+  "imported_asset": {
+    "source_path": "figures/glofas_application/glofas_issued_forecasts.pdf",
+    "destination": "figures/ch04-qdesn/glofas_application/glofas_issued_forecasts_20261106.pdf",
+    "sha256": "5299f315da232416f84fe9913e22c4dea2f99de5f8e9e2fbe9ae68d07de7a6b3"
+  },
+  "dissertation_release": {
+    "artifact": "build/release-20261107T042021Z/main.pdf",
+    "sha256": "920f729693533463e1852f76f574232006a78cf64034236ca11ce4294c60ed4c",
+    "bytes": 16235653,
+    "pages": 253,
+    "page_size": "US Letter",
+    "pdf_version": "1.7",
+    "tex_engine": "pdfTeX 3.14159265-2.6-1.40.19, TeX Live 2018",
+    "underfull_boxes": 25,
+    "overfull_boxes": 0,
+    "blocking_diagnostics": 0,
+    "fonts_embedded": true,
+    "type_3_fonts": 0,
+    "tagged_pdf": false,
+    "repository_tests": 18,
+    "immutable_source_blobs_rechecked": 108,
+    "rendered_physical_pages": [137, 139, 142, 220, 222],
+    "rendered_inspection": "PASS"
+  },
+  "boundaries": [
+    "No source code, data, fitted objects, caches, simulation archives, or research histories were imported.",
+    "The Environmetrics chapter and assets are frozen.",
+    "Material-specific reuse permission remains unverified.",
+    "Overleaf synchronization and compilation remain separate user actions."
+  ]
+}

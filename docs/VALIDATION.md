@@ -1,5 +1,45 @@
 # Validation record
 
+## 2026-11-06 QDESN authority-refresh release
+
+The refreshed QDESN source was inspected and compiled in a fresh isolated
+clone at `aa613b056b054edd9347eeb4739bd4bce0c92818`. The 38-page main article
+and 31-page supplement compiled under TeX Live 2018 with no unresolved
+citations or references. Source hashes, the authority transition, unchanged
+research-source checks, and the frozen Chapter 3 guards are recorded in
+`docs/source-refresh-20261106.json`.
+
+The dissertation gate passed all 18 tests; rechecked 108 immutable source
+blobs, including the six current-projection records; reconciled nine research
+sources and 31 claim-evidence records; retained 54 active displays; checked four
+manuscript-import manifests with 102 imported records; resolved all 116 cited
+keys; and validated 43 active TeX files, 258 unique labels, six migration
+records, and 28 active visuals. Extracted-text searches found none of the
+superseded GloFAS coverage counts, old PriceFM win counts, or the old PriceFM
+aggregate result in the active PDF. The current score, source-count, and fold
+claims occur consistently in Chapter 4, Appendix D, the abstract, and the
+synthesis.
+
+The accepted ignored artifact is
+`build/release-20261107T042021Z/main.pdf`: 253 US-Letter pages, 16,235,653
+bytes, PDF 1.7, SHA-256
+`920f729693533463e1852f76f574232006a78cf64034236ca11ce4294c60ed4c`.
+The final log has 25 underfull-box notices, zero overfull boxes, and zero
+blocking citation, reference, label, file, or fatal diagnostics. All reported
+fonts are embedded, no Type 3 font occurs, and the file is searchable,
+unencrypted, and untagged.
+
+Physical PDF pages 137, 139, 142, 220, and 222 were rasterized from the final
+artifact. Direct inspection confirmed the GloFAS target and score prose, the
+plot-only issued-forecast display with its native thesis caption, the PriceFM
+fold table, and the Appendix D model and moment details. No clipping,
+collision, duplicate caption, malformed glyph, stranded heading, or unreadable
+display was found.
+
+This release validates the local source and rendering. It does not establish
+material-specific reuse permission, an accessible tagged filing PDF, or a
+successful Overleaf pull and build.
+
 ## 2026-10-28 committee-facing copy release
 
 The reader-facing cleanup was validated with the chapter gate and a fresh

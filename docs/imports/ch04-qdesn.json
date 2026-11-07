@@ -9,6 +9,62 @@
     "destination_hash_field": "destination_sha256",
     "meaning": "Immutable hash of each destination at the initial structural-conversion baseline"
   },
+  "current_projection": {
+    "id": "qdesn-authority-refresh-20261106",
+    "source_id": "SRC-QDESN",
+    "repository": "AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis",
+    "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+    "status": "IMPLEMENTED_RELEASE_VALIDATED",
+    "documents": [
+      {
+        "source_path": "main.tex",
+        "source_sha256": "4a9e1dadb308953cfe9549b01e513b975345fef14c521c31e50757b30028d7cf"
+      },
+      {
+        "source_path": "qdesn-supplement.tex",
+        "source_sha256": "2e5e4f671185a627f629bdd021ff0dc79833b38c62dd441a074a170b2e71243c"
+      },
+      {
+        "source_path": "refs.bib",
+        "source_sha256": "a12e207f55b3e0cac083ca2556223311fe7dc38a0e2cbfe904727412ea6e704c"
+      }
+    ],
+    "scientific_changes": [
+      "unit-weight GloFAS target with 28 latent future-reference factors and 1428 issued-member factors",
+      "local Gaussian--Delta path approximation retaining response--design and reference--discrepancy covariance",
+      "current seven-model GloFAS score comparison",
+      "region-specific selected-DESN PriceFM comparison over three 2025 folds"
+    ],
+    "projected_items": [
+      {
+        "source_path": "figures/glofas_application/glofas_issued_forecasts.pdf",
+        "destination": "figures/ch04-qdesn/glofas_application/glofas_issued_forecasts_20261106.pdf",
+        "source_sha256": "5299f315da232416f84fe9913e22c4dea2f99de5f8e9e2fbe9ae68d07de7a6b3",
+        "destination_sha256": "5299f315da232416f84fe9913e22c4dea2f99de5f8e9e2fbe9ae68d07de7a6b3",
+        "handling": "byte-for-byte copy of the authoritative manuscript display"
+      },
+      {
+        "source_path": "tables/glofas_scores.tex",
+        "destination": "tables/ch04-qdesn/glofas_scores_20261106.tex",
+        "source_sha256": "8ef18388beed2b31c88ab2964d5c975222827ef2ced2e5bf2d0674c82a36e9e3",
+        "destination_sha256": "daedc7412214ec13f136cf0a24b63cea1c76e7abf1ad137dc8f76475610d6992",
+        "handling": "path-normalized dissertation projection"
+      },
+      {
+        "source_path": "tables/pricefm_summary.tex",
+        "destination": "tables/ch04-qdesn/pricefm_summary_20261106.tex",
+        "source_sha256": "67f32294205533af7e36aa6c8816ebfa2542442141cf865930de798ca2d82432",
+        "destination_sha256": "54e2d02b5e04f31316042e8559ddcbdd7a8d3f95bd29ed805cadde56e084592b",
+        "handling": "path-normalized dissertation projection"
+      }
+    ],
+    "unchanged_asset_hashes_verified": [
+      "figures/independent_simulation/independent_forecast_calibration_v1.pdf",
+      "figures/independent_simulation/independent_train500_eval300_mcmc_forecast_check_v1.pdf",
+      "figures/independent_simulation/independent_train500_eval300_mcmc_forecast_mae_v1.pdf",
+      "figures/joint_qdesn_simulation/joint_qdesn_pure_desn_v2_mq_forecast_dgp_acrps.pdf"
+    ]
+  },
   "editorial_derivative": {
     "chapter_path": "chapters/04-research-c.tex",
     "revision_ledger": "docs/revision-ledger.json",
@@ -31,7 +87,7 @@
   },
   "documents": [
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "main.tex",
       "source_sha256": "99e10d9755fc97dc0ce995bf7285ee6c00c197341e8cda7a5c2483cb6e8d31c4",
@@ -73,7 +129,7 @@
       ]
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "qdesn-supplement.tex",
       "source_sha256": "658eeb87924e6bb08923898e7773ddc9a20e1efb87d65808ca9896e29593fe8c",
@@ -132,7 +188,7 @@
       ]
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "gaussian_desn_scaled_ridge_supplement.tex",
       "source_sha256": "1c3d08ec2c50ac854d76b6f3af18c2635b5a8c21450898018f78e741c544072c",
@@ -188,7 +244,7 @@
   ],
   "items": [
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/glofas_application/diagnostics/glofas_part4_independent_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
       "locator": "figures/glofas_application/diagnostics/glofas_part4_independent_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
@@ -209,7 +265,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/glofas_application/diagnostics/glofas_part4_joint_al_convergence_trace__glofas_part4_joint_al_sweep10_20260911.pdf",
       "locator": "figures/glofas_application/diagnostics/glofas_part4_joint_al_convergence_trace__glofas_part4_joint_al_sweep10_20260911.pdf",
@@ -230,7 +286,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/glofas_application/diagnostics/glofas_part4_joint_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
       "locator": "figures/glofas_application/diagnostics/glofas_part4_joint_quantile_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
@@ -251,7 +307,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/glofas_application/diagnostics/glofas_part4_normal_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
       "locator": "figures/glofas_application/diagnostics/glofas_part4_normal_comparison__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
@@ -272,7 +328,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/glofas_application/glofas_part4_joint_al_last30_issued28__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
       "locator": "figures/glofas_application/glofas_part4_joint_al_last30_issued28__glofas_part4_joint_al_sweep10_presentation_v2_20260911.pdf",
@@ -293,7 +349,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
       "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_fit_rmse_intervals.pdf",
@@ -314,7 +370,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
       "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_check_loss_intervals.pdf",
@@ -335,7 +391,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
       "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_mcmc_forecast_mae_intervals.pdf",
@@ -356,7 +412,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
       "locator": "figures/independent_simulation/qdesn_validation_500obs_v14_vb_fit_rmse_intervals.pdf",
@@ -377,7 +433,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
       "locator": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_fit_oracle_rmse.pdf",
@@ -398,7 +454,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
       "locator": "figures/joint_qdesn_simulation/joint_qdesn_corrected_v4_forecast_dgp_acrps.pdf",
@@ -419,7 +475,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
       "locator": "figures/pricefm_application/pricefm_r98_region_aql_comparison.pdf",
@@ -440,7 +496,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/quantile_initialization/quantile_initialization_caption.tex",
       "locator": "figures/quantile_initialization/quantile_initialization_caption.tex",
@@ -461,7 +517,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/quantile_initialization/quantile_initialization_picture.tex",
       "locator": "figures/quantile_initialization/quantile_initialization_picture.tex",
@@ -482,7 +538,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "figures/quantile_initialization/quantile_initialization_styles.tex",
       "locator": "figures/quantile_initialization/quantile_initialization_styles.tex",
@@ -503,7 +559,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "gaussian_desn_scaled_ridge_supplement.tex",
       "locator": "gaussian_desn_scaled_ridge_supplement.tex",
@@ -524,7 +580,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "main.tex",
       "locator": "main.tex",
@@ -545,7 +601,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "qdesn-supplement.tex",
       "locator": "qdesn-supplement.tex",
@@ -566,7 +622,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/glofas_application_current_outputs.tex",
       "locator": "tables/glofas_application_current_outputs.tex",
@@ -587,7 +643,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/glofas_application_part4_historical_guardrail__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
       "locator": "tables/glofas_application_part4_historical_guardrail__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
@@ -608,7 +664,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/glofas_application_part4_main_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
       "locator": "tables/glofas_application_part4_main_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
@@ -629,7 +685,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/glofas_application_part4_supplementary_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
       "locator": "tables/glofas_application_part4_supplementary_scores__glofas_part4_joint_al_sweep10_presentation_v2_20260911.tex",
@@ -650,7 +706,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_article_validation_phase153_replication_summary.tex",
       "locator": "tables/joint_qdesn_article_validation_phase153_replication_summary.tex",
@@ -671,7 +727,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_article_validation_provenance_tables.tex",
       "locator": "tables/joint_qdesn_article_validation_provenance_tables.tex",
@@ -692,7 +748,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_contrast_table.tex",
       "locator": "tables/joint_qdesn_corrected_v4_contrast_table.tex",
@@ -713,7 +769,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_crossing_table.tex",
       "locator": "tables/joint_qdesn_corrected_v4_crossing_table.tex",
@@ -734,7 +790,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_fit_figure.tex",
       "locator": "tables/joint_qdesn_corrected_v4_fit_figure.tex",
@@ -755,7 +811,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_forecast_figure.tex",
       "locator": "tables/joint_qdesn_corrected_v4_forecast_figure.tex",
@@ -776,7 +832,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_oracle_recovery_table.tex",
       "locator": "tables/joint_qdesn_corrected_v4_oracle_recovery_table.tex",
@@ -797,7 +853,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_protocol.tex",
       "locator": "tables/joint_qdesn_corrected_v4_protocol.tex",
@@ -818,7 +874,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_score_table.tex",
       "locator": "tables/joint_qdesn_corrected_v4_score_table.tex",
@@ -839,7 +895,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/joint_qdesn_corrected_v4_secondary_score_table.tex",
       "locator": "tables/joint_qdesn_corrected_v4_secondary_score_table.tex",
@@ -860,7 +916,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/pricefm_full_current_outputs.tex",
       "locator": "tables/pricefm_full_current_outputs.tex",
@@ -881,7 +937,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/pricefm_r98_global_aql_comparison.tex",
       "locator": "tables/pricefm_r98_global_aql_comparison.tex",
@@ -902,7 +958,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/pricefm_r98_main_aql_summary.tex",
       "locator": "tables/pricefm_r98_main_aql_summary.tex",
@@ -923,7 +979,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_metric_dependence_sensitivity.tex",
       "locator": "tables/qdesn_validation_500obs_metric_dependence_sensitivity.tex",
@@ -944,7 +1000,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_mcmc_fit_metric_interval_figure.tex",
       "locator": "tables/qdesn_validation_500obs_v14_mcmc_fit_metric_interval_figure.tex",
@@ -965,7 +1021,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_mcmc_forecast_metric_interval_figures.tex",
       "locator": "tables/qdesn_validation_500obs_v14_mcmc_forecast_metric_interval_figures.tex",
@@ -986,7 +1042,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_gausmix.tex",
       "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_gausmix.tex",
@@ -1007,7 +1063,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_laplace.tex",
       "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_laplace.tex",
@@ -1028,7 +1084,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_normal.tex",
       "locator": "tables/qdesn_validation_500obs_v14_mcmc_metric_intervals_normal.tex",
@@ -1049,7 +1105,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_paired_metric_interval_tables.tex",
       "locator": "tables/qdesn_validation_500obs_v14_paired_metric_interval_tables.tex",
@@ -1070,7 +1126,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_interval_figures.tex",
       "locator": "tables/qdesn_validation_500obs_v14_vb_metric_interval_figures.tex",
@@ -1091,7 +1147,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_gausmix.tex",
       "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_gausmix.tex",
@@ -1112,7 +1168,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_laplace.tex",
       "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_laplace.tex",
@@ -1133,7 +1189,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_normal.tex",
       "locator": "tables/qdesn_validation_500obs_v14_vb_metric_intervals_normal.tex",
@@ -1154,7 +1210,7 @@
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     },
     {
-      "source_id": "SRC-QDESN",
+      "source_id": "SRC-QDESN-LEGACY",
       "commit": "757522db0f85815244370ec92a194de132268883",
       "source_path": "tables/qdesn_validation_mcmc_five_chain_sensitivity.tex",
       "locator": "tables/qdesn_validation_mcmc_five_chain_sensitivity.tex",

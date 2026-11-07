@@ -31,7 +31,8 @@ BASELINE_COMMIT = "79dbb9cc8348d9cc0ece2f23d5ade33570275055"
 SOURCE_CLONES = {
     "SRC-EXDQLM-ARTICLE": "exdqlm-article",
     "SRC-ENVIRON": "environmetrics",
-    "SRC-QDESN": "qdesn",
+    "SRC-QDESN": "qdesn-current",
+    "SRC-QDESN-LEGACY": "qdesn",
     "SRC-RQR": "rqr",
     "SRC-MTI-EXT": "mti-extensions",
 }
@@ -126,6 +127,7 @@ def main() -> int:
     document_count = 0
     section_count = 0
     source_check_count = 0
+    current_projection_count = 0
     baseline_destinations: dict[str, str] = {}
 
     try:
@@ -227,6 +229,68 @@ def main() -> int:
         policy = manifest.get("policy", {})
         if not isinstance(policy, dict) or "unverified" not in str(policy.get("rights", "")):
             errors.append(f"{relative_path}: missing unverified-rights boundary")
+
+        current_projection = manifest.get("current_projection")
+        if current_projection is not None:
+            projection_where = f"{relative_path}:current_projection"
+            if not isinstance(current_projection, dict):
+                errors.append(f"{projection_where}: projection is not an object")
+            else:
+                source_id = str(current_projection.get("source_id", ""))
+                commit = str(current_projection.get("commit", ""))
+                if current_projection.get("status") != "IMPLEMENTED_RELEASE_VALIDATED":
+                    errors.append(f"{projection_where}: projection is not release validated")
+                clone = SOURCE_CLONES.get(source_id)
+                if not clone:
+                    errors.append(f"{projection_where}: no clone mapping for {source_id}")
+                source_records = [
+                    ("documents", index, record)
+                    for index, record in enumerate(current_projection.get("documents", []))
+                ] + [
+                    ("projected_items", index, record)
+                    for index, record in enumerate(current_projection.get("projected_items", []))
+                ]
+                if not source_records:
+                    errors.append(f"{projection_where}: no current source records")
+                for group, index, record in source_records:
+                    current_projection_count += 1
+                    record_where = f"{projection_where}:{group}[{index}]"
+                    if not isinstance(record, dict):
+                        errors.append(f"{record_where}: record is not an object")
+                        continue
+                    source_path = str(record.get("source_path", ""))
+                    source_hash = str(record.get("source_sha256", ""))
+                    if not source_path or not source_hash:
+                        errors.append(f"{record_where}: missing source path or hash")
+                        continue
+                    if group == "projected_items":
+                        destination_string = str(record.get("destination", ""))
+                        destination_path = Path(destination_string)
+                        if (
+                            not destination_string
+                            or destination_path.is_absolute()
+                            or ".." in destination_path.parts
+                        ):
+                            errors.append(f"{record_where}: unsafe destination {destination_string!r}")
+                        else:
+                            destination = PROJECT_ROOT / destination_path
+                            if not destination.is_file():
+                                errors.append(f"{record_where}: missing destination {destination_string}")
+                            elif digest(destination.read_bytes()) != record.get("destination_sha256"):
+                                errors.append(f"{record_where}: destination hash mismatch")
+                    if args.audit_root and clone:
+                        repo = args.audit_root / clone
+                        if not (repo / ".git").exists():
+                            errors.append(f"{record_where}: audit clone missing: {clone}")
+                            continue
+                        try:
+                            data = git_blob(repo, commit, source_path)
+                        except RuntimeError as exc:
+                            errors.append(f"{record_where}: source blob unavailable: {exc}")
+                            continue
+                        source_check_count += 1
+                        if digest(data) != source_hash:
+                            errors.append(f"{record_where}: source Git-blob hash mismatch")
         documents = manifest.get("documents", [])
         if not isinstance(documents, list) or not documents:
             errors.append(f"{relative_path}: no source-document dispositions")
@@ -423,6 +487,7 @@ def main() -> int:
         f"- {len(manifests)} chapter manifests; {document_count} source documents; "
         f"{section_count} section dispositions\n"
         f"- {item_count} imported records{source_note}\n"
+        f"- {current_projection_count} current-projection source records checked\n"
         f"- {len(files)} imported TeX files; {len(labels)} unique labels\n"
         f"- {len(cited)} cited keys; all present in references.bib\n"
         "- baseline provenance, editable-derivative ledger, dependency, rights, file-type, path, and secret checks passed"

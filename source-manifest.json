@@ -244,17 +244,17 @@
     {
       "id": "SRC-QDESN",
       "kind": "seed_repository",
-      "repository": "AntonioAPDL/Article-Q-DESN---Version-2",
-      "url": "https://github.com/AntonioAPDL/Article-Q-DESN---Version-2",
+      "repository": "AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis",
+      "url": "https://github.com/AntonioAPDL/Bayesian-Quantile-Regression-withDeep-Echo-State-Network-Features---Thesis",
       "default_branch": "main",
-      "discovery_commit": "483e6edbec72ec76e48f2259e943e674b76e5041",
-      "audit_commit": "483e6edbec72ec76e48f2259e943e674b76e5041",
-      "audit_scope": "Isolated partial Git clone at current origin/main; history comparison, manuscript/supplement inspection, and dependency-scoped asset projection",
+      "discovery_commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+      "audit_commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+      "audit_scope": "Fresh isolated clone of the author-designated main branch; complete main/supplement compile, claim-level comparison with the legacy article, and dependency-scoped asset projection",
       "inventory": {
-        "tracked_files": 3393,
-        "remote_heads": 192,
+        "tracked_files": 21,
+        "remote_heads": 1,
         "tags": 0,
-        "unmerged_remote_heads": 36
+        "unmerged_remote_heads": 0
       },
       "documents": [
         {
@@ -266,19 +266,14 @@
           "id": "DOC-QDESN-SUPP",
           "path": "qdesn-supplement.tex",
           "role": "main supplement"
-        },
-        {
-          "id": "DOC-QDESN-GAUSS",
-          "path": "gaussian_desn_scaled_ridge_supplement.tex",
-          "role": "Gaussian DESN supplement"
         }
       ],
       "related_snapshots": [
         {
-          "id": "SNAP-QDESN-THESIS-20260915",
-          "ref": "prior dissertation working source",
-          "commit": "757522db0f85815244370ec92a194de132268883",
-          "role": "immutable baseline for the first manuscript conversion"
+          "id": "SNAP-QDESN-LEGACY-20261106",
+          "ref": "legacy Article-Q-DESN---Version-2 repository",
+          "commit": "82a8e70b1306aa2f36cf67ac8da65e6052df2c91",
+          "role": "historical and computational provenance; not the current scientific authority"
         }
       ],
       "relationship": "Candidate QDESN method and application line",
@@ -289,9 +284,68 @@
         {
           "chapter": "chapters/04-research-c.tex",
           "manifest": "docs/imports/ch04-qdesn.json",
-          "status": "CURRENT_REFRESH_RELEASE_VALIDATED",
-          "scope": "current main article in Chapter 4; current main and Gaussian technical material in Appendix D; only final active and claim-relevant display dependencies",
-          "refresh": "docs/source-refresh-20261026.json"
+          "status": "CURRENT_AUTHORITY_REFRESH_VALIDATED",
+          "scope": "authoritative main article in Chapter 4; claim-relevant supplement material in Appendix D; only final active and claim-relevant display dependencies",
+          "refresh": "docs/source-refresh-20261106.json"
+        }
+      ]
+    },
+    {
+      "id": "SRC-QDESN-LEGACY",
+      "kind": "historical_repository",
+      "repository": "AntonioAPDL/Article-Q-DESN---Version-2",
+      "url": "https://github.com/AntonioAPDL/Article-Q-DESN---Version-2",
+      "default_branch": "main",
+      "discovery_commit": "483e6edbec72ec76e48f2259e943e674b76e5041",
+      "audit_commit": "82a8e70b1306aa2f36cf67ac8da65e6052df2c91",
+      "audit_scope": "Fresh isolated shallow clone used only for content comparison and preservation of historical import provenance",
+      "inventory": {
+        "tracked_files": 3761,
+        "remote_heads": 192,
+        "tags": 0,
+        "unmerged_remote_heads": 36
+      },
+      "documents": [
+        {
+          "id": "DOC-QDESN-LEGACY-MAIN",
+          "path": "main.tex",
+          "role": "legacy main manuscript"
+        },
+        {
+          "id": "DOC-QDESN-LEGACY-SUPP",
+          "path": "qdesn-supplement.tex",
+          "role": "legacy supplement"
+        },
+        {
+          "id": "DOC-QDESN-LEGACY-GAUSS",
+          "path": "gaussian_desn_scaled_ridge_supplement.tex",
+          "role": "legacy Gaussian DESN supplement retained as technical lineage"
+        }
+      ],
+      "related_snapshots": [
+        {
+          "id": "SNAP-QDESN-THESIS-20260915",
+          "ref": "prior dissertation working source",
+          "commit": "757522db0f85815244370ec92a194de132268883",
+          "role": "immutable baseline for the first manuscript conversion"
+        },
+        {
+          "id": "SNAP-QDESN-LEGACY-20261026",
+          "ref": "prior audited dissertation refresh source",
+          "commit": "483e6edbec72ec76e48f2259e943e674b76e5041",
+          "role": "historical source for the superseded application claims"
+        }
+      ],
+      "relationship": "Superseded QDESN article lineage and computational provenance",
+      "highest_bounded_evidence": "E3",
+      "inclusion_status": "SUPPORTING_SOURCE",
+      "rights_status": "UNVERIFIED",
+      "imports": [
+        {
+          "chapter": "chapters/04-research-c.tex",
+          "manifest": "docs/imports/ch04-qdesn.json",
+          "status": "SUPERSEDED_BASELINE_RETAINED",
+          "scope": "immutable manuscript-first baseline and legacy assets retained for traceability; not current scientific authority"
         }
       ]
     },

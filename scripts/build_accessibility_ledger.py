@@ -10,6 +10,7 @@ tagged or that an external WCAG checker has passed it.
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 from pathlib import Path
@@ -97,6 +98,14 @@ def main() -> int:
                 if prior:
                     record = dict(prior)
                     record["figure_label"] = label
+                    # An explicit source-level description is the current
+                    # authority.  Refresh it when the active display changes
+                    # instead of carrying an obsolete description forward
+                    # solely because the include macro stayed the same.
+                    if explicit:
+                        record["alt_text"] = description
+                        record["description_source"] = "figalt"
+                        record["status"] = "REVIEWED"
                 else:
                     record = {
                         "source_path": source_path,
@@ -109,7 +118,7 @@ def main() -> int:
                 records.append(record)
     payload = {
         "schema_version": 1,
-        "recorded_at": "2026-10-26",
+        "recorded_at": dt.date.today().isoformat(),
         "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
         "conformance_boundary": (
             "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; "
