@@ -1,104 +1,174 @@
-\chapter{Introduction and shared statistical perspective}
+\chapter{Introduction}
 \label{ch:introduction}
 
-\section{Research problem and scope}
+\section{Motivation and objectives}
 \label{sec:intro-problem}
 
-Statistical decisions often depend on features of a conditional distribution
-that are not summarized by its mean. A flood forecast may require upper-tail
-quantiles, a manufacturing analysis may require an interval containing a fixed
-fraction of a population, and a time-series analysis may require these targets
-to change with recent information. In each case, the inferential object must be
-specified before a model, computational method, or validation criterion can be
-chosen. A fitted conditional quantile, a posterior predictive distribution, a
-random interval for an unknown parameter, and a tolerance interval are distinct
-objects even when they are displayed using similar endpoints.
+Many statistical analyses require features of a response distribution other
+than its conditional mean. River-flow forecasts must describe lower and upper
+tails as well as central behavior, and their accuracy can depend on the
+forecasting system and lead time. Electricity-price forecasts must represent
+asymmetric uncertainty conditional on recent prices and supplied covariates.
+In a different setting, a tolerance interval must contain a prescribed fraction
+of a population with a stated repeated-sampling confidence. These problems
+involve related distributional ideas, but their inferential targets are not
+interchangeable.
 
-This dissertation studies the following question:
+Conditional quantile regression provides a direct way to study tail and central
+behavior. Its use in time series raises two recurring questions. First, how
+should temporal dependence be represented when a linear state model is too
+restrictive or when several forecast products carry different information?
+Second, how can posterior computation, diagnostics, and forecasting remain
+practical when the model must be fitted repeatedly or at several probability
+levels? Fixed-content intervals raise a separate question: after probability
+content has been specified, what criterion determines the placement of the
+interval, and how should a data-dependent interval be calibrated?
 
-\begin{quote}
-How can conditional quantiles and fixed-content interval targets be specified,
-computed, and validated when dynamics, nonlinear structure, heterogeneous
-forecast products, and practical computational constraints make full
-response-distribution modeling difficult or undesirable?
-\end{quote}
+This dissertation has four objectives:
 
-The four research chapters address different parts of this question. The first
-develops statistical software for established extended dynamic quantile linear
-models. The second uses those models to correct and synthesize heterogeneous
-hydrologic products. The third combines fixed nonlinear recurrent features with
-Bayesian quantile regression. The fourth studies fixed-content interval
-placement, a calibrated empirical tolerance action, and proposed regression and
-dynamic endpoint extensions. The chapters share an emphasis on distributional
-features, but they do not share one probability model or one interpretation of
-uncertainty. Their connection instead lies in a common discipline: identify the
-target, state what information defines it, choose an update and dependence
-representation suited to that target, and validate the resulting claim at the
-same inferential level.
+\begin{enumerate}
+\item develop and evaluate a dynamic quantile model that corrects
+source-specific river-flow forecast products and combines separate quantile
+fits into a predictive distribution;
+\item provide statistical software and posterior computation for dynamic and
+static AL/exAL quantile models, including diagnostics, forecasting, and
+shrinkage regression;
+\item develop Bayesian conditional-quantile regression on fixed nonlinear
+recurrent features, both separately and jointly across probability levels; and
+\item characterize mean-tilted fixed-content intervals and study a calibrated
+procedure for selecting a short tolerance interval, while identifying which
+regression and dynamic extensions remain proposals.
+\end{enumerate}
 
-This chapter establishes that shared perspective. It first distinguishes
-conditional quantiles from fixed-content intervals. It then separates ordinary
-likelihood-based Bayes from generalized updating and describes the dependence
-representations and computational strategies used in the research chapters.
-The final sections state the evidence boundaries, locate the jointly authored
-project contributions relative to their antecedents, and describe the
-organization of the dissertation.
+The resulting chapters address four collaborative research projects. Their
+common subject is distributional inference, but each chapter has its own model,
+uncertainty statement, and validation design. The contribution of the
+dissertation is therefore not a single probability model. It is a set of
+statistical methods and computational results for conditional quantiles and
+fixed-content intervals, with explicit distinctions among model assumptions,
+posterior approximations, predictive evidence, and repeated-sampling claims.
+
+\section{Research contributions and antecedents}
+\label{sec:intro-contributions}
+
+\paragraph{Hydrologic forecast correction and synthesis.}
+Chapter~\ref{ch:research-b} studies daily discharge for the San Lorenzo River
+when gauge observations, retrospective hydrologic products, and issued
+ensembles differ in support and forecast horizon. The project develops a shared
+dynamic quantile process with source-specific discrepancy states and combines
+complete predictive distributions from separately fitted quantiles into a
+nondecreasing marginal quantile function. It also develops joint
+scale--skewness Laplace--Delta variational updates for the extended likelihood.
+The exAL distribution, dynamic quantile linear models, forecast combination,
+ensemble model output statistics, and monotone quantile correction retain
+their cited origins. The empirical study uses five fixed forecast origins,
+with 28-day and common eight-day comparisons. It is a retrospective,
+origin-limited evaluation rather than a continuous forecasting experiment.
+Future covariate paths enter through supplied summaries, and no matched
+full-model MCMC experiment measures the variational approximation error.
+
+\paragraph{Statistical computation and the \pkg{exdqlm} software.}
+Chapter~\ref{ch:research-a} addresses the computation required by dynamic
+quantile analysis. The exAL family and static regression were introduced by
+Yan and coauthors; the exDQLM formulation, original MCMC and
+importance-sampling variational procedures, and transfer-function foundation
+were developed by Barata and coauthors. The later project contribution is an
+integrated \proglang{R} interface for model construction, MCMC, ISVB and LDVB,
+prediction, diagnostics, scoring, post-fit synthesis, compiled computation, and
+static AL/exAL regression with shrinkage priors. Antonio de Leon is first
+author of the software article and a package author; Raquel Barata is the
+documented package creator and maintainer. The available records do not assign
+individual algorithms or interfaces to particular coauthors, so the technical
+contributions are stated at the project level. The worked examples establish
+functionality and computational tradeoffs, not a general predictive advantage
+for one inferential method.
+
+\paragraph{Bayesian quantile regression with deep echo-state features.}
+Chapter~\ref{ch:research-c} develops Q--DESN and MQ--DESN. A deep echo-state
+network maps response history and covariates into fixed recurrent nonlinear
+features; these are conventionally called reservoir states. Bayesian
+regression on those features estimates conditional quantiles without treating
+the recurrent weights as unknown parameters. Q--DESN fits one probability
+level at a time under AL or exAL likelihoods and shrinkage priors. MQ--DESN
+uses a composite multiquantile update with adjacent-level coefficient
+shrinkage. This regularization can reduce crossings but does not enforce
+noncrossing or guarantee lower forecast loss. The evidence consists of
+specified simulation mechanisms, one retrospective GloFAS origin, and 114
+electricity-price region--fold comparisons. Reservoir selection and some
+evaluation choices were informed by preliminary analysis, so the simulation
+results are interpreted as exploratory comparisons under the reported designs.
+
+\paragraph{Mean-tilted intervals and tolerance actions.}
+Chapter~\ref{ch:research-d} begins from the fact that probability content does
+not determine interval placement. The project characterizes the
+mean-preserving member of a retained-mean tilt family and develops a profiled
+procedure that screens fitted content and tilt using a posterior content
+probability before selecting the shortest eligible interval. Independent
+simulation evaluates the prespecified procedure on eight named distributions.
+That experiment estimates performance for those distributions; it does not
+prove distribution-free coverage. The chapter also formulates regression and
+dynamic extensions in which time-varying latent coefficients determine the
+lower and upper endpoints. Because the corresponding implementation and
+empirical validation are not present at the fixed source versions, those
+extensions remain proposed developments.
 
 \section{Conditional quantiles and fixed-content intervals}
 \label{sec:intro-targets}
 
-Let $Y$ denote a response and let $\mathcal F$ denote the information available
-when an inferential target is defined. For $0<\tau<1$, the conditional
-$\tau$-quantile is
+Let \(Y\) be a response and let \(\mathcal F\) denote the information available
+when a forecast is issued. For \(0<\tau<1\), the conditional \(\tau\)-quantile
+is
 \begin{equation}
 Q_\tau(Y\mid\mathcal F)
-=\inf\{q:\Pr(Y\le q\mid\mathcal F)\ge\tau\}.
+=\inf\{q\in\mathbb R:\Pr(Y\le q\mid\mathcal F)\ge\tau\}.
 \label{eq:intro-conditional-quantile}
 \end{equation}
-It minimizes the conditional expected check loss
+It minimizes conditional expected check loss. For \(u\in\mathbb R\),
 \begin{equation}
 \rho_\tau(u)=u\{\tau-\Ind(u<0)\},
 \qquad
 Q_\tau(Y\mid\mathcal F)
-\in\argmin_q\E\{\rho_\tau(Y-q)\mid\mathcal F\},
+\in\argmin_{q\in\mathbb R}
+\E\{\rho_\tau(Y-q)\mid\mathcal F\},
 \label{eq:intro-check-loss}
 \end{equation}
-under the usual regularity and uniqueness conditions
-\citep{qdesn-KoenkerBassett1978,qdesn-Koenker2005}. Quantile regression models
-the response at selected probability levels without requiring a complete
-parametric description of its conditional distribution. In a time series,
-$\mathcal F$ may include past responses, latent states, observed covariates, or
-forecast-origin information. The conditioning set is therefore part of the
-target rather than an incidental modeling detail.
+under standard regularity and uniqueness conditions
+\citep{qdesn-KoenkerBassett1978,qdesn-Koenker2005}. The conditioning
+information is part of the target: changing the response history, covariates,
+or forecast origin can change the conditional quantile.
 
-Multiple fitted quantiles provide more distributional information than one
-conditional mean, but a collection of separate fits is not automatically a
-joint response-distribution model. Quantiles fitted independently may cross,
-and uncertainty obtained within one fit does not by itself describe dependence
-across probability levels. Monotone rearrangement can enforce an ordered curve
-after fitting \citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010},
-while a joint model may introduce explicit dependence or shrinkage across the
-quantile index. These operations answer different questions and are identified
-separately in Chapters~\ref{ch:research-a}--\ref{ch:research-c}.
+A model at one value of \(\tau\) estimates one conditional quantile. Chapters
+\ref{ch:research-b} and~\ref{ch:research-a} fit several probability levels
+separately and, when a full predictive distribution is needed, synthesize
+their predictive output after fitting. Chapter~\ref{ch:research-c} studies
+both separate Q--DESN regressions and MQ--DESN, a composite construction that
+couples coefficients across levels. Separate fits, post-fit synthesis, and a
+multiquantile composite posterior are therefore three distinct operations.
+Quantiles estimated independently may cross; monotone rearrangement or
+isotonic projection can order the fitted grid, but does not convert separate
+parameter posteriors into one joint posterior
+\citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010}.
 
-A fixed-content interval begins from another target. For a continuous
-distribution $F$ and prescribed content $c\in(0,1)$, many intervals
-$[a,b]$ can satisfy
+A fixed-content interval has a different target. Let \(F\) be a continuous
+population distribution and let \(c\in(0,1)\) be the required probability
+content. Any endpoints \(a<b\) satisfying
 \begin{equation}
-F(b)-F(a)=c.
+F(b)-F(a)=c
 \label{eq:intro-fixed-content}
 \end{equation}
-Content alone does not determine placement. Equal-tailed, shortest-contiguous,
-and mean-preserving intervals impose different placement criteria and generally
-have different endpoints for an asymmetric distribution. Chapter~\ref{ch:research-d}
-uses retained-mean balance to index a family of such targets. Although an
-equal-tailed interval can be formed from two quantiles, the general
-fixed-content problem cannot be reduced to fitting a predetermined pair of
-quantile levels.
+have the same content, but they need not have the same location or length.
+For a right-skewed distribution, such as a lognormal distribution, an
+equal-tailed interval allocates fixed tail probabilities on both sides, while
+a shortest interval shifts toward the region of higher density. A
+mean-preserving interval imposes yet another placement condition by requiring
+the retained portion to preserve the population mean. Thus, content specifies
+how much probability is retained, whereas a placement criterion determines
+which interval is selected.
 
-The distinction becomes sharper for tolerance inference. If a data-dependent
-interval $[L(\mathcal D),U(\mathcal D)]$ is intended to contain at least a
-fraction $c$ of the population with confidence $1-\alpha$, the claim is
+A tolerance statement concerns the repeated-sampling behavior of a
+data-dependent interval. If \(\mathcal D\) denotes the random sample and
+\([L(\mathcal D),U(\mathcal D)]\) is the reported interval, content \(c\) with
+confidence \(1-\alpha\) requires
 \begin{equation}
 \Pr_{\mathcal D\sim F}
 \left[
@@ -106,17 +176,12 @@ F\{U(\mathcal D)\}-F\{L(\mathcal D)^-\}\ge c
 \right]\ge 1-\alpha.
 \label{eq:intro-tolerance-statement}
 \end{equation}
-This is a repeated-sampling statement about the reported action
+This is not implied by a credible interval for the endpoints or by a predictive
+interval for one future response
 \citep{rqr-Wilks1941ToleranceLimits,rqr-Wilks1942StatisticalPrediction,
-rqr-Robbins1944DistributionFreeTolerance}. It is not implied by posterior
-credible probability for interval endpoints or by nominal predictive coverage.
-Accordingly, Chapter~\ref{ch:research-d} treats target definition,
-generalized-posterior endpoint uncertainty, model-based content probabilities,
-and tolerance calibration as separate layers.
-
-Table~\ref{tab:intro-interval-objects} summarizes the uncertainty objects most
-likely to be confused in this setting. The same numerical endpoints can acquire
-different interpretations depending on how they were constructed.
+rqr-Robbins1944DistributionFreeTolerance}. Table
+\ref{tab:intro-interval-objects} summarizes the distinctions used throughout
+the dissertation.
 
 \begin{table}[htbp]
 \centering
@@ -126,273 +191,123 @@ different interpretations depending on how they were constructed.
 \textbf{Object} & \textbf{Randomness or unknown quantity} &
 \textbf{Claim requiring verification} \\
 \midrule
-Credible interval & A parameter, latent state, quantile location, or endpoint
-under a stated posterior & Posterior probability under the fitted model or
-generalized update \\
-Predictive interval & A future response under a posterior predictive
-distribution & Predictive probability and empirical calibration for the stated
-forecast design \\
+Credible interval & A parameter, state, quantile location, or endpoint under a
+stated posterior & Posterior probability under the fitted model or generalized
+update \\
+Predictive interval & A future response under a predictive distribution &
+Predictive probability and empirical calibration for the stated forecast
+design \\
 Confidence interval & Repeated samples and an unknown parameter or functional &
 Sampling coverage under the stated data-generating class \\
 Tolerance interval & Repeated samples and population content of the reported
-interval & Content $c$ attained with confidence $1-\alpha$ for the actual
+interval & Content \(c\) attained with confidence \(1-\alpha\) for the actual
 selection rule \\
 \bottomrule
 \end{tabularx}
-\caption[Interval interpretations used in the dissertation]{Distinct interval interpretations used in this dissertation. A name is
-justified by the construction and validation claim, not by the appearance of
-the endpoints.}
+\caption[Interval interpretations used in the dissertation]{Interval
+interpretations used in the dissertation. The construction and validation
+claim, rather than the appearance of the endpoints, determine the name.}
 \label{tab:intro-interval-objects}
 \end{table}
 
-\section{Probability models, working likelihoods, and generalized updating}
+\section{Models and posterior computation}
 \label{sec:intro-updating}
 
-The asymmetric Laplace (AL) density connects Bayesian computation with
-quantile regression because its location parameter is a specified quantile and
-its negative log density is proportional to check loss. This connection has
-made the AL distribution a widely used likelihood or working likelihood for
-Bayesian quantile regression \citep{env-yu2001bayesian}. Under misspecification,
-the resulting posterior can still concentrate around a quantile-regression
-target, but ordinary posterior spread need not have the frequentist calibration
-that would follow from a correctly specified response distribution
+The asymmetric Laplace (AL) distribution is widely used in Bayesian quantile
+regression because its location is a specified quantile and its negative log
+density is proportional to check loss \citep{env-yu2001bayesian}. When the AL
+distribution is used as a working likelihood rather than the true response
+distribution, posterior concentration can still identify a quantile-regression
+target, but ordinary posterior intervals need not have nominal frequentist
+coverage
 \citep{env-sriram2013theoretical,qdesn-YangWangHe2016ALInference,
-qdesn-JiLeeRabeHesketh2025ValidSE}. The research chapters therefore state
-whether AL or its extension is being used as a response model, a working
-likelihood, or a computational device, and they evaluate uncertainty rather
-than inferring calibration from the loss connection alone.
+qdesn-JiLeeRabeHesketh2025ValidSE}. The exAL family adds a shape parameter
+while preserving the specified quantile and a conditionally Gaussian
+representation \citep{exd-yan2025family}.
 
-The extended asymmetric Laplace (exAL) family introduces an additional shape
-parameter while preserving a designated quantile and a conditionally Gaussian
-representation useful for computation \citep{exd-yan2025family}. Extended
-dynamic quantile linear models place the time-varying exAL location in a state-
-space system and use Gaussian state recursions within MCMC or variational
-algorithms \citep{exd-me}. These foundations are inherited by the software
-workflow in Chapter~\ref{ch:research-a} and by the source-aware hydrologic model
-in Chapter~\ref{ch:research-b}. Chapter~\ref{ch:research-c} instead uses AL or
-exAL contributions conditionally on a fixed nonlinear feature design produced
-by a deep echo-state network.
+Chapters~\ref{ch:research-b} and~\ref{ch:research-a} place the AL or exAL
+quantile location in a Gaussian state-space model. Trend, seasonal, regression,
+discrepancy, and transfer components can then evolve over time. Chapter
+\ref{ch:research-c} instead constructs a fixed design from recurrent nonlinear
+states and estimates the quantile-regression coefficients conditional on that
+design. In both cases, latent-variable augmentation supports MCMC and
+variational computation. Variational Bayes replaces parts of the posterior
+integration by an optimized approximation and is useful for repeated or
+long-series fits, but its tail and interval summaries remain approximate.
 
-Chapter~\ref{ch:research-d} uses a different update. Given a loss
-$\ell(\theta;y)$, prior $\pi(\theta)$, data $y_{1:n}$, and learning rate
-$w>0$, generalized Bayes forms
+Chapter~\ref{ch:research-d} uses generalized Bayes rather than a response
+likelihood for its interval endpoints. Let \(\theta\) denote the interval
+parameter or action, \(\ell(\theta;y)\) the specified loss at observation
+\(y\), \(\pi(\theta)\) a prior, \(y_{1:n}\) the observed sample, and \(w>0\) a
+learning rate. The generalized posterior is
 \begin{equation}
 \pi_w(\theta\mid y_{1:n})
-\propto
-\pi(\theta)
-\exp\left\{-w\sum_{i=1}^n\ell(\theta;y_i)\right\}.
+=
+\frac{
+\pi(\theta)\exp\{-w\sum_{i=1}^n\ell(\theta;y_i)\}
+}{
+\int \pi(\vartheta)
+\exp\{-w\sum_{i=1}^n\ell(\vartheta;y_i)\}\,d\vartheta
+}.
 \label{eq:intro-generalized-bayes}
 \end{equation}
-This construction updates beliefs about a loss-defined target without asserting
-that $\exp\{-w\ell(\theta;y)\}$ is the sampling density of $Y$
-\citep{rqr-BissiriHolmesWalker2016GeneralBayes}. A normal--exponential
-augmentation resembling the AL mixture can facilitate computation, but that
-algebra does not turn endpoint draws into posterior predictive response draws.
-The distinction determines which diagnostics, coverage statements, and
-calibration studies are relevant.
+The denominator normalizes the update when finite. This construction describes
+uncertainty about a loss-defined interval action; it does not assert that
+\(\exp\{-w\ell(\theta;y)\}\) is the sampling density of \(Y\)
+\citep{rqr-BissiriHolmesWalker2016GeneralBayes}. Consequently, endpoint draws
+are not posterior predictive response draws.
 
-The general lesson is that similar computational forms need not imply the same
-inferential interpretation. In this dissertation, every posterior or
-posterior-like object is tied to three questions: what is the target, what
-update defines uncertainty about it, and what evidence supports the reported
-interpretation?
+\section{Forecast information and evaluation}
+\label{sec:intro-evaluation}
 
-\section{Representing dynamics, nonlinear dependence, and heterogeneous sources}
-\label{sec:intro-dependence}
+Forecasts must state which future inputs are available. In the hydrologic study
+of Chapter~\ref{ch:research-b}, future covariate paths enter through supplied
+ensemble summaries; uncertainty in those paths is not integrated into the
+model. The streamflow study in Chapter~\ref{ch:research-c} conditions on
+weather values observed retrospectively over the forecast window. Its
+electricity-price study uses supplied day-ahead load, solar, and wind forecasts,
+whose issue-time vintages were not independently verified. In the software
+examples of Chapter~\ref{ch:research-a}, users must supply future design and
+evolution matrices when forecasting beyond the stored model. These are
+conditional forecast designs, not claims that future covariates are known in
+prospective use.
 
-The research chapters use three dependence representations. They are
-complementary rather than nested versions of a single model.
+Evaluation criteria are matched to the estimated object. Check loss evaluates
+one conditional quantile. The continuous ranked probability score (CRPS)
+evaluates an entire predictive distribution \(G\) against an observation
+\(y\):
+\begin{equation}
+\operatorname{CRPS}(G,y)
+=
+\E_{Y\sim G}|Y-y|
+-\frac12\E_{Y,Y'\sim G}|Y-Y'|.
+\label{eq:intro-crps}
+\end{equation}
+It is a proper, negatively oriented score, so smaller values indicate better
+predictive performance; unlike check loss at one probability level, it assesses
+the full predictive distribution \citep{exd-gneiting2007}. Finite-grid
+approximations based on several quantiles assess only the reported probability
+range and depend on the grid and weights.
 
-First, a dynamic quantile linear model writes a time-varying quantile location
-as a linear function of a latent state and propagates that state through a
-Markov evolution equation. Trend, seasonal, regression, and transfer-function
-components can be combined in the state vector. This representation supports
-filtered, smoothed, and forecast summaries of a changing conditional quantile.
-Chapter~\ref{ch:research-a} organizes these operations as a coherent software
-workflow. Chapter~\ref{ch:research-b} gives each data product its own dynamic
-discrepancy component and introduces source-specific transfer information, so
-the retrospective and forecast products are not treated as exchangeable
-measurements.
+Simulation can additionally assess recovery of a known parameter or quantile
+path. Predictive-interval calibration, posterior convergence, and tolerance
+content answer still different questions. The Chapter~\ref{ch:research-d}
+validation, for example, estimates the content and width of a procedure fixed
+before the independent simulation stage. Its success on the prespecified
+eight-distribution panel does not establish coverage for every population
+distribution. Likewise, the application studies support comparisons under
+their stated forecast origins, information sets, and scoring rules rather than
+universal rankings.
 
-Second, echo-state networks generate nonlinear recurrent features by passing
-inputs through a randomly initialized reservoir whose weights are fixed during
-statistical fitting \citep{qdesn-Jaeger2001EchoState,
-qdesn-LukoseviciusJaeger2009ReservoirComputing}. Deep reservoirs enlarge this
-feature construction through stacked recurrent layers
-\citep{qdesn-GallicchioMicheliPedrelli2018DeepESNDesign}. In
-Chapter~\ref{ch:research-c}, Bayesian regression on the resulting fixed design
-targets conditional quantiles. Fixing the reservoir separates feature
-construction and selection from posterior inference for the regression
-coefficients. It also makes validation-based reservoir selection, initialization,
-and the future-input protocol part of the empirical specification.
-
-Third, the dynamic interval extension in Chapter~\ref{ch:research-d} evolves
-two endpoint states. Those states index a loss-defined interval functional;
-they are not latent quantiles in an exDQLM and do not constitute a response-
-distribution state-space model. Alternating Gaussian state updates provide a
-proposed computational route conditional on the other endpoint path. The
-current derivation has no matching implementation or
-empirical study, so the chapter presents this construction as proposed work.
-
-Across these representations, the status of future inputs is material. A
-forecast conditional on known future covariates, a retrospective analysis using
-future-realized covariates, and an operational forecast with uncertain future
-drivers have different information sets. The application chapters record these
-boundaries explicitly rather than describing every out-of-sample calculation
-as operational forecasting.
-
-\section{Computation, prediction, and validation}
-\label{sec:intro-computation}
-
-The dissertation uses exact conditional simulation where available and
-approximations where scale makes it useful. MCMC algorithms target posterior or
-generalized-posterior distributions through latent-variable and Gaussian state
-updates. Variational Bayes (VB) replaces joint integration by an optimized
-approximation; Laplace--delta VB treats a low-dimensional nonconjugate block by
-a Laplace approximation and propagates its curvature into the remaining
-updates, following the general strategy of \citet{exd-wang2013nonconjugatevb}.
-VB can offer substantial computational savings, but its intervals and tail
-behavior are approximate. The chapter-specific comparisons therefore report
-accuracy and computational evidence rather than declaring VB interchangeable
-with MCMC.
-
-Prediction also requires a clearly defined object. Chapters
-\ref{ch:research-a} and~\ref{ch:research-b} use post-fit synthesis to turn
-separately fitted quantile information into draws or summaries for a future
-response distribution. Such synthesis is not relabeled as a joint posterior
-over quantile-specific model parameters. Chapter~\ref{ch:research-c} considers
-both separate quantile fits and a joint quantile-vector working likelihood,
-with crossing checks and monotone correction reported where relevant. Chapter
-\ref{ch:research-d} does not obtain response predictions from endpoint draws;
-a separate response model would be required.
-
-Validation is matched to the object being estimated. Check loss evaluates a
-conditional quantile. CRPS evaluates a predictive distribution, while its
-finite-grid approximations depend on the quantile grid used
-\citep{exd-gneiting2007,qdesn-Gneiting2011,
-qdesn-GneitingKatzfuss2014}. Parameter recovery in simulation, calibration of
-predictive intervals, and numerical convergence diagnostics answer still
-different questions. A tolerance procedure requires the content--confidence
-criterion in Equation~\eqref{eq:intro-tolerance-statement}; empirical attainment
-over a simulation panel is evidence about the frozen procedure, not an analytic
-distribution-free theorem.
-
-For this reason, the dissertation uses an evidence hierarchy rather than one
-undifferentiated notion of validation:
-\begin{enumerate}[label=(\roman*)]
-\item proved mathematical statements under explicit assumptions;
-\item algorithmic identities and numerical checks of an implementation;
-\item controlled simulation evidence under named data-generating mechanisms;
-\item retrospective or held-out empirical comparisons under a fixed evaluation
-protocol; and
-\item proposed extensions for which derivation precedes implementation and
-validation.
-\end{enumerate}
-Claims are limited to the strongest level actually available. In particular,
-the application studies do not establish universal rankings, and a successful
-software build does not reproduce the scientific computation underlying each
-reported result.
-
-\section{Contribution map and evidentiary boundaries}
-\label{sec:intro-contributions}
-
-The research chapters are based on collaborative projects led in their
-manuscript form by Antonio de Leon. Raquel Prado and Bruno Sans\'o are coauthors
-of all four project lines, and Raquel Barata is additionally a coauthor of the
-\pkg{exdqlm} software study. Because the chapters synthesize joint work, the
-contribution map below describes the scholarly contributions at the project
-or chapter level.
-
-Chapter~\ref{ch:research-a} contributes the integrated \pkg{exdqlm} \proglang{R}
-software for
-specifying, fitting, diagnosing, forecasting, and reproducing dynamic and
-static Bayesian quantile analyses. Its contribution is software-centered. The
-exAL distribution and static exAL foundations are attributed to Yan and
-coauthors, while the exDQLM formulation, its original MCMC and importance-
-sampling VB algorithms, and transfer-function development are attributed to
-Barata and coauthors. The chapter's research contribution lies in coordinating
-these foundations through model construction, MCMC and variational interfaces,
-fitted-object methods, diagnostics, scoring, synthesis, compiled computation,
-and reproducibility materials.
-
-Chapter~\ref{ch:research-b} contributes a source-aware statistical model
-for correcting and synthesizing hydrologic products. It represents observations,
-retrospective products, operational ensembles, and forecast covariates according
-to their distinct roles, then evaluates the resulting predictive synthesis at
-five forecast origins under one globally specified model. The evidence supports
-conclusions for that versioned, retrospective design. It is not a strict
-pseudo-operational or dense hindcast, or a demonstration of deployed
-operational performance, and the future exogenous ensembles enter through
-deterministic summaries rather than a joint uncertainty model.
-
-Chapter~\ref{ch:research-c} contributes Bayesian quantile regression on fixed
-deep echo-state features, including single-level and joint quantile-vector
-formulations, MCMC and model-specific variational computation, simulations,
-and two retrospective applications. The fixed-reservoir formulation builds on
-the echo-state-network literature rather than claiming the reservoir architecture
-itself as new. The empirical findings are specific to the stated designs; the
-simulations are development-informed, the GloFAS analysis has one forecast
-origin, and the PriceFM comparison varies by region and held-out fold.
-
-Chapter~\ref{ch:research-d} characterizes the mean-preserving interval induced
-by an antecedent residual-product criterion, develops the mean-tilted interval
-family, and studies a calibrated profiled tolerance procedure. The procedure
-profiles fitted content and tilt on a prespecified grid, uses a direct
-Dirichlet-process content check to determine eligibility, and reports the
-shortest eligible interval. Its settings are fixed using development and
-assessment samples before independent validation. The resulting evidence is
-empirical for the stated eight-distribution panel rather than a
-distribution-free theorem. The chapter also derives regression and dynamic
-endpoint extensions; these remain proposed because no matched implementation
-or empirical validation is currently available.
-
-Two additional boundaries apply dissertation-wide. First, the scientific
-arguments and displays arise from jointly authored projects and retain their
-collective attribution. Second, code, data, fitted objects, and full
-computational studies are maintained separately from this readable statistical
-account. The chapters state the model versions and evaluation conditions needed
-to interpret their results without making the dissertation depend on those
-computational materials.
-
-\section{Organization of the dissertation}
+\section{Dissertation organization}
 \label{sec:intro-organization}
 
-Chapter~\ref{ch:research-a} presents the \pkg{exdqlm} software and statistical
-computation. It begins with the inherited exAL and exDQLM foundations, connects the
-implemented interfaces to their statistical targets, and uses dynamic and
-static examples to examine fitting, forecasting, diagnostics, synthesis, and
-the tradeoff between MCMC and variational approximation.
-
-Chapter~\ref{ch:research-b} applies dynamic quantile models to source-specific
-discrepancy correction and predictive synthesis for the San Lorenzo River. It
-defines the source and forecast-horizon contract, describes posterior
-computation and synthesis, and evaluates the fixed specification across five
-forecast origins and separate 28-day and common 8-day horizons.
-
-Chapter~\ref{ch:research-c} develops Bayesian quantile deep echo-state networks.
-It separates reservoir construction from Bayesian regression, gives single-
-level and joint quantile-vector formulations, develops MCMC and VB computation,
-and evaluates the models in simulations and retrospective GloFAS and PriceFM
-applications.
-
-Chapter~\ref{ch:research-d} turns from pointwise quantiles to fixed-content
-intervals. It develops mean-preserving and mean-tilted targets, studies the
-calibrated profiled MTI tolerance procedure, evaluates that procedure on
-independent validation samples, illustrates endpoint placement and sensitivity
-with pharmaceutical data, and derives proposed regression and dynamic endpoint
-extensions.
-
-Chapter~\ref{ch:synthesis} compares the projects by inferential target, update,
-dependence representation, computation, and evidence. It then identifies the
-shared conclusions, cross-cutting limitations, and research questions that
-remain after the four project lines are considered together.
-
-The main reading sequence is followed by five selective technical appendices.
-Appendix~\ref{app:shared-conventions} reconciles the cross-chapter meanings of
-scale, quantile level, interval content, learning rate, predictive scoring, and
-uncertainty. Appendices~\ref{app:exdqlm-technical}--
-\ref{app:mti-technical} retain the nonstandard calculations, proofs, exact
-evaluation boundaries, and claim-changing sensitivity results needed to audit
-the principal conclusions. Each chapter points to those details where they
-become relevant, so the body can be read continuously without detaching a
-claim from its technical support.
+Chapter~\ref{ch:research-b} presents the hydrologic application and its
+source-specific predictive synthesis; Chapter~\ref{ch:research-a} develops the
+statistical computation and software used for dynamic and static quantile
+models; Chapter~\ref{ch:research-c} develops Q--DESN and MQ--DESN; and
+Chapter~\ref{ch:research-d} develops mean-tilted interval targets, a calibrated
+tolerance procedure, and proposed regression and dynamic extensions.
+Chapter~\ref{ch:synthesis} compares the four contributions, their limitations,
+and the questions that remain. Selective appendices retain nonstandard
+derivations, proofs, and claim-relevant supporting evidence.

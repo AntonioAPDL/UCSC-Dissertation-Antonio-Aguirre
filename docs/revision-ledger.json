@@ -15,6 +15,15 @@
   },
   "artifacts": [
     {
+      "path": "chapters/01-introduction.tex",
+      "baseline_sha256": null,
+      "current_sha256": "e6ac354b0ecff854ac8691d4cfb9f4af2b5c51f7b7a135cfd3b7579e1a0d596a",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-ADVISOR-INTRODUCTION-20261109"
+      ]
+    },
+    {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
       "current_sha256": "7c40506e4185adc41a77b16a8e5b95f838b52bf3532c923db9962d3fa7733af2",
@@ -855,6 +864,16 @@
       "summary": "Strengthens the Q--DESN contribution statement, defines fixed recurrent features before reservoir terminology, replaces internal validation language with standard statistical qualifications, and clarifies the information set in the two applications while preserving the source-authoritative models and results.",
       "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch04-qdesn.json",
       "validation": "Current-authority hash validation, clean TeX build, terminology review, PDF diagnostics, and rendered inspection are required before merge; Bruno's detailed Chapter 4 annotation remains unavailable and is not inferred."
+    },
+    {
+      "id": "REV-ADVISOR-INTRODUCTION-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/01-introduction.tex"
+      ],
+      "summary": "Rewrites the introduction around the four statistical problems and their distinct contributions, defines the inferential targets and evaluation criteria needed by later chapters, states the actual future-information conditions, and replaces repeated chapter summaries with a single dissertation roadmap.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/contribution-dossiers-20261109.md",
+      "validation": "Contribution and terminology review, clean TeX build, reference diagnostics, PDF metadata checks, and rendered inspection of all introduction pages."
     }
   ]
 }
