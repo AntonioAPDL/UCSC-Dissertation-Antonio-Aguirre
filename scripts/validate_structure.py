@@ -26,12 +26,20 @@ ACCESSIBILITY = ROOT / "docs" / "accessibility-ledger.json"
 ESSENTIALITY = ROOT / "docs" / "appendix-essentiality-map.json"
 APPENDICES = (
     "appendices/a-shared-conventions",
-    "appendices/b-exdqlm-technical",
     "appendices/c-hydrology-technical",
+    "appendices/b-exdqlm-technical",
     "appendices/d-qdesn-technical",
     "appendices/e-mti-technical",
 )
 APPENDIX_PATHS = [f"{path}.tex" for path in APPENDICES]
+CHAPTERS = (
+    "chapters/01-introduction",
+    "chapters/03-research-b",
+    "chapters/02-research-a",
+    "chapters/04-research-c",
+    "chapters/05-research-d",
+    "chapters/06-synthesis",
+)
 
 
 def uncomment(text: str) -> str:
@@ -193,6 +201,16 @@ def main() -> int:
     bibliography_at = main_text.find(r"\bibliography{references}")
     if appendix_at < 0 or bibliography_at < 0 or appendix_at >= bibliography_at:
         errors.append("main.tex must place appendices before the final bibliography")
+    chapter_cursor = 0
+    for chapter in CHAPTERS:
+        needle = rf"\input{{{chapter}}}"
+        position = main_text.find(needle, chapter_cursor)
+        if position < 0 or (appendix_at >= 0 and position >= appendix_at):
+            errors.append(f"main.tex missing or misorders {needle}")
+        else:
+            chapter_cursor = position + len(needle)
+        if f"{chapter}.tex" not in relative_files:
+            errors.append(f"active graph does not contain {chapter}.tex")
     cursor = appendix_at
     for appendix in APPENDICES:
         needle = rf"\input{{{appendix}}}"
