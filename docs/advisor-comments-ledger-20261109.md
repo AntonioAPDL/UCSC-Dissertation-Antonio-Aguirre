@@ -128,6 +128,7 @@ dissertation.
 | P-07 | Preserve qualifications without underselling. | Present contribution and supporting result first, followed by the exact study or theorem boundary; do not begin contribution sections with defensive caveats. | Claim-order and tone review |
 | P-08 | Keep the thesis coherent after revision. | Reconcile chapter order, terminology, notation, contributions, abstract, acknowledgments, synthesis, appendices, citations, displays, and provenance in one final global pass. | Release validation matrix and rendered inspection |
 | P-09 | Make the AI disclosure accurate, proportionate, and nondefensive. | State the limited supporting uses and substantive exclusions directly; do not discuss AI reliability, minimize documented editorial/tooling work, or imply that AI originated the research. | Candidate/advisor-approved statement reconciled with the assistance log |
+| P-10 | Apply the supplied academic-writing profile and anti-formulaic-prose controls to every correction. | Use Plan Section 4.13 before, during, and after each edited unit: preserve sound author prose; replace generic fluency with statistical specificity; audit claims/equations against fixed sources; context-review stock wording and sentence rhythm; retain necessary scientific terminology and the accurate disclosure; do not use AI-detector scores as evidence. | Work-package style dispositions in the existing editorial records; contextual phrase report; manual paragraph/voice review; compiled-text review; candidate approval of contribution and interpretation language |
 
 ## Coverage audit
 
@@ -140,22 +141,24 @@ dissertation.
 | Software chapter numbered comments | 11 | `C2-03`–`C2-13` |
 | Hydrology chapter numbered comments | 14 | `C3-01`–`C3-14` |
 | Bruno email sequencing/submission points | 5 | `B-01`–`B-05` |
-| Candidate contribution/style/disclosure controls | 9 | `P-01`–`P-09` |
+| Candidate contribution/style/disclosure controls | 10 | `P-01`–`P-10` |
 
 All 50 items in Raquel's attachment and all five actionable points in Bruno's
 email have a ledger entry, recommended resolution, and acceptance test. The
-nine candidate controls extend the review; they do not replace any advisor
+ten candidate controls extend the review; they do not replace any advisor
 item. Bruno's forthcoming annotated Chapter 4/5 material must receive a new
 coverage audit when it arrives.
 
 ## Completion rule
 
-An item may move to complete only when all four conditions hold:
+An item may move to complete only when all five conditions hold:
 
 1. the corresponding source or dissertation change is present in the diff;
 2. any affected scientific or contribution claim matches fixed evidence;
 3. relevant automated and rendered checks pass; and
-4. the ledger names the commit or release containing the evidence.
+4. any changed prose passes the contextual academic-writing and
+   anti-formulaic-prose review in Plan Section 4.13; and
+5. the ledger names the commit or release containing the evidence.
 
 Items may not be closed solely because Corrected-3 contains improved prose;
 the dissertation adaptation and its cross-chapter consequences must also be

@@ -442,6 +442,14 @@ creating a competing framework. The plan now specifies the hydrology
 section/claim/display conversion, bounded appendix contents, numerical-claim
 controls, four contribution dossiers, exact affected files and ledgers,
 chapter-sized commit order, validation commands, stop/recovery conditions, and
-definition of done. No dissertation prose, equation, bibliography, asset,
+definition of done. At the author's follow-up request, it also read the two
+byte-identical version-0.2 academic-writing profiles in full and made their
+statistical-writing and anti-formulaic-prose requirements binding on every
+future correction. The added gate requires source and equation checks,
+paragraph-function review, contextual rather than mechanical phrase scans,
+preservation of necessary statistical terminology and project-specific voice,
+and candidate approval of contribution/interpretation language; it explicitly
+rejects AI-detector scores and does not replace the planned disclosure. No
+dissertation prose, equation, bibliography, asset,
 manifest, research source, computation, or compiled PDF was changed; nothing
 was pushed, merged, or synchronized with Overleaf.

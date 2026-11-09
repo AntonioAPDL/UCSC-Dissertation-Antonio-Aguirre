@@ -52,7 +52,7 @@ has been inserted into the dissertation.
 
 The final controlling revision plan now adds an exact Corrected-3-to-thesis
 section crosswalk, bounded numerical-claim controls, a file/ledger dependency
-map, work-package coverage for all 64 current controlled items, explicit stop
+map, work-package coverage for all 65 current controlled items, explicit stop
 and recovery rules, and a release definition of done. Its default hydrology
 design uses six nonredundant main-body displays and a four-to-six-page technical
 appendix with an eight-page exception ceiling and no more than three default
@@ -66,6 +66,17 @@ annotation beyond the already recorded sequencing message. Corrected-3 remains
 clean at `c0bfccaa7cec698c016626ee30187f18a56d495c`. Implementation must therefore
 begin with a new evidence check rather than assuming that the pending review
 will remain absent.
+
+The plan now binds every future prose correction to the byte-identical version
+0.2 academic-writing profiles recorded in the Q--DESN legacy and RQR sources
+(SHA-256 `b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513`).
+New control `P-10` raises the current ledger total to 65 items and requires a
+four-pass audit for statistical specificity, source fidelity, paragraph
+function, sentence rhythm, and preservation of the author's project-specific
+voice. Contextual phrase scans are review aids rather than automatic rewrite
+rules or AI-authorship detectors. The accurate assistance disclosure remains a
+separate requirement. This addition changes planning documentation only; no
+reader-facing thesis prose has been revised.
 
 ## 2026-11-07 committee-copy finalization validated
 

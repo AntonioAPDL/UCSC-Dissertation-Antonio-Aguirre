@@ -6,6 +6,10 @@ controls the next revision cycle. The item-level source of truth is
 `docs/advisor-comments-ledger-20261109.md`; the original advisor files remain
 ignored local evidence.
 
+**Mandatory writing notice:** no manuscript work package may begin or close
+without the source-fidelity, academic-writing, anti-formulaic-prose, and
+candidate-review gates in Section 4.13. Surface fluency is never sufficient.
+
 ## 0. Executive diagnosis and final recommendation
 
 The dissertation does not primarily need a sentence-by-sentence copy edit.
@@ -80,9 +84,9 @@ storage boundaries:
   inputs under the ignored `audit-inputs/advisor-review-20261109/` directory;
 - this plan, the correction ledger, the status entry, and the assistance-log
   entry are committed only on local branch
-  `editorial/advisor-revision-audit-20261109`; the earlier planning history is
-  recorded through `0a6f24c...`, and this final controlling revision is the
-  next documentation-only change on that branch;
+  `editorial/advisor-revision-audit-20261109`; the final plan before the
+  academic-writing addendum is `35d67bc...`; the addendum is recorded at the
+  current documentation-only branch tip;
 - GitHub `main`, local `main`, and `origin/main` remain equal at
   `07b8f0d0...`; and
 - the planning branch does not exist on the remote.
@@ -570,6 +574,7 @@ checked and either updated or explicitly recorded as unaffected.
 | Source authority | `source-manifest.json`, `docs/source-register.json`, `docs/source-snapshots.json`, ignored `source-manifest.local.json` | Replace Corrected-2 as current hydrology authority with Corrected-3 at `c0bfccaa...`; retain Corrected-2 as historical lineage only. |
 | Claim/import provenance | `docs/claim-evidence.json`, `docs/imports/ch03-environ.json`, `docs/revision-ledger.json` | Every retained prose/display item maps to the correct source commit and current thesis derivative; obsolete records receive an explicit disposition. |
 | Display/appendix control | `docs/display-ledger.json`, `docs/accessibility-ledger.json`, `docs/appendix-essentiality-map.json`, `docs/appendix-essentiality-review.md`, `docs/appendix-migration-map.json`, `docs/editorial-issues.json`, `docs/editorial-review.md` | Active labels and graphics match the compiler graph; removed items are marked inactive/superseded with recovery evidence; every retained appendix unit has a claim-based justification. |
+| Academic-writing control | Verified version-0.2 style profiles; `docs/editorial-issues.json`; `docs/editorial-review.md`; compiled PDF text | Every edited unit passes the Section 4.13 four-pass gate; contextual flags are adjudicated rather than mechanically replaced; disclosure and necessary statistical terminology remain intact. |
 | Status and validation | `docs/STATUS.md`, `docs/VALIDATION.md`, this plan and correction ledger | Record source identities, decisions, completed work packages, test results, rendered review, remaining advisor items, and release identity. |
 
 The old `ch03-environ` directory and manifest identifiers may remain as stable
@@ -578,12 +583,129 @@ Renaming them during a scientific revision would create unnecessary hash and
 provenance churn. Reader-visible numbering must come from compiler order and
 labels, not storage names.
 
+### 4.13 Binding academic-writing and anti-formulaic-prose gate
+
+Every future manuscript correction is governed by the repository-supplied
+*Academic Writing Style Profile for AI-Assisted Statistical Writing*, version
+0.2. The verified copies at
+`SRC-QDESN-LEGACY:Academic_Writing_Style_Profile_v0.2.md` and
+`SRC-RQR:STYLE_PROFILE.md` are byte-identical (SHA-256
+`b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513`).
+The current Q--DESN authority repository does not itself contain that profile;
+the verified profile is therefore a cross-project writing standard, not a
+scientific source for Q--DESN claims.
+
+The precedence order is: scientific correctness and fixed evidence; explicit
+advisor requirements; thesis-specific terminology and contribution controls;
+then the style profile. The profile is not a phrase template. No sentence or
+paragraph structure should be copied from its exemplars, and a stylistic edit
+may not change a claim, equation, citation, interpretation, or evidence
+boundary.
+
+For this plan, “anti-AI writing check” means a check against generic,
+promotional, formulaic, or statistically empty prose. It is **not** an attempt
+to defeat an AI detector, conceal assistance, or remove the accurate disclosure
+in Section 4.8. Automated AI-authorship scores are not an acceptance criterion:
+they are unreliable for mathematical and technical writing. Acceptance depends
+on source-grounded meaning, paragraph-level human review, and the candidate's
+approval of the final prose.
+
+#### Required academic-writing contract
+
+Every revised paragraph must have one identifiable primary function:
+motivate, define, distinguish, derive, specify, report, interpret, qualify, or
+connect. It must also satisfy the relevant controls below.
+
+| Prose function | Required content |
+| --- | --- |
+| Motivation/gap | Name the statistical or scientific problem, what existing work provides, and the precise unresolved inferential, modeling, or computational object. |
+| Contribution | Name the model, inferential construction, computational method, software capability, theorem, or empirical design; credit antecedents; avoid novelty adjectives. |
+| Model/mathematics | Define data, conditioning information, target, parameters, latent quantities, dimensions/support, likelihood or loss, and priors before use; introduce and interpret every important display. |
+| Computation | State the exact target before MCMC/VB/Laplace--Delta; distinguish equivalent augmentation from approximation; name factorization, convergence evidence, and uncertainty limitations. |
+| Simulation/application | State the goal, data or DGP, preprocessing/information set, competitors, metric, horizon/split, and limitation before interpreting performance. |
+| Results | Tie each claim to the exact design and metric; separate score, calibration, sharpness, parameter uncertainty, predictive uncertainty, and approximation accuracy. |
+| Discussion | State the supported contribution first, then design-specific evidence, exact limitations, and technically concrete future work. |
+| Appendix/caption | Orient the reader to the body claim or equation supported; avoid derivation dumps, file-history narration, and captions that merely name the display. |
+
+The default voice is precise, restrained, mathematically clear, statistically
+mature, explanatory, and non-promotional. First person is permitted for genuine
+modeling, inferential, and evaluative choices. It should not be removed merely
+to sound formal. Existing article prose should be preserved when it already
+meets these standards; editing must not homogenize four projects into one
+repetitive synthetic voice.
+
+#### Patterns that require contextual review
+
+The following are flags, not mechanical deletion rules:
+
+- broad openings about a “data-driven world,” rapid data growth, modern
+  challenges, or the power of machine learning;
+- unsupported modifiers such as *novel*, *robust*, *powerful*, *flexible*,
+  *scalable*, *comprehensive*, *seamless*, *crucial*, or *state-of-the-art*;
+- vague verbs such as *leverage*, *harness*, *enhance*, *facilitate*,
+  *underscore*, or *demonstrate* without a named mechanism or evidence;
+- generic nouns such as *framework*, *pipeline*, *architecture*, *system*, or
+  *workflow* where model, likelihood, prior, estimator, approximation,
+  algorithm, software interface, or evaluation protocol is more exact;
+- stock transitions such as “building on these insights,” “to this end,” “in
+  light of these considerations,” and “taken together” when they do not state
+  the logical connection;
+- formulaic “not only ... but also ...,” repeated three-part slogans,
+  excessive roadmap prose, consecutive sentences beginning with “we,” or a
+  repeated sentence rhythm;
+- self-conscious topic sentences about “this paper,” “this work,” “this
+  chapter,” or “this supplement” when the statistical object can be the
+  subject;
+- citation chains that do not explain what prior work provides and what gap
+  remains;
+- generic equation introductions, product-style algorithm descriptions,
+  leaderboard simulation language, application overclaims, or limitations
+  that could apply to any study; and
+- fluent sentences that omit an assumption, conditioning set, approximation,
+  comparator, metric, uncertainty statement, or study boundary.
+
+Legitimate field terms are retained when they name the scientific object:
+artificial intelligence in the disclosure, machine learning in a genuine
+literature classification, deep echo-state network, reservoir, software,
+algorithm, architecture of an actual neural model, and computational scaling.
+Each must be used precisely rather than promotionally.
+
+#### Four-pass acceptance procedure for every edited unit
+
+1. **Pre-edit audit:** record the paragraph/section purpose, controlling
+   advisor item, scientific source, claim boundary, and reason an edit is
+   needed. Structural and scientific problems are resolved before copyediting.
+2. **Controlled revision:** preserve the author's sound article prose and
+   change only what is required for accuracy, integration, duplication,
+   notation, thesis voice, or the advisor comment. Do not invent citations,
+   results, roles, or interpretation.
+3. **Source and language audit:** compare every changed claim/equation with its
+   fixed source; run a contextual phrase scan for the patterns above; and
+   inspect every hit manually. The scan produces candidates, never automatic
+   replacements or proof of AI authorship.
+4. **Reader and voice review:** read each changed paragraph in context and the
+   compiled section aloud or with equivalent close review. Confirm that the
+   paragraph performs one logical function, sentence lengths/functions are not
+   mechanically repetitive, transitions state real relationships, and the
+   result still sounds like the surrounding statistical work. The candidate
+   must approve contribution, interpretation, and disclosure wording.
+
+Use the existing `docs/editorial-issues.json` and `docs/editorial-review.md` to
+record the pre-edit and post-edit style disposition; do not create a separate
+unconnected style framework. Each work-package review packet must list: files
+and sections reviewed, flagged phrases with contextual dispositions, claims or
+equations rechecked, changes rejected because they weakened specificity, and
+remaining author/advisor decisions. A work package cannot close on grammar or
+fluency alone.
+
 ## 5. Ordered implementation work packages
 
 ### WP0 — Freeze the revision inputs
 
 - Confirm that no newer advisor attachment or Bruno comment file supersedes
   the 9 November intake.
+- Verify the version and hash of the two writing-style profiles and record any
+  later author-supplied replacement before prose editing begins.
 - Fetch Corrected-3 and record a new commit only if the author explicitly says
   a later commit is authoritative; otherwise keep `c0bfccaa...` fixed.
 - Record ignored local source paths and original-tree guards.
@@ -793,6 +915,13 @@ opening, contribution paragraph, dense equation page, table, figure, appendix
 opening, transition, abstract, acknowledgment, and synthesis page. Automated
 success alone is not sufficient.
 
+The extracted-text review must also apply Section 4.13. It should report
+contextual hits for stock or promotional wording, consecutive repetitive
+sentence openings, self-referential topic sentences, and vague performance
+claims. Each hit is marked `REVISE`, `RETAIN_SCIENTIFIC_TERM`, or
+`FALSE_POSITIVE` with a short reason. No detector score substitutes for this
+review.
+
 The planned commit sequence is: evidence/contribution records; structural
 reorder; WP2A; WP2B; WP2C; software reduction; Chapter 4 comments; Chapter 1;
 Chapter 5 decision/revision; global front/back matter; final validation. A
@@ -805,14 +934,14 @@ for merging to `main` and Overleaf handoff.
 
 | Work package | Controlling ledger items |
 | --- | --- |
-| WP0/WP0A | `P-01`, `P-02`, `P-04`; evidence prerequisites for all items |
+| WP0/WP0A | `P-01`, `P-02`, `P-04`, `P-10`; evidence and writing-profile prerequisites for all items |
 | WP1 | `G-01`, `B-01`, `P-08` |
-| WP2A--WP2C | `C3-01`--`C3-14`, `G-02`, `P-03`--`P-08` |
-| WP3 | `C2-01`--`C2-13`, `G-02`, `P-03`, `P-05`--`P-08` |
+| WP2A--WP2C | `C3-01`--`C3-14`, `G-02`, `P-03`--`P-08`, `P-10` |
+| WP3 | `C2-01`--`C2-13`, `G-02`, `P-03`, `P-05`--`P-08`, `P-10` |
 | WP4 | `B-02` plus the itemized ledger created from Bruno's actual annotations |
-| WP5 | `C1-01`--`C1-19`, `G-02`, `P-01`--`P-08` |
-| WP6 | `B-03`--`B-05` and all Chapter 5 items later extracted from Bruno's review |
-| WP7 | `G-03`, `G-04`, `P-03`, `P-05`--`P-09` |
+| WP5 | `C1-01`--`C1-19`, `G-02`, `P-01`--`P-08`, `P-10` |
+| WP6 | `B-03`--`B-05`, `P-10`, and all Chapter 5 items later extracted from Bruno's review |
+| WP7 | `G-03`, `G-04`, `P-03`, `P-05`--`P-10` |
 | WP8 | Completion evidence for every non-deferred item |
 
 ## 6. Validation matrix
@@ -830,7 +959,8 @@ for merging to `main` and Overleaf handoff.
 | Source-tree damage | Thesis and research checkouts have expected clean/controlled dirty states |
 | Appendix expansion | Four-to-six-page hydrology target; written claim-based justification before exceeding eight pages |
 | Citation duplication | Corrected-3 references reconciled by title/DOI and existing thesis key; no blind BibTeX concatenation |
-| Style overcorrection | Every flagged engineering/software/AI term reviewed in context; scientifically necessary method names retained and defined |
+| Formulaic or over-smoothed prose | Section 4.13 four-pass review; every flagged phrase adjudicated in context; no generic fluency replaces assumptions, evidence, or authorial voice |
+| Style overcorrection | Scientifically necessary AI/ML/software/engineering terms retained and defined; sound article prose not rewritten merely for surface variation |
 | Incomplete advisor evidence | No Chapter 4/5 revision attributed to Bruno until his actual comments are frozen and itemized |
 | Remote/Overleaf divergence | Fetch and compare before merge; no force push; Overleaf pull and compile verified as a separate handoff |
 
@@ -857,7 +987,7 @@ scientific mismatch by weakening provenance records.
 
 ### 6.2 Reader and scientific acceptance tests
 
-In addition to automated validation, the revision must pass five manual tests:
+In addition to automated validation, the revision must pass six manual tests:
 
 1. **one-reading test:** a first- or second-year statistics Ph.D. reader can
    state each chapter's problem, contribution, evidence, and principal limit;
@@ -870,7 +1000,12 @@ In addition to automated validation, the revision must pass five manual tests:
    chapter and the software chapter does not redefine the full model; and
 5. **professional-document test:** no drafting notes, repository operations,
    internal production vocabulary, defensive AI language, or unexplained
-   software/engineering jargon appears in the compiled thesis.
+   software/engineering jargon appears in the compiled thesis; and
+6. **specificity and voice test:** every changed paragraph names the relevant
+   statistical object, assumption, metric, evidence, or logical relation; no
+   paragraph is merely smoother, formulaic, or interchangeable with a generic
+   methods paper, and legitimate variation among the four project voices is
+   preserved.
 
 ## 7. Decisions required before the corresponding work starts
 
@@ -898,8 +1033,8 @@ before WP1 or WP2 begins.
 
 The revision is complete only when all of the following are true:
 
-- every one of the 64 current controlled items (50 Raquel items, five Bruno
-  email items, and nine candidate controls) is marked implemented, explicitly
+- every one of the 65 current controlled items (50 Raquel items, five Bruno
+  email items, and ten candidate controls) is marked implemented, explicitly
   deferred by decision, or waiting on named evidence, with a commit/release
   reference;
 - Bruno's future annotation receives its own item count and coverage audit;
@@ -914,7 +1049,7 @@ The revision is complete only when all of the following are true:
 - the hydrology appendix satisfies the approved scope and page gate;
 - fast, chapter, and release validation pass against immutable audit clones;
 - the changed PDF pages and full extracted text pass manual scientific,
-  stylistic, and layout review;
+  stylistic, anti-formulaic-prose, voice, and layout review under Section 4.13;
 - the final disclosure is factually confirmed and agrees with the assistance
   log; and
 - the reviewed release is merged and pushed without divergence only after
