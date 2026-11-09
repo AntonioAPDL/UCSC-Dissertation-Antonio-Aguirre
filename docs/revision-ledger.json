@@ -53,7 +53,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "0a985db41ba6d87296537e34773172f1a5ba550cb14a5310eda538a111bc4d95",
+      "current_sha256": "cdf7e28f272b35a2da940f7cc81f2a30f42866fa5df42f58e7d8b5eda455da69",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -67,7 +67,8 @@
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-QDESN-AUTHORITY-20261106",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-ADVISOR-QDESN-20261109"
       ]
     },
     {
@@ -844,6 +845,16 @@
       "summary": "Recasts the software chapter around its distinct statistical-computing contribution, removes the repeated exAL derivation and duplicated Big Tree analysis, defines the static regularized-horseshoe model before its example, and retains three analyses with nonoverlapping evidentiary roles.",
       "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch02-exdqlm.json",
       "validation": "Fixed-source contribution audit, structural and editorial ledgers, clean TeX build, PDF diagnostics, and rendered inspection are required before merge."
+    },
+    {
+      "id": "REV-ADVISOR-QDESN-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/04-research-c.tex"
+      ],
+      "summary": "Strengthens the Q--DESN contribution statement, defines fixed recurrent features before reservoir terminology, replaces internal validation language with standard statistical qualifications, and clarifies the information set in the two applications while preserving the source-authoritative models and results.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch04-qdesn.json",
+      "validation": "Current-authority hash validation, clean TeX build, terminology review, PDF diagnostics, and rendered inspection are required before merge; Bruno's detailed Chapter 4 annotation remains unavailable and is not inferred."
     }
   ]
 }
