@@ -525,3 +525,24 @@ contribution and literature controls, the existing academic-writing gate, and
 staged validation and Git handoff rules. No dissertation chapter, appendix,
 equation, result, bibliography, figure, table, manifest, source repository,
 computation, or compiled PDF was changed in this intake.
+
+2026-11-09: At the author's request, AI assistance completed a final
+planning-only audit of the Bruno revision before any further manuscript work.
+It rechecked the current 183-page release, the complete 116-item annotation
+inventory, the earlier advisor plan and ledger, the binding version-0.2
+academic-writing profile, and the fixed Q--DESN, RQR-GIBBS, and MTI-EXTENSIONS
+authorities. Read-only remote-tip checks confirmed that the frozen source
+commits remain current. The audit resolved the spectral-scaling, leak-rate,
+partially collapsed transition, deterministic MTI profile, Dirichlet-process,
+calibration, and full-range feasibility questions; the unidentified possible
+additional comparator remains excluded pending exact evidence. The final
+controlling plan now provides a measured baseline, alternatives analysis,
+exact file-and-label dependencies, body/appendix compactness controls, a
+116-row response-matrix contract, bounded commit units, validation commands,
+stop conditions, and a definition of done. Planning documentation alone was
+reconciled. No dissertation prose, equation, result, bibliography, figure,
+table, manifest, research-source working tree, computation, or compiled PDF
+was changed, and nothing was pushed, merged, or synchronized with Overleaf.
+The 19-test fast validation gate and its research-audit, editorial-audit,
+manuscript-import, structure, and diff checks passed; no source-blob recheck
+or new thesis build was needed for planning-only documentation changes.

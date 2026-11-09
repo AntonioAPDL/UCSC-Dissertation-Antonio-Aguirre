@@ -6,12 +6,15 @@ reviewed thesis PDF are stored locally under the ignored
 `audit-inputs/advisor-review-20261109/` directory. They are not on GitHub.
 Email bodies and private message metadata are not reproduced here.
 
-The final execution design is
-`docs/advisor-revision-plan-20261109.md`. That plan assigns every item below to
-a work package and supplies the hydrology source/asset/appendix blueprint,
-file-level dependency map, validation gates, and definition of done. This
-ledger remains the item-level status record; the plan does not replace or
-silently close any item.
+The first advisor-revision execution design is
+`docs/advisor-revision-plan-20261109.md`. It records the completed Raquel-led
+revision and its hydrology source/asset/appendix blueprint. The final
+controlling specification for Bruno's later detailed review is
+`docs/bruno-revision-integration-plan-20261109.md`. It resolves source questions
+that the provisional intake left open, maps every affected dissertation file,
+sets body/appendix compactness controls, defines the 116-row response record,
+and supplies bounded commit and validation gates. This ledger remains the
+advisor-level status record; neither plan silently closes an item.
 
 The first advisor-revision program was implemented and validated before
 Bruno's detailed annotation arrived. That new evidence is now frozen and
@@ -141,7 +144,7 @@ dissertation.
 | Chapter order and appendix order (`G-01`) | `6f7543e` | Hydrology precedes software in the compiled contents and appendices follow the same order |
 | Corrected-3 hydrology reconciliation (`C3-01`--`C3-14`, `P-04`) | `a840a78`, `3d3c346`, `7b0a7e7` | Pinned source imports, revised chapter and appendix, numerical-claim review, clean build, and rendered equation/display inspection |
 | Software reduction and contribution revision (`C2-01`--`C2-13`) | `d9cebb7` | Big Tree duplication removed; static model added; retained examples have distinct roles; clean build and rendered review |
-| Q--DESN global revision (`G-02`, `P-05`--`P-07`) | `a532e3b` | Contribution and terminology revision against the current authority; detailed Bruno annotation remains `B-02` `WAITING` |
+| Q--DESN global revision (`G-02`, `P-05`--`P-07`) | `a532e3b` | Contribution and terminology revision against the current authority; Bruno's later detailed Chapter 4 review is received through Section 4.4 and remains planned under `B4-001`--`B4-040` |
 | Introduction (`C1-01`--`C1-19`) | `9174f32` | Four objectives and contribution map, first-use definitions, one roadmap, clean build, and inspection of all introduction pages |
 | MTI narrative and release decision (`B-03`--`B-05`) | `63ccfe6` | Complete four-project release, contribution-led Chapter 5, two peripheral displays omitted, clean build, and rendered review |
 | Abstract, attribution, disclosure, synthesis, and global style (`G-02`--`G-04`, `P-01`--`P-10`) | `d2e56b9` | Correct chapter order, collective attribution where roles are unassigned, candidate-confirmed disclosure, standard statistical synthesis, terminology scan, and clean 184-page build |

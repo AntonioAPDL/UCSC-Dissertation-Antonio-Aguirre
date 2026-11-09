@@ -1,4 +1,4 @@
-# FINAL controlling advisor-revision plan: November 2026 committee review
+# Baseline advisor-revision plan: November 2026 committee review
 
 Status: **the first advisor revision was implemented and released; Bruno's
 later detailed review is received, itemized, and not yet implemented**. This
@@ -7,12 +7,15 @@ also records how the completed work is to be continued. The item-level source of
 `docs/advisor-comments-ledger-20261109.md`; the original advisor files remain
 ignored local evidence.
 
-The controlling supplement for the new evidence is
+The final controlling specification for the new evidence is
 `docs/bruno-revision-integration-plan-20261109.md`. It accounts for all 36
 annotated pages and 116 normalized actions, distinguishes comments already
-satisfied by current `main` from unresolved work, and records that Bruno's
-Chapter 4 review ends at Section 4.4. Where this historical plan says that the
-annotation had not arrived, the new supplement supersedes that statement.
+satisfied by current `main` from unresolved work, resolves the scientific
+questions settled by the fixed authorities, maps all downstream dissertation
+dependencies, and imposes body/appendix compactness, response-matrix, commit,
+and validation controls. It also records that Bruno's Chapter 4 review ends at
+Section 4.4. Where this historical plan says that the annotation had not
+arrived, the new specification supersedes that statement.
 
 ### Implementation closeout and continuation state
 

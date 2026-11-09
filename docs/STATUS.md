@@ -1,5 +1,36 @@
 # Project status
 
+## 2026-11-09 final planning audit for Bruno revision
+
+The detailed Bruno-review intake has received a final planning-only audit.
+The controlling specification is
+`docs/bruno-revision-integration-plan-20261109.md`; it preserves all 116
+normalized actions while replacing the provisional sequence with an exact
+source-pinned implementation design. The final classification is 32 items
+already satisfied on current `main`, 13 partially satisfied items, 64 open
+edits, six edits whose scientific questions are now resolved from the fixed
+research authorities, and one continuing source-control gate.
+
+The audit verified that the public tips of the Q--DESN, RQR-GIBBS, and
+MTI-EXTENSIONS authorities still equal the frozen commits. It settled the
+Q--DESN spectral-scaling, leak-rate, and partially collapsed transition
+questions and the MTI profile-estimator, Dirichlet-process, calibration, and
+full-range feasibility questions. The possible additional comparator named in
+one handwritten comment remains unidentified and therefore is not authorized
+for inclusion. The plan now contains the exact dissertation dependency map,
+body/appendix compactness limits, a one-row-per-comment response contract,
+bounded commit units, source and style invariants, validation commands, stop
+conditions, and a definition of done.
+
+This audit changed planning documentation only. No chapter, appendix,
+bibliography, figure, table, manifest, computation, research source, or
+compiled dissertation artifact was changed, and nothing was pushed, merged,
+or synchronized with Overleaf. Implementation begins only after separate
+authorization and must start with the response matrix and preflight controls,
+not a global rewrite. The fast validation gate passed all 19 tests together
+with the research-audit, editorial-audit, import, structure, and diff checks;
+source-blob rechecking was not requested because no manuscript import changed.
+
 ## 2026-11-09 Bruno detailed review intake and implementation plan
 
 Bruno Sansó's annotated committee copy was received in the existing Gmail
