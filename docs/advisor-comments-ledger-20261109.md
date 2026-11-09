@@ -6,6 +6,13 @@ reviewed thesis PDF are stored locally under the ignored
 `audit-inputs/advisor-review-20261109/` directory. They are not on GitHub.
 Email bodies and private message metadata are not reproduced here.
 
+The final execution design is
+`docs/advisor-revision-plan-20261109.md`. That plan assigns every item below to
+a work package and supplies the hydrology source/asset/appendix blueprint,
+file-level dependency map, validation gates, and definition of done. This
+ledger remains the item-level status record; the plan does not replace or
+silently close any item.
+
 No item in this ledger has been implemented in the dissertation. The source
 status describes only whether the new Corrected-3 hydrology manuscript already
 contains a satisfactory or partial source-level response.

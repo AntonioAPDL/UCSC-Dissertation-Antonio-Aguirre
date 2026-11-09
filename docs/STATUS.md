@@ -50,6 +50,23 @@ citation-consistency, build, provenance, and validation assistance and proposes
 concise acknowledgment wording for later factual confirmation. No disclosure
 has been inserted into the dissertation.
 
+The final controlling revision plan now adds an exact Corrected-3-to-thesis
+section crosswalk, bounded numerical-claim controls, a file/ledger dependency
+map, work-package coverage for all 64 current controlled items, explicit stop
+and recovery rules, and a release definition of done. Its default hydrology
+design uses six nonredundant main-body displays and a four-to-six-page technical
+appendix with an eight-page exception ceiling and no more than three default
+secondary evidence tables. Superseded MCMC and parameter-summary material is
+not retained merely because it appears in the current appendix. These remain
+planning decisions: no `.tex`, bibliography, asset, manifest, or compiled PDF
+has been changed.
+
+A final Gmail recheck on 9 November found no detailed Bruno Chapter 4/5
+annotation beyond the already recorded sequencing message. Corrected-3 remains
+clean at `c0bfccaa7cec698c016626ee30187f18a56d495c`. Implementation must therefore
+begin with a new evidence check rather than assuming that the pending review
+will remain absent.
+
 ## 2026-11-07 committee-copy finalization validated
 
 The six approved committee-copy actions are complete. A formal scholarly

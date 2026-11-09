@@ -1,8 +1,49 @@
-# Advisor revision plan: November 2026 committee review
+# FINAL controlling advisor-revision plan: November 2026 committee review
 
-Status: **planning and evidence intake complete; manuscript corrections not
-started**. This document controls the next revision cycle. The item-level
-record is `docs/advisor-comments-ledger-20261109.md`.
+Status: **final planning and evidence audit complete; manuscript corrections
+not started**. This document supersedes the earlier versions of this plan and
+controls the next revision cycle. The item-level source of truth is
+`docs/advisor-comments-ledger-20261109.md`; the original advisor files remain
+ignored local evidence.
+
+## 0. Executive diagnosis and final recommendation
+
+The dissertation does not primarily need a sentence-by-sentence copy edit.
+Four coupled issues explain most of the advisors' concerns:
+
+1. the hydrology chapter still reflects the superseded Corrected-2 article,
+   while Corrected-3 changes the structure, comparisons, numerical evidence,
+   calibration discussion, limitations, and contribution statement;
+2. presenting the software before the hydrologic problem forces the thesis to
+   introduce methods through implementation and then repeat them in the
+   application;
+3. the project contributions are present but distributed across late,
+   repetitive, or overly qualified prose, and personal contribution must be
+   separated from collaborative project novelty; and
+4. chapter order, appendices, displays, claims, citations, and provenance are
+   recorded in several connected files, so editing only the visible TeX would
+   leave a scientifically inconsistent dissertation.
+
+The final recommendation is therefore a **source-led, contribution-first,
+reader-facing revision**, executed in bounded work packages:
+
+1. freeze advisor and scientific-source evidence and prepare contribution
+   dossiers;
+2. reorder hydrology before software in a structural-only commit;
+3. rebuild the hydrology chapter from Corrected-3, retaining older prose only
+   when it is both scientifically current and clearer;
+4. reduce the software chapter after the hydrology chapter is self-contained;
+5. incorporate Bruno's actual Chapter 4 comments when they arrive;
+6. rewrite the introduction only after Chapters 2--4 are stable;
+7. make an explicit first-release decision about Chapter 5; and
+8. reconcile the abstract, synthesis, acknowledgments, bibliography,
+   appendices, displays, provenance, and release validation.
+
+This sequence is preferable to patching advisor comments in current page
+order. It prevents repeated rewrites of Chapter 1, avoids importing a journal
+article wholesale, and makes every scientific claim traceable to a fixed
+source. It also preserves the useful existing thesis material rather than
+starting from zero.
 
 ## 1. Objective and boundary
 
@@ -39,16 +80,20 @@ storage boundaries:
   inputs under the ignored `audit-inputs/advisor-review-20261109/` directory;
 - this plan, the correction ledger, the status entry, and the assistance-log
   entry are committed only on local branch
-  `editorial/advisor-revision-audit-20261109` at `71eda897...`;
+  `editorial/advisor-revision-audit-20261109`; the earlier planning history is
+  recorded through `0a6f24c...`, and this final controlling revision is the
+  next documentation-only change on that branch;
 - GitHub `main`, local `main`, and `origin/main` remain equal at
   `07b8f0d0...`; and
 - the planning branch does not exist on the remote.
 
 Accordingly, revision work can proceed locally without importing the advisor
 PDFs into Git. The safest implementation branch should be created from the
-local planning branch (or should cherry-pick its planning commit) so the ledger
-travels with the edits. Only reviewed thesis source and public documentation
-should later be merged and pushed; the ignored advisor files must remain local.
+final local planning-branch tip so the ledger travels with the edits. Only
+reviewed thesis source and public documentation should later be merged and
+pushed; the ignored advisor files must remain local. As of the final 9
+November recheck, Gmail contains Raquel's attachment message and Bruno's
+sequencing message, but no newer detailed Chapter 4/5 annotation.
 
 ## 2. Frozen evidence and exact baselines
 
@@ -366,6 +411,173 @@ factually accurate and ask the advisors whether they prefer a shorter form.
 The disclosure should be direct and proportionate, without discussing the
 perceived reliability of AI systems or sounding defensive.
 
+### 4.9 Exact hydrology reconciliation blueprint
+
+Corrected-3 supplies the scientific spine, not a block of text to paste. The
+following crosswalk fixes what each source section should become in the
+reader-facing dissertation.
+
+| Corrected-3 unit | Thesis destination and purpose | Required adaptation | Advisor/quality controls |
+| --- | --- | --- | --- |
+| Introduction | New Chapter 2 opening | Preserve the river-flow problem, literature gap, and three contributions; remove journal navigation and article-status language; distinguish collective project contributions from the candidate's confirmed role. | `G-02`, `G-03`, `P-01`--`P-04` |
+| Forecasting setting and data | Problem, products, observations, and covariates | Define a product family concretely; state time support, horizons, forecast-member notation, transformations, and the status of supplied future covariates. Move catalogs and extraction details to citations or the external reproducibility source. | `C3-01`, `C3-03`, `C1-12` |
+| Bayesian correction and predictive synthesis | Core statistical method | Retain the exAL target, seven component relations, source-specific discrepancies, prior/discounting summary, VB-LD idea, and distributional synthesis. Use ordinary-size equations, label only independently referenced relations, define all symbols on first use, and distinguish conditional, posterior predictive, and synthesized quantiles. | `C3-02`--`C3-08`, `C3-11`, `C3-12`, `C3-14` |
+| Application specification and evaluation | Reproducible empirical design | Retain model components, quantile grid, five fixed origins, 28-day/common-eight-day comparisons, external baselines, calibration, and scoring definitions. State that smaller CRPS is better and keep transformed- and discharge-scale results distinct. | `C3-09`, `C3-10`, `C3-13`, `P-07` |
+| Results | Main evidence | Lead with supported findings, then heterogeneity and failures. Preserve the non-uniform origin/horizon results; do not turn a pooled comparison into a universal superiority claim. | `G-02`, `P-04`, `P-07` |
+| Discussion and conclusions | Scope, limitations, and implications | State what the model and evaluation establish, then limitations: five origins, archive constraints, supplied covariate paths, conditional residual independence, unquantified VB approximation error, and no matched full-model MCMC benchmark. | `C3-09`, `C3-10`, `P-07` |
+| Integrated article appendices | Curated hydrology technical appendix | Retain only definitions, computational details, or secondary evidence required to verify a claim in the chapter. Do not reproduce the article appendix wholesale. | Appendix essentiality rule below |
+
+The main body should initially retain Corrected-3's six principal displays,
+because each answers a distinct committee-facing question:
+
+| Source asset | Default thesis disposition | Reason |
+| --- | --- | --- |
+| `main_aggregate.tex` | Retain and restyle | Establishes pooled full-distribution performance against Bayesian variants and external references. |
+| `main_quantile_loss.tex` | Retain and restyle | Shows that lower-tail/central and upper-tail behavior differ across AL and exAL rather than supporting one uniform winner. |
+| `main_calibration.tex` | Retain and restyle | Prevents a score-only argument and makes undercoverage visible. |
+| `site_context_usgs.png` | Retain existing byte-identical thesis copy | Defines the response record and hydrologic scale. |
+| `predictive_synthesis_2022_12_25.pdf` | Import the current vector figure | Makes the distributional-synthesis output interpretable at one representative origin. |
+| `no_refit_quantile_reliability.png` | Import | Provides quantile-level calibration evidence not duplicated by the aggregate score table. |
+
+The hydrology appendix should target **four to six pages and must not exceed
+eight pages without a written claim-based exception**. Its default empirical
+content is limited to three compact tables:
+
+1. `si_origin_crps.tex`, because pooled means conceal material origin and
+   horizon heterogeneity;
+2. `si_component_comparison.tex`, because the chapter makes a structural
+   contribution and must show what is lost when major components are removed;
+   and
+3. `si_discharge_score.tex`, because the main scores use transformed discharge
+   and the original-scale comparison materially qualifies the eight-day
+   conclusion.
+
+By default, omit the appendix quantile-loss table (duplicated by the pooled
+main table), exact-score sensitivity table (rankings can be summarized in one
+sentence if retained as a claim), origin-coverage table (aggregate calibration
+and the reliability figure already establish the limitation), the coefficient
+table (unless a covariate-interpretation claim survives), historical-input
+figures, and four additional origin plots. The external article repository
+preserves these materials. A display may be restored only if a retained thesis
+claim cannot be evaluated without it.
+
+The technical appendix should contain a compact version of only the following:
+
+- stacked state/selectors needed to interpret the actual filtering problem;
+- the forecast-window covariance prior when cited by the empirical
+  specification;
+- numerical predictive-synthesis conventions that affect intervals or scores;
+- the unconstrained scale/skewness parameterization, Laplace--Delta moment
+  approximation, and a concise VB update algorithm supporting the third
+  contribution; and
+- enough EMOS definition to identify the comparator, preferably in prose or a
+  short formula rather than a full optimization derivation.
+
+Remove the current source-indexed MCMC algorithms and parameter-summary blocks
+from the hydrology appendix unless a final Chapter 2 claim explicitly uses
+them. Corrected-3 does not report a matched full-model MCMC comparison; keeping
+an extended MCMC appendix would suggest evidence that the current study does
+not provide. Standard seasonal-rotation algebra, data-source catalogs, repeated
+exAL derivations, and exhaustive coordinate updates should also remain in the
+external source or be cross-referenced to the single thesis location where
+they are genuinely needed. Superseded migration and display records must be
+marked as such rather than erased.
+
+### 4.10 Numerical and inferential claim controls for hydrology
+
+The revised chapter, introduction, abstract, and synthesis must agree on the
+following bounded statements from Corrected-3:
+
+- exAL-M-T1 has pooled transformed-scale CRPSS of 0.68601 over 28 days and
+  0.58967 over the common eight-day horizon relative to seasonal climatology;
+  rounded percentage statements must be generated from these recorded values;
+- its central 95% predictive intervals cover 123/140 cases over 28 days and
+  29/40 over eight days (87.9% and 72.5% after rounding), so a favorable CRPS
+  does not imply nominal calibration;
+- on the discharge scale, exAL-M-T1 is best among the listed 28-day methods,
+  while raw NWS has the lowest aggregate eight-day CRPS; the transformed-scale
+  and discharge-scale conclusions must not be conflated;
+- origin-level results are heterogeneous: GloFAS EMOS is best at the May 2022
+  28-day origin, and raw NWS is best at two eight-day winter origins; and
+- approximately two hours is a recorded representative combined VB
+  fit/forecast time under named conditions, whereas “several weeks” is an
+  expectation for MCMC, not a measured matched benchmark. Predictive evidence
+  does not validate the VB posterior approximation itself.
+
+Before drafting results, create a machine-readable crosswalk with one record
+per retained claim: thesis location, source file/label, source commit, exact
+value or qualitative boundary, transformation/horizon/origin, and destination
+display. A number should not be copied independently into multiple files;
+each occurrence must point to the same claim record.
+
+### 4.11 Contribution dossiers and thesis-level presentation
+
+The contribution audit must produce four evidence dossiers by updating the
+existing research-audit records, not by adding an unrelated planning system.
+Each dossier must separate three levels:
+
+1. **antecedent literature**: what was already known or available;
+2. **collaborative project contribution**: what the manuscript and fixed
+   evidence establish; and
+3. **candidate-specific role**: what author records and explicit
+   candidate/coauthor confirmation support.
+
+The provisional project-level formulations to test against the evidence are:
+
+- **Hydrology:** source-aware dynamic quantile correction for gauge,
+  retrospective, and issued-ensemble products; full-distribution synthesis
+  across separate quantile fits; and joint scale--skewness Laplace--Delta VB,
+  evaluated in the bounded five-origin San Lorenzo study.
+- **`exdqlm`:** an integrated statistical-computing interface for established
+  exAL/exDQLM foundations, including the documented LDVB development,
+  prediction, diagnostics, synthesis, transfer-function support, and static
+  shrinkage regression. The exact candidate role in design, implementation,
+  testing, examples, and writing must be confirmed rather than inferred.
+- **Q--DESN:** Bayesian single- and multi-quantile regression built on fixed
+  deep echo-state features, with AL/exAL formulations, model-specific
+  computation, crossing assessment, and bounded simulation/application
+  evidence. ESN/DESN feature construction and quantile-regression antecedents
+  must remain explicit.
+- **MTI:** characterization of the mean-preserving interval within a
+  retained-mean tilt family and a calibrated profiled tolerance procedure,
+  with proved, simulated, empirical, and proposed-extension claims clearly
+  separated. Work-in-progress extensions must not be presented as established
+  results.
+
+Implementation outputs are: an updated contribution matrix in
+`docs/research-audit.md`, an updated source-to-chapter map in
+`docs/chapter-plan.md`, any private role-confirmation notes under ignored
+`audit-inputs/`, one concise contribution map early in Chapter 1, one precise
+paragraph near each research-chapter opening, and one collaborator/assistance
+statement in the acknowledgments. Chapter 6 should synthesize relationships
+and limitations rather than repeat all four contribution paragraphs.
+
+### 4.12 Exact file and dependency map
+
+The eventual revision must treat the following as one connected change set.
+“Review” does not mean every file must change; it means the file must be
+checked and either updated or explicitly recorded as unaffected.
+
+| Change class | Files/records to review | Required outcome |
+| --- | --- | --- |
+| Chapter order | `main.tex`; appendix input order | Hydrology then software; hydrology technical appendix then software appendix; physical filenames and stable labels retained during the first pass. |
+| Thesis framing | `chapters/01-introduction.tex`, `chapters/06-synthesis.tex`, `frontmatter/abstract.tex` | Contributions, chapter numbers, numerical claims, and statistical terminology agree with the revised chapters and Chapter 5 release decision. |
+| Research chapters | `chapters/03-research-b.tex` (new visible Chapter 2), `chapters/02-research-a.tex` (new visible Chapter 3), then Chapters 4 and 5 as gated | Source-led hydrology conversion, software reduction, and advisor-specific revisions without uncontrolled rewriting of sound material. |
+| Appendices | `appendices/a-shared-conventions.tex`, `appendices/c-hydrology-technical.tex`, `appendices/b-exdqlm-technical.tex`; later D/E only if their chapters change | One necessary location per derivation/detail; short body bridges; no superseded MCMC implication or duplicated distribution theory. |
+| Attribution/disclosure | `frontmatter/acknowledgments.tex`, `docs/ASSISTANCE-LOG.md` | Remove dependence on chapter-opening notices; accurately credit collaborators and state proportionate AI-assisted support. |
+| Notation/citations | `notation.tex`, `references.bib`, `docs/bibliography-map.json` | First-use definitions, consistent symbols, and DOI/title-based deduplication of Corrected-3 references using the thesis namespace rather than blind BibTeX concatenation. |
+| Hydrology assets | `figures/ch03-environ/`, `tables/ch03-environ/` | Import only approved assets; retain byte-identical copies where hashes match; deactivate superseded assets without losing provenance. |
+| Source authority | `source-manifest.json`, `docs/source-register.json`, `docs/source-snapshots.json`, ignored `source-manifest.local.json` | Replace Corrected-2 as current hydrology authority with Corrected-3 at `c0bfccaa...`; retain Corrected-2 as historical lineage only. |
+| Claim/import provenance | `docs/claim-evidence.json`, `docs/imports/ch03-environ.json`, `docs/revision-ledger.json` | Every retained prose/display item maps to the correct source commit and current thesis derivative; obsolete records receive an explicit disposition. |
+| Display/appendix control | `docs/display-ledger.json`, `docs/accessibility-ledger.json`, `docs/appendix-essentiality-map.json`, `docs/appendix-essentiality-review.md`, `docs/appendix-migration-map.json`, `docs/editorial-issues.json`, `docs/editorial-review.md` | Active labels and graphics match the compiler graph; removed items are marked inactive/superseded with recovery evidence; every retained appendix unit has a claim-based justification. |
+| Status and validation | `docs/STATUS.md`, `docs/VALIDATION.md`, this plan and correction ledger | Record source identities, decisions, completed work packages, test results, rendered review, remaining advisor items, and release identity. |
+
+The old `ch03-environ` directory and manifest identifiers may remain as stable
+internal identifiers even after the chapter becomes reader-facing Chapter 2.
+Renaming them during a scientific revision would create unnecessary hash and
+provenance churn. Reader-visible numbering must come from compiler order and
+labels, not storage names.
+
 ## 5. Ordered implementation work packages
 
 ### WP0 — Freeze the revision inputs
@@ -375,10 +587,15 @@ perceived reliability of AI systems or sounding defensive.
 - Fetch Corrected-3 and record a new commit only if the author explicitly says
   a later commit is authoritative; otherwise keep `c0bfccaa...` fixed.
 - Record ignored local source paths and original-tree guards.
-- Create a revision branch from the synchronized thesis baseline.
+- Recheck `origin/main` for divergence, then create the revision branch from
+  the final planning-branch tip so the controlling plan and ledger are present.
+- Capture before-state hashes for all active hydrology prose, assets, and
+  public provenance records. Do not fetch, checkout, clean, or build inside an
+  original research working tree.
 
 Acceptance: exact source commits, attachment hashes, and dirty states are
-recorded; no original research checkout has changed.
+recorded; the revision branch contains no unexplained pre-existing edits; no
+original research checkout has changed.
 
 ### WP0A — Build the contribution dossiers before drafting
 
@@ -394,6 +611,8 @@ recorded; no original research checkout has changed.
 - Draft a one-paragraph contribution statement for each project and a concise
   dissertation-level synthesis, but do not insert them into the thesis until
   the scientific wording has been reviewed.
+- Update the existing `docs/research-audit.md` and `docs/chapter-plan.md`; keep
+  unconfirmed personal role details in ignored local records until approved.
 
 Acceptance: every contribution phrase identifies its evidence, inherited
 foundation, support level, and limitation; no contribution rests only on a
@@ -405,6 +624,10 @@ repository name, commit date, or author order.
 - Audit every chapter/appendix number, forward/back reference, list entry,
   contribution statement, abstract reference, and synthesis reference.
 - Build and validate this structural commit separately.
+- Keep `chapters/02-research-a.tex`, `chapters/03-research-b.tex`, existing
+  labels, and `ch02`/`ch03` provenance identifiers unchanged in this work
+  package. Compiler order, not filename renaming, establishes visible chapter
+  numbers.
 
 Acceptance: the PDF has the intended order; every reference resolves; no
 scientific wording or number changes in this work package.
@@ -420,16 +643,30 @@ scientific wording or number changes in this work package.
    antecedent map and candidate-role evidence.
 5. Apply every `C3-*` item in the ledger, including those still partial in the
    new article.
-6. Import/adapt the three principal result tables and three principal figures,
-   subject to page and redundancy review.
-7. Keep only essential technical material in the hydrology appendix.
+6. Import/adapt the three principal result tables and three principal figures
+   in Section 4.9; retain existing bytes when the source and thesis hashes
+   already agree.
+7. Rebuild the hydrology appendix to the four-to-six-page target in Section
+   4.9. Use the three-table default and restore an omitted item only through a
+   written claim-based exception.
 8. Reconcile numerical claims across the chapter, abstract, introduction,
    synthesis, bibliography, manifests, and provenance ledgers.
 9. Run source-hash, label, citation, build, log, and rendered-page checks.
 
+Execute this as three reviewable commits rather than one opaque replacement:
+
+- **WP2A — model and narrative:** chapter spine, notation, contributions,
+  advisor equation/symbol corrections, evaluation design, and claim wording;
+- **WP2B — evidence and appendix:** selected figures/tables, result text,
+  compact technical appendix, captions, accessibility text, and body bridges;
+  and
+- **WP2C — scientific records:** bibliography, source/import/claim/display/
+  appendix ledgers, source hashes, status, and validation evidence.
+
 Acceptance: every retained hydrology claim maps to Corrected-3; all advisor
-items have evidence; the chapter is readable without the software chapter;
-the article source and thesis checkout remain independent.
+items `C3-01`--`C3-14` have implementation and rendered evidence; the chapter
+is readable without the software chapter; the appendix stays within its
+approved scope; the article source and thesis checkout remain independent.
 
 ### WP3 — Shorten and refocus the software chapter
 
@@ -440,6 +677,11 @@ the article source and thesis checkout remain independent.
 - Correct the non-marginal characterization associated with current Equation
   (2.27), then recheck surrounding inference language.
 - Rewrite the summary to match the shorter contribution-first chapter.
+- Unless the candidate rejects the recommended default before this work
+  package begins, remove the detailed Big Tree analysis, retain a concise
+  capability/provenance cross-reference, and update every affected display,
+  accessibility, import, revision, appendix, and editorial record. Do not
+  delete its source lineage.
 
 Acceptance: the chapter demonstrates distinct software/statistical
 contributions without repeating Chapter 2 and without assuming extensive R
@@ -457,19 +699,25 @@ actual review evidence.
 
 ### WP5 — Rewrite Chapter 1 after Chapters 2–4 stabilize
 
-- Replace the current abstract organizing vocabulary with concrete statistical
-  problems and examples.
+- Use this fixed outline: (1) motivating statistical problems and concrete
+  examples; (2) relevant methods and unresolved gaps; (3) four research
+  objectives and the approved contribution map; (4) only the shared
+  statistical background required to read the chapters; and (5) one short
+  relationship/roadmap paragraph.
 - Introduce conditional quantiles and fixed-content intervals in standard
   statistical language and explain why each matters.
-- describe existing methods and gaps;
-- state the dissertation's contributions early, distinguishing antecedents
-  from the candidate's collaborative work and using the approved WP0A
-  contribution dossiers;
-- connect chapters by their statistical questions, not by a generic evidence
-  framework;
-- remove the evidence-hierarchy block, repeated organization material, and the
-  specific opaque phrases identified by Raquel; and
-- define every symbol and score when first needed.
+- State the dissertation's contributions early, distinguishing antecedents
+  from collaborative project contributions and from the candidate's confirmed
+  personal role.
+- Define check loss, separate versus joint quantile fits, predictive
+  synthesis, CRPS, interval placement, generalized updating, fixed echo-state
+  features, and future-covariate conditioning only to the depth needed for the
+  reader to understand the four objectives.
+- Remove the evidence-hierarchy block, repeated organization material, the
+  paragraph before the current organization section, and the opaque/internal
+  phrases identified by Raquel.
+- Define every symbol and score when first needed and reconcile every
+  chapter-level claim with the final chapter text rather than an older plan.
 
 Audience test: a first- or second-year statistics Ph.D. student should be able
 to state the four problems and contributions after one reading.
@@ -485,9 +733,9 @@ Choose one of two explicit releases:
   it in the agreed second version.
 
 Do not leave the present chapter in place merely to preserve chapter count.
-The program expectation is already satisfied by at least three journal-suitable
-research chapters if the first version contains the revised Chapters 2–4, but
-the advisors control the scholarly submission strategy.
+A staged copy without Chapter 5 would be an advisor-review strategy, not a
+claim about final program or filing requirements. The advisors and candidate
+must decide the scholarly submission strategy explicitly.
 
 ### WP7 — Global front/back matter and disclosure pass
 
@@ -503,6 +751,10 @@ the advisors control the scholarly submission strategy.
 - Rewrite the abstract only after the chapter order, contributions, and Chapter
   5 status are settled, as Raquel requested.
 - Reconcile the synthesis, contents, lists, and bibliography.
+- Replace Chapter 6's “target-first” framing and any remaining project-internal
+  workflow language with a direct statistical synthesis: common questions,
+  distinct inferential targets, supported findings, limitations, and future
+  work. Do not repeat the full contribution map.
 
 ### WP8 — Release validation and handoff
 
@@ -523,6 +775,46 @@ Overleaf remains a separate verification environment: preserve Overleaf edits,
 pull the finalized GitHub `main`, compile there, and compare page count and
 blocking diagnostics.
 
+The minimum local validation sequence is:
+
+```bash
+python3.11 scripts/validate_research_audit.py
+python3.11 scripts/validate_editorial_audit.py
+python3.11 scripts/validate_structure.py
+bash scripts/validate.sh --tier fast
+bash scripts/validate.sh --tier chapter --audit-root /PATH/TO/IMMUTABLE/AUDIT-CLONES
+bash scripts/validate.sh --tier release --audit-root /PATH/TO/IMMUTABLE/AUDIT-CLONES
+```
+
+The ignored local audit root must contain the fixed commits recorded in
+`source-manifest.json`. The release gate also requires PDF text extraction,
+font inspection, page rasterization, and manual review of every changed chapter
+opening, contribution paragraph, dense equation page, table, figure, appendix
+opening, transition, abstract, acknowledgment, and synthesis page. Automated
+success alone is not sufficient.
+
+The planned commit sequence is: evidence/contribution records; structural
+reorder; WP2A; WP2B; WP2C; software reduction; Chapter 4 comments; Chapter 1;
+Chapter 5 decision/revision; global front/back matter; final validation. A
+failed package is corrected before the next begins. No force push, reset,
+clean, automatic stash, or merge of unrelated work is permitted. A coherent
+advisor release, rather than an intermediate broken state, is the unit eligible
+for merging to `main` and Overleaf handoff.
+
+### Work-package coverage of the correction ledger
+
+| Work package | Controlling ledger items |
+| --- | --- |
+| WP0/WP0A | `P-01`, `P-02`, `P-04`; evidence prerequisites for all items |
+| WP1 | `G-01`, `B-01`, `P-08` |
+| WP2A--WP2C | `C3-01`--`C3-14`, `G-02`, `P-03`--`P-08` |
+| WP3 | `C2-01`--`C2-13`, `G-02`, `P-03`, `P-05`--`P-08` |
+| WP4 | `B-02` plus the itemized ledger created from Bruno's actual annotations |
+| WP5 | `C1-01`--`C1-19`, `G-02`, `P-01`--`P-08` |
+| WP6 | `B-03`--`B-05` and all Chapter 5 items later extracted from Bruno's review |
+| WP7 | `G-03`, `G-04`, `P-03`, `P-05`--`P-09` |
+| WP8 | Completion evidence for every non-deferred item |
+
 ## 6. Validation matrix
 
 | Risk | Required check |
@@ -536,10 +828,53 @@ blocking diagnostics.
 | Private/internal leakage | No email body, absolute server path, token, ignored attachment, or workflow note is tracked or compiled |
 | Formatting regression | Fresh build, log audit, font/margin/page checks, and rendered inspection pass |
 | Source-tree damage | Thesis and research checkouts have expected clean/controlled dirty states |
+| Appendix expansion | Four-to-six-page hydrology target; written claim-based justification before exceeding eight pages |
+| Citation duplication | Corrected-3 references reconciled by title/DOI and existing thesis key; no blind BibTeX concatenation |
+| Style overcorrection | Every flagged engineering/software/AI term reviewed in context; scientifically necessary method names retained and defined |
+| Incomplete advisor evidence | No Chapter 4/5 revision attributed to Bruno until his actual comments are frozen and itemized |
+| Remote/Overleaf divergence | Fetch and compare before merge; no force push; Overleaf pull and compile verified as a separate handoff |
+
+### 6.1 Stop conditions and recovery rules
+
+Pause only the affected work package, preserving completed commits, if any of
+the following occurs:
+
+- a newer advisor file or explicitly authoritative research commit arrives;
+- a retained number, figure, or model statement cannot be reconciled with the
+  fixed source;
+- a personal contribution statement lacks documentary evidence or explicit
+  candidate/coauthor confirmation;
+- a private or permission-restricted source would have to be published;
+- the active TeX graph, source-blob validation, or release build fails after
+  the change cannot be isolated locally;
+- `origin/main` diverges before the planned merge; or
+- an Overleaf edit would be overwritten by the proposed synchronization.
+
+Recovery is additive: revert or correct the smallest work-package commit,
+update the ledger, and rerun its acceptance checks. Do not reset, clean, hide
+changes in a stash, rewrite an original research checkout, or compensate for a
+scientific mismatch by weakening provenance records.
+
+### 6.2 Reader and scientific acceptance tests
+
+In addition to automated validation, the revision must pass five manual tests:
+
+1. **one-reading test:** a first- or second-year statistics Ph.D. reader can
+   state each chapter's problem, contribution, evidence, and principal limit;
+2. **contribution test:** each novelty statement identifies its antecedent and
+   does not rely on author order to assign individual credit;
+3. **hydrology test:** a reader can explain the three methodological
+   contributions, the five-origin design, the transformed/discharge-scale
+   difference, and why score and calibration conclusions differ;
+4. **independence test:** visible Chapter 2 is readable before the software
+   chapter and the software chapter does not redefine the full model; and
+5. **professional-document test:** no drafting notes, repository operations,
+   internal production vocabulary, defensive AI language, or unexplained
+   software/engineering jargon appears in the compiled thesis.
 
 ## 7. Decisions required before the corresponding work starts
 
-Only three decisions remain material:
+Four decisions or factual confirmations remain material:
 
 1. Confirm the recommended removal of the full Big Tree example from the
    software chapter, replacing it with a concise cross-reference.
@@ -550,12 +885,42 @@ Only three decisions remain material:
    only factual reconciliation and final wording remain.
 3. Decide whether Chapter 5 belongs in the first revised submission after the
    WP2–WP5 schedule is known. This decision can intentionally remain deferred.
+4. Confirm the candidate-specific conceptual, theoretical, computational,
+   empirical, and writing roles for each collaborative project, preferably
+   against coauthor or project records. Until then, project contributions may
+   be stated firmly but personal task allocation must remain collective.
 
 The chapter reorder and use of Corrected-3 are treated as the advised default
 for the eventual implementation. If either is not intended, it must be changed
 before WP1 or WP2 begins.
 
-## 8. Next action
+## 8. Definition of done
+
+The revision is complete only when all of the following are true:
+
+- every one of the 64 current controlled items (50 Raquel items, five Bruno
+  email items, and nine candidate controls) is marked implemented, explicitly
+  deferred by decision, or waiting on named evidence, with a commit/release
+  reference;
+- Bruno's future annotation receives its own item count and coverage audit;
+- Corrected-3 is the current hydrology authority everywhere, while Corrected-2
+  remains only as documented historical lineage;
+- all retained chapter, display, appendix, and numerical claims have current
+  source records and all superseded items have explicit recoverable
+  dispositions;
+- the four contribution dossiers and approved personal/collaborator
+  attribution agree with Chapter 1, chapter openings, acknowledgments, and
+  Chapter 6;
+- the hydrology appendix satisfies the approved scope and page gate;
+- fast, chapter, and release validation pass against immutable audit clones;
+- the changed PDF pages and full extracted text pass manual scientific,
+  stylistic, and layout review;
+- the final disclosure is factually confirmed and agrees with the assistance
+  log; and
+- the reviewed release is merged and pushed without divergence only after
+  authorization, then pulled and compiled independently in Overleaf.
+
+## 9. Next action
 
 Wait for explicit authorization to implement. On authorization, first check
 for Bruno's promised detailed comments and any newer Corrected-3 commit, then

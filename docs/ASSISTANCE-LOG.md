@@ -431,3 +431,17 @@ unembedded or Type 3 fonts, or reader-facing drafting, collaboration-tool,
 prompt, or artificial-intelligence language. Front matter, chapter openings,
 appendix and bibliography boundaries were rendered and inspected. No research
 calculation, source repository, data, result, or fitted object changed.
+
+2026-11-09: At the author's request, AI assistance completed a final
+documentation-only audit of the advisor-revision plan. It rechecked Gmail for
+newer Raquel/Bruno revision evidence, verified that none had arrived, confirmed
+the clean Corrected-3 source commit and publication inventory, examined the
+current thesis framing, appendix/provenance controls, validators, and chapter
+dependencies, and strengthened the existing controlling plan rather than
+creating a competing framework. The plan now specifies the hydrology
+section/claim/display conversion, bounded appendix contents, numerical-claim
+controls, four contribution dossiers, exact affected files and ledgers,
+chapter-sized commit order, validation commands, stop/recovery conditions, and
+definition of done. No dissertation prose, equation, bibliography, asset,
+manifest, research source, computation, or compiled PDF was changed; nothing
+was pushed, merged, or synchronized with Overleaf.
