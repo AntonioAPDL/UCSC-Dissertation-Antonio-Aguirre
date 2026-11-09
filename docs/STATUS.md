@@ -1,6 +1,6 @@
 # Project status
 
-## 2026-11-09 advisor revision implemented locally
+## 2026-11-09 advisor revision released to `main`
 
 The advisor-directed revision is complete on
 `editorial/advisor-revision-implementation-20261109`. Hydrology now precedes
@@ -39,11 +39,13 @@ and synthesis were inspected in the rendered PDF. No research simulation,
 model fit, data transformation, or source-repository working tree was changed.
 
 The implementation is recorded in chapter-sized commits `6f7543e` through
-`d2e56b9`. It has not yet been merged or pushed. Before release, recheck the
-remote for divergence, run the release validator with the retained audit
-sources, review the final aggregate diff, merge without force, push `main`,
-and verify the remote commit. Overleaf pull and compilation remain a deliberate
-subsequent handoff.
+`d2e56b9`, followed by release-validation commit `8da8e45`. The release tier
+passed against fresh fixed-source audit clones. The editorial branch was then
+fast-forwarded into `main` without conflicts or history rewriting, pushed to
+GitHub, and checked against the remote branch identifier. The working tree was
+clean after that verification. Overleaf pull and compilation remain a
+deliberate subsequent handoff; this repository cannot establish that the
+Overleaf project has completed that separate operation.
 
 ## 2026-11-09 advisor revision intake and source audit (historical)
 

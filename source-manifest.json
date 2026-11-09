@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-11-09 advisor revision uses Corrected-3 for hydrology, the current Q--DESN authority, the current exdqlm article, and the calibrated profiled-MTI source. Hydrology now precedes software; the introduction, MTI chapter, abstract, attribution, disclosure, and synthesis have been reconciled and validated locally. Bruno's detailed Chapter 4 annotation remains unavailable and is not represented as addressed. GitHub merge/push and the subsequent Overleaf pull/build remain separate release steps. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
+    "state_note": "The 2026-11-09 advisor revision uses Corrected-3 for hydrology, the current Q--DESN authority, the current exdqlm article, and the calibrated profiled-MTI source. Hydrology now precedes software; the introduction, MTI chapter, abstract, attribution, disclosure, and synthesis have been reconciled and validated. The revision was fast-forwarded into main, pushed to GitHub, and verified against the remote branch identifier. Bruno's detailed Chapter 4 annotation remains unavailable and is not represented as addressed. The subsequent Overleaf pull/build remains a separate release step. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {

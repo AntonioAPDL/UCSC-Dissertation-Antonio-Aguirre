@@ -475,5 +475,6 @@ model fit, data transformation, or source-repository working tree was changed.
 The 19-test fast gate and clean 184-page build pass without unresolved
 citations or references, duplicate labels, overfull boxes, or fatal TeX
 diagnostics. Bruno's detailed Chapter 4 annotation remains unavailable and is
-not represented as addressed. The work had not yet been merged, pushed, or
-synchronized with Overleaf when this entry was recorded.
+not represented as addressed. After release validation, the editorial history
+was fast-forwarded into `main`, pushed to GitHub, and verified against the
+remote branch identifier. No Overleaf pull or compilation was performed.
