@@ -453,3 +453,27 @@ rejects AI-detector scores and does not replace the planned disclosure. No
 dissertation prose, equation, bibliography, asset,
 manifest, research source, computation, or compiled PDF was changed; nothing
 was pushed, merged, or synchronized with Overleaf.
+
+2026-11-09: At the author's direction, AI assistance implemented the complete
+advisor-revision plan on a separate editorial branch. It reordered the
+hydrology and software chapters; reconciled hydrology with the pinned
+Corrected-3 manuscript; removed duplicated software exposition; revised the
+Q--DESN contribution and information-set language; rewrote the introduction;
+and reorganized the MTI chapter around its population characterization,
+calibrated tolerance procedure, independent simulation evidence, and clearly
+identified proposed extensions. It then reconciled the abstract,
+acknowledgments, synthesis, appendix links, display and accessibility records,
+and derivative hashes. Two peripheral MTI approximation displays and technical
+calculus not used by the reported procedure were omitted from the dissertation
+but remain recoverable from the source article. The acknowledgments record the
+candidate-confirmed boundary of limited selected-code debugging and editorial
+review; they state that AI-assisted tools were not used to formulate methods,
+derive proofs, identify or evaluate the literature, independently implement the
+research analyses, or generate results. All scientific claims and numerical
+summaries were checked against the fixed manuscript evidence; no simulation,
+model fit, data transformation, or source-repository working tree was changed.
+The 19-test fast gate and clean 184-page build pass without unresolved
+citations or references, duplicate labels, overfull boxes, or fatal TeX
+diagnostics. Bruno's detailed Chapter 4 annotation remains unavailable and is
+not represented as addressed. The work had not yet been merged, pushed, or
+synchronized with Overleaf when this entry was recorded.

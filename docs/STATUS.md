@@ -1,6 +1,51 @@
 # Project status
 
-## 2026-11-09 advisor revision intake and source audit
+## 2026-11-09 advisor revision implemented locally
+
+The advisor-directed revision is complete on
+`editorial/advisor-revision-implementation-20261109`. Hydrology now precedes
+the software chapter; the hydrology text and technical appendix use
+Corrected-3 commit `c0bfccaa7cec698c016626ee30187f18a56d495c`; the software
+chapter omits the duplicated Big Tree analysis and defines its static
+shrinkage model; Chapter 1 has been rewritten around four statistical
+objectives; and Chapter 5 has been shortened and reorganized around its
+population target, calibrated tolerance action, independent evidence, and
+proposed extensions.
+
+The abstract, acknowledgments, and synthesis agree with the new order and
+current numerical claims. Collaborative contributions are stated collectively
+where the available records do not allocate individual tasks. The
+acknowledgments include the candidate-confirmed disclosure of limited
+AI-assisted debugging and editorial support together with the substantive
+exclusions and author-verification statement. Chapter-opening manuscript
+notices and internal planning terminology have been removed from the compiled
+dissertation.
+
+The item-level record is
+`docs/advisor-comments-ledger-20261109.md`. All recorded Raquel items, Bruno's
+sequencing and Chapter 5 comments, and the candidate's contribution/style
+controls are implemented. `B-02` remains `WAITING`: Bruno's detailed Chapter 4
+annotation has not been received, so no line-by-line response to that absent
+document is claimed. Chapter 4 nevertheless received a bounded contribution,
+terminology, and information-set revision against the current Q--DESN
+authority.
+
+The fast validator passes all 19 tests, all four manuscript manifests, 108
+citation keys, 189 active labels, 33 retained displays, and 15 active graphic
+records. The clean local build is a 184-page US-Letter PDF with no unresolved
+citations or references, duplicate labels, overfull boxes, or fatal TeX
+diagnostics. The changed introduction, Chapter 5, abstract, acknowledgments,
+and synthesis were inspected in the rendered PDF. No research simulation,
+model fit, data transformation, or source-repository working tree was changed.
+
+The implementation is recorded in chapter-sized commits `6f7543e` through
+`d2e56b9`. It has not yet been merged or pushed. Before release, recheck the
+remote for divergence, run the release validator with the retained audit
+sources, review the final aggregate diff, merge without force, push `main`,
+and verify the remote commit. Overleaf pull and compilation remain a deliberate
+subsequent handoff.
+
+## 2026-11-09 advisor revision intake and source audit (historical)
 
 The 9 November advisor review has been normalized into
 `docs/advisor-comments-ledger-20261109.md`, and the controlling implementation

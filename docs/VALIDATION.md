@@ -1,5 +1,53 @@
 # Validation record
 
+## 2026-11-09 advisor-revision release
+
+This release implements the received advisor comments as a coordinated
+dissertation revision rather than as isolated copy edits.  The visible chapter
+order is now the introduction, the hydrological application, the software and
+computational chapter, Q--DESN, MTI, and the synthesis.  The hydrological
+chapter and its technical appendix are reconciled to the fixed Corrected-3
+source; the software chapter removes repeated exposition and centers the
+statistical models and computations; the introduction and synthesis state the
+four contributions in their literature and inferential contexts; and the
+Q--DESN and MTI chapters now distinguish established results, empirical
+evidence, and work still under development.  Collaborator attribution and the
+limited-use AI disclosure are centralized in the acknowledgments.  Bruno
+Sansó's detailed Chapter 4 annotation remains explicitly pending because it
+had not been received at the time of this release.
+
+The release tier passed all 19 tests against fresh fixed-source audit clones.
+It reconciled nine research sources and 31 claim-evidence records; validated
+29 editorial issues, 35 displays (33 retained and two intentionally omitted),
+and 11 bibliography groups; checked four chapter manifests, nine source
+documents, 96 section dispositions, 102 imported records, 120 immutable source
+blobs, and 18 current-source projections; resolved all 108 cited keys; and
+validated 37 active TeX files, 189 labels, six migration records, and 15
+graphics.  The final log contains 16 underfull-box notices, no overfull boxes,
+and no blocking citation, reference, label, file, or fatal diagnostics.
+
+The accepted ignored artifact is
+`build/release-20261109T223449Z/main.pdf`: 184 US-Letter pages, 4,138,414
+bytes, PDF 1.7, SHA-256
+`ad828733628d0c1693f76ad3e845b501aed0ef278b8977e7a2321838085f6b53`.
+All reported fonts are embedded and no Type 3 font occurs.  The file is
+searchable, unencrypted, and untagged.  Its metadata gives the approved
+dissertation title, the author as Jose Antonio Aguirre Perez de Leon, and the
+subject as Statistical Science.
+
+Rendered review included the abstract and acknowledgment transition, the
+revised MTI opening, and the synthesis opening and comparison table.  Direct
+inspection found no clipping, collision, malformed glyph, abnormal margin, or
+unreadable display.  A complete extracted-text scan found no drafting
+markers, prompts, collaboration-tool names, internal workflow language, or
+submission warnings.  The sole artificial-intelligence reference is the
+approved disclosure of limited assistance and author verification.
+
+This record validates the local source, its fixed-source provenance, and the
+compiled committee copy.  It does not represent the missing detailed Chapter
+4 annotation, committee approval, an independently compiled Overleaf artifact,
+or a tagged accessibility-conformant filing PDF.
+
 ## 2026-11-07 committee-copy finalization release
 
 The committee-copy release implements the six approved actions: evidence-bounded

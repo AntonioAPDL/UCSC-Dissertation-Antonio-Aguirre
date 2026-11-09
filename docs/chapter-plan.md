@@ -30,7 +30,7 @@ introduction and abstract are rewritten only after Chapters 2--5 stabilize.
 > **Current-source control (2026-10-26).** The four-chapter architecture remains
 > unchanged, but Chapter 4 now follows Q--DESN commit `483e6ed`, Chapter 5
 > follows the profiled-MTI RQR commit `4223c6a` plus unchanged MTI-EXTENSIONS
-> commit `f345d94`, and Chapter 2 incorporates the `exdqlm` 1.1.2 article rerun
+> commit `f345d94`, and the software chapter incorporates the `exdqlm` 1.1.2 article rerun
 > at `98cec59`. Current article main texts remain the chapter spines and current
 > technical supplements remain in Appendices D and E. TCSP is no longer the
 > Chapter 5 method authority. See `current-source-refresh-audit.md` and

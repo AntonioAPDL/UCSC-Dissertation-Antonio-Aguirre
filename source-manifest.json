@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-10-28",
+  "recorded_at": "2026-11-09",
   "status": "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-10-26 current-source refresh and 2026-11-06 Q--DESN authority refresh supersede the September working snapshots for Q--DESN, the RQR/MTI tolerance article, and the exdqlm software article. The essential-appendix revision, final comprehensive polish, and committee-copy finalization are integrated. The committee copy uses official unsigned approval wording and includes evidence-bounded chapter attribution and prior-dissemination acknowledgments. A deliberate Overleaf pull and rendered review remain separate handoffs. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
+    "state_note": "The 2026-11-09 advisor revision uses Corrected-3 for hydrology, the current Q--DESN authority, the current exdqlm article, and the calibrated profiled-MTI source. Hydrology now precedes software; the introduction, MTI chapter, abstract, attribution, disclosure, and synthesis have been reconciled and validated locally. Bruno's detailed Chapter 4 annotation remains unavailable and is not represented as addressed. GitHub merge/push and the subsequent Overleaf pull/build remain separate release steps. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -264,8 +264,8 @@
       "copyright_registration_state": "optional filing decision; not asserted"
     },
     "working_architecture": [
-      "exdqlm software and computational workflow",
       "Environmetrics hydrologic correction and predictive synthesis",
+      "exdqlm statistical computation and software",
       "QDESN nonlinear conditional-quantile methods",
       "combined MTI foundation, tolerance, regression, and dynamic extensions"
     ],
