@@ -1,7 +1,6 @@
 # Final academic-style polish: 9 November 2026
 
-Status: **implemented and release validated; main-branch synchronization
-pending**
+Status: **implemented, release validated, merged, and pushed**
 
 Baseline: `main` at
 `696d57458a697373e124ae788a6b4776ec047760`, with the 184-page advisor
@@ -214,3 +213,8 @@ narrative comments remain implemented. Bruno Sansó's promised detailed
 Chapter 4 annotation has not been received, so item `B-02` remains `WAITING`
 and is not represented as addressed. This pass does not change that evidence
 boundary.
+
+The editorial branch was fast-forwarded into `main` without a merge commit or
+history rewrite. Release-bearing commit
+`3cb7e978923032329897e410f64108c48ec5ccca` was pushed to GitHub and matched
+the remote branch identifier before this closeout record was written.

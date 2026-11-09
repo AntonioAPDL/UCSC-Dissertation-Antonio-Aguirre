@@ -24,9 +24,11 @@ limited-use AI disclosure remains intact.
 All received Raquel comments and Bruno's sequencing and Chapter 5 narrative
 comments remain satisfied. `B-02` remains `WAITING` because Bruno's detailed
 Chapter 4 annotation is still unavailable; this polish does not infer or claim
-to implement absent comments. Main-branch synchronization and remote
-verification remain the immediate release step. Overleaf must then pull and
-compile GitHub `main` independently.
+to implement absent comments. The editorial branch was fast-forwarded into
+`main`, and release-bearing commit
+`3cb7e978923032329897e410f64108c48ec5ccca` was pushed and verified against the
+remote branch identifier. Overleaf must now pull and compile GitHub `main`
+independently.
 
 ## 2026-11-09 continuation audit after interrupted session
 

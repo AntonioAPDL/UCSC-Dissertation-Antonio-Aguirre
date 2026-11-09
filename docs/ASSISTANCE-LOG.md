@@ -25,6 +25,9 @@ source blobs, passed all 19 tests, and produced a clean 183-page PDF whose
 affected pages were rendered and inspected. The approved disclosure was
 retained; no detector score or concealment criterion was used. Bruno's detailed
 Chapter 4 annotation remains unavailable and is not represented as addressed.
+After validation, the editorial branch was fast-forwarded into `main`, pushed
+to GitHub, and checked against the remote branch identifier; no Overleaf pull
+or compilation was performed.
 
 2026-11-09: AI assistance verified the advisor review thread and the
 candidate's reply, downloaded the two advisor attachments to ignored local
