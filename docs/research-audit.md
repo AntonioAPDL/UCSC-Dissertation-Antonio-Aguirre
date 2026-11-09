@@ -1,5 +1,141 @@
 # PhD research-source audit
 
+> **Advisor-revision contribution addendum (2026-11-09).** The dossiers below
+> control contribution language for the committee revision. They supersede
+> older project summaries where the scientific authorities have changed. They
+> distinguish antecedent literature, collaborative project contributions,
+> candidate-specific documentary evidence, supporting evidence, and claim
+> limits. Granular task allocation is not inferred from author order.
+
+## 2026-11-09 contribution dossiers
+
+### Hydrologic correction and predictive synthesis
+
+- **Problem and gap.** River-flow observations, retrospective hydrologic
+  products, and issued ensembles differ in horizon, support, and update
+  frequency. Standard post-processing does not by itself provide the dynamic
+  source-specific quantile discrepancy model and full-distribution synthesis
+  used here.
+- **Inherited foundation.** The exAL distribution and static foundations come
+  from Yan and coauthors; DQLM/exDQLM state-space structure, earlier MCMC/ISVB,
+  and transfer-function foundations come from the cited Barata line; forecast
+  combination, EMOS, proper scoring, and rearrangement have their own cited
+  antecedents.
+- **Collaborative project contribution.** Corrected-3 develops (i) a shared
+  dynamic quantile process with source-specific discrepancies across gauge,
+  retrospective, and issued-ensemble channels; (ii) synthesis of complete
+  predictive distributions from separate quantile fits, including tail
+  behavior, into a nondecreasing marginal quantile function; and (iii) joint
+  scale--skewness Laplace--Delta variational updates for the extended DQLM.
+- **Candidate-specific evidence.** Antonio de Leon is first and corresponding
+  author, and the article identifies the work as part of his dissertation.
+  The source does not allocate conceptual, computational, empirical, or
+  writing tasks among the three authors; dissertation prose therefore uses
+  collective project language.
+- **Supporting evidence.** The method is evaluated at five fixed San Lorenzo
+  forecast origins using 28-day and common eight-day comparisons, external
+  references, quantile loss, full-distribution scores, calibration, component
+  comparisons, and transformed- and discharge-scale sensitivity. Corrected-3
+  commit `c0bfccaa7cec698c016626ee30187f18a56d495c` is the authority.
+- **Boundary.** The study is retrospective and origin-limited; future
+  covariate paths enter as supplied summaries; conditional residual dependence
+  and source-scale simplifications remain; and no matched full-model MCMC
+  study measures VB posterior-approximation error.
+
+### `exdqlm` statistical software and computation
+
+- **Problem and gap.** Established exAL/exDQLM methods require a coherent
+  implementation that connects model construction, posterior computation,
+  diagnostics, forecasting, predictive synthesis, and static shrinkage
+  regression without obscuring the inferential meaning of each output.
+- **Inherited foundation.** Yan and coauthors supply exAL/static foundations;
+  Barata and coauthors supply exDQLM, original MCMC/ISVB, and transfer-function
+  foundations; standard Bayesian computation and scoring methods retain their
+  cited origins.
+- **Collaborative project contribution.** The article and package supply an
+  integrated R interface with composable dynamic components, coordinated
+  MCMC/LDVB/ISVB interfaces, fitted-object methods, forecasting and
+  diagnostics, post-fit quantile synthesis, compiled utilities, static
+  AL/exAL shrinkage regression, tests, examples, and reproducibility records.
+- **Candidate-specific evidence.** Antonio de Leon is first author of the
+  software article and an `aut` in package metadata. Raquel Barata remains the
+  documented package creator/maintainer and article coauthor. More granular
+  API, algorithm, compiled-code, testing, example, and writing assignments are
+  unconfirmed and are not attributed individually.
+- **Supporting evidence.** The current article authority is
+  `98cec593d11bf32715a690ae168086f16160e7f0`, supported by the fixed package
+  record. Worked analyses establish functionality and computational tradeoffs,
+  including negative or mixed predictive findings.
+- **Boundary.** Software functionality is not a universal predictive-accuracy
+  claim; post-fit synthesis is not a joint multi-quantile posterior; article,
+  hydrology, and Q--DESN analyses retain their recorded package versions.
+
+### Bayesian quantile regression with deep echo-state features
+
+- **Problem and gap.** Fixed recurrent features provide nonlinear temporal
+  predictors, but conventional reservoir forecasts do not directly supply the
+  Bayesian conditional-quantile formulations, multi-level shrinkage, and
+  uncertainty assessments studied here.
+- **Inherited foundation.** ESN/DESN feature construction, Bayesian quantile
+  regression, AL/exAL working likelihoods, shrinkage priors, variational
+  methods, rearrangement, and proper-score evaluation retain their cited
+  antecedents.
+- **Collaborative project contribution.** The project develops Bayesian
+  single-level and multiquantile regression on fixed deep echo-state features,
+  AL/exAL formulations, model-specific MCMC and variational computation,
+  adjacent-level shrinkage and crossing assessment, and simulation, GloFAS,
+  and PriceFM evaluations.
+- **Candidate-specific evidence.** Antonio de Leon is first author. The
+  manuscript does not divide theory, software, experiments, data, or writing
+  among Antonio de Leon, Raquel Prado, and Bruno Sansó, so project-level
+  language is required.
+- **Supporting evidence.** The current authority is
+  `aa613b056b054edd9347eeb4739bd4bce0c92818`. The simulations report recovery,
+  scores, crossing, and computation under stated mechanisms; the GloFAS study
+  is a one-origin retrospective comparison; PriceFM uses 114 region-fold
+  cases with region-specific validation selection.
+- **Boundary.** Reservoirs and evaluation windows are development-informed;
+  the multiquantile prior can reduce crossing but does not guarantee a uniform
+  score gain or enforce monotonicity; future weather is conditioned upon in the
+  GloFAS design; and the empirical comparisons remain descriptive for their
+  recorded designs.
+
+### Mean-tilted intervals and calibrated tolerance actions
+
+- **Problem and gap.** Probability content alone does not determine the
+  placement of an interval. A useful analysis must distinguish the population
+  interval target, generalized updating for its endpoints, and a calibrated
+  repeated-sampling tolerance action.
+- **Inherited foundation.** Residual-product criteria, generalized Bayes,
+  tolerance intervals, shortest intervals, Dirichlet-process updating,
+  convex profiling, and state-space computation retain their cited
+  antecedents.
+- **Collaborative project contribution.** The current foundation characterizes
+  the mean-preserving member of a retained-mean tilt family and develops a
+  calibrated profiled procedure that screens fitted content and tilt through a
+  direct posterior content probability. The companion source develops static
+  regression, basis, and dynamic endpoint proposals.
+- **Candidate-specific evidence.** Antonio de Leon is first author of the
+  foundation and extension manuscripts. Individual theorem, calibration,
+  implementation, validation, and writing assignments are not documented and
+  remain collective in the dissertation.
+- **Supporting evidence.** RQR authority
+  `4223c6a3a44f376255bacdca91db71cdf4f3afde` supplies population results,
+  independent validation on a fixed eight-distribution panel, and the
+  pharmaceutical illustration; MTI-EXTENSIONS
+  `f345d946aa5a81b94795838bec58d874a0fdd0c9` supplies proposed regression and
+  dynamic formulations.
+- **Boundary.** The validation is finite-panel empirical evidence rather than
+  a distribution-free theorem. Pharmaceutical held-out content is descriptive.
+  Regression and dynamic extensions have no snapshot-matched implementation
+  or empirical tolerance validation and must remain proposed developments.
+
+These dossiers support firm statements about the four collaborative project
+contributions. They do not support singular claims that the candidate alone
+proved, designed, implemented, analyzed, or wrote a named component. Such
+language requires later candidate/coauthor confirmation and is not necessary
+for a clear dissertation contribution case.
+
 > **Current-source addendum (2026-10-26).** The Q--DESN, RQR/MTI tolerance,
 > and `exdqlm` article authorities have been refreshed to commits `483e6ed`,
 > `4223c6a`, and `98cec59`, respectively. The controlling current findings are

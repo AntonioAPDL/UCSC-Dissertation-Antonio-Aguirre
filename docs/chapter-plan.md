@@ -1,5 +1,32 @@
 # Evidence-backed four-project dissertation architecture
 
+> **Advisor-directed architecture addendum (2026-11-09).** The visible research
+> order is now hydrologic correction and predictive synthesis, `exdqlm`
+> statistical software/computation, Q--DESN, and mean-tilted intervals. This
+> order places the applied statistical problem before its software support and
+> removes the need to introduce the complete model twice. The fixed current
+> authorities are Corrected-3 `c0bfccaa...`, the `exdqlm` article `98cec593...`,
+> Q--DESN `aa613b05...`, RQR `4223c6a3...`, and MTI-EXTENSIONS `f345d946...`.
+> Physical chapter filenames and historical provenance identifiers remain
+> stable; compiler order determines reader-visible numbering. The four
+> contribution dossiers in `research-audit.md` control novelty, evidence, and
+> attribution language.
+
+The revised reader-facing architecture is:
+
+1. Introduction: problems, antecedents, objectives, and contributions;
+2. source-aware correction and predictive synthesis of river-flow products;
+3. statistical computation and the `exdqlm` software;
+4. Bayesian quantile regression with deep echo-state features;
+5. mean-tilted intervals and calibrated tolerance actions; and
+6. synthesis, limitations, and future work.
+
+Chapter 2 must be readable before Chapter 3. Chapter 3 therefore refers back
+to the statistical model and concentrates on software and computation. Chapter
+5 is retained for the complete advisor release but must distinguish established
+foundation results from proposed regression and dynamic extensions. The
+introduction and abstract are rewritten only after Chapters 2--5 stabilize.
+
 > **Current-source control (2026-10-26).** The four-chapter architecture remains
 > unchanged, but Chapter 4 now follows Q--DESN commit `483e6ed`, Chapter 5
 > follows the profiled-MTI RQR commit `4223c6a` plus unchanged MTI-EXTENSIONS
