@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-15",
+  "generated_at": "2026-11-09",
   "chapter": "ch03-environ",
   "baseline": {
     "id": "manuscript-first-20260915",
@@ -23,6 +23,98 @@
     "github": "MERGED_TO_MAIN",
     "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
     "rights_effect": "NONE"
+  },
+  "current_projection": {
+    "id": "corrected3-authority-refresh-20261109",
+    "source_id": "SRC-ENVIRON",
+    "repository": "AntonioAPDL/Evironmetrics----Corrected-3",
+    "commit": "c0bfccaa7cec698c016626ee30187f18a56d495c",
+    "status": "IMPLEMENTED_RELEASE_VALIDATED",
+    "documents": [
+      {
+        "source_path": "wileyNJD-APA.tex",
+        "source_sha256": "40ce55c5c2b92c060c0f2c9383d64dccdc3a790f512462bdd52cc691df32a87e"
+      },
+      {
+        "source_path": "appendices.tex",
+        "source_sha256": "3044a516c855ce7992f3112d4c14346d97fbc65dedc76d42aca5cf95b9a120eb"
+      },
+      {
+        "source_path": "wileyNJD-APA.bib",
+        "source_sha256": "4147ba426b68a73ec6908a93963410e16281df8f5684cac182c1664f20b8691f"
+      }
+    ],
+    "scientific_changes": [
+      "shared latent quantile process with source-specific discrepancies across gauge, retrospective, and issued-ensemble channels",
+      "full-distribution predictive synthesis with tail use and monotone rearrangement",
+      "joint scale--skewness Laplace--Delta variational updates for the extended DQLM",
+      "five-origin transformed- and discharge-scale evaluation with explicit CRPS and calibration qualifications"
+    ],
+    "projected_items": [
+      {
+        "source_path": "Figures/manuscript/site_context_usgs.png",
+        "destination": "figures/ch03-environ/site_context_usgs.png",
+        "source_sha256": "eeef68672852e4a5362455147b84212ca5bd28d02f9774bb40bdc2a495dc8d8c",
+        "destination_sha256": "eeef68672852e4a5362455147b84212ca5bd28d02f9774bb40bdc2a495dc8d8c",
+        "handling": "byte-for-byte copy of the authoritative manuscript display"
+      },
+      {
+        "source_path": "Figures/manuscript/predictive_synthesis_2022_12_25.pdf",
+        "destination": "figures/ch03-environ/predictive_synthesis_2022_12_25.pdf",
+        "source_sha256": "48fc5c19a82454783826f1750676c4461ec6e648f1d11fd44774dd8a76dba9eb",
+        "destination_sha256": "48fc5c19a82454783826f1750676c4461ec6e648f1d11fd44774dd8a76dba9eb",
+        "handling": "byte-for-byte copy of the authoritative manuscript display"
+      },
+      {
+        "source_path": "Figures/manuscript/no_refit_quantile_reliability.png",
+        "destination": "figures/ch03-environ/no_refit_quantile_reliability.png",
+        "source_sha256": "c0097bd2684b17565c328871d08c3b0ee7117cf2be3d5fb9833906f885e8d4e6",
+        "destination_sha256": "c0097bd2684b17565c328871d08c3b0ee7117cf2be3d5fb9833906f885e8d4e6",
+        "handling": "byte-for-byte copy of the authoritative manuscript display"
+      },
+      {
+        "source_path": "tables/compact_publication/main_aggregate.tex",
+        "destination": "tables/ch03-environ/corrected3/main_aggregate.tex",
+        "source_sha256": "794bd770af9e8628513f70943cd7f991535673f7905edcc793ecacc0a979f991",
+        "destination_sha256": "794bd770af9e8628513f70943cd7f991535673f7905edcc793ecacc0a979f991",
+        "handling": "byte-for-byte copy of the authoritative compact table"
+      },
+      {
+        "source_path": "tables/compact_publication/main_quantile_loss.tex",
+        "destination": "tables/ch03-environ/corrected3/main_quantile_loss.tex",
+        "source_sha256": "7c1a3c228a745a4c1770eac7f3aa70b7333395b6ef750b2c4deacfbdd667a5b7",
+        "destination_sha256": "7c1a3c228a745a4c1770eac7f3aa70b7333395b6ef750b2c4deacfbdd667a5b7",
+        "handling": "byte-for-byte copy of the authoritative compact table"
+      },
+      {
+        "source_path": "tables/compact_publication/main_calibration.tex",
+        "destination": "tables/ch03-environ/corrected3/main_calibration.tex",
+        "source_sha256": "104f62fbed21cd05724a87d7d1b73943a66469d3df8b0ded001e2d5f9da95838",
+        "destination_sha256": "381219a3d81075e37c11332fdfefe5b0d0e5694f3d9a4f2e0b176c1b26696aff",
+        "handling": "layout-normalized dissertation projection; values, labels, caption, and notes unchanged"
+      },
+      {
+        "source_path": "tables/compact_publication/si_origin_crps.tex",
+        "destination": "tables/ch03-environ/corrected3/si_origin_crps.tex",
+        "source_sha256": "7788901838b02db4605c4bd9fc3fae8f98b4e53882df09a0de6f115e81483bb4",
+        "destination_sha256": "7788901838b02db4605c4bd9fc3fae8f98b4e53882df09a0de6f115e81483bb4",
+        "handling": "byte-for-byte copy of the authoritative compact table"
+      },
+      {
+        "source_path": "tables/compact_publication/si_component_comparison.tex",
+        "destination": "tables/ch03-environ/corrected3/si_component_comparison.tex",
+        "source_sha256": "e30b9dd76cfe68320f8128a4d9bd746747a8c4addd43b1db4e86f9494351e266",
+        "destination_sha256": "e30b9dd76cfe68320f8128a4d9bd746747a8c4addd43b1db4e86f9494351e266",
+        "handling": "byte-for-byte copy of the authoritative compact table"
+      },
+      {
+        "source_path": "tables/compact_publication/si_discharge_score.tex",
+        "destination": "tables/ch03-environ/corrected3/si_discharge_score.tex",
+        "source_sha256": "cefddc0abfb2a78f058ced16ae3a28c155c158616494e12c710dbcd833d9af80",
+        "destination_sha256": "21b101ee9562877fb77834723a11607c7e444c74f4a3365b2a4a2bf33dcac66e",
+        "handling": "layout-normalized dissertation projection; values, labels, caption, and notes unchanged"
+      }
+    ]
   },
   "policy": {
     "scope": "manuscript prose, equations, referenced TeX displays, and referenced final display assets only",

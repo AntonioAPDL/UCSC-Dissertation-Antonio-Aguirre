@@ -8,6 +8,7 @@ forecast panels, and implementation outputs remain with the analysis
 materials \citep{env-deleon2026sanlorenzo_reproducibility}; they are not
 needed to evaluate the argument in the chapter.
 
+% migration-id: MIG-CH03-02
 \section{Additional forecast evidence}
 \label{env:app:additional-results}
 
@@ -39,8 +40,6 @@ the extreme-tail sensitivity of N-M-T1 and exAL-M-T0.
 \endgroup
 
 \section{State construction}
-
-% migration-id: MIG-CH03-01
 
 \subsection{Seasonal rotations and stacked states}
 \label{env:app:stackedstates}
@@ -171,7 +170,7 @@ convergence records are retained in the analysis repository.
 
 \section{Extended-likelihood variational approximation}
 
-% migration-id: MIG-CH03-02
+% migration-id: MIG-CH03-01
 
 \subsection{Conditional Gaussian augmentation}
 \label{env:app:augmentation}
@@ -205,9 +204,22 @@ conditional on the observation-specific augmentation variables.
 \subsection{Joint scale--skewness update}
 \label{env:app:vblad}
 
-Let $\boldsymbol\alpha$ contain an unconstrained log-scale and a transformed
-skewness for one channel, and let $\boldsymbol\beta$ contain the remaining
-unknowns. Under a mean-field factorization, define
+For one channel, write the unconstrained coordinates as
+\[
+\ell=\log\sigma,
+\qquad
+\eta=\operatorname{logit}
+\left\{\frac{\gamma-L_\gamma(p_0)}
+{U_\gamma(p_0)-L_\gamma(p_0)}\right\}.
+\]
+The inverse transformation is
+$\sigma=\exp(\ell)$ and
+$\gamma=L_\gamma(p_0)+
+\{U_\gamma(p_0)-L_\gamma(p_0)\}\operatorname{logit}^{-1}(\eta)$.
+Let $\boldsymbol\alpha=(\eta,\ell)'$ contain these coordinates for one
+channel, and let $\boldsymbol\beta$ contain the state trajectory and
+observation-specific augmentation variables. Under a mean-field
+factorization, define
 \[
 \ell(\boldsymbol\alpha)=
 \mathbb E_{r(\boldsymbol\beta)}

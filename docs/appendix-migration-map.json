@@ -82,23 +82,19 @@
       "source_heading": "\\section{Markov chain Monte Carlo algorithms}",
       "source_unit_sha256": "037d5465e41562341b1fe6e4543ba1a1a1642bac9a69f89bd4ff56dad89df31b",
       "disposition": "MOVE_APPENDIX",
-      "semantic_class": "algorithms",
+      "semantic_class": "posterior computation and approximation boundary",
       "destination_path": "appendices/c-hydrology-technical.tex",
-      "destination_heading": "MCMC and variational algorithms",
+      "destination_heading": "Extended-likelihood variational approximation",
       "appendix_label": "app:hydrology-technical",
       "body_bridge_present": true,
       "risk": "high",
-      "review_status": "IMPLEMENTED_RENDERED_REVIEW_PASSED",
+      "review_status": "CORRECTED3_RECONCILED_LOCAL_VALIDATION_PASSED",
       "source_claim_ids": [],
-      "source_display_ids": [
-        "env:alg1",
-        "env:alg:Alg2",
-        "env:alg:Alg3",
-        "env:alg:Alg4"
-      ],
+      "source_display_ids": [],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
-      "source_file_sha256_after": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
-      "destination_file_sha256_after": "57f90d27789617be72928f045100a214eee95deb21b41721d9fa14441bc993e5"
+      "source_file_sha256_after": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
+      "destination_file_sha256_after": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+      "current_treatment": "The superseded full MCMC and source-indexed update algorithms are recoverable from the historical baseline. The current appendix retains the conditional augmentation, joint Laplace--Delta factor, and reproducibility-critical update sequence; no matched full-model MCMC comparison is claimed."
     },
     {
       "id": "MIG-CH03-02",
@@ -106,23 +102,23 @@
       "source_heading": "\\subsection{Source-specific exAL parameter summaries}",
       "source_unit_sha256": "b692a482fd15f30fe5bef5b139c6d8597c5fb15aef61c3f8ebf55454be8d774e",
       "disposition": "MOVE_APPENDIX",
-      "semantic_class": "secondary empirical diagnostics",
+      "semantic_class": "claim-relevant supplementary forecast evidence",
       "destination_path": "appendices/c-hydrology-technical.tex",
-      "destination_heading": "Source-specific and cutoff-specific diagnostics",
+      "destination_heading": "Additional forecast evidence",
       "appendix_label": "app:hydrology-technical",
       "body_bridge_present": true,
       "risk": "medium",
-      "review_status": "IMPLEMENTED_RENDERED_REVIEW_PASSED",
+      "review_status": "CORRECTED3_RECONCILED_LOCAL_VALIDATION_PASSED",
       "source_claim_ids": [],
       "source_display_ids": [
-        "env:app:cutoffsynthpanels",
-        "env:app:sourceparams",
-        "env:fig:synthsupport_20210123",
-        "env:fig:synthsupport_20211221"
+        "tab:crps_all_origins",
+        "tab:component_comparison",
+        "tab:discharge_scale_scores"
       ],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
-      "source_file_sha256_after": "1d4a0c7a08b3c2f6bd73c887b6065c440d98d742dd076b1df3f1b23ec749ffc3",
-      "destination_file_sha256_after": "57f90d27789617be72928f045100a214eee95deb21b41721d9fa14441bc993e5"
+      "source_file_sha256_after": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
+      "destination_file_sha256_after": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+      "current_treatment": "The superseded source-parameter dumps and repeated origin figures are omitted. Current Corrected-3 evidence retains the origin-specific CRPS, component sensitivity, and discharge-scale comparisons that materially qualify the chapter claims."
     },
     {
       "disposition": "MOVE_APPENDIX",

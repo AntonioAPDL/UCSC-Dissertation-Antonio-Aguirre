@@ -394,8 +394,14 @@
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_kappa",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:dyn_exdqlm_vb_pseudo",
       "appendices/b-exdqlm-technical.tex::label::exd:eq:tf_aug_state",
-      "appendices/c-hydrology-technical.tex::heading::section::laplace-delta-variational-approximation::occurrence::1",
-      "appendices/c-hydrology-technical.tex::heading::section::source-indexed-mcmc::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::section::additional-forecast-evidence::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::section::extended-likelihood-variational-approximation::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::section::predictive-synthesis-and-score-conventions::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::section::state-construction::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::subsection::conditional-gaussian-augmentation::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::subsection::forecast-window-covariance-prior::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::subsection::joint-scale-skewness-update::occurrence::1",
+      "appendices/c-hydrology-technical.tex::heading::subsection::seasonal-rotations-and-stacked-states::occurrence::1",
       "appendices/d-qdesn-technical.tex::heading::section::glofas-reference-discrepancy-correction::occurrence::1",
       "appendices/d-qdesn-technical.tex::heading::section::posterior-computation::occurrence::1",
       "appendices/d-qdesn-technical.tex::heading::section::posterior-formulation::occurrence::1",
@@ -526,7 +532,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:hydrology-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
+      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
       "final_location": "app:hydrology-technical"
     },
     {
@@ -538,7 +544,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-mcmc",
       "status": "IMPLEMENTED",
-      "implementation_commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
+      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
       "final_location": "app:hydrology-mcmc"
     },
     {
@@ -550,7 +556,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-vb",
       "status": "IMPLEMENTED",
-      "implementation_commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
+      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
       "final_location": "app:hydrology-vb"
     },
     {
@@ -562,7 +568,7 @@
       "action": "REPLACE_WITH_BODY_EVIDENCE",
       "target_label": "",
       "status": "IMPLEMENTED",
-      "implementation_commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
+      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
       "final_location": "body evidence at the former bridge location"
     },
     {
@@ -3814,15 +3820,21 @@
       },
       "coverage_keys": [
         "appendices/c-hydrology-technical.tex::heading::section::variational-bayes-algorithms::occurrence::1",
-        "appendices/c-hydrology-technical.tex::heading::section::source-indexed-mcmc::occurrence::1"
+        "appendices/c-hydrology-technical.tex::heading::section::additional-forecast-evidence::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::section::predictive-synthesis-and-score-conventions::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::section::state-construction::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::subsection::conditional-gaussian-augmentation::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::subsection::forecast-window-covariance-prior::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::subsection::joint-scale-skewness-update::occurrence::1",
+        "appendices/c-hydrology-technical.tex::heading::subsection::seasonal-rotations-and-stacked-states::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -3868,15 +3880,15 @@
       },
       "coverage_keys": [
         "appendices/c-hydrology-technical.tex::heading::section::source-specific-exal-parameter-summaries::occurrence::1",
-        "appendices/c-hydrology-technical.tex::heading::section::laplace-delta-variational-approximation::occurrence::1"
+        "appendices/c-hydrology-technical.tex::heading::section::extended-likelihood-variational-approximation::occurrence::1"
       ],
       "risk": "MODERATE",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -3927,9 +3939,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -3980,9 +3992,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4037,9 +4049,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4092,9 +4104,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4147,9 +4159,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16416,9 +16428,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16475,9 +16487,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "2595a74356993dc70c32f74e2809dec31cfa5bc5",
-        "final_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
     {

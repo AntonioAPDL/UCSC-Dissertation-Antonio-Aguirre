@@ -390,14 +390,14 @@
     {
       "id": "SRC-ENVIRON",
       "kind": "seed_repository",
-      "repository": "AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2",
-      "url": "https://github.com/AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2",
+      "repository": "AntonioAPDL/Evironmetrics----Corrected-3",
+      "url": "https://github.com/AntonioAPDL/Evironmetrics----Corrected-3",
       "default_branch": "main",
-      "discovery_commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
-      "audit_commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
-      "audit_scope": "Full Git clone at revised default snapshot plus claim-driven provenance dependencies",
+      "discovery_commit": "c0bfccaa7cec698c016626ee30187f18a56d495c",
+      "audit_commit": "c0bfccaa7cec698c016626ee30187f18a56d495c",
+      "audit_scope": "Full clean Git clone at the author-designated Corrected-3 default snapshot; main manuscript, appendix, bibliography, compact tables, and claim-relevant figures inspected",
       "inventory": {
-        "tracked_files": 440,
+        "tracked_files": 878,
         "remote_heads": 6,
         "tags": 0,
         "unmerged_remote_heads": 0
@@ -414,9 +414,17 @@
           "role": "build wrapper"
         },
         {
-          "id": "DOC-ENV-ASSETS",
-          "path": "MANUSCRIPT_ASSET_MANIFEST.json",
-          "role": "manuscript asset authority"
+          "id": "DOC-ENV-APPENDIX",
+          "path": "appendices.tex",
+          "role": "technical and supplementary manuscript material"
+        }
+      ],
+      "related_snapshots": [
+        {
+          "id": "SNAP-ENVIRON-CORRECTED2-20261026",
+          "repository": "AntonioAPDL/Evironmetrics---REVISED-DOC-Corrected-2",
+          "commit": "1272bfc10442a28add5a4c74ff641e9b9a8e9666",
+          "role": "historical dissertation source retained for provenance; no longer scientific authority"
         }
       ],
       "relationship": "Candidate first-project hydrological forecast application",
@@ -427,8 +435,8 @@
         {
           "chapter": "chapters/03-research-b.tex",
           "manifest": "docs/imports/ch03-environ.json",
-          "status": "SYNCED_TO_GITHUB_AUTHOR_REPORTED_OVERLEAF",
-          "scope": "one manuscript record plus manuscript-referenced tables and figures"
+          "status": "CORRECTED3_IMPLEMENTED_LOCAL_VALIDATION_PASSED",
+          "scope": "current manuscript argument, three main figures, three main tables, three claim-relevant supplementary tables, and a compact technical appendix; research code and data remain external"
         }
       ]
     },
