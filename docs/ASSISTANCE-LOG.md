@@ -11,6 +11,21 @@ This log is a project practice, not a verified UCSC disclosure format. Confirm
 applicable program, university, publisher and coauthor requirements before
 writing any formal disclosure into the dissertation.
 
+2026-11-09: AI assistance performed a second bounded academic-style audit of
+the complete dissertation against the two byte-identical version 0.2 writing
+profiles and the itemized Raquel Prado and Bruno Sansó revision records. It
+recast procedural software-example narration as statistical analysis, replaced
+two unqualified performance verbs with named CRPS comparisons, revised local
+Q--DESN and MTI transitions, and removed one source-only transition comment.
+It preserved the numerical, citation, reference, label, input, and figure token
+sequences in all edited chapters. It did not change an equation, scientific
+result, source authority, contribution claim, appendix, research repository,
+data object, model fit, or simulation. The full release rechecked 120 immutable
+source blobs, passed all 19 tests, and produced a clean 183-page PDF whose
+affected pages were rendered and inspected. The approved disclosure was
+retained; no detector score or concealment criterion was used. Bruno's detailed
+Chapter 4 annotation remains unavailable and is not represented as addressed.
+
 2026-11-09: AI assistance verified the advisor review thread and the
 candidate's reply, downloaded the two advisor attachments to ignored local
 storage, recorded their hashes, and compared the exact 221-page review copy

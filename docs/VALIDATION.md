@@ -1,5 +1,46 @@
 # Validation record
 
+## 2026-11-09 final academic-style polish release
+
+This release applies the bounded intervention in
+`docs/final-academic-style-polish-20261109.md`. It replaces residual
+tutorial-like and leaderboard-style wording with object-centered statistical
+prose while preserving every numerical token and every citation,
+cross-reference, label, input, and figure token in the edited chapters. No
+research source, computation, result, equation, display, bibliography entry,
+or appendix content changed.
+
+The release tier passed all 19 tests. It reconciled nine research sources and
+31 claim-evidence records; validated 29 editorial issues, 35 display decisions,
+and 11 bibliography groups; checked four chapter manifests, nine source
+documents, 96 section dispositions, 102 import records, 120 immutable source
+blobs, and 18 current-source projections; resolved all 108 cited keys; and
+validated 37 active TeX files, 189 labels, six migration records, and 15 active
+visual records.
+
+The accepted ignored artifact is
+`build/release-20261109T230953Z/main.pdf`: 183 US-Letter pages, 4,136,754
+bytes, PDF 1.7, SHA-256
+`5cc16fe050e59b733e86d9d57051e0645cdce63b2320464cfe6a814e890e7599`.
+All fonts are embedded and no Type 3 font occurs. The PDF is searchable,
+unencrypted, and untagged. Its metadata gives the approved title, Jose Antonio
+Aguirre Perez de Leon as author, and Statistical Science as subject. The final
+log has 12 underfull-box notices, zero overfull boxes, and zero blocking
+citation, reference, duplicate-label, missing-file, or fatal diagnostics.
+
+Physical pages 34, 57, 63, 66, 71, 86, 98, 103, and 134 were rendered and
+inspected. Direct review found no clipping, collision, malformed glyph,
+abnormal margin, or unreadable material. The shorter sparse-regression heading
+removed the only visible spacing defect introduced by the edited region.
+Extracted-text scans found no drafting markers, collaboration-tool names,
+internal workflow language, or generic promotional claims. The approved
+AI-assistance statement is the only intentional disclosure of that support.
+
+This record validates the local committee-copy source and its fixed-source
+provenance. It does not represent Bruno Sansó's still-unavailable detailed
+Chapter 4 annotation, committee approval, an independently compiled Overleaf
+artifact, or a tagged accessibility-conformant filing PDF.
+
 ## 2026-11-09 advisor-revision release
 
 This release implements the received advisor comments as a coordinated

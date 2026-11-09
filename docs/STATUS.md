@@ -1,5 +1,33 @@
 # Project status
 
+## 2026-11-09 final academic-style polish release validated
+
+The complete dissertation received a second bounded prose audit against both
+byte-identical version 0.2 academic-writing profiles and the itemized advisor
+ledger. The resulting commit is `8f39c1a`. Chapter 3's remaining tutorial-like
+example narration is now object-centered; Chapters 2 and 4 name the relevant
+predictive scores instead of using leaderboard language; and the Q--DESN, MTI,
+and synthesis transitions state the statistical object or population result
+directly. Numerical results, equations, citations, labels, inputs, figures,
+contributions, source authorities, and evidence qualifications are unchanged.
+
+Fast and release validation pass all 19 tests, including the recheck of 120
+immutable source blobs. The accepted local artifact is
+`build/release-20261109T230953Z/main.pdf`, a 183-page US-Letter PDF with
+SHA-256 `5cc16fe050e59b733e86d9d57051e0645cdce63b2320464cfe6a814e890e7599`.
+The final log has 12 underfull and zero overfull boxes, with no blocking
+reference, citation, label, file, or fatal diagnostic. Nine affected physical
+pages were rendered and inspected. Extracted text contains no drafting or
+internal workflow language and no generic promotional prose; the approved
+limited-use AI disclosure remains intact.
+
+All received Raquel comments and Bruno's sequencing and Chapter 5 narrative
+comments remain satisfied. `B-02` remains `WAITING` because Bruno's detailed
+Chapter 4 annotation is still unavailable; this polish does not infer or claim
+to implement absent comments. Main-branch synchronization and remote
+verification remain the immediate release step. Overleaf must then pull and
+compile GitHub `main` independently.
+
 ## 2026-11-09 continuation audit after interrupted session
 
 The advisor-revision work was reconstructed from Git history, the controlling

@@ -227,6 +227,32 @@
         "tagged-PDF accessibility validation",
         "independent Overleaf pull and compile"
       ]
+    },
+    "final_academic_style_polish": {
+      "state": "RELEASE_VALIDATED_PENDING_MAIN_SYNC",
+      "plan": "docs/final-academic-style-polish-20261109.md",
+      "manuscript_commit": "8f39c1a",
+      "scope": "Bounded object-centered statistical prose revisions in Chapters 2--6; no source authority, result, equation, display, bibliography, or appendix change",
+      "release": {
+        "path": "build/release-20261109T230953Z/main.pdf",
+        "sha256": "5cc16fe050e59b733e86d9d57051e0645cdce63b2320464cfe6a814e890e7599",
+        "pages": 183,
+        "bytes": 4136754,
+        "pdf_version": "1.7",
+        "tracked": false
+      },
+      "validation": {
+        "tests": 19,
+        "immutable_source_blobs": 120,
+        "underfull_boxes": 12,
+        "overfull_boxes": 0,
+        "rendered_physical_pages": [34, 57, 63, 66, 71, 86, 98, 103, 134]
+      },
+      "open_fields": [
+        "Bruno Sanso detailed Chapter 4 annotation (not received)",
+        "independent Overleaf pull and compile",
+        "tagged-PDF accessibility validation"
+      ]
     }
   },
   "author_direction": {

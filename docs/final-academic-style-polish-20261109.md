@@ -1,7 +1,7 @@
 # Final academic-style polish: 9 November 2026
 
-Status: **audit complete; controlled manuscript edits authorized and in
-progress**
+Status: **implemented and release validated; main-branch synchronization
+pending**
 
 Baseline: `main` at
 `696d57458a697373e124ae788a6b4776ec047760`, with the 184-page advisor
@@ -73,7 +73,7 @@ are distinguished. The chapter implements Raquel Prado's structural and
 terminological comments. No generic evidence hierarchy or repeated full
 roadmap remains. Only a final consistency read is required.
 
-### Chapter 2: statistical computation and software
+### Software chapter (reader-facing Chapter 3)
 
 The chapter correctly credits the exAL and exDQLM foundations and identifies
 the later integrated software contribution. Its model, posterior target,
@@ -86,7 +86,7 @@ descriptions while preserving the function names needed to document package
 capabilities. Empirical verbs such as *demonstrate* should be replaced by the
 reported capability or comparison.
 
-### Chapter 3: hydrologic correction and synthesis
+### Hydrology chapter (reader-facing Chapter 2)
 
 The chapter is contribution-first, source-specific, and explicit about
 forecast origins, covariate availability, working-likelihood assumptions,
@@ -171,3 +171,46 @@ separately. The branch may be fast-forwarded into `main` and pushed only after
 all gates pass and the remote is rechecked for divergence. No force push or
 automatic Overleaf synchronization is permitted. Overleaf must pull and
 compile the verified GitHub `main` as a separate handoff.
+
+## 7. Implementation and validation record
+
+The controlled manuscript revision is commit `8f39c1a`. Chapter 3 now presents
+the Lake Huron, Sunspots, and sparse-regression examples as statistical
+analyses rather than command sequences while retaining the package interfaces
+needed for reproducibility. Chapters 2 and 4 state comparative findings through
+CRPS or grid aCRPS rather than the unqualified verb *outperforms*. Chapter 4
+opens with the Q--DESN model itself and gives an evidence-bounded interpretation
+of the single-quantile study. Chapter 5 moves directly from the residual-product
+loss to its population score equations, and Chapter 6 names the operations in
+the software example instead of using a generic empirical verb. The internal
+Chapter 4 transition comment was removed. No appendix required a prose change.
+
+The numerical-token sequence and the citation, cross-reference, label, input,
+and figure-token sequences are unchanged in every edited chapter. The fast and
+release tiers passed all 19 tests. Release validation rechecked 120 immutable
+source blobs, 102 import records, 18 current-source projections, 108 cited
+keys, 189 active labels, and all active structure and accessibility records.
+The accepted ignored artifact is
+`build/release-20261109T230953Z/main.pdf`: 183 US-Letter pages, 4,136,754
+bytes, PDF 1.7, SHA-256
+`5cc16fe050e59b733e86d9d57051e0645cdce63b2320464cfe6a814e890e7599`.
+The final log contains 12 underfull-box notices, no overfull boxes, and no
+blocking citation, reference, duplicate-label, missing-file, or fatal
+diagnostic. All fonts are embedded and no Type 3 font occurs. The PDF is
+searchable, unencrypted, and untagged.
+
+Physical pages 34, 57, 63, 66, 71, 86, 98, 103, and 134 were rendered and
+inspected. They cover each altered hydrology, software, Q--DESN, MTI, and
+synthesis passage. The shortened software-example heading now fits on one
+line; inspection found no clipping, collision, malformed glyph, abnormal
+margin, or unreadable material. Extracted-text scans found no drafting marker,
+tool name, internal workflow language, or generic promotional phrase. The only
+AI-assistance reference is the approved disclosure. The term *state-of-the-art*
+occurs only inside the title of a cited ERA5-Land publication; *framework* and
+*workflow* occur only in named statistical or bibliographic contexts.
+
+All received Raquel Prado items and Bruno Sansó's sequencing and Chapter 5
+narrative comments remain implemented. Bruno Sansó's promised detailed
+Chapter 4 annotation has not been received, so item `B-02` remains `WAITING`
+and is not represented as addressed. This pass does not change that evidence
+boundary.
