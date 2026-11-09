@@ -445,8 +445,8 @@ N-M-T1 is worse than N-M-T0 at every origin, and the best eight-day method
 varies by origin. Raw NWS has the lowest score in December 2021 and December
 2022, AL-U-T1 in January 2021, and exAL-M-T1 in November 2021 and May 2022.
 
-EMOS-GLOFAS outperforms exAL-M-T1 in May 2022: 28-day CRPS is 0.01763 versus
-0.02273, and eight-day CRPS is 0.02381 versus 0.02567. ExAL-M-T1 improves on
+EMOS-GLOFAS has smaller CRPS than exAL-M-T1 in May 2022: 28-day CRPS is
+0.01763 versus 0.02273, and eight-day CRPS is 0.02381 versus 0.02567. ExAL-M-T1 improves on
 all three benchmarks at the other four origins. On the discharge scale,
 exAL-M-T1 has the smallest aggregate 28-day CRPS, whereas raw NWS has the
 smallest aggregate eight-day CRPS. Appendix~\ref{env:app:additional-results}
@@ -527,9 +527,10 @@ the extended-likelihood analysis feasible for the long daily record.
 
 The clearest empirical gain is 28-day distributional prediction in the San
 Lorenzo comparisons. ExAL-M-T1 reduces mean transformed-scale CRPS by 67.4\%
-relative to raw GloFAS and 55.9\% relative to GloFAS EMOS. It outperforms the
-other Bayesian variants at every 28-day origin and EMOS at four of five
-origins; its aggregate 28-day advantage persists on the discharge scale.
+relative to raw GloFAS and 55.9\% relative to GloFAS EMOS. Its CRPS is smaller
+than that of the other Bayesian variants at every 28-day origin and smaller
+than that of EMOS at four of five origins; its aggregate 28-day advantage
+persists on the discharge scale.
 However, EMOS performs better in May 2022, raw NWS leads at two winter
 eight-day origins, and AL-M-T1 has smaller pooled upper-quantile losses and
 better interval calibration. The evidence therefore favors the fuller model

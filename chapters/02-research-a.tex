@@ -393,7 +393,7 @@ not machine-independent properties of the methods.
  \label{exd:sec:exs}
 
 
-Two real-data analyses and one simulation benchmark demonstrate statistically
+Two real-data analyses and one simulation benchmark examine statistically
 distinct capabilities. Lake Huron examines dynamic model construction, MCMC
 inference, forecasting, and posterior-predictive synthesis across separately
 fitted quantiles. Sunspots examines component composition, LDVB inference,
@@ -401,7 +401,14 @@ diagnostics, discount-factor comparison, and comparison with MCMC. The
 simulation then evaluates static exAL regression with a regularized horseshoe
 prior and compares LDVB with MCMC.
 
-The package also exposes distribution-level utilities for the exAL error family: \code{dexal()}, \code{pexal()}, \code{qexal()}, and \code{rexal()} evaluate the density, distribution function, quantile function, and random generator, respectively, while  \code{get\_gamma\_bounds()} returns the admissible interval for $\gamma$ at a specified \(p_0\). These utilities are useful for simulation, prior calibration, and direct checks of the exAL distribution, but are not needed for the main fitting, forecasting, diagnostic, or synthesis workflows illustrated below. We use CrI as shorthand for credible interval in figure captions and plotting labels.
+The package also exposes distribution-level utilities for the exAL error family:
+\code{dexal()}, \code{pexal()}, \code{qexal()}, and \code{rexal()} evaluate the
+density, distribution function, quantile function, and random generator,
+respectively, while \code{get\_gamma\_bounds()} returns the admissible interval
+for $\gamma$ at a specified \(p_0\). These utilities support simulation, prior
+calibration, and direct checks of the exAL distribution, but are not required
+for the fitting, forecasting, diagnostic, or synthesis analyses below. CrI
+denotes a credible interval in figure captions and plotting labels.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -410,15 +417,26 @@ The package also exposes distribution-level utilities for the exAL error family:
 \subsection{Lake Huron}
 \label{exd:sec:ex1}
 
-In this example, we consider the Lake Huron time series from the package \pkg{datasets}. The data are annual measurements of the level (ft) of Lake Huron from 1875 to 1972, shown in Figure \ref{exd:fig:ex1quants}. This example shows how to build a basic state-space structure, specify a prior on $\gamma$, run the MCMC algorithm, and plot estimated quantiles and forecast distributions.
+The Lake Huron time series in \pkg{datasets} records annual lake levels (ft)
+from 1875 to 1972. Figure \ref{exd:fig:ex1quants} reports the fitted dynamic
+quantiles, forecast distributions, and synthesized predictive intervals. The
+analysis also examines prior specification for $\gamma$ and MCMC computation
+in a basic state-space model.
 
 The analysis targets $p_0=0.95,0.50,$ and $0.05$. A second-order polynomial trend, constructed with \code{polytrendMod()}, defines the state-space structure and the prior quantities $\mat{F}_t,\mat{G}_t, \mat{m}_0$, and $\mat{C}_0$ from Section~\ref{exd:sec:exdqlm}. The initial level prior is centered at 579 ft, a rounded domain-scale value chosen before fitting rather than the sample mean, and the initial slope prior is centered at zero.
 
 
-As an illustration we fix a single discount factor of $0.9$ to define the evolution covariance matrix $\mat{W}_t$.
- Discount factors can also be selected using in-sample diagnostic criteria, as illustrated in Section \ref{exd:sec:ex2}.
- The prior location parameters for \(\gamma\) are quantile-specific: they are set to zero for the median and shifted in opposite directions for the upper and lower tails to provide tail-specific regularization within the admissible support. In these fits, the scale parameter is 0.1 and the number of degrees of freedom is 1. These quantities specify prior information and do not determine the MCMC starting values.
- In the fits shown here we use \code{n.burn = 2000} and \code{n.mcmc = 3000}. The computation uses the implementation settings described in Section \ref{exd:sec:design}; numerical and runtime provenance for the recorded run are retained in the external replication logs.
+A discount factor of $0.9$ defines the evolution covariance matrix
+$\mat{W}_t$. Section \ref{exd:sec:ex2} instead compares discount factors using
+in-sample diagnostic criteria. The prior location parameters for \(\gamma\) are
+quantile-specific: they are zero at the median and shifted in opposite
+directions for the upper and lower tails, providing tail-specific
+regularization within the admissible support. The scale parameter is 0.1 and
+the number of degrees of freedom is 1. These quantities specify prior
+information and do not determine the MCMC starting values. The reported fits
+use \code{n.burn = 2000} and \code{n.mcmc = 3000}. Computation follows the
+settings in Section \ref{exd:sec:design}; numerical and runtime provenance for
+the recorded run is retained in the external replication logs.
 
 
 
@@ -430,10 +448,10 @@ draws, and the standard methods available for downstream analysis. The
 
 By default, \code{exdqlmMCMC()} uses the package's LDVB routine,
 \code{exdqlmLDVB()}, to warm-start the chain. This initialization choice is
-separate from the subsequent MCMC kernel. Because the data are relatively
-symmetric, we do not expect the skewness parameter \(\gamma\) to be far from
-zero at \(p_0 = 0.5\). We therefore run the unrestricted median model
-separately as \code{M50.trace} with 7000 burn-in iterations and 3000 retained
+separate from the subsequent MCMC kernel. The relative symmetry of the data
+motivates a diagnostic fit to assess whether \(\gamma\) is far from zero at
+\(p_0 = 0.5\). The unrestricted median model, denoted \code{M50.trace}, uses
+7000 burn-in iterations and 3000 retained
 draws. The stored trace and density summaries were inspected for both
 parameters. Consistent with the symmetry of the data, the posterior mean of
 \(\gamma\) is \(-0.004\) with a 95\% credible interval
@@ -445,7 +463,16 @@ substantive argument.
 
 
 
-The unrestricted median run is used only to assess whether the additional skewness parameter is needed at \(p_0=0.50\). We use a longer burn-in for this diagnostic run because \(\gamma\) is sampled in that fit. After the posterior for \(\gamma\) is found to be concentrated near zero, the median model used in the quantile, forecast, and synthesis panels is the fixed-\(\gamma\) DQLM \code{M50.dqlm}. Because \(\gamma\) is fixed in this model, the skewness update is removed from the MCMC kernel and we use the same 2000 burn-in iterations and 3000 retained draws used for the other main fits. We re-run the model with a point-mass prior on $\gamma$ at 0 using the settings \code{gam.init = 0} and \code{fix.gamma = TRUE}, which is equivalent to the setting \code{dqlm.ind = TRUE}. This reduces the model to the DQLM mentioned in Section \ref{exd:sec:special}.
+The unrestricted median run is used only to assess whether the additional
+skewness parameter is needed at \(p_0=0.50\). This diagnostic run has a longer
+burn-in because \(\gamma\) is sampled. Because its posterior is concentrated
+near zero, the median model used in the quantile, forecast, and synthesis
+panels is the fixed-\(\gamma\) DQLM \code{M50.dqlm}. Fixing \(\gamma\) removes
+the skewness update from the MCMC kernel, so this fit uses the same 2000
+burn-in iterations and 3000 retained draws as the other main fits. A
+point-mass prior on $\gamma$ at 0 is specified by \code{gam.init = 0} and
+\code{fix.gamma = TRUE}, equivalently \code{dqlm.ind = TRUE}. This
+specification gives the DQLM described in Section \ref{exd:sec:special}.
 
 
 
@@ -468,13 +495,15 @@ The forecast objects are obtained with \code{predict()} at the final observed ti
 
 The top-right panel of Figure~\ref{exd:fig:ex1quants} shows the forecast quantile estimates and 95\% CrIs after 1972 together with the filtered estimates before 1972. The \code{cr.percent} argument controls the displayed credible level.
 
-When several quantile models are fitted separately, the package also allows their posterior predictive draws to be combined into a single coherent predictive distribution through \code{quantileSynthesis()}. Each fitted model contributes local predictive information near its target quantile, and the synthesis step interpolates across these quantile-specific draws to obtain one posterior predictive distribution. When independently fitted quantiles induce crossing, optional monotonicity corrections based on isotonic adjustment and monotone rearrangement are available \citep{exd-barlow1972,exd-chernozhukov2010}. The synthesis operates on posterior predictive draws indexed by quantile level, so the input fits need not use identical skewness restrictions. For the Lake Huron example, we combine exDQLM tail fits at \(p_0=0.05\) and \(0.95\) with the fixed-\(\gamma\) DQLM median fit \code{M50.dqlm}.
+When several quantile models are fitted separately, the package also allows their posterior predictive draws to be combined into a single coherent predictive distribution through \code{quantileSynthesis()}. Each fitted model contributes local predictive information near its target quantile, and the synthesis step interpolates across these quantile-specific draws to obtain one posterior predictive distribution. When independently fitted quantiles induce crossing, optional monotonicity corrections based on isotonic adjustment and monotone rearrangement are available \citep{exd-barlow1972,exd-chernozhukov2010}. The synthesis operates on posterior predictive draws indexed by quantile level, so the input fits need not use identical skewness restrictions. For Lake Huron, it combines exDQLM tail fits at \(p_0=0.05\) and \(0.95\) with the fixed-\(\gamma\) DQLM median fit \code{M50.dqlm}.
 
 
 
 The recorded run uses the package's default isotonic adjustment and monotone rearrangement. The stored synthesized quantile summaries have no remaining crossings over the observed period.
 
-Because the argument \code{return.draws = TRUE} was used, each object stores posterior predictive forecast draws in the return value \code{samp.fore}. This allows us to apply the same synthesis step to the eight-step forecast horizon.
+With \code{return.draws = TRUE}, each object stores posterior predictive
+forecast draws in \code{samp.fore}. The same synthesis step can therefore be
+applied over the eight-step forecast horizon.
 
 
 
@@ -491,21 +520,25 @@ The objects \code{syn.obs} and \code{syn.fore} have class \code{exdqlmSynthesis}
 \subsection{Sunspots}
 \label{exd:sec:ex2}
 
-The second example uses the yearly Sunspot time series from the package \pkg{datasets}.
-
-
-
-The data are yearly counts for sunspots from 1700 to 1988, shown in Figure \ref{exd:fig:ex2quant}. In this example we show how to use the \pkg{dlm} package to create the state-space model, combine blocks of a state-space model, apply the LDVB approximation through \code{exdqlmLDVB()}, perform visual model diagnostics to compare the exDQLM with the DQLM, and use those diagnostics for discount-factor selection.
-
-Upper-tail sunspot activity provides an example of dynamic quantile modeling for cyclic count data. The analysis targets the \(0.85\) quantile with a continuous exAL working likelihood; it is not a discrete-count likelihood analysis. The state contains a first-order polynomial trend and a Fourier seasonal component with an 11-year fundamental period and its first four harmonics, for a total of 9 state parameters. The \pkg{exdqlm} functions accept time-invariant \code{dlm} objects: \code{dlmModPoly()} constructs the trend component, which \code{as.exdqlm()} converts to an \code{exdqlm} object.
+The yearly Sunspot time series in \pkg{datasets} contains counts from 1700 to
+1988 (Figure \ref{exd:fig:ex2quant}). Upper-tail sunspot activity provides an
+example of dynamic quantile modeling for cyclic count data. The analysis
+targets the \(0.85\) quantile with a continuous exAL working likelihood; it is
+not a discrete-count likelihood analysis. It compares exDQLM and DQLM fits,
+examines LDVB diagnostics, and uses those diagnostics to screen discount
+factors. The state contains a first-order polynomial trend and a Fourier
+seasonal component with an 11-year fundamental period and its first four
+harmonics, for a total of 9 state parameters. The \pkg{exdqlm} functions accept
+time-invariant \code{dlm} objects: \code{dlmModPoly()} constructs the trend
+component, which \code{as.exdqlm()} converts to an \code{exdqlm} object.
 
 The initial level prior is centered at 50 sunspots, a rounded count-scale value chosen before fitting, with prior standard deviation 50 to keep the level weakly informative on the observed count scale. The \code{seasMod()} function constructs the seasonal component with the first four Fourier harmonics of the approximately 11-year sunspot cycle.
 
-To combine the two components into a single state-space structure, we add the two \code{exdqlm} objects.
-
-Adding the two model components produces a block-composed state-space model with one trend state and eight seasonal states.
-
-We will apply discount factors by component, i.e. a discount factor of $0.9$ for the trend component of dimension $1$ and a discount factor of $0.85$ for the seasonal component of dimension $8$. This discounting strategy can be applied with arguments \code{df = c(0.9, 0.85)} and \code{dim.df = c(1, 8)}.
+Adding the trend and seasonal \code{exdqlm} objects produces a block-composed
+state-space model with one trend state and eight seasonal states. The
+component-specific discount factors are $0.9$ for the trend component of
+dimension $1$ and $0.85$ for the seasonal component of dimension $8$, specified by
+\code{df = c(0.9, 0.85)} and \code{dim.df = c(1, 8)}.
 
 \begin{figure}[t]
 \centering
@@ -514,7 +547,10 @@ We will apply discount factors by component, i.e. a discount factor of $0.9$ for
 \label{exd:fig:ex2quant}
 \end{figure}
 
-We call the function \code{exdqlmLDVB()} to obtain the LDVB approximations. We use the routine with argument \code{dqlm.ind = TRUE} to estimate the DQLM, as well as with the default settings to estimate the exDQLM. In this example we set \code{sig.init = 2} as the starting value for the LDVB scale update, use \code{n.samp = 3000}, and suppress iteration output with \code{verbose = FALSE}.
+The LDVB approximations are obtained with \code{exdqlmLDVB()}. Setting
+\code{dqlm.ind = TRUE} gives the DQLM, whereas the default specification gives
+the exDQLM. Both fits use \code{sig.init = 2} as the starting value for the
+LDVB scale update and \code{n.samp = 3000}.
 
 
 
@@ -531,20 +567,38 @@ The lower-left panel of Figure~\ref{exd:fig:ex2quant} compares the two fitted dy
 \label{exd:fig:ex2checks}
 \end{figure}
 
-To examine whether the added flexibility of the exDQLM is supported by the fitted approximation, we can also visualize the approximate posterior distribution of the skewness parameter $\gamma$ by plotting the samples from the corresponding variational distribution, also seen in Figure \ref{exd:fig:ex2quant}. The approximate posterior mass lies away from zero, supporting the additional skewness flexibility for this upper-quantile fit.
+The approximate posterior distribution of $\gamma$ assesses whether the
+exDQLM's additional skewness flexibility is supported by the fitted
+approximation. Figure \ref{exd:fig:ex2quant} plots samples from the
+corresponding variational distribution. Its mass lies away from zero for this
+upper-quantile fit.
 
 
 
-To further examine the two models, we use the \code{diagnostics()} method to create an object of class \code{exdqlmDiagnostic} and then call its \code{plot()} method. The results are seen in Figure \ref{exd:fig:ex2checks}. These diagnostic plots are based on the MAP one-step-ahead standardized forecast errors produced by the filtering recursion, together with the corresponding probability integral transform (PIT) sequence. Thus the figure summarizes the fitted diagnostic sequence rather than posterior bands for residuals.
+The \code{diagnostics()} method returns an \code{exdqlmDiagnostic} object whose
+\code{plot()} method produces Figure \ref{exd:fig:ex2checks}. The plots use
+the MAP one-step-ahead standardized forecast errors from the filtering
+recursion and the corresponding probability integral transform (PIT)
+sequence. They therefore summarize fitted diagnostic sequences rather than
+posterior bands for residuals.
 
 
 
-The \code{diagnostics()} method can also be used for a coarse in-sample comparison of candidate model specifications. Here we examine whether the discount factor used for the seasonal component is reasonable under the reported diagnostic criteria. We create a grid of possible discount factors, run the LDVB approximation for each candidate model, and compare the resulting CRPS and KL values. Because these criteria are computed using the observations employed to fit each model, this exercise is a diagnostic screening rather than an out-of-sample predictive validation. We use CRPS as the primary comparison criterion and KL divergence as a complementary calibration check; the selected discount-factor specification is the row with the smallest CRPS.
+The \code{diagnostics()} method also supports a coarse in-sample comparison of
+candidate model specifications. A grid of seasonal discount factors is fitted
+with LDVB and compared through the resulting CRPS and KL values. Because the
+criteria use the same observations that fit each model, the comparison is a
+diagnostic screen rather than an out-of-sample predictive validation. CRPS is
+the primary criterion and KL divergence is a complementary calibration check;
+the selected specification has the smallest CRPS.
 
 
 On this coarse grid, the CRPS and KL criteria agree and both select the seasonal discount factor \(0.85\), so the choice used above is retained.
 
-To compare the fast variational approximation with posterior simulation, we fit matched DQLM and exDQLM specifications with \code{exdqlmMCMC()}. The MCMC fits use the same state-space model, quantile level, and discount factors as the LDVB fits, with 2000 burn-in iterations and 3000 retained draws.
+Matched DQLM and exDQLM specifications fitted with \code{exdqlmMCMC()} provide
+the posterior-simulation comparison. They use the same state-space model,
+quantile level, and discount factors as the LDVB fits, with 2000 burn-in
+iterations and 3000 retained draws.
 
 
 
@@ -584,13 +638,14 @@ replication record remain in the software article and package materials
 \citep{env-deleon2026exdqlm}. It is not repeated here because
 Chapter~\ref{ch:research-b} gives the dissertation's substantive river-flow
 analysis. This choice keeps the present examples focused on capabilities not
-already demonstrated in the preceding chapter.
+already covered in the preceding chapter.
 
-\subsection{Static exAL regression on a simulated sparse Gaussian benchmark}
+\subsection{Sparse static exAL regression benchmark}
 \label{exd:sec:ex4static}
 
 
-To illustrate the static routines under sparse shrinkage, we consider a correlated Gaussian regression benchmark for which the target conditional quantile is known exactly. Let
+The static routines are evaluated under a correlated Gaussian regression
+benchmark for which the target conditional quantile is known exactly. Let
 \[
 \mat{x}_i \sim \N_8(\mat{0}, \Sigma_x),\qquad (\Sigma_x)_{jk} = 0.5^{|j-k|},
 \]
@@ -598,8 +653,7 @@ with sparse signal
 \[
 \vect{\beta}^\star = (3,\,1.5,\,0,\,0,\,2,\,0,\,0,\,0)^\top.
 \]
-We use the following benchmark data-generating mechanism.
-For each target quantile level \(p_0\), we generate
+For each target quantile level \(p_0\), the data-generating mechanism is
 \[
 Y_i^{(p_0)} = \mat{x}_i^\top \vect{\beta}^\star + \sigma_\varepsilon \{Z_i - \Phi^{-1}(p_0)\},
 \qquad Z_i \sim \N(0,1),\qquad \sigma_\varepsilon = 1.5.
@@ -609,11 +663,25 @@ Then
 Q_Y(p_0 \mid \mat{x}_i) = \mat{x}_i^\top \vect{\beta}^\star,
 \]
 so the true \(p_0\)-quantile is the same sparse linear signal at each fitted quantile level. Note that this is a quantile-specific calibration benchmark: each target level is generated so that the known target quantile is the same sparse linear signal, rather than a single-response multi-quantile analysis. The Gaussian data-generating distribution does not coincide with the exAL working likelihood; the benchmark therefore evaluates recovery of a correctly specified conditional quantile under likelihood misspecification. Gaussian design matrices are generated with \code{MASS::mvrnorm()} from \pkg{MASS} \citep{exd-MASS}.
-We use \(n = 160\) training observations and an independent holdout sample of size \(800\).
+The design uses \(n = 160\) training observations and an independent holdout
+sample of size \(800\).
 
 
 
-We fit separate static exAL models at \(p_0 \in \{0.05,0.25,0.50\}\). All fits use the Nishimura--Suchard regularized horseshoe prior \citep{exd-nishimura2023shrunken}, implemented in the package through \code{beta_prior = "rhs\_ns"}, with \(\tau_0 = 0.15\), fixed slab \(\zeta^2 = 9\), and an unshrunk intercept. We fit an LDVB approximation with \code{exalStaticLDVB()} using \code{n.samp = 3000}, and an MCMC fit with \code{exalStaticMCMC()} using \code{n.burn = 2000} and \code{n.mcmc = 3000}; the MCMC routine uses its default \code{collapsed\_slice} scale--skewness kernel and is warm-started from the LDVB fit. The lower-tail LDVB fit at \(p_0 = 0.05\) converges more slowly, so we allow a larger LDVB iteration budget there. Setting \code{al.ind = TRUE} (or equivalently \code{dqlm.ind = TRUE}) would recover the AL special case discussed in Section \ref{exd:sec:exdqlm}, but here we focus on the general static exAL model under sparse \code{rhs\_ns} shrinkage.
+Separate static exAL models are fitted at
+\(p_0 \in \{0.05,0.25,0.50\}\). All fits use the Nishimura--Suchard
+regularized horseshoe prior \citep{exd-nishimura2023shrunken}, implemented as
+\code{beta_prior = "rhs\_ns"}, with \(\tau_0 = 0.15\), fixed slab
+\(\zeta^2 = 9\), and an unshrunk intercept. The LDVB fit uses
+\code{exalStaticLDVB()} with \code{n.samp = 3000}; the MCMC fit uses
+\code{exalStaticMCMC()} with \code{n.burn = 2000} and
+\code{n.mcmc = 3000}. The MCMC routine uses its default
+\code{collapsed\_slice} scale--skewness kernel and is warm-started from LDVB.
+The lower-tail LDVB fit at \(p_0 = 0.05\) converges more slowly and therefore
+has a larger iteration budget. Setting \code{al.ind = TRUE}, equivalently
+\code{dqlm.ind = TRUE}, would recover the AL special case in Section
+\ref{exd:sec:exdqlm}; the reported analysis instead uses the general static
+exAL model with sparse \code{rhs\_ns} shrinkage.
 
 
 
@@ -673,11 +741,11 @@ factor retains conditional scale--skewness dependence and supplies a
 deterministic alternative to the inherited importance-sampling approximation.
 
 The three retained examples support different parts of this claim. Lake Huron
-demonstrates separate dynamic fits, multi-step forecasting, and synthesis of
+combines separate dynamic fits, multi-step forecasting, and synthesis of
 posterior predictive draws. Sunspots compares DQLM and exDQLM fits and shows
 the computational and predictive tradeoff between LDVB and MCMC: LDVB is
 faster in the recorded fits, whereas MCMC gives smaller CRPS and PPLC. The
-sparse simulation demonstrates the static regularized-horseshoe routines under
+sparse simulation evaluates the static regularized-horseshoe routines under
 a known conditional quantile; it likewise shows faster LDVB fitting but
 generally smaller holdout quantile error under MCMC. These results establish
 functionality and illustrate approximation tradeoffs, not a general predictive

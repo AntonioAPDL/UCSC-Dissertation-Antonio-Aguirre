@@ -23,8 +23,8 @@ Fitting Bayesian quantile models with many unknown recurrent-network weights
 can be computationally demanding, particularly when separate models are
 estimated at several quantile levels or refitted for rolling-origin validation.
 
-This chapter develops the quantile deep echo state network (Q--DESN), a
-Bayesian quantile regression whose temporal predictors are fixed nonlinear
+The quantile deep echo state network (Q--DESN) is a Bayesian quantile
+regression whose temporal predictors are fixed nonlinear
 recurrent states. These states are commonly called reservoir states: their
 internal weights are drawn before regression fitting and then held fixed.
 Conditional on the resulting predictors, the quantile location remains linear
@@ -62,8 +62,8 @@ credible-interval coverage was closer to nominal than under AL in
 lower-tail settings.
 
 For posterior simulation under AL, the augmentation gives standard full
-conditional distributions for both Q--DESN and MQ--DESN regressions,
-supporting efficient Gibbs-based Markov chain Monte Carlo (MCMC).
+conditional distributions for both Q--DESN and MQ--DESN regressions, so the
+corresponding Markov chain Monte Carlo (MCMC) algorithms use Gibbs updates.
 When repeated fitting makes posterior simulation costly, we also use
 model-specific variational Bayes (VB) approximations, which can supply
 starting values for MCMC under the corresponding model.
@@ -581,9 +581,10 @@ summarizes posterior distributions of average forecast check loss.
 
 \input{tables/ch04-qdesn/independent_eval300_results_v1.tex}
 
-These results support the ability of recurrent features to achieve
-competitive check-loss performance under linear state dynamics, without
-specifying the generating trend and seasonal transition explicitly.
+Taken together, these results indicate that recurrent features can approximate
+the reported linear state dynamics at the lower quartile and median without an
+explicit generating trend and seasonal transition. Performance at the lowest
+probability level depends on the likelihood and error family.
 The 500-target sensitivity preserves the overall pattern.
 Appendix~\ref{app:qdesn-simulation-support} records this result together with
 the empirical-frequency qualification.
@@ -803,8 +804,6 @@ dates. A vertical line marks the forecast origin in both panels.}
 \label{qdesn2026:fig:glofas-application-forecast-period}
 \end{figure}
 
-% Finish the streamflow displays before introducing the next application.
-
 \section{Application: electricity-price quantile forecasting}
 \label{qdesn2026:sec:pricefm-application}
 
@@ -920,8 +919,9 @@ The applications illustrate different uses of the regression. For streamflow
 correction, the reference--discrepancy model combines gauge measurements with
 GloFAS products at one retrospective forecast origin. All six fitted models
 improve on the raw ensemble over the 28 issued horizons, and the four quantile
-models outperform both Gaussian baselines. Q--DESN under AL has the lowest
-grid \(\aCRPS\), \GlofasApplicationCurrentAcrpsReduction{} below the raw
+models have smaller grid \(\aCRPS\) than both Gaussian baselines. Q--DESN under
+AL has the lowest grid \(\aCRPS\), \GlofasApplicationCurrentAcrpsReduction{}
+below the raw
 ensemble. Independent fits perform slightly better within each likelihood:
 MQ--DESN scores are approximately 3\% higher under AL and 2\% higher under
 exAL. Together with the crossing reductions in the simulations, this suggests
