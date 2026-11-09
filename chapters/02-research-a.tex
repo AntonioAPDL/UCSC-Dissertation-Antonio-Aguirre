@@ -25,11 +25,6 @@ computation built around those methods. It consists of:
 \item package-level exAL distribution utilities, predictive scoring and calibration diagnostics, and compiled implementations of computationally intensive model-building, posterior sampling and posterior predictive operations, with \proglang{R} fallbacks where applicable; and
 \item static asymmetric Laplace (AL) and exAL regression with shrinkage priors, including the regularized horseshoe construction of \citet{exd-nishimura2023shrunken}, together with tests and replication materials for the reported analyses.
 \end{itemize}
-The article and package are collaborative work \citep{env-deleon2026exdqlm}.
-Antonio de Leon is the article's first author and a package author; Raquel
-Barata is the documented package creator and maintainer. The available records
-do not assign individual algorithms, interfaces, or examples to particular
-coauthors, so the contributions are described at the project level.
 
 The \proglang{R} \citep{exd-R} software ecosystem for quantile regression is broad, but the capabilities most relevant to this chapter are distributed across software with different aims. Table \ref{exd:table:software} compares representative packages along four traits that are key to the scope of \pkg{exdqlm}: the primary modeling objective, the treatment of the temporal or latent-state structure, the inference strategy, and handling of multiple quantile levels.
 The distinction between time included as an observed predictor and coefficients propagated as latent states is particularly important.
@@ -48,7 +43,7 @@ The computation column reports how fitting, posterior approximation, or state su
 \addlinespace[1pt]
 \pkg{pqrBayes} & Bayesian penalized QR & Varying-coefficient regression: coefficients are B-spline functions of an observed modifier, possibly time; no serial or state-space model & MCMC with shrinkage priors & One target quantile per fit \\
 \addlinespace[1pt]
-\pkg{brms} & General Bayesian regression with an AL family & Regression autocorrelation terms can be added; no quantile state-space workflow & Stan/NUTS posterior sampling & Fixed through the \code{asym\_laplace()} quantile parameter \\
+\pkg{brms} & General Bayesian regression with an AL family & Regression autocorrelation terms can be added; no quantile state-space analysis sequence & Stan/NUTS posterior sampling & Fixed through the \code{asym\_laplace()} quantile parameter \\
 \addlinespace[1pt]
 \pkg{qgam} & Smooth additive QR & Time may enter as a smooth covariate; no serial or state-space model & Calibrated Gibbs posterior with GAM fitting & Single quantile via \code{qgam()}; multiple via \code{mqgam()} \\
 \addlinespace[1pt]
@@ -204,7 +199,7 @@ The arguments \code{df} and \code{dim.df} specify the component discount factors
 \label{exd:sec:tf}
 
 Transfer functions provide a state-space representation for current and lagged input effects on a response quantile.
-In \pkg{exdqlm}, this is handled by augmenting the dynamic state-space representation conditional on a fixed transfer-function rate \(\lambda\), and the resulting workflow is available through both LDVB and MCMC fitting routines.
+In \pkg{exdqlm}, this is handled by augmenting the dynamic state-space representation conditional on a fixed transfer-function rate \(\lambda\); both LDVB and MCMC routines fit the resulting model.
 For input vector \(\mat x_t\), the augmented state contains an accumulated
 effect \(\zeta_t\) and instantaneous coefficients \(\vect\psi_t\), with
 \[
@@ -236,7 +231,7 @@ Second, setting $\mat{G}_t=\mat{I}$ and $\mat{W}_t=\mat{0}$ reduces the model to
 This model can be implemented using functions \code{exalStaticMCMC()} or \code{exalStaticLDVB()}.
 
 Finally, combining these two restrictions gives static Bayesian linear quantile regression under the AL working likelihood \cite{env-yu2001bayesian}, as implemented in packages such as \pkg{bayesQR}. Within the \pkg{exdqlm} package, this model can be fitted using \code{exalStaticMCMC()} or \code{exalStaticLDVB()} with \code{al.ind = TRUE}, a static convenience alias for \code{dqlm.ind = TRUE}, which fixes $\gamma=0$.
-Examples of these special models are given in Section \ref{exd:sec:exs}, with the sparse static regression workflow illustrated in Section \ref{exd:sec:ex4static}.
+Examples of these special models are given in Section \ref{exd:sec:exs}, with the sparse static regression analysis in Section \ref{exd:sec:ex4static}.
 
 \subsection{Static exAL regression with shrinkage priors}
 \label{exd:sec:static-model}

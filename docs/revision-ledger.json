@@ -24,9 +24,36 @@
       ]
     },
     {
+      "path": "frontmatter/abstract.tex",
+      "baseline_sha256": null,
+      "current_sha256": "16b8049c9ec0195a88d9ee8a2e2e2a060cf18d87e5d558ad12fb86629ff5b653",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-ADVISOR-GLOBAL-20261109"
+      ]
+    },
+    {
+      "path": "frontmatter/acknowledgments.tex",
+      "baseline_sha256": null,
+      "current_sha256": "dda4ad88aedff178c0ce4740f6c884c0d87f77b609abcaaa3eb654bdad1ce4c7",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-ADVISOR-GLOBAL-20261109"
+      ]
+    },
+    {
+      "path": "chapters/06-synthesis.tex",
+      "baseline_sha256": null,
+      "current_sha256": "a507b0ea931c2a68ad40cfb3c42aaa061fcc7f54d65750b46fdf99e82e2bfe8c",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-ADVISOR-GLOBAL-20261109"
+      ]
+    },
+    {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "7c40506e4185adc41a77b16a8e5b95f838b52bf3532c923db9962d3fa7733af2",
+      "current_sha256": "8b15248b1a063c93b18ccdb7ab5d0b9a9f2470de8aad8acc6fa468e305cfbfef",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -39,13 +66,14 @@
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-APPENDIX-CURATION-20261107",
         "REV-COMMITTEE-COPY-20261107",
-        "REV-ADVISOR-SOFTWARE-20261109"
+        "REV-ADVISOR-SOFTWARE-20261109",
+        "REV-ADVISOR-GLOBAL-20261109"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
+      "current_sha256": "dd2ad20682a79f3f43ed48a2f5edee6646e26ce4a4713f3c8352a530d3ec61c0",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -56,7 +84,8 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-COMMITTEE-COPY-20261107",
-        "REV-ADVISOR-HYDROLOGY-20261109"
+        "REV-ADVISOR-HYDROLOGY-20261109",
+        "REV-ADVISOR-GLOBAL-20261109"
       ]
     },
     {
@@ -135,7 +164,7 @@
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
+      "current_sha256": "6a5ba7471aadf71561a21542de1e37a2a7ad593dd3a6d9ceddf54d46d95e844e",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
@@ -144,7 +173,8 @@
         "REV-READER-FIRST-20261008",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-ADVISOR-HYDROLOGY-20261109"
+        "REV-ADVISOR-HYDROLOGY-20261109",
+        "REV-ADVISOR-GLOBAL-20261109"
       ]
     },
     {
@@ -887,6 +917,21 @@
       "summary": "Reorganizes the MTI chapter around the interval-placement problem, inherited residual-product criterion, mean-preserving characterization, tilt family, calibrated tolerance action, independent evidence, and explicitly proposed extensions; removes peripheral approximation diagnostics and calculus not used by the selected procedure.",
       "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch05-mti.json",
       "validation": "Fixed-source contribution review, structural and editorial ledgers, clean TeX build, terminology review, PDF diagnostics, and rendered inspection of the chapter argument and retained displays."
+    },
+    {
+      "id": "REV-ADVISOR-GLOBAL-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/c-hydrology-technical.tex"
+      ],
+      "summary": "Aligns the abstract and synthesis with the revised chapter order and supported findings, centralizes collaborative attribution in the acknowledgments, records the limited supporting use of AI-assisted tools, removes unsupported individual task allocation, and replaces internal project language with standard statistical exposition.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/ASSISTANCE-LOG.md; docs/research-audit.md; cited manuscript and package records",
+      "validation": "Cross-document contribution and numerical-claim comparison, attribution and disclosure review, terminology scan, clean TeX build, reference diagnostics, PDF checks, and rendered inspection of front matter and synthesis."
     }
   ]
 }

@@ -1,45 +1,47 @@
 \begin{abstract}
-This dissertation studies statistical inference for conditional quantiles and
-fixed-content intervals when temporal dependence, nonlinear structure,
-heterogeneous products, and computation complicate full response-distribution
-modeling. A target-first approach separates the inferential object, information
-set, update, and validation claim so
-that fitted quantiles, posterior predictive distributions, endpoint
-uncertainty, and tolerance intervals are not conflated.
+This dissertation develops statistical methods and computational tools for
+conditional quantiles and fixed-content intervals in settings with temporal
+dependence, nonlinear structure, and heterogeneous information sources. The
+four projects distinguish the quantity being estimated from the uncertainty
+statement and empirical evidence used to support it.
 
-The first contribution is the \pkg{exdqlm} \proglang{R} package, which connects
-dynamic quantile models to MCMC and variational inference,
-diagnostics, forecasting, predictive synthesis, and static shrinkage
-regression. The second applies these models to source-aware correction and
-synthesis of river-flow products. In a five-origin San Lorenzo River study, the
-selected multivariate extended-asymmetric-Laplace specification gives the
-strongest 28-day comparison among the evaluated Bayesian variants, whereas an
-eight-day comparison shows that gains vary by origin and horizon.
+The first project develops source-aware correction and synthesis of river-flow
+forecasts. A shared latent quantile process is combined with source-specific
+discrepancies, transfer covariates, and predictive synthesis. In a retrospective
+five-origin San Lorenzo River study, the selected multivariate
+extended-asymmetric-Laplace model gives the lowest 28-day continuous ranked
+probability score among the evaluated Bayesian variants at every origin. A
+separate eight-day comparison shows that relative performance varies by origin,
+horizon, and comparator.
 
-The third contribution develops Bayesian quantile deep echo-state networks,
-combining fixed recurrent features with single-level or joint quantile
-regression. Simulations and retrospective applications compare MCMC and
-model-specific variational methods. The multiquantile model
-reduces crossing without a uniform score gain. At one GloFAS origin, all six
-fitted models improve on the raw ensemble, the four quantile regressions improve
-on both Gaussian baselines, and Q--DESN under AL has the lowest grid score. In
-the 114-case PriceFM experiment, regional validation selects among independent
-and multiquantile AL and exAL models; the selected procedure lowers mean
-average quantile loss in all three fold summaries and by 5.0\% overall. These
-comparisons are descriptive for the recorded designs.
+The second project develops the \pkg{exdqlm} \proglang{R} package for dynamic and
+static Bayesian quantile analysis. It connects model specification, Markov chain
+Monte Carlo and variational inference, diagnostics, forecasting, predictive
+synthesis, and shrinkage regression in a common fitted-object interface. The
+examples establish the scope of the software and show that computational speed,
+posterior uncertainty, and held-out accuracy need not rank methods in the same
+order.
 
-The fourth contribution studies contiguous mean-tilted intervals indexed by
-retained-mean balance. It characterizes the
-mean-preserving member and develops a calibrated profiled tolerance procedure
-that screens fitted content and tilt using a direct posterior content check.
-Independent simulations support the procedure on a fixed eight-distribution
-panel, while a pharmaceutical application illustrates placement behavior and
-data limitations. Regression and dynamic endpoint formulations remain proposed
-extensions.
+The third project combines fixed deep echo-state-network features with Bayesian
+single-level and multiquantile regression. The multiquantile formulation reduces
+crossing but does not improve forecast scores uniformly. In the retrospective
+applications, Q--DESN under the asymmetric Laplace model gives the lowest grid
+score at one GloFAS origin, and region-specific model selection lowers mean
+average quantile loss by 5.0\% relative to reproduced PriceFM forecasts over 114
+region--fold cases. These comparisons are conditional on the recorded designs
+and information sets.
 
-Across the projects, similar conditionally Gaussian calculations do not imply
-identical inference. Working likelihoods, generalized posteriors, predictive
-synthesis, and repeated-sampling tolerance calibration support different
-claims. The studies model and evaluate distributional targets while preserving
-those distinctions.
+The fourth project characterizes a mean-preserving fixed-content interval and
+embeds it in a family indexed by retained-mean tilt. This geometry motivates a
+profiled tolerance procedure that searches over fitted content and placement and
+uses a direct posterior content check. Independent simulations provide
+repeated-sampling evidence on eight distributions, while a pharmaceutical batch
+analysis illustrates endpoint placement and data limitations. Regression and
+dynamic endpoint formulations are stated as proposed extensions.
+
+Together, the projects show that similar conditional-Gaussian calculations may
+support different inferential claims. Likelihood-based quantile inference,
+predictive synthesis, loss-based generalized updating, and tolerance calibration
+must therefore be interpreted according to their respective targets and
+evaluation designs.
 \end{abstract}
