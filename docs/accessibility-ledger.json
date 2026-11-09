@@ -1,28 +1,10 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-06",
+  "recorded_at": "2026-11-09",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
   "graphics": [
-    {
-      "source_path": "appendices/e-mti-technical.tex",
-      "graphic": "figures/ch05-mti/generated/figS04_pharma_application_rsd_intervals.png",
-      "figure_label": "rqr2026:fig:supp-pharma-rsd",
-      "alt_text": "Interval placement and held-out comparisons for weight RSD. The panels follow the main application figure. The representative split is selected by the same median-distance rule. Thick and thin tail-omission segments show interquartile and empirical 95 percent ranges, with median markers. The response is strongly right-skewed, but an upper one-sided tolerance limit would be more natural for a direct quality-control decision.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
-      "source_path": "appendices/e-mti-technical.tex",
-      "graphic": "figures/ch05-mti/generated/figS05_pharma_application_partition_sensitivity.png",
-      "figure_label": "rqr2026:fig:supp-pharma-partition-sensitivity",
-      "alt_text": "Sensitivity to training and held-out partitions. Points show median widths or held-out empirical content within each labeled design. Segments give empirical 95 percent ranges for random and grouped splits. The two recorded-order designs each contain one partition and are shown as individual points. Dashed lines mark the requested content c= . The plots describe historical partition sensitivity.",
-      "description_source": "caption",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
     {
       "source_path": "chapters/02-research-a.tex",
       "graphic": "figures/ch02-exdqlm/ex1quants.png",
@@ -81,14 +63,6 @@
     },
     {
       "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/forecast_products_context.png",
-      "figure_label": "env:fig:ensembles",
-      "alt_text": "Representative forecast-origin display for the December 25, 2022 cutoff, spanning November 27, 2022 through January 22, 2023 on the (1+x) scale with x in m^3/s. Before the cutoff, the panel shows USGS observations and the NWS and GloFAS retrospective products used for source-discrepancy learning; after the cutoff, it shows held-out USGS verification together with the operational NWS and GloFAS forecast ensembles. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500; they are included as operational magnitude references rather than as historical flood-stage classifications.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
       "graphic": "figures/ch03-environ/site_context_usgs.png",
       "figure_label": "env:fig:sanlorenzo",
       "alt_text": "Observed USGS daily water flow on the (1 + x) scale, with x measured in m^3/s, May 29, 1987 through December 25, 2022. Horizontal dashed lines show approximate current-rating discharge equivalents of the current NWS minor and major stage categories at BTEC1/USGS 11160500, computed from USGS stage-discharge rating 40.0 and transformed to the plotting scale env-cnrfc_btec1,env-usgs_11160500_rating40. They are operational magnitude references for the discharge scale, not historical flood-stage classifications of daily-mean observations.",
@@ -97,51 +71,19 @@
     },
     {
       "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/covariate_context_precip_soil_gdpc.png",
-      "figure_label": "env:fig:covariates",
-      "alt_text": "Historical daily precipitation [mm], soil moisture [m^3/m^3], and first GDPC score over May 29, 1987 through December 25, 2022.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/retrospective_products_context.png",
-      "figure_label": "env:fig:retrospectives",
-      "alt_text": "Selected GloFAS and NWS retrospective product series over the available pre-cutoff support window for the December 25, 2022 cutoff, May 29, 1987 through December 25, 2022. Displayed flow values use the (1+x) scale with x in m^3/s.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/historical_summary_dry_period.png",
-      "figure_label": "env:fig:dry_quantile",
-      "alt_text": "Selected-model posterior means and 95 percent credible intervals for the 5th (red), 50th (green), and 95th (blue) fitted river-flow quantiles, with daily USGS flow (black). The upper panel covers the 2012--2016 dry period and the lower panel covers the 2017--2019 wet period, both estimated from the December 25, 2022 cutoff exAL-M-T1 model. Horizontal dashed lines are the current-rating NWS minor and major discharge references from Figure env:fig:sanlorenzo.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/historical_summary_wet_period.png",
-      "figure_label": "env:fig:dry_quantile",
-      "alt_text": "Selected-model posterior means and 95 percent credible intervals for the 5th (red), 50th (green), and 95th (blue) fitted river-flow quantiles, with daily USGS flow (black). The upper panel covers the 2012--2016 dry period and the lower panel covers the 2017--2019 wet period, both estimated from the December 25, 2022 cutoff exAL-M-T1 model. Horizontal dashed lines are the current-rating NWS minor and major discharge references from Figure env:fig:sanlorenzo.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/historical_component_80month.png",
-      "figure_label": "env:fig:80_components",
-      "alt_text": "Selected-model posterior mean and 95 percent credible intervals for the long-cycle seasonal component, with period approximately 6.81 years, or about 82 months, estimated from the 2022-12-25 cutoff exAL-M-T1 model. Estimates are shown for the 5th (red), 50th (green), and 95th (blue) quantiles. Shaded regions mark the 2012--2016 dry period and the 2017--2019 wet period.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/03-research-b.tex",
-      "graphic": "figures/ch03-environ/cutoff_2022_12_25_multivariate_synthesis_with_reference_ensembles.png",
+      "graphic": "figures/ch03-environ/predictive_synthesis_2022_12_25.pdf",
       "figure_label": "env:fig:synth1",
-      "alt_text": "Synthesized posterior predictive distribution for river flow on the (1+x) scale, with x measured in m^3/s, at the December 25, 2022 forecast origin under the exAL-M-T1 model. Observed USGS measurements before the origin are shown in green, and held-out USGS verification after the origin is shown in red. The pink band is the central 95 percent posterior predictive band from the synthesized distribution, and the dark center line summarizes the corresponding synthesized center. Thin overlaid lines correspond to displayed forecast quantiles at levels 0.05, 0.20, 0.35, 0.50, 0.65, 0.80, and 0.95. The raw retrospective and forecast products used at this cutoff are shown for context.",
+      "alt_text": "Synthesized exAL-M-T1 prediction at December 25, 2022, on the (1+x) scale, with x in m^3/s. The 19 historical and 28 forecast dates show historical observations and held-out verification values. The origin is T and the first lead is T+1. The maroon line is the predictive mean, the pink band is the pointwise central 95 percent predictive interval, and ten gray traces connect predictive sample values within each period. GloFAS and NWS/NWM products give source context. Horizontal guides mark approximately 182 and 429 m^3/s.",
       "description_source": "caption",
-      "status": "REVIEWED"
+      "status": "AUTHOR_REVIEW_REQUIRED"
+    },
+    {
+      "source_path": "chapters/03-research-b.tex",
+      "graphic": "figures/ch03-environ/no_refit_quantile_reliability.png",
+      "figure_label": "env:fig:no-refit-reliability",
+      "alt_text": "Quantile reliability over eight and 28 days, pooling 40 and 140 cases across five origins. Curves give frequencies at or below predictive quantiles for exAL-M-T1, raw GloFAS/NWS, EMOS-GLOFAS, and seasonal climatology; the diagonal denotes nominal probabilities. NWS is available over eight days.",
+      "description_source": "caption",
+      "status": "AUTHOR_REVIEW_REQUIRED"
     },
     {
       "source_path": "chapters/04-research-c.tex",
@@ -200,30 +142,12 @@
       "status": "REVIEWED"
     },
     {
-      "source_path": "tables/ch04-qdesn/independent_forecast_calibration_figure_v1.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/independent_forecast_calibration_v1.pdf",
-      "figure_label": "qdesn2026:fig:supp-independent-quantile-calibration",
-      "alt_text": "Six panels compare empirical response frequencies below posterior-median quantile forecasts with the nominal levels 0.05, 0.25 and 0.50, for four models, three error families and two evaluation periods.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
-    },
-    {
       "source_path": "tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex",
       "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_check_v1.pdf",
       "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-check-loss-intervals",
       "alt_text": "Nine panels compare four models using mean forecast check loss and 95 percent intervals over 300 scored targets.",
       "description_source": "figalt",
       "status": "REVIEWED"
-    },
-    {
-      "source_path": "tables/ch04-qdesn/independent_train500_eval300_mcmc_mae_figure_v1.tex",
-      "graphic": "figures/ch04-qdesn/independent_simulation/independent_train500_eval300_mcmc_forecast_mae_v1.pdf",
-      "figure_label": "qdesn2026:fig:simulation-500obs-mcmc-forecast-mae-intervals",
-      "alt_text": "Nine panels compare four models using mean forecast quantile-path MAE and 95 percent intervals over 300 scored targets.",
-      "description_source": "figalt",
-      "status": "REVIEWED",
-      "current_inclusion": "INACTIVE"
     },
     {
       "source_path": "tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex",

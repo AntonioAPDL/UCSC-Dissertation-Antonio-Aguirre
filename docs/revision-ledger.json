@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-07",
+  "recorded_at": "2026-11-09",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -35,7 +35,7 @@
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "4d4d2708b5b91ff1d8e5917b2848d1db79cbdcd379bdf41a11e304e2a9118858",
+      "current_sha256": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -45,7 +45,8 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-ADVISOR-HYDROLOGY-20261109"
       ]
     },
     {
@@ -122,7 +123,7 @@
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "b0b94d05e3295dbe6c58b94a15b43fe95767c9f95809b42a194a738c6e378aa2",
+      "current_sha256": "f6f4a7f3ffaeb2e2ea199b667fe24597d78c6702c4c2dcf2a84c155802d36b73",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
@@ -130,7 +131,8 @@
       "revision_ids": [
         "REV-READER-FIRST-20261008",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-ADVISOR-HYDROLOGY-20261109"
       ]
     },
     {
@@ -168,12 +170,13 @@
     {
       "path": "references.bib",
       "baseline_sha256": "fbbfc59d5108015168e9e46e181109a4f4da3a038b6a337995e3e3f1a8c13b47",
-      "current_sha256": "324d74f5002f804c47c37684daa8924ffbd1866e7f3c5e18b678d1d93c8084f6",
+      "current_sha256": "bdbd862204a945a1c679d18f6e095f63eb1412ef7a7a9af3383a53debf112c27",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
         "REV-CURRENT-SOURCES-20261026",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-ADVISOR-HYDROLOGY-20261109"
       ]
     },
     {
@@ -808,6 +811,26 @@
       "summary": "Prepares the advisor-review copy by adding evidence-bounded scholarly attribution, shortening the abstract, normalizing the candidate's publication name, and replacing article-length list entries with concise reader-facing captions while preserving full captions in the chapters.",
       "evidence": "docs/committee-copy-finalization-plan.md; docs/imports/*.json; source-manifest.json; cited manuscript records",
       "validation": "Fast and chapter validation, clean timestamped build, bibliography and reference checks, PDF text and font diagnostics, and rendered inspection of front matter and display lists required before merge."
+    },
+    {
+      "id": "REV-ADVISOR-HYDROLOGY-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/03-research-b.tex",
+        "appendices/c-hydrology-technical.tex",
+        "references.bib",
+        "figures/ch03-environ/predictive_synthesis_2022_12_25.pdf",
+        "figures/ch03-environ/no_refit_quantile_reliability.png",
+        "tables/ch03-environ/corrected3/main_aggregate.tex",
+        "tables/ch03-environ/corrected3/main_quantile_loss.tex",
+        "tables/ch03-environ/corrected3/main_calibration.tex",
+        "tables/ch03-environ/corrected3/si_origin_crps.tex",
+        "tables/ch03-environ/corrected3/si_component_comparison.tex",
+        "tables/ch03-environ/corrected3/si_discharge_score.tex"
+      ],
+      "summary": "Rebuilds the hydrology application from the author-designated Corrected-3 manuscript, states its contribution relative to DQLM and forecast-postprocessing antecedents, replaces obsolete results with the current five-origin evidence, and restricts the technical appendix to claim-relevant comparisons and reproducibility-critical definitions.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch03-environ.json",
+      "validation": "Pinned source hashes, manuscript-import validation, structural and editorial ledgers, clean TeX build, PDF diagnostics, and rendered inspection are required before merge."
     }
   ]
 }

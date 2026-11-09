@@ -1,58 +1,245 @@
-\chapter{Posterior computation for hydrologic correction and synthesis}
+\chapter{Technical details and supplementary results for hydrologic synthesis}
 \label{app:hydrology-technical}
 
-The source-aware model in Chapter~\ref{ch:research-b} is conditionally
-Gaussian after exAL augmentation. This appendix records the source-indexed
-updates and the boundary between exact posterior sampling and the
-Laplace--delta approximation. Standard filtering and backward sampling
-follow \citet{env-prado2021time}.
+This appendix retains the definitions needed to reproduce the construction in
+Chapter~\ref{ch:research-b} and three tables needed to assess its principal
+empirical claims. Complete origin-by-quantile losses, coefficient summaries,
+forecast panels, and implementation outputs remain with the analysis
+materials \citep{env-deleon2026sanlorenzo_reproducibility}; they are not
+needed to evaluate the argument in the chapter.
+
+\section{Additional forecast evidence}
+\label{env:app:additional-results}
+
+Table~\ref{tab:crps_all_origins} separates the aggregate CRPS comparisons in
+Chapter~\ref{ch:research-b} by forecast origin. It shows the heterogeneity
+behind the pooled skill scores: EMOS-GLOFAS is best in May 2022 over both
+horizons, and the best eight-day method differs across origins.
+
+\input{tables/ch03-environ/corrected3/si_origin_crps.tex}
+
+Table~\ref{tab:component_comparison} gives the component-removal comparisons.
+The reductions retain the reference exAL-M-T1 settings while removing the
+local level, the transfer component in both fitting and forecasting, or one
+seasonal pair. They assess sensitivity to those structural choices; they do
+not constitute a complete model-selection experiment.
+
+\input{tables/ch03-environ/corrected3/si_component_comparison.tex}
+
+Table~\ref{tab:discharge_scale_scores} reports exact empirical-distribution
+scores after inverse transformation. It is essential because ordering on the
+$\log(1+x)$ scale need not be preserved by a nonlinear transformation of the
+predictive distribution. The table confirms the aggregate 28-day advantage
+of exAL-M-T1 and the aggregate eight-day advantage of raw NWS, while exposing
+the extreme-tail sensitivity of N-M-T1 and exAL-M-T0.
+
+\begingroup
+\footnotesize
+\input{tables/ch03-environ/corrected3/si_discharge_score.tex}
+\endgroup
+
+\section{State construction}
 
 % migration-id: MIG-CH03-01
-\section{Source-indexed MCMC}
-\label{app:hydrology-mcmc}
 
-Let \(\mathcal J_0=\{0\}\cup\mathcal J\), where source zero denotes USGS
-and \(j\in\mathcal J\) denotes an external product. Before the forecast
-origin, source-specific observations enter through their historical selectors.
-Within the forecast window, the active selector changes with the products
-available at each lead. Unequal agency horizons therefore change the
-observation vector; unavailable products are not treated as observations from
-a common rectangular panel.
+\subsection{Seasonal rotations and stacked states}
+\label{env:app:stackedstates}
 
-Conditional on \((v_t^j,s_t^j,\sigma^j,\gamma^j)\), all active observations
-have Gaussian mean shifts and diagonal conditional covariance. The complete
-state path is then drawn by one forward-filtering backward-sampling step.
+For daily time steps, the seasonal specification uses base period
+$P=363.5854$ days and frequency multipliers $h_1=1$, $h_2=2$, and
+$h_3=1/6.8068493$. With $\omega_a=2\pi h_a/P$ and
+\[
+\mathbf R(\omega)=
+\begin{bmatrix}
+\cos\omega&\sin\omega\\
+-\sin\omega&\cos\omega
+\end{bmatrix},
+\]
+the observation loading and transition are
+\[
+\mathbf F_t=(1,1,0,1,0,1,0)',\qquad
+\mathbf G_t=\operatorname{BlockDiag}
+\{1,\mathbf R(\omega_1),\mathbf R(\omega_2),\mathbf R(\omega_3)\}.
+\]
+The corresponding periods are approximately 363.59, 181.79, and 2474.87
+days. The third is an exploratory slow rotation rather than an identified
+physical cycle.
 
-\begin{algorithmblock}{Source-indexed MCMC sampler}
-\label{env:alg1}
-Initialize the state path and source-specific latent and likelihood
-parameters. At each iteration, draw the state path by FFBS; for every active
-source, draw the latent scales from their GIG conditionals, the positive shifts
-from truncated-normal conditionals, and the scale from its stated conditional;
-update bounded skewness by a random walk on an unconstrained transformation;
-and propagate the retained state and source parameters through the horizons
-available from that source.
-\end{algorithmblock}
+Let $\boldsymbol\omega_t'=[\zeta_t,\boldsymbol\psi_t']$ and stack
+\[
+\boldsymbol\eta_t'=
+[\boldsymbol\theta_t',(\boldsymbol\delta_t^1)',\ldots,
+(\boldsymbol\delta_t^J)',\boldsymbol\omega_t'],
+\qquad q=(J+1)p+m+1.
+\]
+The transfer transition is
+\[
+\mathbf G_t^{\mathrm{trans}}=
+\begin{bmatrix}
+\lambda&\mathbf x_t'\\
+\mathbf 0_m&\mathbf I_m
+\end{bmatrix},
+\]
+and the full transition is block diagonal in the shared state, $J$
+discrepancy states, and transfer block. If $\mathbf h_{t,0}$ selects the
+shared and transfer blocks and $\mathbf h_{t,j}$ additionally selects source
+$j$'s discrepancy block, then the historical observation equations are
+\[
+y_t^s\mid\boldsymbol\eta_t,\sigma^s,\gamma^s
+\sim\operatorname{exAL}_{p_0}
+(\mathbf h_{t,s}'\boldsymbol\eta_t,\sigma^s,\gamma^s),
+\qquad s\in\mathcal J_0.
+\]
+During forecasting, the analogous selector $\mathbf e_{T+k,j}$ retains the
+shared state, active source discrepancy, and transfer block. When a source
+ceases to be available, states, selectors, and covariance matrices are
+restricted to the retained coordinates before propagation. This restriction
+accounts for unequal source horizons without treating a missing source as an
+observed zero.
 
-\section{Laplace--delta variational approximation}
-\label{app:hydrology-vb}
+\subsection{Forecast-window covariance prior}
+\label{env:app:forecastcovariance}
 
-The variational family separates the Gaussian state path, source-specific
-augmentations, and low-dimensional scale--skewness blocks. Variational
-filtering and smoothing update the state, while \(v_t^j\) and \(s_t^j\)
-retain GIG and positive-truncated-normal factors. For each source, a Gaussian
-Laplace approximation to the transformed \((\sigma^j,\gamma^j)\) factor and
-second-order delta calculations provide the remaining moments.
+For $t>T$, let $p_t$ be the active state dimension and let $\mathbf W_T$ be
+the origin covariance restricted to those coordinates. The inverse-Wishart
+prior uses
+\[
+\mathbf S_t=(\nu_t-p_t-1)c\mathbf W_T,
+\qquad \nu_t=p_t+1+\epsilon,
+\]
+so its contribution to the posterior mean is
+\[
+\mathbb E(\mathbf W_t\mid\mathcal D_t)=
+\frac{\epsilon}{1+\epsilon}c\mathbf W_T+
+\frac{1}{1+\epsilon}
+\mathbb E(\mathbf e_t\mathbf e_t'\mid\mathcal D_t),
+\]
+where
+$\mathbf e_t=\boldsymbol\eta_t-\mathbf M_t\boldsymbol\eta_{t-1}$.
+The first term anchors the short forecast window to the fitted origin
+covariance; the second allows adaptation to forecast-window state
+innovations. In the reported reference fit, $c=\epsilon=1$.
 
-Thus LDVB approximates the MCMC posterior target rather than sampling it
-exactly. Its principal risk concerns tail summaries and interval widths in the
-nonconjugate blocks. Convergence requires consecutive joint tolerances for the
-objective, states, scales, and skewness coordinates.
+\section{Predictive synthesis and score conventions}
+\label{env:app:numericalprediction}
+\label{app:numericalprediction}
+
+The initial synthesized quantile curve is evaluated at 1,001 internal
+probability-grid points. Sorting its values provides monotone rearrangement,
+and inverse-CDF sampling produces 2,000 draws per time. Linear interpolation
+is used between grid values and constant interpolation beyond the endpoints.
+Beyond the fitted probabilities 0.05 and 0.95, the construction uses the
+corresponding outer fitted predictive distributions. Thus the limits of a
+central 95\% predictive interval are not separately fitted 0.025 and 0.975
+conditional quantiles.
+
+For ordered predictive values $x_{(1)}\le\cdots\le x_{(n)}$, individual-fit
+quantiles used in isotonic projection use the interpolation rule commonly
+called type 7, while stochastic-model quantiles used for calibration and
+displayed interval limits use type 8 \citep{env-hyndman1996sample}. Raw
+ensembles and deterministic quantile grids use their empirical generalized
+inverse. These finite-representation conventions do not change the fitted
+models.
+
+For an equally weighted empirical distribution
+$G_m=m^{-1}\sum_{i=1}^m\delta_{x_i}$, write
+\[
+A=\frac1m\sum_{i=1}^m|x_i-y|,
+\qquad D=\sum_{i<j}|x_i-x_j|.
+\]
+The exact empirical-distribution score and the separate independent-draw
+adjustment are
+\[
+\operatorname{CRPS}(G_m,y)=A-\frac{D}{m^2},
+\qquad
+\operatorname{CRPS}_{\mathrm{adj}}=A-\frac{D}{m(m-1)}.
+\]
+The adjustment estimates the parent-distribution score only under independent,
+identically distributed sampling \citep{env-ferro2014fair}; that condition is
+additional for a physical ensemble. It is not applied to deterministic grids
+or point masses. The quantile-grid and exact empirical scores are therefore
+reported as distinct finite-representation calculations
+\citep{env-zamo2018crps}. Pairing symmetric rank levels yields the weighted
+interval-score representation \citep{env-bracher2021evaluating}, but does not
+turn the seven fitted quantiles alone into a complete predictive distribution.
+
+For EMOS, each lead-specific fit minimizes analytic truncated-normal CRPS
+using four deterministic initial values and bounded L-BFGS-B optimization.
+The converged solution with the smallest objective is retained subject to
+$b,d\ge0$ and $c>0$. The eligible training cases, fitted values, and
+convergence records are retained in the analysis repository.
+
+\section{Extended-likelihood variational approximation}
 
 % migration-id: MIG-CH03-02
-\paragraph{Source-specific likelihood parameters.}
-\label{env:app:sourceparams}
-The fitted exAL scales and skewness parameters describe source-specific
-observation models, not predictive-synthesis weights. Comparative forecast
-evidence comes from the five-origin score tables in
-Chapter~\ref{ch:research-b}.
+
+\subsection{Conditional Gaussian augmentation}
+\label{env:app:augmentation}
+
+For fixed $p_0$, define
+\[
+g(\gamma)=2\Phi(-|\gamma|)\exp(\gamma^2/2),
+\qquad
+p(\gamma;p_0)=I(\gamma<0)+
+\frac{p_0-I(\gamma<0)}{g(\gamma)}.
+\]
+The lower and upper skewness bounds are the negative root of
+$g(\gamma)=1-p_0$ and the positive root of $g(\gamma)=p_0$. These bounds
+ensure $0<p(\gamma;p_0)<1$. Let
+\[
+A=\frac{1-2p}{p(1-p)},\qquad
+B=\frac{2}{p(1-p)},\qquad
+C=\{I(\gamma>0)-p\}^{-1},
+\]
+where the dependence on $(\gamma,p_0)$ is suppressed. If
+$e\sim\mathcal N(0,1)$, $u\sim\operatorname{Exp}(1)$, and
+$s\sim\mathcal N^+(0,1)$ are independent, then
+\[
+Y=\mu+C\sigma|\gamma|s+A\sigma u+
+\sqrt{B\sigma^2u}\,e.
+\]
+With $v=\sigma u$, the conditional Gaussian variance is $B\sigma v$.
+Consequently, state updates can use Gaussian filtering and smoothing
+conditional on the observation-specific augmentation variables.
+
+\subsection{Joint scale--skewness update}
+\label{env:app:vblad}
+
+Let $\boldsymbol\alpha$ contain an unconstrained log-scale and a transformed
+skewness for one channel, and let $\boldsymbol\beta$ contain the remaining
+unknowns. Under a mean-field factorization, define
+\[
+\ell(\boldsymbol\alpha)=
+\mathbb E_{r(\boldsymbol\beta)}
+\{\log p(\mathcal D,\boldsymbol\alpha,\boldsymbol\beta)\}.
+\]
+The Laplace factor is
+\[
+r(\boldsymbol\alpha)\approx
+\mathcal N(\widehat{\boldsymbol\alpha},\boldsymbol\Sigma),
+\quad
+\widehat{\boldsymbol\alpha}=\arg\max\ell(\boldsymbol\alpha),
+\quad
+\boldsymbol\Sigma=-\{\nabla^2\ell(\widehat{\boldsymbol\alpha})\}^{-1}.
+\]
+For a nonlinear function $h$, the second-order Delta approximation supplies
+\[
+\mathbb E_r\{h(\boldsymbol\alpha)\}\approx
+h(\widehat{\boldsymbol\alpha})+
+\tfrac12\operatorname{tr}
+\{\nabla^2h(\widehat{\boldsymbol\alpha})\boldsymbol\Sigma\}.
+\]
+These moments enter the Gaussian state and augmentation updates. Scale and
+skewness remain dependent within each channel's Laplace factor, while factors
+are separated across channels and from the state trajectory.
+
+One outer iteration consists of four operations: (i) filter and smooth the
+stacked Gaussian state using expected observation precisions and offsets;
+(ii) update the positive generalized inverse-Gaussian augmentation variables;
+(iii) update the positive truncated-normal augmentation variables; and (iv)
+optimize each channel's scale--skewness block and recompute its Delta moments.
+The evidence lower bound, state moments, scale moments, and skewness moments
+are monitored after required minimum iteration counts. Forecast-member
+observations use the same observation-level updates with their active source
+selector. This description fixes the posterior approximation used in the
+application without reproducing implementation-level update tables.
