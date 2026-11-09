@@ -509,3 +509,19 @@ next-action section of the controlling plan were reconciled with the executed
 work and now give an evidence-preserving continuation protocol. No thesis
 prose, equation, result, bibliography, figure, table, appendix, research
 source, or compiled PDF was changed.
+
+2026-11-09: AI assistance read Bruno Sansó's new detailed-review message,
+downloaded the 58.8 MB annotated thesis from its time-limited Apple Mail Drop
+link, stored it only in the ignored local advisor-input directory, and recorded
+its SHA-256 hash. It inspected all 36 annotation objects and compared the
+221-page reviewed copy with the current released dissertation. The resulting
+planning supplement accounts for 40 Chapter 4 comments through Section 4.4,
+65 Chapter 5 comments, and 11 Appendix E comments. It distinguishes requests
+already satisfied by the November 9 rewrite from open edits, scientific-source
+checks, decisions, and the unreviewed remainder of Chapter 4. The plan gives a
+recommended resolution and acceptance test for every normalized item, a
+definition-to-evidence redesign for Chapter 5, a bounded body/appendix split,
+contribution and literature controls, the existing academic-writing gate, and
+staged validation and Git handoff rules. No dissertation chapter, appendix,
+equation, result, bibliography, figure, table, manifest, source repository,
+computation, or compiled PDF was changed in this intake.

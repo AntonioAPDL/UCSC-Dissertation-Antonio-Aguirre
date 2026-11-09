@@ -1,11 +1,18 @@
 # FINAL controlling advisor-revision plan: November 2026 committee review
 
-Status: **implemented, validated, and released to `main`; one evidence-bound
-advisor item remains waiting**. This document was the controlling execution
-plan for the revision and now also records how the completed work is to be
-continued. The item-level source of truth is
+Status: **the first advisor revision was implemented and released; Bruno's
+later detailed review is received, itemized, and not yet implemented**. This
+document was the controlling execution plan for the first revision and now
+also records how the completed work is to be continued. The item-level source of truth is
 `docs/advisor-comments-ledger-20261109.md`; the original advisor files remain
 ignored local evidence.
+
+The controlling supplement for the new evidence is
+`docs/bruno-revision-integration-plan-20261109.md`. It accounts for all 36
+annotated pages and 116 normalized actions, distinguishes comments already
+satisfied by current `main` from unresolved work, and records that Bruno's
+Chapter 4 review ends at Section 4.4. Where this historical plan says that the
+annotation had not arrived, the new supplement supersedes that statement.
 
 ### Implementation closeout and continuation state
 
@@ -21,33 +28,31 @@ describe the planning date, not the current repository state.
 | WP1: chapter and appendix order | Complete | `6f7543e` |
 | WP2: Corrected-3 hydrology conversion | Complete | `a840a78`, `3d3c346`, `7b0a7e7` |
 | WP3: software reduction | Complete | `d9cebb7` |
-| WP4: Bruno Chapter 4 annotation | Waiting on evidence | No detailed annotation has arrived; bounded source-led Chapter 4 revision is `a532e3b` |
+| WP4: Bruno Chapter 4 annotation | Received through Section 4.4; planned | Ten annotated pages; `B4-001`--`B4-040` in the Bruno supplement; no new manuscript correction yet |
 | WP5: introduction | Complete | `9174f32` |
-| WP6: Chapter 5 decision and revision | Complete; full four-project release retained | `63ccfe6` |
+| WP6: Chapter 5 decision and first revision | Detailed review reopened bounded work | Prior revision `63ccfe6` remains useful; 65 Chapter 5 and 11 Appendix E actions are planned in the Bruno supplement |
 | WP7: abstract, attribution, disclosure, and synthesis | Complete | `d2e56b9` |
 | WP8: validation and GitHub handoff | Complete | `8da8e45`, `c02299e` |
 
-The accepted release contains 184 US-Letter pages and passed the 19-test
-release gate against fixed audit clones. Local `main`, `origin/main`, and the
-directly queried GitHub branch were equal at `c02299e` when released. A resumed
-check on 9 November 2026 again found zero Git divergence and only the original
-three-message Gmail thread: Raquel's two attachments, Bruno's sequencing
-message without an attachment, and the candidate's reply. Therefore no
-received correction was lost when the session stopped.
+The current accepted release contains 183 US-Letter pages and passed the
+19-test release gate against fixed audit clones. Before this intake, local
+`main` and `origin/main` were equal at
+`11984bfb89b1df1ca882bf7759b605719df4cd0d`. Bruno's later message and
+annotated PDF are new evidence relative to that release; no claim is made that
+the current manuscript implements them.
 
 Two actions remain deliberately separate from the completed manuscript work:
 
-1. When Bruno's detailed Chapter 4 annotation arrives, preserve the file
-   outside Git, record its hash, expand `B-02` into itemized requirements, and
-   revise from the released `main` on a new branch. Do not infer comments from
-   the earlier sequencing email or revise against an imagined annotation.
+1. Execute the received Bruno review only after the itemized plan is approved.
+   The ignored file, hash, coverage boundary, 116 action items, source checks,
+   work-package order, and acceptance gates are now recorded in the supplement.
 2. Pull GitHub `main` into Overleaf, compile there, and compare page count and
    blocking diagnostics. A successful GitHub push is not evidence that this
    independent handoff occurred.
 
-This is the optimal stopping boundary. Further unsourced rewriting would risk
-changing a validated chapter without advisor evidence, whereas waiting for the
-actual annotation preserves both traceability and the clean released baseline.
+This planning branch is the current stopping boundary. The evidence is frozen
+and the response plan is complete, but no Chapter 4, Chapter 5, or Appendix E
+prose has been changed in response to the new annotation.
 
 **Mandatory writing notice:** no manuscript work package may begin or close
 without the source-fidelity, academic-writing, anti-formulaic-prose, and
@@ -745,8 +750,8 @@ fluency alone.
 
 ### WP0 — Freeze the revision inputs
 
-- Confirm that no newer advisor attachment or Bruno comment file supersedes
-  the 9 November intake.
+- Confirm at the start of implementation that no later advisor attachment
+  supersedes Bruno's detailed 9 November annotated review.
 - Verify the version and hash of the two writing-style profiles and record any
   later author-supplied replacement before prose editing begins.
 - Fetch Corrected-3 and record a new commit only if the author explicitly says
@@ -853,6 +858,13 @@ contributions without repeating Chapter 2 and without assuming extensive R
 knowledge.
 
 ### WP4 — Integrate Bruno's Chapter 4 comments
+
+**Current addendum:** the annotated review has now arrived and covers Chapter
+4 only through Section 4.4, together with detailed Chapter 5 and Appendix E
+comments. The evidence identity, 116 itemized actions, revised execution order,
+and validation gates are in
+`docs/bruno-revision-integration-plan-20261109.md`. The prospective bullets
+below are retained as the historical intake rule.
 
 - Ingest Bruno's actual annotated file or message before editing.
 - Freeze its hash and add itemized entries to the ledger.
@@ -1080,7 +1092,8 @@ The revision is complete only when all of the following are true:
   email items, and ten candidate controls) is marked implemented, explicitly
   deferred by decision, or waiting on named evidence, with a commit/release
   reference;
-- Bruno's future annotation receives its own item count and coverage audit;
+- Bruno's received annotation retains its 116-item count and complete
+  36-page coverage audit through implementation;
 - Corrected-3 is the current hydrology authority everywhere, while Corrected-2
   remains only as documented historical lineage;
 - all retained chapter, display, appendix, and numerical claims have current
@@ -1100,28 +1113,21 @@ The revision is complete only when all of the following are true:
 
 ## 9. Next action
 
-Do not repeat WP0--WP8 or rewrite the released chapters speculatively. The next
-repository edit should begin only when new evidence exists. For Bruno's
-detailed Chapter 4 review, use this sequence:
+Do not repeat WP0--WP8 or rewrite the released chapters speculatively. Bruno's
+new evidence has now been read, stored in the ignored advisor-input directory,
+hash-identified, compared with current `main`, and normalized into the 116-item
+supplement. No manuscript correction has been made.
 
-1. recheck the complete Gmail thread and read the new message and attachment;
-2. store the original attachment in the ignored advisor-input directory,
-   record its SHA-256 hash, and preserve the reviewed thesis identity;
-3. create a new branch from the then-current, clean `main` after fetching and
-   checking GitHub divergence;
-4. extend `B-02` into one ledger row per comment, with a proposed statistical
-   resolution and acceptance evidence before editing Chapter 4;
-5. compare each requested change with the current Q--DESN authority and the
-   released chapter, resolving scientific-source conflicts explicitly;
-6. update only affected chapter, appendix, contribution, citation, display,
-   and provenance records; apply the Section 4.13 writing gate;
-7. run fast, chapter, and release validation, inspect all affected rendered
-   pages, and present the response matrix for candidate review; and
-8. commit by coherent correction unit, merge without force only after review,
-   push `main`, verify the remote identifier, and repeat the deliberate
-   Overleaf handoff.
+If that supplement is approved, the next work begins with WP-B0 and WP-B1 in
+`docs/bruno-revision-integration-plan-20261109.md`: verify the fixed scientific
+sources, construct the response matrix, and resolve Chapter 4 definitions
+through Section 4.4. Chapter 5 follows only after its conceptual and technical
+dependencies are checked. Commit by coherent correction unit; run fast,
+chapter, and release validation; inspect every affected page; and merge/push
+without force only after explicit authorization. The Overleaf pull and compile
+remain a separate handoff.
 
-Until that evidence arrives, the useful next action is the independent
-Overleaf pull and compilation of `main`. If Overleaf reports a difference,
-preserve its edits and build log before reconciling; do not use a force pull or
-overwrite an uninspected Overleaf change.
+Independently, the currently released `main` may still be pulled and compiled
+in Overleaf. If Overleaf reports a difference, preserve its edits and build log
+before reconciling; do not use a force pull or overwrite an uninspected
+Overleaf change.

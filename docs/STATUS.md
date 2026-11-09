@@ -1,5 +1,32 @@
 # Project status
 
+## 2026-11-09 Bruno detailed review intake and implementation plan
+
+Bruno Sansó's annotated committee copy was received in the existing Gmail
+thread and downloaded from its Apple Mail Drop link to the ignored local
+advisor-input directory. The 58,778,165-byte, 221-page PDF has SHA-256
+`4824065866f8a60c547339e1349b2adeca23a4b459badece319d7395e183d035`.
+It contains exactly 36 non-link annotation objects: ten pages covering Chapter
+4 through Section 4.4, twenty-one pages covering Chapter 5, and five pages in
+Appendix E. Bruno explicitly did not finish Chapter 4 beyond Section 4.4.
+
+The new controlling supplement is
+`docs/bruno-revision-integration-plan-20261109.md`. It normalizes every
+annotated page into 116 actions: 40 Chapter 4 items, 65 Chapter 5 items, and 11
+Appendix E items. Each item has a current-state disposition, recommended
+resolution, and acceptance criterion. The audit compares the 221-page reviewed
+copy with current `main` at
+`11984bfb89b1df1ca882bf7759b605719df4cd0d`; it preserves high-level
+corrections already satisfied by the November 9 rewrite and identifies the
+remaining notation, theorem, generalized-Bayes, Dirichlet-process,
+calibration, validation, contribution, and appendix work.
+
+No chapter, appendix, bibliography, figure, table, provenance manifest, or
+compiled thesis artifact changed in this intake. The original review PDF and
+rendered annotation pages remain ignored and local. The next action, if this
+plan is approved, is to construct the item response matrix and resolve the
+source-verification items before editing Chapter 4 through Section 4.4.
+
 ## 2026-11-09 final academic-style polish release validated
 
 The complete dissertation received a second bounded prose audit against both
