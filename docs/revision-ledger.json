@@ -83,7 +83,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "eb7cc5d089fe79d3e307d14f0aa63ee8dad88fa590808343a4e2014425a7b13c",
+      "current_sha256": "9f580a29d6fb2cd8db96e95760e28fdd2a766573afa1232fded0ba1cee03beee",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -94,7 +94,8 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-ADVISOR-MTI-20261109"
       ]
     },
     {
@@ -872,8 +873,20 @@
         "chapters/01-introduction.tex"
       ],
       "summary": "Rewrites the introduction around the four statistical problems and their distinct contributions, defines the inferential targets and evaluation criteria needed by later chapters, states the actual future-information conditions, and replaces repeated chapter summaries with a single dissertation roadmap.",
-      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/contribution-dossiers-20261109.md",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md",
       "validation": "Contribution and terminology review, clean TeX build, reference diagnostics, PDF metadata checks, and rendered inspection of all introduction pages."
+    },
+    {
+      "id": "REV-ADVISOR-MTI-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/05-research-d.tex",
+        "docs/display-ledger.json",
+        "docs/accessibility-ledger.json"
+      ],
+      "summary": "Reorganizes the MTI chapter around the interval-placement problem, inherited residual-product criterion, mean-preserving characterization, tilt family, calibrated tolerance action, independent evidence, and explicitly proposed extensions; removes peripheral approximation diagnostics and calculus not used by the selected procedure.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch05-mti.json",
+      "validation": "Fixed-source contribution review, structural and editorial ledgers, clean TeX build, terminology review, PDF diagnostics, and rendered inspection of the chapter argument and retained displays."
     }
   ]
 }

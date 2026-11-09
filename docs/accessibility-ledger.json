@@ -87,14 +87,6 @@
     },
     {
       "source_path": "chapters/05-research-d.tex",
-      "graphic": "figures/ch05-mti/generated/fig03_mean_tilt_cf_anchors.png",
-      "figure_label": "rqr2026:fig:mean-tilt-cf-anchors",
-      "alt_text": "Cornish--Fisher recovery-tilt approximation. For content c=0.80 , the solid curves are the population window-to-tilt map and width profile from the left-skewed illustration. Filled markers are the exact population MPI, ET, and SH tilts. Open markers are the first-order Cornish--Fisher approximations computed from true population skewness. The display diagnoses a population approximation for initialization and external tilt selection. Data-driven tilt estimation, MCMC evidence, and response prediction are separate empirical tasks.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
       "figure_label": "rqr2026:fig:tolerance-validation-primary",
       "alt_text": "Four panels compare independent-sample content-attainment rates at n=50, 100, 500, and 1000 for the feasible target contents. Green, pink, and black vertical segments give the ranges across the eight simulation distributions for MTI, Young--Mathew, and Wilks, respectively. The vertical scale runs from 0.85 to 1.00, and a horizontal dashed line marks the nominal tolerance confidence 0.95. Wilks is at or near 1.00 in several cells; the MTI and Young--Mathew ranges lie closer to 0.95.",

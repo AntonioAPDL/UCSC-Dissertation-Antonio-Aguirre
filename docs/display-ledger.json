@@ -231,10 +231,10 @@
       "type": "figure",
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 508,
-      "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "disposition": "OMIT",
+      "claim_role": "first-order recovery-tilt approximation retained in the source manuscript",
+      "rationale": "The approximation is not used by the calibrated tolerance procedure and distracts from the chapter's population identification and validation argument.",
+      "status": "ADVISOR_REVISION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -315,10 +315,10 @@
       "type": "table",
       "source_file": "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
       "baseline_line": 4,
-      "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "disposition": "OMIT",
+      "claim_role": "diagnostic study of a first-order approximation retained in the source manuscript",
+      "rationale": "The table evaluates an optional initialization approximation rather than a thesis-level contribution or a claim used in the selected procedure.",
+      "status": "ADVISOR_REVISION",
       "implementation_status": "IMPLEMENTED"
     },
     {
