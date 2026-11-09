@@ -29,6 +29,17 @@ should reorder the hydrology/software chapters, reconcile hydrology against
 Corrected-3 plus the advisor overlay, and then shorten the software chapter
 before Chapter 1 is rewritten.
 
+The plan and ledger now specify a recommended resolution and acceptance test
+for every recorded advisor item. They also add a contribution-dossier phase
+covering the fixed current authorities, named prior versions, central
+antecedents, candidate-role evidence, and project-specific evidence limits.
+The hydrology work package explicitly combines Corrected-3's current science
+with only nonsuperseded exposition from Corrected-2. A statistical-style rubric
+requires standard terminology and prohibits internal workflow, promotional AI,
+or engineering framing while preserving scientifically necessary software and
+Q--DESN terminology. These are planning controls only; manuscript content is
+still unchanged.
+
 ## 2026-11-07 committee-copy finalization validated
 
 The six approved committee-copy actions are complete. A formal scholarly

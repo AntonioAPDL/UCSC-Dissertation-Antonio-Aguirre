@@ -30,6 +30,26 @@ manifest, or compiled dissertation was changed in this pass. No research
 computation was rerun. Nothing was pushed, merged, or synchronized with
 Overleaf.
 
+### 1.1 Storage and synchronization state
+
+The advisor inputs and the planning records deliberately have different
+storage boundaries:
+
+- the two original advisor PDFs and their extracted text are private local
+  inputs under the ignored `audit-inputs/advisor-review-20261109/` directory;
+- this plan, the correction ledger, the status entry, and the assistance-log
+  entry are committed only on local branch
+  `editorial/advisor-revision-audit-20261109` at `71eda897...`;
+- GitHub `main`, local `main`, and `origin/main` remain equal at
+  `07b8f0d0...`; and
+- the planning branch does not exist on the remote.
+
+Accordingly, revision work can proceed locally without importing the advisor
+PDFs into Git. The safest implementation branch should be created from the
+local planning branch (or should cherry-pick its planning commit) so the ledger
+travels with the edits. Only reviewed thesis source and public documentation
+should later be merged and pushed; the ignored advisor files must remain local.
+
 ## 2. Frozen evidence and exact baselines
 
 | Evidence | Frozen identity | Role |
@@ -197,6 +217,106 @@ Sunspots preserves the DQLM/exDQLM computation comparison, and the static
 simulation preserves the otherwise hidden shrinkage-prior contribution. This
 choice should be confirmed before implementation.
 
+### 4.6 Contribution audit and presentation standard
+
+The dissertation's contribution case is a primary scholarly requirement, not
+an ornamental front-matter paragraph. It must be reconstructed from the
+authoritative manuscripts, prior versions, directly relevant repositories,
+and central antecedent literature before Chapter 1 is rewritten.
+
+The audit is bounded to evidence that can change a contribution claim:
+
+| Project | Current authority | Prior/related evidence to compare | Antecedent boundary that must remain explicit |
+| --- | --- | --- | --- |
+| Hydrology | Corrected-3 `c0bfccaa...` | Corrected-2 `1272bfc...`, publication-package/revision records, San Lorenzo reproducibility source, `exdqlm` 1.1.0 role | exAL and exDQLM foundations are inherited; the project contribution is source-aware correction/synthesis, full-distribution synthesis, model-specific VB development, and the bounded hydrologic evaluation |
+| `exdqlm` | JSS article `98cec593...`; package support `e51045a...` | earlier article/package version records and the hydrology dependency graph | Yan et al. supply exAL/static foundations; Barata et al. supply exDQLM, original MCMC/ISVB, and transfer foundations |
+| Q--DESN | thesis authority `aa613b05...` | legacy Version-2 only for lineage and superseded-claim checks | ESN/DESN feature construction and quantile-regression antecedents must be credited; the project contribution concerns the Bayesian quantile formulations, computation, and evaluated applications |
+| MTI | RQR `4223c6a...`; extensions `f345d946...` | earlier tolerance-procedure language only to identify superseded claims | residual-product, generalized-Bayes, and tolerance-interval antecedents must be separated from the mean-preserving characterization, tilt family, calibrated procedure, and proposed extensions |
+
+Do not audit the many unrelated or exploratory worktrees merely because they
+exist. Inspect an older branch or related repository only when an authority
+file, manuscript, response document, or central claim identifies it as needed
+to establish lineage, authorship, or a scientific difference.
+
+For each project, prepare a contribution dossier with six fields:
+
+1. **Statistical problem and literature gap.** What inferential or
+   computational problem was not adequately addressed by the cited literature?
+2. **Inherited foundation.** Which models, distributions, algorithms, or
+   criteria were already available, and who developed them?
+3. **Distinct project contribution.** What model, computational method,
+   inferential construction, software capability, or empirical design is added?
+4. **Candidate-specific evidence.** What do author lists, package metadata,
+   Git history, contribution statements, response documents, and confirmed
+   collaborator records establish about Antonio de Leon's role?
+5. **Evidence supporting the contribution.** Is support mathematical,
+   computational, simulation-based, or empirical, and under what design?
+6. **Boundary.** What is not proved, not evaluated, inherited, proposed, or
+   still work in progress?
+
+Three different statements must then be written without duplication:
+
+- a concise dissertation-level contribution map early in Chapter 1;
+- a precise project-level contribution paragraph near the beginning of each
+  research chapter; and
+- a candidate/collaborator attribution statement in the acknowledgments.
+
+Project-level contributions may be stated firmly when the manuscript supports
+them. Candidate-specific task allocation must not be inferred from first or
+corresponding authorship alone. The current records establish that Antonio de
+Leon is first author on all four project lines, corresponding author on the
+hydrology article, and a package author for `exdqlm`; detailed conceptual,
+theoretical, computational, empirical, and writing allocations remain to be
+confirmed. Until confirmed, use collective project language rather than weak
+or vague prose, and do not replace missing evidence with excessive caveats.
+
+For the current Chapter 3 / proposed Chapter 2 hydrology project, the
+contribution paragraph should be organized around the three claims already
+stated in Corrected-3:
+
+1. a shared dynamic quantile process with source-specific discrepancies for
+   gauge observations, retrospective products, and issued ensembles with
+   different horizons;
+2. synthesis of full predictive distributions from separate quantile fits,
+   including their tails, into a nondecreasing marginal quantile function; and
+3. a Laplace--Delta variational method with joint non-conjugate scale and
+   skewness updates for the extended DQLM.
+
+The five-origin San Lorenzo analysis is evidence for these developments under
+the stated products, horizons, and evaluation design; it is not itself a
+universal methodological claim. Corrected-3 should provide the main prose and
+current numerical evidence, while Corrected-2 is used only to recover useful
+exposition that is scientifically consistent and not superseded.
+
+### 4.7 Thesis-language and statistical-style standard
+
+All revised prose must use conventional statistical terminology and a
+committee-facing thesis voice. Apply these controls paragraph by paragraph:
+
+- state the statistical object, assumptions, inferential target, method, and
+  evidence directly;
+- replace internal workflow words such as “pipeline,” “authority chain,”
+  “evidence boundary,” “target-first,” “frozen procedure,” and “deployment”
+  when a standard statistical statement conveys the meaning;
+- avoid promotional artificial-intelligence or engineering framing;
+- retain software, algorithm, neural-network, echo-state-network, and
+  computational terminology only where it names an actual method or research
+  contribution, and define it statistically;
+- do not use repository, branch, manifest, implementation, or validation-log
+  language in reader-facing prose unless reproducibility genuinely requires
+  it;
+- prefer “method,” “model,” “estimator,” “posterior approximation,”
+  “predictive distribution,” “simulation design,” and “empirical comparison”
+  over vague system language;
+- state advantages before limitations without overstating novelty or evidence;
+  and
+- preserve negative and mixed findings when they qualify the contribution.
+
+The final style audit must scan the compiled dissertation, not only the TeX
+source, and manually review every flagged occurrence in context. Necessary
+terms in the `exdqlm` software chapter and Q--DESN methodology are not removed
+mechanically.
+
 ## 5. Ordered implementation work packages
 
 ### WP0 — Freeze the revision inputs
@@ -211,6 +331,25 @@ choice should be confirmed before implementation.
 Acceptance: exact source commits, attachment hashes, and dirty states are
 recorded; no original research checkout has changed.
 
+### WP0A — Build the contribution dossiers before drafting
+
+- Read the contribution, novelty, discussion, acknowledgment, and limitation
+  sections of every current authority listed in Section 4.6.
+- Compare the current authorities with only the named prior versions and
+  directly relevant antecedents.
+- Reconcile the existing research audit, source manifest, claim ledger,
+  package metadata, and revision history.
+- Prepare one source-cited antecedent/contribution/evidence matrix per project.
+- Present the candidate-specific role fields for confirmation rather than
+  filling them by inference.
+- Draft a one-paragraph contribution statement for each project and a concise
+  dissertation-level synthesis, but do not insert them into the thesis until
+  the scientific wording has been reviewed.
+
+Acceptance: every contribution phrase identifies its evidence, inherited
+foundation, support level, and limitation; no contribution rests only on a
+repository name, commit date, or author order.
+
 ### WP1 — Reorder Chapters 2 and 3 without rewriting content
 
 - Change body and corresponding appendix input order.
@@ -224,15 +363,20 @@ scientific wording or number changes in this work package.
 ### WP2 — Rebuild the hydrology chapter from Corrected-3 plus the advisor overlay
 
 1. Make a section/claim/display crosswalk from Corrected-3 to the new Chapter 2.
-2. Reconcile the model and notation before touching results.
-3. Apply every `C3-*` item in the ledger, including those still partial in the
+2. Compare Corrected-3 with Corrected-2 paragraph by paragraph. Retain older
+   exposition only when it improves thesis readability, agrees with the new
+   scientific authority, and is not superseded by a current result or limit.
+3. Reconcile the model and notation before touching results.
+4. Establish the three-part contribution statement in Section 4.6 against the
+   antecedent map and candidate-role evidence.
+5. Apply every `C3-*` item in the ledger, including those still partial in the
    new article.
-4. Import/adapt the three principal result tables and three principal figures,
+6. Import/adapt the three principal result tables and three principal figures,
    subject to page and redundancy review.
-5. Keep only essential technical material in the hydrology appendix.
-6. Reconcile numerical claims across the chapter, abstract, introduction,
+7. Keep only essential technical material in the hydrology appendix.
+8. Reconcile numerical claims across the chapter, abstract, introduction,
    synthesis, bibliography, manifests, and provenance ledgers.
-7. Run source-hash, label, citation, build, log, and rendered-page checks.
+9. Run source-hash, label, citation, build, log, and rendered-page checks.
 
 Acceptance: every retained hydrology claim maps to Corrected-3; all advisor
 items have evidence; the chapter is readable without the software chapter;
@@ -270,7 +414,8 @@ actual review evidence.
   statistical language and explain why each matters.
 - describe existing methods and gaps;
 - state the dissertation's contributions early, distinguishing antecedents
-  from the candidate's collaborative work;
+  from the candidate's collaborative work and using the approved WP0A
+  contribution dossiers;
 - connect chapters by their statistical questions, not by a generic evidence
   framework;
 - remove the evidence-hierarchy block, repeated organization material, and the
