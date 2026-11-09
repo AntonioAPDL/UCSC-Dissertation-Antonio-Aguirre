@@ -1,5 +1,27 @@
 # Project status
 
+## 2026-11-09 continuation audit after interrupted session
+
+The advisor-revision work was reconstructed from Git history, the controlling
+plan, the itemized correction ledger, the release record, and the Gmail review
+thread. It had reached a complete release rather than stopping during a
+manuscript edit. The working tree was clean; local `main` and `origin/main`
+were equal at `c02299e92896b0731c81cd469b396718edfe8313`; and the fast gate
+again passed all 19 tests.
+
+The Gmail thread still contains exactly Raquel's attachment message, Bruno's
+sequencing message without an attachment, and the candidate's reply. No later
+detailed Chapter 4 annotation was found. Consequently `B-02` remains
+`WAITING`, and no speculative Chapter 4 edit is authorized by the available
+evidence. The controlling plan now contains an execution closeout, exact
+work-package dispositions, and the intake procedure to use when Bruno's notes
+arrive. No reader-facing dissertation file changed in this continuation audit.
+
+The immediate handoff remains an independent pull and compilation of GitHub
+`main` in Overleaf. The next scientific revision begins from the released
+baseline only after a new advisor comment or an explicitly authorized source
+update is received.
+
 ## 2026-11-09 advisor revision released to `main`
 
 The advisor-directed revision is complete on

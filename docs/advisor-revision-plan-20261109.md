@@ -1,10 +1,53 @@
 # FINAL controlling advisor-revision plan: November 2026 committee review
 
-Status: **final planning and evidence audit complete; manuscript corrections
-not started**. This document supersedes the earlier versions of this plan and
-controls the next revision cycle. The item-level source of truth is
+Status: **implemented, validated, and released to `main`; one evidence-bound
+advisor item remains waiting**. This document was the controlling execution
+plan for the revision and now also records how the completed work is to be
+continued. The item-level source of truth is
 `docs/advisor-comments-ledger-20261109.md`; the original advisor files remain
 ignored local evidence.
+
+### Implementation closeout and continuation state
+
+The prospective language in Sections 0--8 records the frozen baseline and the
+decisions under which the work was executed. It is retained for auditability;
+statements there that the corrections had not started or had not been pushed
+describe the planning date, not the current repository state.
+
+| Work package | Current disposition | Principal commit or evidence |
+| --- | --- | --- |
+| WP0: evidence freeze | Complete | `71eda89`--`1e2d849`; advisor PDFs remain ignored and hash-identified |
+| WP0A: contribution dossiers | Complete | `73e69e9` |
+| WP1: chapter and appendix order | Complete | `6f7543e` |
+| WP2: Corrected-3 hydrology conversion | Complete | `a840a78`, `3d3c346`, `7b0a7e7` |
+| WP3: software reduction | Complete | `d9cebb7` |
+| WP4: Bruno Chapter 4 annotation | Waiting on evidence | No detailed annotation has arrived; bounded source-led Chapter 4 revision is `a532e3b` |
+| WP5: introduction | Complete | `9174f32` |
+| WP6: Chapter 5 decision and revision | Complete; full four-project release retained | `63ccfe6` |
+| WP7: abstract, attribution, disclosure, and synthesis | Complete | `d2e56b9` |
+| WP8: validation and GitHub handoff | Complete | `8da8e45`, `c02299e` |
+
+The accepted release contains 184 US-Letter pages and passed the 19-test
+release gate against fixed audit clones. Local `main`, `origin/main`, and the
+directly queried GitHub branch were equal at `c02299e` when released. A resumed
+check on 9 November 2026 again found zero Git divergence and only the original
+three-message Gmail thread: Raquel's two attachments, Bruno's sequencing
+message without an attachment, and the candidate's reply. Therefore no
+received correction was lost when the session stopped.
+
+Two actions remain deliberately separate from the completed manuscript work:
+
+1. When Bruno's detailed Chapter 4 annotation arrives, preserve the file
+   outside Git, record its hash, expand `B-02` into itemized requirements, and
+   revise from the released `main` on a new branch. Do not infer comments from
+   the earlier sequencing email or revise against an imagined annotation.
+2. Pull GitHub `main` into Overleaf, compile there, and compare page count and
+   blocking diagnostics. A successful GitHub push is not evidence that this
+   independent handoff occurred.
+
+This is the optimal stopping boundary. Further unsourced rewriting would risk
+changing a validated chapter without advisor evidence, whereas waiting for the
+actual annotation preserves both traceability and the clean released baseline.
 
 **Mandatory writing notice:** no manuscript work package may begin or close
 without the source-fidelity, academic-writing, anti-formulaic-prose, and
@@ -1057,7 +1100,28 @@ The revision is complete only when all of the following are true:
 
 ## 9. Next action
 
-Wait for explicit authorization to implement. On authorization, first check
-for Bruno's promised detailed comments and any newer Corrected-3 commit, then
-execute WP0–WP3 in order. Do not begin by rewriting Chapter 1: its contribution
-map and chapter references depend on the completed Chapter 2/3 revision.
+Do not repeat WP0--WP8 or rewrite the released chapters speculatively. The next
+repository edit should begin only when new evidence exists. For Bruno's
+detailed Chapter 4 review, use this sequence:
+
+1. recheck the complete Gmail thread and read the new message and attachment;
+2. store the original attachment in the ignored advisor-input directory,
+   record its SHA-256 hash, and preserve the reviewed thesis identity;
+3. create a new branch from the then-current, clean `main` after fetching and
+   checking GitHub divergence;
+4. extend `B-02` into one ledger row per comment, with a proposed statistical
+   resolution and acceptance evidence before editing Chapter 4;
+5. compare each requested change with the current Q--DESN authority and the
+   released chapter, resolving scientific-source conflicts explicitly;
+6. update only affected chapter, appendix, contribution, citation, display,
+   and provenance records; apply the Section 4.13 writing gate;
+7. run fast, chapter, and release validation, inspect all affected rendered
+   pages, and present the response matrix for candidate review; and
+8. commit by coherent correction unit, merge without force only after review,
+   push `main`, verify the remote identifier, and repeat the deliberate
+   Overleaf handoff.
+
+Until that evidence arrives, the useful next action is the independent
+Overleaf pull and compilation of `main`. If Overleaf reports a difference,
+preserve its edits and build log before reconciling; do not use a force pull or
+overwrite an uninspected Overleaf change.
