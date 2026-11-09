@@ -17,7 +17,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "b913b61d48bc3d3ddf21353b0ecb48aa29fa77a347e9a099505162b64ca53a6b",
+      "current_sha256": "7c40506e4185adc41a77b16a8e5b95f838b52bf3532c923db9962d3fa7733af2",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -29,7 +29,8 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-FINAL-DISSERTATION-POLISH-20261028",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-ADVISOR-SOFTWARE-20261109"
       ]
     },
     {
@@ -831,6 +832,18 @@
       "summary": "Rebuilds the hydrology application from the author-designated Corrected-3 manuscript, states its contribution relative to DQLM and forecast-postprocessing antecedents, replaces obsolete results with the current five-origin evidence, and restricts the technical appendix to claim-relevant comparisons and reproducibility-critical definitions.",
       "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch03-environ.json",
       "validation": "Pinned source hashes, manuscript-import validation, structural and editorial ledgers, clean TeX build, PDF diagnostics, and rendered inspection are required before merge."
+    },
+    {
+      "id": "REV-ADVISOR-SOFTWARE-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/02-research-a.tex",
+        "docs/accessibility-ledger.json",
+        "docs/display-ledger.json"
+      ],
+      "summary": "Recasts the software chapter around its distinct statistical-computing contribution, removes the repeated exAL derivation and duplicated Big Tree analysis, defines the static regularized-horseshoe model before its example, and retains three analyses with nonoverlapping evidentiary roles.",
+      "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/research-audit.md; docs/imports/ch02-exdqlm.json",
+      "validation": "Fixed-source contribution audit, structural and editorial ledgers, clean TeX build, PDF diagnostics, and rendered inspection are required before merge."
     }
   ]
 }

@@ -31,30 +31,6 @@
     },
     {
       "source_path": "chapters/02-research-a.tex",
-      "graphic": "figures/ch02-exdqlm/ex3data.png",
-      "figure_label": "exd:fig:ex3data",
-      "alt_text": "Example 3: Big Tree water flow. Top: observed average monthly water flow at the Big Tree gauge of the San Lorenzo River in Santa Cruz County, CA, plotted on the log scale. Bottom: standardized monthly values of the Northern Oscillation Index (NOI) and Atlantic Multidecadal Oscillation (AMO) index. The displayed modeling window spans January 1987 through December 2022, and the vertical dashed line marks the beginning of the held-out forecast window in July 2021.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/02-research-a.tex",
-      "graphic": "figures/ch02-exdqlm/ex3quantcomps.png",
-      "figure_label": "exd:fig:ex3quant",
-      "alt_text": "Example 3: Big Tree water flow. Top: posterior mean estimates and 95 percent CrIs of the fitted 0.15 quantile from the no-covariate baseline M0 (purple), direct-regression model MREG (blue), and transfer-function model MTF (green), plotted with the data (grey) from 2016 to 2020. Middle: posterior mean estimates and 95 percent CrIs of the combined seasonal components implied by the annual, semiannual, and low-frequency harmonics. Bottom: posterior mean estimates and 95 percent CrIs of the direct-regression contribution in MREG and the transfer-function contribution in MTF. The horizontal orange dotted lines are at zero for reference.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/02-research-a.tex",
-      "graphic": "figures/ch02-exdqlm/ex3forecast.png",
-      "figure_label": "exd:fig:ex3forecast",
-      "alt_text": "Example 3: Big Tree water flow. Held-out 18-month conditional forecast display from July 2021 through December 2022. The vertical dot-dashed line marks the forecast origin after the final training month, June 2021. Solid lines indicate posterior mean forecast quantiles and dotted lines indicate pointwise 95 percent CrIs for M0, MREG, and MTF. Held-out observations are shown as orange circles. The forecasts are conditional on the observed holdout-period NOI and AMO values.",
-      "description_source": "caption",
-      "status": "REVIEWED"
-    },
-    {
-      "source_path": "chapters/02-research-a.tex",
       "graphic": "figures/ch02-exdqlm/ex4static.png",
       "figure_label": "exd:fig:ex4static",
       "alt_text": "Example 4: sparse static exAL regression under the correlated Gaussian benchmark with the rhs ns prior. Black diamonds denote the true non-intercept coefficients, orange intervals denote LDVB 95 percent posterior intervals, and blue intervals denote MCMC 95 percent posterior intervals. Panels correspond to p_0 = 0.05, 0.25, and 0.50 .",
