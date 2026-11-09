@@ -93,7 +93,7 @@
       "source_display_ids": [],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
       "source_file_sha256_after": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
-      "destination_file_sha256_after": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+      "destination_file_sha256_after": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
       "current_treatment": "The superseded full MCMC and source-indexed update algorithms are recoverable from the historical baseline. The current appendix retains the conditional augmentation, joint Laplace--Delta factor, and reproducibility-critical update sequence; no matched full-model MCMC comparison is claimed."
     },
     {
@@ -117,7 +117,7 @@
       ],
       "source_file_sha256_before": "2c7746f38055f89cc20bcab4c67ea7f0311cffd6ea48b27c4bf9bd98f6fb58d4",
       "source_file_sha256_after": "b561fc664daed925293ee1f86da685580930cd58e87787d78c3318d1e92caa81",
-      "destination_file_sha256_after": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+      "destination_file_sha256_after": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
       "current_treatment": "The superseded source-parameter dumps and repeated origin figures are omitted. Current Corrected-3 evidence retains the origin-specific CRPS, component sensitivity, and discharge-scale comparisons that materially qualify the chapter claims."
     },
     {

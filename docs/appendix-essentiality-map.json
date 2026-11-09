@@ -532,7 +532,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:hydrology-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+      "implementation_commit": "3d3c346",
       "final_location": "app:hydrology-technical"
     },
     {
@@ -544,7 +544,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-mcmc",
       "status": "IMPLEMENTED",
-      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+      "implementation_commit": "3d3c346",
       "final_location": "app:hydrology-mcmc"
     },
     {
@@ -556,7 +556,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-vb",
       "status": "IMPLEMENTED",
-      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+      "implementation_commit": "3d3c346",
       "final_location": "app:hydrology-vb"
     },
     {
@@ -568,7 +568,7 @@
       "action": "REPLACE_WITH_BODY_EVIDENCE",
       "target_label": "",
       "status": "IMPLEMENTED",
-      "implementation_commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
+      "implementation_commit": "3d3c346",
       "final_location": "body evidence at the former bridge location"
     },
     {
@@ -3832,8 +3832,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -3886,8 +3886,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -3939,8 +3939,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -3992,8 +3992,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -4049,8 +4049,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -4104,8 +4104,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -4159,8 +4159,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -16428,8 +16428,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
@@ -16487,8 +16487,8 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "a840a7820a5bf1f41eb22e56fe9a6325785803ad",
-        "final_sha256": "7144dc711fb40640542aedaa9b463af77630117ba60cace4ecb60665a703077e",
+        "commit": "3d3c346",
+        "final_sha256": "e8b223fd007f67c0aa1411a29bbba7e1fe3090ee1f0acc48426ed47a11b72316",
         "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
       }
     },
