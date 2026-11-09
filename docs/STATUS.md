@@ -1,5 +1,34 @@
 # Project status
 
+## 2026-11-09 advisor revision intake and source audit
+
+The 9 November advisor review has been normalized into
+`docs/advisor-comments-ledger-20261109.md`, and the controlling implementation
+sequence is `docs/advisor-revision-plan-20261109.md`. The two original review
+PDFs are stored only in the ignored local `audit-inputs/` area with recorded
+SHA-256 hashes. The reviewed PDF contains 221 pages and is treated as the exact
+comment baseline rather than reconstructed from a local release.
+
+The thesis `main` branch was clean and fast-forward synchronized with
+`origin/main` at `07b8f0d0f2ee6362dc3c8030fbc2152e122f0216` before the planning
+branch was created. A separate clean audit clone established
+`AntonioAPDL/Evironmetrics----Corrected-3` commit
+`c0bfccaa7cec698c016626ee30187f18a56d495c` as the proposed new hydrologic
+scientific authority, superseding the dissertation's Corrected-2 source for
+future revision. The new article materially restructures and shortens the
+source, adds compact external-comparison and calibration evidence, and
+resolves or improves many of the hydrology comments; partial items remain
+explicit in the ledger.
+
+No advisor correction has been applied to the dissertation. No chapter,
+appendix, abstract, acknowledgment, display, bibliography, or provenance
+manifest changed in this intake. No research computation was rerun, and
+nothing was pushed, merged, or synchronized with Overleaf. Bruno's promised
+detailed Chapter 4/5 annotations remain outstanding. The next authorized work
+should reorder the hydrology/software chapters, reconcile hydrology against
+Corrected-3 plus the advisor overlay, and then shorten the software chapter
+before Chapter 1 is rewritten.
+
 ## 2026-11-07 committee-copy finalization validated
 
 The six approved committee-copy actions are complete. A formal scholarly

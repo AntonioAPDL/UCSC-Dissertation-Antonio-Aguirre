@@ -11,6 +11,19 @@ This log is a project practice, not a verified UCSC disclosure format. Confirm
 applicable program, university, publisher and coauthor requirements before
 writing any formal disclosure into the dissertation.
 
+2026-11-09: AI assistance verified the advisor review thread and the
+candidate's reply, downloaded the two advisor attachments to ignored local
+storage, recorded their hashes, and compared the exact 221-page review copy
+with the current dissertation release family. It fast-forward checked the
+clean thesis checkout, created a separate audit clone of the author-designated
+Corrected-3 hydrology repository at a fixed commit, reviewed its article,
+integrated appendices, release records, assets, and recent source history, and
+compared it with the former Corrected-2 authority and the current thesis. It
+prepared an itemized advisor ledger and a source-locked revision plan. It did
+not apply any advisor correction, change a scientific source, rerun research
+computation, modify chapter prose or displays, push, merge, or synchronize
+Overleaf.
+
 2026-10-08: After the author approved the final reader-first restructuring
 defaults and authorized implementation and synchronization, AI assistance
 moved existing technical article prose from Chapters 2--5 into connected
