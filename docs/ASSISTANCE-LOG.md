@@ -33,6 +33,15 @@ Corrected-2 exposition should be reconciled; and added a statistical-language
 rubric. It did not edit the dissertation manuscript or push the planning
 branch.
 
+2026-11-09: The candidate supplied an intended disclosure boundary: limited
+selected-code debugging, no independent implementation of the scientific
+analyses, no statistical-method or proof derivation, no scientific-literature
+search or evaluation, and prose assistance aimed at grammar and readability.
+AI assistance recorded this as a planning decision and proposed wording that
+also acknowledges the organizational, editorial, citation-consistency,
+document-tooling, provenance, and validation work already present in this log.
+No acknowledgment text or other dissertation source was changed.
+
 2026-10-08: After the author approved the final reader-first restructuring
 defaults and authorized implementation and synchronization, AI assistance
 moved existing technical article prose from Chapters 2--5 into connected

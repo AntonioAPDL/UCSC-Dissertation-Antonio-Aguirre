@@ -317,6 +317,55 @@ source, and manually review every flagged occurrence in context. Necessary
 terms in the `exdqlm` software chapter and Q--DESN methodology are not removed
 mechanically.
 
+### 4.8 AI-assistance disclosure: candidate statement and accuracy control
+
+The candidate has supplied the intended substantive boundary:
+
+- AI-assisted tools were used for selected code debugging, not for autonomous
+  or complete implementation of the scientific code or research analyses;
+- they were not used to formulate the statistical methodology or to derive
+  mathematical results or proofs;
+- they were not used to identify, select, or evaluate the scientific
+  literature; and
+- writing assistance was intended to improve grammar, clarity, and
+  readability rather than replace the candidate's scientific authorship.
+
+The final acknowledgment must also agree with the repository assistance log.
+That log records document organization, source/provenance auditing, citation
+and bibliography consistency checks, editorial restructuring, LaTeX/build
+tooling, and validation. These activities do not amount to scientific
+literature search, proof derivation, generation of research results, or
+independent implementation of the statistical analyses, but they are broader
+than grammar correction alone. Omitting them while saying “only debugging and
+grammar” would create an avoidable discrepancy.
+
+Use the following distinctions when finalizing the statement:
+
+| Excluded scientific use | Permitted supporting use that should not be confused with it |
+| --- | --- |
+| identifying, selecting, or evaluating scientific literature | checking citation keys, bibliography consistency, and formatting for sources already selected by the author/project manuscripts |
+| originating mathematical arguments or deriving proofs | checking notation, transcription, cross-references, and consistency against authoritative source manuscripts |
+| independently designing or implementing the statistical methods and analyses | limited debugging plus dissertation import, build, validation, and provenance tooling |
+| authoring the scientific contributions or interpretations | editorial suggestions concerning organization, grammar, clarity, consistency, and readability, all subject to author review |
+
+Recommended acknowledgment wording for later author/advisor review:
+
+> AI-assisted tools were used in a limited supporting role to help debug
+> selected code and to review the organization, grammar, clarity, consistency,
+> and readability of the dissertation. They were not used to formulate the
+> statistical methodology, derive mathematical results or proofs, identify or
+> evaluate the scientific literature, independently implement the research
+> analyses, or generate the reported results. The author reviewed and verified
+> all code changes, references, mathematical statements, analyses,
+> interpretations, and final text and takes responsibility for the content of
+> the dissertation.
+
+This wording is a planning draft, not implemented front matter. Before it is
+inserted, the candidate should confirm that “reviewed and verified all” is
+factually accurate and ask the advisors whether they prefer a shorter form.
+The disclosure should be direct and proportionate, without discussing the
+perceived reliability of AI systems or sounding defensive.
+
 ## 5. Ordered implementation work packages
 
 ### WP0 — Freeze the revision inputs
@@ -446,8 +495,11 @@ the advisors control the scholarly submission strategy.
 - Preserve manuscript and collaborator attribution in the acknowledgments and
   citations, revising the present acknowledgment so it no longer points to
   notices that have been removed.
-- Add an AI-use statement only after the candidate confirms its truthful scope
-  and the advisors approve the wording.
+- Reconcile the proposed AI-use statement in Section 4.8 with the assistance
+  log, obtain the candidate's factual confirmation, and use the concise
+  advisor-approved wording. Do not claim “coding/grammar only” while omitting
+  documented organizational, editorial, citation-consistency, or validation
+  support.
 - Rewrite the abstract only after the chapter order, contributions, and Chapter
   5 status are settled, as Raquel requested.
 - Reconcile the synthesis, contents, lists, and bibliography.
@@ -491,10 +543,11 @@ Only three decisions remain material:
 
 1. Confirm the recommended removal of the full Big Tree example from the
    software chapter, replacing it with a concise cross-reference.
-2. Describe the factual scope of AI assistance that should be disclosed
-   (for example: code, mathematical checking, bibliography work, structural
-   editing, and/or prose editing). The repository assistance log can support
-   drafting, but the candidate must approve the statement as accurate.
+2. Confirm the proposed disclosure wording in Section 4.8, especially that all
+   assisted changes, references, mathematical statements, analyses,
+   interpretations, and final text were personally reviewed and verified. The
+   scientific exclusions and intended limited role have now been supplied;
+   only factual reconciliation and final wording remain.
 3. Decide whether Chapter 5 belongs in the first revised submission after the
    WP2–WP5 schedule is known. This decision can intentionally remain deferred.
 

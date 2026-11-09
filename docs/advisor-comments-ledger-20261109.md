@@ -27,7 +27,7 @@ Status vocabulary:
 | G-01 | Present hydrology before software; make hydrology independent and remove repeated exposition. | OPEN | Compile the hydrology source before the software source, reorder their technical appendices, and make software refer back to the statistical model rather than redefining it. Keep physical filenames stable during the first pass to avoid provenance churn. | Intended PDF order; complete cross-reference audit; zero repeated distribution/model blocks without a documented purpose |
 | G-02 | State novelty, advantages, and reader value before criticism and future work in every chapter. | OPEN | Give each research chapter a problem–gap–contribution opening, then present evidence, and place limitations after the supported advantages. Preserve important negative findings without leading with them. | Opening-paragraph audit against contribution dossiers; advantages and evidence precede limitations |
 | G-03 | Remove chapter-opening technical-report/manuscript notices and retain attribution elsewhere. | OPEN | Delete the italic notices; move manuscript titles, collaborators, and appropriate citations to acknowledgments and bibliography; retain antecedent credit in the chapter where scientifically needed. | Zero compiled chapter-opening notices; complete acknowledgment/citation map |
-| G-04 | Explain whether and how AI was used. | DECISION | Draft one factual acknowledgment from the assistance log, covering the actual categories used; do not narrow it to “coding only” if structural editing, prose, bibliography, mathematical checking, or validation were also assisted. Obtain candidate approval and advisor/institutional review. | Candidate-approved wording consistent with the assistance log and applicable policy |
+| G-04 | Explain whether and how AI was used. | DECISION | Use the candidate-supplied boundary: limited selected-code debugging; no independent/full implementation of the scientific analyses; no statistical-method development, mathematical/proof derivation, scientific-literature identification/evaluation, or result generation; editorial support for organization, grammar, clarity, consistency, and readability. Distinguish mechanical citation/bibliography consistency from literature search and document/build tooling from research-code implementation. Use the proposed wording in Plan Section 4.8 after factual confirmation and advisor review. | Candidate confirms every clause, especially personal review/verification; wording agrees with the assistance log and applicable policy |
 
 ## Chapter 1
 
@@ -120,6 +120,26 @@ dissertation.
 | P-06 | Avoid artificial-intelligence and engineering framing. | Remove promotional/internal terms; retain Q--DESN, echo-state-network, software, and computational terms only when scientifically necessary and define them statistically. | Context-reviewed terminology report, not a blind deletion count |
 | P-07 | Preserve qualifications without underselling. | Present contribution and supporting result first, followed by the exact study or theorem boundary; do not begin contribution sections with defensive caveats. | Claim-order and tone review |
 | P-08 | Keep the thesis coherent after revision. | Reconcile chapter order, terminology, notation, contributions, abstract, acknowledgments, synthesis, appendices, citations, displays, and provenance in one final global pass. | Release validation matrix and rendered inspection |
+| P-09 | Make the AI disclosure accurate, proportionate, and nondefensive. | State the limited supporting uses and substantive exclusions directly; do not discuss AI reliability, minimize documented editorial/tooling work, or imply that AI originated the research. | Candidate/advisor-approved statement reconciled with the assistance log |
+
+## Coverage audit
+
+| Review source block | Source item count | Ledger coverage |
+| --- | ---: | --- |
+| Raquel general comments | 4 | `G-01`–`G-04` |
+| Chapter 1 overview/structural comments | 4 | `C1-01`–`C1-04` |
+| Chapter 1 numbered comments | 15 | `C1-05`–`C1-19` |
+| Software chapter overview comments | 2 | `C2-01`–`C2-02` |
+| Software chapter numbered comments | 11 | `C2-03`–`C2-13` |
+| Hydrology chapter numbered comments | 14 | `C3-01`–`C3-14` |
+| Bruno email sequencing/submission points | 5 | `B-01`–`B-05` |
+| Candidate contribution/style/disclosure controls | 9 | `P-01`–`P-09` |
+
+All 50 items in Raquel's attachment and all five actionable points in Bruno's
+email have a ledger entry, recommended resolution, and acceptance test. The
+nine candidate controls extend the review; they do not replace any advisor
+item. Bruno's forthcoming annotated Chapter 4/5 material must receive a new
+coverage audit when it arrives.
 
 ## Completion rule
 

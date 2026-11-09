@@ -40,6 +40,16 @@ or engineering framing while preserving scientifically necessary software and
 Q--DESN terminology. These are planning controls only; manuscript content is
 still unchanged.
 
+The candidate has now supplied the intended AI-disclosure boundary: selected
+debugging support rather than independent research-code implementation; no
+statistical-method development, mathematical/proof derivation,
+scientific-literature identification/evaluation, or result generation; and
+writing support directed to grammar, clarity, and readability. The planning
+record reconciles that boundary with documented organizational, editorial,
+citation-consistency, build, provenance, and validation assistance and proposes
+concise acknowledgment wording for later factual confirmation. No disclosure
+has been inserted into the dissertation.
+
 ## 2026-11-07 committee-copy finalization validated
 
 The six approved committee-copy actions are complete. A formal scholarly
