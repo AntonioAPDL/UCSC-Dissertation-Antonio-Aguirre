@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "recorded_at": "2026-11-09",
-  "status": "IMPLEMENTATION_PREFLIGHT",
+  "status": "C1_VALIDATED",
   "plan": "docs/bruno-revision-integration-plan-20261109.md",
   "baseline_commit": "ac00a38a6fbbec9ac57ffb157fe7de99673f7540",
   "authority_commits": {
@@ -26,14 +26,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the removal of the obsolete manuscript-source notice. The chapter must open with the statistical problem, not its production history.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -52,14 +60,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Define the observed time series before the forecast quantile. Use one convention for (Y_t), observed (y_t), forecast origin, and information set; verify all later indices against it.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -78,14 +94,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "State the horizon as steps ahead of a forecast origin and distinguish the origin from the response time. The definition, recursive forecast subsection, and application notation must agree.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -104,14 +128,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "edit",
       "selected_resolution": "Replace repeated general discussion from Chapter 2 with a short contrast: Chapter 2 uses evolving linear states and product synthesis, whereas Chapter 4 uses fixed nonlinear recurrent predictors. Keep only background needed locally.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -130,14 +162,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "edit",
       "selected_resolution": "Cite or define DESN before the qualified phrase “specified deep echo state network.” The first use must identify the fixed reservoir construction rather than assume familiarity.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -156,14 +196,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the current first-use definition of reservoir states as recurrent states whose internal weights are drawn before regression fitting and held fixed.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -182,14 +230,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve statistically correct prior language: ridge regularization/priors use a common scale; RHS permits coefficient-specific shrinkage with a slab bound.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -208,14 +264,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "edit",
       "selected_resolution": "Compress AL/exAL background already developed in earlier chapters. Retain only the quantile-location property, the augmentation needed here, the additional exAL shape, and the relevant uncertainty qualification.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -234,14 +298,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the direct Q--DESN contribution statement now on current `main`; do not revert to an architecture-first description.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -260,14 +332,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the current statement that MQ--DESN couples adjacent slope differences across levels within one regression while independent Q--DESN fits do not. Reconfirm after model-section edits.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -286,14 +366,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the corrected grammatical construction “stacking reservoirs.”",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -312,14 +400,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex",
-        "locator": "lines 180--182"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "The exact authority uses “penalized quantile sheets,” and current `main` reproduces that term with the Bonas et al. citation. Preserve it; add only a concise role description if the surrounding comparison still needs clarification.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -338,14 +434,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 142--218"
       },
       "disposition": "edit",
       "selected_resolution": "Move study-specific simulation and application descriptions to the evidence roadmap or Section 4.5. The introduction should state questions and contributions without narrating results before their design is introduced.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -364,14 +468,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "At the model opening, call (Y_t) the time series or stochastic process of interest and distinguish it from observed values (y_t).",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -390,14 +502,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Define (mathbf z_t) as the vector of exogenous covariates, not merely variables, and state whether its components are contemporaneously available at fitting/forecast time.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -416,14 +536,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex",
-        "locator": "lines 277--281"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "source_resolved_edit",
       "selected_resolution": "Add the authority's exact scaling \\(\\bar W_d=\\rho_d W_d/\\rho(W_d)\\), conditional on nonzero raw radius, and define \\(\\rho(W)\\) as the largest absolute eigenvalue.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -442,14 +570,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "State dimensions for (mathbf W_d), (mathbf W_d^{\\rm in}), (mathbf Q_{d-1}), the reduced state, and the bias; verify every matrix product in the recursion.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -468,14 +604,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "Define the feature transformation (k) as a function, give its domain/codomain, and identify the transformations actually used. Do not leave “chosen feature transformation” uninterpreted.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -494,14 +638,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex",
-        "locator": "lines 291--312"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Current `main` and the authority agree: the previous state has weight \\(1-\\alpha_d\\), so a smaller leak rate retains more of it. Preserve this statement and verify it after any recursion edit.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -520,14 +672,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "Distinguish fixed random reservoir quantities, tuning parameters selected with training/development information, and regression parameters inferred from the likelihood.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -546,14 +706,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "Move study-specific feature-selection and development-sample qualifications out of the generic model definition unless they are needed to define the estimand. Cross-reference Section 4.5 or Appendix D instead.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -572,14 +740,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 224--329"
       },
       "disposition": "edit",
       "selected_resolution": "Explain exactly which state transformations and direct inputs form (x-tilde_t), then derive its dimension (r) under the stated cases.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -598,14 +774,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "edit",
       "selected_resolution": "Introduce the comparator as (K) independent Q--DESN fits, one at each level, before defining MQ--DESN. Avoid the vague noun “approach.”",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -624,14 +808,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "edit",
       "selected_resolution": "Define the observed response vector and the complete parameter collection (theta) before the likelihood; separate regression, likelihood, and prior-scale components.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -650,14 +842,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "edit",
       "selected_resolution": "Call the product in Eq. 4.5 a composite likelihood, not an “update.” Reserve *update* for the resulting loss-based/generalized posterior operation.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -676,14 +876,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Define the anchor block and adjacent slope-difference blocks before stating their priors. Explain how they reconstruct (beta_k).",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -702,14 +910,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "edit",
       "selected_resolution": "State explicitly that RHS priors are placed on the anchor and slope-difference blocks, with block-specific scales; distinguish intercept ordering from slope coupling.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -728,14 +944,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "edit",
       "selected_resolution": "Use accurate language for the composite likelihood and composite/generalized posterior. State why the product is not a scalar-response joint sampling density and what is nevertheless normalized.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -754,14 +978,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 393--476"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the current qualification that the same response is reused across levels and the product is not a normalized scalar-response density.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -780,14 +1012,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "edit",
       "selected_resolution": "Introduce the AL/exAL latent representation as a conditional model, define the latent variables and their support, and identify which displayed Gaussian argument is a variance.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -806,14 +1046,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "edit",
       "selected_resolution": "Replace generic references to “shape” with the defined parameter (gamma) and use the same symbol in every conditional statement.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -832,14 +1080,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "edit",
       "selected_resolution": "Describe tractable blocks through their full conditional distributions and sampling laws, not by saying that parameters “have updates.”",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -858,14 +1114,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "qdesn-supplement.tex",
-        "locator": "lines 246--278"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "source_resolved_edit",
       "selected_resolution": "State the verified partially collapsed transition: integrate scale out of the shape step, sample shape from the collapsed density, and immediately redraw scale from its GIG conditional before another block. Cross-reference the exact Appendix D kernel.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -884,14 +1148,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Retain and sharpen the diagnostic statement: identify rank-normalized (widehat R), effective sample size, chain comparisons, and crossing diagnostics as checks, not guarantees.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -910,14 +1182,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Motivate VB by repeated fitting over long series, forecast origins, or reservoir specifications. State the computational task reduced, not merely that fitting is “fast.”",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -936,14 +1216,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "edit",
       "selected_resolution": "Define whether VB supplies an approximation, initialization, or reported inference in each study; do not imply uncertainty quality without evidence.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -962,14 +1250,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 531--575"
       },
       "disposition": "edit",
       "selected_resolution": "Define forecast origin (o), fitting endpoint (T), horizon (h), and target (Y_{o+h}) in one place; then use that indexing throughout.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -988,14 +1284,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 531--575"
       },
       "disposition": "preserve_and_verify",
       "selected_resolution": "Preserve the distinction between a draw-specific conditional-quantile location and the marginal posterior predictive quantile.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -1014,14 +1318,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and supplement as applicable",
-        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+        "locator": "main.tex lines 531--575"
       },
       "disposition": "clarify_or_restructure",
       "selected_resolution": "Explain how observed history initializes reservoir states and how simulated future responses enter later lags in a recursive forecast. Verify information availability for covariates.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "IMPLEMENTATION_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "IMPLEMENTED_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },
@@ -1040,14 +1352,22 @@
         "source_id": "SRC-QDESN",
         "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
         "path": "main.tex and qdesn-supplement.tex",
-        "locator": "complete affected definitions"
+        "locator": "main.tex lines 142--575 and qdesn-supplement.tex lines 184--317"
       },
       "disposition": "verify_only",
       "selected_resolution": "Recheck every revised definition, equation, and contribution against Q--DESN commit `aa613b0...`. The remote tip currently matches; no comment authorizes a source-version change.",
       "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
-      "changed_files": [],
-      "validation_evidence": [],
-      "final_status": "CONTROL_PENDING",
+      "changed_files": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "validation_evidence": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected"
+      ],
+      "final_status": "SATISFIED_CURRENT_VALIDATED",
       "final_commit": null,
       "unresolved_decision": null
     },

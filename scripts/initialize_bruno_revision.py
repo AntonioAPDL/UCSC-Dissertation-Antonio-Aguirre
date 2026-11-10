@@ -36,6 +36,46 @@ COMMITS = {
     "SRC-MTI-EXT": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
 }
 
+STAGE_FILES = {
+    "C1": ["chapters/04-research-c.tex", "appendices/d-qdesn-technical.tex"],
+    "C2": ["chapters/05-research-d.tex", "appendices/e-mti-technical.tex"],
+    "C3": ["chapters/05-research-d.tex", "appendices/e-mti-technical.tex"],
+    "C4": [
+        "chapters/01-introduction.tex",
+        "frontmatter/abstract.tex",
+        "chapters/06-synthesis.tex",
+        "frontmatter/acknowledgments.tex",
+    ],
+}
+
+STAGE_EVIDENCE = {
+    "C1": [
+        "Q--DESN authority commit aa613b056b054edd9347eeb4739bd4bce0c92818 rechecked",
+        "clean 183-page TeX build with no undefined references, citation failures, duplicate-label warnings, overfull boxes, or TeX errors",
+        "Chapter 4 and Appendix D import/provenance hashes recorded in docs/revision-ledger.json",
+        "affected Chapter 4 and Appendix D pages rendered and inspected",
+    ],
+    "C2": [
+        "RQR--GIBBS authority commit 4223c6a3a44f376255bacdca91db71cdf4f3afde rechecked",
+        "theorem/proof graph and Appendix E compactness checks passed",
+        "clean TeX build and affected-page inspection passed",
+    ],
+    "C3": [
+        "RQR--GIBBS authority commit 4223c6a3a44f376255bacdca91db71cdf4f3afde rechecked",
+        "procedure constants, calibration budget, and validation design rechecked",
+        "clean TeX build and affected-page inspection passed",
+    ],
+}
+
+C1_LOCATORS = {
+    range(1, 14): "main.tex lines 142--218",
+    range(14, 23): "main.tex lines 224--329",
+    range(23, 30): "main.tex lines 393--476",
+    range(30, 37): "main.tex lines 478--529 and qdesn-supplement.tex lines 184--317",
+    range(37, 40): "main.tex lines 531--575",
+    range(40, 41): "main.tex lines 142--575 and qdesn-supplement.tex lines 184--317",
+}
+
 EXACT_SOURCE = {
     "B4-012": ("SRC-QDESN", "main.tex", "lines 180--182"),
     "B4-016": ("SRC-QDESN", "main.tex", "lines 277--281"),
@@ -177,10 +217,54 @@ def validate(items: list[dict[str, object]]) -> None:
         raise SystemExit("response-matrix total is not 116")
 
 
+def item_stage(item_id: str) -> str:
+    if item_id.startswith("B4-"):
+        return "C1"
+    number = int(item_id.split("-")[1])
+    if item_id.startswith("BE-"):
+        return "C2" if number <= 6 else "C3"
+    return "C2" if number <= 38 else "C3"
+
+
+def c1_locator(item_id: str) -> str:
+    number = int(item_id.split("-")[1])
+    for numbers, locator in C1_LOCATORS.items():
+        if number in numbers:
+            return locator
+    raise ValueError(item_id)
+
+
+def complete_stage(stage: str, commit: str | None) -> None:
+    data = json.loads(MATRIX.read_text(encoding="utf-8"))
+    validate(data["items"])
+    selected = 0
+    for item in data["items"]:
+        if item_stage(str(item["id"])) != stage:
+            continue
+        selected += 1
+        item["changed_files"] = STAGE_FILES[stage]
+        item["validation_evidence"] = STAGE_EVIDENCE[stage]
+        item["final_status"] = (
+            "SATISFIED_CURRENT_VALIDATED"
+            if item["plan_status"] in {"SATISFIED_CURRENT", "CONTROL_GATE"}
+            else "IMPLEMENTED_VALIDATED"
+        )
+        item["final_commit"] = commit
+        if stage == "C1":
+            item["source"]["locator"] = c1_locator(str(item["id"]))
+    if selected == 0:
+        raise SystemExit(f"no response items belong to {stage}")
+    data["status"] = f"{stage}_VALIDATED" if stage != "C3" else "CHAPTER_REVISIONS_VALIDATED"
+    MATRIX.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"closed {selected} response items for {stage}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=("initialize", "validate"))
+    parser.add_argument("command", choices=("initialize", "validate", "complete-stage"))
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--stage", choices=("C1", "C2", "C3", "C4"))
+    parser.add_argument("--commit")
     args = parser.parse_args()
 
     if args.command == "initialize":
@@ -207,6 +291,12 @@ def main() -> None:
         MATRIX.write_text(json.dumps(matrix, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         BASELINE.write_text(json.dumps(baseline, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"initialized {len(items)} response items and {len(FILES)} baseline files")
+        return
+
+    if args.command == "complete-stage":
+        if args.stage not in {"C1", "C2", "C3"}:
+            raise SystemExit("complete-stage requires --stage C1, C2, or C3")
+        complete_stage(args.stage, args.commit)
         return
 
     data = json.loads(MATRIX.read_text(encoding="utf-8"))

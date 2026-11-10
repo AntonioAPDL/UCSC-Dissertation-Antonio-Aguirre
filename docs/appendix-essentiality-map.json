@@ -417,6 +417,7 @@
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_joint_beta_conditional",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_joint_qvp_prior",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_joint_stacked_likelihood",
+      "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_mcmc_scale_shape_terms",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_structured_scale_shape_kernel",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_structured_scale_shape_terms",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_structured_shape_factor",
@@ -580,7 +581,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:qdesn-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-technical"
     },
     {
@@ -592,7 +593,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:qdesn-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-technical"
     },
     {
@@ -604,7 +605,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -616,7 +617,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -628,7 +629,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -640,7 +641,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -652,7 +653,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-posterior"
     },
     {
@@ -664,7 +665,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -676,7 +677,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -688,7 +689,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -700,7 +701,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -712,7 +713,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -724,7 +725,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -736,7 +737,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -748,7 +749,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -760,7 +761,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-computation"
     },
     {
@@ -772,7 +773,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-simulation-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-simulation-support"
     },
     {
@@ -784,7 +785,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -796,7 +797,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -808,7 +809,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -820,7 +821,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -832,7 +833,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-glofas-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-glofas-support"
     },
     {
@@ -844,7 +845,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-pricefm-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-pricefm-support"
     },
     {
@@ -856,7 +857,7 @@
       "action": "RETARGET",
       "target_label": "app:qdesn-pricefm-support",
       "status": "IMPLEMENTED",
-      "implementation_commit": "b1332ddda22a7bec913de320de0b686527b015f9",
+      "implementation_commit": "C1_PENDING",
       "final_location": "app:qdesn-pricefm-support"
     },
     {
@@ -4215,9 +4216,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4268,9 +4269,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4321,9 +4322,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4375,9 +4376,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4428,9 +4429,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4481,9 +4482,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4535,9 +4536,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4588,9 +4589,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4636,15 +4637,16 @@
       },
       "coverage_keys": [
         "appendices/d-qdesn-technical.tex::heading::subsection::fixed-desn-design-and-notation::occurrence::1",
-        "appendices/d-qdesn-technical.tex::heading::section::posterior-computation::occurrence::1"
+        "appendices/d-qdesn-technical.tex::heading::section::posterior-computation::occurrence::1",
+        "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_mcmc_scale_shape_terms"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4695,9 +4697,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4748,9 +4750,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4801,9 +4803,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4854,9 +4856,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4907,9 +4909,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4960,9 +4962,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5013,9 +5015,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5066,9 +5068,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5119,9 +5121,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5172,9 +5174,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5225,9 +5227,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5278,9 +5280,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5331,9 +5333,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5384,9 +5386,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5437,9 +5439,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5490,9 +5492,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5543,9 +5545,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5596,9 +5598,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5649,9 +5651,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5702,9 +5704,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5755,9 +5757,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5808,9 +5810,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5861,9 +5863,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5914,9 +5916,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -5967,9 +5969,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6020,9 +6022,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6073,9 +6075,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6127,9 +6129,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6181,9 +6183,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6234,9 +6236,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6287,9 +6289,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6340,9 +6342,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6393,9 +6395,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6446,9 +6448,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6499,9 +6501,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6552,9 +6554,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6605,9 +6607,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6658,9 +6660,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6711,9 +6713,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6764,9 +6766,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6817,9 +6819,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6870,9 +6872,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6923,9 +6925,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -6976,9 +6978,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7029,9 +7031,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7082,9 +7084,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7135,9 +7137,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7188,9 +7190,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7241,9 +7243,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7294,9 +7296,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7347,9 +7349,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7400,9 +7402,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7453,9 +7455,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7506,9 +7508,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7559,9 +7561,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7612,9 +7614,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7665,9 +7667,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7720,9 +7722,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7775,9 +7777,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7830,9 +7832,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7885,9 +7887,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7940,9 +7942,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -7995,9 +7997,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8050,9 +8052,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8105,9 +8107,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8160,9 +8162,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8215,9 +8217,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8270,9 +8272,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8325,9 +8327,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8380,9 +8382,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8435,9 +8437,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8490,9 +8492,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8545,9 +8547,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8600,9 +8602,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8655,9 +8657,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8710,9 +8712,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8765,9 +8767,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8820,9 +8822,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8875,9 +8877,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8930,9 +8932,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -8985,9 +8987,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9040,9 +9042,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9095,9 +9097,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9150,9 +9152,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9205,9 +9207,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9260,9 +9262,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9315,9 +9317,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9370,9 +9372,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9425,9 +9427,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9480,9 +9482,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9535,9 +9537,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9590,9 +9592,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9645,9 +9647,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9700,9 +9702,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9755,9 +9757,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9810,9 +9812,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9865,9 +9867,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9920,9 +9922,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -9975,9 +9977,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10030,9 +10032,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10085,9 +10087,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10140,9 +10142,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10195,9 +10197,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10250,9 +10252,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10305,9 +10307,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10360,9 +10362,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10415,9 +10417,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10470,9 +10472,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10525,9 +10527,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10580,9 +10582,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10635,9 +10637,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10690,9 +10692,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10745,9 +10747,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10800,9 +10802,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10855,9 +10857,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10910,9 +10912,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -10965,9 +10967,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11020,9 +11022,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11075,9 +11077,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11130,9 +11132,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11185,9 +11187,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11240,9 +11242,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11295,9 +11297,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11350,9 +11352,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11405,9 +11407,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11460,9 +11462,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11515,9 +11517,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11570,9 +11572,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11625,9 +11627,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11680,9 +11682,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11735,9 +11737,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11790,9 +11792,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11845,9 +11847,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11900,9 +11902,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -11955,9 +11957,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12010,9 +12012,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12065,9 +12067,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12120,9 +12122,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12175,9 +12177,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12230,9 +12232,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12285,9 +12287,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12340,9 +12342,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12395,9 +12397,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12450,9 +12452,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12505,9 +12507,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12560,9 +12562,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12615,9 +12617,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12670,9 +12672,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12725,9 +12727,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12780,9 +12782,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12835,9 +12837,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12890,9 +12892,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -12945,9 +12947,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13000,9 +13002,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13055,9 +13057,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13110,9 +13112,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13165,9 +13167,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13220,9 +13222,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13275,9 +13277,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13330,9 +13332,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13385,9 +13387,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13440,9 +13442,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13495,9 +13497,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13550,9 +13552,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13605,9 +13607,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13660,9 +13662,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13715,9 +13717,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13770,9 +13772,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13825,9 +13827,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13880,9 +13882,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -13935,9 +13937,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16544,9 +16546,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16601,9 +16603,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16658,9 +16660,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16715,9 +16717,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16772,9 +16774,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16829,9 +16831,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16886,9 +16888,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -16943,9 +16945,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17000,9 +17002,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17057,9 +17059,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17116,9 +17118,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17173,9 +17175,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17230,9 +17232,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17287,9 +17289,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17344,9 +17346,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17401,9 +17403,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17458,9 +17460,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17515,9 +17517,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17572,9 +17574,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17629,9 +17631,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17689,9 +17691,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17746,9 +17748,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17803,9 +17805,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17860,9 +17862,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17917,9 +17919,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -17974,9 +17976,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18031,9 +18033,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18088,9 +18090,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18147,9 +18149,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18204,9 +18206,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18261,9 +18263,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18318,9 +18320,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18375,9 +18377,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18432,9 +18434,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18489,9 +18491,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18546,9 +18548,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18603,9 +18605,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18660,9 +18662,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18717,9 +18719,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18774,9 +18776,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -18833,9 +18835,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -19869,9 +19871,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "b1332ddda22a7bec913de320de0b686527b015f9",
-        "final_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "C1_PENDING",
+        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     }
   ]

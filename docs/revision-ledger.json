@@ -94,7 +94,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "0e874ae2c8041cf7a52fdf83254cfa43fc1460475749d4ee8af39b7a137ee7d0",
+      "current_sha256": "04b177911dbd4b79be1886ec661015ccb1a7bb2b6a1df80414e24c42e67366f4",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -110,7 +110,8 @@
         "REV-APPENDIX-CURATION-20261107",
         "REV-COMMITTEE-COPY-20261107",
         "REV-ADVISOR-QDESN-20261109",
-        "REV-FINAL-ACADEMIC-STYLE-20261109"
+        "REV-FINAL-ACADEMIC-STYLE-20261109",
+        "REV-BRUNO-QDESN-20261109"
       ]
     },
     {
@@ -185,7 +186,7 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "ab9454dd26e1b56a3ed9f590055ffb1c8236419458fcb105792927ad755eb55d",
+      "current_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -196,7 +197,8 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-QDESN-AUTHORITY-20261106",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-BRUNO-QDESN-20261109"
       ]
     },
     {
@@ -937,6 +939,17 @@
       "summary": "Aligns the abstract and synthesis with the revised chapter order and supported findings, centralizes collaborative attribution in the acknowledgments, records the limited supporting use of AI-assisted tools, removes unsupported individual task allocation, and replaces internal project language with standard statistical exposition.",
       "evidence": "docs/advisor-revision-plan-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/ASSISTANCE-LOG.md; docs/research-audit.md; cited manuscript and package records",
       "validation": "Cross-document contribution and numerical-claim comparison, attribution and disclosure review, terminology scan, clean TeX build, reference diagnostics, PDF checks, and rendered inspection of front matter and synthesis."
+    },
+    {
+      "id": "REV-BRUNO-QDESN-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "chapters/04-research-c.tex",
+        "appendices/d-qdesn-technical.tex"
+      ],
+      "summary": "Resolves Bruno Sanso's Chapter 4 annotations through Section 4.4 by fixing the forecast information set, recurrent-feature dimensions, multiquantile composite posterior, full-conditional terminology, partially collapsed exAL transition, and recursive forecast definition while preserving the current Q--DESN authority and the review boundary.",
+      "evidence": "docs/bruno-revision-integration-plan-20261109.md; docs/bruno-revision-response-matrix-20261109.json; Q--DESN commit aa613b056b054edd9347eeb4739bd4bce0c92818",
+      "validation": "Fixed-source comparison, import and structural validators, clean TeX build, log and PDF diagnostics, and rendered inspection of all affected pages required before merge."
     },
     {
       "id": "REV-FINAL-ACADEMIC-STYLE-20261109",

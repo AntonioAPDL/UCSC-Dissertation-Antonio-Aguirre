@@ -117,6 +117,31 @@ Sparse factorization is used rather than a dense inverse. GIG latent-scale,
 truncated-normal positive-shift, and inverse-gamma shrinkage updates have their
 standard conditional forms. The bounded exAL shape is nonconjugate.
 
+For the exAL scale--shape transition, let
+\(r_{t,\gamma}=y_t-\vect x_t^\top\vect\beta-A_\gamma v_t\) and define
+\begin{align}
+\nu&=-a_\sigma-3T/2,\nonumber\\
+\chi_\gamma&=2b_\sigma+2\sum_t v_t+
+B_\gamma^{-1}\sum_t r_{t,\gamma}^2/v_t,\nonumber\\
+\psi_\gamma&=D_\gamma^2B_\gamma^{-1}\sum_t s_t^2/v_t,\nonumber\\
+c_\gamma&=\log\pi_\gamma(\gamma)-\tfrac T2\log B_\gamma+
+D_\gamma B_\gamma^{-1}\sum_t s_t r_{t,\gamma}/v_t.
+\label{qdesn2026:eq:supp_mcmc_scale_shape_terms}
+\end{align}
+Conditional on \(\gamma\), the scale has distribution
+\(\GIG(\nu,\chi_\gamma,\psi_\gamma)\). If
+\(Z_\sigma(\nu,\chi_\gamma,\psi_\gamma)\) is its normalizing integral, the
+collapsed shape density is proportional to
+\[
+\exp(c_\gamma)Z_\sigma(\nu,\chi_\gamma,\psi_\gamma)
+\ind\{L<\gamma<U\}.
+\]
+The reported partially collapsed transition draws \(\gamma\) from this density
+and immediately redraws \(\sigma\) from the GIG conditional before changing
+another block. This ordering composes a marginal shape transition with the
+corresponding conditional scale draw and therefore leaves the joint target
+invariant.
+
 The reported multiquantile variational calculation retains a structured
 \(q(\gamma)q(\sigma\mid\gamma)\) factor. For one level, let
 \(e_t=y_t-\mu_t\) and denote the required current moments by

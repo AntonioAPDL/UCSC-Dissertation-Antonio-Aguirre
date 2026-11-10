@@ -9,129 +9,99 @@
 
 Conditional quantiles describe tail risk and provide forecasts suited to
 asymmetric decision losses and prediction intervals
-\citep{qdesn-KoenkerBassett1978,qdesn-Koenker2005,qdesn-Gneiting2011}. Let \(Y_{t+h}\) be the
-response \(h\) steps after forecast origin \(t\), and let \(\mathcal F_t\)
-denote the information available at that origin. Its level-\(p\) conditional
-quantile is
+\citep{qdesn-KoenkerBassett1978,qdesn-Koenker2005,qdesn-Gneiting2011}. Let
+\(\{Y_s:s\geq1\}\) be the response time series, with observed realizations
+\(y_1,\ldots,y_o\) at forecast origin \(o\). Write \(\mathcal F_o\) for the
+response and covariate history available at that origin. The level-\(p\)
+conditional quantile at horizon \(h\geq1\) is
 \[
 \text{Forecast quantile:}\quad
-Q_{t,h}(p)=\inf\{u:\Pr(Y_{t+h}\le u\mid\mathcal F_t)\ge p\},
+Q_{o,h}(p)=\inf\{u:\Pr(Y_{o+h}\le u\mid\mathcal F_o)\ge p\},
 \qquad 0<p<1.
 \]
-Conditional quantiles can depend nonlinearly on past responses and covariates.
-Fitting Bayesian quantile models with many unknown recurrent-network weights
-can be computationally demanding, particularly when separate models are
-estimated at several quantile levels or refitted for rolling-origin validation.
+When future covariates are supplied, the forecast is also conditional on that
+specified path; Section~\ref{qdesn2026:sec:forecast} distinguishes those inputs
+from future responses generated recursively. Conditional quantiles can depend
+nonlinearly on the observed histories, but Bayesian regression with unknown
+recurrent-network weights can be costly when many probability levels or
+forecast origins must be fitted.
 
 The quantile deep echo state network (Q--DESN) is a Bayesian quantile
-regression whose temporal predictors are fixed nonlinear
-recurrent states. These states are commonly called reservoir states: their
-internal weights are drawn before regression fitting and then held fixed.
-Conditional on the resulting predictors, the quantile location remains linear
-in the coefficients of the final regression layer. The construction therefore
-represents nonlinear temporal dependence without placing a posterior on every
-recurrent-network weight.
+regression whose temporal predictors are fixed nonlinear recurrent states.
+These predictors are called reservoir states: their internal weights are
+drawn before regression fitting and then held fixed. Conditional on the
+resulting features, the quantile location is linear in the final regression
+coefficients. Nonlinear temporal dependence can therefore enter without a
+posterior distribution for every recurrent weight.
 
-The project makes three related contributions \citep{qdesn-deleon2026qdesn}.
+This project makes three related contributions \citep{qdesn-deleon2026qdesn}.
 First, Q--DESN combines fixed deep echo-state features with AL or exAL Bayesian
 quantile regression, ridge or regularized-horseshoe (RHS) coefficient priors,
-and model-specific MCMC and variational computation. Second, the
+and model-specific MCMC and variational approximations. Second, the
 multiquantile extension (MQ--DESN) estimates several quantile regressions
-together using RHS priors on adjacent slope differences, which encourages
-similar neighboring effects without imposing noncrossing. Third, the methods
-are evaluated through linear and nonlinear simulation mechanisms, a
-retrospective streamflow correction, and a regional electricity-price
-comparison. These studies separately assess quantile-path recovery, forecast
-loss, crossings, and computational cost; they do not imply a uniform ranking
-of independent and multiquantile fits.
+together using RHS priors on adjacent slope differences. This regularization
+encourages similar neighboring effects but does not impose noncrossing. Third,
+the methods are evaluated through linear and nonlinear simulation mechanisms,
+retrospective streamflow correction, and regional electricity-price
+forecasting. The studies assess quantile recovery, forecast loss, crossings,
+and cost without supporting a uniform ranking.
 
-Ridge regularization uses a common shrinkage scale, whereas RHS permits
-coefficient-specific shrinkage and bounds conditional coefficient variances
-through a slab \citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS}.
-
-The asymmetric Laplace (AL) likelihood links its location to a specified
-conditional quantile and admits a normal--exponential augmentation
-\citep{env-yu2001bayesian,qdesn-KozumiKobayashi2011Gibbs}. Under misspecification,
-however, AL coefficient credible intervals need not have nominal frequentist
-coverage \citep{qdesn-YangWangHe2016ALInference}. We also use the extended
-asymmetric Laplace (exAL) likelihood, the quantile-fixed generalized
-asymmetric Laplace family of \citet{exd-yan2025family}. Its additional shape
-parameter allows skewness and tail behavior to vary while preserving the
-quantile location. In their regression simulations, coefficient
-credible-interval coverage was closer to nominal than under AL in
-lower-tail settings.
-
-For posterior simulation under AL, the augmentation gives standard full
-conditional distributions for both Q--DESN and MQ--DESN regressions, so the
-corresponding Markov chain Monte Carlo (MCMC) algorithms use Gibbs updates.
-When repeated fitting makes posterior simulation costly, we also use
-model-specific variational Bayes (VB) approximations, which can supply
-starting values for MCMC under the corresponding model.
-
-Echo state networks (ESNs) generate dynamic predictors from recurrent states
-with fixed internal weights
+Echo state networks generate dynamic predictors from recurrent states whose
+internal weights are fixed before fitting
 \citep{qdesn-Jaeger2001EchoState,qdesn-LukoseviciusJaeger2009ReservoirComputing}.
-Stacking reservoirs extends this construction to a DESN
+Stacking reservoirs produces a deep echo state network
 \citep{qdesn-GallicchioMicheliPedrelli2018DeepESNDesign}. Bayesian regression on
 reservoir features has precedent in the hierarchical Bayesian DESN of
-\citet{qdesn-McDermottWikle2018DeepESNUQ}, developed for spatiotemporal forecasting.
+\citet{qdesn-McDermottWikle2018DeepESNUQ}.
+
+The asymmetric Laplace (AL) likelihood connects its location to a specified
+conditional quantile and admits a normal--exponential augmentation
+\citep{env-yu2001bayesian,qdesn-KozumiKobayashi2011Gibbs}. Its coefficient
+credible intervals need not have nominal frequentist coverage under
+misspecification \citep{qdesn-YangWangHe2016ALInference}. The exAL likelihood
+of \citet{exd-yan2025family} adds a shape parameter while preserving the
+quantile location. Ridge uses a common coefficient scale, whereas RHS permits
+coefficient-specific shrinkage subject to a slab bound
+\citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS}. The
+mixture representations support MCMC, and model-specific variational
+approximations reduce the cost of repeated fitting.
 
 Quantile reservoir methods also have precedent.
 \citet{qdesn-LvZhaoLiuWang2016QRESNE} estimate ESN output weights by quantile
-regression and combine quantile fits in a bootstrap ensemble for confidence
-and prediction intervals. \citet{qdesn-BonasWikleCastruccio2024CalibratedDeepESN}
-first fit DESN point forecasts by ridge regression, then jointly estimate
-lead-dependent residual quantiles with penalized quantile sheets and
-calibrate the resulting intervals. In contrast, Q--DESN estimates response
-quantiles directly through Bayesian regression on DESN features, with
-posterior inference for coefficients, likelihood parameters, and shrinkage
-scales. For interval forecasts, it uses pairs of fitted response quantiles
-without a second-stage residual-calibration regression or bootstrap ensemble.
-MQ--DESN estimates the quantile readouts together
-within one Bayesian regression, for which we derive MCMC updates and
-model-specific VB approximations. Its conditional-quantile forecasts thus
-follow directly from the fitted regression, rather than from estimating
-residual quantiles after point prediction.
+regression and combine separate fits in a bootstrap ensemble.
+\citet{qdesn-BonasWikleCastruccio2024CalibratedDeepESN} first fit DESN point
+forecasts, then estimate lead-dependent residual quantiles with penalized
+quantile sheets and calibrate the resulting intervals. Q--DESN instead
+estimates response quantiles through Bayesian regression on fixed DESN
+features. MQ--DESN estimates the quantile readouts jointly within one
+composite regression. Neither construction requires a second-stage
+residual-quantile regression or bootstrap ensemble.
 
-Independently estimated quantile curves can cross. Common post-estimation
-corrections include monotone rearrangement, which reorders fitted quantiles,
-and isotonic regression, which projects them onto an ordered grid
-\citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010,qdesn-DeLeonPradoSanso2026HydrologicProducts}.
-Alternatively, ordering can be imposed during estimation through noncrossing
-constraints or a monotone quantile-process model
+Independent quantile curves can cross. Monotone rearrangement and isotonic
+regression correct crossings after estimation
+\citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010,qdesn-DeLeonPradoSanso2026HydrologicProducts},
+whereas constraints or monotone quantile-process models impose ordering during
+estimation
 \citep{qdesn-WuLiu2009StepwiseNCQR,qdesn-BondellReichWang2010NoncrossingQR,qdesn-YangTokdar2017JointQuantilePlanes}.
+MQ--DESN instead adapts the continuous-shrinkage construction of
+\citet{qdesn-KohnsSzendrei2025QVP}. RHS priors on adjacent slope differences
+reduce predictor-dependent variation in neighboring gaps. Together with
+ordered intercepts, they favor nearly parallel curves without ensuring that
+every fitted gap is nonnegative.
 
-MQ--DESN takes a continuous-shrinkage approach, adapting the
-Quantile-Varying Parameter construction of \citet{qdesn-KohnsSzendrei2025QVP}.
-RHS priors on adjacent slope differences favor similar neighboring slopes,
-reducing predictor-dependent variation in the gaps between quantiles. With
-ordered intercepts, this encourages nearly parallel, ordered quantile curves
-while allowing quantile-specific effects. The resulting regularization
-encourages noncrossing but does not enforce it.
-
-Dynamic quantile linear models (DQLMs) and extended dynamic quantile linear
-models (exDQLMs) represent temporal dependence through evolving linear states
-\citep{env-goncalves,exd-me}.
-\citet{qdesn-DeLeonPradoSanso2026HydrologicProducts} combine hydrologic products
-through evolving linear quantile states and source-specific discrepancies,
-fitting levels separately before predictive synthesis. Q--DESN instead
-represents temporal dependence through recurrent nonlinear predictors, while
-MQ--DESN couples coefficients across probability
-levels. The first simulation examines whether Q--DESN can recover conditional
-quantile paths and achieve forecast accuracy comparable to DQLMs and exDQLMs
-under linear structural data-generating mechanisms.
-
-The second simulation examines forecast scores and quantile ordering for
-independent and joint estimation on a common seven-level grid. The
-applications consider retrospective correction of streamflow ensemble
-forecasts and electricity-price quantile forecasting against a pretrained
-probabilistic forecasting method. Sections~%
-\ref{qdesn2026:sec:model}--%
-\ref{qdesn2026:sec:forecast} define the model, computation, and forecast evaluation;
-Sections~\ref{qdesn2026:sec:simulation}--\ref{qdesn2026:sec:pricefm-application} give the
-evidence. Posterior derivations and supporting results are in
-Sections~\ref{app:qdesn-posterior}--\ref{app:qdesn-simulation-support} of
-Appendix~\ref{app:qdesn-technical}.
+Chapters~\ref{ch:research-a}--\ref{ch:research-b} use evolving linear states
+for dynamic quantile inference and hydrologic product synthesis. Q--DESN uses
+fixed nonlinear recurrent predictors instead, while MQ--DESN also couples
+coefficients across probability levels. The evidence later in this chapter
+asks whether these predictors recover conditional quantile paths under linear
+and nonlinear mechanisms, how independent and multiquantile regressions score
+on a common grid, and how they perform in streamflow correction and
+electricity-price forecasting. Sections~\ref{qdesn2026:sec:model}--%
+\ref{qdesn2026:sec:forecast} define the model, computation, and forecast
+evaluation. Sections~\ref{qdesn2026:sec:simulation}--%
+\ref{qdesn2026:sec:pricefm-application} present the evidence. Posterior
+derivations and supporting results are in Sections~\ref{app:qdesn-posterior}--%
+\ref{app:qdesn-simulation-support} of Appendix~\ref{app:qdesn-technical}.
 
 % ============================================================
 
@@ -158,26 +128,42 @@ At probability level \(p_0\in(0,1)\), the linear quantile regression is
 Under this likelihood, \(\mu_t\) is the conditional \(p_0\)-quantile,
 \(\sigma>0\) controls scale, and \(\gamma\in(L,U)\) controls shape. The
 shape interval \((L,U)\) is determined by \(p_0\). Setting \(\gamma=0\)
-recovers the AL regression. Section~\ref{qdesn2026:subsec:desn-features} constructs
-\(\vect x_t\) from the response
-history and covariates. Conditional on that design, the location in
-Eq.~\eqref{qdesn2026:eq:qdesn-marginal-main} is linear in \(\vect\beta\).
+recovers the AL regression. The scale has a proper inverse-gamma prior and
+exAL uses a proper shape prior on \((L,U)\); the numerical settings are stated
+with each analysis. Section~\ref{qdesn2026:subsec:desn-features} constructs
+\(\vect x_t\) from response and covariate histories. Conditional on that
+design, the location in Eq.~\eqref{qdesn2026:eq:qdesn-marginal-main} is linear
+in \(\vect\beta\).
 
 \subsection{Deep echo state network features}
 \label{qdesn2026:subsec:desn-features}
 
-Let \(\vect z_t\in\R^q\) contain the exogenous variables and let
-\(\vect u_t=(y_{t-1},\ldots,y_{t-m},\vect z_t^\top)^\top\in\R^{m+q}\)
-contain these variables with \(m\) response lags. In a network with \(D\)
-layers, the reservoir state
+Let \(\vect z_t\in\R^q\) contain the exogenous covariates. With maximum
+response lag \(m\geq1\) and maximum covariate lag \(m_z\geq0\), define
+\begin{equation}
+\begin{aligned}
+\text{Lagged input:}\quad
+\vect u_t&=(y_{t-1},\ldots,y_{t-m},
+\vect z_t^\top,\ldots,\vect z_{t-m_z}^\top)^\top,\\
+\text{Input dimension:}\quad d_u&=m+q(m_z+1).
+\end{aligned}
+\label{qdesn2026:eq:desn-input-main}
+\end{equation}
+The current covariate \(\vect z_t\) may enter only when it is observed or
+otherwise supplied for the analysis; no contemporaneous response enters
+\(\vect u_t\). In a network with \(D\) layers, the reservoir state
 \(\vect h_{t,d}\in\R^{n_d}\) is a recurrent nonlinear transformation of
-these inputs. For layer \(d\), \(\bar{\mat W}_d\) is a fixed sparse recurrent
-matrix scaled to spectral radius \(\rho_d\), its largest absolute eigenvalue;
-\(\mat W_d^{\mathrm{in}}\) is a fixed input matrix, and \(\alpha_d\) is the
-leak rate. Between layers, the dimension-reduction matrix \(\mat Q_{d-1}\) gives
+these inputs. For a square matrix \(\mat W\), let \(\rho(\mat W)\) be its
+largest absolute eigenvalue. A sparse drawn recurrent matrix \(\mat W_d\)
+with nonzero radius is scaled to the selected radius \(\rho_d\) by
+\(\bar{\mat W}_d=\rho_d\mat W_d/\rho(\mat W_d)\).
+The matrix \(\mat W_d^{\mathrm{in}}\) contains fixed input weights and
+\(\alpha_d\in(0,1]\) is the leak rate. Between layers,
+\(\mat Q_{d-1}\in\R^{\tilde n_{d-1}\times n_{d-1}}\) gives
 \(\tilde{\vect h}_{t,d-1}=\mat Q_{d-1}\vect h_{t,d-1}\).
-The nonlinear activation function \(f\) acts componentwise, and \(k\) is a chosen feature
-transformation.
+The activation \(f\) acts componentwise. For a reduced state, the readout map
+\(k_d:\R^{\tilde n_d}\to\R^{s_d}\) defines the retained feature block; the
+reported analyses use the identity map, so \(s_d=\tilde n_d\).
 With a fixed first-layer input bias \(\vect b_1^{\mathrm{in}}\), the
 recursion and general feature vector are
 \begin{equation}
@@ -191,25 +177,32 @@ recursion and general feature vector are
 &&&\quad+\alpha_d f(\bar{\mat W}_d\vect h_{t-1,d}
 +\mat W_d^{\mathrm{in}}\tilde{\vect h}_{t,d-1}),\quad d=2,\ldots,D,\\
 \text{Features:}\quad &\tilde{\vect x}_t
-&&=\big[\vect h_{t,D}^\top,k(\tilde{\vect h}_{t,1})^\top,\ldots,
-k(\tilde{\vect h}_{t,D-1})^\top,\vect u_t^\top\big]^\top.
+&&=\big[\vect h_{t,D}^\top,k_1(\tilde{\vect h}_{t,1})^\top,\ldots,
+k_{D-1}(\tilde{\vect h}_{t,D-1})^\top\big]^\top.
 \end{alignedat}
 \label{qdesn2026:eq:desn-hierarchy}
 \end{equation}
-The fixed matrix \(\mat Q_d\) maps \(\R^{n_d}\) to \(\R^{\tilde n_d}\).
-Here \(\bar{\mat W}_d\) is \(n_d\times n_d\),
-\(\mat W_1^{\mathrm{in}}\) is \(n_1\times(m+q)\), and
-\(\mat W_d^{\mathrm{in}}\) is \(n_d\times\tilde n_{d-1}\) for \(d>1\).
-A small leak rate retains more of the previous state. If \(k\) preserves
-dimension, the displayed feature vector
-has dimension \(r=n_D+\sum_{d<D}\tilde n_d+m+q\); a dimension-expanding
-transformation changes this count. Appending the intercept gives \(\vect x_t\).
-Reservoir and input weights are randomly drawn before fitting and then held
-fixed. Scaling, dimension reduction, and the washout period used to discard initial
-transients are determined from fitting information and held fixed.
+Here \(\bar{\mat W}_d\in\R^{n_d\times n_d}\),
+\(\mat W_1^{\mathrm{in}}\in\R^{n_1\times d_u}\),
+\(\mat W_d^{\mathrm{in}}\in\R^{n_d\times\tilde n_{d-1}}\) for \(d>1\),
+and \(\vect b_1^{\mathrm{in}}\in\R^{n_1}\), so every matrix product in
+Eq.~\eqref{qdesn2026:eq:desn-hierarchy} has dimension \(n_d\).
+A small leak rate retains more of the previous state. The displayed feature
+vector has dimension \(r=n_D+\sum_{d<D}s_d\). An analysis may append direct inputs,
+in which case \(r\) increases by the number appended; the reported streamflow
+readouts contain reservoir features and an intercept but no direct input
+regressors. Appending the intercept gives \(\vect x_t\).
 
-The predictors used in each simulation or application are chosen reservoir
-layers, transformations of their states, and direct inputs where included.
+Reservoir and input weights are random draws made before regression fitting
+and then treated as fixed. Depth, widths, sparsity, input scaling, spectral
+radii, leak rates, reduction maps, transformations, and washout are tuning or
+design quantities selected using the stated fitting/development information.
+The regression coefficients and likelihood parameters are inferred
+conditional on those choices. The washout discards early states to reduce
+dependence on their initial values.
+
+The predictors used in each simulation or application are selected reservoir
+layers and, where stated, direct inputs.
 Appendix~\ref{app:qdesn-simulation-support} records how specification
 selection limits the independence of the simulation evidence. For observed fitting inputs, the resulting design matrix
 \(\mat X=(\vect x_1,\ldots,\vect x_T)^\top\) is fixed. Future rows follow
@@ -267,10 +260,11 @@ level-specific intercepts \(\beta_{0k}\) and slope vectors
 \label{qdesn2026:eq:joint-qdesn-readout}
 \end{equation}
 Let \(\vect y=(y_1,\ldots,y_T)^\top\) be the observed response vector,
-\(\theta\) collect the regression, likelihood, and prior-scale parameters,
-and \(\pi(\theta)\) denote their prior. Write \(f_{p_k}\) for the AL or exAL
-density at level \(p_k\), with scale \(\sigma_k\) and, for exAL, shape
-\(\gamma_k\). The composite update is
+and let \(\theta\) collect \(\{\beta_{0k},\vect\beta_k,\sigma_k,\gamma_k:
+k=1,\ldots,K\}\) together with the shrinkage scales; AL fixes
+\(\gamma_k=0\). Write \(\pi(\theta)\) for the joint prior and \(f_{p_k}\)
+for the AL or exAL density at level \(p_k\). The composite likelihood and
+its associated posterior are
 \begin{equation}
 \begin{aligned}
 \text{Composite likelihood:}\quad
@@ -285,17 +279,20 @@ density at level \(p_k\), with scale \(\sigma_k\) and, for exAL, shape
 \end{equation}
 Here \(\ell_c(\theta;\vect y,\mat X)=-\log L_c(\theta;\vect y,\mat X)\)
 is the negative composite log-likelihood. The posterior is defined when its
-normalizing constant is finite.
-Each factor is a normalized density, but their product reuses the same
+normalizing constant is finite. Each factor is a normalized density, but the product reuses the same
 response across levels and is not a normalized scalar-response sampling
-density. The prior couples levels by regularizing the first slope vector
-and adjacent differences,
+density. It therefore defines a composite, rather than ordinary joint,
+posterior for the repeated response. The prior couples levels by regularizing
+the anchor block and adjacent slope-difference blocks,
 \[
 \text{Anchor and differences:}\quad
 \vect\Delta_1=\vect\beta_1,\qquad
 \vect\Delta_k=\vect\beta_k-\vect\beta_{k-1},\quad k=2,\ldots,K.
 \]
-Each block uses RHS shrinkage with block-specific global and local scales.
+Each \(\vect\Delta_k\) uses an RHS prior with block-specific global and local
+scales. Intercepts have separate Gaussian priors and are restricted to an
+ordered support in analyses that impose intercept ordering; this restriction
+is distinct from shrinkage of the slope differences.
 When \(K=1\), the hierarchy
 recovers the single-level Q--DESN slope prior under RHS regularization.
 
@@ -345,27 +342,36 @@ Integrating out \((s_t,v_t)\) recovers the marginal exAL model. For AL,
 shape is fixed at zero and the latent shift term is absent.
 
 Conditional on latent variables and prior scales, unconstrained coefficient
-blocks have Gaussian updates; ordered intercepts use Gaussian conditionals
-truncated between neighboring intercepts. Under the product RHS hierarchy,
-squared local and global scales, their auxiliaries, and any random squared
-slab scale have inverse-gamma updates. AL mixture
-variables have generalized inverse-Gaussian updates, and its likelihood scale
-has an inverse-gamma update. Under exAL, the mixture variables still have
-generalized inverse-Gaussian updates, while the additional \(s_t\) variables
-have positive truncated-normal updates.
-Conditional on shape, its scale has a generalized inverse-Gaussian law, but
-the joint scale--shape block remains nonconjugate. The exAL simulation MCMC
-transitions integrate scale out of the shape update and then redraw it from
-its conditional law. Convergence assessment includes rank-normalized
+blocks have Gaussian full conditional distributions; ordered intercepts have
+Gaussian conditionals truncated between neighboring intercepts. Under the
+product RHS hierarchy, squared local and global scales, their auxiliaries, and
+any random squared slab scale have inverse-gamma conditionals. AL mixture
+variables have generalized inverse-Gaussian (GIG) conditionals, and its
+likelihood scale has an inverse-gamma conditional. Under exAL, the \(v_t\)
+conditionals are GIG and the positive \(s_t\) conditionals are truncated
+Normal.
+
+The exAL scale--shape block is nonconjugate. In the reported simulation MCMC,
+the shape transition integrates \(\sigma\) out of its conditional kernel,
+samples \(\gamma\) from the resulting collapsed density, and immediately
+draws \(\sigma\) from its GIG conditional before any other block is changed.
+This ordered, partially collapsed transition preserves the intended joint
+posterior; interleaving another update between the collapsed shape step and
+the scale redraw would not be the same transition. Appendix~%
+\ref{app:qdesn-computation} gives the corresponding kernel. Convergence
+assessment includes rank-normalized
 \(\widehat R\), effective sample sizes, chain comparisons of reported
 scores and forecast summaries, and quantile-crossing diagnostics.
 
-Variational Bayes approximates the posterior through model-specific factors
-and supports fast repeated fitting. Completed variational fits can supply
-starting values for MCMC under the corresponding model. Appendix~\ref{app:qdesn-computation}
-gives the factors and updates, including the Laplace--Delta approximation
-of \citet{exd-wang2013nonconjugatevb} and the structured scale--shape
-approximation used in the multiquantile simulation.
+Variational Bayes approximates the same model-specific posterior or composite
+posterior with tractable factors. It is used for repeated high-dimensional
+fits in the applications and as an initialization for some simulation MCMC
+fits; the simulation sections identify results based on MCMC and those based
+on VB separately. Appendix~\ref{app:qdesn-computation} gives the variational
+factors, including the Laplace--Delta approximation of
+\citet{exd-wang2013nonconjugatevb} and the structured scale--shape factor used
+for exAL. Neither objective convergence nor a VB initialization is evidence of
+MCMC mixing or exact posterior uncertainty.
 
 % ============================================================
 
@@ -376,16 +382,27 @@ approximation used in the multiquantile simulation.
 
 A forecast origin \(o\) is the last time included in its observed history
 and may differ from the fitting endpoint \(T\); horizon \(h\) denotes
-prediction of \(Y_{o+h}\). Reservoir states are reconstructed
-from that history. Within each recursive forecast, unknown responses are
-generated under the stated response law, and their lags enter subsequent
-updates. At a fitted probability level \(p\), posterior or variational draw
-\(b\) and its simulated path yield the conditional-quantile location
-\(\mu_{o+h,p}^{(b)}=\beta_{0p}^{(b)}
-+\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}\).
-A marginal posterior predictive quantile instead integrates the response
-distribution over parameter and future-path uncertainty before taking its
-quantile.
+prediction of \(Y_{o+h}\). The evaluations retain the fitted parameter
+distribution; responses observed after \(T\) initialize the history at later
+origins but do not trigger a regression refit. Future covariates are supplied
+as the issued forecasts or retrospective paths specified by each study, so
+the forecast conditions on those paths rather than propagating uncertainty
+about them.
+
+For a parameter draw \(b\), the reservoir is reconstructed through origin
+\(o\) from observed responses and covariates. At \(h=1\), all response lags in
+Eq.~\eqref{qdesn2026:eq:desn-input-main} are observed. For \(h>1\), responses
+generated earlier on the same trajectory enter the response-lag block before
+the next reservoir state is computed. At fitted level \(p\), this path gives
+the conditional-quantile location
+\[
+\mu_{o+h,p}^{(b)}=\beta_{0p}^{(b)}
++\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}.
+\]
+It is conditional on one parameter draw and one recursively generated history.
+A marginal posterior predictive quantile first integrates the response law
+over parameter and future-path uncertainty and then takes the requested
+quantile; it need not equal the average of the conditional locations.
 
 \subsection{Forecast scores}
 
