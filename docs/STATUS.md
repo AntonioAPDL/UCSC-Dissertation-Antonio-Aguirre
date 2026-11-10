@@ -1,5 +1,43 @@
 # Project status
 
+## 2026-11-09 Bruno revision implemented and locally release-validated
+
+The detailed Bruno Sans\'o revision is complete on
+`editorial/bruno-revision-intake-20261109`. Chapter 4 through the received
+Section 4.4 review boundary was completed in manuscript commit `1af9387`, and
+the Chapter 5, Appendix E, and cross-dissertation contribution revision is
+fixed in manuscript commit
+`967dcaa60f6ab217c6138d8086e3bc9e426b2620`. The latter revision separates the
+inherited residual-product content result from the retained-mean contribution,
+defines the population target before computation, distinguishes generalized
+updating from the Dirichlet-process response model and the repeated-sampling
+tolerance statement, and records the complete calibration and validation
+design without restoring the full article supplement.
+
+The response matrix accounts for all 116 normalized comments: 83 are
+`IMPLEMENTED_VALIDATED`, 32 are `SATISFIED_CURRENT_VALIDATED`, and one is
+`DEFERRED_PENDING_SOURCE_IDENTIFICATION`. The deferred item is `B5-058`, whose
+handwritten reference to a possible additional “Tony et al.” comparator cannot
+be matched to a paper or method in the fixed sources. Young--Mathew and Wilks
+remain the verified comparators; no unsupported citation or method was added.
+Bruno's received Chapter 4 review still ends at Section 4.4, and the response
+record does not represent later Chapter 4 sections as reviewed.
+
+Fast, chapter, and release validation pass against the 120 immutable source
+blobs. The accepted ignored artifact is
+`build/release-20261110T004025Z/main.pdf`: 184 US-Letter pages, 4,144,577
+bytes, PDF 1.7, SHA-256
+`379e6436ef1f27d77d1e183eae9a89c4b4d54585f014a10c83933d7c1c60661e`.
+All fonts are embedded and no Type 3 font occurs. The final log has 12
+underfull and zero overfull boxes, with no unresolved citations or references,
+duplicate labels, missing files, rerun requests, or fatal TeX errors. Every
+page in the changed front-matter/contribution region, Chapter 5, Appendix E,
+and the revised synthesis region was rendered and inspected.
+
+This is a local implementation checkpoint. Nothing in this revision has been
+pushed, merged into `main`, or synchronized with Overleaf. Those operations
+remain a separate deliberate handoff.
+
 ## 2026-11-09 final planning audit for Bruno revision
 
 The detailed Bruno-review intake has received a final planning-only audit.

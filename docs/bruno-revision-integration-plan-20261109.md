@@ -1,6 +1,6 @@
 # FINAL controlling plan for Bruno Sansó's revision and advisor integration
 
-Status: **final planning audit complete; manuscript changes not yet implemented**
+Status: **implementation complete and locally release-validated; not pushed or merged**
 
 Version: 9 November 2026, final planning revision
 
@@ -831,12 +831,30 @@ The Bruno revision is complete only when:
 - the response record states honestly that the received Chapter 4 review ends
   at Section 4.4.
 
-## 12. Authorization boundary and next action
+## 12. Implementation closeout and handoff boundary
 
-This final planning pass does not authorize manuscript correction, source
-refresh, new computation, push, merge, Overleaf synchronization, or advisor
-communication. If the plan is approved for implementation, begin with WP-B0
-on the then-current clean remote baseline, complete C0, and only then execute
-WP-B1. Do not start by rewriting Chapter 5 globally. Its paragraph-function
-map and theorem/procedure dependencies must be frozen before the first Chapter
-5 prose edit.
+The candidate subsequently authorized the complete implementation. Work
+proceeded through the bounded C0--C5 sequence without a scientific source
+refresh or new research computation. Chapter 4 and Appendix D are fixed in
+commit `1af9387`; their evidence records are fixed in `f53104b`. Chapter 5,
+Appendix E, and the cross-dissertation contribution reconciliation are fixed in
+commit `967dcaa60f6ab217c6138d8086e3bc9e426b2620`.
+
+All 116 response items have final dispositions. Eighty-three are implemented
+and validated, 32 were already satisfied and were revalidated, and `B5-058` is
+deferred until the possible additional comparator can be identified from an
+exact source. The deferral is nonblocking because the two reported comparators
+are source-verified and no scientific claim depends on the unidentified note.
+
+Fast, chapter, and release gates pass against all 120 immutable source blobs.
+The accepted artifact is
+`build/release-20261110T004025Z/main.pdf`, SHA-256
+`379e6436ef1f27d77d1e183eae9a89c4b4d54585f014a10c83933d7c1c60661e`.
+The release has 184 US-Letter pages, all fonts embedded, no Type 3 fonts, zero
+overfull boxes, and no unresolved references, citations, labels, files, or
+fatal diagnostics. The changed reader-facing regions were inspected page by
+page.
+
+Implementation authorization did not include automatic publication. No push,
+merge into `main`, Overleaf synchronization, or advisor communication is part
+of this closeout. Those operations require a separate deliberate handoff.

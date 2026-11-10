@@ -76,6 +76,27 @@ C1_LOCATORS = {
     range(40, 41): "main.tex lines 142--575 and qdesn-supplement.tex lines 184--317",
 }
 
+C2_LOCATORS = {
+    range(1, 18): "main.tex lines 94--245",
+    range(18, 34): "main.tex lines 246--627 and rqr-gibbs-supplement.tex lines 210--817",
+    range(34, 39): "main.tex lines 421--627 and rqr-gibbs-supplement.tex lines 549--902",
+}
+
+C3_LOCATORS = {
+    range(39, 45): "main.tex lines 628--690 and rqr-gibbs-supplement.tex lines 934--1142",
+    range(45, 52): "main.tex lines 691--780 and rqr-gibbs-supplement.tex lines 1144--1186",
+    range(52, 57): "main.tex lines 701--827 and rqr-gibbs-supplement.tex lines 1190--1267",
+    range(57, 66): "main.tex lines 828 onward and rqr-gibbs-supplement.tex lines 1190--1397",
+}
+
+BE_LOCATORS = {
+    range(1, 5): "rqr-gibbs-supplement.tex lines 210--817",
+    range(5, 6): "rqr-gibbs-supplement.tex lines 818--902",
+    range(6, 7): "rqr-gibbs-supplement.tex lines 934--1142",
+    range(7, 11): "rqr-gibbs-supplement.tex lines 1190--1267",
+    range(11, 12): "rqr-gibbs-supplement.tex lines 210--1267",
+}
+
 EXACT_SOURCE = {
     "B4-012": ("SRC-QDESN", "main.tex", "lines 180--182"),
     "B4-016": ("SRC-QDESN", "main.tex", "lines 277--281"),
@@ -234,6 +255,15 @@ def c1_locator(item_id: str) -> str:
     raise ValueError(item_id)
 
 
+def source_locator(item_id: str) -> str:
+    number = int(item_id.split("-")[1])
+    mappings = BE_LOCATORS if item_id.startswith("BE-") else C2_LOCATORS if number <= 38 else C3_LOCATORS
+    for numbers, locator in mappings.items():
+        if number in numbers:
+            return locator
+    raise ValueError(item_id)
+
+
 def complete_stage(stage: str, commit: str | None) -> None:
     data = json.loads(MATRIX.read_text(encoding="utf-8"))
     validate(data["items"])
@@ -249,9 +279,13 @@ def complete_stage(stage: str, commit: str | None) -> None:
             if item["plan_status"] in {"SATISFIED_CURRENT", "CONTROL_GATE"}
             else "IMPLEMENTED_VALIDATED"
         )
+        if item["id"] == "B5-058":
+            item["final_status"] = "DEFERRED_PENDING_SOURCE_IDENTIFICATION"
         item["final_commit"] = commit
         if stage == "C1":
             item["source"]["locator"] = c1_locator(str(item["id"]))
+        else:
+            item["source"]["locator"] = source_locator(str(item["id"]))
     if selected == 0:
         raise SystemExit(f"no response items belong to {stage}")
     data["status"] = f"{stage}_VALIDATED" if stage != "C3" else "CHAPTER_REVISIONS_VALIDATED"

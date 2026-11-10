@@ -1,5 +1,57 @@
 # Validation record
 
+## 2026-11-09 Bruno detailed-review implementation release
+
+This release implements the 116-item response specification in
+`docs/bruno-revision-integration-plan-20261109.md`. Chapter 4 is revised only
+through Bruno Sans\'o's stated Section 4.4 review boundary. Chapter 5 now
+presents a definition-to-evidence sequence: fixed-content interval class,
+antecedent residual-product criterion, retained-mean characterization, MTI
+family, empirical balance, fixed-target generalized update, separate
+Dirichlet-process content model, calibrated tolerance action, independent
+validation, application, proposed extensions, and limitations. Appendix E
+contains the proofs, profile identity, calibration record, and conditional
+calculations needed to support that sequence and is 1,767 words.
+
+The response matrix closes 115 items with validation evidence and records one
+nonblocking deferral, `B5-058`, pending identification of the possible
+additional comparator in the handwriting. No comparator was inferred. The
+revision ledger and appendix essentiality map bind the edited derivatives to
+manuscript commit `967dcaa60f6ab217c6138d8086e3bc9e426b2620`, RQR-GIBBS
+authority commit `4223c6a3a44f376255bacdca91db71cdf4f3afde`, and
+MTI-EXTENSIONS authority commit
+`f345d946aa5a81b94795838bec58d874a0fdd0c9`.
+
+Fast, chapter, and release validation pass all 19 tests. The release rechecks
+nine research sources, 31 claim-evidence records, four chapter manifests, nine
+source documents, 96 section dispositions, 102 import records, 120 immutable
+source blobs, 18 current-source projections, 108 cited keys, 193 active
+labels, six migration records, and 15 active visual records. The Bruno control
+validator accounts for all 116 response items.
+
+The accepted ignored artifact is
+`build/release-20261110T004025Z/main.pdf`: 184 US-Letter pages, 4,144,577
+bytes, PDF 1.7, SHA-256
+`379e6436ef1f27d77d1e183eae9a89c4b4d54585f014a10c83933d7c1c60661e`.
+All 32 reported fonts are embedded and no Type 3 font occurs. The PDF is
+searchable, unencrypted, and untagged. Metadata gives the approved title, Jose
+Antonio Aguirre Perez de Leon as author, and Statistical Science as subject.
+The final log contains 12 underfull and zero overfull boxes and no unresolved
+citation, reference, duplicate-label, missing-file, rerun, or fatal diagnostic.
+
+Physical pages 9--16, 100--137, and 163--174 were rendered from the release
+artifact and inspected; this covers every page in the changed front matter and
+contribution opening, Chapter 5, the revised synthesis region, and Appendix E.
+No clipping, collision, malformed glyph, broken display, stranded heading,
+split caption, or unreadable table was found. Extracted text contains no
+drafting marker, prompt, collaboration-tool name, internal workflow language,
+submission warning, or generic promotional claim in dissertation prose. The
+approved limited-use AI statement is the only intentional AI reference.
+
+This record validates the local source and fixed-source provenance. It does
+not represent committee approval, an independent Overleaf compilation, a
+tagged accessibility-conformant filing PDF, or a push or merge to `main`.
+
 ## 2026-11-09 final academic-style polish release
 
 This release applies the bounded intervention in

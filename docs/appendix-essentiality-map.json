@@ -423,12 +423,13 @@
       "appendices/d-qdesn-technical.tex::label::qdesn2026:eq:supp_structured_shape_factor",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-pricefm-fold-design",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-sensitivity-summary",
-      "appendices/e-mti-technical.tex::heading::section::calibration-and-feasibility::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::calibration-and-sample-range-reference::occurrence::1",
       "appendices/e-mti-technical.tex::heading::section::population-and-empirical-results::occurrence::1",
       "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::section::proposed-regression-and-dynamic-endpoint-computation::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::proposed-endpoint-extensions::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::mean-tilt-and-profiled-identification::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-profiled-risk-derivative",
@@ -869,7 +870,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-technical"
     },
     {
@@ -881,7 +882,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-technical"
     },
     {
@@ -893,7 +894,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-proofs"
     },
     {
@@ -905,7 +906,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-proofs"
     },
     {
@@ -917,7 +918,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-proofs"
     },
     {
@@ -929,7 +930,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -941,7 +942,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -953,7 +954,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-calibration"
     },
     {
@@ -965,7 +966,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-calibration"
     },
     {
@@ -977,7 +978,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -989,7 +990,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -1001,7 +1002,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-extensions"
     },
     {
@@ -1013,7 +1014,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
+      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
       "final_location": "app:mti-extensions"
     }
   ],
@@ -13988,15 +13989,15 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::section::foundations-profiled-computation-and-validation-details::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::section::calibration-and-feasibility::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::section::calibration-and-sample-range-reference::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14042,15 +14043,16 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::dynamic-endpoint-state-updates::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14101,9 +14103,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14154,9 +14156,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14207,9 +14209,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14260,9 +14262,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14315,9 +14317,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14368,9 +14370,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14421,9 +14423,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14474,9 +14476,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14530,9 +14532,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14583,9 +14585,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14636,9 +14638,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14689,9 +14691,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14745,9 +14747,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14800,9 +14802,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14856,9 +14858,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14906,15 +14908,15 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::section::regression-and-dynamic-endpoint-computation::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::section::proposed-regression-and-dynamic-endpoint-computation::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::section::proposed-endpoint-extensions::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -14965,9 +14967,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15018,9 +15020,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15071,9 +15073,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15124,9 +15126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15177,9 +15179,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15230,9 +15232,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15283,9 +15285,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15338,9 +15340,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15394,9 +15396,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15449,9 +15451,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15504,9 +15506,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15559,9 +15561,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15614,9 +15616,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15669,9 +15671,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15724,9 +15726,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15779,9 +15781,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15834,9 +15836,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15889,9 +15891,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -15944,9 +15946,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -16004,9 +16006,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16064,9 +16066,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16124,9 +16126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16184,9 +16186,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16244,9 +16246,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16304,9 +16306,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16364,9 +16366,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -18892,9 +18894,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -18949,9 +18951,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19006,9 +19008,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19063,9 +19065,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19122,9 +19124,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19179,9 +19181,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19238,9 +19240,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19295,9 +19297,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19352,9 +19354,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19409,9 +19411,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19466,9 +19468,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19523,9 +19525,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19580,9 +19582,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19637,9 +19639,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19696,9 +19698,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19753,9 +19755,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {
@@ -19810,9 +19812,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c472f67e91cb2094c46217447cd2b7bad5494d59",
-        "final_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
+        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
       }
     },
     {

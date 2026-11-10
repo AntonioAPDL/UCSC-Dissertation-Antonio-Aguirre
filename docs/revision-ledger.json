@@ -17,38 +17,42 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "e6ac354b0ecff854ac8691d4cfb9f4af2b5c51f7b7a135cfd3b7579e1a0d596a",
+      "current_sha256": "91126b8fc400fd2e1944022330df910976612c20636ee56fd4cf9055f7cf8923",
       "state": "EDITED",
       "revision_ids": [
-        "REV-ADVISOR-INTRODUCTION-20261109"
+        "REV-ADVISOR-INTRODUCTION-20261109",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "16b8049c9ec0195a88d9ee8a2e2e2a060cf18d87e5d558ad12fb86629ff5b653",
+      "current_sha256": "4869297b636c77551a7098eef23bfbca6506e5d24ae62e5f8856af8d949121cf",
       "state": "EDITED",
       "revision_ids": [
-        "REV-ADVISOR-GLOBAL-20261109"
+        "REV-ADVISOR-GLOBAL-20261109",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "dda4ad88aedff178c0ce4740f6c884c0d87f77b609abcaaa3eb654bdad1ce4c7",
+      "current_sha256": "42607dff48594a42dca4985423948ab593f1a3395587f4c60d0d9f07083690dd",
       "state": "EDITED",
       "revision_ids": [
-        "REV-ADVISOR-GLOBAL-20261109"
+        "REV-ADVISOR-GLOBAL-20261109",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "5e6ac348a35a682298790e15abe053749f4cab13a152221870e2fdb8e98e3541",
+      "current_sha256": "3b1f681d87a81286af98dba633e1b3765c1c821b6e5bdd237008cfeab6f4eaa4",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
-        "REV-FINAL-ACADEMIC-STYLE-20261109"
+        "REV-FINAL-ACADEMIC-STYLE-20261109",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
@@ -117,7 +121,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "175e4e8b024c15f044b96434bfa5a7e08d8d6d7cf207f124adc00c073d8dc235",
+      "current_sha256": "149e550af244e991fd5cedba4968f9c12387526f91755250876f6657e8914a08",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -130,7 +134,8 @@
         "REV-APPENDIX-CURATION-20261107",
         "REV-COMMITTEE-COPY-20261107",
         "REV-ADVISOR-MTI-20261109",
-        "REV-FINAL-ACADEMIC-STYLE-20261109"
+        "REV-FINAL-ACADEMIC-STYLE-20261109",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
@@ -204,7 +209,7 @@
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "b4b029a13c8b934f3e0094f569c1be9e7f3dc034f03d5675de5a035753219aec",
+      "current_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
@@ -213,7 +218,8 @@
         "REV-READER-FIRST-20261008",
         "REV-CURRENT-SOURCES-20261026",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-BRUNO-MTI-20261109"
       ]
     },
     {
@@ -964,6 +970,21 @@
       "summary": "Applies a bounded final academic-style pass: procedural software narration is recast as statistical analysis, empirical comparisons name their scoring rule, and generic transitions are replaced by the relevant model, target, or population calculation without altering scientific content.",
       "evidence": "docs/final-academic-style-polish-20261109.md; docs/advisor-comments-ledger-20261109.md; the two byte-identical current academic-writing profiles",
       "validation": "Unchanged numerical, citation, cross-reference, label, input, and figure token sequences; anti-AI and promotional-language scans; fast and release validation; clean TeX diagnostics; extracted-text review; and rendered inspection of affected pages required before merge."
+    },
+    {
+      "id": "REV-BRUNO-MTI-20261109",
+      "date": "2026-11-09",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "summary": "Resolves Bruno Sanso's Chapter 5 annotations by separating the inherited residual-product content result from the retained-mean contribution, defining the interval target before computation, distinguishing generalized updating from a response likelihood, documenting the calibrated tolerance rule and its evidence, and retaining only proof, profile, and calibration details needed to support the chapter. The same contribution boundary is reconciled in the abstract, introduction, synthesis, and collaborative attribution statement.",
+      "evidence": "docs/bruno-revision-integration-plan-20261109.md; docs/bruno-revision-response-matrix-20261109.json; RQR-GIBBS commit 4223c6a3a44f376255bacdca91db71cdf4f3afde; MTI-EXTENSIONS commit f345d946aa5a81b94795838bec58d874a0fdd0c9; manuscript commit 967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "validation": "Fixed-source comparison, response-matrix closure, revision-ledger and appendix-map validation, clean 184-page TeX build, log and font diagnostics, terminology and extracted-text scans, and rendered inspection of the changed front matter, Chapter 5, Appendix E, and synthesis."
     }
   ]
 }
