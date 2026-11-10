@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-11-09",
+  "recorded_at": "2026-11-10",
   "evidence_scale": {
     "E0": "assertion only",
     "E1": "exact locator at an immutable snapshot",
@@ -90,15 +90,15 @@
     {
       "id": "CLM-EXDQLM-002",
       "classification": "candidate_contribution_claim",
-      "claim": "The later package line adds an integrated object and diagnostics API, LDVB and structured scale-skewness updates, static shrinkage workflows, synthesis helpers, C++ accelerators, and reproducibility fixes.",
+      "claim": "Antonio de Leon's later package work substantially restructures and extends exdqlm through improved LDVB and nonconjugate scale-skewness updates, compiled implementations for intensive operations, filtering and smoothing corrections, forecasting, diagnostics, scoring, posterior-predictive synthesis, and static AL/exAL regularized-horseshoe regression.",
       "source_id": "SRC-EXDQLM-PKG",
       "commit": "e51045a4324901cced27ca2aaa22569afbc8e0e6",
       "source_path": "NEWS.md",
       "locator": "versions 0.4.0 through 1.1.2",
       "evidence_level": "E2",
-      "verification_status": "NEWS, DESCRIPTION, article, functions, and focused tests cross-checked",
-      "qualification": "Candidate-specific design and implementation credit remains to be confirmed; package authorship alone is insufficient.",
-      "dissertation_disposition": "possible software appendix; chapter only after contribution decision"
+      "verification_status": "NEWS, DESCRIPTION, article, functions, focused tests, and the candidate's 2026-11-10 contribution clarification cross-checked",
+      "qualification": "Compiled implementations concern intensive operations, with R implementations retained where applicable. The claim does not assign the inherited exAL family, original exDQLM formulation, original MCMC/ISVB procedures, or transfer-function extension to Antonio and does not assert a measured speedup.",
+      "dissertation_disposition": "central Chapter 3 software and computation contribution"
     },
     {
       "id": "CON-EXDQLM-006",
@@ -227,13 +227,13 @@
       "locator": "Electricity-Price Quantile Forecasting results",
       "evidence_level": "E2",
       "verification_status": "main prose, source macros, fold table, and imported thesis projection agree",
-      "qualification": "The dates had been examined previously, forecast-vintage availability was not independently verified, and no paired uncertainty analysis was supplied.",
+      "qualification": "The dates had been examined previously, forecast-vintage availability was not independently verified, no paired uncertainty analysis was supplied, and the fixed-feature versus end-to-end contrast is architectural rather than a matched runtime result.",
       "dissertation_disposition": "central application comparison"
     },
     {
       "id": "ART-QDESN-008",
       "classification": "empirical_result",
-      "claim": "MQ--DESN reduces quantile crossing without a uniform score gain; independent fits have the lowest mean oracle score in six of eight mechanisms and winner--runner-up intervals overlap in every mechanism.",
+      "claim": "MQ--DESN reduces posterior-mean crossing rates from 5.488% to 0.021% under AL and from 0.606% to 0% under exAL, while independent fits have the lowest mean oracle score in six of eight mechanisms and winner--runner-up intervals overlap in every mechanism.",
       "source_id": "SRC-QDESN",
       "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
       "source_path": "main.tex",

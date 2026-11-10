@@ -259,7 +259,7 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 6-7",
-    "proposed_latex_implementation": "Class abstract environment with a 319-word dissertation-level abstract and final dissertation title/name",
+    "proposed_latex_implementation": "Class abstract environment with a 349-word dissertation-level abstract and final dissertation title/name",
     "verification_method": "Word count, compiled layout and rendered-page review",
     "status": "Substantive abstract and identifying header implemented; final author/committee review remains"
   },
@@ -271,9 +271,9 @@
     "source_id": "G1",
     "source_url": "https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/4/136/files/2024/09/dissertation-thesis-guidelines.pdf",
     "source_locator": "pp. 3, 6-7",
-    "proposed_latex_implementation": "Optional acknowledgment and dedication pages omitted from the committee copy",
+    "proposed_latex_implementation": "Acknowledgments page with source, contribution and bounded AI-use disclosures; optional dedication omitted",
     "verification_method": "Author content and rights/contribution review",
-    "status": "No drafting instructions or invented acknowledgments appear; required contribution/reuse language remains open"
+    "status": "Disclosures implemented without invented personal acknowledgments; material-specific reuse clearance remains open"
   },
   {
     "id": "F09",

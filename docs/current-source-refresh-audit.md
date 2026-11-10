@@ -1,5 +1,23 @@
 # Current research-source refresh audit
 
+> **Authority and interpretation addendum (2026-11-10).** The active Q--DESN
+> authority is commit `aa613b056b054edd9347eeb4739bd4bce0c92818`, superseding
+> the 2026-10-26 Q--DESN comparison below. It reports crossing reductions from
+> 5.488% to 0.021% under AL and from 0.606% to 0% under exAL, with independent
+> fits attaining the lowest mean oracle score in six of eight mechanisms. Its
+> PriceFM study reports selected-DESN mean AQL 6.687 versus 7.039 across 114
+> region--fold cases and a lower selected-DESN mean in all three fold summaries.
+> The architectural contrast is fixed recurrent features with Bayesian readouts
+> versus end-to-end PriceFM pretraining; no matched runtime comparison is
+> available. The active hydrology authority remains Corrected-3 commit
+> `c0bfccaa7cec698c016626ee30187f18a56d495c`, with one deterministic
+> precipitation and soil-water forecast path per origin rather than ensemble
+> summaries. The exdqlm article and package authorities remain
+> `98cec593d11bf32715a690ae168086f16160e7f0` and
+> `e51045a4324901cced27ca2aaa22569afbc8e0e6`. The dated 2026-10-26 findings
+> below are retained as the historical refresh record and do not override this
+> addendum or `docs/claim-evidence.json`.
+
 Status: **integration, release validation, and rendered review passed**
 
 Audit and projection date: 2026-10-26

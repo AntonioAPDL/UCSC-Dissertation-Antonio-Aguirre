@@ -1,5 +1,44 @@
 # Validation record
 
+## 2026-11-10 author-comments revision release
+
+The 22-item response specification in
+`docs/author-comments-response-matrix-20261110.json` is complete: every item is
+`IMPLEMENTED_VALIDATED`, has an explicit manuscript or documentation target,
+and records its validation evidence. The strict control passed with
+`python3.11 scripts/validate_author_comments_revision.py --require-complete`.
+The revision preserves the fixed source authorities and the earlier 116-item
+Bruno response record, including the single documented `B5-058` deferral.
+
+Release validation passed with
+`bash scripts/validate.sh --tier release --audit-root
+/tmp/bruno-complete-audit.xDFvN4`. It rechecked 120 immutable source blobs, 35
+display records (33 `KEEP`, two `OMIT`), 192 active labels, and 250 unique
+imported labels. The accepted ignored artifact is
+`build/release-20261110T082403Z/main.pdf`: 186 US-Letter pages, 4,149,323
+bytes, PDF 1.7, SHA-256
+`1e6cdde2f15ac3667f7af001309063751341bc9d32e8d71a956b96edc172508c`.
+The final abstract body is 349 words.
+
+The final log contains 12 underfull and zero overfull boxes and no unresolved
+citations or references, duplicate labels, rerun request, missing file, or
+fatal TeX error. All 32 reported fonts are embedded and no Type 3 font occurs.
+The PDF is searchable, unencrypted, and untagged. Metadata retains the approved
+title, Jose Antonio Aguirre Perez de Leon as author, and Statistical Science as
+subject.
+
+Physical pages 9, 10, 12, 15, 32, 39, 44, 70, 91, 98, 132, 134--136, and 162
+were rendered from the release artifact and inspected. These pages cover the
+abstract, contribution and disclosure passages, the revised hydrology,
+software, Q--DESN, PriceFM, synthesis, MTI, and Appendix D material. No
+clipping, collision, malformed glyph, broken display, stranded heading, split
+caption, or unreadable table was found. The page-number text on physical page
+135 was also confirmed as 123 by direct PDF extraction.
+
+This validates the local source and artifact. It does not represent committee
+approval, an accessibility-conformant filing PDF, an independent Overleaf
+compilation, or a push or merge to `main`.
+
 ## 2026-11-09 post-Bruno final polish release
 
 The bounded pass recorded in `docs/post-bruno-final-polish-20261109.md` was

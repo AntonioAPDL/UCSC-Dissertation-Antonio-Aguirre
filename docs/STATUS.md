@@ -1,5 +1,41 @@
 # Project status
 
+## 2026-11-10 author revision implemented and release-validated
+
+The 22-item author-comments specification is complete on
+`editorial/bruno-revision-intake-20261109`. The abstract, introduction, four
+research chapters, synthesis, Appendix D summary table, acknowledgments and
+AI-use disclosure, and the connected evidence records now implement the
+approved revisions. The final abstract is 349 words. The hydrology chapter
+states the fixed future-covariate design and its calibration evidence; the
+software chapter distinguishes inherited methods from Antonio de Leon's later
+package work; the Q--DESN chapter reports exact crossing and PriceFM evidence
+without claiming a matched runtime comparison; and the MTI chapter separates
+population, generalized-posterior, content-model, and repeated-sampling
+statements. All 22 response-matrix items are `IMPLEMENTED_VALIDATED`.
+
+The accepted ignored artifact is
+`build/release-20261110T082403Z/main.pdf`: 186 US-Letter pages, 4,149,323
+bytes, PDF 1.7, SHA-256
+`1e6cdde2f15ac3667f7af001309063751341bc9d32e8d71a956b96edc172508c`.
+Release validation passed all repository controls and rechecked 120 immutable
+source blobs. The final log has 12 underfull and zero overfull boxes and no
+unresolved citation, reference, duplicate-label, rerun, missing-file, or fatal
+diagnostic. All 32 fonts are embedded and no Type 3 font occurs. The abstract,
+contribution openings, changed empirical passages, synthesis, and Appendix D
+summary table were rendered and inspected without clipping, collision, or
+unreadable content.
+
+The earlier Bruno response record remains intact: 115 of 116 normalized items
+are closed, and `B5-058` remains explicitly deferred because the possible
+additional comparator cannot be identified from the handwriting or fixed
+sources. This revision does not represent a review of Chapter 4 beyond Bruno's
+stated Section 4.4 boundary. The PDF is searchable but untagged; accessibility
+remains a filing-stage task rather than a blocker for the committee copy.
+
+This is a local checkpoint. Nothing from this revision has been pushed, merged
+into `main`, or synchronized with Overleaf.
+
 ## 2026-11-09 post-Bruno final polish release validated
 
 The interrupted final pass has been reconstructed and completed on

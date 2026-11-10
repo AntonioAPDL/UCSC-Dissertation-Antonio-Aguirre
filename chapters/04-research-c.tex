@@ -45,7 +45,7 @@ encourages similar neighboring effects but does not impose noncrossing. Third,
 the methods are evaluated through linear and nonlinear simulation mechanisms,
 retrospective streamflow correction, and regional electricity-price
 forecasting. The studies assess quantile recovery, forecast loss, crossings,
-and computational requirements without supporting a uniform ranking.
+and computational requirements as distinct empirical criteria.
 
 Echo state networks generate dynamic predictors from recurrent states whose
 internal weights are fixed before fitting
@@ -786,8 +786,9 @@ scores range from \GlofasApplicationCurrentQdesnAcrps{} to
 the lowest loss, \GlofasApplicationCurrentAcrpsReduction{} below the raw
 ensemble. MQ--DESN remains close to independent estimation: its AL and exAL
 scores are approximately 3\% and 2\% higher than the corresponding independent
-fits. These are one-origin descriptive comparisons and do not establish a
-general ranking across forecast origins.
+fits. This one-origin comparison estimates score differences across the 28
+issued horizons; evaluation at additional origins remains necessary to assess
+how those differences vary across forecast conditions.
 
 Figure~\ref{qdesn2026:fig:glofas-application-forecast-period} shows the
 observations, issued ensemble, and Q--DESN forecasts under AL over the common
@@ -856,7 +857,7 @@ exAL, all with RHS priors. Q--DESN fits the levels separately; MQ--DESN shares
 information across levels within a region. Temporal validation periods inside
 the first training interval select the reservoir, shrinkage settings and
 predictors for each candidate. The first outer validation period selects the
-candidate with the lowest AQL. This region-specific choice remains fixed
+candidate with the lowest average quantile loss (AQL). This region-specific choice remains fixed
 across all three test folds, while the regression coefficients are refitted
 using each fold's training observations. We call the resulting procedure the
 selected DESN model.
@@ -878,8 +879,8 @@ The regressions use direct multihorizon predictors rather than recursively
 generated future prices.
 
 Each evaluation is scored on the fold-aligned held-out timestamps and
-probability levels \PricefmFullPaperQuantiles. We use average quantile loss
-(AQL) to compare forecasts. Throughout this section,
+probability levels \PricefmFullPaperQuantiles. We use AQL to compare forecasts.
+Throughout this section,
 \(\Delta\) AQL denotes selected DESN AQL minus reproduced PriceFM AQL.
 Negative values indicate lower DESN AQL; positive values indicate lower
 PriceFM AQL.
@@ -953,7 +954,7 @@ ensemble. Independent fits perform slightly better within each likelihood:
 MQ--DESN scores are approximately 3\% higher under AL and 2\% higher under
 exAL. Together with the crossing reductions in the simulations, this suggests
 a possible tradeoff between adjacent-coefficient regularization for quantile
-coherence and forecast accuracy; it does not establish a universal ordering.
+coherence and forecast accuracy under the reported mechanisms and application.
 
 For electricity prices, validation selects among Q--DESN and MQ--DESN under
 AL and exAL with RHS priors. The selected models have mean AQL

@@ -13,6 +13,23 @@
 > supersede conflicting entries in the historical G1 table below. Rights,
 > granular contribution, ORCID, and final-source-freeze decisions remain open.
 
+> **G1/G2 authority and contribution addendum (2026-11-10).** The active
+> Q--DESN authority is `aa613b056b054edd9347eeb4739bd4bce0c92818`; the
+> hydrology authority is Corrected-3 commit
+> `c0bfccaa7cec698c016626ee30187f18a56d495c`. These supersede the older pins
+> above for current scientific interpretation. Antonio de Leon also confirmed
+> that his `exdqlm` contribution is the substantial later restructuring and
+> extension of the package: improved LDVB and nonconjugate scale--skewness
+> updates; compiled implementations for intensive operations, with R
+> implementations retained where applicable; filtering and smoothing
+> corrections; forecasting, diagnostics, scoring, and posterior-predictive
+> synthesis; and static AL/exAL regression with regularized-horseshoe
+> shrinkage. This resolves the earlier `PENDING` allocation only for those
+> tasks. It does not attribute the exAL family, original exDQLM formulation,
+> original MCMC/ISVB algorithms, or transfer-function extension to Antonio; it
+> does not assert that the complete package is C++ or report an unmeasured
+> speedup.
+
 Status: **partially resolved by author direction; focused confirmations remain**
 Prepared: 2026-09-15
 Revised: 2026-09-16

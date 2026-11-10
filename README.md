@@ -115,9 +115,10 @@ test.
 
 The chapters directory contains a substantive introduction, four converted and
 scientifically revised research chapters, and a dissertation-wide synthesis.
-The global abstract is drafted. Optional acknowledgments are omitted from the
-compiled committee copy until author-approved text is available, and the second
-leaf contains the author-selected copyright notice. The starter demonstration
+The global abstract is drafted. The acknowledgments page records the chapter
+sources, contribution boundaries, and bounded AI-use disclosure; the optional
+dedication is omitted. The second leaf contains the author-selected copyright
+notice. The starter demonstration
 appendix is no longer part of the document; the active scientific appendices are in
 `appendices/a-shared-conventions.tex` through
 `appendices/e-mti-technical.tex`. The consolidated bibliography is generated from
@@ -125,9 +126,9 @@ the fixed manuscript snapshots plus the two administrative starter records.
 The title page follows the official unsigned approval-page wording and contains
 no signature images. The title, degree field, committee, December 2026 date,
 current dean wording, and copyright notice are confirmed in the front-matter
-sources. Approval, contribution acknowledgments, reuse decisions, and the
-filing-version accessibility check remain tracked in the project documentation
-rather than printed as drafting notices in the dissertation.
+sources. Approval, material-specific reuse clearances, and the filing-version
+accessibility check remain tracked in the project documentation rather than
+printed as drafting notices in the dissertation.
 
 ## Portability and provenance
 

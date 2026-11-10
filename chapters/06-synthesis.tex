@@ -42,17 +42,17 @@ distributions & A shared latent quantile process with source-specific
 discrepancies, scale--skewness variational updates, and monotone synthesis &
 Five origins; a 28-day Bayesian comparison and a common 8-day comparison & One
 covariate path per origin; no matched full-model Markov chain Monte Carlo
-comparison \\
+(MCMC) comparison \\
 3: \pkg{exdqlm}; dynamic and static conditional quantiles & Substantial later
 package restructuring by Antonio de Leon: improved variational updates,
 compiled intensive operations, filtering and smoothing corrections,
 prediction, diagnostics, synthesis, and static shrinkage & Software examples,
 paired computations, diagnostics, and held-out comparisons & Implemented
-capabilities and case-specific tradeoffs, not a universal algorithm ranking \\
+capabilities and observed computational and inferential tradeoffs \\
 4: Q--DESN; separately or jointly regularized conditional quantiles & Fixed
 nonlinear recurrent features with regularized Bayesian readouts and
 adjacent-level coefficient shrinkage & Exact simulation crossing and oracle
-scores; retrospective GloFAS and PriceFM comparisons & Selected reservoirs,
+scores; retrospective streamflow and electricity-price comparisons & Selected reservoirs,
 one trajectory per simulation mechanism, and retrospective applications \\
 5: MTI; contiguous fixed-content interval placement and a tolerance action & A
 retained-mean characterization, a tilt-indexed interval family, and a calibrated
@@ -84,8 +84,9 @@ must be analyzed separately.
 \subsection{Source-aware hydrologic correction and synthesis}
 
 The hydrologic study combines a shared latent quantile process with
-source-specific discrepancies for the USGS observations, retrospective model
-products, and issued ensemble forecasts. Transfer covariates carry information
+source-specific discrepancies for the U.S. Geological Survey (USGS)
+observations, retrospective model products, and issued ensemble forecasts.
+Transfer covariates carry information
 from the pre-origin period into the forecast window, after which fitted
 quantiles are synthesized to obtain complete predictive distributions.
 
@@ -119,9 +120,8 @@ analysis combines multi-quantile fitting and predictive synthesis; the
 Sunspots example compares DQLM and exDQLM computation; and the sparse
 simulation compares MCMC with LDVB under the same static model. LDVB is faster
 in the reported sparse fits, whereas MCMC has lower held-out quantile error at
-all three levels. These examples do not establish a universal ranking of
-algorithms. They show why convergence, approximation quality, uncertainty, and
-predictive accuracy require separate diagnostics.
+all three levels. This contrast shows why convergence, approximation quality,
+uncertainty, and predictive accuracy require separate diagnostics.
 
 \subsection{Nonlinear recurrent features for conditional quantiles}
 

@@ -71,9 +71,9 @@ with 28-day and common eight-day comparisons. It is a retrospective,
 origin-limited evaluation rather than a continuous forecasting experiment.
 At each origin, one supplied deterministic precipitation and soil-water
 forecast path enters the model; its uncertainty is not propagated. The five
-origins reflect the cost of repeated full dynamic fits, and no matched
-full-model Markov chain Monte Carlo (MCMC) experiment measures the variational
-approximation error.
+origins reflect the cost of repeated full dynamic fits. A matched full-model
+Markov chain Monte Carlo (MCMC) comparison remains a priority for assessing
+variational approximation error and uncertainty.
 
 \paragraph{Statistical computation and the \pkg{exdqlm} software.}
 Chapter~\ref{ch:research-a} addresses the computation required by dynamic
@@ -88,9 +88,9 @@ scale--skewness updates; compiled implementations for intensive operations,
 with \proglang{R} implementations retained where applicable; filtering and
 smoothing corrections; forecasting, diagnostics, scoring, and
 posterior-predictive synthesis; and static AL/exAL regression under
-regularized-horseshoe shrinkage. The worked examples establish functionality
-and computational tradeoffs, not a general predictive advantage for one
-inferential method.
+regularized-horseshoe shrinkage. The worked examples demonstrate these
+capabilities and compare simulation cost, approximation, uncertainty, and
+predictive loss under the reported models.
 
 \paragraph{Bayesian quantile regression with deep echo-state features.}
 Chapter~\ref{ch:research-c} develops the quantile deep echo state network
@@ -286,11 +286,12 @@ Simulation can additionally assess recovery of a known parameter or quantile
 path. Predictive-interval calibration, posterior convergence, and tolerance
 content answer still different questions. The Chapter~\ref{ch:research-d}
 validation, for example, estimates the content and width of a procedure fixed
-before the independent simulation stage. Its success on the prespecified
-eight-distribution panel does not establish coverage for every population
-distribution. Likewise, the application studies support comparisons under
-their stated forecast origins, information sets, and scoring rules rather than
-universal rankings.
+before the independent simulation stage. Across the prespecified
+eight-distribution panel, it supplies finite-sample repeated-sampling evidence
+for both content attainment and width. Evaluation under additional
+distributions, dependence structures, and sample sizes is a separate extension.
+The application studies likewise define their comparisons through stated
+forecast origins, information sets, and scoring rules.
 
 \section{Dissertation organization}
 \label{sec:intro-organization}

@@ -5,7 +5,10 @@
 > older project summaries where the scientific authorities have changed. They
 > distinguish antecedent literature, collaborative project contributions,
 > candidate-specific documentary evidence, supporting evidence, and claim
-> limits. Granular task allocation is not inferred from author order.
+> limits. Granular task allocation is not inferred from author order. On
+> 2026-11-10 the candidate additionally confirmed the later `exdqlm`
+> restructuring and extensions identified below; that confirmation supersedes
+> the earlier pending status for those specific software contributions.
 
 ## 2026-11-09 contribution dossiers
 
@@ -38,9 +41,11 @@
   comparisons, and transformed- and discharge-scale sensitivity. Corrected-3
   commit `c0bfccaa7cec698c016626ee30187f18a56d495c` is the authority.
 - **Boundary.** The study is retrospective and origin-limited; future
-  covariate paths enter as supplied summaries; conditional residual dependence
-  and source-scale simplifications remain; and no matched full-model MCMC
-  study measures VB posterior-approximation error.
+  precipitation and soil-water values enter through one supplied deterministic
+  forecast path at each origin, whose uncertainty is not propagated. The five
+  origins reflect the cost of repeated full dynamic fits. Conditional residual
+  dependence and source-scale simplifications remain, and a matched full-model
+  MCMC study is needed to assess VB posterior-approximation error directly.
 
 ### `exdqlm` statistical software and computation
 
@@ -48,27 +53,33 @@
   implementation that connects model construction, posterior computation,
   diagnostics, forecasting, predictive synthesis, and static shrinkage
   regression without obscuring the inferential meaning of each output.
-- **Inherited foundation.** Yan and coauthors supply exAL/static foundations;
-  Barata and coauthors supply exDQLM, original MCMC/ISVB, and transfer-function
-  foundations; standard Bayesian computation and scoring methods retain their
-  cited origins.
+- **Inherited foundation.** Yan, Zheng, and Kottas supply the exAL family and
+  static exAL foundation. Barata, Prado, and Sansó supply exDQLM, the original
+  MCMC/ISVB procedures, and the transfer-function extension. Standard Bayesian
+  computation and scoring methods retain their cited origins.
 - **Collaborative project contribution.** The article and package supply an
   integrated R interface with composable dynamic components, coordinated
   MCMC/LDVB/ISVB interfaces, fitted-object methods, forecasting and
   diagnostics, post-fit quantile synthesis, compiled utilities, static
   AL/exAL shrinkage regression, tests, examples, and reproducibility records.
 - **Candidate-specific evidence.** Antonio de Leon is first author of the
-  software article and an `aut` in package metadata. Raquel Barata remains the
-  documented package creator/maintainer and article coauthor. More granular
-  API, algorithm, compiled-code, testing, example, and writing assignments are
-  unconfirmed and are not attributed individually.
+  software article and an `aut` in package metadata. He confirmed his
+  substantial later restructuring and extension of the package: improved LDVB
+  and nonconjugate scale--skewness updates; compiled implementations for
+  intensive operations, with R implementations retained where applicable;
+  filtering and smoothing corrections; forecasting, diagnostics, scoring, and
+  posterior-predictive synthesis; and static AL/exAL regression under
+  regularized-horseshoe shrinkage. Raquel Barata remains the documented package
+  creator/maintainer and article coauthor. This record does not attribute the
+  inherited distributions, model, or original algorithms to Antonio.
 - **Supporting evidence.** The current article authority is
   `98cec593d11bf32715a690ae168086f16160e7f0`, supported by the fixed package
   record. Worked analyses establish functionality and computational tradeoffs,
   including negative or mixed predictive findings.
-- **Boundary.** Software functionality is not a universal predictive-accuracy
-  claim; post-fit synthesis is not a joint multi-quantile posterior; article,
-  hydrology, and Q--DESN analyses retain their recorded package versions.
+- **Boundary.** The examples separately assess computation, approximation,
+  posterior uncertainty, and predictive loss. Post-fit synthesis is not a
+  joint multi-quantile posterior; article, hydrology, and Q--DESN analyses
+  retain their recorded package versions.
 
 ### Bayesian quantile regression with deep echo-state features
 
@@ -91,9 +102,13 @@
   language is required.
 - **Supporting evidence.** The current authority is
   `aa613b056b054edd9347eeb4739bd4bce0c92818`. The simulations report recovery,
-  scores, crossing, and computation under stated mechanisms; the GloFAS study
-  is a one-origin retrospective comparison; PriceFM uses 114 region-fold
-  cases with region-specific validation selection.
+  scores, crossing, and computation under stated mechanisms. Adjacent-level
+  sharing reduces crossing from 5.488% to 0.021% under AL and from 0.606% to
+  0% under exAL, while separate fits have the lowest mean oracle score in six
+  of eight mechanisms. The GloFAS study is a one-origin retrospective
+  comparison. Across 114 PriceFM region--fold cases, selected DESN regressions
+  have mean AQL 6.687 versus 7.039 for reproduced PriceFM forecasts and a lower
+  fold mean in all three folds.
 - **Boundary.** Reservoirs and evaluation windows are development-informed;
   the multiquantile prior can reduce crossing but does not guarantee a uniform
   score gain or enforce monotonicity; future weather is conditioned upon in the
@@ -131,10 +146,10 @@
   or empirical tolerance validation and must remain proposed developments.
 
 These dossiers support firm statements about the four collaborative project
-contributions. They do not support singular claims that the candidate alone
-proved, designed, implemented, analyzed, or wrote a named component. Such
-language requires later candidate/coauthor confirmation and is not necessary
-for a clear dissertation contribution case.
+contributions. Except for the candidate-confirmed later `exdqlm`
+restructuring and extensions recorded above, they do not assign a named task
+to one author alone. No statement attributes inherited methods to the
+candidate or converts first authorship into unsupported individual ownership.
 
 > **Current-source addendum (2026-10-26).** The Q--DESN, RQR/MTI tolerance,
 > and `exdqlm` article authorities have been refreshed to commits `483e6ed`,

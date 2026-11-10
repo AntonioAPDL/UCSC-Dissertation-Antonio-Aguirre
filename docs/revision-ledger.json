@@ -17,7 +17,7 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "4b9c23d9241930d19a945f097b5e16582042358508ddd8784d6ed3cfe469a900",
+      "current_sha256": "0152019b36de5a899dcb4102f8fb425ff1d4b329ffb7c3929a33903db4d4d942",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-INTRODUCTION-20261109",
@@ -28,7 +28,7 @@
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "53116037fccdeb2505edfdd8be7eb7e5ba4528796d44b4a82f0cd24d7f08deb6",
+      "current_sha256": "55201938bc289f2940ffa477eb298ee5495e92ec0d4c628d06c48707a5c3d2ca",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -51,7 +51,7 @@
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "cf1b83b0b208742ca3ac90fa651ef5dba2f7123a32da55208c9489af12ed7bb9",
+      "current_sha256": "4ad587f1bc9a8f63f2015c9baa815600bc42a1dc25bed9f37f47342ea8dda126",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -108,7 +108,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "daa727629b179f6177c327b5dc0dfb60a367afd06eaa686903966f932a6cd363",
+      "current_sha256": "1c502389b0154bc782113aeac2eab9a3cf9384c59f253d9bb44e70c5a137d9bc",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",

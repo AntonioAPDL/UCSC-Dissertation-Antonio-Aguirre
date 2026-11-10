@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-09-16",
+  "recorded_at": "2026-11-10",
   "baseline_commit": "5def110d009545551e89b7efc9746c61122e8918",
   "severity_order": [
     "blocking",
@@ -15,11 +15,12 @@
       "locator": "metadata.tex and frontmatter",
       "issue_type": "administrative_metadata",
       "severity": "blocking",
-      "evidence": "Title, conferral date, committee roles, dean wording, abstract, and acknowledgments remain explicit placeholders.",
-      "proposed_action": "Preserve the placeholders until the author supplies the official values; draft the abstract only after the research chapters stabilize.",
+      "evidence": "The title, conferral date, committee roles, dean wording, 349-word abstract, copyright leaf, and contribution acknowledgments are populated for the committee copy.",
+      "proposed_action": "Preserve the verified front matter; obtain signatures and complete the separate accessibility and filing review before final submission.",
       "source_provenance": "metadata.tex; frontmatter/abstract.tex; frontmatter/acknowledgments.tex",
-      "author_input_required": true,
-      "validation": "frontmatter and PDF-metadata review"
+      "author_input_required": false,
+      "validation": "frontmatter, PDF metadata, word-count, and rendered-page review",
+      "resolution_status": "RESOLVED_FOR_COMMITTEE_COPY_20261110"
     },
     {
       "id": "ED-GLOBAL-002",
@@ -27,11 +28,12 @@
       "locator": "Chapters 1 and 6",
       "issue_type": "thesis_organization",
       "severity": "major",
-      "evidence": "The dissertation introduction and synthesis contain only TODO scaffolds.",
-      "proposed_action": "Write both only after Chapters 2--5 are stable so the framing reflects the actual contributions and qualifications.",
+      "evidence": "The introduction defines the common targets and four contributions; the synthesis compares target, contribution, evidence, and scope and states the principal findings and limitations.",
+      "proposed_action": "Keep both aligned with the fixed research authorities and chapter results.",
       "source_provenance": "chapters/01-introduction.tex; chapters/06-synthesis.tex",
       "author_input_required": false,
-      "validation": "cross-chapter terminology and contribution audit"
+      "validation": "cross-chapter terminology, contribution, acronym, and rendered-table audit",
+      "resolution_status": "RESOLVED_IN_AUTHOR_COMMENTS_REVISION_20261110"
     },
     {
       "id": "ED-GLOBAL-003",
@@ -39,11 +41,12 @@
       "locator": "docs/display-ledger.json",
       "issue_type": "figure_table_essentiality",
       "severity": "major",
-      "evidence": "The research chapters contain 95 labeled displays, producing approximately 28 pages of figure and table lists.",
-      "proposed_action": "Apply the recorded KEEP/MERGE/TEXT-SUMMARY/OMIT decisions and retain exact prose summaries and provenance for removed secondary displays.",
+      "evidence": "The active display ledger contains 35 records: 33 KEEP and 2 OMIT; the compiled lists contain only the retained reader-facing displays.",
+      "proposed_action": "Preserve the current display and appendix essentiality decisions unless a scientific claim changes.",
       "source_provenance": "research chapters and their transitive TeX inputs",
       "author_input_required": false,
-      "validation": "display-ledger completeness, list lengths, citations, and rendered-page review"
+      "validation": "display-ledger completeness, list lengths, citations, and rendered-page review",
+      "resolution_status": "RESOLVED_AND_REVALIDATED_20261110"
     },
     {
       "id": "ED-GLOBAL-004",
@@ -75,11 +78,12 @@
       "locator": "chapter contribution notes",
       "issue_type": "candidate_role_uncertainty",
       "severity": "major",
-      "evidence": "Repositories establish joint project contributions and collaborators, but not granular individual role allocation.",
-      "proposed_action": "Retain collective or chapter-centered contribution wording and defer singular candidate-role claims.",
+      "evidence": "Collaborative contributions remain chapter-centered; the candidate separately confirmed his substantial later exdqlm restructuring and extensions on 2026-11-10.",
+      "proposed_action": "State the confirmed exdqlm work directly, retain cited antecedents, and keep the other project contributions collaborative unless further allocation evidence is supplied.",
       "source_provenance": "docs/research-decisions.md and fixed source manuscripts",
-      "author_input_required": true,
-      "validation": "author/coauthor contribution confirmation"
+      "author_input_required": false,
+      "validation": "candidate confirmation, package/article evidence, acknowledgments, introduction, and synthesis consistency",
+      "resolution_status": "RESOLVED_WITH_BOUNDED_ATTRIBUTION_20261110"
     },
     {
       "id": "ED-CH02-001",
@@ -282,12 +286,12 @@
       "locator": "PriceFM comparison",
       "issue_type": "empirical_interpretation",
       "severity": "major",
-      "evidence": "Across 114 region-fold comparisons Q-DESN wins 54 and PriceFM wins 60; mean AQL is 7.217 versus 7.039.",
-      "proposed_action": "Present the comparison as heterogeneous and not as overall Q-DESN superiority.",
-      "source_provenance": "tables/ch04-qdesn/pricefm_full_current_outputs.tex",
+      "evidence": "At current authority aa613b0, selected DESN has mean AQL 6.687 versus 7.039 for reproduced PriceFM forecasts across 114 region-fold cases and a lower mean in each fold summary.",
+      "proposed_action": "Report the matched predictive result and distinguish fixed-feature Bayesian readouts from end-to-end pretraining without claiming a measured runtime advantage.",
+      "source_provenance": "SRC-QDESN@aa613b0; tables/ch04-qdesn/pricefm_summary_20261106.tex",
       "author_input_required": false,
       "validation": "numbers and wording against current output macros",
-      "resolution_status": "RESOLVED_IN_REV_CH04_20260916"
+      "resolution_status": "RESOLVED_AND_REVALIDATED_20261110"
     },
     {
       "id": "ED-CH05-001",

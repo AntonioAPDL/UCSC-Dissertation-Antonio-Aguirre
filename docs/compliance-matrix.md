@@ -82,8 +82,8 @@ the complete rule-to-check mapping readable.
 | F04 | University-record name, author-selected dissertation title, and December 2026 date centralized in metadata.tex | Signed Fall 2026 degree application, current filing notice, applicable catalogs, and author decision | Name, title, degree field, and title-page date verified; dissertation approval remains open |
 | F05 | Donald Smith and exact two-line title centralized; no signature images | Current guide and candidate-specific Graduate Division instructions | Dean wording and unsigned ProQuest route verified; committee approval/signatures remain future actions |
 | F06 | Standard copyright notice on counted, unnumbered page ii | PDF second page, text extraction, and rendered review | Author-selected notice implemented; optional registration remains a separate filing choice |
-| F07 | Class abstract environment with 319-word dissertation-level abstract and final dissertation title/name | Word count, compiled layout and rendered-page review | Substantive abstract and identifying header implemented; final author/committee review remains |
-| F08 | Optional acknowledgment and dedication pages omitted from the committee copy | Author content and rights/contribution review | No drafting instructions or invented acknowledgments appear; required contribution/reuse language remains open |
+| F07 | Class abstract environment with 349-word dissertation-level abstract and final dissertation title/name | Word count, compiled layout and rendered-page review | Substantive abstract and identifying header implemented; final author/committee review remains |
+| F08 | Acknowledgments page with source, contribution and bounded AI-use disclosures; optional dedication omitted | Author content and rights/contribution review | Disclosures implemented without invented personal acknowledgments; material-specific reuse clearance remains open |
 | F09 | Automatic TOC, LoF and LoT; double spacing | Resolve reruns and compare page references | Implemented and demonstrated |
 
 ## Mathematical content

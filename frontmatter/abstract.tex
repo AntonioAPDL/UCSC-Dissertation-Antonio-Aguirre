@@ -28,10 +28,10 @@ from 5.488\% to 0.021\% under the asymmetric Laplace model and from 0.606\% to
 0\% under exAL, while separate fits have the lowest mean oracle score in six
 mechanisms, an empirical tradeoff between ordering and quantile recovery.
 For electricity prices, selected DESN regressions have mean average quantile
-loss 6.687 versus 7.039 for reproduced PriceFM forecasts over 114 region--fold
-cases and a lower mean in all three folds. These regressions use fixed recurrent
-features, whereas PriceFM was trained end to end; computing time was not
-compared.
+loss 6.687 versus 7.039 for reproduced pretrained PriceFM forecasts over 114
+region--fold cases and a lower mean in all three folds. The
+comparison contrasts Bayesian regression on fixed recurrent features with
+end-to-end training; computing time was not compared.
 
 The fourth project characterizes the retained-mean target of a residual-product
 criterion and embeds its mean-preserving interval in a tilt-indexed
@@ -40,6 +40,6 @@ and applies a posterior content check. Simulations provide repeated-sampling
 evidence over eight distributions; a pharmaceutical analysis motivates
 prospective evaluation with independent batches and fixed rules.
 
-Together, the projects match target-specific methods and computation to
+The projects match target-specific methods and computation to
 predictive, posterior, or repeated-sampling validation.
 \end{abstract}
