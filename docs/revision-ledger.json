@@ -17,11 +17,12 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "91126b8fc400fd2e1944022330df910976612c20636ee56fd4cf9055f7cf8923",
+      "current_sha256": "4b9c23d9241930d19a945f097b5e16582042358508ddd8784d6ed3cfe469a900",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-INTRODUCTION-20261109",
-        "REV-BRUNO-MTI-20261109"
+        "REV-BRUNO-MTI-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {

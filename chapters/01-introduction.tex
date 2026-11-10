@@ -4,15 +4,18 @@
 \section{Motivation and objectives}
 \label{sec:intro-problem}
 
-Many statistical analyses require features of a response distribution other
-than its conditional mean. River-flow forecasts must describe lower and upper
+This dissertation concerns inference for response-distribution features other
+than the conditional mean: conditional quantiles and fixed-content intervals.
+River-flow forecasts must describe lower and upper
 tails as well as central behavior, and their accuracy can depend on the
 forecasting system and lead time. Electricity-price forecasts must represent
 asymmetric uncertainty conditional on recent prices and supplied covariates.
 In a different setting, a tolerance interval must contain a prescribed fraction
 of a population with a stated repeated-sampling confidence. These problems
 involve related distributional ideas, but their inferential targets are not
-interchangeable.
+interchangeable. The unifying question is how to define each target, construct
+a model and computation appropriate to it, and validate the resulting claim
+under the information actually available.
 
 Conditional quantile regression provides a direct way to study tail and central
 behavior. Its use in time series raises two recurring questions. First, how
@@ -30,9 +33,10 @@ This dissertation has four objectives:
 \item develop and evaluate a dynamic quantile model that corrects
 source-specific river-flow forecast products and combines separate quantile
 fits into a predictive distribution;
-\item provide statistical software and posterior computation for dynamic and
-static AL/exAL quantile models, including diagnostics, forecasting, and
-shrinkage regression;
+\item provide statistical software and posterior computation for dynamic
+quantile models and for scalable static regularized regression under the
+asymmetric Laplace (AL) and extended asymmetric Laplace (exAL) families,
+including the high-dimensional readout fits used with recurrent features;
 \item develop Bayesian conditional-quantile regression on fixed nonlinear
 recurrent features, both separately and jointly across probability levels; and
 \item characterize mean-tilted fixed-content intervals and study a calibrated
@@ -41,7 +45,8 @@ regression and dynamic extensions remain proposals.
 \end{enumerate}
 
 The resulting chapters address four collaborative research projects. Their
-common subject is distributional inference, but each chapter has its own model,
+common subject is non-mean distributional inference, but each chapter has its
+own model,
 uncertainty statement, and validation design. The contribution of the
 dissertation is therefore not a single probability model. It is a set of
 statistical methods and computational results for conditional quantiles and
@@ -64,27 +69,32 @@ ensemble model output statistics, and monotone quantile correction retain
 their cited origins. The empirical study uses five fixed forecast origins,
 with 28-day and common eight-day comparisons. It is a retrospective,
 origin-limited evaluation rather than a continuous forecasting experiment.
-Future covariate paths enter through supplied summaries, and no matched
-full-model MCMC experiment measures the variational approximation error.
+At each origin, one supplied deterministic precipitation and soil-water
+forecast path enters the model; its uncertainty is not propagated. The five
+origins reflect the cost of repeated full dynamic fits, and no matched
+full-model Markov chain Monte Carlo (MCMC) experiment measures the variational
+approximation error.
 
 \paragraph{Statistical computation and the \pkg{exdqlm} software.}
 Chapter~\ref{ch:research-a} addresses the computation required by dynamic
-quantile analysis. The exAL family and static regression were introduced by
-Yan and coauthors; the exDQLM formulation, original MCMC and
-importance-sampling variational procedures, and transfer-function foundation
-were developed by Barata and coauthors. The later project contribution is an
-integrated \proglang{R} interface for model construction, MCMC, ISVB and LDVB,
-prediction, diagnostics, scoring, post-fit synthesis, compiled computation, and
-static AL/exAL regression with shrinkage priors. Antonio de Leon is first
-author of the software article and a package author; Raquel Barata is the
-documented package creator and maintainer. The available records do not assign
-individual algorithms or interfaces to particular coauthors, so the technical
-contributions are stated at the project level. The worked examples establish
-functionality and computational tradeoffs, not a general predictive advantage
-for one inferential method.
+quantile analysis. Yan, Zheng, and Kottas \citep{exd-yan2025family} introduced
+the exAL family and static exAL regression. Barata, Prado, and Sans\'o
+\citep{exd-me} developed the exDQLM formulation, its original MCMC and
+importance-sampling variational Bayes (ISVB)
+procedures, and the transfer-function extension. Antonio de Leon's contribution
+is the substantial later restructuring and extension of \pkg{exdqlm}:
+improved Laplace--Delta variational Bayes (LDVB) and nonconjugate
+scale--skewness updates; compiled implementations for intensive operations,
+with \proglang{R} implementations retained where applicable; filtering and
+smoothing corrections; forecasting, diagnostics, scoring, and
+posterior-predictive synthesis; and static AL/exAL regression under
+regularized-horseshoe shrinkage. The worked examples establish functionality
+and computational tradeoffs, not a general predictive advantage for one
+inferential method.
 
 \paragraph{Bayesian quantile regression with deep echo-state features.}
-Chapter~\ref{ch:research-c} develops Q--DESN and MQ--DESN. A deep echo-state
+Chapter~\ref{ch:research-c} develops the quantile deep echo state network
+(Q--DESN) and its multiquantile extension (MQ--DESN). A deep echo-state
 network maps response history and covariates into fixed recurrent nonlinear
 features; these are conventionally called reservoir states. Bayesian
 regression on those features estimates conditional quantiles without treating
@@ -93,10 +103,12 @@ level at a time under AL or exAL likelihoods and shrinkage priors. MQ--DESN
 uses a composite multiquantile update with adjacent-level coefficient
 shrinkage. This regularization can reduce crossings but does not enforce
 noncrossing or guarantee lower forecast loss. The evidence consists of
-specified simulation mechanisms, one retrospective GloFAS origin, and 114
-electricity-price region--fold comparisons. Reservoir selection and some
-evaluation choices were informed by preliminary analysis, so the simulation
-results are interpreted as exploratory comparisons under the reported designs.
+specified simulation mechanisms, one retrospective Global Flood Awareness
+System (GloFAS) origin, and 114 electricity-price region--fold comparisons.
+Reservoir specifications were selected using separate development series. The
+simulation comparisons are conditional on those specifications and on one
+evaluation trajectory per mechanism, rather than repeated simulation
+replications.
 
 \paragraph{Mean-tilted intervals and tolerance actions.}
 Chapter~\ref{ch:research-d} begins from the fact that probability content does
@@ -181,41 +193,19 @@ F\{U(\mathcal D)\}-F\{L(\mathcal D)^-\}\ge c
 This is not implied by a credible interval for the endpoints or by a predictive
 interval for one future response
 \citep{rqr-Wilks1941ToleranceLimits,rqr-Wilks1942StatisticalPrediction,
-rqr-Robbins1944DistributionFreeTolerance}. Table
-\ref{tab:intro-interval-objects} summarizes the distinctions used throughout
-the dissertation.
-
-\begin{table}[htbp]
-\centering
-\TableStyle
-\begin{tabularx}{\textwidth}{@{}p{0.20\textwidth}YY@{}}
-\toprule
-\textbf{Object} & \textbf{Randomness or unknown quantity} &
-\textbf{Claim requiring verification} \\
-\midrule
-Credible interval & A parameter, state, quantile location, or endpoint under a
-stated posterior & Posterior probability under the fitted model or generalized
-update \\
-Predictive interval & A future response under a predictive distribution &
-Predictive probability and empirical calibration for the stated forecast
-design \\
-Confidence interval & Repeated samples and an unknown parameter or functional &
-Sampling coverage under the stated data-generating class \\
-Tolerance interval & Repeated samples and population content of the reported
-interval & Content \(c\) attained with confidence \(1-\alpha\) for the actual
-selection rule \\
-\bottomrule
-\end{tabularx}
-\caption[Interval interpretations used in the dissertation]{Interval
-interpretations used in the dissertation. The construction and validation
-claim, rather than the appearance of the endpoints, determine the name.}
-\label{tab:intro-interval-objects}
-\end{table}
+rqr-Robbins1944DistributionFreeTolerance}. The construction and validation
+claim determine the interpretation. A credible interval assigns posterior
+probability to a parameter, state, quantile location, or endpoint under a
+specified update. A predictive interval concerns a future response under a
+predictive distribution. A confidence interval is evaluated by repeated-sample
+coverage of a parameter or functional. A tolerance interval is evaluated by
+whether the complete data-dependent rule attains population content \(c\) with
+confidence \(1-\alpha\).
 
 \section{Models and posterior computation}
 \label{sec:intro-updating}
 
-The asymmetric Laplace (AL) distribution is widely used in Bayesian quantile
+The AL distribution is widely used in Bayesian quantile
 regression because its location is a specified quantile and its negative log
 density is proportional to check loss \citep{env-yu2001bayesian}. When the AL
 distribution is used as a working likelihood rather than the true response
@@ -263,9 +253,10 @@ are not posterior predictive response draws.
 \label{sec:intro-evaluation}
 
 Forecasts must state which future inputs are available. In the hydrologic study
-of Chapter~\ref{ch:research-b}, future covariate paths enter through supplied
-ensemble summaries; uncertainty in those paths is not integrated into the
-model. The streamflow study in Chapter~\ref{ch:research-c} conditions on
+of Chapter~\ref{ch:research-b}, one deterministic precipitation and soil-water
+forecast path is supplied at each origin; uncertainty in that path is not
+integrated into the model. The streamflow study in
+Chapter~\ref{ch:research-c} conditions on
 weather values observed retrospectively over the forecast window. Its
 electricity-price study uses supplied day-ahead load, solar, and wind forecasts,
 whose issue-time vintages were not independently verified. In the software
