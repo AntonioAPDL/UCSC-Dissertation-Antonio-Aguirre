@@ -156,25 +156,31 @@ $K_{\max}=\max_j K_{(j)}$.
 
 Write $y_t^o$ for gauge observations, $z_t^j$ for retrospective source
 discharge, and $y_T^{j,i}(k)$ for member $i$'s forecast issued at $T$ for lead
-$k$, all on the $\log(1+x)$ scale. Conditional on states and channel
-parameters, the observation channels are independent:
-\begingroup\small
+$k$, all on the $\log(1+x)$ scale. Define the conditional gauge and source
+quantile locations by
+\[
+\mu^o_{p_0,t}=\mathbf F_t'\boldsymbol\theta_t+\zeta_t,
+\qquad
+\mu^j_{p_0,t}=\mathbf F_t'(\boldsymbol\theta_t+\boldsymbol\delta_t^j)
++\zeta_t.
+\]
+Conditional on states and channel parameters, the observation channels are
+independent:
+\begingroup
+\setstretch{1.2}
 \begin{align}
 y_t^o
 &\sim \operatorname{exAL}_{p_0}
-  (\mathbf F_t'\boldsymbol\theta_t+\zeta_t,\sigma^0,\gamma^0),
+  (\mu^o_{p_0,t},\sigma^0,\gamma^0),
 &&1\le t\le T, \label{env:eq:unified_usgs}\\
 z_t^j
 &\sim \operatorname{exAL}_{p_0}
-  (\mathbf F_t'(\boldsymbol\theta_t+\boldsymbol\delta_t^j)+\zeta_t,
-   \sigma^j,\gamma^j),
+  (\mu^j_{p_0,t},\sigma^j,\gamma^j),
 &&j\in\mathcal J,\ 1\le t\le T, \label{env:eq:unified_retro}\\
 y_T^{j,i}(k)
 &\sim \operatorname{exAL}_{p_0}
-  (\mathbf F_{T+k}'(\boldsymbol\theta_{T+k}+\boldsymbol\delta_{T+k}^j)
-   +\zeta_{T+k},\sigma^j,\gamma^j), \notag\\[-0.4ex]
-&\hspace{7em}j\in\mathcal J,\quad i\in\mathcal I_j,
-\quad k\in\mathcal K_j, \notag\\
+  (\mu^j_{p_0,T+k},\sigma^j,\gamma^j),
+&&j\in\mathcal J,\ i\in\mathcal I_j,\ k\in\mathcal K_j, \notag\\
 \boldsymbol\theta_t\mid\boldsymbol\theta_{t-1}
 &\sim \mathcal N(\mathbf G_t\boldsymbol\theta_{t-1},\mathbf W_t^\theta),
 &&1\le t\le T+K_{\max}, \label{env:eq:unified_theta}\\
@@ -192,10 +198,8 @@ y_T^{j,i}(k)
 \end{align}
 \endgroup
 
-The conditional gauge quantile is
-$\mu^o_{p_0,t}=\mathbf F_t'\boldsymbol\theta_t+\zeta_t$; source quantiles
-add $\mathbf F_t'\boldsymbol\delta_t^j$. The transition $\mathbf G_t$ and
-covariances $\mathbf W_t^\theta,\mathbf W_t^{\delta^j}$ are $p\times p$,
+The transition $\mathbf G_t$ and covariances
+$\mathbf W_t^\theta,\mathbf W_t^{\delta^j}$ are $p\times p$,
 $\mathbf W_t^\psi$ is $m\times m$, and $w_t^\zeta>0$ is scalar. The
 persistence parameter $\lambda$ and $\mathbf x_t'\boldsymbol\psi_{t-1}$
 govern the transfer update; $\mathbf x_{T+k}$ is the supplied lead-$k$

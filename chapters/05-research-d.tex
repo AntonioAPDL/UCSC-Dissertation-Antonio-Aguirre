@@ -226,7 +226,7 @@ identity balances first-moment mass around the conditional mean:
 \[
 \E[\{\mu_x-Y\}\ind(Y<a)\mid X=x]
 =
-\E[\{Y-\mu_x\}\ind(Y>b)\mid X=x],
+\E[\{Y-\mu_x\}\ind(Y>b)\mid X=x].
 \]
 Tail probabilities may differ; MPI balances their first moments around
 \(\mu_x\). The conditional laws of \(Y\) given \(a<Y<b\) and given its
@@ -623,6 +623,7 @@ and keeps the shortest candidate satisfying the content-probability check.
 The cutoff is selected by the simultaneous calibration bounds in
 Section~\ref{rqr2026:sec:mti-tolerance}; the scan provides an initial fitted-content
 reference. Tolerance performance is assessed on the fresh validation samples.
+
 Young--Mathew interpolation
 \citep{rqr-YoungMathew2014NonparametricTolerance} and Wilks min--max intervals
 \citep{rqr-Wilks1941ToleranceLimits,rqr-Wilks1942StatisticalPrediction} provide the
@@ -815,7 +816,8 @@ asymmetric placement example, but its upper-adverse interpretation would favor
 a one-sided upper tolerance limit for a direct quality-control decision. These
 partition comparisons are descriptive: overlapping groups cannot separate
 batch dependence from distributional change.
-\section{Proposed regression and dynamic endpoint extensions}
+
+\section{Regression and dynamic endpoint extensions}
 \label{mti:sec:extensions}
 
 The fixed-target MTI loss also defines endpoint functions when interval

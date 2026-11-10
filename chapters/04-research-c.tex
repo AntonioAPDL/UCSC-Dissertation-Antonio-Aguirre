@@ -89,7 +89,7 @@ reduce predictor-dependent variation in neighboring gaps. Together with
 ordered intercepts, they favor nearly parallel curves without ensuring that
 every fitted gap is nonnegative.
 
-Chapters~\ref{ch:research-a}--\ref{ch:research-b} use evolving linear states
+Chapters~\ref{ch:research-b} and~\ref{ch:research-a} use evolving linear states
 for dynamic quantile inference and hydrologic product synthesis. Q--DESN uses
 fixed nonlinear recurrent predictors instead, while MQ--DESN also couples
 coefficients across probability levels. The evidence later in this chapter
@@ -508,7 +508,7 @@ criterion-specific selection procedure.
 Checks of the reservoir states assess finite values and saturation near the
 limits of bounded activation functions. Checks of the resulting
 predictors assess near-constant or highly dependent columns, effective rank,
-conditioning, and variation across reservoir realizations. Together these
+conditioning, and variation across reservoir realizations. These checks
 assess reservoir behavior under the observed inputs and the regression design, complementing the
 study of leaky dynamics and the echo state property: the decay of initial-state
 effects under a common input history
@@ -575,8 +575,9 @@ conditional summaries for that trajectory and fitted model.
 We compare Q--DESN under AL and exAL likelihoods, both with RHS coefficient
 regularization, with DQLM and exDQLM fitted using \pkg{exdqlm}
 \citep{env-deleon2026exdqlm}. The dynamic linear baselines use the generating
-trend and seasonal structure. This provides a favorable structural benchmark
-for assessing whether Q--DESN can represent linear temporal dependence
+trend and seasonal structure, which gives them a structural advantage in the
+comparison used to assess whether Q--DESN can represent linear temporal
+dependence
 through recurrent features rather than an explicitly specified state
 transition. Separate DESN specifications were selected for the reported
 criteria, and forecast performance on the reported evaluation series also
@@ -598,7 +599,7 @@ summarizes posterior distributions of average forecast check loss.
 
 \input{tables/ch04-qdesn/independent_eval300_results_v1.tex}
 
-Taken together, these results indicate that recurrent features can approximate
+The reported results indicate that recurrent features can approximate
 the reported linear state dynamics at the lower quartile and median without an
 explicit generating trend and seasonal transition. Performance at the lowest
 probability level depends on the likelihood and error family.

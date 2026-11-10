@@ -1,4 +1,4 @@
-# Advisor comments and proposed-resolution ledger: 9 November 2026
+# Advisor comments and resolution ledger: 9 November 2026
 
 This ledger paraphrases every item in the advisor review into a proposed
 solution and a verifiable acceptance test. The original attachment and
@@ -17,21 +17,23 @@ and supplies bounded commit and validation gates. This ledger remains the
 advisor-level status record; neither plan silently closes an item.
 
 The first advisor-revision program was implemented and validated before
-Bruno's detailed annotation arrived. That new evidence is now frozen and
-itemized in `docs/bruno-revision-integration-plan-20261109.md`; its manuscript
-changes have not yet been implemented. The `IMPLEMENTED` status records
-dissertation changes rather than merely improved wording in a source article.
-Exact completed work-package commits are listed below, while the new Bruno
-items retain planning statuses until their own validation passes.
+Bruno's detailed annotation arrived. That later evidence was frozen, itemized,
+implemented, and validated under
+`docs/bruno-revision-integration-plan-20261109.md`. Item-level dispositions are
+recorded in `docs/bruno-revision-response-matrix-20261109.json`. The
+`IMPLEMENTED` status records dissertation changes rather than merely improved
+wording in a source article. Exact completed work-package commits are listed
+below.
 
 Status vocabulary:
 
 - `IMPLEMENTED`: the resolution is present in the dissertation and has passed
   the applicable source, structural, build, and rendered checks;
-- `RECEIVED_PARTIAL / PLANNED`: the evidence arrived but covers only the named
-  scope and has not yet been applied;
-- `REOPENED / PLANNED`: an earlier general resolution remains useful, but the
-  detailed review creates new unresolved work; and
+- `IMPLEMENTED / REVIEW BOUNDARY`: all comments in the received evidence were
+  resolved, but the evidence covers only the named part of a chapter;
+- `IMPLEMENTED WITH DOCUMENTED DEFERRAL`: all actionable changes were
+  resolved, while an item that cannot be identified from the available source
+  remains explicitly deferred; and
 - `WAITING`: required advisor evidence has not yet arrived.
 
 ## General comments
@@ -113,8 +115,8 @@ scientific authority; Corrected-2 may supply only nonsuperseded exposition.
 | ID | Advisor requirement | Status | Implemented resolution | Acceptance evidence |
 | --- | --- | --- | --- | --- |
 | B-01 | Revise Chapters 2 and 3 first. | IMPLEMENTED | Complete the reorder, hydrology reconciliation, and software reduction before rewriting the introduction. | Work-package/commit order |
-| B-02 | Incorporate Chapter 4 comments when detailed notes arrive. | RECEIVED_PARTIAL / PLANNED | Bruno's annotated PDF arrived on 9 November. It is frozen locally with SHA-256 `4824065866f8a60c547339e1349b2adeca23a4b459badece319d7395e183d035`; the Chapter 4 review covers Sections 4.1--4.4 only. The 40 normalized Chapter 4 items are `B4-001`--`B4-040` in `bruno-revision-integration-plan-20261109.md`. | Ten annotated Chapter 4 pages accounted for; manuscript corrections not yet implemented; Sections 4.5--4.8 remain outside the received review |
-| B-03 | Chapter 5 has good ideas but needs substantial narrative refinement. | REOPENED / PLANNED | The earlier global rewrite remains useful and satisfies several opening-level comments, but Bruno's detailed review adds 65 Chapter 5 and 11 Appendix E items. Preserve already-satisfied prose and implement the unresolved definition, theorem, generalized-Bayes, calibration, validation, and appendix corrections item by item. | Twenty-six annotated Chapter 5/Appendix E pages accounted for in `B5-001`--`B5-065` and `BE-001`--`BE-011`; manuscript corrections not yet implemented |
+| B-02 | Incorporate Chapter 4 comments when detailed notes arrive. | IMPLEMENTED / REVIEW BOUNDARY | Bruno's annotated PDF arrived on 9 November and was frozen locally with SHA-256 `4824065866f8a60c547339e1349b2adeca23a4b459badece319d7395e183d035`. All 40 normalized items from the received Chapter 4 review were reconciled with the current Q--DESN authority and resolved without extending the review beyond Section 4.4. | `B4-001`--`B4-040` are closed in the response matrix; manuscript commit `1af9387`; evidence commit `f53104b`; Sections 4.5--4.8 remain outside the received review rather than being inferred |
+| B-03 | Chapter 5 has good ideas but needs substantial narrative refinement. | IMPLEMENTED WITH DOCUMENTED DEFERRAL | The chapter now defines the interval target before computation, separates the inherited residual-product result from the retained-mean contribution, distinguishes generalized updating from a response likelihood, and connects calibration, validation, and the supporting appendix. Appendix E retains only the proofs and computations required by the chapter. | `B5-001`--`B5-065` and `BE-001`--`BE-011` are dispositioned in the response matrix; manuscript commit `967dcaa`; the unidentified “Tony et al.” item `B5-058` remains deferred rather than being guessed |
 | B-04 | Reassess whether all work fits the schedule. | IMPLEMENTED | Revise the contribution-bearing units first, remove redundant material, and retain only work that can pass the scientific and readability gates in the complete release. | Work-package sequence and chapter-sized commits document the completed quality gate |
 | B-05 | Consider submitting first without Chapter 5 and adding it later. | IMPLEMENTED | Use the candidate-approved complete release: retain the substantially revised Chapter 5 and reconcile every abstract, introduction, synthesis, appendix, and cross-reference dependency. | Full four-project build and reference audit pass |
 
@@ -144,9 +146,11 @@ dissertation.
 | Chapter order and appendix order (`G-01`) | `6f7543e` | Hydrology precedes software in the compiled contents and appendices follow the same order |
 | Corrected-3 hydrology reconciliation (`C3-01`--`C3-14`, `P-04`) | `a840a78`, `3d3c346`, `7b0a7e7` | Pinned source imports, revised chapter and appendix, numerical-claim review, clean build, and rendered equation/display inspection |
 | Software reduction and contribution revision (`C2-01`--`C2-13`) | `d9cebb7` | Big Tree duplication removed; static model added; retained examples have distinct roles; clean build and rendered review |
-| Q--DESN global revision (`G-02`, `P-05`--`P-07`) | `a532e3b` | Contribution and terminology revision against the current authority; Bruno's later detailed Chapter 4 review is received through Section 4.4 and remains planned under `B4-001`--`B4-040` |
+| Q--DESN global revision (`G-02`, `P-05`--`P-07`) | `a532e3b` | Contribution and terminology revision against the current authority |
+| Bruno Chapter 4 review through Section 4.4 (`B4-001`--`B4-040`) | `1af9387`, `f53104b` | Forty item-level dispositions, fixed-source comparison, clean build, and rendered inspection within the received review boundary |
 | Introduction (`C1-01`--`C1-19`) | `9174f32` | Four objectives and contribution map, first-use definitions, one roadmap, clean build, and inspection of all introduction pages |
 | MTI narrative and release decision (`B-03`--`B-05`) | `63ccfe6` | Complete four-project release, contribution-led Chapter 5, two peripheral displays omitted, clean build, and rendered review |
+| Bruno Chapter 5 and Appendix E review (`B5-001`--`B5-065`, `BE-001`--`BE-011`) | `967dcaa`, `3fc5fa9` | Detailed narrative, theorem, generalized-Bayes, calibration, validation, and appendix corrections; one unidentified comparator reference remains explicitly deferred |
 | Abstract, attribution, disclosure, synthesis, and global style (`G-02`--`G-04`, `P-01`--`P-10`) | `d2e56b9` | Correct chapter order, collective attribution where roles are unassigned, candidate-confirmed disclosure, standard statistical synthesis, terminology scan, and clean 184-page build |
 
 ## Coverage audit
@@ -165,14 +169,15 @@ dissertation.
 | Candidate contribution/style/disclosure controls | 10 | `P-01`–`P-10` |
 
 All 50 items in Raquel's attachment and all five actionable points in Bruno's
-earlier email have a ledger entry and prior implementation record. Bruno's new
-annotated PDF is now accounted for separately: 40 Chapter 4 items, 65 Chapter
-5 items, and 11 Appendix E items, for 116 normalized actions across all 36
-annotated pages. The detailed plan distinguishes items already satisfied by
-current `main` from open edits, scientific-verification questions, decisions,
-and the unreviewed remainder of Chapter 4. These new items are planned, not yet
-implemented. The ten candidate controls extend the review; they do not replace
-any advisor item.
+earlier email have a ledger entry and implementation record. Bruno's later
+annotated PDF is also fully accounted for: 40 Chapter 4 items, 65 Chapter 5
+items, and 11 Appendix E items, for 116 normalized actions across all 36
+annotated pages. The final response matrix records 83 implemented and validated
+actions, 32 actions already satisfied and revalidated, and one documented
+deferral (`B5-058`) whose cited source cannot be identified from the annotation
+or fixed research sources. The unreviewed remainder of Chapter 4 is recorded as
+a review boundary, not silently treated as advisor-approved. The ten candidate
+controls extend the review; they do not replace any advisor item.
 
 ## Completion rule
 

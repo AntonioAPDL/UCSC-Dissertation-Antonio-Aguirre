@@ -450,7 +450,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:exdqlm-technical"
     },
     {
@@ -462,7 +462,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-technical"
     },
     {
@@ -870,7 +870,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-technical"
     },
     {
@@ -882,7 +882,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-technical"
     },
     {
@@ -894,7 +894,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-proofs"
     },
     {
@@ -906,7 +906,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-proofs"
     },
     {
@@ -918,7 +918,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-proofs"
     },
     {
@@ -930,7 +930,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -942,7 +942,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -954,7 +954,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-calibration"
     },
     {
@@ -966,7 +966,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-calibration"
     },
     {
@@ -978,7 +978,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -990,7 +990,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -1002,7 +1002,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-extensions"
     },
     {
@@ -1014,7 +1014,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
+      "implementation_commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
       "final_location": "app:mti-extensions"
     }
   ],
@@ -1163,9 +1163,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -1216,9 +1216,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -1269,9 +1269,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -1322,9 +1322,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -1375,9 +1375,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -1428,9 +1428,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d1a03494c8bab944f4933274cf8d18d3abec63a1",
-        "final_sha256": "39c6e8b22decdb0101d2b6dcd6074a2b155177bfc91affad9ff41c054042428d",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -13995,9 +13995,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14050,9 +14050,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14103,9 +14103,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14156,9 +14156,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14209,9 +14209,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14262,9 +14262,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14317,9 +14317,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14370,9 +14370,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14423,9 +14423,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14476,9 +14476,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14532,9 +14532,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14585,9 +14585,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14638,9 +14638,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14691,9 +14691,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14747,9 +14747,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14802,9 +14802,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14858,9 +14858,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14914,9 +14914,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -14967,9 +14967,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15020,9 +15020,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15073,9 +15073,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15126,9 +15126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15179,9 +15179,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15232,9 +15232,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15285,9 +15285,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15340,9 +15340,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15396,9 +15396,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15451,9 +15451,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15506,9 +15506,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15561,9 +15561,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15616,9 +15616,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15671,9 +15671,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15726,9 +15726,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15781,9 +15781,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15836,9 +15836,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15891,9 +15891,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -15946,9 +15946,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -16006,9 +16006,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16066,9 +16066,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16126,9 +16126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16186,9 +16186,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16246,9 +16246,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16306,9 +16306,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16366,9 +16366,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -18894,9 +18894,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -18951,9 +18951,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19008,9 +19008,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19065,9 +19065,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19124,9 +19124,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19181,9 +19181,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19240,9 +19240,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19297,9 +19297,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19354,9 +19354,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19411,9 +19411,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19468,9 +19468,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19525,9 +19525,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19582,9 +19582,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19639,9 +19639,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19698,9 +19698,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19755,9 +19755,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
@@ -19812,9 +19812,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "967dcaa60f6ab217c6138d8086e3bc9e426b2620",
-        "final_sha256": "7f14b48ae97ff5ea6854cbc9570c5e6033cb27ea65fd62662fdcd20b3b1e2267",
-        "validation": "RQR authority comparison; 1767-word compactness check; clean 184-page TeX build; source, structure, and rendered-page validation"
+        "commit": "WORKTREE-POST-BRUNO-FINAL-POLISH-20261109",
+        "final_sha256": "e3ef8fc78d008496967296558fa5226a8d2bfe5b1827cb741503d9500011f44d",
+        "validation": "Post-Bruno final polish; release validation pending"
       }
     },
     {
