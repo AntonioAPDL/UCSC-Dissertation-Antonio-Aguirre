@@ -1,5 +1,35 @@
 # Validation record
 
+## 2026-11-10 final readability polish release
+
+The bounded pass recorded in `docs/final-readability-polish-20261110.md`
+reviewed the complete active manuscript against the academic-writing profile.
+Structural comparison found no change to citation keys, labels, graphic or
+input dependencies, or numerical results. One Chapter 3 table reference was
+added to connect an empirical paragraph to its display. Extracted-text scans
+found no stock promotional phrasing, engineering or machine-learning framing,
+drafting markers, or internal workflow language in the scientific exposition.
+The only AI terminology is the approved disclosure in the acknowledgments.
+
+Fast and release validation passed with
+`bash scripts/validate.sh --tier release --audit-root
+/tmp/bruno-complete-audit.xDFvN4`. The accepted ignored artifact is
+`build/release-20261110T084508Z/main.pdf`: 186 US-Letter pages, 4,148,801
+bytes, PDF 1.7, SHA-256
+`2526bcedfbd154f815217fa188d66eda0110516e5f2cabf3e6d1ea57e3f896aa`.
+The final abstract body is 347 words.
+
+The log contains 12 underfull and zero overfull boxes and no unresolved
+citations or references, duplicate labels, rerun request, missing file, or
+fatal TeX error. All 32 fonts are embedded and no Type 3 font occurs. The PDF
+is searchable, unencrypted, and untagged. Physical pages 9, 12, 14, 38, 71,
+99, 102, 133, and 140 were rendered and inspected; no clipping, collision,
+unreadable content, malformed glyph, or abnormal page break was found.
+
+This validates the local source and artifact. It does not represent committee
+approval, an accessibility-conformant filing PDF, an independent Overleaf
+compilation, or a push or merge to `main`.
+
 ## 2026-11-10 author-comments revision release
 
 The 22-item response specification in
@@ -18,7 +48,7 @@ imported labels. The accepted ignored artifact is
 `build/release-20261110T082403Z/main.pdf`: 186 US-Letter pages, 4,149,323
 bytes, PDF 1.7, SHA-256
 `1e6cdde2f15ac3667f7af001309063751341bc9d32e8d71a956b96edc172508c`.
-The final abstract body is 349 words.
+The final abstract body is 347 words.
 
 The final log contains 12 underfull and zero overfull boxes and no unresolved
 citations or references, duplicate labels, rerun request, missing file, or

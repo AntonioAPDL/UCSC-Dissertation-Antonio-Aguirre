@@ -15,7 +15,7 @@
       "locator": "metadata.tex and frontmatter",
       "issue_type": "administrative_metadata",
       "severity": "blocking",
-      "evidence": "The title, conferral date, committee roles, dean wording, 349-word abstract, copyright leaf, and contribution acknowledgments are populated for the committee copy.",
+      "evidence": "The title, conferral date, committee roles, dean wording, 347-word abstract, copyright leaf, and contribution acknowledgments are populated for the committee copy.",
       "proposed_action": "Preserve the verified front matter; obtain signatures and complete the separate accessibility and filing review before final submission.",
       "source_provenance": "metadata.tex; frontmatter/abstract.tex; frontmatter/acknowledgments.tex",
       "author_input_required": false,

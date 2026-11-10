@@ -94,10 +94,9 @@ Under the single specification used for all five retained forecast origins,
 the multivariate exAL model with an active transfer component has the lowest
 28-day continuous ranked probability score (CRPS) among the Bayesian variants
 at every origin. The separate eight-day comparison against National Weather
-Service (NWS) products is more heterogeneous. These results support the value
-of source-specific correction and synthesis for the studied retrospective
-design; they do not imply superiority over every comparator at every origin or
-horizon. At each origin, one supplied deterministic
+Service (NWS) products is more heterogeneous. The five-origin evidence favors
+source-specific correction and synthesis for this target, but not every
+comparator at every origin or horizon. At each origin, one supplied deterministic
 precipitation and soil-water forecast path enters the model; uncertainty in
 that path is not propagated. Repeated full dynamic fits limited the study to
 five origins. A matched full-model Markov chain Monte Carlo comparison remains
@@ -115,7 +114,7 @@ implementations retained where applicable; corrections to filtering and
 smoothing; forecasting, diagnostics, scoring, and posterior-predictive
 synthesis; and static AL/exAL regression under regularized-horseshoe shrinkage.
 
-The examples establish capabilities and expose tradeoffs. The Lake Huron
+The examples examine distinct computational and inferential properties. The Lake Huron
 analysis combines multi-quantile fitting and predictive synthesis; the
 Sunspots example compares DQLM and exDQLM computation; and the sparse
 simulation compares MCMC with LDVB under the same static model. LDVB is faster
@@ -145,7 +144,7 @@ AL has the lowest grid score, 50.2\% below the raw ensemble. This analysis
 conditions on realized future weather.
 In the PriceFM comparison, region-specific validation selects among Q--DESN
 and MQ--DESN under AL and exAL. Over 114 region--fold cases, the selected DESN
-models have mean average quantile loss (AQL) 6.687, compared with 7.039 for
+models have mean AQL 6.687, compared with 7.039 for
 reproduced PriceFM forecasts, and have a lower mean in each fold. The comparison
 contrasts Bayesian regression on fixed recurrent features with end-to-end
 training of recurrent weights; it does not provide a matched runtime study.
@@ -292,8 +291,9 @@ quantifies the observed tradeoff between quantile ordering and recovery; and
 MTI separates the placement of a fixed-content interval from the calibration
 of a repeated-sampling tolerance statement. In each project, the statistical
 target determines the model, the required computation, and the evidence that
-can validate the resulting claim. Together, the projects establish a
-target-specific framework for estimating conditional quantiles, constructing
-predictive distributions, and selecting fixed-content intervals, while also
-identifying the approximation, forecast-design, and prospective-validation
-questions that remain open.
+can validate the resulting claim. Across the four projects, the inferential
+target also determines the relevant uncertainty statement and validation:
+predictive scores for forecast distributions, posterior diagnostics and
+matched computations for approximate inference, and repeated-sampling content
+for tolerance procedures. Open questions concern posterior approximation,
+forecast-design breadth, and prospective validation.

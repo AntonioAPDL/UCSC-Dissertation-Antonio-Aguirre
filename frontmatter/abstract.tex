@@ -1,20 +1,20 @@
 \begin{abstract}
-This dissertation develops methods and computation for conditional quantiles
-and fixed-content intervals under temporal dependence, nonlinear structure,
-and heterogeneous information. Each requires target-specific models,
-uncertainty analysis, and validation.
+This dissertation studies conditional quantiles and fixed-content intervals
+under temporal dependence, nonlinear structure, and heterogeneous information.
+These targets require different models, uncertainty statements, and validation.
 
 The first project combines a shared latent quantile process, source-specific
 discrepancies, extended asymmetric Laplace (exAL) variational updates, and
 monotone synthesis for river-flow forecasts. Across five retrospective San
 Lorenzo River origins, the model has the lowest 28-day continuous ranked
-probability score among the Bayesian variants at every origin; a common
-eight-day comparison is more heterogeneous. Each fit uses one deterministic
+probability score among the Bayesian variants at every origin; eight-day
+results are more heterogeneous. Each fit uses one deterministic
 precipitation and soil-water forecast path whose uncertainty is not propagated.
 
-The second project substantially restructures and extends the \pkg{exdqlm}
-\proglang{R} package. It improves posterior updates, compiles intensive
-operations, corrects filtering and smoothing, and adds forecasting,
+The second project restructures and extends the \pkg{exdqlm}
+\proglang{R} package. It improves posterior updates, provides compiled
+implementations for intensive operations, corrects filtering and smoothing,
+and adds forecasting,
 diagnostics, synthesis, and static regularized quantile regression. In a
 sparse-regression experiment, Laplace--Delta variational Bayes requires less
 computing time, whereas Markov chain Monte Carlo has lower held-out quantile
@@ -27,9 +27,9 @@ differences. Across eight simulation mechanisms, sharing reduces crossing rates
 from 5.488\% to 0.021\% under the asymmetric Laplace model and from 0.606\% to
 0\% under exAL, while separate fits have the lowest mean oracle score in six
 mechanisms, an empirical tradeoff between ordering and quantile recovery.
-For electricity prices, selected DESN regressions have mean average quantile
-loss 6.687 versus 7.039 for reproduced pretrained PriceFM forecasts over 114
-region--fold cases and a lower mean in all three folds. The
+For electricity prices, selected DESN regressions yield an average quantile
+loss of 6.687, compared with 7.039 for reproduced PriceFM forecasts over 114
+region--fold cases and lower means in all three folds. The
 comparison contrasts Bayesian regression on fixed recurrent features with
 end-to-end training; computing time was not compared.
 
@@ -40,6 +40,6 @@ and applies a posterior content check. Simulations provide repeated-sampling
 evidence over eight distributions; a pharmaceutical analysis motivates
 prospective evaluation with independent batches and fixed rules.
 
-The projects match target-specific methods and computation to
-predictive, posterior, or repeated-sampling validation.
+The projects assess uncertainty by predictive, posterior, or repeated-sampling
+criteria matched to each target.
 \end{abstract}

@@ -1,12 +1,38 @@
 # Project status
 
+## 2026-11-10 final readability polish release-validated
+
+The final readability pass is complete on
+`editorial/bruno-revision-intake-20261109`. The abstract, acknowledgments, all
+six chapters, and the active appendices were reviewed against the project
+academic-writing profile. The revision replaces generic or product-style
+phrasing with direct statistical statements, tightens empirical qualifications,
+and improves paragraph flow without changing research results, source
+authorities, models, estimands, citations, or contribution boundaries. The
+scientific text contains no AI terminology; the sole AI reference is the
+bounded disclosure in the acknowledgments.
+
+The accepted ignored artifact is
+`build/release-20261110T084508Z/main.pdf`: 186 US-Letter pages, 4,148,801
+bytes, PDF 1.7, SHA-256
+`2526bcedfbd154f815217fa188d66eda0110516e5f2cabf3e6d1ea57e3f896aa`.
+Release validation passed against the frozen research sources. The final log
+has 12 underfull and zero overfull boxes and no unresolved citation, reference,
+duplicate-label, rerun, missing-file, or fatal diagnostic. All 32 fonts are
+embedded and no Type 3 font occurs. Nine representative changed pages were
+rendered and inspected without clipping, collision, or unreadable content.
+
+The detailed record is `docs/final-readability-polish-20261110.md`. This is a
+local checkpoint. Nothing from this pass has been pushed, merged into `main`,
+or synchronized with Overleaf.
+
 ## 2026-11-10 author revision implemented and release-validated
 
 The 22-item author-comments specification is complete on
 `editorial/bruno-revision-intake-20261109`. The abstract, introduction, four
 research chapters, synthesis, Appendix D summary table, acknowledgments and
 AI-use disclosure, and the connected evidence records now implement the
-approved revisions. The final abstract is 349 words. The hydrology chapter
+approved revisions. The final abstract is 347 words. The hydrology chapter
 states the fixed future-covariate design and its calibration evidence; the
 software chapter distinguishes inherited methods from Antonio de Leon's later
 package work; the Q--DESN chapter reports exact crossing and PriceFM evidence

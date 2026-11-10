@@ -38,7 +38,8 @@ This project makes three related contributions \citep{qdesn-deleon2026qdesn}.
 First, Q--DESN combines fixed deep echo-state features with asymmetric Laplace
 (AL) or extended asymmetric Laplace (exAL) Bayesian quantile regression, ridge
 or regularized-horseshoe (RHS) coefficient priors, and model-specific Markov
-chain Monte Carlo (MCMC) and variational Bayes (VB) approximations. Second, the
+chain Monte Carlo (MCMC) samplers and variational Bayes (VB) approximations.
+Second, the
 multiquantile extension (MQ--DESN) estimates several quantile regressions
 together using RHS priors on adjacent slope differences. This regularization
 encourages similar neighboring effects but does not impose noncrossing. Third,
@@ -93,11 +94,11 @@ every fitted gap is nonnegative.
 Chapters~\ref{ch:research-b} and~\ref{ch:research-a} use evolving linear states
 for dynamic quantile inference and hydrologic product synthesis. Q--DESN uses
 fixed nonlinear recurrent predictors instead, while MQ--DESN also couples
-coefficients across probability levels. The evidence later in this chapter
-asks whether these predictors recover conditional quantile paths under linear
-and nonlinear mechanisms, how independent and multiquantile regressions score
-on a common grid, and how they perform in streamflow correction and
-electricity-price forecasting. Sections~\ref{qdesn2026:sec:model}--%
+coefficients across probability levels. The simulation studies assess recovery
+of conditional quantile paths under linear and nonlinear mechanisms and compare
+independent and multiquantile regressions on a common score grid. The
+applications examine streamflow correction and electricity-price forecasting.
+Sections~\ref{qdesn2026:sec:model}--%
 \ref{qdesn2026:sec:forecast} define the model, computation, and forecast
 evaluation. Sections~\ref{qdesn2026:sec:simulation}--%
 \ref{qdesn2026:sec:pricefm-application} present the evidence. Posterior
@@ -600,8 +601,8 @@ summarizes posterior distributions of average forecast check loss.
 
 \input{tables/ch04-qdesn/independent_eval300_results_v1.tex}
 
-The reported results indicate that recurrent features can approximate
-the reported linear state dynamics at the lower quartile and median without an
+The results indicate that recurrent features can approximate
+the linear state dynamics at the lower quartile and median without an
 explicit generating trend and seasonal transition. Performance at the lowest
 probability level depends on the likelihood and error family.
 The 500-target sensitivity preserves the overall pattern.
@@ -929,22 +930,20 @@ equally; \(\Delta\) is DESN minus PriceFM, in EUR/MWh.}
 
 Q--DESN retains a regularized linear regression for the quantile location
 while using fixed recurrent features to represent nonlinear temporal
-dependence. Its posterior concerns the regression, likelihood, and shrinkage
-parameters, conditional on the reservoir. This distinction makes the model
-accessible through Bayesian regression calculations without treating every
-network weight as an unknown parameter. The AL augmentation supports
+dependence. Conditional on the reservoir, its posterior concerns the regression,
+likelihood, and shrinkage parameters rather than every network weight. The AL augmentation supports
 Gibbs-based computation, while VB reduces the cost of repeated regression fits.
 
-The exploratory single-quantile comparison is most favorable to Q--DESN at the median,
-with likelihood preferences varying by observation-error family. In the
-multiquantile study, MQ--DESN improves the ordering of posterior-mean
+The exploratory single-quantile comparison is most favorable to Q--DESN at the
+median, with likelihood preferences varying by observation-error family. In
+the multiquantile study, MQ--DESN improves the ordering of posterior-mean
 forecast grids, especially under exAL, while independent regressions have
-lower mean oracle scores in most mechanisms. These results distinguish the
-benefit of adjacent-coefficient regularization for quantile ordering from its
-less consistent gains in forecast scores.
+lower mean oracle scores in most mechanisms. Adjacent-coefficient
+regularization therefore improves empirical quantile ordering more consistently
+than it improves forecast scores.
 
-The applications illustrate different uses of the regression. For streamflow
-correction, the reference--discrepancy model combines gauge measurements with
+For streamflow correction, the reference--discrepancy model combines gauge
+measurements with
 GloFAS products at one retrospective forecast origin. All six fitted models
 improve on the raw ensemble over the 28 issued horizons, and the four quantile
 models have smaller grid \(\aCRPS\) than both Gaussian baselines. Q--DESN under
@@ -952,9 +951,9 @@ AL has the lowest grid \(\aCRPS\), \GlofasApplicationCurrentAcrpsReduction{}
 below the raw
 ensemble. Independent fits perform slightly better within each likelihood:
 MQ--DESN scores are approximately 3\% higher under AL and 2\% higher under
-exAL. Together with the crossing reductions in the simulations, this suggests
-a possible tradeoff between adjacent-coefficient regularization for quantile
-coherence and forecast accuracy under the reported mechanisms and application.
+exAL. The simulation crossing rates and application scores therefore indicate
+a tradeoff between adjacent-coefficient regularization for quantile coherence
+and forecast accuracy under the reported mechanisms and application.
 
 For electricity prices, validation selects among Q--DESN and MQ--DESN under
 AL and exAL with RHS priors. The selected models have mean AQL
@@ -962,8 +961,8 @@ AL and exAL with RHS priors. The selected models have mean AQL
 \PricefmFullMeanPricefmAql{} for PriceFM forecasts reproduced from public
 code, a reduction of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The
 comparison comprises 114 region--fold cases, and the selected-DESN mean is
-lower in all three fold summaries. These findings concern the matched AQL
-comparison; no matched total-runtime comparison was conducted. The applications
+lower in all three fold summaries. This is a matched AQL comparison; no matched
+total-runtime comparison was conducted. The applications
 retain their stated information sets: realized future weather for streamflow
 correction and supplied forecast covariates with unverified issue-time
 vintages for electricity prices.

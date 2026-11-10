@@ -17,8 +17,9 @@ interval \citep{qdesn-KoenkerBassett1978}; it does not in general target a
 shortest or mean-preserving interval
 \citep{rqr-BrehmerGneiting2021Intervals,rqr-FisslerEtAl2021SetValued}.
 Chapter~\ref{ch:research-c} uses check loss to define individual conditional
-quantiles. This chapter instead applies check loss to a product residual, so
-the loss identifies a pair of interval endpoints. The resulting target is a
+quantiles. The residual-product criterion used here applies check loss to a
+product residual, so the loss identifies a pair of interval endpoints. The
+resulting target is a
 fixed-content interval, not a pair of prespecified response quantiles.
 
 The starting point is the residual-product criterion of
@@ -49,7 +50,7 @@ with Young--Mathew and Wilks intervals across symmetric, heavy-tailed, and
 strongly skewed distributions. A pharmaceutical batch analysis then illustrates
 how the methods allocate their two endpoints in a finite historical dataset.
 
-These statements have different evidentiary status. The population MTI
+These four claims rest on different forms of evidence. The population MTI
 characterization is mathematical. The direct content probability is exact under
 the stated Dirichlet-process model for a fixed interval. The tolerance findings
 are repeated-sampling simulation results for the prespecified rule and the eight
@@ -707,8 +708,8 @@ Section~\ref{app:mti-calibration} records the selected MTI policy and the
 full-range feasibility calculation used to choose the simulation design. The distribution-level results are summarized above
 through their ranges and simultaneous uncertainty statements.
 The excluded small-sample settings fall outside the region where a sample-bounded
-two-sided distribution-free tolerance statement can be supported at confidence \(0.95\).
-Other variants are kept outside the primary comparison.
+two-sided distribution-free tolerance statement can be supported at confidence
+\(0.95\). The primary comparison is restricted to these three procedures.
 
 \section{Pharmaceutical batch application}
 \label{rqr2026:sec:pharma-application}

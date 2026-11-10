@@ -14,7 +14,7 @@
       "acceptance": "The abstract is self-contained and contains no internal revision language.",
       "status": "IMPLEMENTED_VALIDATED",
       "changed_files": ["frontmatter/abstract.tex"],
-      "validation": ["The abstract names computing time and held-out quantile loss as distinct evaluation objects; it is self-contained, 349 words, compiled, and visually inspected."]
+      "validation": ["The abstract names computing time and held-out quantile loss as distinct evaluation objects; it is self-contained, 347 words, compiled, and visually inspected."]
     },
     {
       "id": "AR-002",

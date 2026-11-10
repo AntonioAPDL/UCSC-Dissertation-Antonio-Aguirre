@@ -372,9 +372,8 @@ where $\mat{a}_{\tilde{t}}(k) = \mat{G}_{\tilde{t}+k} \mat{a}_{\tilde{t}}(k-1)$,
 The software separates statistical model specification from posterior
 computation. Trend, seasonal, regression, and transfer components define a
 state-space model that can be passed to MCMC or variational fitting procedures.
-This separation makes comparisons between inferential methods meaningful:
-the state equation and target quantile can be held fixed while the posterior
-calculation changes.
+Holding the state equation and target quantile fixed permits direct comparison
+of posterior calculations.
 
 Fitted dynamic and static models retain their inferential method and share a
 common set of statistical operations. These operations provide state and
@@ -409,8 +408,8 @@ not machine-independent properties of the methods.
  \label{exd:sec:exs}
 
 
-Two real-data analyses and one simulation benchmark examine statistically
-distinct capabilities. Lake Huron examines dynamic model construction, MCMC
+Two data analyses and one simulation benchmark examine distinct statistical
+and computational tasks. Lake Huron examines dynamic model construction, MCMC
 inference, forecasting, and posterior-predictive synthesis across separately
 fitted quantiles. Sunspots examines component composition, LDVB inference,
 diagnostics, discount-factor comparison, and comparison with MCMC. The
@@ -456,10 +455,10 @@ the recorded run is retained in the external replication logs.
 
 
 
-The fitted object output is intentionally compact. It identifies the model
-family, inference engine, quantile level, state dimension, retained posterior
-draws, and the standard methods available for downstream analysis. The
-\code{summary()} method adds draw dimensions and scalar posterior summaries.
+Each fitted object records the model family, inferential method, quantile level,
+state dimension, retained posterior draws, and methods available for subsequent
+analysis. The \code{summary()} method adds draw dimensions and scalar posterior
+summaries.
 
 
 By default, \code{exdqlmMCMC()} uses the package's LDVB routine,
@@ -740,7 +739,17 @@ The \code{exalStaticDiagnostic} objects returned by \code{diagnostics()} store t
 
 
 
-The results reinforce the visual comparison in Figure \ref{exd:fig:ex4static}. The MCMC posterior-simulation fit has the smaller holdout quantile RMSE in all three fits, although the median difference is small. MCMC gives smaller active-signal RMSE at \(p_0 = 0.05\) and \(p_0 = 0.25\), while LDVB is slightly smaller at \(p_0 = 0.50\). Null-coefficient MAE is slightly smaller for LDVB at \(p_0 = 0.05\) and for MCMC at \(p_0 = 0.25\) and \(p_0 = 0.50\). The LDVB fit is nevertheless faster in all three cases, with runtime reductions of roughly 2.4-fold at \(p_0 = 0.05\), 2.4-fold at \(p_0 = 0.25\), and 6.1-fold at \(p_0 = 0.50\). In this benchmark, LDVB provides the lower-runtime approximation, whereas static MCMC supplies the posterior-simulation comparison used to examine interval and tail behavior.
+Table~\ref{exd:tab:ex4static} quantifies the pattern in
+Figure~\ref{exd:fig:ex4static}. The MCMC posterior-simulation fit has the
+smaller holdout quantile RMSE in all three fits, although the median difference
+is small. MCMC gives smaller active-signal RMSE at \(p_0 = 0.05\) and
+\(p_0 = 0.25\), while LDVB is slightly smaller at \(p_0 = 0.50\).
+Null-coefficient MAE is slightly smaller for LDVB at \(p_0 = 0.05\) and for
+MCMC at \(p_0 = 0.25\) and \(p_0 = 0.50\). The LDVB fit is faster in all
+three cases, with runtime reductions of roughly 2.4-fold at \(p_0 = 0.05\),
+2.4-fold at \(p_0 = 0.25\), and 6.1-fold at \(p_0 = 0.50\). In this benchmark,
+LDVB provides the lower-runtime approximation, whereas static MCMC supplies
+the posterior-simulation comparison used to examine interval and tail behavior.
 
 \section{Chapter summary and limitations}
 \label{exd:sec:summary}
@@ -764,13 +773,13 @@ the computational and predictive tradeoff between LDVB and MCMC: LDVB is
 faster in the recorded fits, whereas MCMC gives smaller CRPS and PPLC. The
 sparse simulation evaluates the static regularized-horseshoe routines under
 a known conditional quantile; it likewise shows faster LDVB fitting but
-generally smaller holdout quantile error under MCMC. These results establish
-functionality and illustrate approximation tradeoffs, not a general predictive
-advantage for one inferential method.
+generally smaller holdout quantile error under MCMC. These setting-specific
+comparisons do not imply a general predictive advantage for either inferential
+method.
 
-The scope remains deliberately bounded. Dynamic models are fitted one quantile
-level at a time, and \code{quantileSynthesis()} combines predictive draws after
-separate fits rather than defining a joint posterior across quantiles. LDVB
+Dynamic models are fitted one quantile level at a time. The synthesis function
+combines predictive draws after separate fits rather than defining a joint
+posterior across quantiles. LDVB
 draws come from fitted variational factors, so MCMC remains the reference when
 posterior tails or interval widths are central. Transfer-function decay is
 fixed or grid-selected, and the reported runtimes apply only to the stated

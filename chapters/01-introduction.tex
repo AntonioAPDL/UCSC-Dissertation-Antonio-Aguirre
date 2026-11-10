@@ -34,7 +34,7 @@ This dissertation has four objectives:
 source-specific river-flow forecast products and combines separate quantile
 fits into a predictive distribution;
 \item provide statistical software and posterior computation for dynamic
-quantile models and for scalable static regularized regression under the
+quantile models and for static regularized regression under the
 asymmetric Laplace (AL) and extended asymmetric Laplace (exAL) families,
 including the high-dimensional readout fits used with recurrent features;
 \item develop Bayesian conditional-quantile regression on fixed nonlinear
@@ -46,11 +46,9 @@ regression and dynamic extensions remain proposals.
 
 The resulting chapters address four collaborative research projects. Their
 common subject is non-mean distributional inference, but each chapter has its
-own model,
-uncertainty statement, and validation design. The contribution of the
-dissertation is therefore not a single probability model. It is a set of
-statistical methods and computational results for conditional quantiles and
-fixed-content intervals, with explicit distinctions among model assumptions,
+own model, uncertainty statement, and validation design. Together, the chapters
+contribute statistical methods and computational results for conditional
+quantiles and fixed-content intervals, while distinguishing model assumptions,
 posterior approximations, predictive evidence, and repeated-sampling claims.
 
 \section{Research contributions and antecedents}
@@ -88,9 +86,8 @@ scale--skewness updates; compiled implementations for intensive operations,
 with \proglang{R} implementations retained where applicable; filtering and
 smoothing corrections; forecasting, diagnostics, scoring, and
 posterior-predictive synthesis; and static AL/exAL regression under
-regularized-horseshoe shrinkage. The worked examples demonstrate these
-capabilities and compare simulation cost, approximation, uncertainty, and
-predictive loss under the reported models.
+regularized-horseshoe shrinkage. The worked examples compare simulation cost,
+approximation, uncertainty, and predictive loss under the reported models.
 
 \paragraph{Bayesian quantile regression with deep echo-state features.}
 Chapter~\ref{ch:research-c} develops the quantile deep echo state network
@@ -112,7 +109,7 @@ replications.
 
 \paragraph{Mean-tilted intervals and tolerance actions.}
 Chapter~\ref{ch:research-d} begins from the fact that probability content does
-not determine interval placement. Building on the residual-product criterion
+not determine interval placement. Starting from the residual-product criterion
 of \citet{rqr-PouplinEtAl2024RQR} and its population-content equation, the
 project derives the retained-mean characterization of the mean-preserving
 interval and embeds it in a retained-mean tilt family. It then develops a
@@ -193,8 +190,9 @@ F\{U(\mathcal D)\}-F\{L(\mathcal D)^-\}\ge c
 This is not implied by a credible interval for the endpoints or by a predictive
 interval for one future response
 \citep{rqr-Wilks1941ToleranceLimits,rqr-Wilks1942StatisticalPrediction,
-rqr-Robbins1944DistributionFreeTolerance}. The construction and validation
-claim determine the interpretation. A credible interval assigns posterior
+rqr-Robbins1944DistributionFreeTolerance}. Interpretation depends on both the
+interval construction and its validation criterion. A credible interval
+assigns posterior
 probability to a parameter, state, quantile location, or endpoint under a
 specified update. A predictive interval concerns a future response under a
 predictive distribution. A confidence interval is evaluated by repeated-sample
@@ -284,12 +282,13 @@ range and depend on the grid and weights.
 
 Simulation can additionally assess recovery of a known parameter or quantile
 path. Predictive-interval calibration, posterior convergence, and tolerance
-content answer still different questions. The Chapter~\ref{ch:research-d}
-validation, for example, estimates the content and width of a procedure fixed
+content address different questions. The validation in
+Chapter~\ref{ch:research-d}, for example, estimates the content and width of a procedure fixed
 before the independent simulation stage. Across the prespecified
 eight-distribution panel, it supplies finite-sample repeated-sampling evidence
 for both content attainment and width. Evaluation under additional
-distributions, dependence structures, and sample sizes is a separate extension.
+distributions, dependence structures, and sample sizes requires separate
+evaluation.
 The application studies likewise define their comparisons through stated
 forecast origins, information sets, and scoring rules.
 
