@@ -31,8 +31,26 @@ EDITORIAL = importlib.util.module_from_spec(EDITORIAL_SPEC)
 assert EDITORIAL_SPEC.loader is not None
 EDITORIAL_SPEC.loader.exec_module(EDITORIAL)
 
+DISPLAY_SPEC = importlib.util.spec_from_file_location(
+    "update_display_ledger", ROOT / "scripts" / "update_display_ledger.py"
+)
+DISPLAY_LEDGER = importlib.util.module_from_spec(DISPLAY_SPEC)
+assert DISPLAY_SPEC.loader is not None
+DISPLAY_SPEC.loader.exec_module(DISPLAY_LEDGER)
+
 
 class StructureValidationTests(unittest.TestCase):
+    def test_display_refresh_preserves_inactive_editorial_records(self):
+        path = ROOT / "docs" / "display-ledger.json"
+        existing = json.loads(path.read_text(encoding="utf-8"))
+        refreshed = DISPLAY_LEDGER.refreshed_payload(existing)
+        dispositions = {
+            record["id"]: record["disposition"] for record in refreshed["records"]
+        }
+        self.assertEqual(35, len(refreshed["records"]))
+        self.assertEqual("OMIT", dispositions["rqr2026:fig:mean-tilt-cf-anchors"])
+        self.assertEqual("OMIT", dispositions["rqr2026:tab:mean-tilt-cf-mini-study"])
+
     def test_active_graph_contains_scientific_appendices_not_demo(self):
         files, _ = MODULE.active_tex_files()
         relative = {str(path.relative_to(ROOT)) for path in files}

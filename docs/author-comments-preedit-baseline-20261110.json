@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-10",
+  "baseline_commit": "2c513fa0fc7c95881628eb108b3a957d1ac9afeb",
+  "branch": "editorial/bruno-revision-intake-20261109",
+  "input_records": [
+    {
+      "id": "AUTHOR-COMMENTS",
+      "local_name": "author-comments.txt",
+      "sha256": "e55fc0e17de711cce5481cd4140c5f0820b74bddff81fe5f6908b3ff12eabaf1"
+    },
+    {
+      "id": "QUANTILE-CLARIFICATION",
+      "local_name": "quantile-clarification-report.txt",
+      "sha256": "a3b4f1410f2075d16dfc746758de64674ce27832d6dbc3575c2ee40224472e56"
+    }
+  ],
+  "style_profile": {
+    "version": "0.2",
+    "sha256": "b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513"
+  },
+  "fixed_source_commits": {
+    "qdesn_current": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+    "qdesn_legacy": "82a8e70b1306aa2f36cf67ac8da65e6052df2c91",
+    "hydrology_corrected3": "c0bfccaa7cec698c016626ee30187f18a56d495c",
+    "exdqlm_article": "98cec593d11bf32715a690ae168086f16160e7f0",
+    "exdqlm_package": "e51045a4324901cced27ca2aaa22569afbc8e0e6",
+    "rqr_gibbs": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+    "mti_extensions": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+    "san_lorenzo_support": "a8797b804271b46c62bd04dab7dba6b84a10ab7d",
+    "corrections_source": "b1ceeb610d20f8287e4ca44e146c9cfdbcda1ee6"
+  },
+  "immutable_advisor_controls": {
+    "docs/bruno-revision-response-matrix-20261109.json": "8f600eed1a96f7ac86b8830ca76b49c02a996195a23ac2c793895be325bbbc02",
+    "docs/bruno-revision-preedit-baseline-20261109.json": "090f11ef8371a25ce8da6a20587c4a1de680acef1da8a3c6a938384f9a9c84e7"
+  },
+  "preedit_control_hashes": {
+    "docs/display-ledger.json": "b6f1158e3dc6690ba0ac971a5c962288ae41dbde90f2150afcb0db6c87b78605",
+    "docs/appendix-essentiality-map.json": "484f1d1d60201bab2b0a29897311e131b9f4b08d627e5c50e15bf21a9fa6f6ca",
+    "docs/revision-ledger.json": "6e0610724eb69c279cd034b544b4daaa362be0b885a78e7621e9947187401af2"
+  },
+  "manuscript_sha256": {
+    "frontmatter/abstract.tex": "c79c904fd080e204c652e275b8dfa0706b445b929b8eb26a1924693181dafeb8",
+    "frontmatter/acknowledgments.tex": "42607dff48594a42dca4985423948ab593f1a3395587f4c60d0d9f07083690dd",
+    "chapters/01-introduction.tex": "91126b8fc400fd2e1944022330df910976612c20636ee56fd4cf9055f7cf8923",
+    "chapters/02-research-a.tex": "caaa4f6b4f0235ec8c18a6362777fefdd3487d374752adedfe86638329d09ee7",
+    "chapters/03-research-b.tex": "9d0f0c2ce997f63a2e6f01d18fe8838124302d00d73af4942af2a3d4cde33565",
+    "chapters/04-research-c.tex": "70b9158dd759d706e8089b1e90560f4fba6fa4ab62e8aa192b2a98514b543771",
+    "chapters/05-research-d.tex": "2941eebd7603ad829f856021cd6b1765a8c0bd27408652227276446929a84292",
+    "chapters/06-synthesis.tex": "a4a90f128054fd71fbe722802bcdc200e335aede1834fc703f483b687f953630",
+    "appendices/d-qdesn-technical.tex": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+    "tables/ch03-environ/corrected3/main_calibration.tex": "381219a3d81075e37c11332fdfefe5b0d0e5694f3d9a4f2e0b176c1b26696aff"
+  },
+  "protected_counts": {
+    "bruno_items": 116,
+    "display_records": 35,
+    "display_keep": 33,
+    "display_omit": 2
+  },
+  "authorized_label_deletions": [
+    "tab:intro-interval-objects"
+  ],
+  "numeric_change_policy": "No research result changes. Add exact percentages beside existing hydrology coverage counts and change bolding only according to the declared table criteria."
+}

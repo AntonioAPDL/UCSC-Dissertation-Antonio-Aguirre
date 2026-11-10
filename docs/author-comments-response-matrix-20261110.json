@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-10",
+  "plan": "docs/author-comments-revision-plan-20261110.md",
+  "baseline": "docs/author-comments-preedit-baseline-20261110.json",
+  "status": "IMPLEMENTATION_STARTED",
+  "items": [
+    {
+      "id": "AR-001",
+      "source_comment": "1",
+      "issue": "The abstract does not explain why score ranking and held-out accuracy can differ.",
+      "targets": ["frontmatter/abstract.tex"],
+      "selected_resolution": "Name the two evaluation objects and state that a model can improve average quantile loss without uniformly improving calibration or every mechanism-specific score.",
+      "acceptance": "The abstract is self-contained and contains no internal revision language.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-002",
+      "source_comment": "2",
+      "issue": "Crossing and PriceFM results need a contribution-centered but evidence-bounded interpretation.",
+      "targets": ["frontmatter/abstract.tex", "chapters/04-research-c.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Report the exact crossing tradeoff and the 6.687 versus 7.039 AQL comparison; describe the fixed-feature computational contrast without an unmeasured runtime claim.",
+      "acceptance": "Claims match source numbers and do not call PriceFM categorically expensive.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-003",
+      "source_comment": "3",
+      "issue": "Project-level attribution disclaimer weakens the contribution account.",
+      "targets": ["chapters/01-introduction.tex", "frontmatter/acknowledgments.tex"],
+      "selected_resolution": "Remove the disclaimer and state documented antecedents and candidate contributions directly.",
+      "acceptance": "No unsupported individual attribution is introduced.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-004",
+      "source_comment": "4 and 10",
+      "issue": "The exdqlm contribution is incomplete and uses generic coauthor references.",
+      "targets": ["chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/06-synthesis.tex", "frontmatter/acknowledgments.tex"],
+      "selected_resolution": "Name cited antecedents and document Antonio's restructuring, later LDVB and nonconjugate updates, compiled backends, filtering/smoothing corrections, forecasting, diagnostics, synthesis, and static RHS regression.",
+      "acceptance": "The text does not claim the whole package is C++ or invent a speedup.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-005",
+      "source_comment": "5",
+      "issue": "Chapter 1 does not foreground the common non-mean inferential theme.",
+      "targets": ["chapters/01-introduction.tex"],
+      "selected_resolution": "Organize the opening around conditional quantiles, fixed-content intervals, and scalable computation for operational analysis.",
+      "acceptance": "The common question precedes the project list and uses standard statistical terminology.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-006",
+      "source_comment": "6",
+      "issue": "Acronyms are not always redefined at chapter first use.",
+      "targets": ["frontmatter/abstract.tex", "chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/03-research-b.tex", "chapters/04-research-c.tex", "chapters/05-research-d.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Audit and define field-specific acronyms independently in each reading unit.",
+      "acceptance": "GloFAS, PriceFM, AL, exAL, ISVB, LDVB, MCMC, VB, DESN, RHS, MTI, AQL, CRPS, and PPLC are expanded or immediately explained at first use where present.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-007",
+      "source_comment": "7",
+      "issue": "The second objective omits scalable static regularized quantile regression and its role in DESN readouts.",
+      "targets": ["chapters/01-introduction.tex"],
+      "selected_resolution": "Add static AL/exAL regularized regression and connect it to high-dimensional reservoir readout fitting.",
+      "acceptance": "The objective separates statistical target, software capability, and DESN use.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-008",
+      "source_comment": "8 and 13",
+      "issue": "Validation language alternates between vague robustness and overly defensive universal caveats.",
+      "targets": ["chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/03-research-b.tex", "chapters/04-research-c.tex", "chapters/05-research-d.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "State empirical evidence under named designs and reserve consistency or general coverage for theorems; place material limitations once with the benefit and next step.",
+      "acceptance": "No universal guarantee is implied and no result is followed by a redundant defensive disclaimer.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-009",
+      "source_comment": "9",
+      "issue": "Hydrology scope language does not connect the five-origin design to repeated dynamic-model computation.",
+      "targets": ["chapters/01-introduction.tex", "chapters/03-research-b.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Explain the finite retrospective design and identify a matched MCMC comparison as future uncertainty-assessment work without claiming VB changes only uncertainty.",
+      "acceptance": "The text distinguishes forecast accuracy, predictive calibration, and approximation uncertainty.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-010",
+      "source_comment": "10",
+      "issue": "Chapter 3 uses informal author references and underdescribes ISVB and LDVB.",
+      "targets": ["chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Use citations to Yan, Zheng and Kottas and Barata, Prado and Sanso; define the approximations and distinguish inherited methods from later implementation work.",
+      "acceptance": "No 'and coauthors' wording remains in the contribution account.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-011",
+      "source_comment": "11",
+      "issue": "Section 1.3 is not sufficiently clear and its interval table is unnecessary.",
+      "targets": ["chapters/01-introduction.tex"],
+      "selected_resolution": "Replace Table 1.1 with prose that defines the target and interval distinctions and guides the later chapters.",
+      "acceptance": "Label tab:intro-interval-objects is removed and no dangling reference remains.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-012",
+      "source_comment": "12 and 20",
+      "issue": "Future hydrologic covariates are described as summaries or ensembles rather than a deterministic path.",
+      "targets": ["chapters/01-introduction.tex", "chapters/03-research-b.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "State that one supplied deterministic precipitation and soil-water forecast path enters at each origin and its uncertainty is not propagated.",
+      "acceptance": "No aggregation rule is guessed and post-origin gauge observations remain verification only.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-013",
+      "source_comment": "14",
+      "issue": "Some model equation blocks are insufficiently interpreted.",
+      "targets": ["chapters/03-research-b.tex", "chapters/02-research-a.tex", "chapters/04-research-c.tex", "chapters/05-research-d.tex"],
+      "selected_resolution": "Add concise role statements before or after central equation blocks without duplicating derivations.",
+      "acceptance": "Every central display is introduced by purpose and interpreted where its components are not self-evident.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-014",
+      "source_comment": "15",
+      "issue": "Calligraphic notation may be visually overused.",
+      "targets": ["chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/03-research-b.tex", "chapters/04-research-c.tex", "chapters/05-research-d.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Retain standard probability and statistical notation; simplify only decorative index-set notation after a symbol-by-symbol audit.",
+      "acceptance": "No global replacement changes mathematical meaning.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-015",
+      "source_comment": "16",
+      "issue": "The hydrology seasonal periods lack their spectral-selection explanation.",
+      "targets": ["chapters/03-research-b.tex"],
+      "selected_resolution": "State that exploratory spectral peaks supplied the periods; interpret annual and semiannual components and leave the slow component phenomenological.",
+      "acceptance": "Periods remain 363.59, 181.79, and 2474.87 days and no unsupported physical mechanism is added.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-016",
+      "source_comment": "17",
+      "issue": "Hydrology coverage fractions omit percentages and table bolding does not express the declared optimum.",
+      "targets": ["tables/ch03-environ/corrected3/main_calibration.tex", "docs/imports/ch03-environ.json"],
+      "selected_resolution": "Add exact percentages and bold closest-to-95 coverage plus minimum interval score; do not bold width.",
+      "acceptance": "All counts and scores are unchanged and the current projection hash is updated.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-017",
+      "source_comment": "18",
+      "issue": "Formatting and the treatment of bold run-in headings vary across chapters.",
+      "targets": ["chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/05-research-d.tex"],
+      "selected_resolution": "Retain parallel contribution headings, review the exdqlm capability heading, and remove or promote MTI run-ins according to hierarchy.",
+      "acceptance": "Heading levels reflect argument structure rather than visual emphasis.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-018",
+      "source_comment": "19",
+      "issue": "Tables 6.1 and D.1 need a clearer contribution and scientific-question structure.",
+      "targets": ["chapters/06-synthesis.tex", "appendices/d-qdesn-technical.tex"],
+      "selected_resolution": "Redesign Table 6.1 around target, contribution, evidence, and scope; revise Table D.1 wording while preserving its label and four-column form.",
+      "acceptance": "Both tables are compact, readable, and source-supported.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-019",
+      "source_comment": "21",
+      "issue": "The MTI data limitation is categorical and reads as a legal or regulatory disclaimer.",
+      "targets": ["chapters/05-research-d.tex", "chapters/06-synthesis.tex"],
+      "selected_resolution": "Describe the overlapping partitions, dependence, ties, and measurement-definition limits, then identify prospective validation as the required extension.",
+      "acceptance": "The contribution remains clear and no regulatory claim is implied.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-020",
+      "source_comment": "22",
+      "issue": "The dissertation conclusion ends with a generic slogan.",
+      "targets": ["chapters/06-synthesis.tex", "frontmatter/abstract.tex"],
+      "selected_resolution": "Conclude with the four projects' complementary contribution to target-specific distributional inference, computation, and validation.",
+      "acceptance": "The final paragraph states substantive findings and future directions without hype.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-021",
+      "source_comment": "18, applied globally",
+      "issue": "The full dissertation requires a consistency and anti-generic-prose pass.",
+      "targets": ["frontmatter/abstract.tex", "chapters/01-introduction.tex", "chapters/02-research-a.tex", "chapters/03-research-b.tex", "chapters/04-research-c.tex", "chapters/05-research-d.tex", "chapters/06-synthesis.tex", "appendices/a-shared-conventions.tex", "appendices/b-exdqlm-technical.tex", "appendices/c-hydrology-technical.tex", "appendices/d-qdesn-technical.tex", "appendices/e-mti-technical.tex"],
+      "selected_resolution": "Remove internal workflow residue, generic transitions, repeated caveats, and unexplained technical shorthand by replacing them with object-level statistical prose.",
+      "acceptance": "No concealment claim is made; prose is specific, restrained, and professionally self-contained.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    },
+    {
+      "id": "AR-022",
+      "source_comment": "all comments",
+      "issue": "The implementation needs a reproducible closeout and full manuscript validation.",
+      "targets": ["docs/STATUS.md", "docs/VALIDATION.md", "docs/revision-ledger.json", "docs/claim-evidence.json", "docs/research-decisions.md", "docs/research-audit.md", "docs/current-source-refresh-audit.md", "docs/editorial-issues.json", "docs/display-ledger.json", "docs/appendix-essentiality-map.json"],
+      "selected_resolution": "Update only current records affected by this pass, close all response items, validate source projections, build a release PDF, and inspect affected pages.",
+      "acceptance": "All 22 items are IMPLEMENTED_VALIDATED, Bruno's 116 records remain intact, and release validation passes.",
+      "status": "OPEN",
+      "changed_files": [],
+      "validation": []
+    }
+  ]
+}
