@@ -1,0 +1,3031 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-09",
+  "status": "IMPLEMENTATION_PREFLIGHT",
+  "plan": "docs/bruno-revision-integration-plan-20261109.md",
+  "baseline_commit": "ac00a38a6fbbec9ac57ffb157fe7de99673f7540",
+  "authority_commits": {
+    "SRC-QDESN": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+    "SRC-RQR": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+    "SRC-MTI-EXT": "f345d946aa5a81b94795838bec58d874a0fdd0c9"
+  },
+  "review_boundary": "Bruno Sanso reviewed Chapter 4 only through Section 4.4; Chapter 5 and Appendix E comments are itemized from the received annotation.",
+  "items": [
+    {
+      "id": "B4-001",
+      "review_page": "109/95",
+      "issue_and_acceptance": "Preserve the removal of the obsolete manuscript-source notice. The chapter must open with the statistical problem, not its production history.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the removal of the obsolete manuscript-source notice. The chapter must open with the statistical problem, not its production history.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-002",
+      "review_page": "109/95",
+      "issue_and_acceptance": "Define the observed time series before the forecast quantile. Use one convention for (Y_t), observed (y_t), forecast origin, and information set; verify all later indices against it.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Define the observed time series before the forecast quantile. Use one convention for (Y_t), observed (y_t), forecast origin, and information set; verify all later indices against it.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-003",
+      "review_page": "109/95",
+      "issue_and_acceptance": "State the horizon as steps ahead of a forecast origin and distinguish the origin from the response time. The definition, recursive forecast subsection, and application notation must agree.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "State the horizon as steps ahead of a forecast origin and distinguish the origin from the response time. The definition, recursive forecast subsection, and application notation must agree.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-004",
+      "review_page": "110/96",
+      "issue_and_acceptance": "Replace repeated general discussion from Chapter 2 with a short contrast: Chapter 2 uses evolving linear states and product synthesis, whereas Chapter 4 uses fixed nonlinear recurrent predictors. Keep only background needed locally.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Replace repeated general discussion from Chapter 2 with a short contrast: Chapter 2 uses evolving linear states and product synthesis, whereas Chapter 4 uses fixed nonlinear recurrent predictors. Keep only background needed locally.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-005",
+      "review_page": "110/96",
+      "issue_and_acceptance": "Cite or define DESN before the qualified phrase “specified deep echo state network.” The first use must identify the fixed reservoir construction rather than assume familiarity.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Cite or define DESN before the qualified phrase “specified deep echo state network.” The first use must identify the fixed reservoir construction rather than assume familiarity.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-006",
+      "review_page": "110/96",
+      "issue_and_acceptance": "Preserve the current first-use definition of reservoir states as recurrent states whose internal weights are drawn before regression fitting and held fixed.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current first-use definition of reservoir states as recurrent states whose internal weights are drawn before regression fitting and held fixed.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-007",
+      "review_page": "110/96",
+      "issue_and_acceptance": "Preserve statistically correct prior language: ridge regularization/priors use a common scale; RHS permits coefficient-specific shrinkage with a slab bound.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve statistically correct prior language: ridge regularization/priors use a common scale; RHS permits coefficient-specific shrinkage with a slab bound.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-008",
+      "review_page": "110--111/96--97",
+      "issue_and_acceptance": "Compress AL/exAL background already developed in earlier chapters. Retain only the quantile-location property, the augmentation needed here, the additional exAL shape, and the relevant uncertainty qualification.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Compress AL/exAL background already developed in earlier chapters. Retain only the quantile-location property, the augmentation needed here, the additional exAL shape, and the relevant uncertainty qualification.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-009",
+      "review_page": "110--111/96--97",
+      "issue_and_acceptance": "Preserve the direct Q--DESN contribution statement now on current `main`; do not revert to an architecture-first description.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the direct Q--DESN contribution statement now on current `main`; do not revert to an architecture-first description.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-010",
+      "review_page": "110--112/96--98",
+      "issue_and_acceptance": "Preserve the current statement that MQ--DESN couples adjacent slope differences across levels within one regression while independent Q--DESN fits do not. Reconfirm after model-section edits.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current statement that MQ--DESN couples adjacent slope differences across levels within one regression while independent Q--DESN fits do not. Reconfirm after model-section edits.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-011",
+      "review_page": "111/97",
+      "issue_and_acceptance": "Preserve the corrected grammatical construction “stacking reservoirs.”",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the corrected grammatical construction “stacking reservoirs.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-012",
+      "review_page": "111/97",
+      "issue_and_acceptance": "The exact authority uses “penalized quantile sheets,” and current `main` reproduces that term with the Bonas et al. citation. Preserve it; add only a concise role description if the surrounding comparison still needs clarification.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex",
+        "locator": "lines 180--182"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "The exact authority uses “penalized quantile sheets,” and current `main` reproduces that term with the Bonas et al. citation. Preserve it; add only a concise role description if the surrounding comparison still needs clarification.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-013",
+      "review_page": "112/98",
+      "issue_and_acceptance": "Move study-specific simulation and application descriptions to the evidence roadmap or Section 4.5. The introduction should state questions and contributions without narrating results before their design is introduced.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:intro; pre-edit lines 1--137"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Move study-specific simulation and application descriptions to the evidence roadmap or Section 4.5. The introduction should state questions and contributions without narrating results before their design is introduced.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-014",
+      "review_page": "113/99",
+      "issue_and_acceptance": "At the model opening, call (Y_t) the time series or stochastic process of interest and distinguish it from observed values (y_t).",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "At the model opening, call (Y_t) the time series or stochastic process of interest and distinguish it from observed values (y_t).",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-015",
+      "review_page": "113/99",
+      "issue_and_acceptance": "Define (mathbf z_t) as the vector of exogenous covariates, not merely variables, and state whether its components are contemporaneously available at fitting/forecast time.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Define (mathbf z_t) as the vector of exogenous covariates, not merely variables, and state whether its components are contemporaneously available at fitting/forecast time.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-016",
+      "review_page": "113/99",
+      "issue_and_acceptance": "Add the authority's exact scaling \\(\\bar W_d=\\rho_d W_d/\\rho(W_d)\\), conditional on nonzero raw radius, and define \\(\\rho(W)\\) as the largest absolute eigenvalue.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex",
+        "locator": "lines 277--281"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "Add the authority's exact scaling \\(\\bar W_d=\\rho_d W_d/\\rho(W_d)\\), conditional on nonzero raw radius, and define \\(\\rho(W)\\) as the largest absolute eigenvalue.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-017",
+      "review_page": "113--114/99--100",
+      "issue_and_acceptance": "State dimensions for (mathbf W_d), (mathbf W_d^{\\rm in}), (mathbf Q_{d-1}), the reduced state, and the bias; verify every matrix product in the recursion.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "State dimensions for (mathbf W_d), (mathbf W_d^{\\rm in}), (mathbf Q_{d-1}), the reduced state, and the bias; verify every matrix product in the recursion.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-018",
+      "review_page": "113/99",
+      "issue_and_acceptance": "Define the feature transformation (k) as a function, give its domain/codomain, and identify the transformations actually used. Do not leave “chosen feature transformation” uninterpreted.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the feature transformation (k) as a function, give its domain/codomain, and identify the transformations actually used. Do not leave “chosen feature transformation” uninterpreted.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-019",
+      "review_page": "114/100",
+      "issue_and_acceptance": "Current `main` and the authority agree: the previous state has weight \\(1-\\alpha_d\\), so a smaller leak rate retains more of it. Preserve this statement and verify it after any recursion edit.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex",
+        "locator": "lines 291--312"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Current `main` and the authority agree: the previous state has weight \\(1-\\alpha_d\\), so a smaller leak rate retains more of it. Preserve this statement and verify it after any recursion edit.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-020",
+      "review_page": "114/100",
+      "issue_and_acceptance": "Distinguish fixed random reservoir quantities, tuning parameters selected with training/development information, and regression parameters inferred from the likelihood.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Distinguish fixed random reservoir quantities, tuning parameters selected with training/development information, and regression parameters inferred from the likelihood.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-021",
+      "review_page": "114/100",
+      "issue_and_acceptance": "Move study-specific feature-selection and development-sample qualifications out of the generic model definition unless they are needed to define the estimand. Cross-reference Section 4.5 or Appendix D instead.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Move study-specific feature-selection and development-sample qualifications out of the generic model definition unless they are needed to define the estimand. Cross-reference Section 4.5 or Appendix D instead.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-022",
+      "review_page": "114/100",
+      "issue_and_acceptance": "Explain exactly which state transformations and direct inputs form (x-tilde_t), then derive its dimension (r) under the stated cases.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Explain exactly which state transformations and direct inputs form (x-tilde_t), then derive its dimension (r) under the stated cases.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-023",
+      "review_page": "115/101",
+      "issue_and_acceptance": "Introduce the comparator as (K) independent Q--DESN fits, one at each level, before defining MQ--DESN. Avoid the vague noun “approach.”",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Introduce the comparator as (K) independent Q--DESN fits, one at each level, before defining MQ--DESN. Avoid the vague noun “approach.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-024",
+      "review_page": "115/101",
+      "issue_and_acceptance": "Define the observed response vector and the complete parameter collection (theta) before the likelihood; separate regression, likelihood, and prior-scale components.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the observed response vector and the complete parameter collection (theta) before the likelihood; separate regression, likelihood, and prior-scale components.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-025",
+      "review_page": "115--116/101--102",
+      "issue_and_acceptance": "Call the product in Eq. 4.5 a composite likelihood, not an “update.” Reserve *update* for the resulting loss-based/generalized posterior operation.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Call the product in Eq. 4.5 a composite likelihood, not an “update.” Reserve *update* for the resulting loss-based/generalized posterior operation.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-026",
+      "review_page": "115--116/101--102",
+      "issue_and_acceptance": "Define the anchor block and adjacent slope-difference blocks before stating their priors. Explain how they reconstruct (beta_k).",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Define the anchor block and adjacent slope-difference blocks before stating their priors. Explain how they reconstruct (beta_k).",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-027",
+      "review_page": "116/102",
+      "issue_and_acceptance": "State explicitly that RHS priors are placed on the anchor and slope-difference blocks, with block-specific scales; distinguish intercept ordering from slope coupling.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "State explicitly that RHS priors are placed on the anchor and slope-difference blocks, with block-specific scales; distinguish intercept ordering from slope coupling.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-028",
+      "review_page": "116/102",
+      "issue_and_acceptance": "Use accurate language for the composite likelihood and composite/generalized posterior. State why the product is not a scalar-response joint sampling density and what is nevertheless normalized.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Use accurate language for the composite likelihood and composite/generalized posterior. State why the product is not a scalar-response joint sampling density and what is nevertheless normalized.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-029",
+      "review_page": "116/102",
+      "issue_and_acceptance": "Preserve the current qualification that the same response is reused across levels and the product is not a normalized scalar-response density.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:model; pre-edit lines 138--316"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current qualification that the same response is reused across levels and the product is not a normalized scalar-response density.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-030",
+      "review_page": "116--117/102--103",
+      "issue_and_acceptance": "Introduce the AL/exAL latent representation as a conditional model, define the latent variables and their support, and identify which displayed Gaussian argument is a variance.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Introduce the AL/exAL latent representation as a conditional model, define the latent variables and their support, and identify which displayed Gaussian argument is a variance.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-031",
+      "review_page": "117/103",
+      "issue_and_acceptance": "Replace generic references to “shape” with the defined parameter (gamma) and use the same symbol in every conditional statement.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Replace generic references to “shape” with the defined parameter (gamma) and use the same symbol in every conditional statement.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-032",
+      "review_page": "117/103",
+      "issue_and_acceptance": "Describe tractable blocks through their full conditional distributions and sampling laws, not by saying that parameters “have updates.”",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Describe tractable blocks through their full conditional distributions and sampling laws, not by saying that parameters “have updates.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-033",
+      "review_page": "117/103",
+      "issue_and_acceptance": "State the verified partially collapsed transition: integrate scale out of the shape step, sample shape from the collapsed density, and immediately redraw scale from its GIG conditional before another block. Cross-reference the exact Appendix D kernel.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "qdesn-supplement.tex",
+        "locator": "lines 246--278"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "State the verified partially collapsed transition: integrate scale out of the shape step, sample shape from the collapsed density, and immediately redraw scale from its GIG conditional before another block. Cross-reference the exact Appendix D kernel.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-034",
+      "review_page": "117/103",
+      "issue_and_acceptance": "Retain and sharpen the diagnostic statement: identify rank-normalized (widehat R), effective sample size, chain comparisons, and crossing diagnostics as checks, not guarantees.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Retain and sharpen the diagnostic statement: identify rank-normalized (widehat R), effective sample size, chain comparisons, and crossing diagnostics as checks, not guarantees.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-035",
+      "review_page": "117/103",
+      "issue_and_acceptance": "Motivate VB by repeated fitting over long series, forecast origins, or reservoir specifications. State the computational task reduced, not merely that fitting is “fast.”",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Motivate VB by repeated fitting over long series, forecast origins, or reservoir specifications. State the computational task reduced, not merely that fitting is “fast.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-036",
+      "review_page": "117/103",
+      "issue_and_acceptance": "Define whether VB supplies an approximation, initialization, or reported inference in each study; do not imply uncertainty quality without evidence.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:inference; pre-edit lines 317--371"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define whether VB supplies an approximation, initialization, or reported inference in each study; do not imply uncertainty quality without evidence.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-037",
+      "review_page": "118/104",
+      "issue_and_acceptance": "Define forecast origin (o), fitting endpoint (T), horizon (h), and target (Y_{o+h}) in one place; then use that indexing throughout.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:forecast; pre-edit lines 372--502"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define forecast origin (o), fitting endpoint (T), horizon (h), and target (Y_{o+h}) in one place; then use that indexing throughout.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-038",
+      "review_page": "118/104",
+      "issue_and_acceptance": "Preserve the distinction between a draw-specific conditional-quantile location and the marginal posterior predictive quantile.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:forecast; pre-edit lines 372--502"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the distinction between a draw-specific conditional-quantile location and the marginal posterior predictive quantile.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-039",
+      "review_page": "118/104",
+      "issue_and_acceptance": "Explain how observed history initializes reservoir states and how simulated future responses enter later lags in a recursive forecast. Verify information availability for covariates.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:forecast; pre-edit lines 372--502"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Explain how observed history initializes reservoir states and how simulated future responses enter later lags in a recursive forecast. Verify information availability for covariates.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B4-040",
+      "review_page": "109--118/95--104",
+      "issue_and_acceptance": "Recheck every revised definition, equation, and contribution against Q--DESN commit `aa613b0...`. The remote tip currently matches; no comment authorizes a source-version change.",
+      "plan_status": "CONTROL_GATE",
+      "commit_unit": "C1",
+      "pre_edit_target": {
+        "file": "chapters/04-research-c.tex",
+        "anchor": "qdesn2026:sec:forecast; pre-edit lines 372--502"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-QDESN",
+        "commit": "aa613b056b054edd9347eeb4739bd4bce0c92818",
+        "path": "main.tex and qdesn-supplement.tex",
+        "locator": "complete affected definitions"
+      },
+      "disposition": "verify_only",
+      "selected_resolution": "Recheck every revised definition, equation, and contribution against Q--DESN commit `aa613b0...`. The remote tip currently matches; no comment authorizes a source-version change.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "CONTROL_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-001",
+      "review_page": "137/123",
+      "issue_and_acceptance": "Preserve the definition-first opening: fixed content does not determine placement, and a tolerance interval adds a repeated-sampling confidence requirement.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the definition-first opening: fixed content does not determine placement, and a tolerance interval adds a repeated-sampling confidence requirement.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-002",
+      "review_page": "137--140/123--126",
+      "issue_and_acceptance": "Keep the exposition linear. Do not interpret simulation or calibration findings before the target, procedure, and study design are defined; retain only a short evidence-status preview.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Keep the exposition linear. Do not interpret simulation or calibration findings before the target, procedure, and study design are defined; retain only a short evidence-status preview.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-003",
+      "review_page": "137/123",
+      "issue_and_acceptance": "Add a concise transition from Chapter 4: conditional quantiles are loss-defined distributional functionals, while this chapter studies loss-defined pairs of endpoints under a fixed-content and tolerance objective. Do not imply that the check and residual-product losses have the same target.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Add a concise transition from Chapter 4: conditional quantiles are loss-defined distributional functionals, while this chapter studies loss-defined pairs of endpoints under a fixed-content and tolerance objective. Do not imply that the check and residual-product losses have the same target.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-004",
+      "review_page": "137/123",
+      "issue_and_acceptance": "Preserve removal of the chapter-source notice and in-preparation manuscript citations from the chapter opening. Attribution remains in acknowledgments/provenance, not as article-production prose.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve removal of the chapter-source notice and in-preparation manuscript citations from the chapter opening. Attribution remains in acknowledgments/provenance, not as article-production prose.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-005",
+      "review_page": "137--140/123--126",
+      "issue_and_acceptance": "Preserve the current three-part contribution statement: identify the MPI target, define the MTI placement family, and construct/evaluate the calibrated tolerance rule.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current three-part contribution statement: identify the MPI target, define the MTI placement family, and construct/evaluate the calibrated tolerance rule.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-006",
+      "review_page": "138/124",
+      "issue_and_acceptance": "Preserve the motivation of the Pouplin et al. residual-product criterion through the interval-placement problem and clearly credit the inherited criterion.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the motivation of the Pouplin et al. residual-product criterion through the interval-placement problem and clearly credit the inherited criterion.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-007",
+      "review_page": "138/124",
+      "issue_and_acceptance": "The current introduction no longer uses undefined (eta_1,eta_2). Preserve the simpler generic root notation until (a,b) are defined.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "The current introduction no longer uses undefined (eta_1,eta_2). Preserve the simpler generic root notation until (a,b) are defined.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-008",
+      "review_page": "138/124",
+      "issue_and_acceptance": "When the population score equations first appear, explain that they are first-order conditions for the expected residual-product loss and state what each identifies.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "When the population score equations first appear, explain that they are first-order conditions for the expected residual-product loss and state what each identifies.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-009",
+      "review_page": "138/124",
+      "issue_and_acceptance": "Preserve the current definition of retained mean through (M_c(u)) before using the term in the MPI/MTI contribution statements.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current definition of retained mean through (M_c(u)) before using the term in the MPI/MTI contribution statements.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-010",
+      "review_page": "138/124",
+      "issue_and_acceptance": "Preserve the replacement of vague “same score” language with explicit MPI/MTI loss and placement-family language.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the replacement of vague “same score” language with explicit MPI/MTI loss and placement-family language.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-011",
+      "review_page": "138/124",
+      "issue_and_acceptance": "Preserve the current top-level method sequence before calibration details: target, fixed-target fit, model-based content check, selection, independent evaluation.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the current top-level method sequence before calibration details: target, fixed-target fit, model-based content check, selection, independent evaluation.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-012",
+      "review_page": "138/124",
+      "issue_and_acceptance": "Preserve the statement that (delta) defines the estimand and that equal-tailed/shortest rules correspond to distribution-specific values, with target selection kept separate.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the statement that (delta) defines the estimand and that equal-tailed/shortest rules correspond to distribution-specific values, with target selection kept separate.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-013",
+      "review_page": "138--139/124--125",
+      "issue_and_acceptance": "Preserve the rewritten concise tolerance-procedure summary; do not restore the old grid and calibration bookkeeping to the introduction.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the rewritten concise tolerance-procedure summary; do not restore the old grid and calibration bookkeeping to the introduction.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-014",
+      "review_page": "139/125",
+      "issue_and_acceptance": "Keep candidate-grid details out of the introduction and explain them only after the fixed-target calculation and content check are defined.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Keep candidate-grid details out of the introduction and explain them only after the fixed-target calculation and content check are defined.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-015",
+      "review_page": "139/125",
+      "issue_and_acceptance": "Preserve the contribution-led introduction and its explanation of evidentiary value. Do not replace it with a long inventory of chapter contents.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the contribution-led introduction and its explanation of evidentiary value. Do not replace it with a long inventory of chapter contents.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-016",
+      "review_page": "139--140/125--126",
+      "issue_and_acceptance": "Preserve the concise evidence-boundary paragraph distinguishing proofs, exact model-based statements, finite-panel simulation evidence, and unevaluated extensions.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the concise evidence-boundary paragraph distinguishing proofs, exact model-based statements, finite-panel simulation evidence, and unevaluated extensions.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-017",
+      "review_page": "140/126",
+      "issue_and_acceptance": "Preserve Section 5.2's direct definition of (I_c(u)), retained mean (M_c(u)), and geometric width (W_c(u)), with dimensions/units interpretable.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:introduction--rqr2026:sec:interval-functionals; pre-edit lines 1--126"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve Section 5.2's direct definition of (I_c(u)), retained mean (M_c(u)), and geometric width (W_c(u)), with dimensions/units interpretable.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-018",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Remove the meta sentence that announces what Section 5.3 will do. Begin with the interval content, ordered endpoints, and loss.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Remove the meta sentence that announces what Section 5.3 will do. Begin with the interval content, ordered endpoints, and loss.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-019",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Preserve the equation label for the piecewise MPI loss and use it in later references.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve the equation label for the piecewise MPI loss and use it in later references.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-020",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Replace imperative “Fix” wording where it obscures the setup with a direct assumption such as “Consider content (c\\in(0,1)) and ordered endpoints (a<b).”",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Replace imperative “Fix” wording where it obscures the setup with a direct assumption such as “Consider content (c\\in(0,1)) and ordered endpoints (a<b).”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-021",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Current lines 144--149 explain the two endpoint-distance factors and distinguish inside weight \\(1-c\\) from miss weight \\(c\\). Preserve this explanation while making the adjacent transition less tutorial-like.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Current lines 144--149 explain the two endpoint-distance factors and distinguish inside weight \\(1-c\\) from miss weight \\(c\\). Preserve this explanation while making the adjacent transition less tutorial-like.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-022",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Define the empirical estimator through the average loss (or explicitly note that the sum has the same minimizer) and distinguish an unpenalized empirical minimizer from penalized/generalized-posterior calculations later.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Define the empirical estimator through the average loss (or explicitly note that the sum has the same minimizer) and distinguish an unpenalized empirical minimizer from penalized/generalized-posterior calculations later.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-023",
+      "review_page": "142/128",
+      "issue_and_acceptance": "Introduce (e(a,b;y)=(y-a)(y-b)) directly and derive the compact check-loss representation without the tutorial-like “Now define” transition.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Introduce (e(a,b;y)=(y-a)(y-b)) directly and derive the compact check-loss representation without the tutorial-like “Now define” transition.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-024",
+      "review_page": "143/129",
+      "issue_and_acceptance": "Move the learning-rate, generalized-Bayes, restricted-regression, and future-qualification discussion until after the population target is established. Keep the loss definition focused.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Move the learning-rate, generalized-Bayes, restricted-regression, and future-qualification discussion until after the population target is established. Keep the loss definition focused.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-025",
+      "review_page": "143--145/129--131",
+      "issue_and_acceptance": "Define (X), (x), (F_x), (Q_x), and (mu_x) before Proposition 5.1, or state and prove an unconditional result first and add the conditional version only after the covariate setup.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define (X), (x), (F_x), (Q_x), and (mu_x) before Proposition 5.1, or state and prove an unconditional result first and add the conditional version only after the covariate setup.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-026",
+      "review_page": "144/130",
+      "issue_and_acceptance": "Number or otherwise give stable labels to the content and retained-mean score equations; later prose and proofs must refer to those labels rather than marks such as “first” and “second.”",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Number or otherwise give stable labels to the content and retained-mean score equations; later prose and proofs must refer to those labels rather than marks such as “first” and “second.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-027",
+      "review_page": "144/130",
+      "issue_and_acceptance": "Add an exact Appendix E proof pointer immediately after Proposition 5.1 and state the regularity conditions needed to differentiate under the expectation.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Add an exact Appendix E proof pointer immediately after Proposition 5.1 and state the regularity conditions needed to differentiate under the expectation.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-028",
+      "review_page": "144/130",
+      "issue_and_acceptance": "Attribute the population-content equation to Pouplin et al. and identify the retained-mean equality as the additional consequence established here. Make that distinction visible in the contribution statement and proof discussion.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Attribute the population-content equation to Pouplin et al. and identify the retained-mean equality as the additional consequence established here. Make that distinction visible in the contribution statement and proof discussion.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-029",
+      "review_page": "144/130",
+      "issue_and_acceptance": "Replace undefined “retained core” language with the conditional law of (Y) given (a<Y<b), and define convex-order contraction before using that phrase.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Replace undefined “retained core” language with the conditional law of (Y) given (a<Y<b), and define convex-order contraction before using that phrase.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-030",
+      "review_page": "143--144/129--130",
+      "issue_and_acceptance": "Define the profiled risk before referring to it, or move the profile-risk argument entirely to Appendix E and leave only the result and proof pointer in the chapter.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the profiled risk before referring to it, or move the profile-risk argument entirely to Appendix E and leave only the result and proof pointer in the chapter.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-031",
+      "review_page": "145/131",
+      "issue_and_acceptance": "Define (F_x), its inverse (Q_x), and the conditioning value (x) before Theorem 5.1; verify that all support and monotonicity conditions are stated on the correct conditional law.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define (F_x), its inverse (Q_x), and the conditioning value (x) before Theorem 5.1; verify that all support and monotonicity conditions are stated on the correct conditional law.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-032",
+      "review_page": "145/131",
+      "issue_and_acceptance": "Add a proof pointer for the symmetry implication (u_c(x)=(1-c)/2) and make clear which symmetry center is used.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Add a proof pointer for the symmetry implication (u_c(x)=(1-c)/2) and make clear which symmetry center is used.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-033",
+      "review_page": "146/132",
+      "issue_and_acceptance": "Define an endpoint/root class and distinguish unrestricted pointwise endpoints from a linear or other restricted regression class. Explain why (X)'s role changes the attainable score equations.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define an endpoint/root class and distinguish unrestricted pointwise endpoints from a linear or other restricted regression class. Explain why (X)'s role changes the attainable score equations.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-034",
+      "review_page": "147/133",
+      "issue_and_acceptance": "Add the Appendix E proof pointer for Proposition 5.2 and state whether the claim concerns stationary points or global minimizers.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Add the Appendix E proof pointer for Proposition 5.2 and state whether the claim concerns stationary points or global minimizers.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-035",
+      "review_page": "148/134",
+      "issue_and_acceptance": "Add the Appendix E proof pointer for Theorem 5.2 and keep its stronger support, density, and moment assumptions visible.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Add the Appendix E proof pointer for Theorem 5.2 and keep its stronger support, density, and moment assumptions visible.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-036",
+      "review_page": "148/134",
+      "issue_and_acceptance": "Define the “escaping-root direction” mathematically or move the boundary/unbounded-risk discussion to Appendix E. The chapter should retain only the admissible tilt range and its consequence.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the “escaping-root direction” mathematically or move the boundary/unbounded-risk discussion to Appendix E. The chapter should retain only the admissible tilt range and its consequence.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-037",
+      "review_page": "150/136",
+      "issue_and_acceptance": "Revise Figure 5.2's title/caption so it is unmistakably a deterministic population calculation, not an estimated finite-sample result. Define every abbreviation and remove the opaque final sentence.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Revise Figure 5.2's title/caption so it is unmistakably a deterministic population calculation, not an estimated finite-sample result. Define every abbreviation and remove the opaque final sentence.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-038",
+      "review_page": "151/137",
+      "issue_and_acceptance": "Use “population tilt associated with [target]” or another defined phrase in Figure 5.3 rather than unexplained “recovery tilt”; explain that the Cornish--Fisher values are approximations based on population skewness in this display.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:mpi-loss--rqr2026:sec:mti-loss; pre-edit lines 127--459"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Use “population tilt associated with [target]” or another defined phrase in Figure 5.3 rather than unexplained “recovery tilt”; explain that the Cornish--Fisher values are approximations based on population skewness in this display.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-039",
+      "review_page": "153/139",
+      "issue_and_acceptance": "Introduce generalized Bayes before first use, cite an appropriate authoritative source already in or added to the verified bibliography, and distinguish a loss-based posterior from an ordinary likelihood posterior.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Introduce generalized Bayes before first use, cite an appropriate authoritative source already in or added to the verified bibliography, and distinguish a loss-based posterior from an ordinary likelihood posterior.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-040",
+      "review_page": "153--155/139--141",
+      "issue_and_acceptance": "Define the learning rate (omega_R), its role in scaling cumulative loss relative to the prior, and the value used in the reported study. Do not call it a content or tilt parameter.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the learning rate (omega_R), its role in scaling cumulative loss relative to the prior, and the value used in the reported study. Do not call it a content or tilt parameter.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-041",
+      "review_page": "153/139",
+      "issue_and_acceptance": "Move the detailed propriety argument for Gaussian versus heavier-tailed root priors to Appendix E. Retain in the chapter only the prior actually used, the resulting proper target under stated conditions, and a precise caveat.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Move the detailed propriety argument for Gaussian versus heavier-tailed root priors to Appendix E. Retain in the chapter only the prior actually used, the resulting proper target under stated conditions, and a precise caveat.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-042",
+      "review_page": "155/141",
+      "issue_and_acceptance": "State explicitly whether the reported endpoints minimize penalized cumulative loss, maximize the generalized posterior density, or summarize posterior draws. Use one correct term throughout.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex",
+        "locator": "lines 662--684"
+      },
+      "disposition": "edit",
+      "selected_resolution": "State explicitly whether the reported endpoints minimize penalized cumulative loss, maximize the generalized posterior density, or summarize posterior draws. Use one correct term throughout.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-043",
+      "review_page": "155/141",
+      "issue_and_acceptance": "The deterministic profile minimizes cumulative MTI loss plus the independent Gaussian-root quadratic penalty, equivalently giving the mode of the stated loss-based generalized posterior. State this relationship once; do not call the result a posterior mean or an ordinary-likelihood MAP estimate.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and rqr-gibbs-supplement.tex",
+        "locator": "main lines 662--684 and convex profile derivation"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "The deterministic profile minimizes cumulative MTI loss plus the independent Gaussian-root quadratic penalty, equivalently giving the mode of the stated loss-based generalized posterior. State this relationship once; do not call the result a posterior mean or an ordinary-likelihood MAP estimate.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-044",
+      "review_page": "155/141",
+      "issue_and_acceptance": "Mark (omega_R=1), (lambda=10^{-4}), the prior means, and the objective tolerance as choices of the reported validation study, not universal method defaults.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Mark (omega_R=1), (lambda=10^{-4}), the prior means, and the objective tolerance as choices of the reported validation study, not universal method defaults.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-045",
+      "review_page": "155--156/141--142",
+      "issue_and_acceptance": "Before the content check, define the Dirichlet-process prior (F\\sim\\mathrm{DP}(aH)), its concentration (a), centering distribution (H), and why a response-distribution model is separate from the loss-based endpoint target.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1147--1186"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Before the content check, define the Dirichlet-process prior (F\\sim\\mathrm{DP}(aH)), its concentration (a), centering distribution (H), and why a response-distribution model is separate from the loss-based endpoint target.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-046",
+      "review_page": "155--157/141--143",
+      "issue_and_acceptance": "State the exact Beta law for (F(I)\\mid D_n) for a fixed interval and explain why applying it to data-dependent candidate intervals is a selection device whose tolerance behavior is calibrated empirically.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1147--1186"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "State the exact Beta law for (F(I)\\mid D_n) for a fixed interval and explain why applying it to data-dependent candidate intervals is a selection device whose tolerance behavior is calibrated empirically.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-047",
+      "review_page": "155--156/141--142",
+      "issue_and_acceptance": "Rewrite the tolerance target after defining the random interval (widehat T_n=[L_n,U_n]), the true distribution (F), and (C_F([L,U])=F(U)-F(L)).",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1147--1186"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Rewrite the tolerance target after defining the random interval (widehat T_n=[L_n,U_n]), the true distribution (F), and (C_F([L,U])=F(U)-F(L)).",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-048",
+      "review_page": "156/142",
+      "issue_and_acceptance": "Replace the flat “six quantities” list with a role hierarchy: the tolerance requirement is \\((c,1-\\alpha)\\); candidate targets are \\((q,\\delta)\\); \\(\\omega_R\\) is the fixed loss scale; and \\(\\gamma\\) is the calibrated eligibility cutoff. Do not force a misleading count when the distinction among roles is the point.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex",
+        "locator": "fixed-target and calibrated-selection specification"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "Replace the flat “six quantities” list with a role hierarchy: the tolerance requirement is \\((c,1-\\alpha)\\); candidate targets are \\((q,\\delta)\\); \\(\\omega_R\\) is the fixed loss scale; and \\(\\gamma\\) is the calibrated eligibility cutoff. Do not force a misleading count when the distinction among roles is the point.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-049",
+      "review_page": "156/142",
+      "issue_and_acceptance": "Current `main` already states the four-stage order: construct candidates, fit endpoints, compute DP content probabilities, and select the shortest eligible interval. Preserve it and add only the missing source/tie-rule details.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex",
+        "locator": "fixed-target and calibrated-selection specification"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Current `main` already states the four-stage order: construct candidates, fit endpoints, compute DP content probabilities, and select the shortest eligible interval. Preserve it and add only the missing source/tie-rule details.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-050",
+      "review_page": "156/142",
+      "issue_and_acceptance": "Explain where the DP model comes from and report the actual (a,H) values used. Separate these from the generalized-posterior prior on roots.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1147--1186"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Explain where the DP model comes from and report the actual (a,H) values used. Separate these from the generalized-posterior prior on roots.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-051",
+      "review_page": "156/142",
+      "issue_and_acceptance": "Preserve the mathematical selection rule but explain its source and each tie-breaker in prose. Verify that “no eligible interval” is counted as failure in validation.",
+      "plan_status": "PARTIAL",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:static-theory-statements--rqr2026:sec:mti-tolerance; pre-edit lines 460--597"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "clarify_or_restructure",
+      "selected_resolution": "Preserve the mathematical selection rule but explain its source and each tie-breaker in prose. Verify that “no eligible interval” is counted as failure in validation.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-052",
+      "review_page": "157/143",
+      "issue_and_acceptance": "Identify exactly what calibration selects: a posterior-content cutoff by ((n,c,1-alpha)), with candidate grids, tilt rules, (omega_R), and DP hyperparameters fixed beforehand.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Identify exactly what calibration selects: a posterior-content cutoff by ((n,c,1-alpha)), with candidate grids, tilt rules, (omega_R), and DP hyperparameters fixed beforehand.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-053",
+      "review_page": "157/143",
+      "issue_and_acceptance": "Use the fixed calibration record: 32 development samples, 24,000 fresh assessments per distribution, eight laws, 26 initial cutoffs, and the stated one-sided exact-binomial multiplicity allocation. Keep full bookkeeping in Appendix E and a concise consequence in the chapter.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1242--1267"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "Use the fixed calibration record: 32 development samples, 24,000 fresh assessments per distribution, eight laws, 26 initial cutoffs, and the stated one-sided exact-binomial multiplicity allocation. Keep full bookkeeping in Appendix E and a concise consequence in the chapter.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-054",
+      "review_page": "157/143",
+      "issue_and_acceptance": "Rewrite the two-stage follow-up in chronological order: initial development/assessment, two unresolved settings, prespecified refinement, fresh samples, retained earlier cutoffs, and combined error control.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1242--1267"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Rewrite the two-stage follow-up in chronological order: initial development/assessment, two unresolved settings, prespecified refinement, fresh samples, retained earlier cutoffs, and combined error control.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-055",
+      "review_page": "157/143",
+      "issue_and_acceptance": "Current lines 587--596 distinguish the DP model-based law, population MTI theory, and empirical tolerance validation. Preserve this boundary and make it consistent with the expanded DP definition.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Current lines 587--596 distinguish the DP model-based law, population MTI theory, and empirical tolerance validation. Preserve this boundary and make it consistent with the expanded DP definition.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-056",
+      "review_page": "158/144",
+      "issue_and_acceptance": "The current 183-page release already removes the shortest-path continuation derivatives from Chapter 5. Do not restore them from the article or reviewed copy; retain only the finite-grid consequence if needed.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "The current 183-page release already removes the shortest-path continuation derivatives from Chapter 5. Do not restore them from the article or reviewed copy; retain only the finite-grid consequence if needed.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-057",
+      "review_page": "159--160/145--146",
+      "issue_and_acceptance": "Define a design “cell” as a specified ((n,c,1-alpha)) setting and avoid “row” unless referring to a named table. Explain the full-range feasibility calculation before listing retained settings.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define a design “cell” as a specified ((n,c,1-alpha)) setting and avoid “row” unless referring to a named table. Explain the full-range feasibility calculation before listing retained settings.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-058",
+      "review_page": "159/145",
+      "issue_and_acceptance": "Preserve Young--Mathew and Wilks as the classical comparators with verified references. If Bruno's note names an additional Tony et al. method, identify the exact paper/package before deciding whether it is scientifically comparable.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Preserve Young--Mathew and Wilks as the classical comparators with verified references. If Bruno's note names an additional Tony et al. method, identify the exact paper/package before deciding whether it is scientifically comparable.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": "Identify the possible additional comparator before inclusion."
+    },
+    {
+      "id": "B5-059",
+      "review_page": "160/146",
+      "issue_and_acceptance": "Retain the verified full-range formula \\(1-n(1-c)c^{n-1}-c^n\\), connect it to two-sided order-statistic tolerance feasibility, and explain that it constrains the classical sample-bounded comparators rather than proving an MTI boundary.",
+      "plan_status": "SOURCE_RESOLVED_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1357--1397"
+      },
+      "disposition": "source_resolved_edit",
+      "selected_resolution": "Retain the verified full-range formula \\(1-n(1-c)c^{n-1}-c^n\\), connect it to two-sided order-statistic tolerance feasibility, and explain that it constrains the classical sample-bounded comparators rather than proving an MTI boundary.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-060",
+      "review_page": "160/146",
+      "issue_and_acceptance": "The authority and an independent calculation agree on minimum sample sizes 46, 93, and 473 at 0.95 confidence for contents 0.90, 0.95, and 0.99. Preserve exclusion of \\((100,0.99)\\) and the first \\(c=0.99\\) design at \\(n=500\\).",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "exact_fixed_source",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "rqr-gibbs-supplement.tex",
+        "locator": "lines 1357--1397"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "The authority and an independent calculation agree on minimum sample sizes 46, 93, and 473 at 0.95 confidence for contents 0.90, 0.95, and 0.99. Preserve exclusion of \\((100,0.99)\\) and the first \\(c=0.99\\) design at \\(n=500\\).",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-061",
+      "review_page": "159--160/145--146",
+      "issue_and_acceptance": "Define “cell,” “row,” and “feasible” before use and state the complete retained set once, preferably in a compact table.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define “cell,” “row,” and “feasible” before use and state the complete retained set once, preferably in a compact table.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-062",
+      "review_page": "160/146",
+      "issue_and_acceptance": "Explain that calibration concerns the complete interval-selection rule and content-attainment probability, not interval length alone. List all fixed hyperparameters and selection constants.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Explain that calibration concerns the complete interval-selection rule and content-attainment probability, not interval length alone. List all fixed hyperparameters and selection constants.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-063",
+      "review_page": "160/146",
+      "issue_and_acceptance": "Current lines 654--666 identify content attainment under known simulation \\(F\\) as primary, count nonproduction as nonattainment, and define within-distribution width comparisons. Preserve these choices and terminology.",
+      "plan_status": "SATISFIED_CURRENT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "preserve_and_verify",
+      "selected_resolution": "Current lines 654--666 identify content attainment under known simulation \\(F\\) as primary, count nonproduction as nonattainment, and define within-distribution width comparisons. Preserve these choices and terminology.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "PRESERVATION_PENDING_VALIDATION",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-064",
+      "review_page": "155--160/141--146",
+      "issue_and_acceptance": "Consolidate all reported values—prior precision, learning rate, DP hyperparameters, candidate grids, cutoff menu, replications, error budget, and tie rules—in one reproducible design table or appendix record.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Consolidate all reported values—prior precision, learning rate, DP hyperparameters, candidate grids, cutoff menu, replications, error budget, and tie rules—in one reproducible design table or appendix record.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "B5-065",
+      "review_page": "137--160/123--146",
+      "issue_and_acceptance": "Complete a reader-path audit after the local fixes: definition, antecedent, contribution, target theorem, fixed-target computation, content check, calibration, independent validation, application, and limitations. Each paragraph must perform one of those functions without repeating an earlier explanation.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C3",
+      "pre_edit_target": {
+        "file": "chapters/05-research-d.tex",
+        "anchor": "rqr2026:sec:evaluation; pre-edit lines 598--736"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Complete a reader-path audit after the local fixes: definition, antecedent, contribution, target theorem, fixed-target computation, content check, calibration, independent validation, application, and limitations. Each paragraph must perform one of those functions without repeating an earlier explanation.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-001",
+      "review_page": "201/187",
+      "issue_and_acceptance": "Define the convex-order symbol (preceq_{\\rm cx}) immediately before Proposition E.1 and state the required finite expectations.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the convex-order symbol (preceq_{\\rm cx}) immediately before Proposition E.1 and state the required finite expectations.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-002",
+      "review_page": "204/190",
+      "issue_and_acceptance": "Define an intercept-only endpoint fit before the fractional empirical-balance result and distinguish it from the conditional regression setup in the chapter.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define an intercept-only endpoint fit before the fractional empirical-balance result and distinguish it from the conditional regression setup in the chapter.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-003",
+      "review_page": "204/190",
+      "issue_and_acceptance": "Define the subdifferential (partial\\rho_c(e_i)), the choice of (s_i), and the relation (q_i=c-s_i) before the theorem.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the subdifferential (partial\\rho_c(e_i)), the choice of (s_i), and the relation (q_i=c-s_i) before the theorem.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-004",
+      "review_page": "204/190",
+      "issue_and_acceptance": "Explain that the (q_i) are fractional membership allocations: one inside, zero outside, and only fractional at fitted roots. Avoid introducing them as an unexplained “allocation.”",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Explain that the (q_i) are fractional membership allocations: one inside, zero outside, and only fractional at fitted roots. Avoid introducing them as an unexplained “allocation.”",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-005",
+      "review_page": "205/191",
+      "issue_and_acceptance": "State the independent priors explicitly, for example (a,b\\stackrel{\\rm ind}{\\sim}N(0,\\lambda^{-1})), after verifying that this is the implemented parameterization.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "State the independent priors explicitly, for example (a,b\\stackrel{\\rm ind}{\\sim}N(0,\\lambda^{-1})), after verifying that this is the implemented parameterization.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-006",
+      "review_page": "206/192",
+      "issue_and_acceptance": "Clarify that, for fixed (m), the minimizing squared half-width is an empirical (s/n) quantile of the observed squared distances ((y_i-m)^2). Distinguish the observations from a random variable.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Clarify that, for fixed (m), the minimizing squared half-width is an empirical (s/n) quantile of the observed squared distances ((y_i-m)^2). Distinguish the observations from a random variable.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-007",
+      "review_page": "207/193",
+      "issue_and_acceptance": "Define the independent development samples, independent cutoff-assessment samples, and finite cutoff menu before reporting the calibration stages.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the independent development samples, independent cutoff-assessment samples, and finite cutoff menu before reporting the calibration stages.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-008",
+      "review_page": "207/193",
+      "issue_and_acceptance": "Define the simultaneous one-sided exact binomial lower bound, its coverage allocation over laws/settings/cutoffs, and the criterion for accepting a cutoff.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Define the simultaneous one-sided exact binomial lower bound, its coverage allocation over laws/settings/cutoffs, and the criterion for accepting a cutoff.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-009",
+      "review_page": "207/193",
+      "issue_and_acceptance": "Write follow-up settings as ((n,c)=(50,0.90)) and ((100,0.95)), explicitly identifying both coordinates.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Write follow-up settings as ((n,c)=(50,0.90)) and ((100,0.95)), explicitly identifying both coordinates.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-010",
+      "review_page": "207/193",
+      "issue_and_acceptance": "Explain why the total Monte Carlo error probability 0.05 is split across the two stages and how the union bound is applied.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Explain why the total Monte Carlo error probability 0.05 is split across the two stages and how the union bound is applied.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    },
+    {
+      "id": "BE-011",
+      "review_page": "201, 204--207/187, 190--193",
+      "issue_and_acceptance": "Align every Chapter 5 proof pointer, theorem name, symbol, and study constant with Appendix E; the chapter should not restate proof algebra that the appendix already supplies.",
+      "plan_status": "OPEN_EDIT",
+      "commit_unit": "C2/C3",
+      "pre_edit_target": {
+        "file": "appendices/e-mti-technical.tex",
+        "anchor": "Appendix E; pre-edit lines 1--357"
+      },
+      "source": {
+        "classification": "fixed_source_consistency_or_not_source_dependent",
+        "source_id": "SRC-RQR",
+        "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+        "path": "main.tex and supplement as applicable",
+        "locator": "record an exact locator before closing the item when wording changes a scientific statement"
+      },
+      "disposition": "edit",
+      "selected_resolution": "Align every Chapter 5 proof pointer, theorem name, symbol, and study constant with Appendix E; the chapter should not restate proof algebra that the appendix already supplies.",
+      "alternative_control": "Use the bounded current-source resolution; do not restore the reviewed 221-page wording or copy an article section wholesale.",
+      "changed_files": [],
+      "validation_evidence": [],
+      "final_status": "IMPLEMENTATION_PENDING",
+      "final_commit": null,
+      "unresolved_decision": null
+    }
+  ]
+}
