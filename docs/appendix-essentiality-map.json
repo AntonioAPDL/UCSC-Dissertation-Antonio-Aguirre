@@ -4218,8 +4218,8 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
-        "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
+        "validation": "Bruno Chapter 4 source audit, author-comment revision, clean build, structural validation, and rendered-page review"
       }
     },
     {
@@ -4271,7 +4271,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4324,7 +4324,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4378,7 +4378,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4431,7 +4431,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4484,7 +4484,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4538,7 +4538,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4591,7 +4591,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4646,7 +4646,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4699,7 +4699,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4752,7 +4752,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4805,7 +4805,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4858,7 +4858,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4911,7 +4911,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -4964,7 +4964,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5017,7 +5017,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5070,7 +5070,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5123,7 +5123,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5176,7 +5176,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5229,7 +5229,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5282,7 +5282,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5335,7 +5335,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5388,7 +5388,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5441,7 +5441,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5494,7 +5494,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5547,7 +5547,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5600,7 +5600,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5653,7 +5653,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5706,7 +5706,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5759,7 +5759,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5812,7 +5812,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5865,7 +5865,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5918,7 +5918,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -5971,7 +5971,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6024,7 +6024,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6077,7 +6077,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6131,7 +6131,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6185,7 +6185,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6238,7 +6238,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6291,7 +6291,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6344,7 +6344,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6397,7 +6397,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6450,7 +6450,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6503,7 +6503,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6556,7 +6556,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6609,7 +6609,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6662,7 +6662,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6715,7 +6715,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6768,7 +6768,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6821,7 +6821,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6874,7 +6874,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6927,7 +6927,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -6980,7 +6980,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7033,7 +7033,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7086,7 +7086,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7139,7 +7139,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7192,7 +7192,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7245,7 +7245,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7298,7 +7298,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7351,7 +7351,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7404,7 +7404,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7457,7 +7457,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7510,7 +7510,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7563,7 +7563,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7616,7 +7616,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7669,7 +7669,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7724,7 +7724,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7779,7 +7779,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7834,7 +7834,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7889,7 +7889,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7944,7 +7944,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -7999,7 +7999,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8054,7 +8054,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8109,7 +8109,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8164,7 +8164,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8219,7 +8219,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8274,7 +8274,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8329,7 +8329,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8384,7 +8384,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8439,7 +8439,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8494,7 +8494,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8549,7 +8549,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8604,7 +8604,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8659,7 +8659,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8714,7 +8714,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8769,7 +8769,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8824,7 +8824,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8879,7 +8879,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8934,7 +8934,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -8989,7 +8989,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9044,7 +9044,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9099,7 +9099,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9154,7 +9154,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9209,7 +9209,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9264,7 +9264,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9319,7 +9319,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9374,7 +9374,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9429,7 +9429,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9484,7 +9484,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9539,7 +9539,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9594,7 +9594,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9649,7 +9649,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9704,7 +9704,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9759,7 +9759,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9814,7 +9814,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9869,7 +9869,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9924,7 +9924,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -9979,7 +9979,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10034,7 +10034,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10089,7 +10089,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10144,7 +10144,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10199,7 +10199,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10254,7 +10254,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10309,7 +10309,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10364,7 +10364,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10419,7 +10419,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10474,7 +10474,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10529,7 +10529,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10584,7 +10584,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10639,7 +10639,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10694,7 +10694,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10749,7 +10749,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10804,7 +10804,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10859,7 +10859,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10914,7 +10914,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -10969,7 +10969,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11024,7 +11024,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11079,7 +11079,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11134,7 +11134,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11189,7 +11189,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11244,7 +11244,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11299,7 +11299,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11354,7 +11354,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11409,7 +11409,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11464,7 +11464,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11519,7 +11519,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11574,7 +11574,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11629,7 +11629,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11684,7 +11684,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11739,7 +11739,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11794,7 +11794,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11849,7 +11849,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11904,7 +11904,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -11959,7 +11959,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12014,7 +12014,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12069,7 +12069,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12124,7 +12124,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12179,7 +12179,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12234,7 +12234,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12289,7 +12289,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12344,7 +12344,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12399,7 +12399,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12454,7 +12454,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12509,7 +12509,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12564,7 +12564,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12619,7 +12619,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12674,7 +12674,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12729,7 +12729,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12784,7 +12784,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12839,7 +12839,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12894,7 +12894,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -12949,7 +12949,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13004,7 +13004,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13059,7 +13059,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13114,7 +13114,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13169,7 +13169,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13224,7 +13224,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13279,7 +13279,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13334,7 +13334,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13389,7 +13389,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13444,7 +13444,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13499,7 +13499,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13554,7 +13554,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13609,7 +13609,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13664,7 +13664,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13719,7 +13719,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13774,7 +13774,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13829,7 +13829,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13884,7 +13884,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -13939,7 +13939,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16549,7 +16549,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16606,7 +16606,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16663,7 +16663,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16720,7 +16720,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16777,7 +16777,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16834,7 +16834,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16891,7 +16891,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -16948,7 +16948,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17005,7 +17005,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17062,7 +17062,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17121,7 +17121,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17178,7 +17178,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17235,7 +17235,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17292,7 +17292,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17349,7 +17349,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17406,7 +17406,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17463,7 +17463,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17520,7 +17520,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17577,7 +17577,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17634,7 +17634,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17694,7 +17694,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17751,7 +17751,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17808,7 +17808,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17865,7 +17865,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17922,7 +17922,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -17979,7 +17979,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18036,7 +18036,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18093,7 +18093,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18152,7 +18152,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18209,7 +18209,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18266,7 +18266,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18323,7 +18323,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18380,7 +18380,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18437,7 +18437,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18494,7 +18494,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18551,7 +18551,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18608,7 +18608,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18665,7 +18665,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18722,7 +18722,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18779,7 +18779,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -18838,7 +18838,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     },
@@ -19874,7 +19874,7 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "1af9387b8d5a2484b11fd3857e63c02abde807ac",
-        "final_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+        "final_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
         "validation": "Bruno Chapter 4 source audit, clean build, structural validation, and rendered-page review"
       }
     }

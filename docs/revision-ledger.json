@@ -104,7 +104,7 @@
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "70b9158dd759d706e8089b1e90560f4fba6fa4ab62e8aa192b2a98514b543771",
+      "current_sha256": "daa727629b179f6177c327b5dc0dfb60a367afd06eaa686903966f932a6cd363",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -122,7 +122,8 @@
         "REV-ADVISOR-QDESN-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-BRUNO-QDESN-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {
@@ -200,7 +201,7 @@
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "866c4761d3875de8de094e896b4d6a24a7fd635f73aafca455f5042dce9abbec",
+      "current_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -212,7 +213,8 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-QDESN-AUTHORITY-20261106",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-BRUNO-QDESN-20261109"
+        "REV-BRUNO-QDESN-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {

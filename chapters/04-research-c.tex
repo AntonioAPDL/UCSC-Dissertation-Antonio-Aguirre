@@ -35,16 +35,17 @@ coefficients. Nonlinear temporal dependence can therefore enter without a
 posterior distribution for every recurrent weight.
 
 This project makes three related contributions \citep{qdesn-deleon2026qdesn}.
-First, Q--DESN combines fixed deep echo-state features with AL or exAL Bayesian
-quantile regression, ridge or regularized-horseshoe (RHS) coefficient priors,
-and model-specific MCMC and variational approximations. Second, the
+First, Q--DESN combines fixed deep echo-state features with asymmetric Laplace
+(AL) or extended asymmetric Laplace (exAL) Bayesian quantile regression, ridge
+or regularized-horseshoe (RHS) coefficient priors, and model-specific Markov
+chain Monte Carlo (MCMC) and variational Bayes (VB) approximations. Second, the
 multiquantile extension (MQ--DESN) estimates several quantile regressions
 together using RHS priors on adjacent slope differences. This regularization
 encourages similar neighboring effects but does not impose noncrossing. Third,
 the methods are evaluated through linear and nonlinear simulation mechanisms,
 retrospective streamflow correction, and regional electricity-price
 forecasting. The studies assess quantile recovery, forecast loss, crossings,
-and cost without supporting a uniform ranking.
+and computational requirements without supporting a uniform ranking.
 
 Echo state networks generate dynamic predictors from recurrent states whose
 internal weights are fixed before fitting
@@ -54,7 +55,7 @@ Stacking reservoirs produces a deep echo state network
 reservoir features has precedent in the hierarchical Bayesian DESN of
 \citet{qdesn-McDermottWikle2018DeepESNUQ}.
 
-The asymmetric Laplace (AL) likelihood connects its location to a specified
+The AL likelihood connects its location to a specified
 conditional quantile and admits a normal--exponential augmentation
 \citep{env-yu2001bayesian,qdesn-KozumiKobayashi2011Gibbs}. Its coefficient
 credible intervals need not have nominal frequentist coverage under
@@ -646,16 +647,17 @@ every mechanism.
 
 \input{tables/ch04-qdesn/qdesn_multiquantile_forecast_figure_display.tex}
 
-Across 47,520 adjacent-level comparisons per model, the raw crossing rates of
-the posterior-mean forecast grids are 0.021\% for MQ--DESN (AL), 5.488\% for
-Q--DESN (AL), 0\% for MQ--DESN (exAL), and 0.606\% for Q--DESN (exAL).
-MQ--DESN under exAL has no raw crossings in any of the eight mechanisms.
-Both multiquantile coefficient sharing and the exAL likelihood are associated
-with fewer crossings in this comparison. The improvement in ordering is
-more consistent than the score gains: independent regressions have the
-lowest mean oracle score in six mechanisms, whereas MQ--DESN leads for
-Gaussian and asymmetric-tail dynamics. Appendix~\ref{app:qdesn-simulation-support}
-gives the recursive-feature sensitivity and its uncertainty interpretation.
+Across 47,520 adjacent-level comparisons per model, multiquantile fitting
+reduces the raw crossing rate of the posterior-mean forecast grids from
+5.488\% to 0.021\% under AL and from 0.606\% to 0\% under exAL. Thus MQ--DESN
+under exAL has no raw crossings in any of the eight mechanisms. This ordering
+gain is more consistent than the score gain: independent Q--DESN has the
+lowest mean oracle score in six of the eight mechanisms, whereas MQ--DESN
+leads for Gaussian and asymmetric-tail dynamics. The comparison therefore
+supports adjacent-coefficient sharing as a means of improving empirical
+quantile ordering, not as a uniformly better forecasting rule. Appendix
+\ref{app:qdesn-simulation-support} gives the recursive-feature sensitivity and
+its uncertainty interpretation.
 
 \section{Application: streamflow quantile forecast correction}
 \label{qdesn2026:sec:data}
@@ -859,6 +861,12 @@ across all three test folds, while the regression coefficients are refitted
 using each fold's training observations. We call the resulting procedure the
 selected DESN model.
 
+Conditional on the selected reservoir, each candidate is a Bayesian linear
+quantile regression with fixed recurrent features. This differs from the
+end-to-end network-weight training used to pretrain PriceFM. Reservoir and
+shrinkage selection still require repeated regression fits, so the comparison
+below concerns forecast accuracy rather than measured computing time.
+
 Historical inputs contain regional prices, load, solar and wind. Selected
 spatial specifications also use neighboring-region histories or summaries,
 so one regional response can depend on connected-market information without
@@ -894,8 +902,9 @@ timestamps.
 
 Mean AQL is \PricefmFullMeanSelectedAql{} for the selected DESN models and
 \PricefmFullMeanPricefmAql{} for the reproduced PriceFM forecasts, a reduction
-of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The ordering is consistent
-across the three fold summaries, whose mean differences range from
+of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%) across 114 region--fold
+cases. The selected-DESN mean is lower in all three fold summaries, whose mean
+differences range from
 \(-0.365\) to \(-0.341\) EUR/MWh
 (Table~\ref{qdesn2026:tab:pricefm-matched-aql-comparison}). The comparison is
 descriptive: the dates had been examined previously, and the matched forecast
@@ -951,7 +960,9 @@ AL and exAL with RHS priors. The selected models have mean AQL
 \PricefmFullMeanSelectedAql{}, compared with
 \PricefmFullMeanPricefmAql{} for PriceFM forecasts reproduced from public
 code, a reduction of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The
-selected DESN mean is lower in all three fold summaries. The applications
+comparison comprises 114 region--fold cases, and the selected-DESN mean is
+lower in all three fold summaries. These findings concern the matched AQL
+comparison; no matched total-runtime comparison was conducted. The applications
 retain their stated information sets: realized future weather for streamflow
 correction and supplied forecast covariates with unverified issue-time
 vintages for electricity prices.
