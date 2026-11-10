@@ -60,7 +60,7 @@
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "caaa4f6b4f0235ec8c18a6362777fefdd3487d374752adedfe86638329d09ee7",
+      "current_sha256": "a55d302e1145a9b44f870a93602ea652a35c470f9701b6a9254d03f64fbdad43",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -76,7 +76,8 @@
         "REV-ADVISOR-SOFTWARE-20261109",
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {

@@ -11,19 +11,32 @@ forecasting without changing the inferential target between stages. The
 \proglang{R} package \pkg{exdqlm} addresses this problem for Bayesian dynamic
 and static quantile regression.
 
-The statistical foundations precede the package. \citet{exd-yan2025family}
-introduced the extended asymmetric Laplace (exAL) distribution and static
-exAL regression. \citet{exd-me} developed the extended dynamic quantile
-linear model (exDQLM), its original Markov chain Monte Carlo (MCMC) and
-importance-sampling variational Bayes (ISVB) procedures, and a transfer-function
-extension. The present contribution is the integrated software and subsequent
-computation built around those methods. It consists of:
+The statistical foundations precede the package. Yan, Zheng, and Kottas
+\citep{exd-yan2025family} introduced the extended asymmetric Laplace (exAL)
+distribution and static exAL regression. Barata, Prado, and Sans\'o
+\citep{exd-me} developed the extended dynamic quantile linear model (exDQLM),
+its original Markov chain Monte Carlo (MCMC) and importance-sampling
+variational Bayes (ISVB) procedures, and a transfer-function extension.
+Antonio de Leon's contribution is the substantial later restructuring and
+extension of the package around those methods. It consists of:
 \begin{itemize}
 \item a composable model-construction interface for trend, seasonal, regression, and transfer-function components in Bayesian dynamic quantile state-space models;
-\item coordinated MCMC and variational interfaces, including scale-collapsed MCMC, ISVB, and a Laplace--delta variational Bayes (LDVB) procedure for dynamic and static fits;
-\item fitted-model objects with standard functions for numerical summaries, plots, prediction, and diagnostics;
-\item package-level exAL distribution utilities, predictive scoring and calibration diagnostics, and compiled implementations of computationally intensive model-building, posterior sampling and posterior predictive operations, with \proglang{R} fallbacks where applicable; and
-\item static asymmetric Laplace (AL) and exAL regression with shrinkage priors, including the regularized horseshoe construction of \citet{exd-nishimura2023shrunken}, together with tests and replication materials for the reported analyses.
+\item coordinated MCMC and variational interfaces, including scale-collapsed
+MCMC, ISVB, and Laplace--Delta variational Bayes (LDVB) procedures for dynamic
+and static fits, with later nonconjugate scale--skewness updates;
+\item corrections to filtering and smoothing calculations and fitted-model
+objects with standard functions for numerical summaries, plots, forecasting,
+and diagnostics;
+\item package-level exAL distribution utilities, predictive scoring and
+calibration diagnostics, and posterior-predictive synthesis across separately
+fitted quantile levels;
+\item compiled \proglang{C++} implementations of computationally intensive
+model-building, posterior-sampling, and posterior-predictive operations, with
+\proglang{R} implementations retained where applicable; and
+\item static asymmetric Laplace (AL) and exAL regression with shrinkage priors,
+including the regularized horseshoe construction of
+\citet{exd-nishimura2023shrunken}, together with tests and replication
+materials for the reported analyses.
 \end{itemize}
 
 The \proglang{R} \citep{exd-R} software ecosystem for quantile regression is broad, but the capabilities most relevant to this chapter are distributed across software with different aims. Table \ref{exd:table:software} compares representative packages along four traits that are key to the scope of \pkg{exdqlm}: the primary modeling objective, the treatment of the temporal or latent-state structure, the inference strategy, and handling of multiple quantile levels.
@@ -147,7 +160,10 @@ Default if omitted & -- & -- & $\mat{0}_q$ & $10^3\mat{I}_q$ & 2.1 & 1.1 & 0 & 1
 
 \subsection{Posterior computation}
 
-The dynamic exDQLM posterior target and the original MCMC and ISVB inference strategy were developed by \citet{exd-me}. The package makes \code{exdqlmISVB()} available for variational inference following the ISVB approach of \citet{exd-me}.
+The dynamic exDQLM posterior target and the original MCMC and ISVB inference
+strategy were developed by Barata, Prado, and Sans\'o \citep{exd-me}. The
+package retains \code{exdqlmISVB()} for inference under that ISVB
+approximation.
 The principal fitting routines are \code{exdqlmMCMC()}, which performs
 posterior simulation, and \code{exdqlmLDVB()}, which implements the later
 variational contribution studied in this chapter. The latter adapts the
@@ -630,7 +646,6 @@ Within each model class, LDVB is substantially faster. For both DQLM and exDQLM,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\paragraph{Transfer-function capability.}
 The package also fits dynamic models with current and geometrically decaying
 input effects through the transfer-function routines described in Section
 \ref{exd:sec:tf}. A separate Big Tree water-flow example and its full
@@ -731,14 +746,16 @@ The results reinforce the visual comparison in Figure \ref{exd:fig:ex4static}. T
 \label{exd:sec:summary}
 
 
-The contribution of \pkg{exdqlm} is to make an established class of Bayesian
-dynamic quantile models available through a coherent statistical interface and
-to extend its computation. In particular, the package joins composable
-state-space specification with MCMC, ISVB, and the later LDVB approximation;
-standardizes summaries, diagnostics, prediction, and post-fit synthesis; and
-adds static AL/exAL regression under shrinkage priors. The structured LDVB
-factor retains conditional scale--skewness dependence and supplies a
-deterministic alternative to the inherited importance-sampling approximation.
+The dissertation contribution is the substantial later restructuring and
+extension of \pkg{exdqlm}, not the exAL family or original exDQLM formulation.
+The revised package joins composable state-space specification with inherited
+MCMC and ISVB procedures and the later LDVB approximation; corrects and
+standardizes filtering, smoothing, summaries, diagnostics, forecasting, and
+post-fit synthesis; supplies compiled implementations for intensive operations
+while retaining \proglang{R} implementations where applicable; and adds static
+AL/exAL regression under shrinkage priors. The structured LDVB factor retains
+conditional scale--skewness dependence and supplies a deterministic
+alternative to the inherited importance-sampling approximation.
 
 The three retained examples support different parts of this claim. Lake Huron
 combines separate dynamic fits, multi-step forecasting, and synthesis of
