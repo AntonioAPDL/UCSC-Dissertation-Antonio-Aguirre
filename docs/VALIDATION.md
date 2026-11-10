@@ -1,5 +1,41 @@
 # Validation record
 
+## 2026-11-10 final author-style revision release
+
+Manuscript commit `d076051b4ba1e4dee391aad882cb9fb4453352e9` implements the
+author's final prose and terminology decisions. The revision preserves models,
+estimands, assumptions, numerical results, proofs, citations, figures, and
+source authorities. The abstract contains 323 words.
+
+Release validation passed with
+`bash scripts/validate.sh --tier release --audit-root
+/tmp/bruno-complete-audit.xDFvN4`. All 20 tests passed together with the
+research-audit, editorial-audit, 116-item Bruno control, 22-item author-comment
+control, manuscript-import, and structure validators. The import validator
+rechecked 120 immutable source blobs and all 108 cited keys; structure
+validation covered 192 active labels and 15 active visual records.
+
+The accepted ignored artifact is
+`build/release-20261110T102200Z/main.pdf`: 186 US-Letter pages, 4,146,465
+bytes, PDF 1.7, SHA-256
+`89855c527c712777cdc92dd0671a41d7076c275e5af57150ecd09c836cd81e1b`.
+The PDF is searchable and unencrypted. All 32 fonts are embedded and no Type 3
+font occurs. The final log contains 11 underfull and zero overfull boxes and no
+unresolved citation or reference, duplicate label, rerun request, missing
+file, or fatal TeX error.
+
+Extracted-PDF scans found no targeted promotional or formulaic phrases,
+source-audit narration, third-person self-attribution, obsolete
+composite-posterior terminology, or use of *law* in place of *distribution*.
+The approved bounded disclosure in the acknowledgments is the only
+reader-facing reference to AI-assisted tools.
+
+Physical pages 9, 72, 101, 102, 130, 140, 152, 155, and 165 were rendered and
+inspected. No clipping, collision, unreadable content, malformed glyph, or
+abnormal page break was found. This validates the local source and artifact;
+it does not represent committee approval, an accessibility-conformant filing
+PDF, or an independent Overleaf compilation.
+
 ## 2026-11-10 final readability polish release
 
 The bounded pass recorded in `docs/final-readability-polish-20261110.md`
@@ -268,9 +304,9 @@ immutable source blobs; resolved all 119 cited keys; and validated 38 active
 TeX files, 216 unique labels, six migration records, and 24 active visuals.
 
 The accepted ignored artifact is
-\`build/release-20261107T062045Z/main.pdf\`: 221 US-Letter pages, 15,695,810
+`build/release-20261107T062045Z/main.pdf`: 221 US-Letter pages, 15,695,810
 bytes, PDF 1.7, SHA-256
-\`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2\`.
+`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2`.
 The final log has 26 underfull-box notices, zero overfull boxes, and zero
 blocking citation, reference, label, file, or fatal diagnostics. All 24 font
 rows are embedded and no Type 3 font occurs. The PDF is searchable,

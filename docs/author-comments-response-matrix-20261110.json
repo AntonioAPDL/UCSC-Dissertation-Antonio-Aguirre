@@ -10,11 +10,11 @@
       "source_comment": "1",
       "issue": "The abstract does not explain why score ranking and held-out accuracy can differ.",
       "targets": ["frontmatter/abstract.tex"],
-      "selected_resolution": "Name the two evaluation objects and state that a model can improve average quantile loss without uniformly improving calibration or every mechanism-specific score.",
+      "selected_resolution": "Summarize the developed MCMC and variational procedures for dynamic and static AL/exAL regression and state the computational-time and inferential or predictive tradeoff without forcing a single method ranking.",
       "acceptance": "The abstract is self-contained and contains no internal revision language.",
       "status": "IMPLEMENTED_VALIDATED",
       "changed_files": ["frontmatter/abstract.tex"],
-      "validation": ["The abstract names computing time and held-out quantile loss as distinct evaluation objects; it is self-contained, 347 words, compiled, and visually inspected."]
+      "validation": ["The abstract describes MCMC and variational procedures for dynamic and static AL/exAL regression and their computational and inferential or predictive tradeoff; it is self-contained, 323 words, compiled, and visually inspected."]
     },
     {
       "id": "AR-002",

@@ -1,5 +1,30 @@
 # Project status
 
+## 2026-11-10 final author-style revision release-validated
+
+The author-directed terminology and readability revision is complete at
+manuscript commit `d076051b4ba1e4dee391aad882cb9fb4453352e9`. The abstract,
+acknowledgments, six chapters, active appendices, and connected table text now
+use direct statistical prose and consistent contribution, generalized-Bayes,
+distributional, and quantile-crossing terminology. The MTI chapter received a
+complete sentence-level pass. Scientific claims, numerical results, proofs,
+citations, figures, and source authorities were preserved.
+
+The complete release gate passed all 20 tests and rechecked the fixed research
+sources. The accepted ignored artifact is
+`build/release-20261110T102200Z/main.pdf`: 186 US-Letter pages, 4,146,465
+bytes, PDF 1.7, SHA-256
+`89855c527c712777cdc92dd0671a41d7076c275e5af57150ecd09c836cd81e1b`.
+The final log has 11 underfull and zero overfull boxes and no blocking
+diagnostic. All 32 fonts are embedded and no Type 3 font occurs. Nine
+representative changed pages were rendered and inspected without layout
+defects.
+
+The detailed record is
+`docs/final-author-style-revision-20261110.md`. The PDF remains untagged, so
+accessibility remediation remains a filing-stage task rather than a blocker
+for the current committee copy.
+
 ## 2026-11-10 final readability polish release-validated
 
 The final readability pass is complete on
@@ -384,9 +409,9 @@ acknowledgment; the scientific chapters, 26-page appendix sequence, results,
 display numbers, and numerical claims are unchanged.
 
 The accepted ignored artifact is
-\`build/release-20261107T062045Z/main.pdf\`: 221 US-Letter pages, 15,695,810
+`build/release-20261107T062045Z/main.pdf`: 221 US-Letter pages, 15,695,810
 bytes, PDF 1.7, SHA-256
-\`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2\`.
+`941825216957c896f0c15b1dfebeb1432fde83c69ba1ed657a09af20187a7fb2`.
 All 19 tests and all validators pass, including 108 immutable source-blob
 checks. The active graph contains 38 TeX files, 216 unique labels, six
 migration records, and 24 visual records; all 119 cited keys resolve. The final
@@ -405,8 +430,8 @@ author/coauthor confirmation; and the final filing PDF remains untagged and
 must complete the university accessibility review.
 
 The release-bearing commit
-\`81a4068005065d79a8945cae751ca6e72f9004d8\` was fast-forwarded into
-\`main\` and pushed without force. Local \`main\`, \`origin/main\`, and the
+`81a4068005065d79a8945cae751ca6e72f9004d8` was fast-forwarded into
+`main` and pushed without force. Local `main`, `origin/main`, and the
 directly queried remote branch were equal at that commit with zero divergence.
 This documentation-only synchronization record follows the verified release;
 the Overleaf pull and compile remain separate user actions.

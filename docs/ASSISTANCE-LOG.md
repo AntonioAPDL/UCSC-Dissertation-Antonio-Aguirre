@@ -546,3 +546,20 @@ was changed, and nothing was pushed, merged, or synchronized with Overleaf.
 The 19-test fast validation gate and its research-audit, editorial-audit,
 manuscript-import, structure, and diff checks passed; no source-blob recheck
 or new thesis build was needed for planning-only documentation changes.
+
+2026-11-10: At the author's direction, AI assistance implemented the final
+author-style revision across the active dissertation. It replaced third-person
+self-attribution and process-oriented source commentary with direct
+statistical prose; reconciled the hydrology resource statement; clarified the
+Q--DESN and MQ--DESN constructions, antecedents, generalized Bayes
+terminology, and crossing treatment; added the narrowly supported exAL
+coverage comparison; and completed a sentence-level terminology and
+readability pass of the MTI chapter and Appendix E. Models, estimands,
+assumptions, numerical results, proofs, citations, figures, and source
+authorities were preserved. The complete 20-test release gate passed against
+120 immutable source blobs. The accepted local PDF has 186 pages, no blocking
+TeX diagnostic or overfull box, 32 embedded fonts, and no Type 3 font. Its
+extracted text passed the targeted style and terminology scans, and nine
+representative pages were rendered and inspected. The dissertation retains
+only the candidate-approved bounded disclosure of AI-assisted code debugging
+and editorial checks.
