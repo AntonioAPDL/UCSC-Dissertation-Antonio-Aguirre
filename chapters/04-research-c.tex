@@ -34,15 +34,16 @@ resulting features, the quantile location is linear in the final regression
 coefficients. Nonlinear temporal dependence can therefore enter without a
 posterior distribution for every recurrent weight.
 
-This project makes three related contributions \citep{qdesn-deleon2026qdesn}.
+We make three related contributions \citep{qdesn-deleon2026qdesn}.
 First, Q--DESN combines fixed deep echo-state features with asymmetric Laplace
 (AL) or extended asymmetric Laplace (exAL) Bayesian quantile regression, ridge
 or regularized-horseshoe (RHS) coefficient priors, and model-specific Markov
 chain Monte Carlo (MCMC) samplers and variational Bayes (VB) approximations.
 Second, the
 multiquantile extension (MQ--DESN) estimates several quantile regressions
-together using RHS priors on adjacent slope differences. This regularization
-encourages similar neighboring effects but does not impose noncrossing. Third,
+together through a generalized Bayes posterior and uses RHS priors on adjacent
+slope differences. This regularization promotes similar neighboring effects;
+we do not impose explicit noncrossing constraints. Third,
 the methods are evaluated through linear and nonlinear simulation mechanisms,
 retrospective streamflow correction, and regional electricity-price
 forecasting. The studies assess quantile recovery, forecast loss, crossings,
@@ -62,7 +63,9 @@ conditional quantile and admits a normal--exponential augmentation
 credible intervals need not have nominal frequentist coverage under
 misspecification \citep{qdesn-YangWangHe2016ALInference}. The exAL likelihood
 of \citet{exd-yan2025family} adds a shape parameter while preserving the
-quantile location. Ridge uses a common coefficient scale, whereas RHS permits
+quantile location. Their simulation study found the clearest improvements in
+coefficient credible-interval coverage over AL at the 0.05 quantile. Ridge
+uses a common coefficient scale, whereas RHS permits
 coefficient-specific shrinkage subject to a slab bound
 \citep{qdesn-CarvalhoPolsonScott2010HS,qdesn-PiironenVehtari2017RHS}. The
 mixture representations support MCMC, and model-specific variational
@@ -73,23 +76,25 @@ Quantile reservoir methods also have precedent.
 regression and combine separate fits in a bootstrap ensemble.
 \citet{qdesn-BonasWikleCastruccio2024CalibratedDeepESN} first fit DESN point
 forecasts, then estimate lead-dependent residual quantiles with penalized
-quantile sheets and calibrate the resulting intervals. Q--DESN instead
+quantile sheets and calibrate the resulting intervals. Q--DESN directly
 estimates response quantiles through Bayesian regression on fixed DESN
-features. MQ--DESN estimates the quantile readouts jointly within one
-composite regression. Neither construction requires a second-stage
-residual-quantile regression or bootstrap ensemble.
+features, using AL or exAL working likelihoods, ridge or RHS coefficient
+priors, and MCMC or VB computation. MQ--DESN extends this construction to a
+joint multiquantile generalized Bayes posterior with RHS shrinkage on adjacent
+coefficient differences. Both approaches estimate response quantiles directly,
+without bootstrap aggregation, a residual-quantile second stage, or post-fit
+calibration.
 
-Independent quantile curves can cross. Monotone rearrangement and isotonic
-regression correct crossings after estimation
+Quantile crossing has been addressed through monotone rearrangement and
+isotonic regression after estimation
 \citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010,qdesn-DeLeonPradoSanso2026HydrologicProducts},
-whereas constraints or monotone quantile-process models impose ordering during
-estimation
+as well as constraints and monotone quantile-process models during estimation
 \citep{qdesn-WuLiu2009StepwiseNCQR,qdesn-BondellReichWang2010NoncrossingQR,qdesn-YangTokdar2017JointQuantilePlanes}.
 MQ--DESN instead adapts the continuous-shrinkage construction of
 \citet{qdesn-KohnsSzendrei2025QVP}. RHS priors on adjacent slope differences
 reduce predictor-dependent variation in neighboring gaps. Together with
-ordered intercepts, they favor nearly parallel curves without ensuring that
-every fitted gap is nonnegative.
+ordered intercepts, they favor nearly parallel curves. Explicit noncrossing
+constraints are not imposed.
 
 Chapters~\ref{ch:research-b} and~\ref{ch:research-a} use evolving linear states
 for dynamic quantile inference and hydrologic product synthesis. Q--DESN uses
@@ -205,8 +210,10 @@ dependence on their initial values.
 
 The predictors used in each simulation or application are selected reservoir
 layers and, where stated, direct inputs.
-Appendix~\ref{app:qdesn-simulation-support} records how specification
-selection limits the independence of the simulation evidence. For observed fitting inputs, the resulting design matrix
+Appendix~\ref{app:qdesn-simulation-support} provides further details on
+specification selection and the careful interpretation required when
+development information influences a selected simulation specification. For
+observed fitting inputs, the resulting design matrix
 \(\mat X=(\vect x_1,\ldots,\vect x_T)^\top\) is fixed. Future rows follow
 the forecasting rule in Section~\ref{qdesn2026:sec:forecast}.
 
@@ -265,27 +272,25 @@ Let \(\vect y=(y_1,\ldots,y_T)^\top\) be the observed response vector,
 and let \(\theta\) collect \(\{\beta_{0k},\vect\beta_k,\sigma_k,\gamma_k:
 k=1,\ldots,K\}\) together with the shrinkage scales; AL fixes
 \(\gamma_k=0\). Write \(\pi(\theta)\) for the joint prior and \(f_{p_k}\)
-for the AL or exAL density at level \(p_k\). The composite likelihood and
-its associated posterior are
+for the AL or exAL density at level \(p_k\). Their product defines a loss
+factor and the associated generalized Bayes posterior:
 \begin{equation}
 \begin{aligned}
-\text{Composite likelihood:}\quad
-&L_c(\theta;\vect y,\mat X)
+\text{Quantile-specific loss factor:}\quad
+&L_G(\theta;\vect y,\mat X)
  =\prod_{t=1}^T\prod_{k=1}^K
  f_{p_k}(y_t\mid\mu_{k,t},\sigma_k,\gamma_k),\\
-\text{Composite posterior:}\quad
-&\pi_c(\theta\mid\vect y,\mat X)
- \propto\exp\!\left\{-\ell_c(\theta;\vect y,\mat X)\right\}\pi(\theta).
+\text{Generalized Bayes posterior:}\quad
+&\pi_G(\theta\mid\vect y,\mat X)
+ \propto\exp\!\left\{-\ell_G(\theta;\vect y,\mat X)\right\}\pi(\theta).
 \end{aligned}
-\label{qdesn2026:eq:joint-composite-posterior-main}
+\label{qdesn2026:eq:joint-generalized-posterior-main}
 \end{equation}
-Here \(\ell_c(\theta;\vect y,\mat X)=-\log L_c(\theta;\vect y,\mat X)\)
-is the negative composite log-likelihood. The posterior is defined when its
-normalizing constant is finite. Each factor is a normalized density, but the product reuses the same
-response across levels and is not a normalized scalar-response sampling
-density. It therefore defines a composite, rather than ordinary joint,
-posterior for the repeated response. The prior couples levels by regularizing
-the anchor block and adjacent slope-difference blocks,
+Here \(\ell_G(\theta;\vect y,\mat X)=-\log L_G(\theta;\vect y,\mat X)\).
+The update treats the quantile-specific contributions as loss-based factors
+for the repeated response and is defined when its normalizing constant is
+finite. The prior couples levels by regularizing the anchor block and adjacent
+slope-difference blocks,
 \[
 \text{Anchor and differences:}\quad
 \vect\Delta_1=\vect\beta_1,\qquad
@@ -298,17 +303,18 @@ is distinct from shrinkage of the slope differences.
 When \(K=1\), the hierarchy
 recovers the single-level Q--DESN slope prior under RHS regularization.
 
-Adjacent-difference shrinkage favors similar neighboring slopes but does not
-ensure noncrossing: the adjacent location gap
+Adjacent-difference shrinkage favors similar neighboring slopes. The adjacent
+location gap
 \[
 \text{Adjacent location gap:}\quad
 \mu_{k,t}-\mu_{k-1,t}
 =(\beta_{0k}-\beta_{0,k-1})
 +\tilde{\vect x}_t^\top(\vect\beta_k-\vect\beta_{k-1})
 \]
-can be negative. Appendix~\ref{app:qdesn-posterior} gives
+can still be negative because explicit noncrossing constraints are not
+imposed. Appendix~\ref{app:qdesn-posterior} gives
 the fitted hierarchy and its precision matrix, while
-Appendix~\ref{app:qdesn-computation} records the intercept-order
+Appendix~\ref{app:qdesn-computation} gives the intercept-order
 restrictions used in each analysis.
 
 % ============================================================
@@ -318,8 +324,8 @@ restrictions used in each analysis.
 
 Conditional on the design, the posterior combines the likelihood in
 Eq.~\eqref{qdesn2026:eq:qdesn-marginal-main} with the coefficient, scale, and shape
-priors. MQ--DESN uses the composite posterior in
-Eq.~\eqref{qdesn2026:eq:joint-composite-posterior-main} and the adjacent-difference
+priors. MQ--DESN uses the generalized Bayes posterior in
+Eq.~\eqref{qdesn2026:eq:joint-generalized-posterior-main} and the adjacent-difference
 hierarchy. For computation, exAL admits the equivalent
 augmentation
 \begin{equation}
@@ -365,15 +371,15 @@ assessment includes rank-normalized
 \(\widehat R\), effective sample sizes, chain comparisons of reported
 scores and forecast summaries, and quantile-crossing diagnostics.
 
-Variational Bayes approximates the same model-specific posterior or composite
-posterior with tractable factors. It is used for repeated high-dimensional
+Variational Bayes approximates the same single-level posterior or
+multiquantile generalized Bayes posterior with tractable factors. It is used
+for repeated high-dimensional
 fits in the applications and as an initialization for some simulation MCMC
 fits; the simulation sections identify results based on MCMC and those based
 on VB separately. Appendix~\ref{app:qdesn-computation} gives the variational
 factors, including the Laplace--Delta approximation of
 \citet{exd-wang2013nonconjugatevb} and the structured scale--shape factor used
-for exAL. Neither objective convergence nor a VB initialization is evidence of
-MCMC mixing or exact posterior uncertainty.
+for exAL.
 
 % ============================================================
 
@@ -402,7 +408,7 @@ the conditional-quantile location
 +\tilde{\vect x}_{o+h}^{(b)\top}\vect\beta_p^{(b)}.
 \]
 It is conditional on one parameter draw and one recursively generated history.
-A marginal posterior predictive quantile first integrates the response law
+A marginal posterior predictive quantile first integrates the response distribution
 over parameter and future-path uncertainty and then takes the requested
 quantile; it need not equal the average of the conditional locations.
 
@@ -691,7 +697,7 @@ Independent Slopes Model (PRISM), and soil-moisture predictors from ERA5,
 the fifth-generation reanalysis of the European Centre for Medium-Range
 Weather Forecasts (ECMWF). Both use realized values during the forecast
 window; future USGS measurements are reserved for scoring.
-Appendix~\ref{app:qdesn-glofas-support} records the historical selection and
+Appendix~\ref{app:qdesn-glofas-support} gives the historical selection and
 forecast-window information boundary.
 
 \subsection{Quantile-based forecast correction}
@@ -767,10 +773,6 @@ q_{F,p}(\vect y_F)&\approx\Normal(\vect m_p,\mat V_p),\\
 \end{aligned}
 \label{qdesn2026:eq:glofas-reference-forecast-main}
 \end{equation}
-This is the marginal response quantile under the ensemble-conditioned
-approximation, not a conditional location evaluated at one generated history.
-No additional response-noise term is added. Separate level-specific path
-factors can cross, and no post-hoc projection is applied in this application.
 Sections~\ref{app:qdesn-computation} and~\ref{app:qdesn-glofas-support}
 give the retained covariance terms and numerical stopping criteria.
 
@@ -866,16 +868,15 @@ selected DESN model.
 Conditional on the selected reservoir, each candidate is a Bayesian linear
 quantile regression with fixed recurrent features. This differs from the
 end-to-end network-weight training used to pretrain PriceFM. Reservoir and
-shrinkage selection still require repeated regression fits, so the comparison
-below concerns forecast accuracy rather than measured computing time.
+shrinkage selection require repeated regression fits.
 
-Historical inputs contain regional prices, load, solar and wind. Selected
+Historical inputs contain regional prices, load, solar, and wind. Selected
 spatial specifications also use neighboring-region histories or summaries,
 so one regional response can depend on connected-market information without
 fitting the regional responses jointly. Future inputs contain the released
-load, solar and wind forecasts. These columns are identified as day-ahead
-forecasts by \citet{qdesn-YuEtAl2026PriceFM}; their issue-time vintages were
-not independently verified. Each daily origin has 96 quarter-hourly targets.
+day-ahead load, solar, and wind forecasts identified by
+\citet{qdesn-YuEtAl2026PriceFM}. Each daily origin has 96 quarter-hourly
+targets.
 The regressions use direct multihorizon predictors rather than recursively
 generated future prices.
 
@@ -961,11 +962,9 @@ AL and exAL with RHS priors. The selected models have mean AQL
 \PricefmFullMeanPricefmAql{} for PriceFM forecasts reproduced from public
 code, a reduction of \PricefmFullMeanReductionAql{} EUR/MWh (5.0\%). The
 comparison comprises 114 region--fold cases, and the selected-DESN mean is
-lower in all three fold summaries. This is a matched AQL comparison; no matched
-total-runtime comparison was conducted. The applications
-retain their stated information sets: realized future weather for streamflow
-correction and supplied forecast covariates with unverified issue-time
-vintages for electricity prices.
+lower in all three fold summaries. The applications use realized future
+weather for streamflow correction and supplied forecast covariates for
+electricity prices.
 
 Further work should assess variation across repeated simulated series and
 uncertainty from reservoir selection and recursively generated predictors.

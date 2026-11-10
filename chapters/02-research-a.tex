@@ -16,9 +16,9 @@ The statistical foundations precede the package. Yan, Zheng, and Kottas
 distribution and static exAL regression. Barata, Prado, and Sans\'o
 \citep{exd-me} developed the extended dynamic quantile linear model (exDQLM),
 its original Markov chain Monte Carlo (MCMC) and importance-sampling
-variational Bayes (ISVB) procedures, and a transfer-function extension.
-Antonio de Leon's contribution is the substantial later restructuring and
-extension of the package around those methods. It consists of:
+variational Bayes (ISVB) procedures, and a transfer-function extension. Our
+contribution is the substantial later restructuring and extension of the
+package around those methods. It consists of:
 \begin{itemize}
 \item a composable model-construction interface for trend, seasonal, regression, and transfer-function components in Bayesian dynamic quantile state-space models;
 \item coordinated MCMC and variational interfaces, including scale-collapsed
@@ -125,7 +125,7 @@ Thus, \(\mat F_t^\top\vect\theta_t\) is the conditional
 \(p_0\)-quantile. The design vector \(\mat F_t\), evolution matrix
 \(\mat G_t\), and covariance \(\mat W_t\) may be assembled from trend,
 seasonal, regression, and transfer-function components. Appendix
-\ref{app:exdqlm-posterior} records the augmented posterior target used for
+\ref{app:exdqlm-posterior} gives the augmented posterior target used for
 computation; the distributional derivation is not repeated here.
 
 \subsection{Prior specification}
@@ -266,7 +266,7 @@ nonintercept coefficient an effective prior precision
 \(\tau^{-2}\lambda_j^{-2}+\zeta^{-2}\), where \(\tau\) is a global scale,
 \(\lambda_j\) is a local scale, and \(\zeta\) bounds the variance of large
 signals \citep{exd-nishimura2023shrunken}. Appendix
-\ref{app:exdqlm-posterior} records the corresponding augmented update. Static
+\ref{app:exdqlm-posterior} gives the corresponding augmented update. Static
 MCMC and LDVB are available through \code{exalStaticMCMC()} and
 \code{exalStaticLDVB()}, respectively. This extension is statistically
 distinct from the dynamic examples: it uses the same exAL likelihood and
@@ -450,8 +450,7 @@ regularization within the admissible support. The scale parameter is 0.1 and
 the number of degrees of freedom is 1. These quantities specify prior
 information and do not determine the MCMC starting values. The reported fits
 use \code{n.burn = 2000} and \code{n.mcmc = 3000}. Computation follows the
-settings in Section \ref{exd:sec:design}; numerical and runtime provenance for
-the recorded run is retained in the external replication logs.
+settings in Section \ref{exd:sec:design}.
 
 
 
@@ -569,7 +568,7 @@ LDVB scale update and \code{n.samp = 3000}.
 
 
 
-The fitted objects can be summarized with the \code{summary()} generic, which reports the model class, sample size, state dimension, discount factors, convergence iterations, and run time. For this dataset of length 289, the DQLM LDVB fit completes more quickly, while the corresponding exDQLM LDVB fit is more computationally demanding because the skewness parameter is estimated rather than fixed. The timing comparison in Table \ref{exd:tab:ex2bench} reports the values from the recorded benchmark setting. These runtimes are fit elapsed times stored in the returned fit objects; they are intended for within-setting comparison and should not be interpreted as machine-independent timing constants.
+The fitted objects can be summarized with the \code{summary()} generic, which reports the model class, sample size, state dimension, discount factors, convergence iterations, and run time. For this dataset of length 289, the DQLM LDVB fit completes more quickly, while the corresponding exDQLM LDVB fit is more computationally demanding because the skewness parameter is estimated rather than fixed. The timing comparison in Table \ref{exd:tab:ex2bench} reports fit elapsed times under the stated machine and benchmark configuration.
 
 The lower-left panel of Figure~\ref{exd:fig:ex2quant} compares the two fitted dynamic quantiles over 1780--1830 using the fitted-object \code{plot()} method.
 
@@ -639,7 +638,7 @@ Table~\ref{exd:tab:ex2bench} gives the runtime-and-diagnostic comparison.
 
 
 
-Within each model class, LDVB is substantially faster. For both DQLM and exDQLM, LDVB gives the smaller KL value, while MCMC gives smaller CRPS and PPLC values. Comparing model classes within each inferential method, the exDQLM improves the LDVB diagnostics relative to the DQLM, and under MCMC it improves the predictive-score criteria CRPS and PPLC. The comparison shows why runtime is reported together with predictive criteria rather than by itself.
+Within each model class, LDVB is substantially faster. For both DQLM and exDQLM, LDVB gives the smaller KL value, while MCMC gives smaller CRPS and PPLC values. Comparing model classes within each inferential method, the exDQLM improves the LDVB diagnostics relative to the DQLM, and under MCMC it improves the predictive-score criteria CRPS and PPLC. Runtime and predictive criteria describe distinct properties and are reported together.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -755,8 +754,9 @@ the posterior-simulation comparison used to examine interval and tail behavior.
 \label{exd:sec:summary}
 
 
-The dissertation contribution is the substantial later restructuring and
-extension of \pkg{exdqlm}, not the exAL family or original exDQLM formulation.
+Our contribution is the substantial later restructuring and extension of
+\pkg{exdqlm}; the exAL family and original exDQLM formulation retain their
+cited origins.
 The revised package joins composable state-space specification with inherited
 MCMC and ISVB procedures and the later LDVB approximation; corrects and
 standardizes filtering, smoothing, summaries, diagnostics, forecasting, and
@@ -773,9 +773,8 @@ the computational and predictive tradeoff between LDVB and MCMC: LDVB is
 faster in the recorded fits, whereas MCMC gives smaller CRPS and PPLC. The
 sparse simulation evaluates the static regularized-horseshoe routines under
 a known conditional quantile; it likewise shows faster LDVB fitting but
-generally smaller holdout quantile error under MCMC. These setting-specific
-comparisons do not imply a general predictive advantage for either inferential
-method.
+generally smaller holdout quantile error under MCMC. These comparisons apply
+to the reported fitting and evaluation settings.
 
 Dynamic models are fitted one quantile level at a time. The synthesis function
 combines predictive draws after separate fits rather than defining a joint
@@ -786,5 +785,5 @@ fixed or grid-selected, and the reported runtimes apply only to the stated
 hardware and fitting settings. Further work includes direct assessment of
 variational approximation error, joint regularization across quantile levels,
 nonlinear state evolution, and multivariate responses. Appendix
-\ref{app:exdqlm-technical} records the nonstandard posterior calculations
+\ref{app:exdqlm-technical} provides the nonstandard posterior calculations
 needed to interpret the implemented procedures.

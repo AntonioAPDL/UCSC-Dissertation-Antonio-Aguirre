@@ -2,8 +2,8 @@
 \label{app:shared-conventions}
 
 The research chapters share some computational representations but have
-different inferential targets. This appendix is a concordance, not a common
-model: similar augmentation formulas do not imply inferential equivalence.
+different inferential targets. This appendix provides a concordance among
+their targets, update mechanisms, and latent-variable conventions.
 
 \section{Targets and update mechanisms}
 
@@ -18,8 +18,8 @@ Chapter~\ref{ch:research-d} instead treats a fixed-content interval as the
 estimand. Its content \(c\) specifies the probability window, its tilt
 \(\delta\) specifies placement through a retained-mean condition, and its
 generalized-Bayes learning rate controls concentration of the loss update.
-The pseudo-AL representation used for computation augments the product loss;
-it is not a response likelihood for either endpoint.
+The pseudo-AL representation used for computation augments the product loss
+and defines a loss-based update for the two endpoints.
 
 \section{AL and exAL latent-variable scales}
 
@@ -39,12 +39,11 @@ distributions are parameterized by mean and variance throughout.
 
 \section{Multiple quantiles and predictive distributions}
 
-Separate quantile fits, post-fit predictive synthesis, and a stacked
-multiquantile update are different constructions. The \pkg{exdqlm} and
+Separate quantile fits, post-fit predictive synthesis, and a joint
+multiquantile generalized Bayes update are different constructions. The \pkg{exdqlm} and
 hydrologic procedures combine information after fitting level-specific
-models. MQ--DESN instead reuses the observed response in a composite update
-and couples adjacent coefficient vectors. None of these operations alone
-defines a unique joint response distribution.
+models. MQ--DESN reuses the observed response through quantile-specific loss
+contributions and couples adjacent coefficient vectors.
 
 The evaluation criterion follows the declared target. Check loss evaluates a
 specified conditional quantile. CRPS evaluates a predictive distribution,

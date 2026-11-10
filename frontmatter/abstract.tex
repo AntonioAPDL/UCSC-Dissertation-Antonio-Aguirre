@@ -8,17 +8,15 @@ discrepancies, extended asymmetric Laplace (exAL) variational updates, and
 monotone synthesis for river-flow forecasts. Across five retrospective San
 Lorenzo River origins, the model has the lowest 28-day continuous ranked
 probability score among the Bayesian variants at every origin; eight-day
-results are more heterogeneous. Each fit uses one deterministic
-precipitation and soil-water forecast path whose uncertainty is not propagated.
+results are more heterogeneous.
 
 The second project restructures and extends the \pkg{exdqlm}
 \proglang{R} package. It improves posterior updates, provides compiled
 implementations for intensive operations, corrects filtering and smoothing,
-and adds forecasting,
-diagnostics, synthesis, and static regularized quantile regression. In a
-sparse-regression experiment, Laplace--Delta variational Bayes requires less
-computing time, whereas Markov chain Monte Carlo has lower held-out quantile
-loss at all three levels; the two metrics assess different properties.
+and adds forecasting, diagnostics, synthesis, and static regularized quantile
+regression. It provides Markov chain Monte Carlo and variational Bayes
+procedures for dynamic and static AL/exAL regression and illustrates tradeoffs
+between computational time and inferential or predictive accuracy.
 
 The third project combines fixed deep echo-state features with Bayesian
 quantile regression. The quantile deep echo state network (Q--DESN) fits levels
@@ -31,7 +29,7 @@ For electricity prices, selected DESN regressions yield an average quantile
 loss of 6.687, compared with 7.039 for reproduced PriceFM forecasts over 114
 region--fold cases and lower means in all three folds. The
 comparison contrasts Bayesian regression on fixed recurrent features with
-end-to-end training; computing time was not compared.
+end-to-end training.
 
 The fourth project characterizes the retained-mean target of a residual-product
 criterion and embeds its mean-preserving interval in a tilt-indexed

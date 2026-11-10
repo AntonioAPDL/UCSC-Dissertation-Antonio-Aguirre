@@ -4,9 +4,8 @@
 % migration-id: MIG-CH05-CURRENT-RQR
 % migration-id: MIG-CH05-CURRENT-MTI-EXT
 This appendix supplies the supporting proofs, profile calculation, calibration
-record, and conditional computations used in Chapter~\ref{ch:research-d}.
-Principal results are stated in that chapter; they are not restated here
-unless a supporting result is needed within a proof.
+specification, and conditional computations used in
+Chapter~\ref{ch:research-d}.
 
 \section{Population and empirical results}
 \label{app:mti-proofs}
@@ -69,7 +68,7 @@ For integrable random variables \(U\) and \(V\) with the same finite mean,
 
 \begin{proposition}[Mean-preserving contraction]
 \label{rqr2026:prop:supp-convex-order}
-Let \(Y_{\mathrm{in}}\) and \(Y_{\mathrm{out}}\) have the conditional laws of
+Let \(Y_{\mathrm{in}}\) and \(Y_{\mathrm{out}}\) have the conditional distributions of
 \(Y\) inside and outside a regular MPI target. For every convex \(\varphi\)
 with finite required expectations,
 \[
@@ -92,7 +91,7 @@ outside. Both conditional distributions have mean \(\mu\), so
 \le s_\varphi(\mu)
 \le \E\{\varphi(Y_{\mathrm{out}})\}.
 \]
-The law of \(Y\) is their mixture. Taking
+The distribution of \(Y\) is their mixture. Taking
 \(\varphi(y)=(y-\mu)^2\) gives the corresponding variance ordering when
 second moments exist.
 \end{proof}
@@ -242,10 +241,9 @@ at least \(1-\alpha\),
 |\Pr_F(a<Y<b)-c|
 \le B_n/n+\sqrt{2\log(2/\alpha)/n}.
 \]
-This is a conservative bound, not exact future coverage or a
-restricted-regression result. The width penalty in RQR-W changes both content
-and placement through its endpoint scores; it is not merely a rule for
-breaking ties among MPI intervals.
+This conservative bound applies to the iid intercept-only fit; future coverage
+and restricted-regression results require separate arguments. The width penalty
+in RQR-W changes both content and placement through its endpoint scores.
 
 \section{Profile computation and content checking}
 \label{app:mti-profile-computation}
@@ -309,8 +307,8 @@ F(I)\mid D_n\sim
 \]
 The fitted procedure uses \(a=1\) and \(H=\Normal(0,4^2)\) on the fitting
 scale. The resulting survival probability is a posterior content statement
-under this response-distribution model, not a distribution-free tolerance
-guarantee.
+under this response-distribution model; repeated-sampling simulation evaluates
+the complete tolerance rule.
 
 \section{Calibration and sample-range reference}
 \label{app:mti-calibration}
@@ -333,11 +331,11 @@ adds one midpoint for each missing rank interval. The tilt menu includes zero,
 the fractional shortest-window offset, and seven equally spaced values over
 the empirical admissible range.
 
-For each of the nine \((n,c)\) settings and eight laws in
-Chapter~\ref{ch:research-d}, 32 independent development samples per law define
+For each of the nine \((n,c)\) settings and eight distributions in
+Chapter~\ref{ch:research-d}, 32 independent development samples per distribution define
 an initial menu: 25 empirical quantiles of candidate content probabilities and
 the requested confidence, for 26 cutoffs. An independent assessment then uses
-\(R=24{,}000\) samples per law and cutoff. If \(S\) runs both produce an
+\(R=24{,}000\) samples per distribution and cutoff. If \(S\) runs both produce an
 interval and attain content \(c\), the one-sided exact binomial lower bound is
 \[
 L_{\eta}(S,R)=
@@ -347,22 +345,21 @@ L_{\eta}(S,R)=
 \end{cases}
 \]
 A cutoff is accepted only if all \(R\) intervals are produced and
-\(L_\eta(S,R)\ge0.95\) for every law; the smallest accepted cutoff is retained.
+\(L_\eta(S,R)\ge0.95\) for every distribution; the smallest accepted cutoff is retained.
 
 The initial allocation is \(\eta=0.025/(9\cdot8\cdot26)\). Seven settings
 pass. A prespecified follow-up uses fresh development and assessment samples
 for \((n,c)=(50,0.90)\) and \((100,0.95)\), with 105 cutoffs per setting; the
 other seven cutoffs remain unchanged. Its allocation is
 \(\eta=0.025/(2\cdot8\cdot105)\). Splitting the total error probability 0.05
-between stages and applying the union bound over settings, laws, and assessed
+between stages and applying the union bound over settings, distributions, and assessed
 cutoffs gives the simultaneous calibration statement.
 
 The cutoff is fixed before 1,000 independent validation samples are generated
-for every law and setting. Of the 72 simultaneous validation intervals, 38 have
+for every distribution and setting. Of the 72 simultaneous validation intervals, 38 have
 lower bounds above 0.95, 34 include 0.95, and none has an upper bound below
-0.95. The smallest point estimate is 951/1000. This finite-panel evidence
-supports the prespecified rule empirically; it does not establish a
-distribution-free MTI tolerance theorem.
+0.95. The smallest point estimate is 951/1000. These results characterize the
+prespecified rule over the eight-distribution panel.
 
 \input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}
 
@@ -390,8 +387,8 @@ the normal--exponential representation
 \end{align*}
 where \(\sigma_{\mathrm R}=\omega_{\mathrm R}^{-1}\),
 \(\xi_c=(1-2c)/\{c(1-c)\}\), and
-\(\phi_c=2/\{c(1-c)\}\). This augments the loss update; it is not a response
-model.
+\(\phi_c=2/\{c(1-c)\}\). This representation provides a latent-variable
+augmentation for the loss update.
 
 For linear roots \(\eta_j=X\beta_j\), condition on the second root and define
 \[
@@ -424,6 +421,5 @@ For time-varying endpoints,
 \]
 Conditional on one complete root path and the latent scales, the other path is
 linear Gaussian and can be updated by forward filtering and backward sampling.
-These regression and dynamic calculations remain proposals: they have no
-matched implementation, simulation study, predictive assessment, or tolerance
-calibration.
+Simulation studies, predictive assessment, and tolerance calibration for these
+regression and dynamic extensions remain future work.

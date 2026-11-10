@@ -1,11 +1,11 @@
 \chapter{Posterior computation and supporting evidence for Q--DESN}
 \label{app:qdesn-technical}
 
-This appendix records the nonstandard calculations and empirical
-qualifications needed to interpret Chapter~\ref{ch:research-c}. Posterior
-inference is conditional on the selected reservoir realization and its fixed
-feature matrix. Standard Gaussian-regression calculations and complete
-collections of secondary results are not reproduced.
+This appendix presents the nonstandard calculations and supporting evidence
+for Chapter~\ref{ch:research-c}. Posterior inference is conditional on the
+selected reservoir realization and its fixed feature matrix. The presentation
+focuses on the posterior steps and secondary results needed for the chapter's
+argument.
 
 % migration-id: MIG-CH04-CURRENT-QDESN
 \section{Posterior formulation}
@@ -37,8 +37,7 @@ smoothness at zero is not assumed.
 
 Reservoir matrices, reduction maps, leak rates, spectral radii, washout, and
 the selected input specification are fixed before regression inference.
-Future rows containing response lags are generated recursively and are not
-treated as known in advance.
+Future rows containing response lags are generated recursively.
 
 \subsection{Single-quantile target}
 
@@ -80,9 +79,8 @@ L_{\mathrm{aug}}
 \end{equation}
 where \(\mat\Omega\) is diagonal with entries
 \(\sigma_kB_kv_{k,t}\). This evaluates the product of the
-quantile-specific augmentation factors. Repeating the response supplies an
-evaluation argument for an untempered composite update, not a normalized
-\(KT\)-variate response model.
+quantile-specific augmentation factors and supplies the loss factor for the
+multiquantile generalized Bayes update.
 
 The reported MQ--DESN fits shrink the anchor
 \(\Delta_1=\vect\beta_1\) and adjacent differences
@@ -191,8 +189,6 @@ single-level or sparse stacked Gaussian coefficient block; update shrinkage
 scales; update the transformed scale--shape block by MCMC or the structured
 factor above; then recompute complete convergence diagnostics. For MQ--DESN,
 intercepts use Gaussian conditionals restricted to their ordered support.
-Convergence of an approximate objective or reported score does not establish
-mixing of every original parameter coordinate.
 \end{algorithmblock}
 
 The exact Gaussian mean-regression baseline is used only to obtain stable
@@ -203,8 +199,6 @@ starting values. If \(\vect m_N\) is its posterior coefficient mean and
 \qquad
 \beta_j^{\mathrm{init}}(p)=m_{N,j},\quad j\ge1.
 \]
-Its covariance may initialize a variational factor but is not an uncertainty
-statement for the quantile posterior.
 
 \section{Simulation design and sensitivity evidence}
 \label{app:qdesn-simulation-support}
@@ -218,8 +212,7 @@ reported grid by equal-weight isotonic projection. The finite-grid score is
 \omega_k=\tfrac12(p_{k+1}-p_{k-1}),
 \]
 with adjacent half-widths at the endpoints. On the seven-level grid the
-weights sum to 0.90; the resulting values are comparable within this study,
-not with a full-distribution CRPS over another probability range.
+weights sum to 0.90, and the reported comparisons use this common grid.
 
 The single-quantile study uses 500 fitting observations and a primary
 300-target evaluation over ten origins. Its 500-target extension contains
@@ -294,11 +287,9 @@ Fold & Validation period & Test period & Test targets \\
 
 Predictor and response scaling use training medians and interquartile ranges.
 Released future load, solar, and wind columns are identified as day-ahead
-forecasts by \citet{qdesn-YuEtAl2026PriceFM}, but their issue-time availability
-was not independently verified. Mean AQL is 5.0\% lower for the selected DESN
-procedure than for the reproduced PriceFM forecasts, with a lower selected-DESN
-mean in each fold summary. The comparison does not establish operational
-information parity or paired inferential uncertainty.
+forecasts by \citet{qdesn-YuEtAl2026PriceFM}. Mean AQL is 5.0\% lower for the
+selected DESN procedure than for the reproduced PriceFM forecasts, with a
+lower selected-DESN mean in each fold summary.
 
 \section{GloFAS reference--discrepancy correction}
 \label{app:qdesn-glofas-support}

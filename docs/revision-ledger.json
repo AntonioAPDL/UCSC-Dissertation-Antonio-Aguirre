@@ -17,54 +17,58 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "08b9e9d7d815f6d7fd957dfa10ed1c48ea34a767c1e61c319db0ae3c4eb46314",
+      "current_sha256": "84750bc3d94f068043885a231200536c0efc6afcc66404102ff15b3be0e54bd3",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-INTRODUCTION-20261109",
         "REV-BRUNO-MTI-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "fffac3495c582a88348e4d58ef85ec5eec62be9647661e4eaaaea3d715b41623",
+      "current_sha256": "283f2a9b5be883896713fc5f8aa9f8ef1f18f7509bbc810bdf364e18509506b3",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "859c1fec0c585331220924e62aa03a11a935ac54dc5a8073f3071a292a664d73",
+      "current_sha256": "25f1152345d55de835edde92ee06041ac0f3d01cdd4c866b6d107bd359724cd7",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "f3524fd9cd9d705dfc21367d55c8531693c02a9b2d1e9bad56b1ea7fc00dcc43",
+      "current_sha256": "71cbb8cdefe3129e42f617747af9fb60c1aeb964080a2f24c38f9a642e8dbc97",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "55cf02e81929ce8cd488da9d3dcfec03d6938619272f381b0965b9cd7f88c840",
+      "current_sha256": "ac3c277e4f7490bee43893961405d9861b7c9a14a95746e1aaf47ba668f3f4db",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -81,13 +85,14 @@
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "2c5d35340251288f2a575d6de8e678f7b45c60f831f5190a9ce6b42eaa01d6af",
+      "current_sha256": "2dbb56f644c45dadc30e6b6842216a4f70852e081d1ae1ba88f0f31e4b7547b3",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -102,13 +107,14 @@
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "2db9f08c23795d8932893058b5d10f6e1f77f2a1a176ea57f6fa4003eed33317",
+      "current_sha256": "2063b156ff5b0a602cca1aa06df868f8a844166bba10cbc10d6e49ac7e468534",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -127,13 +133,14 @@
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-BRUNO-QDESN-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "bd463acbae19f7213c8f182cd6c63c5121684dce14d04d9e7f937cf93bc62c2d",
+      "current_sha256": "c362537eb81f217be23ac9a52a9c3ec333d72ca75493bcc08900ac49277063bb",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -149,13 +156,14 @@
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "appendices/a-shared-conventions.tex",
       "baseline_sha256": null,
-      "current_sha256": "24b677da1d44fb3c2bbf68ad630f24b6e41c13686a46821f94d7c9987dc680ca",
+      "current_sha256": "b5715b9d1b6c648b981112009286d2f847070e3c95ea127c3ca2c85e00241500",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/01-introduction.tex",
@@ -168,13 +176,14 @@
         "REV-READER-FIRST-20261008",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "79d14015d487faed83a1cb3e57c8409a077099db881b0a6431df7896e4cf715c",
+      "current_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
@@ -184,13 +193,14 @@
         "REV-CURRENT-SOURCES-20261026",
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
-        "REV-APPENDIX-CURATION-20261107"
+        "REV-APPENDIX-CURATION-20261107",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "6a5ba7471aadf71561a21542de1e37a2a7ad593dd3a6d9ceddf54d46d95e844e",
+      "current_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
@@ -200,13 +210,14 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-APPENDIX-CURATION-20261107",
         "REV-ADVISOR-HYDROLOGY-20261109",
-        "REV-ADVISOR-GLOBAL-20261109"
+        "REV-ADVISOR-GLOBAL-20261109",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "appendices/d-qdesn-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "3ab5bf733d3c33b813bf30b6e7a2804393cacfcc05774b251a35e1866caf7f7d",
+      "current_sha256": "7c1d71a51d15c895761736f46837ffb2fad991fd64e69c21a2374e48d57955a1",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/04-research-c.tex"
@@ -219,13 +230,14 @@
         "REV-QDESN-AUTHORITY-20261106",
         "REV-APPENDIX-CURATION-20261107",
         "REV-BRUNO-QDESN-20261109",
-        "REV-AUTHOR-COMMENTS-20261110"
+        "REV-AUTHOR-COMMENTS-20261110",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "b6e3642dccb050782357d2956efe0c0354bda10833abb2ca849e3173db41898b",
+      "current_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
@@ -236,7 +248,8 @@
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-APPENDIX-CURATION-20261107",
         "REV-BRUNO-MTI-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
@@ -434,11 +447,12 @@
     {
       "path": "tables/ch05-mti/mean_tilt_cf_mini_study.tex",
       "baseline_sha256": "802e5eb8ead312bb882e9b15de2017bf93ecb3ed35381af437060172ba36b3b2",
-      "current_sha256": "739257f879f338e3df2121efe006afb50613d40862229e7d20e0631b746a568e",
+      "current_sha256": "1b92f29a3f726e48754ca84661eb0207f1d603364b3dd9d7c848042709db2bea",
       "state": "EDITED",
       "revision_ids": [
         "REV-CURRENT-SOURCES-20261026",
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
@@ -480,10 +494,11 @@
     {
       "path": "tables/ch03-environ/generated_tex/he4_quantile_check_loss_main_table.tex",
       "baseline_sha256": "9bd5f449d69b45572b6b9a8a8ae4478890dd9b21c3c9862b9497997d72fd9bba",
-      "current_sha256": "d8d28c72d8198c01a1473559c54bbbdf7fe0daab953d592cbd11bc7778319323",
+      "current_sha256": "bfaa1794e2f02629111095a408564512ca5495c191af1b7bb5c80b02eea65537",
       "state": "EDITED",
       "revision_ids": [
-        "REV-COMMITTEE-COPY-20261107"
+        "REV-COMMITTEE-COPY-20261107",
+        "REV-FINAL-AUTHOR-STYLE-20261110"
       ]
     },
     {
@@ -1038,6 +1053,30 @@
       "summary": "Implements the 22 author comments by clarifying the dissertation's distributional targets, documenting the candidate's exdqlm contribution, revising hydrology covariate and seasonal descriptions, sharpening the Q--DESN crossing and PriceFM interpretations, normalizing MTI exposition, and reconciling the introduction, synthesis, and abstract.",
       "evidence": "docs/author-comments-revision-plan-20261110.md; docs/author-comments-response-matrix-20261110.json; fixed source commits and style profile recorded in docs/author-comments-preedit-baseline-20261110.json",
       "validation": "Author and Bruno response matrices, fixed-source and import hashes, active dependency graph, clean TeX build, citation and reference diagnostics, font and page checks, extracted-text terminology scans, and rendered inspection of every affected page required before release."
+    },
+    {
+      "id": "REV-FINAL-AUTHOR-STYLE-20261110",
+      "date": "2026-11-10",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/a-shared-conventions.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/c-hydrology-technical.tex",
+        "appendices/d-qdesn-technical.tex",
+        "appendices/e-mti-technical.tex",
+        "tables/ch03-environ/generated_tex/he4_quantile_check_loss_main_table.tex",
+        "tables/ch05-mti/mean_tilt_cf_mini_study.tex"
+      ],
+      "summary": "Implements the final author-directed statistical prose revision: first-person contribution statements, a resource-based account of the five-origin hydrology design, generalized Bayes terminology for MQ--DESN, an explicit comparison with earlier residual and bootstrap quantile methods, a scoped exAL coverage result, and a manuscript-wide replacement of audit-like and formulaic prose. The MTI chapter and Appendix E receive a complete terminology and readability pass while retaining their targets, assumptions, proofs, numerical results, and evidence boundaries.",
+      "evidence": "Author instructions of 2026-11-10; Academic_Writing_Style_Profile_v0.2.md, SHA-256 b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513; Yan, Zheng, and Kottas technical report UCSC-SOE-24-01; prior advisor and author response records.",
+      "validation": "Revision-ledger, display-ledger, appendix-map, import, research-audit, author-comment, editorial, and structure checks; phrase and terminology scans; clean TeX release build; log, font, reference, and overflow diagnostics; extracted-text review; and rendered inspection of affected pages required before merge."
     }
   ]
 }

@@ -57,21 +57,21 @@ posterior approximations, predictive evidence, and repeated-sampling claims.
 \paragraph{Hydrologic forecast correction and synthesis.}
 Chapter~\ref{ch:research-b} studies daily discharge for the San Lorenzo River
 when gauge observations, retrospective hydrologic products, and issued
-ensembles differ in support and forecast horizon. The project develops a shared
-dynamic quantile process with source-specific discrepancy states and combines
+ensembles differ in support and forecast horizon. We develop a shared
+dynamic quantile process with source-specific discrepancy states and combine
 complete predictive distributions from separately fitted quantiles into a
-nondecreasing marginal quantile function. It also develops joint
+nondecreasing marginal quantile function. We also develop joint
 scale--skewness Laplace--Delta variational updates for the extended likelihood.
 The exAL distribution, dynamic quantile linear models, forecast combination,
 ensemble model output statistics, and monotone quantile correction retain
 their cited origins. The empirical study uses five fixed forecast origins,
-with 28-day and common eight-day comparisons. It is a retrospective,
-origin-limited evaluation rather than a continuous forecasting experiment.
-At each origin, one supplied deterministic precipitation and soil-water
-forecast path enters the model; its uncertainty is not propagated. The five
-origins reflect the cost of repeated full dynamic fits. A matched full-model
-Markov chain Monte Carlo (MCMC) comparison remains a priority for assessing
-variational approximation error and uncertainty.
+with 28-day and common eight-day comparisons. At each origin, forecasts
+condition on one supplied precipitation and soil-water path. The evaluation is
+restricted to five origins because each 28-day window requires seven
+long-record dynamic quantile fits, extensive processing of multiple forecast
+products, and substantial computational time, storage, and post-processing.
+A matched full-model Markov chain Monte Carlo (MCMC) comparison remains a
+priority for assessing variational approximation error and uncertainty.
 
 \paragraph{Statistical computation and the \pkg{exdqlm} software.}
 Chapter~\ref{ch:research-a} addresses the computation required by dynamic
@@ -79,8 +79,8 @@ quantile analysis. Yan, Zheng, and Kottas \citep{exd-yan2025family} introduced
 the exAL family and static exAL regression. Barata, Prado, and Sans\'o
 \citep{exd-me} developed the exDQLM formulation, its original MCMC and
 importance-sampling variational Bayes (ISVB)
-procedures, and the transfer-function extension. Antonio de Leon's contribution
-is the substantial later restructuring and extension of \pkg{exdqlm}:
+procedures, and the transfer-function extension. Our contribution is the
+substantial later restructuring and extension of \pkg{exdqlm}:
 improved Laplace--Delta variational Bayes (LDVB) and nonconjugate
 scale--skewness updates; compiled implementations for intensive operations,
 with \proglang{R} implementations retained where applicable; filtering and
@@ -97,9 +97,10 @@ features; these are conventionally called reservoir states. Bayesian
 regression on those features estimates conditional quantiles without treating
 the recurrent weights as unknown parameters. Q--DESN fits one probability
 level at a time under AL or exAL likelihoods and shrinkage priors. MQ--DESN
-uses a composite multiquantile update with adjacent-level coefficient
-shrinkage. This regularization can reduce crossings but does not enforce
-noncrossing or guarantee lower forecast loss. The evidence consists of
+uses a joint multiquantile generalized Bayes update with regularized-horseshoe
+shrinkage on adjacent coefficient differences. This construction promotes
+similar neighboring quantile functions; we do not impose explicit noncrossing
+constraints. The evidence consists of
 specified simulation mechanisms, one retrospective Global Flood Awareness
 System (GloFAS) origin, and 114 electricity-price region--fold comparisons.
 Reservoir specifications were selected using separate development series. The
@@ -115,13 +116,12 @@ project derives the retained-mean characterization of the mean-preserving
 interval and embeds it in a retained-mean tilt family. It then develops a
 profiled procedure that screens fitted content and tilt using a posterior
 content probability before selecting the shortest eligible interval. Independent
-simulation evaluates the prespecified procedure on eight named distributions.
-That experiment estimates performance for those distributions; it does not
-prove distribution-free coverage. The chapter also formulates regression and
+simulation evaluates the prespecified procedure on eight named distributions
+and characterizes its repeated-sampling performance over that panel. The
+chapter also formulates regression and
 dynamic extensions in which time-varying latent coefficients determine the
-lower and upper endpoints. Because the corresponding implementation and
-empirical validation are not present at the fixed source versions, those
-extensions remain proposed developments.
+lower and upper endpoints. Simulation studies, numerical validation, and
+applications of these extensions remain future work.
 
 \section{Conditional quantiles and fixed-content intervals}
 \label{sec:intro-targets}
@@ -152,13 +152,17 @@ A model at one value of \(\tau\) estimates one conditional quantile. Chapters
 \ref{ch:research-b} and~\ref{ch:research-a} fit several probability levels
 separately and, when a full predictive distribution is needed, synthesize
 their predictive output after fitting. Chapter~\ref{ch:research-c} studies
-both separate Q--DESN regressions and MQ--DESN, a composite construction that
-couples coefficients across levels. Separate fits, post-fit synthesis, and a
-multiquantile composite posterior are therefore three distinct operations.
-Quantiles estimated independently may cross; monotone rearrangement or
-isotonic projection can order the fitted grid, but does not convert separate
-parameter posteriors into one joint posterior
-\citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010}.
+both separate Q--DESN regressions and MQ--DESN, a joint multiquantile
+generalized Bayes construction that couples coefficients across levels.
+Separate fits, post-fit synthesis, and a multiquantile generalized Bayes
+posterior are therefore three distinct operations. Quantile crossing has been
+addressed through rearrangement, isotonic projection, constrained estimation,
+and monotone quantile-process models. Rearrangement and projection order a
+fitted grid but do not combine separate parameter posteriors into a joint
+posterior
+\citep{qdesn-BarlowBrunk1972IsotonicDual,exd-chernozhukov2010,
+qdesn-WuLiu2009StepwiseNCQR,qdesn-BondellReichWang2010NoncrossingQR,
+qdesn-YangTokdar2017JointQuantilePlanes}.
 
 A fixed-content interval has a different target. Let \(F\) be a continuous
 population distribution and let \(c\in(0,1)\) be the required probability
@@ -213,7 +217,9 @@ coverage
 \citep{env-sriram2013theoretical,qdesn-YangWangHe2016ALInference,
 qdesn-JiLeeRabeHesketh2025ValidSE}. The exAL family adds a shape parameter
 while preserving the specified quantile and a conditionally Gaussian
-representation \citep{exd-yan2025family}.
+representation. In their simulation study, \citet{exd-yan2025family} found
+coefficient credible-interval coverage closer to nominal under exAL than AL,
+most consistently at the 0.05 quantile.
 
 Chapters~\ref{ch:research-b} and~\ref{ch:research-a} place the AL or exAL
 quantile location in a Gaussian state-space model. Trend, seasonal, regression,
@@ -251,17 +257,14 @@ are not posterior predictive response draws.
 \label{sec:intro-evaluation}
 
 Forecasts must state which future inputs are available. In the hydrologic study
-of Chapter~\ref{ch:research-b}, one deterministic precipitation and soil-water
-forecast path is supplied at each origin; uncertainty in that path is not
-integrated into the model. The streamflow study in
+of Chapter~\ref{ch:research-b}, forecasts condition on one supplied
+precipitation and soil-water path at each origin. The streamflow study in
 Chapter~\ref{ch:research-c} conditions on
 weather values observed retrospectively over the forecast window. Its
-electricity-price study uses supplied day-ahead load, solar, and wind forecasts,
-whose issue-time vintages were not independently verified. In the software
+electricity-price study uses supplied day-ahead load, solar, and wind forecasts.
+In the software
 examples of Chapter~\ref{ch:research-a}, users must supply future design and
-evolution matrices when forecasting beyond the stored model. These are
-conditional forecast designs, not claims that future covariates are known in
-prospective use.
+evolution matrices when forecasting beyond the stored model.
 
 Evaluation criteria are matched to the estimated object. Check loss evaluates
 one conditional quantile. The continuous ranked probability score (CRPS)
@@ -276,9 +279,7 @@ evaluates an entire predictive distribution \(G\) against an observation
 \end{equation}
 It is a proper, negatively oriented score, so smaller values indicate better
 predictive performance; unlike check loss at one probability level, it assesses
-the full predictive distribution \citep{exd-gneiting2007}. Finite-grid
-approximations based on several quantiles assess only the reported probability
-range and depend on the grid and weights.
+the full predictive distribution \citep{exd-gneiting2007}.
 
 Simulation can additionally assess recovery of a known parameter or quantile
 path. Predictive-interval calibration, posterior convergence, and tolerance

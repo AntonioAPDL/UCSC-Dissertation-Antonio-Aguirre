@@ -4,9 +4,8 @@
 This appendix retains the definitions needed to reproduce the construction in
 Chapter~\ref{ch:research-b} and three tables needed to assess its principal
 empirical claims. Complete origin-by-quantile losses, coefficient summaries,
-forecast panels, and implementation outputs remain with the analysis
-materials \citep{env-deleon2026sanlorenzo_reproducibility}; they are not
-needed to evaluate the argument in the chapter.
+forecast panels, and additional numerical diagnostics are available in the
+reproducibility materials \citep{env-deleon2026sanlorenzo_reproducibility}.
 
 % migration-id: MIG-CH03-02
 \section{Additional forecast evidence}
@@ -165,8 +164,8 @@ turn the seven fitted quantiles alone into a complete predictive distribution.
 For EMOS, each lead-specific fit minimizes analytic truncated-normal CRPS
 using four deterministic initial values and bounded L-BFGS-B optimization.
 The converged solution with the smallest objective is retained subject to
-$b,d\ge0$ and $c>0$. The eligible training cases, fitted values, and
-convergence records are retained with the supporting computational records.
+$b,d\ge0$ and $c>0$. The reported calculation retains the eligible training
+cases, fitted values, and convergence diagnostics.
 
 \section{Extended-likelihood variational approximation}
 
@@ -257,5 +256,6 @@ optimize each channel's scale--skewness block and recompute its Delta moments.
 The evidence lower bound, state moments, scale moments, and skewness moments
 are monitored after required minimum iteration counts. Forecast-member
 observations use the same observation-level updates with their active source
-selector. This description fixes the posterior approximation used in the
-application without reproducing implementation-level update tables.
+selector. This description specifies the posterior approximation used in the
+application; the reproducibility materials provide the full numerical
+diagnostics.

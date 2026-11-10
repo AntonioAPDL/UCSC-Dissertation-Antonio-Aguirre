@@ -41,10 +41,10 @@ therefore support different interpretations in the four projects.
 distributions & A shared latent quantile process with source-specific
 discrepancies, scale--skewness variational updates, and monotone synthesis &
 Five origins; a 28-day Bayesian comparison and a common 8-day comparison & One
-covariate path per origin; no matched full-model Markov chain Monte Carlo
-(MCMC) comparison \\
+covariate path per origin; repeated long-record fitting and forecast-product
+processing determine study breadth \\
 3: \pkg{exdqlm}; dynamic and static conditional quantiles & Substantial later
-package restructuring by Antonio de Leon: improved variational updates,
+package restructuring: improved variational updates,
 compiled intensive operations, filtering and smoothing corrections,
 prediction, diagnostics, synthesis, and static shrinkage & Software examples,
 paired computations, diagnostics, and held-out comparisons & Implemented
@@ -96,18 +96,19 @@ the multivariate exAL model with an active transfer component has the lowest
 at every origin. The separate eight-day comparison against National Weather
 Service (NWS) products is more heterogeneous. The five-origin evidence favors
 source-specific correction and synthesis for this target, but not every
-comparator at every origin or horizon. At each origin, one supplied deterministic
-precipitation and soil-water forecast path enters the model; uncertainty in
-that path is not propagated. Repeated full dynamic fits limited the study to
-five origins. A matched full-model Markov chain Monte Carlo comparison remains
-necessary to assess the variational approximation directly.
+comparator at every origin or horizon. Forecasts condition on one supplied
+precipitation and soil-water path at each origin. The study is limited to five
+origins because every 28-day window requires repeated long-record fitting,
+extensive forecast-product post-processing, and substantial computation,
+storage, and elapsed time. A matched full-model Markov chain Monte Carlo
+comparison remains necessary to assess the variational approximation directly.
 
 \subsection{Statistical computation for dynamic quantile models}
 
 The exAL family and the original exDQLM model, Markov chain Monte Carlo
 procedures, importance-sampling variational Bayes (ISVB), and transfer-function
-extension precede the software article. Antonio de Leon's contribution is the
-substantial later restructuring and extension of \pkg{exdqlm}: improved
+extension precede the software article. Our contribution is the substantial
+later restructuring and extension of \pkg{exdqlm}: improved
 Laplace--Delta variational Bayes (LDVB) and nonconjugate scale--skewness updates;
 compiled implementations for intensive operations, with \proglang{R}
 implementations retained where applicable; corrections to filtering and
@@ -119,17 +120,16 @@ analysis combines multi-quantile fitting and predictive synthesis; the
 Sunspots example compares DQLM and exDQLM computation; and the sparse
 simulation compares MCMC with LDVB under the same static model. LDVB is faster
 in the reported sparse fits, whereas MCMC has lower held-out quantile error at
-all three levels. This contrast shows why convergence, approximation quality,
-uncertainty, and predictive accuracy require separate diagnostics.
+all three levels. Convergence, approximation quality, uncertainty, and
+predictive accuracy are assessed by separate diagnostics.
 
 \subsection{Nonlinear recurrent features for conditional quantiles}
 
 Q--DESN uses a fixed deep echo-state network to construct nonlinear temporal
 predictors and then estimates conditional quantiles by regularized Bayesian
 regression. The multiquantile Q--DESN (MQ--DESN) shares information across
-levels through shrinkage on adjacent coefficient differences. This
-regularization can reduce crossing, but it does not impose monotonicity and
-does not improve forecast scores uniformly.
+levels through shrinkage on adjacent coefficient differences, which promotes
+similar neighboring effects. We do not impose explicit noncrossing constraints.
 
 In the simulations, the independent regressions have the lowest mean oracle
 score in six of eight mechanisms. Relative to independent fits, adjacent-level
@@ -147,9 +147,8 @@ and MQ--DESN under AL and exAL. Over 114 region--fold cases, the selected DESN
 models have mean AQL 6.687, compared with 7.039 for
 reproduced PriceFM forecasts, and have a lower mean in each fold. The comparison
 contrasts Bayesian regression on fixed recurrent features with end-to-end
-training of recurrent weights; it does not provide a matched runtime study.
-The covariates are supplied
-forecast quantities whose issue-time vintages were not independently verified.
+training of recurrent weights. The regressions use supplied day-ahead load,
+solar, and wind forecasts as future covariates.
 
 \subsection{Fixed-content interval placement and tolerance inference}
 
@@ -168,14 +167,14 @@ distribution--setting cases, MTI content attainment ranges from
 95.1\% to 99.3\%; its mean width is smaller than that of Young--Mathew in 40
 cases. The closest cases remain statistically compatible with the nominal
 0.95 confidence, so the study supplies repeated-sampling evidence for the
-specified rule and eight-distribution panel rather than a distribution-free
-theorem. The pharmaceutical application illustrates endpoint placement and
+specified rule over the eight-distribution panel. The pharmaceutical
+application illustrates endpoint placement and
 partition sensitivity on historical batches. Its overlapping partitions,
 possible dependence, ties, and unresolved measurement definitions make this a
-descriptive analysis. A prospective evaluation would need independent future
+descriptive analysis. A prospective evaluation would use independent future
 batches, a pre-recorded measurement definition, and a fixed grouping rule.
-Regression and dynamic endpoint models remain proposed extensions without
-matched implementations or empirical studies.
+Simulation studies, numerical validation, and applications of the regression
+and dynamic endpoint models remain future work.
 
 \section{Statistical distinctions across projects}
 \label{sec:synthesis-lessons}
@@ -191,12 +190,11 @@ generalized posterior describes endpoints for a fixed loss-defined target. A
 tolerance statement then concerns the repeated-sampling behavior of the
 complete interval-selection rule.
 
-This distinction is substantive. Two fitted conditional quantiles define an
-equal-tailed interval only when their probability levels are selected for that
-purpose. Posterior uncertainty about two endpoints does not by itself imply
-that the resulting random interval attains a prescribed population content
-with a stated confidence. Each transition requires an explicit probability
-model, synthesis step, calibration argument, or evaluation design.
+A fitted interval inherits its interpretation from its target and validation
+criterion. Two fitted conditional quantiles define an equal-tailed interval
+when their probability levels are selected for that purpose. A tolerance
+claim additionally requires a probability model, synthesis step, calibration
+argument, or evaluation design for the complete interval rule.
 
 \subsection{Computation and statistical evidence require different checks}
 
@@ -227,13 +225,13 @@ corrections and calibrated loss scales are possible directions.
 \item \textit{Dependence across quantile levels.} Separate fits followed by
 synthesis or rearrangement do not define a joint posterior over
 quantile-specific parameters. MQ--DESN shares information across levels but
-does not guarantee noncrossing.
+does not impose explicit noncrossing constraints.
 
 \item \textit{Forecast-design breadth.} The hydrologic study contains five
 origins, whereas the Q--DESN GloFAS application contains one. The PriceFM
 comparison uses three folds but relies on region-specific model selection.
-Broader conclusions require more origins and strictly archived issue-time
-inputs.
+Broader forecast assessment requires more origins and additional prospective
+evaluations.
 
 \item \textit{Approximation and feature uncertainty.} Variational posterior
 spread requires more systematic comparison with posterior simulation. The

@@ -31,8 +31,8 @@ and forecast horizons, and because retrospective products and issued
 ensembles play distinct statistical roles.
 
 Within dynamic quantile linear models (DQLMs;
-\citealp{env-gourieroux2008dqlm,env-goncalves,exd-me}), this chapter makes
-three contributions. First, a shared latent quantile process relates gauge
+\citealp{env-gourieroux2008dqlm,env-goncalves,exd-me}), we make three
+contributions. First, a shared latent quantile process relates gauge
 measurements to retrospective products and issued ensembles through
 source-specific dynamic discrepancies. This separates a common river-flow
 signal from persistent product-specific departures while allowing source
@@ -139,7 +139,7 @@ distribution, $\operatorname{exAL}_{p_0}(\mu,\sigma,\gamma)$, developed by
 $\sigma>0$ controls scale, and $\gamma$ provides additional skewness
 flexibility. To preserve the specified quantile, $\gamma$ lies in an interval
 $(L_\gamma(p_0),U_\gamma(p_0))$ whose endpoints depend on $p_0$.
-Appendix~\ref{env:app:augmentation} records the endpoints and the conditional
+Appendix~\ref{env:app:augmentation} gives the endpoints and the conditional
 Gaussian augmentation used in computation.
 
 \subsection{State-space model}
@@ -269,11 +269,10 @@ Section~\ref{env:app:vblad}, states the factorization and update boundary.
 This computation extends the importance-sampling treatment in \citet{exd-me},
 which fixes the scale using an AL fit, by approximating scale and skewness
 jointly. For the full record, a 34-dimensional state, and seven quantile
-models, a full-data Markov chain Monte Carlo (MCMC) analysis is expected to
-require several weeks because it repeatedly samples latent trajectories,
-observation-specific augmentation variables, and nonconjugate parameters.
-This duration is an implementation-based estimate rather than a measured
-comparison. Parallel VB computation with \texttt{exdqlm} gives a representative
+models, full-data Markov chain Monte Carlo (MCMC) would repeatedly sample
+latent trajectories, observation-specific augmentation variables, and
+nonconjugate parameters. The hydrologic study therefore uses parallel VB;
+\texttt{exdqlm} gives a representative
 combined fitting and forecasting time of approximately two hours on the stated
 server configuration. A matched full-model MCMC analysis remains future work;
 it is needed to assess how the variational approximation affects posterior
@@ -316,7 +315,7 @@ We generate 2,000 draws per time. The outer fitted distributions supply tails
 beyond probabilities 0.05 and 0.95, including central 95\% interval limits;
 no separate 0.025 or 0.975 models are fitted. Synthesis specifies marginal
 predictive distributions in time, not a joint temporal dependence model for
-sample traces. Appendix~\ref{env:app:numericalprediction} records the grid,
+sample traces. Appendix~\ref{env:app:numericalprediction} gives the grid,
 interpolation, and empirical-quantile conventions.
 
 \section{Application specification and evaluation}
@@ -351,13 +350,14 @@ origins. The representative forecast-covariance prior uses $\epsilon=c=1$.
 
 Five origins span low-flow conditions and winter high-flow episodes: January
 23, November 12, and December 21, 2021, and May 11 and December 25, 2022.
-These separated cases avoid repeatedly scoring overlapping windows from one
-episode, but they do not form a continuous daily hindcast. Repeating seven
-long-record dynamic quantile fits at each origin is computationally demanding,
-which limited the retrospective evaluation to these five scientifically
-distinct cases. The fitting window contains gauge and retrospective
-observations through $T$. Future inference uses issued external members and one
-supplied deterministic covariate path at each origin; later USGS measurements
+The separated cases cover distinct flow regimes without repeatedly scoring
+overlapping windows from a single episode. Each 28-day evaluation requires
+seven long-record dynamic quantile fits, extensive alignment and
+post-processing of multiple forecast products, and substantial computation,
+storage, and elapsed time. These resource requirements determined the
+five-origin retrospective design. The fitting window contains gauge and
+retrospective observations through $T$. Future inference uses issued external
+members and one supplied covariate path at each origin; later USGS measurements
 provide verification. Comparisons use 28 leads and the common eight-day
 horizon, with channels entering only while available.
 
@@ -555,11 +555,12 @@ eight-day origins, and AL-M-T1 has smaller pooled upper-quantile losses and
 better interval calibration. The evidence therefore favors the fuller model
 for the principal 28-day target while identifying material qualifications.
 
-The analysis depends on aligned external products and one deterministic
-precipitation and soil-water path at each origin; uncertainty in that path is
-not propagated. The likelihood assumes conditionally independent member
-residuals and shares source scales across leads. The five-origin design gives
-comparisons across distinct flow regimes but not a dense hindcast. A controlled
+The analysis depends on aligned external products and conditions on one
+precipitation and soil-water path at each origin. The likelihood assumes
+conditionally independent member residuals and shares source scales across
+leads. Extending the five-origin evaluation to a dense hindcast would require
+the same repeated long-record fitting and forecast-product processing at many
+additional origins. A controlled
 VB--MCMC study under a matched, computationally manageable model would assess
 posterior approximation error separately from predictive performance.
 Further work could propagate transfer-input uncertainty, model dependent
