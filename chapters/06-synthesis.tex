@@ -9,9 +9,11 @@ estimate the same object. Chapter~\ref{ch:research-b} studies correction and
 synthesis of river-flow forecasts from heterogeneous sources.
 Chapter~\ref{ch:research-a} develops software for dynamic and static Bayesian
 quantile analysis. Chapter~\ref{ch:research-c} uses fixed nonlinear recurrent
-features as predictors in single-level and multiquantile regression.
+features as predictors in single-level and multiquantile regression through
+the quantile deep echo state network (Q--DESN).
 Chapter~\ref{ch:research-d} turns from conditional quantiles to the placement
-of contiguous fixed-content intervals and to their use in tolerance inference.
+of contiguous fixed-content intervals through the mean-tilted interval (MTI)
+construction and to their use in tolerance inference.
 
 Table~\ref{tab:synthesis-comparison} summarizes the principal statistical
 distinctions. The hydrology, software, and Q--DESN chapters use asymmetric
@@ -22,35 +24,41 @@ a residual-product loss for two interval endpoints and evaluates a separate
 tolerance action by repeated sampling. Similar latent-variable calculations
 therefore support different interpretations in the four projects.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \begingroup
 \small
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.08}
-\begin{tabularx}{\textwidth}{@{}p{0.14\textwidth}YYYY@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}
+  >{\raggedright\arraybackslash}p{0.27\textwidth}
+  >{\raggedright\arraybackslash}p{0.25\textwidth}Y@{}}
 \toprule
-\textbf{Chapter} & \textbf{Primary target} & \textbf{Dependence representation}
-& \textbf{Computation} & \textbf{Principal evidence} \\
+\textbf{Project and target} & \textbf{Dissertation contribution} &
+\textbf{Principal evidence} & \textbf{Scope} \\
 \midrule
-2: hydrology & Source-corrected conditional quantiles and synthesized
-future-response distributions & Shared latent quantile process, source-specific
-discrepancies, and transfer covariates & exAL dynamic model with LDVB and
-supporting MCMC calculations & Five retrospective forecast origins; separate
-28-day and common 8-day comparisons \\
-3: \pkg{exdqlm} & Dynamic or static conditional quantiles and post-fit
-predictive synthesis & Linear latent states, transfer components, or static
-regression & MCMC, LDVB, and ISVB & Software examples, diagnostics, and
-held-out comparisons \\
-4: Q--DESN & Single or jointly regularized conditional quantiles & Fixed deep
-echo-state features followed by Bayesian regression & AL/exAL MCMC and
-model-specific variational approximations & Development-informed simulations
-and retrospective GloFAS and PriceFM applications \\
-5: MTI & Contiguous fixed-content interval placement and a calibrated tolerance
-action & Static endpoints or proposed regression and dynamic endpoint
-coefficients & Loss-based generalized updating, convex profiling, and a direct
-content check & Population results, independent simulations, and a descriptive
-pharmaceutical application \\
+2: hydrology; corrected conditional quantiles and synthesized predictive
+distributions & A shared latent quantile process with source-specific
+discrepancies, scale--skewness variational updates, and monotone synthesis &
+Five origins; a 28-day Bayesian comparison and a common 8-day comparison & One
+covariate path per origin; no matched full-model Markov chain Monte Carlo
+comparison \\
+3: \pkg{exdqlm}; dynamic and static conditional quantiles & Substantial later
+package restructuring by Antonio de Leon: improved variational updates,
+compiled intensive operations, filtering and smoothing corrections,
+prediction, diagnostics, synthesis, and static shrinkage & Software examples,
+paired computations, diagnostics, and held-out comparisons & Implemented
+capabilities and case-specific tradeoffs, not a universal algorithm ranking \\
+4: Q--DESN; separately or jointly regularized conditional quantiles & Fixed
+nonlinear recurrent features with regularized Bayesian readouts and
+adjacent-level coefficient shrinkage & Exact simulation crossing and oracle
+scores; retrospective GloFAS and PriceFM comparisons & Selected reservoirs,
+one trajectory per simulation mechanism, and retrospective applications \\
+5: MTI; contiguous fixed-content interval placement and a tolerance action & A
+retained-mean characterization, a tilt-indexed interval family, and a calibrated
+profiled selection rule; regression and dynamic formulations are proposed &
+Population results, independent simulations, and a pharmaceutical illustration
+& Eight-distribution panel; prospective batch evaluation remains necessary \\
 \bottomrule
 \end{tabularx}
 \endgroup
@@ -83,22 +91,28 @@ quantiles are synthesized to obtain complete predictive distributions.
 
 Under the single specification used for all five retained forecast origins,
 the multivariate exAL model with an active transfer component has the lowest
-28-day CRPS among the Bayesian variants at every origin. The separate
-eight-day comparison against NWS products is more heterogeneous. These results
-support the value of source-specific correction and synthesis for the studied
-retrospective design; they do not imply superiority over every comparator at
-every origin or horizon. Future precipitation and soil-water ensembles enter
-through summaries, so their uncertainty is conditioned upon rather than fully
-propagated.
+28-day continuous ranked probability score (CRPS) among the Bayesian variants
+at every origin. The separate eight-day comparison against National Weather
+Service (NWS) products is more heterogeneous. These results support the value
+of source-specific correction and synthesis for the studied retrospective
+design; they do not imply superiority over every comparator at every origin or
+horizon. At each origin, one supplied deterministic
+precipitation and soil-water forecast path enters the model; uncertainty in
+that path is not propagated. Repeated full dynamic fits limited the study to
+five origins. A matched full-model Markov chain Monte Carlo comparison remains
+necessary to assess the variational approximation directly.
 
 \subsection{Statistical computation for dynamic quantile models}
 
-The \pkg{exdqlm} project makes the exAL and exDQLM methodology available through
-coordinated model construction, posterior computation, diagnostics,
-forecasting, predictive synthesis, and fitted-object summaries. Its distinct
-contribution is computational and inferential integration rather than a new
-observation distribution. The chapter also extends the software treatment to
-static exAL regression with regularized-horseshoe shrinkage.
+The exAL family and the original exDQLM model, Markov chain Monte Carlo
+procedures, importance-sampling variational Bayes (ISVB), and transfer-function
+extension precede the software article. Antonio de Leon's contribution is the
+substantial later restructuring and extension of \pkg{exdqlm}: improved
+Laplace--Delta variational Bayes (LDVB) and nonconjugate scale--skewness updates;
+compiled implementations for intensive operations, with \proglang{R}
+implementations retained where applicable; corrections to filtering and
+smoothing; forecasting, diagnostics, scoring, and posterior-predictive
+synthesis; and static AL/exAL regression under regularized-horseshoe shrinkage.
 
 The examples establish capabilities and expose tradeoffs. The Lake Huron
 analysis combines multi-quantile fitting and predictive synthesis; the
@@ -113,23 +127,29 @@ predictive accuracy require separate diagnostics.
 
 Q--DESN uses a fixed deep echo-state network to construct nonlinear temporal
 predictors and then estimates conditional quantiles by regularized Bayesian
-regression. The multiquantile model shares information across levels through
-shrinkage on adjacent coefficient differences. This regularization can reduce
-crossing, but it does not impose monotonicity and does not improve forecast
-scores uniformly.
+regression. The multiquantile Q--DESN (MQ--DESN) shares information across
+levels through shrinkage on adjacent coefficient differences. This
+regularization can reduce crossing, but it does not impose monotonicity and
+does not improve forecast scores uniformly.
 
 In the simulations, the independent regressions have the lowest mean oracle
-score in six of eight mechanisms, while MQ--DESN more consistently improves
-the ordering of posterior-mean quantile grids. The results are conditional on
-the selected reservoirs and realized evaluation trajectories. In the
-retrospective GloFAS application, all six fitted models improve on the raw
-ensemble over the 28 issued horizons, and the four quantile regressions improve
-on both Gaussian baselines. Q--DESN under AL has the lowest grid score, 50.2\%
-below the raw ensemble. This analysis conditions on realized future weather.
+score in six of eight mechanisms. Relative to independent fits, adjacent-level
+regularization reduces the crossing rate from 5.488\% to 0.021\% under AL and
+from 0.606\% to 0\% under exAL. The observed tradeoff is therefore improved
+ordering without a uniform improvement in quantile recovery. The results are
+conditional on the selected reservoirs and realized evaluation trajectories.
+In the retrospective Global Flood Awareness System (GloFAS) application, all
+six fitted models improve on the raw ensemble over the 28 issued horizons, and
+the four quantile regressions improve on both Gaussian baselines. Q--DESN under
+AL has the lowest grid score, 50.2\% below the raw ensemble. This analysis
+conditions on realized future weather.
 In the PriceFM comparison, region-specific validation selects among Q--DESN
 and MQ--DESN under AL and exAL. Over 114 region--fold cases, the selected DESN
-models have mean AQL 6.687, compared with 7.039 for reproduced PriceFM
-forecasts, and have a lower mean in each fold. The covariates are supplied
+models have mean average quantile loss (AQL) 6.687, compared with 7.039 for
+reproduced PriceFM forecasts, and have a lower mean in each fold. The comparison
+contrasts Bayesian regression on fixed recurrent features with end-to-end
+training of recurrent weights; it does not provide a matched runtime study.
+The covariates are supplied
 forecast quantities whose issue-time vintages were not independently verified.
 
 \subsection{Fixed-content interval placement and tolerance inference}
@@ -152,10 +172,11 @@ cases. The closest cases remain statistically compatible with the nominal
 specified rule and eight-distribution panel rather than a distribution-free
 theorem. The pharmaceutical application illustrates endpoint placement and
 partition sensitivity on historical batches. Its overlapping partitions,
-possible dependence, ties, and unresolved measurement definitions preclude a
-regulatory or prospective tolerance claim. Regression and dynamic endpoint
-models remain proposed extensions without matched implementations or empirical
-studies.
+possible dependence, ties, and unresolved measurement definitions make this a
+descriptive analysis. A prospective evaluation would need independent future
+batches, a pre-recorded measurement definition, and a fixed grouping rule.
+Regression and dynamic endpoint models remain proposed extensions without
+matched implementations or empirical studies.
 
 \section{Statistical distinctions across projects}
 \label{sec:synthesis-lessons}
@@ -182,7 +203,7 @@ model, synthesis step, calibration argument, or evaluation design.
 
 Posterior simulation, variational approximation, and deterministic profiling
 solve different computational problems. MCMC diagnostics address simulation
-from a specified posterior. ELBO behavior and paired comparisons with MCMC
+from a specified posterior. Evidence lower bound (ELBO) behavior and paired comparisons with MCMC
 assess aspects of a variational approximation. Predictive scores and
 calibration summaries assess fitted forecasts. Independent simulations of
 population content assess a tolerance action. No one diagnostic establishes
@@ -262,16 +283,17 @@ evaluation.
 \section{Concluding perspective}
 \label{sec:synthesis-conclusion}
 
-The dissertation makes four related contributions to distributional
-inference. Source-aware dynamic quantile models correct and synthesize
-heterogeneous forecasts; \pkg{exdqlm} makes dynamic and static quantile methods
-available through a coordinated statistical interface; Q--DESN supplies a
-nonlinear recurrent design for Bayesian quantile regression; and MTI separates
-fixed-content interval placement from repeated-sampling tolerance confidence.
-
-The common lesson is that computational similarity does not imply inferential
-equivalence. A conditional quantile, a synthesized predictive distribution, a
-loss-defined pair of endpoints, and a tolerance action require different
-uncertainty statements and different evidence. Clear separation of those
-objects permits the contributions to be compared without overstating what any
-single analysis establishes.
+The four projects provide complementary methods for non-mean distributional
+inference. The hydrologic model estimates and synthesizes source-corrected
+conditional quantiles; \pkg{exdqlm} supplies the posterior computation,
+diagnostics, and prediction needed to fit dynamic and static quantile models;
+Q--DESN extends quantile regression to fixed nonlinear recurrent features and
+quantifies the observed tradeoff between quantile ordering and recovery; and
+MTI separates the placement of a fixed-content interval from the calibration
+of a repeated-sampling tolerance statement. In each project, the statistical
+target determines the model, the required computation, and the evidence that
+can validate the resulting claim. Together, the projects establish a
+target-specific framework for estimating conditional quantiles, constructing
+predictive distributions, and selecting fixed-content intervals, while also
+identifying the approximation, forecast-design, and prospective-validation
+questions that remain open.

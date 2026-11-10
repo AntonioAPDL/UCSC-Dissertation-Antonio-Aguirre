@@ -39,23 +39,25 @@
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "42607dff48594a42dca4985423948ab593f1a3395587f4c60d0d9f07083690dd",
+      "current_sha256": "af0e684eb94be6504969df9caa2a09cd1cfe14ca5a7aaa6a30cdbd96aadc2107",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
-        "REV-BRUNO-MTI-20261109"
+        "REV-BRUNO-MTI-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "a4a90f128054fd71fbe722802bcdc200e335aede1834fc703f483b687f953630",
+      "current_sha256": "cf1b83b0b208742ca3ac90fa651ef5dba2f7123a32da55208c9489af12ed7bb9",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-BRUNO-MTI-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {
