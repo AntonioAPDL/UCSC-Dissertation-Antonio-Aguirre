@@ -11,7 +11,8 @@ unless a supporting result is needed within a proof.
 \section{Population and empirical results}
 \label{app:mti-proofs}
 
-Suppress the conditioning variable and write
+Fix a conditioning value \(x\) and suppress it from the notation; the
+unconditional case follows by omitting \(X\). Write
 \[
 I_c(u)=[Q(u),Q(u+c)],
 \qquad
@@ -27,6 +28,25 @@ For regular endpoints \(a<b\), the two population endpoint scores imply
 Equivalently, the omitted lower and upper tails balance first moments about
 \(\mu\); their probabilities need not be equal.
 
+\subsection{Proof of Proposition~\ref{rqr2026:prop:population-characterization}}
+
+Let \(e=(Y-a)(Y-b)\) and, away from endpoint atoms, put
+\(s=c-\ind(e<0)=c-\ind(a<Y<b)\). Differentiating the conditional risk is
+justified by the interchange condition in the proposition. The endpoint
+scores are
+\[
+\E\{s(b-Y)\mid X=x\}=0,
+\qquad
+\E\{s(a-Y)\mid X=x\}=0.
+\]
+Because \(a<b\), subtracting the scores gives
+\(\E(s\mid X=x)=0\), which is
+Eq.~\eqref{rqr2026:eq:mpi-content-score}. Substitution into either score gives
+\(\E(sY\mid X=x)=0\), which is
+Eq.~\eqref{rqr2026:eq:mpi-retained-mean-score}. The first identity is the
+population-content result of \citet{rqr-PouplinEtAl2024RQR}; the second is the
+additional retained-mean consequence used here.
+
 \subsection{Proof of Theorem~\ref{rqr2026:thm:quantile-window}}
 
 Modulo probability-zero portions outside the support, every contiguous
@@ -41,6 +61,11 @@ therefore give a unique \(u_c\) satisfying \(M_c(u_c)=\mu\). The retained-mean
 score identifies \(Q(u_c)\) and \(Q(u_c+c)\). Under symmetry, the window
 beginning at \((1-c)/2\) has retained mean \(\mu\), so uniqueness gives the
 equal-tailed interval.
+
+For integrable random variables \(U\) and \(V\) with the same finite mean,
+\(U\preceq_{\rm cx}V\) means
+\(\E\{\varphi(U)\}\leq\E\{\varphi(V)\}\) for every convex function
+\(\varphi\) for which both expectations are finite.
 
 \begin{proposition}[Mean-preserving contraction]
 \label{rqr2026:prop:supp-convex-order}
@@ -165,9 +190,23 @@ corresponding escaping-root direction.
 
 \subsection{Fractional empirical balance}
 
-For an intercept-only fit, let
-\(e_i=(y_i-a)(y_i-b)\), choose
-\(s_i\in\partial\rho_c(e_i)\), and put \(q_i=c-s_i\).
+An intercept-only endpoint fit uses one pair \((a,b)\) for all observations,
+unlike the covariate-dependent endpoint functions considered in the chapter.
+For the unpenalized empirical MTI criterion, let
+\(e_i=(y_i-a)(y_i-b)\). Its check-loss subdifferential is
+\[
+\partial\rho_c(e_i)=
+\begin{cases}
+\{c-1\},&e_i<0,\\
+[c-1,c],&e_i=0,\\
+\{c\},&e_i>0.
+\end{cases}
+\]
+Choose \(s_i\in\partial\rho_c(e_i)\) jointly so that the two endpoint
+subgradient equations hold, and define \(q_i=c-s_i\). The \(q_i\) are
+fractional membership allocations: \(q_i=1\) strictly inside the fitted
+interval, \(q_i=0\) strictly outside, and \(q_i\in[0,1]\) only when an
+observation equals a fitted root.
 
 \begin{theorem}[Exact fractional empirical balance]
 \label{rqr2026:thm:supp-fractional-balance}
@@ -211,9 +250,14 @@ breaking ties among MPI intervals.
 \section{Profile computation and content checking}
 \label{app:mti-profile-computation}
 
-For fitted content \(q\), tilt \(\delta\), learning rate
-\(\omega_{\mathrm R}\), and independent zero-mean Gaussian root priors with
-precision \(\lambda>0\), write
+For fitted content \(q\), tilt \(\delta\), and learning rate
+\(\omega_{\mathrm R}\), the intercept-only calculation uses the independent
+root priors
+\[
+a,b\stackrel{\mathrm{ind}}{\sim}\Normal(0,\lambda^{-1}),
+\qquad \lambda>0.
+\]
+Its negative log generalized posterior, up to an additive constant, is
 \[
 J(a,b)=\omega_{\mathrm R}\sum_i
 [\rho_q\{(y_i-a)(y_i-b)\}-q\delta(a+b-2y_i)]
@@ -226,7 +270,8 @@ Set \(m=(a+b)/2\), \(t=(b-a)^2/4\), and
 \label{rqr2026:prop:supp-convex-intercept-profile}
 Suppose \(0<s<n\), and let
 \(W_s=\{w\in[0,1]^n:\sum_iw_i=s\}\). For fixed \(m\), a minimizing
-\(t\ge0\) is an empirical \(s/n\) quantile of \((y_i-m)^2\). Moreover,
+\(t\ge0\) is an empirical \(s/n\) quantile of the observed squared distances
+\((y_i-m)^2\), \(i=1,\ldots,n\). Moreover,
 \begin{align*}
 \min_{t\ge0}J(m,t)
 &=2\lambda m^2+\max_{w\in W_s}\{A(w)+B(w)m\},\\
@@ -267,32 +312,59 @@ scale. The resulting survival probability is a posterior content statement
 under this response-distribution model, not a distribution-free tolerance
 guarantee.
 
-\section{Calibration and feasibility}
+\section{Calibration and sample-range reference}
 \label{app:mti-calibration}
 
-The calibration study uses the nine feasible \((n,c)\) cells reported in
-Chapter~\ref{ch:research-d} and a panel of eight centered and scaled reference
-laws: Gaussian, Student \(t_3\), exponential, asymmetric Laplace, two-piece
-Normal, Beta, Gamma, and log-normal. Independent development samples define a
-finite cutoff menu. Each cutoff is assessed on 24,000 new samples from every
-law. The selected cutoff is the smallest one that returns every interval and
-whose simultaneous one-sided exact binomial lower bound for content attainment
-is at least 0.95 for every law.
+The initial content menu adds the offsets
+\[
+\mathcal O_q=\{-.04,-.02,-.01,-.005,-.0025,-.001,0,.001,.0025,.005,.01\}
+\]
+to the scan-reference fraction, retains values above \(c+10^{-4}\), and
+truncates at 0.9999. When the reference is at least 0.990 or uses the full
+sample range, it also includes
+\[
+\begin{split}
+\mathcal B_q=\{&.995,.996,.9965,.997,.99725,.9975,.998,\\
+&.9985,.999,.99925,.9995,.99975,.9999\}.
+\end{split}
+\]
+The effective-mass rule in Chapter~\ref{ch:research-d} then
+adds one midpoint for each missing rank interval. The tilt menu includes zero,
+the fractional shortest-window offset, and seven equally spaced values over
+the empirical admissible range.
 
-Seven cells pass the initial assessment. A prespecified follow-up uses fresh
-development and assessment samples for \((50,.90)\) and \((100,.95)\), while
-retaining the other seven cutoffs. Half of the Monte Carlo error probability
-0.05 is allocated to each stage; a union bound covers the finite set of cells,
-laws, and assessed cutoffs.
+For each of the nine \((n,c)\) settings and eight laws in
+Chapter~\ref{ch:research-d}, 32 independent development samples per law define
+an initial menu: 25 empirical quantiles of candidate content probabilities and
+the requested confidence, for 26 cutoffs. An independent assessment then uses
+\(R=24{,}000\) samples per law and cutoff. If \(S\) runs both produce an
+interval and attain content \(c\), the one-sided exact binomial lower bound is
+\[
+L_{\eta}(S,R)=
+\begin{cases}
+0,&S=0,\\
+\operatorname{Beta}^{-1}(\eta;S,R-S+1),&S>0.
+\end{cases}
+\]
+A cutoff is accepted only if all \(R\) intervals are produced and
+\(L_\eta(S,R)\ge0.95\) for every law; the smallest accepted cutoff is retained.
 
-\input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}
+The initial allocation is \(\eta=0.025/(9\cdot8\cdot26)\). Seven settings
+pass. A prespecified follow-up uses fresh development and assessment samples
+for \((n,c)=(50,0.90)\) and \((100,0.95)\), with 105 cutoffs per setting; the
+other seven cutoffs remain unchanged. Its allocation is
+\(\eta=0.025/(2\cdot8\cdot105)\). Splitting the total error probability 0.05
+between stages and applying the union bound over settings, laws, and assessed
+cutoffs gives the simultaneous calibration statement.
 
 The cutoff is fixed before 1,000 independent validation samples are generated
-for every law and cell. Of the 72 simultaneous validation intervals, 38 have
+for every law and setting. Of the 72 simultaneous validation intervals, 38 have
 lower bounds above 0.95, 34 include 0.95, and none has an upper bound below
 0.95. The smallest point estimate is 951/1000. These results validate the
 prespecified finite panel empirically; they do not establish a
 distribution-free MTI tolerance theorem.
+
+\input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}
 
 For a sample-bounded two-sided order-statistic interval, the full-range
 feasibility probability is
@@ -300,10 +372,10 @@ feasibility probability is
 \Pr_F^n\{F(Y_{(n)})-F(Y_{(1)})\ge c\}
 =1-n(1-c)c^{n-1}-c^n.
 \]
-The reported design excludes cells that cannot support the requested content
+The reported design excludes settings that cannot support the requested content
 and 0.95 tolerance confidence under this reference calculation.
 
-\section{Proposed regression and dynamic endpoint computation}
+\section{Proposed endpoint extensions}
 \label{app:mti-extensions}
 
 For raw endpoint functions \(\eta_{1i}\) and \(\eta_{2i}\), put
