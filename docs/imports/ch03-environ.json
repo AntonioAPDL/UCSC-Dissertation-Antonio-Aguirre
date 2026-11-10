@@ -90,8 +90,8 @@
         "source_path": "tables/compact_publication/main_calibration.tex",
         "destination": "tables/ch03-environ/corrected3/main_calibration.tex",
         "source_sha256": "104f62fbed21cd05724a87d7d1b73943a66469d3df8b0ded001e2d5f9da95838",
-        "destination_sha256": "381219a3d81075e37c11332fdfefe5b0d0e5694f3d9a4f2e0b176c1b26696aff",
-        "handling": "layout-normalized dissertation projection; values, labels, caption, and notes unchanged"
+        "destination_sha256": "7801e0506b1632c998463189802f4909436cb91fc8f186c14424990756df5b38",
+        "handling": "dissertation table projection; source counts and scores unchanged; exact count percentages and criterion-aligned emphasis added"
       },
       {
         "source_path": "tables/compact_publication/si_origin_crps.tex",

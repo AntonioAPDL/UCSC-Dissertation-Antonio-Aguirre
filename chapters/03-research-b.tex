@@ -95,10 +95,12 @@ Regressions on Independent Slopes Model (PRISM) Climate Group
 \citep{env-prism}, soil moisture from ECMWF ERA5-Land
 \citep{env-ecmwf,env-munozsabater2021era5land}, and broader climate
 information. Historical precipitation and soil moisture are extracted at the
-gauge location; forecast-window paths include Global Ensemble Forecast System
-precipitation and shallow soil-water forecasts. ERA5-Land supplies a
-reanalysis-based land-state covariate, while USGS discharge supplies the
-verification target.
+gauge location. At each origin, one supplied deterministic covariate path
+provides Global Ensemble Forecast System precipitation and shallow soil-water
+forecasts over the forecast window. The analysis conditions on that path and
+does not propagate uncertainty in these covariates. ERA5-Land supplies the
+historical land-state covariate, while USGS discharge observed after the origin
+is used only for verification.
 
 Monthly NOAA Physical Sciences Laboratory climate-index series
 \citep{env-noaa_climate_indices} are interpolated to daily resolution and
@@ -198,12 +200,17 @@ y_T^{j,i}(k)
 \end{align}
 \endgroup
 
-The transition $\mathbf G_t$ and covariances
-$\mathbf W_t^\theta,\mathbf W_t^{\delta^j}$ are $p\times p$,
-$\mathbf W_t^\psi$ is $m\times m$, and $w_t^\zeta>0$ is scalar. The
-persistence parameter $\lambda$ and $\mathbf x_t'\boldsymbol\psi_{t-1}$
-govern the transfer update; $\mathbf x_{T+k}$ is the supplied lead-$k$
-covariate vector.
+The first three observation equations link the gauge, retrospective products,
+and issued ensemble members to one shared river-flow quantile. A
+source-specific discrepancy shifts each external product relative to the gauge.
+The remaining equations evolve the common river-flow state, the product
+discrepancies, and the transfer contribution. The transition $\mathbf G_t$ and
+covariances $\mathbf W_t^\theta,\mathbf W_t^{\delta^j}$ are $p\times p$,
+$\mathbf W_t^\psi$ is $m\times m$, and $w_t^\zeta>0$ is scalar. The persistence
+parameter $\lambda$ controls carryover in the transfer state, while
+$\mathbf x_t'\boldsymbol\psi_{t-1}$ supplies the current covariate adjustment;
+$\mathbf x_{T+k}$ is the deterministic lead-$k$ covariate vector described in
+Section~\ref{env:sec:data}.
 
 Historical channels comprise the gauge and retrospective products; future
 channels comprise available forecast members. Shared states induce dependence
@@ -265,11 +272,13 @@ jointly. For the full record, a 34-dimensional state, and seven quantile
 models, a full-data Markov chain Monte Carlo (MCMC) analysis is expected to
 require several weeks because it repeatedly samples latent trajectories,
 observation-specific augmentation variables, and nonconjugate parameters.
-This is an estimate, not a measured MCMC comparison. Parallel VB computation
-with \texttt{exdqlm} gives a representative combined fitting and forecasting
-time of approximately two hours on the stated server configuration. A
-matched full-model MCMC comparison has not been performed, so the predictive
-assessments do not quantify variational posterior approximation error.
+This duration is an implementation-based estimate rather than a measured
+comparison. Parallel VB computation with \texttt{exdqlm} gives a representative
+combined fitting and forecasting time of approximately two hours on the stated
+server configuration. A matched full-model MCMC analysis remains future work;
+it is needed to assess how the variational approximation affects posterior
+uncertainty and whether it contributes to the observed predictive
+undercoverage.
 
 \subsection{Predictive synthesis across quantiles}
 \label{env:subsec:quantilesynthesis}
@@ -316,10 +325,12 @@ interpolation, and empirical-quantile conventions.
 \label{env:subsec:specification}
 
 The shared state and each source discrepancy contain a local level and three
-two-dimensional rotations, so $p=7$. Their periods are approximately 363.59,
-181.79, and 2474.87 days. The first two describe within-year variation; the
-slower rotation is an exploratory representation of multi-year variation
-without an assigned physical mechanism. The $m=12$ transfer covariates are
+two-dimensional rotations, so $p=7$. Exploratory spectral analysis of the
+daily series identified dominant periods of approximately 363.59, 181.79, and
+2474.87 days. The annual and semiannual rotations represent the main
+within-year variation. The slower, approximately 6.78-year rotation retains a
+prominent low-frequency feature as an exploratory multi-year component; no
+specific physical mechanism is assigned to it. The $m=12$ transfer covariates are
 precipitation, soil moisture, the first climate score, squared precipitation
 and soil moisture, their interaction, and separate one-, two-, and three-day
 precipitation and soil-moisture lags. With two external families,
@@ -341,11 +352,14 @@ origins. The representative forecast-covariance prior uses $\epsilon=c=1$.
 Five origins span low-flow conditions and winter high-flow episodes: January
 23, November 12, and December 21, 2021, and May 11 and December 25, 2022.
 These separated cases avoid repeatedly scoring overlapping windows from one
-episode, but they do not form a continuous daily hindcast. The fitting window
-contains gauge and retrospective observations through $T$. Future inference
-uses issued external members and supplied covariate paths; later USGS
-measurements provide verification. Comparisons use 28 leads and the common
-eight-day horizon, with channels entering only while available.
+episode, but they do not form a continuous daily hindcast. Repeating seven
+long-record dynamic quantile fits at each origin is computationally demanding,
+which limited the retrospective evaluation to these five scientifically
+distinct cases. The fitting window contains gauge and retrospective
+observations through $T$. Future inference uses issued external members and one
+supplied deterministic covariate path at each origin; later USGS measurements
+provide verification. Comparisons use 28 leads and the common eight-day
+horizon, with channels entering only while available.
 
 Nine Bayesian variants combine likelihoods N (Gaussian), AL, or exAL with
 configurations U-T1, M-T0, or M-T1. U denotes gauge-only observations and M
@@ -476,9 +490,10 @@ the ordering correction while synthesis is a separate predictive choice.
 
 The exAL-M-T1 central 95\% interval covers 123/140 cases (87.9\%) over 28
 days and 29/40 (72.5\%) over eight days (Table~\ref{tab:no_refit_calibration}).
-AL-M-T1 intervals are wider, cover 132/140 and 35/40 cases, and have smaller
-mean interval scores. Favorable mean CRPS for exAL-M-T1 therefore coexists
-with undercoverage, especially at the two December eight-day origins.
+AL-M-T1 intervals are wider, cover 132/140 cases (94.3\%) and 35/40 cases
+(87.5\%), and have smaller mean interval scores. Favorable mean CRPS for
+exAL-M-T1 therefore coexists with undercoverage, especially at the two
+December eight-day origins.
 
 \input{tables/ch03-environ/corrected3/main_calibration.tex}
 
@@ -540,12 +555,13 @@ eight-day origins, and AL-M-T1 has smaller pooled upper-quantile losses and
 better interval calibration. The evidence therefore favors the fuller model
 for the principal 28-day target while identifying material qualifications.
 
-The analysis depends on aligned external products and supplied covariate
-paths. The likelihood assumes conditionally independent member residuals and
-shares source scales across leads. The five origins do not provide a dense
-hindcast, and predictive performance does not validate the variational
-posterior approximation. A controlled study comparing VB and MCMC under a
-matched, computationally manageable model would separate parameter accuracy,
-predictive agreement, and interval coverage. Further work could propagate
-transfer-input uncertainty, model dependent quantiles jointly, enrich the
-discrepancy structure, and extend the analysis to multiple gauges.
+The analysis depends on aligned external products and one deterministic
+precipitation and soil-water path at each origin; uncertainty in that path is
+not propagated. The likelihood assumes conditionally independent member
+residuals and shares source scales across leads. The five-origin design gives
+comparisons across distinct flow regimes but not a dense hindcast. A controlled
+VB--MCMC study under a matched, computationally manageable model would assess
+posterior approximation error separately from predictive performance.
+Further work could propagate transfer-input uncertainty, model dependent
+quantiles jointly, enrich the discrepancy structure, and extend the analysis
+to multiple gauges and additional origins.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-09",
+  "recorded_at": "2026-11-10",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -82,7 +82,7 @@
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "9d0f0c2ce997f63a2e6f01d18fe8838124302d00d73af4942af2a3d4cde33565",
+      "current_sha256": "983361e11c3eb9e872e759d1345d374a369eb7bfe3b9777e2cf8a7244a43de47",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -96,7 +96,8 @@
         "REV-ADVISOR-HYDROLOGY-20261109",
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-FINAL-ACADEMIC-STYLE-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {
@@ -1010,6 +1011,25 @@
       "summary": "Applies a bounded post-Bruno polish by correcting reader-facing chapter references, presenting the hydrology component model at body type size, replacing generic transitions with the relevant statistical comparison, improving appendix orientation, and resolving minor grammar and heading defects without changing results or contribution boundaries.",
       "evidence": "docs/post-bruno-final-polish-20261109.md; docs/advisor-comments-ledger-20261109.md; docs/bruno-revision-response-matrix-20261109.json; academic-writing profile b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513",
       "validation": "Revision-ledger and fixed-source checks, structural-token comparison, clean 184-page TeX build, log and PDF diagnostics, extracted-text terminology and duplication scans, and rendered inspection of every affected page required before merge."
+    },
+    {
+      "id": "REV-AUTHOR-COMMENTS-20261110",
+      "date": "2026-11-10",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/d-qdesn-technical.tex",
+        "tables/ch03-environ/corrected3/main_calibration.tex"
+      ],
+      "summary": "Implements the 22 author comments by clarifying the dissertation's distributional targets, documenting the candidate's exdqlm contribution, revising hydrology covariate and seasonal descriptions, sharpening the Q--DESN crossing and PriceFM interpretations, normalizing MTI exposition, and reconciling the introduction, synthesis, and abstract.",
+      "evidence": "docs/author-comments-revision-plan-20261110.md; docs/author-comments-response-matrix-20261110.json; fixed source commits and style profile recorded in docs/author-comments-preedit-baseline-20261110.json",
+      "validation": "Author and Bruno response matrices, fixed-source and import hashes, active dependency graph, clean TeX build, citation and reference diagnostics, font and page checks, extracted-text terminology scans, and rendered inspection of every affected page required before release."
     }
   ]
 }
