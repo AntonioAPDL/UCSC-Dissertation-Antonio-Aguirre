@@ -1,5 +1,38 @@
 # Validation record
 
+## 2026-11-09 post-Bruno final polish release
+
+The bounded pass recorded in `docs/post-bruno-final-polish-20261109.md` was
+validated from manuscript commit
+`d5f634aa0abff98f59a5ed920057ff37d752365e`. The release tier passed all 19
+tests and rechecked nine research sources, 31 claim-evidence records, 120
+immutable source blobs, 108 cited keys, 193 active labels, six migration
+records, and 15 active visual records. The revision ledger and appendix
+essentiality map agree with the edited derivatives.
+
+The accepted ignored artifact is
+`build/release-20261110T010745Z/main.pdf`: 184 US-Letter pages, 4,143,945
+bytes, PDF 1.7, SHA-256
+`5cae23dfc0b9a9072d5ddc4089d6fe8694e7deab0b39a373b1352e899a75ec38`.
+Its metadata gives the approved dissertation title, Jose Antonio Aguirre Perez
+de Leon as author, and Statistical Science as subject. The PDF is searchable,
+unencrypted, and untagged. All 32 fonts are embedded, with no Type 3 font.
+
+The final log contains 12 underfull and zero overfull boxes and no unresolved
+citations or references, duplicate labels, rerun request, missing file, or
+fatal TeX error. Structural-token comparison found no citation, label, input,
+or figure change; the only reference-token changes correct the compiled chapter
+order. No empirical result or parameter value changed. Extracted-text scans
+found no drafting marker, internal revision vocabulary, generic promotional
+claim, or artificial-intelligence framing outside the approved disclosure.
+
+Physical pages 10, 27, 52, 69, 73, 83, 85, 86, 106, 118, 126, 138, 139, and
+163 were rendered from the release and matched the inspected build pixel for
+pixel. Direct review found no clipping, collision, unreadable display, abnormal
+margin, or stranded heading. This validates the local source and artifact; it
+does not represent committee approval, an accessibility-conformant filing PDF,
+an independent Overleaf compilation, or a push or merge to `main`.
+
 ## 2026-11-09 Bruno detailed-review implementation release
 
 This release implements the 116-item response specification in

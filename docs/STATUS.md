@@ -1,5 +1,34 @@
 # Project status
 
+## 2026-11-09 post-Bruno final polish release validated
+
+The interrupted final pass has been reconstructed and completed on
+`editorial/bruno-revision-intake-20261109`. Manuscript commit
+`d5f634aa0abff98f59a5ed920057ff37d752365e` corrects two reader-facing chapter
+references, presents the hydrology component equations at body type size,
+replaces a small set of generic transitions with direct statistical wording,
+clarifies Appendix A's role, and removes the visible hyphenation in the Chapter
+5 extensions heading. It does not change results, source authorities,
+contribution boundaries, citations, labels, or assets.
+
+The advisor ledger now agrees with the detailed response matrix. Of Bruno's
+116 normalized actions, 83 are implemented and validated, 32 were already
+satisfied and revalidated, and `B5-058` remains deferred because the possible
+“Tony et al.” source cannot be identified. The Chapter 4 review boundary
+remains Section 4.4; later sections are not represented as advisor-reviewed.
+
+Fast and release validation pass. The accepted ignored artifact is
+`build/release-20261110T010745Z/main.pdf`: 184 US-Letter pages, 4,143,945
+bytes, PDF 1.7, SHA-256
+`5cae23dfc0b9a9072d5ddc4089d6fe8694e7deab0b39a373b1352e899a75ec38`.
+All 32 fonts are embedded and no Type 3 font occurs. The final log has 12
+underfull and zero overfull boxes and no unresolved citation, reference,
+duplicate-label, rerun, missing-file, or fatal diagnostic. Extracted-text
+style scans are clean, and all 14 changed pages were rendered and inspected.
+
+This remains a local checkpoint. Nothing from this pass was pushed, merged
+into `main`, or synchronized with Overleaf.
+
 ## 2026-11-09 Bruno revision implemented and locally release-validated
 
 The detailed Bruno Sans\'o revision is complete on

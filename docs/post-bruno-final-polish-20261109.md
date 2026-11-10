@@ -90,4 +90,18 @@ The final record must include:
 - extracted-text terminology and duplication scans; and
 - rendered inspection of every changed page.
 
-Final release evidence is recorded here after the release validator completes.
+Fast and release validation passed against the immutable audit root. The
+accepted artifact is `build/release-20261110T010745Z/main.pdf`: 184 US-Letter
+pages, 4,143,945 bytes, PDF 1.7, SHA-256
+`5cae23dfc0b9a9072d5ddc4089d6fe8694e7deab0b39a373b1352e899a75ec38`.
+All 32 fonts are embedded and no Type 3 font occurs. The final log has 12
+underfull and zero overfull boxes, with no unresolved reference, citation,
+duplicate-label, rerun, or fatal diagnostic. Extracted text contains none of
+the screened internal, formulaic, or promotional language. The 14 changed
+pages were rendered from the release artifact, matched the inspected build
+pixel for pixel, and showed no clipping, collision, unreadable display, or
+stranded heading. The PDF remains searchable and untagged; accessibility
+remains a filing-stage task rather than a defect in this committee copy.
+
+Manuscript commit `d5f634aa0abff98f59a5ed920057ff37d752365e` contains the
+bounded polish. No push, merge, or Overleaf synchronization was performed.
