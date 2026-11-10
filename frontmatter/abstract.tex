@@ -1,48 +1,45 @@
 \begin{abstract}
-This dissertation develops statistical methods and computational tools for
-conditional quantiles and fixed-content intervals in settings with temporal
-dependence, nonlinear structure, and heterogeneous information sources. The
-four projects distinguish the quantity being estimated from the uncertainty
-statement and empirical evidence used to support it.
+This dissertation develops methods and computation for conditional quantiles
+and fixed-content intervals under temporal dependence, nonlinear structure,
+and heterogeneous information. Each requires target-specific models,
+uncertainty analysis, and validation.
 
-The first project develops source-aware correction and synthesis of river-flow
-forecasts. A shared latent quantile process is combined with source-specific
-discrepancies, transfer covariates, and predictive synthesis. In a retrospective
-five-origin San Lorenzo River study, the selected multivariate
-extended-asymmetric-Laplace model gives the lowest 28-day continuous ranked
-probability score among the evaluated Bayesian variants at every origin. A
-separate eight-day comparison shows that relative performance varies by origin,
-horizon, and comparator.
+The first project combines a shared latent quantile process, source-specific
+discrepancies, extended asymmetric Laplace (exAL) variational updates, and
+monotone synthesis for river-flow forecasts. Across five retrospective San
+Lorenzo River origins, the model has the lowest 28-day continuous ranked
+probability score among the Bayesian variants at every origin; a common
+eight-day comparison is more heterogeneous. Each fit uses one deterministic
+precipitation and soil-water forecast path whose uncertainty is not propagated.
 
-The second project develops the \pkg{exdqlm} \proglang{R} package for dynamic and
-static Bayesian quantile analysis. It connects model specification, Markov chain
-Monte Carlo and variational inference, diagnostics, forecasting, predictive
-synthesis, and shrinkage regression in a common fitted-object interface. The
-examples establish the scope of the software and show that computational speed,
-posterior uncertainty, and held-out accuracy need not rank methods in the same
-order.
+The second project substantially restructures and extends the \pkg{exdqlm}
+\proglang{R} package. It improves posterior updates, compiles intensive
+operations, corrects filtering and smoothing, and adds forecasting,
+diagnostics, synthesis, and static regularized quantile regression. In a
+sparse-regression experiment, Laplace--Delta variational Bayes requires less
+computing time, whereas Markov chain Monte Carlo has lower held-out quantile
+loss at all three levels; the two metrics assess different properties.
 
-The third project combines fixed deep echo-state-network features with Bayesian
-single-level and multiquantile regression. The multiquantile formulation reduces
-crossing but does not improve forecast scores uniformly. In the retrospective
-applications, Q--DESN under the asymmetric Laplace model gives the lowest grid
-score at one GloFAS origin, and region-specific model selection lowers mean
-average quantile loss by 5.0\% relative to reproduced PriceFM forecasts over 114
-region--fold cases. These comparisons are conditional on the recorded designs
-and information sets.
+The third project combines fixed deep echo-state features with Bayesian
+quantile regression. The quantile deep echo state network (Q--DESN) fits levels
+separately; its multiquantile extension (MQ--DESN) shrinks adjacent coefficient
+differences. Across eight simulation mechanisms, sharing reduces crossing rates
+from 5.488\% to 0.021\% under the asymmetric Laplace model and from 0.606\% to
+0\% under exAL, while separate fits have the lowest mean oracle score in six
+mechanisms, an empirical tradeoff between ordering and quantile recovery.
+For electricity prices, selected DESN regressions have mean average quantile
+loss 6.687 versus 7.039 for reproduced PriceFM forecasts over 114 region--fold
+cases and a lower mean in all three folds. These regressions use fixed recurrent
+features, whereas PriceFM was trained end to end; computing time was not
+compared.
 
-The fourth project builds on an existing residual-product criterion by deriving
-its retained-mean characterization and embedding the resulting mean-preserving
-fixed-content interval in a family indexed by retained-mean tilt. This geometry
-motivates a profiled tolerance procedure that searches over fitted content and
-placement and uses a direct posterior content check. Independent simulations provide
-repeated-sampling evidence on eight distributions, while a pharmaceutical batch
-analysis illustrates endpoint placement and data limitations. Regression and
-dynamic endpoint formulations are stated as proposed extensions.
+The fourth project characterizes the retained-mean target of a residual-product
+criterion and embeds its mean-preserving interval in a tilt-indexed
+fixed-content family. A profiled procedure searches over content and placement
+and applies a posterior content check. Simulations provide repeated-sampling
+evidence over eight distributions; a pharmaceutical analysis motivates
+prospective evaluation with independent batches and fixed rules.
 
-Across the four projects, similar conditional-Gaussian calculations support
-different inferential claims. Likelihood-based quantile inference,
-predictive synthesis, loss-based generalized updating, and tolerance calibration
-must therefore be interpreted according to their respective targets and
-evaluation designs.
+Together, the projects match target-specific methods and computation to
+predictive, posterior, or repeated-sampling validation.
 \end{abstract}

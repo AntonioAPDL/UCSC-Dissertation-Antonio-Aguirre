@@ -28,12 +28,13 @@
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "c79c904fd080e204c652e275b8dfa0706b445b929b8eb26a1924693181dafeb8",
+      "current_sha256": "53116037fccdeb2505edfdd8be7eb7e5ba4528796d44b4a82f0cd24d7f08deb6",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
-        "REV-POST-BRUNO-FINAL-POLISH-20261109"
+        "REV-POST-BRUNO-FINAL-POLISH-20261109",
+        "REV-AUTHOR-COMMENTS-20261110"
       ]
     },
     {
