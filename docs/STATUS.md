@@ -1,5 +1,41 @@
 # Project status
 
+## 2026-11-10 final voice, exdqlm, and MTI revision release-validated
+
+The approved final revision is implemented at manuscript commit `c2e4855`.
+Authorial statements now use first-person plural, while statistical objects are
+the grammatical subject where no authorial subject is needed. Chapter 3 and
+the connected abstract, introduction, acknowledgments, synthesis, source
+manifest, and claim ledger distinguish the original `exdqlm` 0.1.1 package and
+inherited exAL/exDQLM methods from our later package contribution. Chapter 5
+and Appendix E now retain four formal results: three population-identification
+results in the chapter and the convex midpoint profile used for computation in
+the appendix. Secondary results were integrated as derivations or omitted when
+they were not needed for the dissertation argument.
+
+The response matrix is fully closed. A permanent validator rejects
+first-person singular prose, the targeted generic phrases, reintroduction of
+the removed MTI results, or loss of the original/current package snapshot
+boundary. Fast, chapter, and release gates pass all 26 tests, all advisor and
+author response controls, the research and editorial audits, the revision and
+appendix ledgers, and 120 immutable source-blob checks.
+
+The accepted ignored artifact is
+`build/release-20261111T021858Z/main.pdf`: 184 US-Letter pages, 4,139,664
+bytes, PDF 1.7, SHA-256
+`82ec659b5f1378cc4646b3763c14f53cc1f03e720e4f0b1865377d8a3d11846d`.
+The log has ten underfull and zero overfull boxes and no blocking diagnostic.
+All 32 fonts are embedded and no Type 3 font occurs. The abstract,
+acknowledgments, software-chapter opening, MTI identification theorem,
+synthesis, and Appendix E profile pages were rendered and inspected without
+layout defects.
+
+This entry records the validated local revision before GitHub synchronization.
+The PDF remains untagged; material-specific reuse review, signatures,
+institutional approval, and accessibility remediation remain filing-stage
+tasks. Overleaf still requires a deliberate pull from GitHub and an independent
+compile.
+
 ## 2026-11-10 final author-style revision release-validated
 
 The author-directed terminology and readability revision is complete at

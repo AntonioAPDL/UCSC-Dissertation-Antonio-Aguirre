@@ -563,3 +563,19 @@ extracted text passed the targeted style and terminology scans, and nine
 representative pages were rendered and inspected. The dissertation retains
 only the candidate-approved bounded disclosure of AI-assisted code debugging
 and editorial checks.
+
+2026-11-10: At the author's direction, AI assistance implemented the final
+first-person-plural, `exdqlm` attribution, MTI-theory, and statistical-prose
+revision. The original package comparison was fixed at version 0.1.1 and kept
+separate from inherited exAL/exDQLM methods and the candidate-confirmed later
+package contribution. Chapter 5 and Appendix E were reduced from nine formal
+results to four results required for population identification and the fitted
+calculation; supporting identities remain as prose or derivations where they
+are used. Source, claim, revision, and appendix records were reconciled, and a
+new validator now enforces authorial voice, the retained/removed result set,
+targeted prose decisions, and the original/current package snapshots. The
+26-test release gate rechecked 120 immutable source blobs and produced a clean
+184-page PDF with embedded fonts, no blocking diagnostic or overfull box, and
+successful extracted-text and rendered-page review. No new research result,
+simulation, model fit, source-repository working tree, or private material was
+changed.

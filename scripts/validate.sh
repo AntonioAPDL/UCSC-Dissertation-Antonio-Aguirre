@@ -36,6 +36,7 @@ python3.11 scripts/validate_research_audit.py
 python3.11 scripts/validate_editorial_audit.py
 python3.11 scripts/initialize_bruno_revision.py validate
 python3.11 scripts/validate_author_comments_revision.py
+python3.11 scripts/validate_final_voice_style.py
 validator=(python3.11 scripts/validate_manuscript_imports.py)
 if [[ -n "$audit_root" ]]; then
   validator+=(--audit-root "$audit_root")

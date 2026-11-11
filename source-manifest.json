@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-11-09",
-  "status": "SCIENTIFIC_INTEGRATION_IN_PROGRESS_REUSE_REVIEW_PENDING",
+  "recorded_at": "2026-11-10",
+  "status": "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
     "author_architecture_decision": "COMPLETE",
     "manuscript_conversion": "COMPLETE",
-    "scientific_review": "IN_PROGRESS",
+    "scientific_review": "COMPLETE",
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The 2026-11-09 advisor revision uses Corrected-3 for hydrology, the current Q--DESN authority, the current exdqlm article, and the calibrated profiled-MTI source. Bruno Sanso's later detailed annotation has now been received and frozen locally: it covers Chapter 4 only through Section 4.4 and also comments on Chapter 5 and Appendix E. Its 116 normalized actions are being implemented on a dedicated editorial branch against fixed Q--DESN, RQR-GIBBS, and MTI-EXTENSIONS commits. The previously released 183-page artifact remains the comparison baseline until the new revision passes its own validation. No current-revision push, merge, Overleaf synchronization, or institutional approval is implied. Material-specific reuse permission, any finer task-level contribution allocation, signatures, and tagged-PDF accessibility validation remain open."
+    "state_note": "The advisor, author-comment, final voice, exdqlm attribution, and MTI curation revisions are implemented and locally release-validated against fixed research authorities. The active dissertation uses first-person plural consistently, distinguishes original exdqlm 0.1.1 capabilities and inherited methods from the later package contribution, and retains only the MTI results required for population identification and computation. The current revision awaits GitHub synchronization; no Overleaf pull, institutional approval, or accessibility-conformant filing is implied. Material-specific reuse permission, remaining fine-grained contribution confirmations, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -25,6 +25,20 @@
     "manuscript_source_records_imported": 9,
     "total_import_records": 102,
     "full_declared_workflows_reproduced": 0,
+    "final_voice_exdqlm_mti_revision": {
+      "plan": "docs/final-voice-exdqlm-mti-polish-plan-20261110.md",
+      "response_matrix": "docs/final-voice-exdqlm-mti-response-matrix-20261110.json",
+      "manuscript_commit": "c2e4855",
+      "state": "LOCAL_RELEASE_VALIDATED_PENDING_GITHUB_SYNC",
+      "release": {
+        "path": "build/release-20261111T021858Z/main.pdf",
+        "sha256": "82ec659b5f1378cc4646b3763c14f53cc1f03e720e4f0b1865377d8a3d11846d",
+        "pages": 184,
+        "bytes": 4139664,
+        "pdf_version": "1.7",
+        "tracked": false
+      }
+    },
     "validation_report": "docs/research-audit-validation.md",
     "conversion_manifests": "docs/imports/*.json",
     "conversion_importer": "scripts/import_manuscripts.py",

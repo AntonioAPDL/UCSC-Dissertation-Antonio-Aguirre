@@ -90,3 +90,16 @@ and diff inspection. The final gate is a clean release build with fixed-source
 blob verification, log/font/geometry checks, extracted-PDF voice and phrase
 scans, and rendered inspection of every affected page. Current ledgers and
 status records are reconciled only after the manuscript is final.
+
+## Implementation outcome
+
+Implemented in manuscript commit `c2e4855`. The active manuscript now uses
+first-person plural for authorial responsibility; distinguishes the original
+package, inherited methods, and later `exdqlm` contribution; and retains four
+formal MTI results: three population-identification results in Chapter 5 and
+the convex midpoint profile in Appendix E. The control-bearing release gate
+passed on `build/release-20261111T021858Z/main.pdf` (184 pages; SHA-256
+`82ec659b5f1378cc4646b3763c14f53cc1f03e720e4f0b1865377d8a3d11846d`).
+Final integration identifiers are recorded in `docs/STATUS.md` and
+`docs/VALIDATION.md`; remote synchronization is recorded only after the
+corresponding commit is verified on `origin/main`.

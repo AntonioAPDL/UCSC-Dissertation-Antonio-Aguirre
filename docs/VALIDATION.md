@@ -1,5 +1,42 @@
 # Validation record
 
+## 2026-11-10 final voice, exdqlm, and MTI revision release
+
+Manuscript commit `c2e4855` implements the first-person-plural voice rule, the
+original-versus-later `exdqlm` attribution boundary, the Chapter 5 theory
+curation, and the final contextual prose pass. The response matrix in
+`docs/final-voice-exdqlm-mti-response-matrix-20261110.json` closes all ten
+requirements as `IMPLEMENTED_VALIDATED`.
+
+Release validation passed with
+`bash scripts/validate.sh --tier release --audit-root
+/tmp/dissertation-final-audit-20261110.dZDYIO`. All 26 tests passed together
+with the research-audit, editorial-audit, 116-item Bruno, 22-item
+author-comment, final voice/style, manuscript-import, and structure controls.
+The import validator rechecked 120 immutable source blobs; structure validation
+covered 187 active labels, six migration records, and 15 active visual records.
+
+The accepted ignored artifact is
+`build/release-20261111T021858Z/main.pdf`: 184 US-Letter pages, 4,139,664
+bytes, PDF 1.7, SHA-256
+`82ec659b5f1378cc4646b3763c14f53cc1f03e720e4f0b1865377d8a3d11846d`.
+It is searchable and unencrypted. All 32 fonts are embedded and no Type 3 font
+occurs. The final log contains ten underfull and zero overfull boxes and no
+unresolved citation or reference, duplicate label, rerun request, missing
+file, or fatal TeX error.
+
+Extracted-PDF scans found no first-person singular attribution, targeted
+formulaic phrase, obsolete MTI label, or use of *law* in place of
+*distribution*. Remaining uses of software and computational terminology name
+specific package functions, compiled operations, fitted models, or empirical
+comparisons. Physical pages 9--12, 16, 43--44, 109--110, 133, and 169--170
+were extracted or rendered and inspected; no clipping, collision, malformed
+glyph, unreadable display, or abnormal break was found.
+
+This validates the local source and artifact. It does not represent committee
+approval, an accessibility-conformant filing PDF, an independent Overleaf
+compilation, or material-specific reuse permission.
+
 ## 2026-11-10 final author-style revision release
 
 Manuscript commit `d076051b4ba1e4dee391aad882cb9fb4453352e9` implements the

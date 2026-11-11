@@ -17,44 +17,47 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "84750bc3d94f068043885a231200536c0efc6afcc66404102ff15b3be0e54bd3",
+      "current_sha256": "bde8eb982d402b6e962f53549692bbc7de9c9bde97a97ba07a38cc05d16dc8a8",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-INTRODUCTION-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "283f2a9b5be883896713fc5f8aa9f8ef1f18f7509bbc810bdf364e18509506b3",
+      "current_sha256": "6fd19013ae13f60e14f93a87802320589ab85c7561c0768965e148b26ded32c8",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "25f1152345d55de835edde92ee06041ac0f3d01cdd4c866b6d107bd359724cd7",
+      "current_sha256": "869cd2f052382bc7488794bdc32a17ff2ca4f988b534c3b2cf946379869ab3e7",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "71cbb8cdefe3129e42f617747af9fb60c1aeb964080a2f24c38f9a642e8dbc97",
+      "current_sha256": "787266ef4f073e2b99223eb7129722aed37fc28576153d2d28329eb9ad6794d1",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -62,13 +65,14 @@
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "chapters/02-research-a.tex",
       "baseline_sha256": "99e2bffa766679e7a0ac33af4ed3bae9f7395d896b8069b069bc706ada6f3e34",
-      "current_sha256": "ac3c277e4f7490bee43893961405d9861b7c9a14a95746e1aaf47ba668f3f4db",
+      "current_sha256": "20a5e0ff326487f9deb00b6d3d94b934a96317a62f89ddd5b007fcecedef48a1",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -86,13 +90,14 @@
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "chapters/03-research-b.tex",
       "baseline_sha256": "740e1b2710134fddfeed39bc5b52e4d663f5ef3ef146f49612cc5ac7f39f8fe2",
-      "current_sha256": "2dbb56f644c45dadc30e6b6842216a4f70852e081d1ae1ba88f0f31e4b7547b3",
+      "current_sha256": "b0049742ce7ecb46f6e35d18528cb39650dd79e31a2ba510e5a9575d0ca59c24",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -108,13 +113,14 @@
         "REV-FINAL-ACADEMIC-STYLE-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "chapters/04-research-c.tex",
       "baseline_sha256": "0fd68d096d321bc1d3c1380bc40265355cf5220a8b1a60e3c3df6f5f4e756b2a",
-      "current_sha256": "2063b156ff5b0a602cca1aa06df868f8a844166bba10cbc10d6e49ac7e468534",
+      "current_sha256": "e8b2e0b5d54170859adce9969ace85418af42cf4715a91899c50f7993919adbd",
       "state": "EDITED",
       "revision_ids": [
         "REV-GLOBAL-BIB-20260916",
@@ -134,13 +140,14 @@
         "REV-BRUNO-QDESN-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "c362537eb81f217be23ac9a52a9c3ec333d72ca75493bcc08900ac49277063bb",
+      "current_sha256": "624317a36b128dce07db0b75e32f4194f0de1fc2478610369809d68051067cea",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -157,7 +164,8 @@
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
@@ -183,7 +191,7 @@
     {
       "path": "appendices/b-exdqlm-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
+      "current_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/02-research-a.tex"
@@ -194,13 +202,14 @@
         "REV-FINAL-READER-STATISTICAL-20261027",
         "REV-ESSENTIAL-APPENDICES-20261028",
         "REV-APPENDIX-CURATION-20261107",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
       "path": "appendices/c-hydrology-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
+      "current_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/03-research-b.tex"
@@ -211,7 +220,8 @@
         "REV-APPENDIX-CURATION-20261107",
         "REV-ADVISOR-HYDROLOGY-20261109",
         "REV-ADVISOR-GLOBAL-20261109",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
@@ -237,7 +247,7 @@
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
+      "current_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
       "state": "DERIVED_NEW",
       "derived_from": [
         "chapters/05-research-d.tex"
@@ -249,7 +259,8 @@
         "REV-APPENDIX-CURATION-20261107",
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
-        "REV-FINAL-AUTHOR-STYLE-20261110"
+        "REV-FINAL-AUTHOR-STYLE-20261110",
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
       ]
     },
     {
@@ -1077,6 +1088,26 @@
       "summary": "Implements the final author-directed statistical prose revision: first-person contribution statements, a resource-based account of the five-origin hydrology design, generalized Bayes terminology for MQ--DESN, an explicit comparison with earlier residual and bootstrap quantile methods, a scoped exAL coverage result, and a manuscript-wide replacement of audit-like and formulaic prose. The MTI chapter and Appendix E receive a complete terminology and readability pass while retaining their targets, assumptions, proofs, numerical results, and evidence boundaries.",
       "evidence": "Author instructions of 2026-11-10; Academic_Writing_Style_Profile_v0.2.md, SHA-256 b9483cf55e108f5615c203dfff6c0940b7ecc5c001aaad679507004b70352513; Yan, Zheng, and Kottas technical report UCSC-SOE-24-01; prior advisor and author response records.",
       "validation": "All 20 tests and the revision-ledger, display-ledger, appendix-map, import, research-audit, author-comment, editorial, and structure checks passed; the accepted 186-page release has no blocking TeX diagnostic or overfull box, all fonts are embedded, extracted-text scans are clean, and nine representative pages were rendered and inspected."
+    },
+    {
+      "id": "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+      "date": "2026-11-10",
+      "paths": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/02-research-a.tex",
+        "chapters/03-research-b.tex",
+        "chapters/04-research-c.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/b-exdqlm-technical.tex",
+        "appendices/c-hydrology-technical.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "summary": "Uses first-person plural consistently, distinguishes the original exdqlm 0.1.1 package and inherited methods from the later package contribution, reduces Chapter 5 and Appendix E to the formal results needed for identification and computation, and replaces remaining generic or product-oriented prose with statistical statements.",
+      "evidence": "docs/final-voice-exdqlm-mti-polish-plan-20261110.md; docs/final-voice-exdqlm-mti-response-matrix-20261110.json; source-manifest.json; docs/claim-evidence.json; manuscript commit c2e4855",
+      "validation": "All 24 tests and the fixed-source, revision-ledger, appendix-map, voice/style, import, research-audit, editorial-audit, advisor-response, and structure checks passed. The clean 184-page release has no blocking TeX diagnostic or overfull box, all fonts are embedded, extracted-text scans are clean, and the affected pages were rendered and inspected."
     }
   ]
 }

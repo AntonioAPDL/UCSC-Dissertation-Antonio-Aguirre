@@ -428,15 +428,11 @@
       "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
       "appendices/e-mti-technical.tex::heading::section::proposed-endpoint-extensions::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::mean-tilt-and-profiled-identification::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-profiled-risk-derivative",
-      "appendices/e-mti-technical.tex::label::rqr2026:lem:supp-profile-radius",
       "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-intercept-profile",
-      "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-order",
-      "appendices/e-mti-technical.tex::label::rqr2026:thm:supp-fractional-balance",
       "display::rqr2026:tab:supp-mti-profile-policy"
     ]
   },
@@ -474,7 +470,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
+      "implementation_commit": "c2e4855",
       "final_location": "app:exdqlm-technical"
     },
     {
@@ -486,7 +482,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:exdqlm-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
+      "implementation_commit": "c2e4855",
       "final_location": "app:exdqlm-technical"
     },
     {
@@ -498,7 +494,7 @@
       "action": "RETARGET",
       "target_label": "app:exdqlm-ldvb",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
+      "implementation_commit": "c2e4855",
       "final_location": "app:exdqlm-ldvb"
     },
     {
@@ -510,7 +506,7 @@
       "action": "RETARGET",
       "target_label": "app:exdqlm-posterior",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
+      "implementation_commit": "c2e4855",
       "final_location": "app:exdqlm-posterior"
     },
     {
@@ -522,7 +518,7 @@
       "action": "RETARGET",
       "target_label": "app:exdqlm-synthesis",
       "status": "IMPLEMENTED",
-      "implementation_commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
+      "implementation_commit": "c2e4855",
       "final_location": "app:exdqlm-synthesis"
     },
     {
@@ -534,7 +530,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:hydrology-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "3d3c346",
+      "implementation_commit": "c2e4855",
       "final_location": "app:hydrology-technical"
     },
     {
@@ -546,7 +542,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-mcmc",
       "status": "IMPLEMENTED",
-      "implementation_commit": "3d3c346",
+      "implementation_commit": "c2e4855",
       "final_location": "app:hydrology-mcmc"
     },
     {
@@ -558,7 +554,7 @@
       "action": "RETARGET",
       "target_label": "app:hydrology-vb",
       "status": "IMPLEMENTED",
-      "implementation_commit": "3d3c346",
+      "implementation_commit": "c2e4855",
       "final_location": "app:hydrology-vb"
     },
     {
@@ -570,7 +566,7 @@
       "action": "REPLACE_WITH_BODY_EVIDENCE",
       "target_label": "",
       "status": "IMPLEMENTED",
-      "implementation_commit": "3d3c346",
+      "implementation_commit": "c2e4855",
       "final_location": "body evidence at the former bridge location"
     },
     {
@@ -870,7 +866,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-technical"
     },
     {
@@ -882,7 +878,7 @@
       "action": "RETAIN_CHAPTER_BRIDGE",
       "target_label": "app:mti-technical",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-technical"
     },
     {
@@ -894,7 +890,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-proofs"
     },
     {
@@ -906,7 +902,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-proofs"
     },
     {
@@ -918,7 +914,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-proofs",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-proofs"
     },
     {
@@ -930,7 +926,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -942,7 +938,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-profile-computation",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-profile-computation"
     },
     {
@@ -954,7 +950,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-calibration"
     },
     {
@@ -966,7 +962,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-calibration",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-calibration"
     },
     {
@@ -978,7 +974,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -990,7 +986,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-application-sensitivity",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-application-sensitivity"
     },
     {
@@ -1002,7 +998,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-extensions"
     },
     {
@@ -1014,7 +1010,7 @@
       "action": "RETARGET",
       "target_label": "app:mti-extensions",
       "status": "IMPLEMENTED",
-      "implementation_commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
+      "implementation_commit": "c2e4855",
       "final_location": "app:mti-extensions"
     }
   ],
@@ -1482,9 +1478,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1536,9 +1532,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1589,9 +1585,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1642,9 +1638,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1695,9 +1691,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1748,9 +1744,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1803,9 +1799,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1856,9 +1852,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1910,9 +1906,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -1963,9 +1959,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2016,9 +2012,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2069,9 +2065,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2124,9 +2120,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2179,9 +2175,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2234,9 +2230,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2289,9 +2285,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2344,9 +2340,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2399,9 +2395,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2454,9 +2450,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2509,9 +2505,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2564,9 +2560,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2619,9 +2615,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2674,9 +2670,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2729,9 +2725,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2784,9 +2780,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2839,9 +2835,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2894,9 +2890,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -2949,9 +2945,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3004,9 +3000,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3059,9 +3055,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3114,9 +3110,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3169,9 +3165,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3224,9 +3220,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3279,9 +3275,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3334,9 +3330,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3389,9 +3385,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3444,9 +3440,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3499,9 +3495,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3554,9 +3550,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3609,9 +3605,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3664,9 +3660,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3719,9 +3715,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3774,9 +3770,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c7d8e19da4bd92cdd574fb083714ff2b28b1e885",
-        "final_sha256": "2c44228ded5c625b99b0a50a998ab566d78c9024a0765a1d9d92b55ea9859cf6",
-        "validation": "Appendix curation build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "99544b36d34f709e0731564e85312dfaa3dfce944843e75b1d71cb0d0713824b",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3834,9 +3830,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3888,9 +3884,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3941,9 +3937,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -3994,9 +3990,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -4051,9 +4047,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -4106,9 +4102,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -4161,9 +4157,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -13995,9 +13991,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14050,9 +14046,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14103,9 +14099,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14156,9 +14152,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14209,9 +14205,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14262,9 +14258,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14317,9 +14313,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14370,9 +14366,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14423,9 +14419,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14476,9 +14472,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14525,16 +14521,15 @@
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1",
         "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::mean-tilt-and-profiled-identification::occurrence::1",
         "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14585,9 +14580,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14638,9 +14633,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14691,9 +14686,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14747,9 +14742,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14802,9 +14797,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14858,9 +14853,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14914,9 +14909,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -14967,9 +14962,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15020,9 +15015,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15073,9 +15068,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15126,9 +15121,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15179,9 +15174,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15232,9 +15227,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15285,9 +15280,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15340,9 +15335,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15396,9 +15391,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15451,9 +15446,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15506,9 +15501,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15561,9 +15556,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15616,9 +15611,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15671,9 +15666,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15726,9 +15721,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15781,9 +15776,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15836,9 +15831,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15891,9 +15886,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -15922,7 +15917,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -15946,9 +15941,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -16006,9 +16001,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16042,7 +16037,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16066,9 +16061,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16126,9 +16121,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16186,9 +16181,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16222,7 +16217,7 @@
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
       "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
+      "current_inclusion": "INACTIVE",
       "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
@@ -16246,9 +16241,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16306,9 +16301,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16366,9 +16361,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -16432,9 +16427,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -16491,9 +16486,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "3d3c346",
-        "final_sha256": "130c171f27a94ca7fa4ac6dbfcbabdd1b48f1fc959b9ed26b14550c5a61f402a",
-        "validation": "Corrected-3 hydrology build, structural validation, and rendered-page review"
+        "commit": "c2e4855",
+        "final_sha256": "8aa802272a12ffce5ca1bfba3d853bbf9765834e44116a6ce3a2ff7cff580d0d",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -18894,9 +18889,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -18951,9 +18946,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19008,9 +19003,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19065,9 +19060,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19124,9 +19119,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19181,9 +19176,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19240,9 +19235,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19297,9 +19292,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19354,9 +19349,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19411,9 +19406,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19468,9 +19463,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19525,9 +19520,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19582,9 +19577,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19639,9 +19634,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19698,9 +19693,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19755,9 +19750,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {
@@ -19812,9 +19807,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "d5f634aa0abff98f59a5ed920057ff37d752365e",
-        "final_sha256": "a0d6428f9a1c73d93b74fd34a868ef93e3a6bbf49f53db7f815ea2267e8e647f",
-        "validation": "Fast and release validation passed; clean 184-page build; extracted-text scan and rendered changed-page inspection completed"
+        "commit": "c2e4855",
+        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
+        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
       }
     },
     {

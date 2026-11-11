@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "baseline_commit": "f2074052b256893091c6105615a2515127fe76b1",
+  "status": "IMPLEMENTED_VALIDATED",
+  "items": [
+    {
+      "id": "VOICE-001",
+      "issue": "First-person singular remains in the acknowledgments.",
+      "resolution": "Use first-person plural for authorial responsibility and neutral manuscript-centered syntax for formal author-order facts.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "VOICE-002",
+      "issue": "Authorial voice must remain consistent without beginning every sentence with we.",
+      "resolution": "Use we or our for contributions and choices and use the relevant statistical object as subject elsewhere.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "EXD-001",
+      "issue": "The chapter does not explicitly compare the later package with the original 0.1.1 package.",
+      "resolution": "Add a concise original-versus-current comparison based on the verified package tag, NAMESPACE, DESCRIPTION, NEWS, and current article records.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "EXD-002",
+      "issue": "Package chronology and candidate contribution could be conflated.",
+      "resolution": "State inherited methods, original package capabilities, and candidate-confirmed later contributions separately.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "EXD-003",
+      "issue": "Current documentation tables still name the superseded 1.1.1 article baseline as current.",
+      "resolution": "Preserve immutable import history but reconcile current research-audit, decision, source, and claim records to the 1.1.2 article authority.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "MTI-001",
+      "issue": "Chapter 5 and Appendix E contain more named results than the dissertation argument requires.",
+      "resolution": "Retain the three identification results and the computational profile result; fold, convert, or omit secondary formal results according to the controlling plan.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "MTI-002",
+      "issue": "Some result transitions name the document object rather than the statistical role.",
+      "resolution": "Introduce each retained result through the question it answers and explain its role immediately afterward.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "STYLE-001",
+      "issue": "Localized generic, product-oriented, and self-conscious prose remains.",
+      "resolution": "Replace each flagged phrase with a model component, inferential target, assumption, comparison, metric, or scope statement.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "STYLE-002",
+      "issue": "Technically justified computational and domain terminology must not be removed mechanically.",
+      "resolution": "Review every candidate in context and retain terms that identify actual software, computation, data partitions, forecasts, or production batches.",
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "VALID-001",
+      "issue": "The revision requires manuscript, provenance, PDF, and rendered-page verification.",
+      "resolution": "Pass fast, chapter, and release gates; inspect the complete diff, extracted PDF, log, fonts, geometry, and all affected pages.",
+      "status": "IMPLEMENTED_VALIDATED"
+    }
+  ]
+}
