@@ -26,6 +26,16 @@ class FinalVoiceStyleTests(unittest.TestCase):
         text = "My contribution is the revised algorithm."
         self.assertRegex(MODULE.prose_only(text), MODULE.SINGULAR)
 
+    def test_third_person_self_reference_is_detected(self):
+        text = "The candidate developed the revised algorithm."
+        self.assertRegex(MODULE.prose_only(text), MODULE.THIRD_PERSON_SELF)
+
+    def test_plural_authorial_voice_is_accepted(self):
+        text = "Our contribution is the revised algorithm."
+        prose = MODULE.prose_only(text)
+        self.assertNotRegex(prose, MODULE.SINGULAR)
+        self.assertNotRegex(prose, MODULE.THIRD_PERSON_SELF)
+
     def test_display_math_is_removed(self):
         text = "Before.\\[ I_c(u)=[Q(u),Q(u+c)] \\]After."
         self.assertEqual("Before. After.", MODULE.prose_only(text))
@@ -43,6 +53,17 @@ class FinalVoiceStyleTests(unittest.TestCase):
             path = Path(directory) / "fixture.tex"
             path.write_text("We define the target.\nI estimate it.\n", encoding="utf-8")
             hits = MODULE.singular_pronoun_hits({path})
+            self.assertEqual(1, len(hits))
+            self.assertIn("fixture.tex:2", hits[0])
+
+    def test_third_person_hit_reports_location(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "fixture.tex"
+            path.write_text(
+                "We define the target.\nThe dissertation author's analysis follows.\n",
+                encoding="utf-8",
+            )
+            hits = MODULE.third_person_self_hits({path})
             self.assertEqual(1, len(hits))
             self.assertIn("fixture.tex:2", hits[0])
 

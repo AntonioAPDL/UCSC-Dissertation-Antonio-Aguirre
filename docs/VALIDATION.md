@@ -1,5 +1,28 @@
 # Validation record
 
+## 2026-11-10 plural voice and Figure 5.1 option validation
+
+The voice validator now rejects first-person singular authorial prose and
+third-person references to the dissertation student in active TeX. All 29 unit
+tests and the complete fast gate passed. Extracted text from the rebuilt thesis
+contains no first-person singular authorial statement; the remaining isolated
+capital `I` tokens are mathematical indicators, identity matrices, interval
+notation, indices, and the panel range A--I.
+
+Chapter-tier validation rebuilt the complete 184-page dissertation. The PDF is
+US Letter, PDF 1.7, and 4,139,664 bytes. The log contains ten underfull and zero
+overfull boxes and no unresolved citation or reference, duplicate label, rerun
+request, missing file, or fatal TeX error.
+
+`scripts/generate_mti_figure5_1_candidates.R` reproduced the six-page review
+artifact at
+`build/figure5-1-candidates/figure5_1_distribution_options.pdf`. The PDF is
+landscape, PDF 1.5, 201,278 bytes, with embedded fonts. All six pages were
+rendered and inspected. The endpoint table is legible, all density panels use
+common scales within an option, and the interval boundaries agree with the
+reported standardized endpoints. The active Figure 5.1 was intentionally not
+changed pending author selection.
+
 ## 2026-11-10 final voice, exdqlm, and MTI revision release
 
 Manuscript commit `c2e4855` implements the first-person-plural voice rule, the

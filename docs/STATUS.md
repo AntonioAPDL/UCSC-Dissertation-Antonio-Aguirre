@@ -1,5 +1,22 @@
 # Project status
 
+## 2026-11-10 plural voice enforcement and Figure 5.1 options
+
+The active manuscript contains no first-person singular authorial prose.
+The remaining third-person reference to the dissertation student in the
+formatting-demonstration source was replaced by first-person plural, and the
+permanent voice validator now rejects both first-person singular and
+third-person self-reference in active TeX. The expanded test suite covers the
+accepted plural form and both prohibited forms.
+
+Five population alternatives for Figure 5.1 were generated without changing
+the active thesis figure. The six-page review PDF compares an exAL, a strongly
+asymmetric AL, a reflected lognormal, a reflected Gamma, and a Beta
+distribution at content 0.80. All intervals are population calculations after
+standardization. The review record and generator are
+`docs/figure5-1-distribution-options-20261110.md` and
+`scripts/generate_mti_figure5_1_candidates.R`; selection remains pending.
+
 ## 2026-11-10 final voice, exdqlm, and MTI revision release-validated
 
 The approved final revision is implemented at manuscript commit `c2e4855`.

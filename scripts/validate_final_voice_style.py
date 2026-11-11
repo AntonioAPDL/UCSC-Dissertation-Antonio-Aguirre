@@ -17,6 +17,9 @@ MANIFEST = ROOT / "source-manifest.json"
 SINGULAR = re.compile(
     r"(?<![A-Za-z-])(?:I|[Mm]e|[Mm]y|[Mm]ine|[Mm]yself)(?![A-Za-z-])"
 )
+THIRD_PERSON_SELF = re.compile(
+    r"\b(?:the candidate|the dissertation author)(?:['’]s)?\b", re.IGNORECASE
+)
 MATH_ENVIRONMENTS = (
     "equation",
     "equation*",
@@ -99,6 +102,21 @@ def singular_pronoun_hits(files: set[Path]) -> list[str]:
     return hits
 
 
+def third_person_self_hits(files: set[Path]) -> list[str]:
+    """Report third-person references to the dissertation student in active prose."""
+    hits: list[str] = []
+    for path in sorted(files):
+        try:
+            relative = path.relative_to(ROOT)
+        except ValueError:
+            relative = Path(path.name)
+        prose = prose_only(path.read_text(encoding="utf-8"))
+        for line_number, line in enumerate(prose.splitlines(), start=1):
+            if THIRD_PERSON_SELF.search(line):
+                hits.append(f"{relative}:{line_number}: {line.strip()}")
+    return hits
+
+
 def main() -> int:
     errors: list[str] = []
     files, _ = active_tex_files()
@@ -108,6 +126,8 @@ def main() -> int:
 
     for hit in singular_pronoun_hits(files):
         errors.append(f"first-person singular prose: {hit}")
+    for hit in third_person_self_hits(files):
+        errors.append(f"third-person self-reference: {hit}")
 
     folded = active_text.casefold()
     for phrase in FORBIDDEN_PHRASES:

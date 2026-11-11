@@ -579,3 +579,13 @@ targeted prose decisions, and the original/current package snapshots. The
 successful extracted-text and rendered-page review. No new research result,
 simulation, model fit, source-repository working tree, or private material was
 changed.
+
+2026-11-10: At the author's direction, the authorial-voice control was expanded
+to reject third-person references to the dissertation student as well as
+first-person singular prose. The remaining dissertation-source third-person
+self-reference was replaced by first-person plural. A reproducible population
+calculation also generated five review-only alternatives for Figure 5.1 using
+exAL, AL,
+reflected-lognormal, reflected-Gamma, and Beta distributions. The active
+figure, theory, empirical results, and application results were not changed;
+the alternative is to be selected by the author.
