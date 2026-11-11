@@ -147,7 +147,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "624317a36b128dce07db0b75e32f4194f0de1fc2478610369809d68051067cea",
+      "current_sha256": "ba54ff9bc7417bf8154a212ad787bdac094d0fb7b5fb355970466f83f2ebd65c",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -165,7 +165,17 @@
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-FIGURE-5-1-OPTION-C-20261110"
+      ]
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+      "baseline_sha256": "7f015ee8b354e1ed89007898a758346cb1a35d34b74f979026a025167fd22e40",
+      "current_sha256": "0ef8fc73eb3ad780475405a971d17da5eb63bacd28f0c461b39d348216d70ed3",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-FIGURE-5-1-OPTION-C-20261110"
       ]
     },
     {
@@ -1108,6 +1118,20 @@
       "summary": "Uses first-person plural consistently, distinguishes the original exdqlm 0.1.1 package and inherited methods from the later package contribution, reduces Chapter 5 and Appendix E to the formal results needed for identification and computation, and replaces remaining generic or product-oriented prose with statistical statements.",
       "evidence": "docs/final-voice-exdqlm-mti-polish-plan-20261110.md; docs/final-voice-exdqlm-mti-response-matrix-20261110.json; source-manifest.json; docs/claim-evidence.json; manuscript commit c2e4855",
       "validation": "All 24 tests and the fixed-source, revision-ledger, appendix-map, voice/style, import, research-audit, editorial-audit, advisor-response, and structure checks passed. The clean 184-page release has no blocking TeX diagnostic or overfull box, all fonts are embedded, extracted-text scans are clean, and the affected pages were rendered and inspected."
+    },
+    {
+      "id": "REV-FIGURE-5-1-OPTION-C-20261110",
+      "date": "2026-11-10",
+      "paths": [
+        "chapters/05-research-d.tex",
+        "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+        "scripts/generate_mti_figure5_1_candidates.R",
+        "docs/accessibility-ledger.json",
+        "docs/display-ledger.json"
+      ],
+      "summary": "Replaces the former Figure 5.1 population illustration with the author-selected strongly left-skewed option so that the equal-tailed, mean-preserving, and shortest-contiguous placements are visually distinct. The caption identifies the reflected-lognormal construction briefly, while the plot title remains distribution-neutral.",
+      "evidence": "Author selection of Option C on 2026-11-10; docs/figure5-1-distribution-options-20261110.md; scripts/generate_mti_figure5_1_candidates.R",
+      "validation": "Deterministic regeneration, population endpoint checks, import-ledger validation, clean dissertation build, extracted-text review, and rendered inspection of the affected page required before merge."
     }
   ]
 }

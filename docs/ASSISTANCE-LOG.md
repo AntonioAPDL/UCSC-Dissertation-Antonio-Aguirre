@@ -585,7 +585,7 @@ to reject third-person references to the dissertation student as well as
 first-person singular prose. The remaining dissertation-source third-person
 self-reference was replaced by first-person plural. A reproducible population
 calculation also generated five review-only alternatives for Figure 5.1 using
-exAL, AL,
-reflected-lognormal, reflected-Gamma, and Beta distributions. The active
-figure, theory, empirical results, and application results were not changed;
-the alternative is to be selected by the author.
+exAL, AL, reflected-lognormal, reflected-Gamma, and Beta distributions. After
+the author's selection, Option C replaced the former population illustration;
+the Chapter 5 theory, empirical results, and application results were not
+changed.

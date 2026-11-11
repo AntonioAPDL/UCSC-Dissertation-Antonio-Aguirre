@@ -269,8 +269,8 @@
       "baseline_line": 121,
       "disposition": "KEEP",
       "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "rationale": "Author-selected population illustration with stronger left skewness; the wider separation among endpoints clarifies the equal-tailed, mean-preserving, and shortest-contiguous placement rules without changing any theorem or empirical result.",
+      "status": "AUTHOR_SELECTED_DERIVATIVE",
       "implementation_status": "IMPLEMENTED"
     },
     {

@@ -15,7 +15,12 @@ asymmetric AL, a reflected lognormal, a reflected Gamma, and a Beta
 distribution at content 0.80. All intervals are population calculations after
 standardization. The review record and generator are
 `docs/figure5-1-distribution-options-20261110.md` and
-`scripts/generate_mti_figure5_1_candidates.R`; selection remains pending.
+`scripts/generate_mti_figure5_1_candidates.R`. The author subsequently selected
+Option C. Figure 5.1 now uses that strongly left-skewed population illustration;
+the title remains distribution-neutral and the caption records its construction
+briefly for reproducibility. The complete 184-page build passes with ten
+underfull and zero overfull boxes; rendered physical page 104 shows no clipping,
+collision, or unreadable plot annotation.
 
 ## 2026-11-10 final voice, exdqlm, and MTI revision release-validated
 

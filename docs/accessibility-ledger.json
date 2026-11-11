@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-09",
+  "recorded_at": "2026-11-10",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
@@ -73,7 +73,7 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
       "figure_label": "rqr2026:fig:three-interval-principles",
-      "alt_text": "Three interval-selection principles under left skewness. All panels use the same continuous left-skewed population illustration with content c=0.80 , displayed after standardization. Equal-tailed (ET) intervals balance omitted probabilities, MPI balances omitted first moments, and shortest-contiguous (SH) intervals minimize geometric width. These deterministic population calculations compare functionals; they are not finite-sample or comparative-performance evidence.",
+      "alt_text": "Three density panels show the same strongly left-skewed standardized population at content c=0.80. The green equal-tailed interval is [-1.00, 0.71], the blue mean-preserving interval is [-2.29, 0.64], and the orange shortest-contiguous interval is [-0.39, 0.84]. The MPI extends farthest into the left tail, whereas the shortest-contiguous interval is the narrowest and lies farthest to the right. These are population functionals rather than finite-sample comparisons.",
       "description_source": "caption",
       "status": "REVIEWED"
     },

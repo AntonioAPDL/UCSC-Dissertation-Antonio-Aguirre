@@ -12,7 +12,9 @@ if (length(file_arg) != 1L) {
 script_path <- normalizePath(sub("^--file=", "", file_arg), mustWork = TRUE)
 root <- normalizePath(file.path(dirname(script_path), ".."), mustWork = TRUE)
 args <- commandArgs(trailingOnly = TRUE)
-output_dir <- if (length(args)) args[[1L]] else file.path(root, "build", "figure5-1-candidates")
+install_selected <- "--install-selected" %in% args
+path_args <- args[!startsWith(args, "--")]
+output_dir <- if (length(path_args)) path_args[[1L]] else file.path(root, "build", "figure5-1-candidates")
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 if (!requireNamespace("exdqlm", quietly = TRUE)) {
@@ -255,7 +257,7 @@ principles <- c(
   SH = "Minimum geometric width"
 )
 
-draw_option <- function(distribution, summary) {
+draw_option <- function(distribution, summary, selected = FALSE) {
   endpoints <- summary$endpoints
   left <- (distribution$q(0.005) - distribution$mean) / distribution$sd
   right <- (distribution$q(0.995) - distribution$mean) / distribution$sd
@@ -330,14 +332,21 @@ draw_option <- function(distribution, summary) {
       col = "#374151"
     )
   }
-  graphics::mtext(
+  outer_title <- if (selected) {
+    sprintf("Strongly left-skewed illustration; interval content c = %.2f", content)
+  } else {
     sprintf(
       "Option %s: %s; standardized skewness = %.2f; content c = %.2f",
-      distribution$id,
-      distribution$label,
-      distribution$skewness,
-      content
-    ),
+      distribution$id, distribution$label, distribution$skewness, content
+    )
+  }
+  outer_subtitle <- if (selected) {
+    "Population intervals after standardization"
+  } else {
+    distribution$note
+  }
+  graphics::mtext(
+    outer_title,
     outer = TRUE,
     side = 3,
     line = 2.25,
@@ -345,7 +354,7 @@ draw_option <- function(distribution, summary) {
     font = 2
   )
   graphics::mtext(
-    distribution$note,
+    outer_subtitle,
     outer = TRUE,
     side = 3,
     line = 0.80,
@@ -502,5 +511,31 @@ writeLines(
   ),
   file.path(output_dir, "generation_record.txt")
 )
+
+if (install_selected) {
+  selected_index <- which(vapply(distributions, `[[`, character(1), "id") == "C")
+  selected_path <- file.path(
+    root,
+    "figures",
+    "ch05-mti",
+    "generated",
+    "fig01_three_balance_principles.png"
+  )
+  grDevices::png(
+    selected_path,
+    width = 2520,
+    height = 1116,
+    res = 180,
+    pointsize = 18,
+    type = "cairo-png"
+  )
+  draw_option(
+    distributions[[selected_index]],
+    summaries[[selected_index]],
+    selected = TRUE
+  )
+  grDevices::dev.off()
+  cat(normalizePath(selected_path), "\n")
+}
 
 cat(normalizePath(combined_pdf), "\n")

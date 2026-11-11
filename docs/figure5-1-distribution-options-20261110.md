@@ -2,13 +2,13 @@
 
 Date: 2026-11-10
 
-Decision state: author selection pending
+Decision state: Option C selected and integrated
 
 Generator: `scripts/generate_mti_figure5_1_candidates.R`
 
 ## Purpose
 
-The active Figure 5.1 uses one continuous left-skewed population illustration,
+The former Figure 5.1 used one continuous left-skewed population illustration,
 but the equal-tailed, mean-preserving, and shortest-contiguous intervals remain
 close enough to obscure their distinct placement rules. Five population
 alternatives were therefore evaluated at content (c=0.80). Each distribution
@@ -19,7 +19,8 @@ The review artifact is
 `build/figure5-1-candidates/figure5_1_distribution_options.pdf`. Its first page
 reports the standardized interval endpoints; the remaining pages show one
 complete Figure 5.1 alternative per distribution. The active dissertation
-figure and caption remain unchanged until the author selects an option.
+figure and caption were unchanged during comparison so that selection remained
+reversible.
 
 ## Comparison
 
@@ -45,10 +46,11 @@ Option A provides an explicit exAL illustration but separates the three
 placements less clearly. Option D is a smoother moderate alternative; Option E
 is bounded and has the weakest asymmetry in the set.
 
-The preferred default is Option B. Option C is preferable only if maximal
-visual contrast is more important than using a full-support distribution. A
-selection changes only the conceptual population illustration, its caption,
-alternative text, and the corresponding accessibility/display records. It
+The author selected Option C for its clearer visual separation. The integrated
+plot title describes only a strongly left-skewed illustration; the caption
+identifies the construction in one reproducible sentence. The change is
+limited to the conceptual population illustration, its caption, alternative
+text, and the corresponding accessibility, display, and revision records. It
 does not change the Chapter 5 theory, algorithms, simulation results, or
 application results.
 
@@ -57,7 +59,7 @@ application results.
 Run:
 
 ```bash
-Rscript scripts/generate_mti_figure5_1_candidates.R
+Rscript scripts/generate_mti_figure5_1_candidates.R --install-selected
 ```
 
 The generator uses base R population calculations and the installed

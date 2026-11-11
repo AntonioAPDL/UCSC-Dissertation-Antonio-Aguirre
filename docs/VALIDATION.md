@@ -10,9 +10,11 @@ capital `I` tokens are mathematical indicators, identity matrices, interval
 notation, indices, and the panel range A--I.
 
 Chapter-tier validation rebuilt the complete 184-page dissertation. The PDF is
-US Letter, PDF 1.7, and 4,139,664 bytes. The log contains ten underfull and zero
-overfull boxes and no unresolved citation or reference, duplicate label, rerun
-request, missing file, or fatal TeX error.
+US Letter, PDF 1.7, and 4,181,366 bytes, with SHA-256
+`84fbda3e97a81f3a248d6bece267aef4b69dd6f58b09ef12b5d00ac3e86c7eef`.
+The log contains ten underfull and zero overfull boxes and no unresolved
+citation or reference, duplicate label, rerun request, missing file, or fatal
+TeX error.
 
 `scripts/generate_mti_figure5_1_candidates.R` reproduced the six-page review
 artifact at
@@ -20,8 +22,13 @@ artifact at
 landscape, PDF 1.5, 201,278 bytes, with embedded fonts. All six pages were
 rendered and inspected. The endpoint table is legible, all density panels use
 common scales within an option, and the interval boundaries agree with the
-reported standardized endpoints. The active Figure 5.1 was intentionally not
-changed pending author selection.
+reported standardized endpoints. The author selected Option C. The generator
+reproduced the installed PNG, and the revision and import ledgers agree with
+its current SHA-256. Physical PDF page 104 was rendered and inspected after the
+final type-size adjustment; the plot, endpoint labels, caption, and following
+section heading are legible, with no clipping or collision. The selected
+illustration changes no theorem, algorithm, simulation result, or application
+result.
 
 ## 2026-11-10 final voice, exdqlm, and MTI revision release
 
