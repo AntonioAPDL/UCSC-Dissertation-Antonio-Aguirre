@@ -590,9 +590,9 @@ through recurrent features rather than an explicitly specified state
 transition. Separate DESN specifications were selected for the reported
 criteria, and forecast performance on the reported evaluation series also
 informed earlier refinement. Appendix~\ref{app:qdesn-simulation-support}
-describes the selection. Consequently, the score comparisons characterize the
-selected specifications on these simulated series and should not be interpreted
-as performance on an independent confirmation set.
+describes the selection. The score comparisons therefore characterize the
+selected specifications on the same simulated series used during method
+refinement; no independent confirmation series was retained.
 
 Check loss evaluates the quantile forecasts against realized responses over
 the common forecast pairs. The main comparison summarizes its posterior
@@ -612,7 +612,7 @@ the linear state dynamics at the lower quartile and median without an
 explicit generating trend and seasonal transition. Performance at the lowest
 probability level depends on the likelihood and error family.
 The 500-target sensitivity preserves the overall pattern.
-Appendix~\ref{app:qdesn-simulation-support} records this result together with
+Appendix~\ref{app:qdesn-simulation-support} reports this sensitivity together with
 the empirical-frequency qualification.
 
 \input{tables/ch04-qdesn/independent_train500_eval300_mcmc_figures_v1.tex}
@@ -867,7 +867,8 @@ selected DESN model.
 
 Conditional on the selected reservoir, each candidate is a Bayesian linear
 quantile regression with fixed recurrent features. This differs from the
-end-to-end network-weight training used to pretrain PriceFM. Reservoir and
+joint estimation of recurrent-network and readout weights used to pretrain
+PriceFM. Reservoir and
 shrinkage selection require repeated regression fits.
 
 Historical inputs contain regional prices, load, solar, and wind. Selected

@@ -4,8 +4,7 @@
 \section{Software contribution and scope}
 
 The preceding chapter used extended dynamic quantile linear models to correct
-and combine river-flow forecast products. That analysis also illustrates a
-broader computational problem: dynamic quantile models require software that
+and combine river-flow forecast products. The same analysis requires software that
 connects state-space specification, posterior computation, diagnostics, and
 forecasting without changing the inferential target between stages. The
 \proglang{R} package \pkg{exdqlm} addresses this problem for Bayesian dynamic
@@ -20,7 +19,8 @@ variational Bayes (ISVB) procedures, and a transfer-function extension. Our
 contribution is the substantial later restructuring and extension of the
 package around those methods. It consists of:
 \begin{itemize}
-\item a composable model-construction interface for trend, seasonal, regression, and transfer-function components in Bayesian dynamic quantile state-space models;
+\item functions for specifying trend, seasonal, regression, and
+transfer-function components in Bayesian dynamic quantile state-space models;
 \item coordinated MCMC and variational interfaces, including scale-collapsed
 MCMC, ISVB, and Laplace--Delta variational Bayes (LDVB) procedures for dynamic
 and static fits, with later nonconjugate scale--skewness updates;
@@ -39,8 +39,21 @@ including the regularized horseshoe construction of
 materials for the reported analyses.
 \end{itemize}
 
-The \proglang{R} \citep{exd-R} software ecosystem for quantile regression is broad, but the capabilities most relevant to this chapter are distributed across software with different aims. Table \ref{exd:table:software} compares representative packages along four traits that are key to the scope of \pkg{exdqlm}: the primary modeling objective, the treatment of the temporal or latent-state structure, the inference strategy, and handling of multiple quantile levels.
-The distinction between time included as an observed predictor and coefficients propagated as latent states is particularly important.
+The original CRAN release, version 0.1.1, provided dynamic exDQLM component
+construction, MCMC and ISVB fitting, transfer-function ISVB, forecast summaries,
+diagnostic checks, and plotting. It contained no compiled code and did not
+include LDVB, static AL/exAL shrinkage regression, or posterior-predictive
+quantile synthesis. The later work listed above defines the contribution studied
+in this chapter; it does not reassign the exAL distribution, exDQLM formulation,
+or original algorithms.
+
+Available \proglang{R} packages \citep{exd-R} address different parts of
+quantile regression and state-space analysis. Table \ref{exd:table:software}
+compares representative packages by primary modeling objective, temporal or
+latent-state structure, inference strategy, and treatment of multiple quantile
+levels.
+Time included as an observed predictor differs from coefficients propagated as
+latent states; the table separates these two forms of temporal structure.
 The computation column reports how fitting, posterior approximation, or state summaries are obtained, rather than treating these as additional model structures.
 \begin{table}[h!]
 \centering
@@ -98,12 +111,14 @@ replace software for broad static, additive, or joint multiquantile analysis.
 The \code{exdqlm} package is distributed under the MIT License and is
 available from the Comprehensive R Archive Network at
 \url{https://CRAN.R-project.org/package=exdqlm}. The analyses reported below
-use version 1.1.2, whose current interfaces include the structured LDVB
+use version 1.1.2. Relative to the original 0.1.1 release, this version includes
+the structured LDVB
 scale--skewness approximation, static shrinkage support, compiled computation,
-diagnostics, and reproducibility checks used in this chapter. Chapter~\ref{ch:research-b} remains attached to
-version 1.1.0, under which its hydrologic results were obtained. This distinction
-preserves the statistical and computational provenance of both analyses rather
-than treating package versions as interchangeable labels.
+standardized fitted-model summaries and diagnostics, predictive synthesis, and
+the reproducibility checks used in this chapter. Chapter~\ref{ch:research-b}
+remains attached to
+version 1.1.0, under which its hydrologic results were obtained. Retaining the
+separate versions preserves the model and computation used for each analysis.
 
 \section{Statistical models and posterior computation}
 \label{exd:sec:exdqlm}
@@ -135,8 +150,8 @@ The dynamic model assigns a normal prior to the initial state, an inverse-gamma
 prior to \(\sigma\), and a proper Student-\(t\) prior to \(\gamma\), truncated
 to its admissible interval \((L,U)\) \citep{exd-yan2025family}. Table
 \ref{exd:table:priors} translates these statistical quantities into package
-inputs. It is retained because it connects the model directly to the user
-interface; the remaining prior algebra is given in Appendix
+inputs. It is retained because it connects the model directly to the arguments
+used by the fitting functions; the remaining prior algebra is given in Appendix
 \ref{app:exdqlm-posterior}.
 
 \begin{table}[!htb]
@@ -244,7 +259,8 @@ Several commonly used models are special cases of the \code{exDQLM}. First, sett
 $\epsilon_t \sim \exAL_{p_0}(0,\sigma,\gamma=0) = \AL_{p_0}(0,\sigma),$ leading to the dynamic quantile linear model (DQLM) of \cite{exd-gonccalves2017dynamic}. The DQLM can be implemented in \pkg{exdqlm} using the parameter \code{dqlm.ind = TRUE}.
 
 Second, setting $\mat{G}_t=\mat{I}$ and $\mat{W}_t=\mat{0}$ reduces the model to the static exAL regression of \cite{exd-yan2025family}.
-This model can be implemented using functions \code{exalStaticMCMC()} or \code{exalStaticLDVB()}.
+The package fits this model with \code{exalStaticMCMC()} or
+\code{exalStaticLDVB()}.
 
 Finally, combining these two restrictions gives static Bayesian linear quantile regression under the AL working likelihood \cite{env-yu2001bayesian}, as implemented in packages such as \pkg{bayesQR}. Within the \pkg{exdqlm} package, this model can be fitted using \code{exalStaticMCMC()} or \code{exalStaticLDVB()} with \code{al.ind = TRUE}, a static convenience alias for \code{dqlm.ind = TRUE}, which fixes $\gamma=0$.
 Examples of these special models are given in Section \ref{exd:sec:exs}, with the sparse static regression analysis in Section \ref{exd:sec:ex4static}.
@@ -285,10 +301,15 @@ sparsity.
 
 
 The package includes quantitative and graphical diagnostics for checking fitted quantile calibration, predictive performance, and forecasts.
-Calibration is assessed using plug-in one-step-ahead probability integral transforms and standardized forecast errors. Predictive performance is summarized using CRPS and a target-quantile posterior-predictive loss criterion, while future quantiles and optional posterior-predictive draws are obtained through the standard \code{predict()} interface.
+Calibration is assessed using plug-in one-step-ahead probability integral transforms and standardized forecast errors. Predictive performance is summarized using CRPS and a target-quantile posterior-predictive loss criterion, while the \code{predict()} method returns future quantiles and optional posterior-predictive draws.
 
 \subsubsection{Calibration diagnostics}
-The one-step-ahead predictive probability integral transform (PIT) introduced by \cite{exd-rosenblatt1952remarks} is a useful diagnostic for models in which the marginal forecast distributions are not available in closed-form \citep{exd-huerta2003time,exd-prado2006multivariate}. Let $Y_t$ be the random response at time $t$ with observed value $y_t$ and let $y_{1:(t-1)}$ denote the observations available up to time $t-1.$ The one-step-ahead PIT is
+The one-step-ahead predictive probability integral transform (PIT) assesses
+calibration when the marginal forecast distributions are unavailable in closed
+form \citep{exd-rosenblatt1952remarks,exd-huerta2003time,exd-prado2006multivariate}.
+Let $Y_t$ be the random response at time $t$ with observed value $y_t$ and let
+$y_{1:(t-1)}$ denote the observations available up to time $t-1.$ The
+one-step-ahead PIT is
 \begin{align}
 u_t^\star = \Pr(Y_t \leq y_t \mid y_{1:t-1}),
 \label{exd:eq:pit_ideal}
@@ -332,7 +353,10 @@ which shows that CRPS integrates check loss across all quantile levels and there
 \end{equation}
 where the weights \(w_k\) sum to one \citep{exd-laio2007verification}. The package uses the grid \(\tau_k=0.01,0.02,\ldots,0.99\) with equal weights and reports the CRPS values in \eqref{exd:eq:crps_iqs_main} averaged over time. A smaller value indicates better overall performance under this proper score; calibration and sharpness must be diagnosed separately. For a deterministic forecast, CRPS reduces to the absolute error, so its sample mean CRPS equals the mean absolute error (MAE).
 
-Motivated by the posterior-predictive loss (PPL) framework of \cite{exd-gelfand1998model}, the package returns \code{pplc}, which evaluates the posterior predictive distribution under the target-level check loss $\rho_{p_0}$. That is,
+Following the posterior-predictive loss (PPL) criterion of
+\cite{exd-gelfand1998model}, the package returns \code{pplc}, which evaluates
+the posterior predictive distribution under the target-level check loss
+$\rho_{p_0}$. That is,
 \begin{align}
 \PPLC = \sum_t \E[\rho_{p_0} (y_t^{obs}-y^{rep}_t) \mid y_{1:T}],
 \label{exd:eq:pplc_main}
@@ -755,9 +779,9 @@ the posterior-simulation comparison used to examine interval and tail behavior.
 
 
 Our contribution is the substantial later restructuring and extension of
-\pkg{exdqlm}; the exAL family and original exDQLM formulation retain their
-cited origins.
-The revised package joins composable state-space specification with inherited
+\pkg{exdqlm}; the exAL family, original exDQLM formulation, and version 0.1.1
+package capabilities retain their cited origins.
+The later package joins component-based state-space specification with inherited
 MCMC and ISVB procedures and the later LDVB approximation; corrects and
 standardizes filtering, smoothing, summaries, diagnostics, forecasting, and
 post-fit synthesis; supplies compiled implementations for intensive operations

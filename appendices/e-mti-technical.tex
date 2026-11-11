@@ -61,108 +61,32 @@ score identifies \(Q(u_c)\) and \(Q(u_c+c)\). Under symmetry, the window
 beginning at \((1-c)/2\) has retained mean \(\mu\), so uniqueness gives the
 equal-tailed interval.
 
-For integrable random variables \(U\) and \(V\) with the same finite mean,
-\(U\preceq_{\rm cx}V\) means
-\(\E\{\varphi(U)\}\leq\E\{\varphi(V)\}\) for every convex function
-\(\varphi\) for which both expectations are finite.
-
-\begin{proposition}[Mean-preserving contraction]
-\label{rqr2026:prop:supp-convex-order}
-Let \(Y_{\mathrm{in}}\) and \(Y_{\mathrm{out}}\) have the conditional distributions of
-\(Y\) inside and outside a regular MPI target. For every convex \(\varphi\)
-with finite required expectations,
-\[
-\E\{\varphi(Y_{\mathrm{in}})\}
-\le \E\{\varphi(Y)\}
-\le \E\{\varphi(Y_{\mathrm{out}})\}.
-\]
-Thus
-\(Y_{\mathrm{in}}\preceq_{\mathrm{cx}}Y
-\preceq_{\mathrm{cx}}Y_{\mathrm{out}}\).
-\end{proposition}
-
-\begin{proof}
-Let \(s_\varphi\) be the affine secant through
-\(\{a,\varphi(a)\}\) and \(\{b,\varphi(b)\}\). Convexity gives
-\(\varphi(y)\le s_\varphi(y)\) inside \([a,b]\) and the reverse inequality
-outside. Both conditional distributions have mean \(\mu\), so
-\[
-\E\{\varphi(Y_{\mathrm{in}})\}
-\le s_\varphi(\mu)
-\le \E\{\varphi(Y_{\mathrm{out}})\}.
-\]
-The distribution of \(Y\) is their mixture. Taking
-\(\varphi(y)=(y-\mu)^2\) gives the corresponding variance ordering when
-second moments exist.
-\end{proof}
-
-The regular MPI path is nested. With \(L_c=Q(u_c)\) and
-\(U_c=Q(u_c+c)\), implicit differentiation gives
-\[
-\frac{du_c}{dc}=-\frac{U_c-\mu}{U_c-L_c}<0,
-\qquad
-\frac{d(u_c+c)}{dc}=\frac{\mu-L_c}{U_c-L_c}>0.
-\]
-Convergence of both endpoints to \(\mu\) as \(c\downarrow0\) additionally
-requires local support at the mean. At endpoint atoms the directional
-conditions yield only
-\(\Pr(a<Y<b)\le c\le\Pr(a\le Y\le b)\). Restricted regression roots satisfy
-design-weighted score equations and need not attain conditional content at
-each covariate value. Positive affine response transformations preserve the
-target after transforming the tilt and learning rate; arbitrary monotone
-transformations do not.
-
-\subsection{Mean tilt and profiled identification}
+\subsection{Proof of Theorem~\ref{rqr2026:thm:profiled-mean-tilt}}
 
 Away from endpoint atoms, differentiating the expected MTI loss with respect
-to half-width and midpoint first gives content \(c\) and then
-\(\E\{Y\ind(|Y-m|<h)\}=c(\mu+\delta)\). Strict monotonicity of
-\(M_c\) therefore gives the unique interior window asserted in
-Proposition~\ref{rqr2026:prop:mean-tilt}.
+to half-width and midpoint gives content \(c\) and retained mean
+\(\mu+\delta\). For a fixed midpoint \(m\),
+\(H_m(h)=F(m+h)-F(m-h)\) is continuous, begins at zero, and converges to one.
+Connected support and strict increase therefore give a unique positive radius
+\(h_c(m)\) satisfying \(H_m\{h_c(m)\}=c\).
 
-\begin{lemma}[Profile radius and envelope derivative]
-\label{rqr2026:lem:supp-profile-radius}
-Under the assumptions of
-Theorem~\ref{rqr2026:thm:profiled-mean-tilt}, for every \(m\in\R\) there is
-a unique \(h_c(m)>0\) satisfying
-\(\Pr\{|Y-m|<h_c(m)\}=c\). If
+Define
 \[
 \overline R_{c,\delta}(m)
 =\E\{\ell_{c,\delta}(m,h_c(m);Y)\},
 \qquad
-u_c(m)=F\{m-h_c(m)\},
+u_c(m)=F\{m-h_c(m)\}.
 \]
-then, at interior roots,
+At interior roots, the implicit-function theorem applies because
+\(f(m+h)+f(m-h)>0\). Profiling the squared radius and differentiating the
+midpoint criterion gives
 \begin{equation}
 \overline R_{c,\delta}'(m)
-=2c[M_c\{u_c(m)\}-\mu-\delta],
+=2c[M_c\{u_c(m)\}-\mu-\delta].
 \label{rqr2026:eq:supp-profiled-risk-derivative}
 \end{equation}
-with the corresponding one-sided derivatives at finite support transitions.
-\end{lemma}
-
-\begin{proof}
-For fixed \(m\),
-\(H_m(h)=F(m+h)-F(m-h)\) is continuous, begins at zero, and converges to
-one. Connected support and strict increase give a unique content-\(c\)
-crossing and continuity of its inverse. At interior roots,
-\(\partial H_m(h)/\partial h=f(m+h)+f(m-h)>0\), so the implicit-function
-theorem applies.
-
-For \(Z_m=(Y-m)^2\), the subgradient of
-\(q\mapsto\E\{\rho_c(Z_m-q)\}\) brackets zero uniquely at
-\(q=h_c(m)^2\). On compact midpoint neighborhoods the score is dominated by
-an integrable multiple of \(1+|Y|\). The profiling inequalities therefore
-give
-\[
-\overline R_{c,\delta}'(m)
-=2\E[(m-Y)\{c-\ind(|Y-m|<h_c(m))\}]-2c\delta,
-\]
-which reduces to Equation~\eqref{rqr2026:eq:supp-profiled-risk-derivative}.
-The same argument yields one-sided derivatives at support transitions.
-\end{proof}
-
-\subsection{Proof of Theorem~\ref{rqr2026:thm:profiled-mean-tilt}}
+The finite second moment supplies an integrable envelope; the corresponding
+one-sided derivatives apply at finite support transitions.
 
 Write \(a_c(m)=m-h_c(m)\), \(b_c(m)=m+h_c(m)\), and
 \(u_c(m)=F\{a_c(m)\}\). At interior roots,
@@ -171,7 +95,8 @@ m=\{Q(u_c(m))+Q(u_c(m)+c)\}/2.
 \]
 The right-hand side is strictly increasing in \(u\). When a root passes a
 finite support endpoint, \(u_c(m)\) is clamped at zero or \(1-c\); hence it
-remains globally nondecreasing. The lemma and strict monotonicity of \(M_c\)
+remains globally nondecreasing. Equation
+\eqref{rqr2026:eq:supp-profiled-risk-derivative} and strict monotonicity of \(M_c\)
 show that the profiled derivative is negative before the unique solution of
 \(M_c(u)=\mu+\delta\) and positive afterward. This establishes the unique
 global midpoint minimizer; fixed-midpoint profiling gives its unique positive
@@ -207,18 +132,13 @@ fractional membership allocations: \(q_i=1\) strictly inside the fitted
 interval, \(q_i=0\) strictly outside, and \(q_i\in[0,1]\) only when an
 observation equals a fitted root.
 
-\begin{theorem}[Exact fractional empirical balance]
-\label{rqr2026:thm:supp-fractional-balance}
-At an interior subgradient-stationary solution, allocations
-\(q_i\in[0,1]\) can be chosen such that
+At an interior subgradient-stationary solution, the allocations can be chosen
+to satisfy
 \[
 \sum_iq_i=nc,
 \qquad
 \sum_iq_iy_i=nc(\overline y+\delta).
 \]
-\end{theorem}
-
-\begin{proof}
 The endpoint subgradient equations are
 \[
 \sum_i s_i(b-y_i)-nc\delta=0,
@@ -227,23 +147,9 @@ The endpoint subgradient equations are
 \]
 Their difference gives \(\sum_i s_i=0\), hence \(\sum_iq_i=nc\).
 Substitution into either equation gives the retained-mean identity.
-\end{proof}
-
-If \(B_n\) observations lie at fitted roots, then
-\[
-P_n(a<Y<b)\le c\le P_n(a\le Y\le b),
-\qquad
-|P_n(a<Y<b)-c|\le B_n/n.
-\]
-For iid intercept-only data, Massart's DKW inequality implies, with probability
-at least \(1-\alpha\),
-\[
-|\Pr_F(a<Y<b)-c|
-\le B_n/n+\sqrt{2\log(2/\alpha)/n}.
-\]
-This conservative bound applies to the iid intercept-only fit; future coverage
-and restricted-regression results require separate arguments. The width penalty
-in RQR-W changes both content and placement through its endpoint scores.
+These identities explain the empirical balance reported in
+Chapter~\ref{ch:research-d}; they are estimating equations for the unpenalized
+intercept-only fit, not tolerance guarantees.
 
 \section{Profile computation and content checking}
 \label{app:mti-profile-computation}
@@ -263,6 +169,8 @@ J(a,b)=\omega_{\mathrm R}\sum_i
 \]
 Set \(m=(a+b)/2\), \(t=(b-a)^2/4\), and
 \(s=nq-\lambda/\omega_{\mathrm R}\).
+The two-root mode calculation reduces to a one-dimensional convex profile in
+the midpoint.
 
 \begin{proposition}[Convex midpoint profile]
 \label{rqr2026:prop:supp-convex-intercept-profile}
@@ -295,7 +203,8 @@ Expanding the squared distances gives the displayed profile. A maximum of
 affine functions is convex, and \(2\lambda m^2\) makes it strongly convex.
 \end{proof}
 
-The calculation minimizes this scalar profile, uses the lower squared radius
+The convex profile supplies the optimization result used by the fitted MTI
+procedure. The calculation minimizes this scalar function, uses the lower squared radius
 at a tie, and checks the final objective against a convex lower bound with
 relative tolerance \(10^{-8}\). The reported study uses
 \(\omega_{\mathrm R}=1\), \(\lambda=10^{-4}\), and zero prior means.

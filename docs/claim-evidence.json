@@ -101,6 +101,20 @@
       "dissertation_disposition": "central Chapter 3 software and computation contribution"
     },
     {
+      "id": "CLM-EXDQLM-007",
+      "classification": "novelty_or_relationship_claim",
+      "claim": "The original exdqlm 0.1.1 package already supplied dynamic model construction, MCMC, importance-sampling variational Bayes, transfer importance-sampling variational Bayes, forecasting, model checking, and plotting; the later package contribution is therefore the subsequent statistical and computational extension rather than the original package or inherited exDQLM methods.",
+      "source_id": "SRC-EXDQLM-PKG",
+      "snapshot_id": "SNAP-EXDQLM-ORIGINAL011",
+      "commit": "49cea5a48b2992d58eceb583e333bf08333e9be6",
+      "source_path": "DESCRIPTION; NAMESPACE; R/",
+      "locator": "version 0.1.1 package metadata, exports, and fitting and fitted-object functions",
+      "evidence_level": "E2",
+      "verification_status": "the original fixed package snapshot was compared with current package 1.1.2, current NEWS, and the software article",
+      "qualification": "Package chronology does not by itself establish individual authorship. The candidate-confirmed later contribution is recorded separately in CLM-EXDQLM-002, and the exAL family, exDQLM formulation, original MCMC and ISVB procedures, and transfer-function extension remain attributed to their source publications.",
+      "dissertation_disposition": "explicit original-versus-later boundary in Chapters 1--3 and 6"
+    },
+    {
       "id": "CON-EXDQLM-006",
       "classification": "publication_or_reuse_status_claim",
       "claim": "The candidate name differs between the exdqlm package metadata and the audited manuscripts.",

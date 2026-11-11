@@ -79,8 +79,11 @@ quantile analysis. Yan, Zheng, and Kottas \citep{exd-yan2025family} introduced
 the exAL family and static exAL regression. Barata, Prado, and Sans\'o
 \citep{exd-me} developed the exDQLM formulation, its original MCMC and
 importance-sampling variational Bayes (ISVB)
-procedures, and the transfer-function extension. Our contribution is the
-substantial later restructuring and extension of \pkg{exdqlm}:
+procedures, and the transfer-function extension. The original version 0.1.1
+package implemented dynamic model construction, MCMC, ISVB,
+transfer-function ISVB, forecasting, diagnostic checks, and plotting. Our
+contribution is the substantial later restructuring and extension of
+\pkg{exdqlm}, comprising
 improved Laplace--Delta variational Bayes (LDVB) and nonconjugate
 scale--skewness updates; compiled implementations for intensive operations,
 with \proglang{R} implementations retained where applicable; filtering and
@@ -98,7 +101,7 @@ regression on those features estimates conditional quantiles without treating
 the recurrent weights as unknown parameters. Q--DESN fits one probability
 level at a time under AL or exAL likelihoods and shrinkage priors. MQ--DESN
 uses a joint multiquantile generalized Bayes update with regularized-horseshoe
-shrinkage on adjacent coefficient differences. This construction promotes
+shrinkage on adjacent coefficient differences. The adjacent-level prior promotes
 similar neighboring quantile functions; we do not impose explicit noncrossing
 constraints. The evidence consists of
 specified simulation mechanisms, one retrospective Global Flood Awareness
@@ -227,9 +230,9 @@ discrepancy, and transfer components can then evolve over time. Chapter
 \ref{ch:research-c} instead constructs a fixed design from recurrent nonlinear
 states and estimates the quantile-regression coefficients conditional on that
 design. In both cases, latent-variable augmentation supports MCMC and
-variational computation. Variational Bayes replaces parts of the posterior
-integration by an optimized approximation and is useful for repeated or
-long-series fits, but its tail and interval summaries remain approximate.
+variational computation. Variational Bayes replaces parts of posterior
+integration by an optimized approximation, reducing computation for repeated
+or long-series fits while leaving tail and interval summaries approximate.
 
 Chapter~\ref{ch:research-d} uses generalized Bayes rather than a response
 likelihood for its interval endpoints. Let \(\theta\) denote the interval
@@ -247,7 +250,8 @@ learning rate. The generalized posterior is
 }.
 \label{eq:intro-generalized-bayes}
 \end{equation}
-The denominator normalizes the update when finite. This construction describes
+The denominator normalizes the update when finite. The resulting generalized
+Bayes posterior describes
 uncertainty about a loss-defined interval action; it does not assert that
 \(\exp\{-w\ell(\theta;y)\}\) is the sampling density of \(Y\)
 \citep{rqr-BissiriHolmesWalker2016GeneralBayes}. Consequently, endpoint draws

@@ -47,8 +47,8 @@ assesses whether the fitted interval is likely to attain content \(c\), and the
 shortest eligible candidate is selected. Simulation samples used for calibration
 are separate from those used for evaluation. The independent study compares MTI
 with Young--Mathew and Wilks intervals across symmetric, heavy-tailed, and
-strongly skewed distributions. A pharmaceutical batch analysis then illustrates
-how the methods allocate their two endpoints in a finite historical dataset.
+strongly skewed distributions. A pharmaceutical batch analysis then compares
+the endpoint placements in a finite historical dataset.
 
 The four claims use different forms of evidence. The population MTI
 characterization is mathematical. The direct content probability is exact under
@@ -227,17 +227,11 @@ identity balances first-moment mass around the conditional mean:
 \E[\{Y-\mu_x\}\ind(Y>b)\mid X=x].
 \]
 Tail probabilities may differ; MPI balances their first moments around
-\(\mu_x\). The conditional distributions of \(Y\) given \(a<Y<b\) and given its
-complement consequently have mean \(\mu_x\), although the endpoint midpoint
-may differ from that mean. For integrable random variables with the same mean,
-write \(U\preceq_{\rm cx}V\) when
-\(\E\{\varphi(U)\}\leq\E\{\varphi(V)\}\) for every convex \(\varphi\) for
-which the expectations exist. Proposition~\ref{rqr2026:prop:supp-convex-order}
-in Section~\ref{app:mti-proofs} shows that the conditional distribution inside the MPI
-is smaller than the full distribution in this convex order. A finite first moment is
-enough for the retained-mean identity once the endpoint scores are valid. The
-stronger second-moment assumption ensures finite expected MPI loss because the
-loss is quadratic in the tails.
+\(\mu_x\). The conditional distributions of \(Y\) inside and outside a regular
+MPI consequently have mean \(\mu_x\), although the endpoint midpoint may differ
+from that mean. A finite first moment is enough for the retained-mean identity
+once the endpoint scores are valid. The stronger second-moment assumption
+ensures that the expected MPI loss is finite.
 
 The score identities determine a quantile-window functional, which is the
 object estimated by the unrestricted population loss.
@@ -267,8 +261,7 @@ If \(F_x\) is symmetric about \(\mu_x\), then
 \end{theorem}
 
 Section~\ref{app:mti-proofs} proves the theorem, including the symmetry
-implication, and derives the restricted score equations and nested-path
-qualification. The theorem identifies the unique regular stationary window;
+implication. The theorem identifies the unique regular stationary window;
 Theorem~\ref{rqr2026:thm:profiled-mean-tilt} below establishes global
 minimization under stronger conditions. If the conditional distribution has endpoint atoms,
 the corresponding directional conditions give
@@ -305,27 +298,22 @@ The second form shows that the loss remains invariant to exchanging the two
 roots. MPI is exactly the \(\delta=0\) member of the MTI family.
 
 The MTI endpoint scores retain content \(c\) while shifting the retained mean.
-
-\begin{proposition}[Fixed-content mean tilt]
-\label{rqr2026:prop:mean-tilt}
 Under the regularity conditions of
-Proposition~\ref{rqr2026:prop:population-characterization}, a nondegenerate interior
-stationary point of the mean-tilted population risk satisfies
+Proposition~\ref{rqr2026:prop:population-characterization}, any nondegenerate
+interior stationary point satisfies
 \[
 \Pr(a_\delta<Y<b_\delta)=c,\qquad
 \E(Y\mid a_\delta<Y<b_\delta)=\mu+\delta.
 \]
 If \(F\) is continuous and strictly increasing on its support, then for every
 \(\delta\) strictly between \(M_c(0)-\mu\) and
-\(M_c(1-c)-\mu\), its unique interior quantile-window index solves
+\(M_c(1-c)-\mu\), the unique interior quantile-window index solves
 \[
 M_c(u_\delta)=\mu+\delta.
 \]
-\end{proposition}
-
-This proposition concerns stationary points. Section~\ref{app:mti-proofs}
-derives its score equations and profiles the expected loss over the unique
-content-\(c\) radius at each midpoint.
+These score equations define the fixed-content placement associated with a
+chosen tilt. Stationarity alone does not establish that the interval is the
+global population minimizer, which is the role of the following theorem.
 
 \begin{theorem}[Global identification of the MTI target]
 \label{rqr2026:thm:profiled-mean-tilt}
@@ -348,7 +336,9 @@ special case \(\delta=0\).
 \end{theorem}
 
 Section~\ref{app:mti-proofs} proves this global-minimizer result through the
-profiled risk and gives the boundary analysis. Boundary tilts correspond to
+profiled risk and gives the boundary analysis. The theorem converts the MTI
+score equations into a unique population interval for every interior admissible
+tilt. Boundary tilts correspond to
 one-sided probability-window limits; outside the closed admissible range there
 is no finite unrestricted MTI minimizer.
 
@@ -357,9 +347,13 @@ fixed-content functional under a specified distribution. It is distinct from
 a fixed target tilt chosen before fitting and from an empirical value selected
 by a separate rule.
 
-\begin{corollary}[Population tilts for familiar interval functionals]
-\label{rqr2026:cor:recovery-tilts}
-The population tilt associated with MPI is \(\delta_{\mathrm{MPI}}=0\). Define
+The MTI parameterization also represents the three fixed-content targets in
+Table~\ref{rqr2026:tab:interval-functionals}. The MPI tilt is
+\(\delta_{\mathrm{MPI}}=0\), and the equal-tailed tilt is
+\[
+\delta_{\mathrm{ET}}=M_c\{(1-c)/2\}-\mu.
+\]
+For the shortest-contiguous target, define
 \[
 S_{\mathrm{SH}}
 =
@@ -368,14 +362,9 @@ S_{\mathrm{SH}}
 =
 \{M_c(u)-\mu:u\in S_{\mathrm{SH}}\}.
 \]
-The population tilt associated with the equal-tailed interval is
-\[
-\delta_{\mathrm{ET}}=M_c\{(1-c)/2\}-\mu.
-\]
 Each \(u\in S_{\mathrm{SH}}\) has associated population tilt
 \(\delta_{\mathrm{SH}}(u)=M_c(u)-\mu\). Singular notation is used only when the
 shortest-contiguous window is unique or one minimizer has been selected.
-\end{corollary}
 
 At regular interior points where the endpoint quantiles are differentiable
 and have positive densities,
@@ -442,11 +431,8 @@ fractional retained-mean balance in its empirical estimating equations.
 These identities concern the unpenalized criterion. Gaussian root penalties
 contribute additional terms to the estimating equations used in computation;
 Section~\ref{app:mti-profile-computation} gives the corresponding penalized identities.
-Population content requires a probability argument beyond this score identity.
-In the iid intercept-only case, the Dvoretzky--Kiefer--Wolfowitz inequality gives
-a conservative high-probability population-content bound
-\citep{rqr-Massart1990DKW}; Section~\ref{app:mti-proofs} gives the explicit
-bound and its interpretation.
+Population content and tolerance confidence require the separate posterior
+content calculation and repeated-sampling calibration described below.
 
 For fixed-target computation, generalized Bayes updates a prior with an
 exponentiated cumulative loss rather
@@ -707,8 +693,8 @@ two-sided distribution-free tolerance statement can be supported at confidence
 \input{tables/ch05-mti/pharma_application_numbers.tex}
 \input{tables/ch05-mti/pharma_source_numbers.tex}
 
-Pharmaceutical batch records illustrate interval placement for a reported
-derived measurement. We compare the proposed MTI procedure with
+Pharmaceutical batch records provide a historical comparison of interval
+placement for a reported derived measurement. We compare the proposed MTI procedure with
 the Young--Mathew and Wilks benchmarks using the public manufacturing data of
 \citet{rqr-ZagarMihelic2022PharmaManufacturing} and the associated
 \texttt{Laboratory.csv} file \citep{rqr-ZagarMihelic2021LaboratoryCsv}.

@@ -639,6 +639,12 @@
       ],
       "related_snapshots": [
         {
+          "id": "SNAP-EXDQLM-ORIGINAL011",
+          "ref": "0.1.1",
+          "commit": "49cea5a48b2992d58eceb583e333bf08333e9be6",
+          "role": "original package comparison baseline: dynamic model construction, MCMC, ISVB, transfer ISVB, forecasting, checking, and plotting"
+        },
+        {
           "id": "SNAP-EXDQLM-ENV110",
           "ref": "cran-v1.1.0",
           "commit": "4c50b078abec33b9d752160911f7dfe841f818a7",

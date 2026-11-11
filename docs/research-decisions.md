@@ -30,6 +30,15 @@
 > does not assert that the complete package is C++ or report an unmeasured
 > speedup.
 
+> **Original/current package boundary (2026-11-10).** Package version 0.1.1 at
+> `49cea5a48b2992d58eceb583e333bf08333e9be6` is the fixed original-package
+> comparison. It already contains dynamic model construction, MCMC, ISVB,
+> transfer ISVB, forecasting, checking, and plotting. The current software
+> article is `98cec593d11bf32715a690ae168086f16160e7f0`, supported by package
+> version 1.1.2 at `e51045a4324901cced27ca2aaa22569afbc8e0e6`.
+> This chronology supports the attribution boundary but does not replace the
+> candidate's separate confirmation of his later contribution.
+
 Status: **partially resolved by author direction; focused confirmations remain**
 Prepared: 2026-09-15
 Revised: 2026-09-16
@@ -56,7 +65,7 @@ branches, ignored outputs, or assets in that repository.
 | QDESN Version 2 | `757522db0f85815244370ec92a194de132268883` | `main.tex` plus two supplements | AUTHOR-DIRECTED WORKING SOURCE | Replace only if an unpromoted branch becomes authoritative |
 | RQR-GIBBS | `73887b9c86ef767aa1567c660718667945630aef` | `main.tex` plus supplement | AUTHOR-DIRECTED WORKING SOURCE | Confirm any later submitted revision |
 | MTI-EXTENSIONS | `f345d946aa5a81b94795838bec58d874a0fdd0c9` | `main.tex` plus supplement | AUTHOR-DIRECTED WORKING SOURCE | Implementation/evidence remain incomplete |
-| exdqlm article | `d5534e97db8414fd875022261d4c530eae4676e4` | `exdqlm-jss.tex` | AUTHOR-DIRECTED WORKING SOURCE | Confirm exact submitted archive if located |
+| exdqlm article | `98cec593d11bf32715a690ae168086f16160e7f0` | `exdqlm-jss.tex` | CURRENT VERSION 1.1.2 WORKING SOURCE; `d5534e9` retained as immutable conversion history | Confirm exact submitted archive if located |
 
 Associated decisions:
 
@@ -64,9 +73,11 @@ Associated decisions:
   promotion gates are unfinished. This is a source-evidence safeguard, not a
   rejection of later inclusion.
 - RQR-GIBBS and MTI-EXTENSIONS form one MTI project chapter.
-- Preserve the declared `exdqlm` version graph: Environmetrics uses 1.1.0; the
-  software article and relevant QDESN comparator use 1.1.1; package `main`
-  remains 1.1.2 support and is not substituted retroactively.
+- Preserve the declared `exdqlm` version graph: the original package comparison
+  is 0.1.1; Environmetrics uses 1.1.0; historical article and QDESN comparator
+  results may use 1.1.1; and the current software article and package support
+  state are 1.1.2. No later package is substituted retroactively for a frozen
+  application result.
 
 G1 is resolved for the current dissertation draft. The structural conversion
 has been completed from these snapshots. They are not final submission freezes.
@@ -237,7 +248,7 @@ allocation, publication status, or reuse permission.
 
 | Project | Candidate role currently established | Collaborator record | Manuscript/version used | Prose and equations | Figures and tables | Required final acknowledgment/reuse action |
 | --- | --- | --- | --- | --- | --- | --- |
-| `exdqlm` | first article author; package `aut`; granular software and writing allocation pending | Raquel Barata, Raquel Prado, Bruno Sansó | article `d5534e9`; package analysis version 1.1.1, with 1.1.0/1.1.2 kept distinct | integrated with antecedent attribution | selected manifested article assets integrated | confirm personal task allocation, coauthor/article wording, and any publication-specific permission |
+| `exdqlm` | first article author; confirmed later package restructuring and extension; finer writing allocation pending | Raquel Barata, Raquel Prado, Bruno Sansó | article `98cec593`; current package 1.1.2; original comparison 0.1.1; application 1.1.0 and historical 1.1.1 snapshots kept distinct | integrated with original-package and methodological antecedent attribution | selected manifested article assets integrated | confirm remaining task allocation, coauthor/article wording, and any publication-specific permission |
 | Environmetrics | first and corresponding author; individual conceptual/computational/empirical allocation pending | Raquel Prado, Bruno Sansó | `1272bfc`, `wileyNJD-APA.tex` | integrated with source and exAL/exDQLM attribution | selected article assets integrated; San Lorenzo bundle remains provenance-only | confirm individual roles and coauthor/publisher permission for retained article material |
 | QDESN | first author; individual theory/software/experiment allocation pending | Raquel Prado, Bruno Sansó | corrected current authority `757522d`, main article plus two supplements | integrated; ESN/DESN and quantile antecedents retained | selected current-authority assets integrated | confirm individual roles, publication status, and coauthor/publisher reuse terms |
 | MTI foundation and extensions | first author on both manuscripts; individual theorem/calibration/implementation allocation pending | Raquel Prado, Bruno Sansó | RQR `73887b9`; extensions `f345d94` | integrated with residual-product and tolerance antecedents; extensions marked proposed | selected RQR assets integrated; no extension assets tracked | confirm individual roles and reuse terms; resolve absent extension license and do not imply TCSP proof beyond current evidence |

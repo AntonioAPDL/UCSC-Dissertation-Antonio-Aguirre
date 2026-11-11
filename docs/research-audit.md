@@ -220,8 +220,8 @@ The audit found five issues that should be fixed before drafting:
   later submitted snapshot may still replace it, and coauthor, publisher, and
   repository-level direct-reuse permissions remain unverified.
 - **Software/provenance fragmentation:** the hydrology application pins
-  `exdqlm` 1.1.0, the software article describes 1.1.1, and current package
-  `main` is 1.1.2. Some QDESN and Environmetrics provenance records retain
+  `exdqlm` 1.1.0, while the current software article and package support state
+  are 1.1.2. Some QDESN and Environmetrics provenance records retain
   machine-specific paths, while the exdqlm article's named replication
   archives are not tracked at its audited commit.
 
@@ -267,7 +267,7 @@ validate every scientific conclusion in the repository.
 | `SRC-QDESN` | `757522db0f85815244370ec92a194de132268883` | Current article `main`; newer Search Phase II branches are unpromoted work | Recommended chapter |
 | `SRC-RQR` | `73887b9c86ef767aa1567c660718667945630aef` | Current `main` and current short-tolerance manuscript; old local checkout was stale | Recommended combined MTI chapter |
 | `SRC-MTI-EXT` | `f345d946aa5a81b94795838bec58d874a0fdd0c9` | Sole branch; compact theory manuscript without implementation/results | Combine with MTI foundation |
-| `SRC-EXDQLM-ARTICLE` | `d5534e97db8414fd875022261d4c530eae4676e4` | Current JSS-facing article `main` | Provisional fourth research chapter; committee counting confirmation pending |
+| `SRC-EXDQLM-ARTICLE` | `98cec593d11bf32715a690ae168086f16160e7f0` | Current version 1.1.2 JSS-facing article `main`; `d5534e9` is retained only as the immutable first-conversion baseline | Software research chapter |
 | `SRC-EXDQLM-PKG` | `e51045a4324901cced27ca2aaa22569afbc8e0e6` | Current package `main`, version 1.1.2; not the freeze for every paper | Shared implementation dependency |
 | `SRC-SAN-LORENZO-REPRO` | `a8797b804271b46c62bd04dab7dba6b84a10ab7d` | Public staged reproducibility bundle | Environmetrics provenance |
 | `SRC-ENVIRON-CORR` | `b1ceeb610d20f8287e4ca44e146c9cfdbcda1ee6` | Revision/response and table cross-check evidence | Environmetrics supporting source |
@@ -539,13 +539,16 @@ is an independent journal-suitable unit.
 
 ### 5.4 exdqlm article and package
 
-The exdqlm article's boundary is unusually clear. It identifies Yan's exAL
-distribution/static regression, Barata et al.'s exDQLM/MCMC/ISVB/transfer
-work, and general nonconjugate VB as its foundations. It describes its own
-contribution as an integrated R software workflow with composable model
-construction, coordinated inference engines, fitted-object methods,
-diagnostics, forecasting, post-fit synthesis, static shrinkage routines, C++
-acceleration, and reproducibility materials.
+The exdqlm article identifies Yan's exAL distribution and static regression,
+Barata et al.'s exDQLM, MCMC, ISVB, and transfer work, and general
+nonconjugate variational inference as its foundations. Package version 0.1.1
+already supplied dynamic model construction, MCMC, ISVB, transfer ISVB,
+forecasting, model checking, and plotting. The later contribution therefore
+concerns the subsequent restructuring and extensions: LDVB, nonconjugate
+scale--skewness updates, compiled intensive operations, filtering and
+smoothing corrections, forecasting and diagnostics, scoring,
+posterior-predictive synthesis, and static AL/exAL regression with
+regularized-horseshoe shrinkage.
 
 The article also retains useful negative evidence. In the Big Tree holdout,
 direct regression beats the transfer-function model on check loss and CRPS;
@@ -559,12 +562,15 @@ The version graph cannot be flattened:
 
 | Use | Version | Snapshot evidence | Consequence |
 | --- | --- | --- | --- |
+| Original package comparison | 0.1.1 | Tag `0.1.1`, commit `49cea5a48b2992d58eceb583e333bf08333e9be6` | Establishes the dynamic construction, MCMC, ISVB, transfer ISVB, forecast, check, and plot capabilities that predate the later contribution |
 | Environmetrics application | 1.1.0 | Tag `cran-v1.1.0`, commit `4c50b078abec33b9d752160911f7dfe841f818a7` | Preserve for application results |
-| exdqlm article and QDESN v14 comparator | 1.1.1 | Commit `6dba6f2863705e0e90f0ce19e0c75d106d022a52` plus article/manifest records | RNG and scale-skewness update; no matching release tag in the audited package repo |
+| Historical exdqlm article and QDESN v14 comparator | 1.1.1 | Commit `6dba6f2863705e0e90f0ce19e0c75d106d022a52` plus historical article/manifest records | Preserve only for results explicitly attached to that snapshot |
 | RQR documented development source | 0.6.0.9000 | Branch snapshot `dffb71ee70b597d6a716ee74be1cbc99731cd453` | Preserve only for the exact RQR implementation claims that name it; do not replace with package `main` |
-| Current package `main` | 1.1.2 | `DESCRIPTION` and `NEWS.md` | Adds Cholesky FFBS reproducibility repair; not a drop-in provenance replacement |
+| Current software article | 1.1.2 | Article commit `98cec593d11bf32715a690ae168086f16160e7f0` | Controls current Chapter 2 software exposition and numerical examples |
+| Current package `main` | 1.1.2 | Commit `e51045a4324901cced27ca2aaa22569afbc8e0e6`, `DESCRIPTION`, and `NEWS.md` | Supports the current article; not a drop-in replacement for frozen application results |
 
-The article describes `exdqlm_1.1.1.tar.gz`, a replication archive,
+The historical article described `exdqlm_1.1.1.tar.gz`; the current article
+fixes its final rerun to public CRAN version 1.1.2. The article also describes a replication archive,
 `code.Rout`, and `Rplots.pdf`. None is tracked in the article repository at the
 audited commit. They may exist in the journal submission bundle, but a public
 commit-to-archive checksum chain is not established. The full batch is reported
@@ -595,7 +601,7 @@ journal-suitable research unit.
 | QDESN | exAL/AL quantile readouts, exdqlm comparators, ESN/DESN literature | Deep-reservoir quantile architecture, multi-level shrinkage formulation, computation, and application/validation roles | Research chapter |
 | RQR/MTI | Residual-product criterion from Pouplin et al.; generalized-Bayes and tolerance literature | Mean-preserving characterization, tilt family, TCSP action/calibration, validation, and application roles | Research chapter, subject to proof-language repair |
 | MTI extensions | Same MTI loss and geometry | Regression/dynamic extension, conditional computation, implementation, and validation roles | Integrated sections within the MTI chapter; no separate appendix |
-| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations | Later LDVB, API, static/shrinkage, C++, diagnostics, synthesis, testing, examples, and writing roles | Provisional software research chapter with its technical material integrated by topic |
+| exdqlm | Yan exAL and Barata exDQLM/MCMC/ISVB/transfer foundations; original package 0.1.1 dynamic construction, fitting, forecasting, checking, and plotting | Later LDVB, nonconjugate updates, component-based model specification, static/shrinkage methods, compiled intensive operations, diagnostics, synthesis, testing, examples, and writing roles | Software research chapter with its technical material integrated by topic |
 
 The hydrology and QDESN projects share dynamic-quantile machinery but have
 different research questions: source-aware correction/synthesis versus
