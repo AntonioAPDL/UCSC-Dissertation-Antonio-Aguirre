@@ -30,8 +30,9 @@ acknowledgments, software-chapter opening, MTI identification theorem,
 synthesis, and Appendix E profile pages were rendered and inspected without
 layout defects.
 
-This entry records the validated local revision before GitHub synchronization.
-The PDF remains untagged; material-specific reuse review, signatures,
+The release-bearing revision was fast-forwarded to `main`, pushed, and verified
+on the remote at commit `3ebb0f2`. The PDF remains untagged;
+material-specific reuse review, signatures,
 institutional approval, and accessibility remediation remain filing-stage
 tasks. Overleaf still requires a deliberate pull from GitHub and an independent
 compile.

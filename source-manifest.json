@@ -10,7 +10,7 @@
     "reuse_review": "PENDING",
     "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The advisor, author-comment, final voice, exdqlm attribution, and MTI curation revisions are implemented and locally release-validated against fixed research authorities. The active dissertation uses first-person plural consistently, distinguishes original exdqlm 0.1.1 capabilities and inherited methods from the later package contribution, and retains only the MTI results required for population identification and computation. The current revision awaits GitHub synchronization; no Overleaf pull, institutional approval, or accessibility-conformant filing is implied. Material-specific reuse permission, remaining fine-grained contribution confirmations, signatures, and tagged-PDF accessibility validation remain open."
+    "state_note": "The advisor, author-comment, final voice, exdqlm attribution, and MTI curation revisions are implemented, release-validated against fixed research authorities, and synchronized to GitHub main. The active dissertation uses first-person plural consistently, distinguishes original exdqlm 0.1.1 capabilities and inherited methods from the later package contribution, and retains only the MTI results required for population identification and computation. No Overleaf pull, institutional approval, or accessibility-conformant filing is implied. Material-specific reuse permission, remaining fine-grained contribution confirmations, signatures, and tagged-PDF accessibility validation remain open."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -29,7 +29,8 @@
       "plan": "docs/final-voice-exdqlm-mti-polish-plan-20261110.md",
       "response_matrix": "docs/final-voice-exdqlm-mti-response-matrix-20261110.json",
       "manuscript_commit": "c2e4855",
-      "state": "LOCAL_RELEASE_VALIDATED_PENDING_GITHUB_SYNC",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
+      "release_bearing_main_commit": "3ebb0f2",
       "release": {
         "path": "build/release-20261111T021858Z/main.pdf",
         "sha256": "82ec659b5f1378cc4646b3763c14f53cc1f03e720e4f0b1865377d8a3d11846d",
