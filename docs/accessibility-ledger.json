@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-10",
+  "recorded_at": "2026-11-11",
   "scope": "Every active figure or included graphic in the compiler-recorded thesis graph.",
   "conformance_boundary": "This ledger provides source descriptions only. The muscat TeX Live 2018 PDF is untagged; WCAG 2.1 AA and PDF/UA conformance require a modern tagged build and external checker plus manual review.",
   "production_pdf_status": "UNTAGGED_BASELINE_NOT_ACCESSIBILITY_CONFORMANT",
@@ -89,7 +89,7 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
       "figure_label": "rqr2026:fig:tolerance-validation-primary",
-      "alt_text": "Four panels compare independent-sample content-attainment rates at n=50, 100, 500, and 1000 for the feasible target contents. Green, pink, and black vertical segments give the ranges across the eight simulation distributions for MTI, Young--Mathew, and Wilks, respectively. The vertical scale runs from 0.85 to 1.00, and a horizontal dashed line marks the nominal tolerance confidence 0.95. Wilks is at or near 1.00 in several cells; the MTI and Young--Mathew ranges lie closer to 0.95.",
+      "alt_text": "One horizontal panel groups nine sample-size and required-content settings. Green, pink and black segments show the range of content-attainment rates across eight distributions for MTI-ECM, Young--Mathew and Wilks. A vertical reference marks nominal tolerance confidence 0.95. The segments are across-distribution ranges, not uncertainty intervals. The accompanying text reports 53 simultaneous validation intervals wholly above 0.95 and 19 including 0.95.",
       "description_source": "caption",
       "status": "REVIEWED"
     },
@@ -97,7 +97,7 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
       "figure_label": "rqr2026:fig:tolerance-validation-width-ranges",
-      "alt_text": "Nine panels compare interval widths for the feasible sample-size and target-content cells. Within each panel, rows correspond to the Gaussian, Student t(3), exponential, asymmetric-Laplace, two-piece-Normal, Beta, Gamma, and log-normal simulation laws. Green, pink, and black horizontal segments show empirical 2.5--97.5 percent width ranges for MTI, Young--Mathew, and Wilks; crosses mark their mean widths, and short dashed gray markers give the known population shortest-interval widths. The logarithmic horizontal scale retains raw interval lengths and shows that relative width varies substantially by distribution and design cell.",
+      "alt_text": "Nine design panels arranged in three rows compare mean widths and empirical 2.5--97.5 percent width ranges for frozen MTI-ECM, Young--Mathew and Wilks across eight distributions. A shared left column gives the distribution names. Each panel uses a logarithmic width axis and population shortest-contiguous reference markers. MTI-ECM is narrower than Young--Mathew in 39 of 72 distribution-setting comparisons, not uniformly.",
       "description_source": "caption",
       "status": "REVIEWED"
     },
@@ -105,7 +105,7 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
       "figure_label": "rqr2026:fig:pharma-application-primary",
-      "alt_text": "Four panels summarize the reported tensile metric for 187 batches and 1000 paired random splits. Panel A shows the empirical CDF and the MTI, Young--Mathew, and Wilks intervals from representative split 665; MTI is left-shifted and narrower than the two benchmarks in that split. Panels B and C plot held-out-content difference against width difference, each defined as MTI minus Young--Mathew or Wilks; most width differences are negative, and crosses mark the paired medians. Panel D shows lower-tail omission with open markers and upper-tail omission with filled markers, together with interquartile and empirical 95 percent ranges for each method.",
+      "alt_text": "Four panels summarize the pharmaceutical tensile metric on 187 batches with 1000 paired random partitions. The representative actual MTI-ECM interval uses split 479. Paired width and held-out-content differences compare ECM with Young--Mathew and Wilks; separate tail omissions and partition ranges characterize interval placement. Numerical stationarity is assessed separately from content.",
       "description_source": "caption",
       "status": "REVIEWED"
     },

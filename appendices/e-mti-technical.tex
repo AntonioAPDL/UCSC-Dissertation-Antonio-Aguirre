@@ -3,8 +3,8 @@
 
 % migration-id: MIG-CH05-CURRENT-RQR
 % migration-id: MIG-CH05-CURRENT-MTI-EXT
-This appendix supplies the supporting proofs, profile calculation, calibration
-specification, and conditional computations used in
+This appendix supplies the supporting proofs, augmented computation,
+calibration specification, and numerical diagnostics used in
 Chapter~\ref{ch:research-d}.
 
 \section{Population and empirical results}
@@ -151,8 +151,8 @@ These identities explain the empirical balance reported in
 Chapter~\ref{ch:research-d}; they are estimating equations for the unpenalized
 intercept-only fit, not tolerance guarantees.
 
-\section{Profile computation and content checking}
-\label{app:mti-profile-computation}
+\section{Fixed-target computation and content checking}
+\label{app:mti-computation}
 
 For fitted content \(q\), tilt \(\delta\), and learning rate
 \(\omega_{\mathrm R}\), the intercept-only calculation uses the independent
@@ -167,54 +167,138 @@ J(a,b)=\omega_{\mathrm R}\sum_i
 [\rho_q\{(y_i-a)(y_i-b)\}-q\delta(a+b-2y_i)]
 +\frac\lambda2(a^2+b^2).
 \]
-Set \(m=(a+b)/2\), \(t=(b-a)^2/4\), and
-\(s=nq-\lambda/\omega_{\mathrm R}\).
-The two-root mode calculation reduces to a one-dimensional convex profile in
-the midpoint.
+For every finite sample and fixed finite tilt, this generalized posterior is
+proper. The check loss is nonnegative, so its exponential is bounded above
+by one. The remaining linear tilt has a finite expectation under the
+Gaussian prior: for \(t=\omega_{\mathrm R}nq\delta\),
+\(E_{\pi_0}\{\exp[t(a+b)]\}=\exp(t^2/\lambda)\). Completing the square
+also bounds all polynomial root moments. This argument uses the stated
+proper Gaussian priors; random heavy-tailed scales require a separate
+argument for nonzero tilt.
 
-\begin{proposition}[Convex midpoint profile]
-\label{rqr2026:prop:supp-convex-intercept-profile}
-Suppose \(0<s<n\), and let
-\(W_s=\{w\in[0,1]^n:\sum_iw_i=s\}\). For fixed \(m\), a minimizing
-\(t\ge0\) is an empirical \(s/n\) quantile of the observed squared distances
-\((y_i-m)^2\), \(i=1,\ldots,n\). Moreover,
+\subsection{Augmentation and Gibbs sampling}
+
+With the constants defined in Section~\ref{rqr2026:sec:static-theory-statements},
+the product-residual factor satisfies
 \begin{align*}
-\min_{t\ge0}J(m,t)
-&=2\lambda m^2+\max_{w\in W_s}\{A(w)+B(w)m\},\\
-A(w)&=\omega_{\mathrm R}
-[q\textstyle\sum_i y_i^2-\sum_iw_i y_i^2+2q\delta\sum_i y_i],\\
-B(w)&=2\omega_{\mathrm R}
-[\textstyle\sum_iw_i y_i-q\sum_i y_i-nq\delta].
+&\frac{q(1-q)}{\sigma_{\mathrm R}}
+  e^{-\rho_q(e_i)/\sigma_{\mathrm R}}\\
+&\quad=\int_0^\infty
+\Normal(e_i\mid\xi_qv_i,\phi_q\sigma_{\mathrm R}v_i)
+\Exp(v_i\mid\mathrm{rate}=1/\sigma_{\mathrm R})\,dv_i.
 \end{align*}
-The profile is strongly convex in \(m\); the minimizing squared half-width
-can be nonunique at an empirical quantile.
-\end{proposition}
+The multiplier on the left is independent of the roots because
+\(q\) and \(\omega_{\mathrm R}\) are fixed. The augmented kernel is therefore
+\begin{align*}
+\pi(a,b,v\mid D_n)\propto{}&
+\pi_0(a)\pi_0(b)e^{\omega_{\mathrm R}nq\delta(a+b)}\\
+&\times\prod_i v_i^{-1/2}
+\exp\!\left[-\frac{(e_i-\xi_qv_i)^2}
+{2\phi_q\sigma_{\mathrm R}v_i}-\frac{v_i}{\sigma_{\mathrm R}}\right].
+\end{align*}
+Terms depending only on the sample and fixed settings are absorbed into the
+constant. This augments an endpoint loss; it does not transform a response
+sampling density.
 
-\begin{proof}
-For \(z_i=(y_i-m)^2\), write
-\(\rho_q(z_i-t)=qz_i-qt+(t-z_i)_+\). Then
+Expanding the quadratic in one root gives the Gaussian canonical parameters
+in Eq.~\eqref{rqr2026:eq:mti-root-conditionals}. Collecting the powers of
+\(v_i\) and its reciprocal gives the GIG conditional in
+Eq.~\eqref{rqr2026:eq:mti-scale-conditional}. At \(e_i=0\), this distribution
+is Gamma with shape \(1/2\) and rate
+\(1/\{4\sigma_{\mathrm R}q(1-q)\}\). Its inverse moment is infinite,
+although the conditional distribution itself is proper.
+
+\par\noindent\begin{minipage}{\textwidth}
+\begin{algorithmblock}{Fixed-target MTI Gibbs sampling}
+\label{alg:ch05-mti-gibbs}
+Fix \(q,\delta,\omega_{\mathrm R},\lambda\) and choose dispersed initial
+raw roots for independent chains.
+\begin{enumerate}
+\item Draw each latent scale from its GIG conditional, using the Gamma limit
+at a zero product residual.
+\item Draw \(a\) from its Gaussian conditional, then draw \(b\) conditional
+on the updated \(a\) and the same latent scales.
+\item After burn-in, sort each retained root pair to obtain lower and upper
+endpoints and their width. Retain chain identities and objective values.
+\end{enumerate}
+Assess mixing and Monte Carlo error for these label-invariant summaries.
+\end{algorithmblock}
+\end{minipage}\par
+
+The sampler describes uncertainty conditional on the specified content and
+tilt. A content--tilt selection rule is a separate operation. Posterior
+endpoint means, medians, and modes are different summaries, and their
+intervals need not have the same content or width.
+
+\subsection{ECM calculation and empirical balance}
+
+For \(e_i\ne0\), the E-step uses
 \[
-\min_{t\ge0}\{\textstyle\sum_i(t-z_i)_+-st\}
-=-\min_{w\in W_s}\textstyle\sum_iw_iz_i.
+\tau_i=E(v_i^{-1}\mid\cdot)=\frac{1}{q(1-q)|e_i|}.
 \]
-Assigning unit weight to the smallest \(\lfloor s\rfloor\) distances and the
-remaining mass to the next distance establishes the quantile statement.
-Expanding the squared distances gives the displayed profile. A maximum of
-affine functions is convex, and \(2\lambda m^2\) makes it strongly convex.
-\end{proof}
+Let \(d_i=y_i-b\). Holding the second root fixed, conditional maximization
+gives
+\[
+a^+=\frac{\sum_i d_i(\tau_i y_i d_i-\xi_q)/
+ (\phi_q\sigma_{\mathrm R})+\omega_{\mathrm R}nq\delta}
+ {\lambda+\sum_i\tau_i d_i^2/(\phi_q\sigma_{\mathrm R})}.
+\]
+The second maximization exchanges root labels and uses the updated
+\(a^+\), while retaining the same E-step weights. The calculation uses a
+residual-product floor near zero and checks the original objective \(J\),
+with backtracking when necessary.
 
-The convex profile supplies the optimization result used by the fitted MTI
-procedure. The calculation minimizes this scalar function, uses the lower squared radius
-at a tie, and checks the final objective against a convex lower bound with
-relative tolerance \(10^{-8}\). The reported study uses
-\(\omega_{\mathrm R}=1\), \(\lambda=10^{-4}\), and zero prior means.
+\par\noindent\begin{minipage}{\textwidth}
+\begin{algorithmblock}{Fixed-target MTI--ECM calculation}
+\label{alg:ch05-mti-ecm}
+Fix \(q,\delta,\omega_{\mathrm R},\lambda\) and deterministic starting roots.
+\begin{enumerate}
+\item Compute the product residuals and inverse-scale moments, using the
+prespecified floor near zero.
+\item Update the first root and then the second root by conditional
+maximization, using one set of E-step weights.
+\item Accept the cycle if \(J\) does not increase beyond the numerical
+allowance; otherwise backtrack toward the preceding roots.
+\item Stop at the stated criterion or iteration limit. Return the final
+sorted roots, objective, stopping flag, and stationarity diagnostic.
+\end{enumerate}
+\end{algorithmblock}
+\end{minipage}\par
+
+Each candidate starts from empirical fractional shortest-window endpoints
+shifted according to its tilt. The reported computation uses one start,
+\(\omega_{\mathrm R}=1\), \(\lambda=10^{-4}\), at most 100 cycles,
+stationarity tolerance \(10^{-3}\), and a residual-product floor of
+\(10^{-8}\) times the implementation's response-product scale. The floor
+makes the update approximate near zero residuals.
+
+At a distinct-root stationary point, choose joint subgradients
+\(s_i\in\partial\rho_q(e_i)\) satisfying the penalized endpoint equations.
+With \(u_i=q-s_i\), subtraction and substitution give
+\[
+\sum_i u_i=nq-\lambda/\omega_{\mathrm R},\qquad
+\sum_i u_i y_i=nq(\overline y+\delta)
+-\frac{\lambda}{\omega_{\mathrm R}}(a+b).
+\]
+These identities show the prior contributions to empirical balance; finite
+iterates need not satisfy them exactly. In the simulation, 42,116 of
+72,000 selected fits meet the stopping criterion and 29,884 reach the cap.
+All selected fits reach the cap at \((n,c)=(50,.90),(100,.95),(500,.99)\).
+In the application, the corresponding counts are 90 of 1,000 primary
+tensile fits and 14 of 1,000 primary RSD fits; across all partitions and
+both responses, 170 of 3,004 pass. Every returned interval remains in the
+empirical comparison. These stopping diagnostics do not certify global
+mode estimation.
+
+\subsection{Posterior content assessment}
 
 For a fixed interval \(I\), direct Dirichlet-process conjugacy gives
 \[
 F(I)\mid D_n\sim
-\operatorname{Beta}\{aH(I)+N_n(I),\,a(1-H(I))+n-N_n(I)\}.
+\operatorname{Beta}\{\alpha_0H(I)+N_n(I),\,
+\alpha_0(1-H(I))+n-N_n(I)\}.
 \]
-The fitted procedure uses \(a=1\) and \(H=\Normal(0,4^2)\) on the fitting
+The fitted procedure uses \(\alpha_0=1\) and \(H=\Normal(0,4^2)\) on the fitting
 scale. The resulting survival probability is a posterior content statement
 under this response-distribution model; repeated-sampling simulation evaluates
 the complete tolerance rule.
@@ -235,16 +319,17 @@ sample range, it also includes
 &.9985,.999,.99925,.9995,.99975,.9999\}.
 \end{split}
 \]
-The effective-mass rule in Chapter~\ref{ch:research-d} then
-adds one midpoint for each missing rank interval. The tilt menu includes zero,
-the fractional shortest-window offset, and seven equally spaced values over
-the empirical admissible range.
+At each content, the tilt menu adds
+\(-.45,-.30,-.15,0,.15,.30,.45\) sample standard deviations to the
+empirical fractional shortest-window tilt and includes zero. Candidates
+whose absolute tilt exceeds two sample standard deviations are removed.
+The fixed construction also allows a deterministic expansion when the
+initial set has no eligible candidate; this is not replacement by a
+different interval method.
 
 For each of the nine \((n,c)\) settings and eight distributions in
-Chapter~\ref{ch:research-d}, 32 independent development samples per distribution define
-an initial menu: 25 empirical quantiles of candidate content probabilities and
-the requested confidence, for 26 cutoffs. An independent assessment then uses
-\(R=24{,}000\) samples per distribution and cutoff. If \(S\) runs both produce an
+Chapter~\ref{ch:research-d}, the calibration assesses candidate cutoffs on
+\(R=1000\) samples per distribution. If \(S\) runs both produce an
 interval and attain content \(c\), the one-sided exact binomial lower bound is
 \[
 L_{\eta}(S,R)=
@@ -253,20 +338,18 @@ L_{\eta}(S,R)=
 \operatorname{Beta}^{-1}(\eta;S,R-S+1),&S>0.
 \end{cases}
 \]
-A cutoff is accepted only if all \(R\) intervals are produced and
-\(L_\eta(S,R)\ge0.95\) for every distribution; the smallest accepted cutoff is retained.
-
-The initial allocation is \(\eta=0.025/(9\cdot8\cdot26)\). Seven settings
-pass. A prespecified follow-up uses fresh development and assessment samples
-for \((n,c)=(50,0.90)\) and \((100,0.95)\), with 105 cutoffs per setting; the
-other seven cutoffs remain unchanged. Its allocation is
-\(\eta=0.025/(2\cdot8\cdot105)\). Splitting the total error probability 0.05
-between stages and applying the union bound over settings, distributions, and assessed
-cutoffs gives the simultaneous calibration statement.
+These are pointwise lower bounds. Selection considers content attainment,
+absence of observed nonreturns, and width stability. The fixed cutoffs are
+\(0.995\), except for \(0.996\) at \(n=1000,c=0.99\).
+The smallest distribution-specific lower bounds are approximately
+\(0.9460\) at \(n=100,c=0.95\) and \(0.9382\) at \(n=500,c=0.99\);
+the other seven setting minima exceed \(0.95\). They do not adjust for the
+cutoff search or establish a simultaneous guarantee for the selected rule.
 
 The cutoff is fixed before 1,000 independent validation samples are generated
-for every distribution and setting. Of the 72 simultaneous validation intervals, 38 have
-lower bounds above 0.95, 34 include 0.95, and none has an upper bound below
+for every distribution and setting. Simultaneous two-sided intervals allocate
+\(0.05/(2\cdot72)\) to each tail. Of the 72 validation intervals, 53 have
+lower bounds above 0.95, 19 include 0.95, and none has an upper bound below
 0.95. The smallest point estimate is 951/1000. These results characterize the
 prespecified rule over the eight-distribution panel.
 

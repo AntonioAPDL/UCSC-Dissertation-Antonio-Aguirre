@@ -54,7 +54,6 @@ RETAINED_LABELS = {
     "rqr2026:prop:population-characterization",
     "rqr2026:thm:quantile-window",
     "rqr2026:thm:profiled-mean-tilt",
-    "rqr2026:prop:supp-convex-intercept-profile",
 }
 
 

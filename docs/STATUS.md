@@ -1,5 +1,43 @@
 # Project status
 
+## 2026-11-11 Chapter 5 ECM/Gibbs source migration release-validated
+
+The author-directed Chapter 5 revision replaces the active convex-profile
+computation and results with the authentic finite-iteration MTI--ECM packet
+at RQR source `cab844d0695fe13fa3f610615d282972112eba51`. The chapter and
+Appendix E now derive the generalized posterior, Gaussian/GIG conditionals,
+and separate Gibbs and ECM algorithms. The three curated population results
+and the selected Figure 5.1 remain. The extension midpoint-display sign is
+corrected at `66a63ddc389b1492444e6c9e4611c5076ed1ad19`, merged and pushed
+to that repository's main at `488d072507f977362ba6c2890e02692e81df9d72`.
+The audited numerical ECM and Gibbs code already used the correct sign;
+no model rerun was required or launched.
+
+The revision updates the complete empirical packet and connected prose.
+It preserves the changed width comparisons, adverse calibration bounds,
+iteration-cap counts, and the distinction between fixed-target Gibbs
+uncertainty and a validated tolerance-selection procedure. No unreported
+Gibbs values or speedup are asserted. The two simulation graphics are
+reproducible presentation derivatives of frozen summaries with readable
+labels, not new scientific fits.
+
+The full release gate passes 48 tests, 132 immutable import-source blob
+checks, the additional MTI source records, historical advisor controls, and
+all structure/voice/dependency checks. The accepted artifact is
+`build/release-20261112T043413Z/main.pdf`: 189 US-Letter pages,
+3,988,713 bytes, SHA-256
+`8ddddb4a241c68341d06ffb4054ca2f4c3727eb701ea389a72d2f98448235db0`.
+It has ten underfull and zero overfull boxes; all 32 fonts are embedded and
+none is Type 3. Rendered inspection confirms the two algorithms stay intact
+and the revised figures/tables are legible.
+
+The implementation and source records are
+`docs/ch05-mti-ecm-gibbs-migration-20261111.md` and its JSON companion.
+This is the validated pre-promotion checkpoint. A later synchronization
+entry records the actual main merge and remote readback. An Overleaf pull
+and independent compile, reuse clearance, signatures, and accessibility
+remediation remain distinct tasks.
+
 ## 2026-11-10 plural voice enforcement and Figure 5.1 options
 
 The active manuscript contains no first-person singular authorial prose.

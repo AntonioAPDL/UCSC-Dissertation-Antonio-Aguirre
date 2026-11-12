@@ -424,15 +424,17 @@
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-pricefm-fold-design",
       "appendices/d-qdesn-technical.tex::label::qdesn2026:tab:supp-sensitivity-summary",
       "appendices/e-mti-technical.tex::heading::section::calibration-and-sample-range-reference::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::section::fixed-target-computation-and-content-checking::occurrence::1",
       "appendices/e-mti-technical.tex::heading::section::population-and-empirical-results::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
       "appendices/e-mti-technical.tex::heading::section::proposed-endpoint-extensions::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::augmentation-and-gibbs-sampling::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::ecm-calculation-and-empirical-balance::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::posterior-content-assessment::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-profiled-risk-derivative",
-      "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-intercept-profile",
       "display::rqr2026:tab:supp-mti-profile-policy"
     ]
   },
@@ -924,10 +926,10 @@
       "baseline_label": "app:mti-technical",
       "question_context": "Appendix~\\ref{app:mti-technical} gives the corresponding penalized identities.",
       "action": "RETARGET",
-      "target_label": "app:mti-profile-computation",
+      "target_label": "app:mti-computation",
       "status": "IMPLEMENTED",
       "implementation_commit": "c2e4855",
-      "final_location": "app:mti-profile-computation"
+      "final_location": "app:mti-computation"
     },
     {
       "id": "APPX-BRIDGE-042",
@@ -936,10 +938,10 @@
       "baseline_label": "app:mti-technical",
       "question_context": "Appendix~\\ref{app:mti-technical} gives the profile identity and computational details. It also",
       "action": "RETARGET",
-      "target_label": "app:mti-profile-computation",
+      "target_label": "app:mti-computation",
       "status": "IMPLEMENTED",
       "implementation_commit": "c2e4855",
-      "final_location": "app:mti-profile-computation"
+      "final_location": "app:mti-computation"
     },
     {
       "id": "APPX-BRIDGE-043",
@@ -13991,9 +13993,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14046,9 +14048,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14099,9 +14101,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14152,9 +14154,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14205,9 +14207,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14258,9 +14260,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14294,7 +14296,7 @@
         "heading": "Cornish--Fisher Tilt Approximations",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14302,7 +14304,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsubsection::cornish-fisher-tilt-approximations::occurrence::1",
@@ -14313,9 +14315,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14366,9 +14368,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14419,9 +14421,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14472,9 +14474,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14483,7 +14485,7 @@
       "chapter": "5",
       "unit_type": "SECTION",
       "source_path": "appendices/e-mti-technical.tex",
-      "anchor": "Fixed-Target MTI Computation",
+      "anchor": "app:mti-computation",
       "baseline": {
         "line_start": 798,
         "line_end": 825,
@@ -14502,13 +14504,13 @@
       "question": "What technical support from this unit is necessary for the corresponding chapter claim?",
       "disposition": "CONDENSE",
       "current_inclusion": "ACTIVE",
-      "rationale": "The scientific distinction remains, but repeated exposition or standard calculation can be shortened.",
+      "rationale": "Retains the authenticated augmented-posterior, Gaussian/GIG conditional, Gibbs and finite-iteration ECM derivations.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
         "heading": "Fixed-Target MTI Computation",
         "label": ""
       },
-      "required_body_bridge": "app:mti-profile-computation",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14516,20 +14518,23 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:mti-profile-computation"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::section::profile-computation-and-content-checking::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::section::fixed-target-computation-and-content-checking::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::augmentation-and-gibbs-sampling::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::ecm-calculation-and-empirical-balance::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::posterior-content-assessment::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14563,7 +14568,7 @@
         "heading": "An Alternative ECM Calculation",
         "label": ""
       },
-      "required_body_bridge": "app:mti-profile-computation",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14571,7 +14576,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:mti-profile-computation"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsubsection::the-penalized-intercept-criterion::occurrence::1"
@@ -14580,9 +14585,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14616,7 +14621,7 @@
         "heading": "The Penalized Intercept Criterion",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14624,7 +14629,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsubsection::fractional-empirical-balance::occurrence::1"
@@ -14633,9 +14638,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14669,7 +14674,7 @@
         "heading": "Direct DP Content Check",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14677,7 +14682,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::reproducibility-and-validation-limits::occurrence::1"
@@ -14686,9 +14691,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14742,9 +14747,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14797,9 +14802,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14853,9 +14858,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14909,9 +14914,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14945,7 +14950,7 @@
         "heading": "Notation and Targets",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -14953,7 +14958,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::ecm-mode-calculation::occurrence::1"
@@ -14962,9 +14967,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -14998,7 +15003,7 @@
         "heading": "Root Labels and Endpoint Summaries",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15006,7 +15011,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::gaussian-root-updates-and-fixed-tilt::occurrence::1"
@@ -15015,9 +15020,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15051,7 +15056,7 @@
         "heading": "Pseudo-AL Augmentation",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15059,7 +15064,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::pharmaceutical-application-details::occurrence::1"
@@ -15068,9 +15073,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15104,7 +15109,7 @@
         "heading": "Gaussian Root Updates and Fixed Tilt",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15112,7 +15117,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::diagnostics-and-validation-limits::occurrence::1"
@@ -15121,9 +15126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15157,7 +15162,7 @@
         "heading": "ECM Mode Calculation",
         "label": ""
       },
-      "required_body_bridge": "app:mti-profile-computation",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15165,7 +15170,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:mti-profile-computation"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::empirical-balance::occurrence::1"
@@ -15174,9 +15179,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15210,7 +15215,7 @@
         "heading": "Conditionally Gaussian Shrinkage",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15218,7 +15223,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::pseudo-al-augmentation::occurrence::1"
@@ -15227,9 +15232,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15263,7 +15268,7 @@
         "heading": "Deterministic Basis Expansions",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Retain the claim-bearing result in the target section or corresponding body statement.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15271,7 +15276,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::direct-dp-content-check::occurrence::1"
@@ -15280,9 +15285,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15335,9 +15340,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15391,9 +15396,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15446,9 +15451,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15501,9 +15506,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15556,9 +15561,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15611,9 +15616,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15666,9 +15671,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15721,9 +15726,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15776,9 +15781,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15831,9 +15836,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15869,7 +15874,7 @@
         "heading": "An Alternative ECM Calculation",
         "label": ""
       },
-      "required_body_bridge": "app:mti-profile-computation",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Preserve the result, proof obligation, or nonstandard computational role in the target section.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -15877,7 +15882,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:mti-profile-computation"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-pseudo-al-mixture"
@@ -15886,9 +15891,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -15941,9 +15946,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -15976,23 +15981,23 @@
       ],
       "body_references": [],
       "question": "What equation, formal result, or algorithmic step must remain recoverable for the chapter claim?",
-      "disposition": "RETAIN",
-      "current_inclusion": "ACTIVE",
-      "rationale": "The formal result and its proof obligation require an explicit authoritative location.",
+      "disposition": "DEACTIVATE",
+      "current_inclusion": "INACTIVE",
+      "rationale": "Author-approved replacement of the production computation; population identification profile arguments are retained.",
       "target": {
         "path": "appendices/e-mti-technical.tex",
         "heading": "The Penalized Intercept Criterion",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
-      "replacement_or_no_loss": "Preserve the result, proof obligation, or nonstandard computational role in the target section.",
+      "required_body_bridge": "app:mti-computation",
+      "replacement_or_no_loss": "The active computation is derived through augmentation and Gibbs/ECM; the old convex-profile proposition remains recoverable in the prior dissertation commit.",
       "protected_conclusion_ids": [],
       "recovery": {
         "baseline_pdf_pages": "313--378",
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
-        "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "git_commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-convex-intercept-profile"
@@ -16001,9 +16006,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16061,9 +16066,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16104,7 +16109,7 @@
         "heading": "Direct DP Content Check",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Preserve the result, proof obligation, or nonstandard computational role in the target section.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -16112,7 +16117,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::label::rqr2026:prop:supp-dp-content-law"
@@ -16121,9 +16126,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16181,9 +16186,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16241,9 +16246,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16301,9 +16306,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16361,9 +16366,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -18872,7 +18877,7 @@
         "heading": "Selective empirical support",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Body conclusion or retained display identified by the protected-conclusion and bridge records.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -18880,7 +18885,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "appendices/e-mti-technical.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::label::rqr2026:fig:supp-loss-geometry"
@@ -18889,9 +18894,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -18929,7 +18934,7 @@
         "heading": "Selective empirical support",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Body conclusion or retained display identified by the protected-conclusion and bridge records.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -18937,7 +18942,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "tables/ch05-mti/tolerance_validation_article_dgp_delivery.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "display::rqr2026:tab:supp-primary-dgp-delivery"
@@ -18946,9 +18951,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -18986,7 +18991,7 @@
         "heading": "Selective empirical support",
         "label": ""
       },
-      "required_body_bridge": "app:e-technical",
+      "required_body_bridge": "app:mti-computation",
       "replacement_or_no_loss": "Body conclusion or retained display identified by the protected-conclusion and bridge records.",
       "protected_conclusion_ids": [],
       "recovery": {
@@ -18994,7 +18999,7 @@
         "source_snapshot": "thesis commit 37b9da0fdb16168dff07efdc9454886f8467f6cd",
         "source_path": "tables/ch05-mti/tolerance_validation_article_dgp_width_ranges.tex",
         "git_commit": "37b9da0fdb16168dff07efdc9454886f8467f6cd",
-        "no_loss_location": "app:e-technical"
+        "no_loss_location": "app:mti-computation"
       },
       "coverage_keys": [
         "display::rqr2026:tab:supp-primary-dgp-width-ranges"
@@ -19003,9 +19008,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19060,9 +19065,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19119,9 +19124,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19176,9 +19181,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19235,9 +19240,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19292,9 +19297,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19349,9 +19354,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19406,9 +19411,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19463,9 +19468,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19520,9 +19525,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19577,9 +19582,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19634,9 +19639,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19693,9 +19698,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19750,9 +19755,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {
@@ -19807,9 +19812,9 @@
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
-        "commit": "c2e4855",
-        "final_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-        "validation": "Fast, chapter, and release validation passed; clean 184-page build; extracted-text and rendered-page review completed"
+        "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
       }
     },
     {

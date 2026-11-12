@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "baseline_commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+  "status": "IMPLEMENTED_RELEASE_VALIDATED",
+  "authorization": "Author-directed Chapter 5 ECM/Gibbs migration and verified extension tilt-sign correction",
+  "gibbs_empirical_status": "NOT_REPORTED",
+  "gibbs_boundary": "Conditionals and algorithms are included; no completed Gibbs comparison or measured ECM/Gibbs speed ratio is asserted.",
+  "scope": "Chapter 5, Appendix E, connected dissertation prose, eight result assets, and their source/validation records only",
+  "supersedes": [
+    {
+      "record": "docs/final-voice-exdqlm-mti-response-matrix-20261110.json",
+      "item": "MTI-001",
+      "scope": "Retires the computational convex-profile proposition; retains the three population identification results and their proof arguments."
+    },
+    {
+      "record": "docs/current-source-refresh-audit.md",
+      "scope": "Replaces the active profiled-MTI results with the authentic finite-iteration MTI-ECM packet; historical audit is preserved."
+    }
+  ],
+  "response_items": [
+    {
+      "id": "CH05-MIG-001",
+      "request": "Replace the production convex-profile account with MTI-ECM and Gibbs computation.",
+      "resolution": "Chapter 5 and Appendix E state the fixed-target generalized posterior, augmentation, Gaussian/GIG updates and distinct mode/sampling roles.",
+      "targets": [
+        "chapters/05-research-d.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-002",
+      "request": "Retain the essential MPI/MTI theory without obsolete algorithmic material.",
+      "resolution": "Retain three population identification results and their profile-risk proofs; retire the computational convex-profile proposition.",
+      "targets": [
+        "chapters/05-research-d.tex",
+        "appendices/e-mti-technical.tex",
+        "scripts/validate_final_voice_style.py"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-003",
+      "request": "Explain tolerance construction and width/tilt selection.",
+      "resolution": "Describe candidate content and tilt search, fixed-target ECM endpoints, direct DP content probability, separately calibrated cutoff, and independent validation.",
+      "targets": [
+        "chapters/05-research-d.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-004",
+      "request": "Replace figures and tables coherently with authenticated results.",
+      "resolution": "Replace eight result assets as one ECM packet; preserve author-selected Figure 5.1 and the population placement map.",
+      "targets": [
+        "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+        "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+        "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+        "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+        "tables/ch05-mti/pharma_application_primary_summary.tex",
+        "tables/ch05-mti/pharma_application_numbers.tex",
+        "tables/ch05-mti/pharma_source_numbers.tex",
+        "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-005",
+      "request": "Provide an ECM/Gibbs comparison without treating expectations as observed findings.",
+      "resolution": "Include both algorithms and their estimands but no unexecuted Gibbs numerical values, equality claim, or measured speed ratio.",
+      "targets": [
+        "chapters/05-research-d.tex",
+        "appendices/e-mti-technical.tex",
+        "scripts/validate_mti_migration.py"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-006",
+      "request": "Reconcile fixed-tilt signs and related extension theory.",
+      "resolution": "Pin the corrected extension manuscript and preserve the negative retained-mean tilt in the loss and positive Gaussian canonical shift.",
+      "targets": [
+        "chapters/05-research-d.tex",
+        "appendices/e-mti-technical.tex",
+        "source-manifest.json"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-007",
+      "request": "Use the author's concise statistical style throughout the dissertation references.",
+      "resolution": "Revise only the connected abstract, acknowledgments, introduction and synthesis with verified ECM findings and accurate contribution boundaries.",
+      "targets": [
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "chapters/01-introduction.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "appendices/e-mti-technical.tex"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    },
+    {
+      "id": "CH05-MIG-008",
+      "request": "Preserve provenance and require a clean source-verified release.",
+      "resolution": "Retain original baseline hashes and immutable advisor receipts; add current source/asset hashes, migration controls, and source-aware regression tests.",
+      "targets": [
+        "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
+        "docs/imports/ch05-mti.json",
+        "docs/revision-ledger.json",
+        "scripts/validate.sh"
+      ],
+      "status": "IMPLEMENTED_VALIDATED"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "frontmatter/abstract.tex",
+      "sha256": "be7dfc0a2bf53c82e60eb6dba897fa71adc82bb10430802ce878b1c9e127ce00"
+    },
+    {
+      "path": "frontmatter/acknowledgments.tex",
+      "sha256": "09bc01cdf10fbb2c23086a15e967dc769bdff0d22ea09381a06992911ceb3672"
+    },
+    {
+      "path": "chapters/01-introduction.tex",
+      "sha256": "c8db13380c48f82250a1d65d9cb4570d8fa8f08b5e52a58fb0fa76482e7572f8"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "sha256": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69"
+    },
+    {
+      "path": "chapters/06-synthesis.tex",
+      "sha256": "b20d3f813d18b266a9d4ba89edde5ddcea06ae83600fb89822ffc3d8342ef2dd"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+      "sha256": "d09897db7feefaae8d701d89989614145ae5d7d2bf05f81e5e81f3f4cc3f254a"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+      "sha256": "16b9c1c4247da4875000aa7780c1389cd1ae7f2b12c32dc375478cd406c10a91"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+      "sha256": "c37c50487b3c3af742c37e1c12d327ce867bd9f72a10cedd59070080eee1f6a9"
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+      "sha256": "980aebd8ea08cb4a0d9cae76cbbe51ae0fe41834b068e89e907319601bfa9b94"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_numbers.tex",
+      "sha256": "090bb4ca972a4f41d569217fa0c92aa4b6f0d0707bf51909f533d490e95be77c"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_source_numbers.tex",
+      "sha256": "3c064475b24d91df8799e7de68488f7156006de17ed6ccfc42dda846bde8b823"
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex",
+      "sha256": "4a8724f059aad310ff1be69c7f1d8e2feddc5ba51600481f06c14cb3b8bc0275"
+    },
+    {
+      "path": "scripts/generate_ch05_mti_ecm_figures.R",
+      "sha256": "320fbcbdb6bb31dd3169e3a2dd8b965a7cf5c57d711f0686838fd2105d2a2513"
+    },
+    {
+      "path": "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+      "sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47"
+    },
+    {
+      "path": "tables/ch05-mti/ecm_population_width_reference_20261111.csv",
+      "sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "main.tex",
+      "sha256": "8434b356da294883672cc62007c0004d2a6cc4c900f6e2bb6e9ddd29475853c8"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "rqr-gibbs-supplement.tex",
+      "sha256": "891dd200e58ddfa8ad89f25646b5e10509c2b074e622147c9beb0a50ed7f0e5d"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/mti_ecm_validation_20261111/provenance.json",
+      "sha256": "7ca1dd97dca567ecf9a58a3a270bb4808745c9dce4a39766e295647dc2445bb3"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/mti_ecm_validation_20261111/family_case_summary.csv",
+      "sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/mti_ecm_validation_20261111/paired_comparisons.csv",
+      "sha256": "6e60200f8b9dcc653f974284590aaa23e5b02736ec875e581e710c513cfbb523"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/mti_ecm_validation_20261111/ecm_diagnostics.csv",
+      "sha256": "c7593573fb182b364d74aceac90631ef518503383e148f3b7462eb3933d2f840"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/pharma_mti_application_20261020/manifest.json",
+      "sha256": "544e9c9686244ee6415a77beeb8fb47d65a1c5fc04c13a295ffc47fb836a9d1d"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/pharma_source_structure_ecm_20261111/manifest.json",
+      "sha256": "8aef41d6fd0622c059a4e8166f5f7b5bb1b857ecb196a76ca5b07e6b509fe671"
+    },
+    {
+      "source_id": "SRC-RQR",
+      "clone": "rqr",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "path": "figures/data/tolerance_population_shortest_content_oracle.csv",
+      "sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf"
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "clone": "mti-extensions",
+      "commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
+      "path": "main.tex",
+      "sha256": "f9931923d31a9d35ce8efba75437b1074b60e7890f227affd34b2b3239d0d6f7"
+    },
+    {
+      "source_id": "SRC-MTI-EXT",
+      "clone": "mti-extensions",
+      "commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
+      "path": "mti-extensions-supplement.tex",
+      "sha256": "a2d5d6c79468ceb7c7bc1ff24e1af8daeaa88264874a1e30425b37250f5fc8fb"
+    }
+  ],
+  "protected_history": [
+    {
+      "path": "docs/bruno-revision-response-matrix-20261109.json",
+      "sha256": "8f600eed1a96f7ac86b8830ca76b49c02a996195a23ac2c793895be325bbbc02"
+    },
+    {
+      "path": "docs/bruno-revision-preedit-baseline-20261109.json",
+      "sha256": "090f11ef8371a25ce8da6a20587c4a1de680acef1da8a3c6a938384f9a9c84e7"
+    },
+    {
+      "path": "docs/author-comments-preedit-baseline-20261110.json",
+      "sha256": "e6b7c9a6581a2ba29038690d63e79578695f91f605bd2669f8743db3b7b6a8a2"
+    },
+    {
+      "path": "docs/source-refresh-20261026.json",
+      "sha256": "013e907f841ee91eca13da02f8f41784c8832f7ef74ade936aad9a80ecac848e"
+    },
+    {
+      "path": "docs/source-refresh-20261106.json",
+      "sha256": "76135487a2605ae2909c39c590d2e6563bd6a043424ecc90d88812ba6fbaa815"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig01_three_balance_principles.png",
+      "sha256": "0ef8fc73eb3ad780475405a971d17da5eb63bacd28f0c461b39d348216d70ed3"
+    }
+  ],
+  "validation": {
+    "source_and_asset_checks": "frozen source hashes recorded",
+    "release_build": {
+      "status": "PASS",
+      "artifact": "build/release-20261112T043413Z/main.pdf",
+      "sha256": "8ddddb4a241c68341d06ffb4054ca2f4c3727eb701ea389a72d2f98448235db0",
+      "pages": 189,
+      "unit_tests": 48,
+      "immutable_import_source_blobs": 132,
+      "additional_mti_source_records": 11,
+      "overfull_boxes": 0,
+      "underfull_boxes": 10,
+      "embedded_fonts": 32,
+      "rendered_physical_pages": [
+        120,
+        121,
+        122,
+        123,
+        125,
+        126,
+        171,
+        172,
+        173,
+        176
+      ],
+      "visual_review": "PASS"
+    },
+    "remote_publication": "NOT_PERFORMED",
+    "extension_tests": {
+      "status": "PASS",
+      "tests": 5,
+      "main_pages": 7,
+      "supplement_pages": 4,
+      "corrected_source_commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
+      "remote_main_merge": "488d072507f977362ba6c2890e02692e81df9d72"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-10",
+  "recorded_at": "2026-11-11",
   "scope": "All labeled figure, table, and longtable environments transitively included by research Chapters 2--5 and their technical appendices after the current-source refresh.",
   "decision_meanings": {
     "KEEP": "retain as a distinct thesis display",
@@ -256,9 +256,9 @@
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 783,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -280,9 +280,9 @@
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 655,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -292,9 +292,9 @@
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 669,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -328,9 +328,9 @@
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 766,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -340,9 +340,9 @@
       "source_file": "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex",
       "baseline_line": 3,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {
@@ -352,9 +352,9 @@
       "source_file": "chapters/05-research-d.tex",
       "baseline_line": 642,
       "disposition": "KEEP",
-      "claim_role": "current manuscript evidence retained in the reading chapter",
-      "rationale": "Retained by the current manuscript-first source projection as an active main-text or claim-relevant supporting display.",
-      "status": "CURRENT_SOURCE_REFRESH",
+      "claim_role": "Frozen MTI-ECM result or policy; not the superseded convex-profile packet",
+      "rationale": "Retains the same dissertation display role with authenticated finite-iteration ECM inputs, including adverse findings and numerical stopping qualifications.",
+      "status": "CH05_ECM_SOURCE_MIGRATION",
       "implementation_status": "IMPLEMENTED"
     },
     {

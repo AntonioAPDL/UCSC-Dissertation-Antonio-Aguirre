@@ -12,7 +12,7 @@
   "editorial_derivative": {
     "chapter_path": "chapters/05-research-d.tex",
     "revision_ledger": "docs/revision-ledger.json",
-    "status": "CHAPTER_REVISION_COMPLETE",
+    "status": "CURRENT_ECM_RELEASE_VALIDATED",
     "current_components": [
       "chapters/05-research-d.tex",
       "appendices/e-mti-technical.tex"
@@ -20,8 +20,8 @@
     "migration_map": "docs/appendix-migration-map.json"
   },
   "distribution": {
-    "github": "MERGED_TO_MAIN",
-    "overleaf": "AUTHOR_REPORTED_SYNCHRONIZED",
+    "github": "PENDING_CURRENT_REVISION",
+    "overleaf": "NOT_PERFORMED_CURRENT_REVISION",
     "rights_effect": "NONE"
   },
   "policy": {
@@ -672,5 +672,109 @@
       "rights_status": "UNVERIFIED",
       "validation": "exact source blob and destination hash recorded; dissertation build checked separately"
     }
-  ]
+  ],
+  "current_projection": {
+    "source_id": "SRC-RQR",
+    "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+    "status": "IMPLEMENTED_SOURCE_VERIFIED",
+    "migration_record": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
+    "documents": [
+      {
+        "source_path": "main.tex",
+        "source_sha256": "8434b356da294883672cc62007c0004d2a6cc4c900f6e2bb6e9ddd29475853c8"
+      },
+      {
+        "source_path": "rqr-gibbs-supplement.tex",
+        "source_sha256": "891dd200e58ddfa8ad89f25646b5e10509c2b074e622147c9beb0a50ed7f0e5d"
+      },
+      {
+        "source_path": "figures/data/mti_ecm_validation_20261111/family_case_summary.csv",
+        "source_sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47",
+        "local_reproduction_input": "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+        "local_input_sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47"
+      },
+      {
+        "source_path": "figures/data/tolerance_population_shortest_content_oracle.csv",
+        "source_sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf",
+        "local_reproduction_input": "tables/ch05-mti/ecm_population_width_reference_20261111.csv",
+        "local_input_sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf"
+      }
+    ],
+    "projected_items": [
+      {
+        "source_path": "figures/generated/fig04_tolerance_validation_primary.png",
+        "source_sha256": "ee8d677c748e1d622640fa2c9305fe9e54347943e8ccec994500cec8457808d7",
+        "destination": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+        "destination_sha256": "d09897db7feefaae8d701d89989614145ae5d7d2bf05f81e5e81f3f4cc3f254a",
+        "handling": "Editorial presentation derivative of frozen source summaries; scientific numbers and comparisons are unchanged, but image bytes and layout differ from the original source figure.",
+        "derivation": {
+          "generator": "scripts/generate_ch05_mti_ecm_figures.R",
+          "generator_sha256": "320fbcbdb6bb31dd3169e3a2dd8b965a7cf5c57d711f0686838fd2105d2a2513",
+          "frozen_input_paths": [
+            "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+            "tables/ch05-mti/ecm_population_width_reference_20261111.csv"
+          ],
+          "model_refits": 0
+        }
+      },
+      {
+        "source_path": "figures/generated/fig05_tolerance_validation_width_ranges.png",
+        "source_sha256": "517ffbd9d702c3cfa09dfd80aaf7d1b7076abd5a965ddfb4b114ac47fbd4db7d",
+        "destination": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+        "destination_sha256": "16b9c1c4247da4875000aa7780c1389cd1ae7f2b12c32dc375478cd406c10a91",
+        "handling": "Editorial presentation derivative of frozen source summaries; scientific numbers and comparisons are unchanged, but image bytes and layout differ from the original source figure.",
+        "derivation": {
+          "generator": "scripts/generate_ch05_mti_ecm_figures.R",
+          "generator_sha256": "320fbcbdb6bb31dd3169e3a2dd8b965a7cf5c57d711f0686838fd2105d2a2513",
+          "frozen_input_paths": [
+            "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+            "tables/ch05-mti/ecm_population_width_reference_20261111.csv"
+          ],
+          "model_refits": 0
+        }
+      },
+      {
+        "source_path": "figures/generated/fig06_pharma_application_tensile_intervals.png",
+        "source_sha256": "c37c50487b3c3af742c37e1c12d327ce867bd9f72a10cedd59070080eee1f6a9",
+        "destination": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+        "destination_sha256": "c37c50487b3c3af742c37e1c12d327ce867bd9f72a10cedd59070080eee1f6a9",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      },
+      {
+        "source_path": "tables/tolerance_validation_article_scenario_ranges.tex",
+        "source_sha256": "980aebd8ea08cb4a0d9cae76cbbe51ae0fe41834b068e89e907319601bfa9b94",
+        "destination": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+        "destination_sha256": "980aebd8ea08cb4a0d9cae76cbbe51ae0fe41834b068e89e907319601bfa9b94",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      },
+      {
+        "source_path": "tables/pharma_application_primary_summary.tex",
+        "source_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
+        "destination": "tables/ch05-mti/pharma_application_primary_summary.tex",
+        "destination_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      },
+      {
+        "source_path": "tables/pharma_application_numbers.tex",
+        "source_sha256": "090bb4ca972a4f41d569217fa0c92aa4b6f0d0707bf51909f533d490e95be77c",
+        "destination": "tables/ch05-mti/pharma_application_numbers.tex",
+        "destination_sha256": "090bb4ca972a4f41d569217fa0c92aa4b6f0d0707bf51909f533d490e95be77c",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      },
+      {
+        "source_path": "tables/pharma_source_numbers.tex",
+        "source_sha256": "3c064475b24d91df8799e7de68488f7156006de17ed6ccfc42dda846bde8b823",
+        "destination": "tables/ch05-mti/pharma_source_numbers.tex",
+        "destination_sha256": "3c064475b24d91df8799e7de68488f7156006de17ed6ccfc42dda846bde8b823",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      },
+      {
+        "source_path": "tables/tolerance_validation_mti_ecm_selected_policy_summary.tex",
+        "source_sha256": "878e7609eb85190ab94ec8e6cea235471bb661c26ea0d5916059020595f7781f",
+        "destination": "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex",
+        "destination_sha256": "4a8724f059aad310ff1be69c7f1d8e2feddc5ba51600481f06c14cb3b8bc0275",
+        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+      }
+    ]
+  }
 }
