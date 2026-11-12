@@ -1,5 +1,20 @@
 # Project status
 
+## 2026-11-12 Chapter 5 polish merged and remotely verified
+
+Manuscript commit `f7c3125e7733bdf91de10f30ed3fb60df03f4a6c` was merged
+through `783d5ef613e5721ff54b96b24e0a240ebc2185d0`, with the recorded
+baseline main and manuscript commit as its two parents. Its tree equals the
+tested editorial tree. All 71 tests and the source-aware fast gate passed
+on the actual merged tree. The editorial branch, integration branch, and
+main were pushed through command-line Git, and a fresh remote readback
+confirmed the integration commit on main. This following documentation
+receipt changes no manuscript or scientific asset.
+
+No token was needed for the existing SSH transport. Overleaf was not pulled
+or independently compiled: preserve any newer advisor edits, then use the
+linked dissertation project's Pull from GitHub and compile.
+
 ## 2026-11-12 Chapter 5 post-migration polish release-validated
 
 The approved polish clarifies RQR attribution, the MPI functional name,

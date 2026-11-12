@@ -1,5 +1,18 @@
 # Validation record
 
+## 2026-11-12 verified polish integration
+
+The integration commit `783d5ef613e5721ff54b96b24e0a240ebc2185d0` has
+parents `a56b66e256245436f5a93af65efa16ca35bba0cd` and
+`f7c3125e7733bdf91de10f30ed3fb60df03f4a6c`. Its tree is
+`10a2ffb52f5313a778a79a20fd2d77030feae143`, identical to the tested
+editorial tree. The combined-tree source-aware fast gate passed all 71
+tests and 132 immutable source checks. GitHub main and the integration
+branch were freshly fetched and read back at that merge commit. The
+accepted proof is reused because the merge changes no manuscript bytes.
+This following documentation receipt records those completed checks and
+does not assert an Overleaf build.
+
 ## 2026-11-12 Chapter 5 post-migration polish
 
 The final uninterrupted source-aware release gate passed all 71 tests, 132

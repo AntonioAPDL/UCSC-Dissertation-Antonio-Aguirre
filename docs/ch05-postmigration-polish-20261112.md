@@ -111,3 +111,13 @@ The accepted local proof is `build/release-20261112T053327Z/main.pdf`,
 The dissertation's GitHub push does not itself update Overleaf: use its
 deliberate **Pull from GitHub**, preserving newer advisor edits, then compile.
 No independent Overleaf compilation is claimed.
+
+## Verified Git integration
+
+Implementation commit: `f7c3125e7733bdf91de10f30ed3fb60df03f4a6c`.
+Two-parent main integration: `783d5ef613e5721ff54b96b24e0a240ebc2185d0`.
+Its tree equals the tested editorial tree. The merged source-aware gate
+passed all 71 tests. GitHub main and both task branches were pushed and
+freshly read back successfully. This later documentation receipt changes
+no manuscript or scientific asset. No token was required for the existing
+SSH transport.

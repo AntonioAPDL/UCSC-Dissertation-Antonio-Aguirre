@@ -3,7 +3,7 @@
   "date": "2026-11-12",
   "revision_id": "REV-CH05-POSTMIGRATION-POLISH-20261112",
   "baseline_commit": "a56b66e256245436f5a93af65efa16ca35bba0cd",
-  "status": "RELEASE_VALIDATED_PENDING_PROMOTION",
+  "status": "MERGED_TO_MAIN_RELEASE_VALIDATED",
   "scope": "Editorial Chapter 5 polish; scientific results, fits and source authorities unchanged",
   "baseline_migration_record": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
   "baseline_migration_sha256": "facfc64e6548e20c86308a752dd49de3b9feb43ef3a9da982bf198a4160fe23b",
@@ -1019,7 +1019,18 @@
     "coverage": "Uninterrupted final release gate completed with exit status zero; no scientific computation or external model qualification implied."
   },
   "publication": {
-    "github": "PENDING",
-    "overleaf": "NOT_PERFORMED"
+    "github": "VERIFIED",
+    "overleaf": "NOT_PERFORMED",
+    "implementation_commit": "f7c3125e7733bdf91de10f30ed3fb60df03f4a6c",
+    "main_integration_commit": "783d5ef613e5721ff54b96b24e0a240ebc2185d0",
+    "merge_parents": [
+      "a56b66e256245436f5a93af65efa16ca35bba0cd",
+      "f7c3125e7733bdf91de10f30ed3fb60df03f4a6c"
+    ],
+    "merge_tree": "10a2ffb52f5313a778a79a20fd2d77030feae143",
+    "merge_tree_equals_implementation_tree": true,
+    "verified_remote_main_at_receipt": "783d5ef613e5721ff54b96b24e0a240ebc2185d0",
+    "merged_tree_fast_gate_tests": 71,
+    "receipt_scope": "Verified integration and remote readback; this following documentation-only receipt does not alter the accepted manuscript or proof. Overleaf requires a deliberate pull and compile."
   }
 }

@@ -292,7 +292,7 @@
     },
     "ch05_postmigration_polish": {
       "record": "docs/ch05-postmigration-polish-20261112.json",
-      "state": "RELEASE_VALIDATED_PENDING_PROMOTION",
+      "state": "MERGED_TO_MAIN_RELEASE_VALIDATED",
       "baseline_commit": "a56b66e256245436f5a93af65efa16ca35bba0cd",
       "research_results_changed": false,
       "scientific_runs": 0
