@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
   "recorded_at": "2026-11-11",
-  "status": "LOCAL_MANUSCRIPT_CONVERSION_COMPLETE_PENDING_SCIENTIFIC_AND_REUSE_REVIEW",
+  "status": "SCIENTIFIC_INTEGRATION_COMPLETE_REUSE_REVIEW_PENDING",
   "lifecycle": {
     "research_audit": "COMPLETE",
     "author_architecture_decision": "COMPLETE",
     "manuscript_conversion": "COMPLETE",
     "scientific_review": "COMPLETE",
     "reuse_review": "PENDING",
-    "github_sync": "NOT_SYNCED",
+    "github_sync": "COMPLETE",
     "overleaf_handoff": "NOT_PERFORMED",
-    "state_note": "The author-directed Chapter 5 migration is implemented and source-verified with 48 passing tests and a rendered 189-page release. Its numerical authority is the finite-iteration ECM packet; the Gibbs method is derived without unreported empirical comparisons. GitHub promotion is a separate pending gate at this source checkpoint. Original advisor history, unaffected chapters, and reuse/accessibility boundaries remain preserved."
+    "state_note": "The Chapter 5 ECM/Gibbs migration passed 48 tests and a rendered 189-page release, was merged through fa584946e900cd0fff658c4ae549b4f98d6d4e79 and pushed to GitHub main with fresh readback. A following documentation receipt records this publication. The Gibbs method is derived without unreported empirical results; numerical authority remains the finite-iteration ECM packet. Overleaf pull/compile, reuse clearance, signatures and accessibility filing work remain separate."
   },
   "scope": "Five author-nominated seed repositories and three claim-driven supporting repositories",
   "snapshot_policy": {
@@ -282,11 +282,13 @@
     },
     "ch05_mti_ecm_gibbs_migration": {
       "record": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
-      "state": "RELEASE_VALIDATED_PENDING_GITHUB_PROMOTION",
+      "state": "INTEGRATED_AND_PUSHED",
       "baseline_commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
       "new_model_fits": 0,
       "rqr_source_commit": "cab844d0695fe13fa3f610615d282972112eba51",
-      "extension_source_commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19"
+      "extension_source_commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
+      "implementation_commit": "fda33763a77317f3a9d9a9803c29f59d81236ce4",
+      "integration_commit": "fa584946e900cd0fff658c4ae549b4f98d6d4e79"
     }
   },
   "author_direction": {

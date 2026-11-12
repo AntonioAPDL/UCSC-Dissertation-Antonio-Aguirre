@@ -1,5 +1,24 @@
 # Project status
 
+## 2026-11-11 Chapter 5 migration merged and pushed
+
+The release-validated manuscript commit
+`fda33763a77317f3a9d9a9803c29f59d81236ce4` was merged through the explicit
+two-parent integration commit
+`fa584946e900cd0fff658c4ae549b4f98d6d4e79`. Its parents are the previous
+main `3f264eaf4fa9b398753945fc3cb20f70178e383d` and the manuscript commit.
+The merge tree equals the tested manuscript tree, and the merged-tree fast
+gate passes all 48 tests and source controls. Both the editorial and
+integration branches were pushed; a fresh fetch verified GitHub main at
+the merge commit. This documentation receipt follows that verified merge
+without changing manuscript or scientific assets.
+
+The extensions sign correction is separately merged and remotely verified
+at `488d072507f977362ba6c2890e02692e81df9d72`. No model runs were launched,
+stopped, or retuned. The source typo does not require ECM/Gibbs reruns.
+Overleaf was not published by this task: pull the updated dissertation main
+from GitHub and compile there, preserving any newer advisor edits first.
+
 ## 2026-11-11 Chapter 5 ECM/Gibbs source migration release-validated
 
 The author-directed Chapter 5 revision replaces the active convex-profile

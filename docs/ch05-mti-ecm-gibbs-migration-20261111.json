@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-11",
   "baseline_commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-  "status": "IMPLEMENTED_RELEASE_VALIDATED",
+  "status": "INTEGRATED_AND_PUSHED",
   "authorization": "Author-directed Chapter 5 ECM/Gibbs migration and verified extension tilt-sign correction",
   "gibbs_empirical_status": "NOT_REPORTED",
   "gibbs_boundary": "Conditionals and algorithms are included; no completed Gibbs comparison or measured ECM/Gibbs speed ratio is asserted.",
@@ -317,7 +317,19 @@
       ],
       "visual_review": "PASS"
     },
-    "remote_publication": "NOT_PERFORMED",
+    "remote_publication": {
+      "status": "VERIFIED",
+      "implementation_commit": "fda33763a77317f3a9d9a9803c29f59d81236ce4",
+      "main_integration_commit": "fa584946e900cd0fff658c4ae549b4f98d6d4e79",
+      "merge_parents": [
+        "3f264eaf4fa9b398753945fc3cb20f70178e383d",
+        "fda33763a77317f3a9d9a9803c29f59d81236ce4"
+      ],
+      "verified_main_at_receipt": "fa584946e900cd0fff658c4ae549b4f98d6d4e79",
+      "merge_tree_equals_implementation_tree": true,
+      "extension_main": "488d072507f977362ba6c2890e02692e81df9d72",
+      "overleaf": "Not published or independently compiled by this revision; deliberate GitHub pull and compile required."
+    },
     "extension_tests": {
       "status": "PASS",
       "tests": 5,

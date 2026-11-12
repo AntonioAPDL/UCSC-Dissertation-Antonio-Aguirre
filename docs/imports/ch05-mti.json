@@ -20,7 +20,7 @@
     "migration_map": "docs/appendix-migration-map.json"
   },
   "distribution": {
-    "github": "PENDING_CURRENT_REVISION",
+    "github": "MERGED_TO_MAIN",
     "overleaf": "NOT_PERFORMED_CURRENT_REVISION",
     "rights_effect": "NONE"
   },

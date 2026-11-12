@@ -1,5 +1,18 @@
 # Validation record
 
+## 2026-11-11 verified integration and remote readback
+
+Integration commit `fa584946e900cd0fff658c4ae549b4f98d6d4e79` has exactly
+the recorded old-main and editorial-commit parents. Its tree is identical
+to `fda33763a77317f3a9d9a9803c29f59d81236ce4`, so the rendered release is
+reused rather than rebuilt without a manuscript change. The merged-tree
+source-aware fast gate passed all 48 tests, 132 immutable import-source
+checks, the additional migration source checks, historical controls and
+structure validation. A fresh fetch verified GitHub main at the merge.
+The publication fields in the source/import records were updated only
+after that successful push/readback. This following documentation receipt
+changes neither the manuscript nor the accepted PDF source inputs.
+
 ## 2026-11-11 Chapter 5 ECM/Gibbs migration release
 
 The complete release gate passed with
