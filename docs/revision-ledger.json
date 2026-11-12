@@ -153,7 +153,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "b07a15512be7d72b5293428c416db1b71b4b3929b5ff741e45a6e2f398b9623e",
+      "current_sha256": "9069f3ff7ac4137de5bf4acfaa6d08986404c003891c0e70a4ada33ec5deae48",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -174,7 +174,8 @@
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
         "REV-FIGURE-5-1-OPTION-C-20261110",
         "REV-CH05-MTI-ECM-GIBBS-20261111",
-        "REV-CH05-POSTMIGRATION-POLISH-20261112"
+        "REV-CH05-POSTMIGRATION-POLISH-20261112",
+        "REV-CH05-SENTENCE-REMOVAL-20261112"
       ]
     },
     {
@@ -1228,6 +1229,16 @@
       "summary": "Migrates Chapter 5 and Appendix E to authenticated finite-iteration MTI-ECM results and the conditionally conjugate Gibbs/ECM derivation; preserves population theory, selected Figure 5.1, immutable history, and the unreported Gibbs comparison boundary.",
       "evidence": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
       "validation": "Source/asset hashes and migration regression tests; clean build and rendered release inspection remain separate recorded gates."
+    },
+    {
+      "id": "REV-CH05-SENTENCE-REMOVAL-20261112",
+      "date": "2026-11-12",
+      "paths": [
+        "chapters/05-research-d.tex"
+      ],
+      "summary": "Removes the author-identified redundant sentence about data-dependent endpoints and finite-sample tolerance guarantees. Mathematical statements and all scientific results are unchanged.",
+      "evidence": "docs/ch05-sentence-removal-20261112.md",
+      "validation": "Source-aware tests, clean release build, affected-page inspection and remote publication recorded separately."
     },
     {
       "id": "REV-CH05-POSTMIGRATION-POLISH-20261112",
