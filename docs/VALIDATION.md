@@ -1,5 +1,18 @@
 # Validation record
 
+## 2026-11-12 single-sentence removal release
+
+All 71 tests, 132 immutable import-source checks, additional migration
+controls, and the uninterrupted release build pass after the requested
+Chapter 5 sentence deletion. Literal source comparison confirms no other
+manuscript change. The current proof is
+`build/release-20261112T060155Z/main.pdf`: 189 US-Letter pages, 3,987,188 bytes,
+SHA-256 `f9da6ff8d05299dca8978b3a9e6f569427cb353ce811dd8a850a5157f07ad894`.
+The log has ten underfull and zero overfull boxes, without blocking citation,
+reference, label, rerun, or fatal diagnostics. Only physical page 108 differs
+in a whole-document layout-text comparison, and that page was rendered and
+inspected. All scientific assets and results remain unchanged.
+
 ## 2026-11-12 verified polish integration
 
 The integration commit `783d5ef613e5721ff54b96b24e0a240ebc2185d0` has

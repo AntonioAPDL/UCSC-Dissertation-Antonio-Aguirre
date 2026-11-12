@@ -1,5 +1,18 @@
 # Project status
 
+## 2026-11-12 requested Chapter 5 sentence removed
+
+The redundant sentence following Proposition 5.2 was removed exactly as
+requested. This is the only manuscript edit relative to main `9805736`.
+The 71-test source-aware release gate passed, and the rebuilt authoritative
+189-page PDF is `build/release-20261112T060155Z/main.pdf`, SHA-256
+`f9da6ff8d05299dca8978b3a9e6f569427cb353ce811dd8a850a5157f07ad894`.
+Only physical page 108 changes in the complete layout-text comparison; it
+was rendered and inspected without clipping or overflow. Current derivative
+records are refreshed and previous release/publication receipts retained.
+Actual main promotion and Drive upload are recorded after their readbacks.
+See `docs/ch05-sentence-removal-20261112.md`.
+
 ## 2026-11-12 Chapter 5 polish merged and remotely verified
 
 Manuscript commit `f7c3125e7733bdf91de10f30ed3fb60df03f4a6c` was merged

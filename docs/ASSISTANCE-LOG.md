@@ -1,5 +1,12 @@
 # Assistance log
 
+2026-11-12: At the author's explicit request, AI assistance removed one
+identified redundant sentence from Chapter 5, refreshed current derivative
+records while retaining previous release/publication receipts, and ran the
+source-aware validation/build workflow. It inspected the affected PDF page.
+No other manuscript wording or scientific result was changed. The requested
+Git promotion and Drive delivery are verified and recorded separately.
+
 2026-11-12: After the author approved the post-migration polish plan, AI
 assistance clarified the Chapter 5 contribution and attribution account,
 renamed two author-owned results as propositions, condensed duplicated
