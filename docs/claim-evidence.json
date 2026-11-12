@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-11-10",
+  "recorded_at": "2026-11-11",
   "evidence_scale": {
     "E0": "assertion only",
     "E1": "exact locator at an immutable snapshot",
@@ -132,11 +132,11 @@
       "classification": "candidate_contribution_claim",
       "claim": "The MTI companion formulates fixed-target static endpoint regression and pseudo-AL Gibbs/ECM computation.",
       "source_id": "SRC-MTI-EXT",
-      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
       "source_path": "main.tex",
       "locator": "Contributions, Static Endpoint Regression, and Pseudo-AL Computation",
       "evidence_level": "E1",
-      "verification_status": "method and computational identities located",
+      "verification_status": "corrected source checked; midpoint and root losses agree in tilt sign",
       "qualification": "The update is loss-based; the pseudo-likelihood is not a response model and candidate-specific contribution remains unconfirmed.",
       "dissertation_disposition": "combine with the MTI foundation chapter by default"
     },
@@ -145,25 +145,25 @@
       "classification": "candidate_contribution_claim",
       "claim": "The MTI companion extends endpoint targets to deterministic basis expansions and dynamic root states using alternating conditional Gaussian updates and FFBS.",
       "source_id": "SRC-MTI-EXT",
-      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
       "source_path": "mti-extensions-supplement.tex",
       "locator": "Dynamic Endpoint-State Updates",
       "evidence_level": "E1",
-      "verification_status": "derivation and conditional-update description located",
+      "verification_status": "corrected source checked; midpoint and root losses agree in tilt sign",
       "qualification": "The joint augmented density is quartic; conditioning on the other root path is essential to the stated computation.",
       "dissertation_disposition": "methods section or appendix within the MTI chapter"
     },
     {
       "id": "CON-MTI-003",
       "classification": "numerical_implementation_claim",
-      "claim": "The MTI extensions snapshot contains no implementation, numerical results, tests, or provenance manifest.",
+      "claim": "The corrected MTI extensions source includes manuscript algebra regression tests but no fitted static/dynamic application evidence or numerical validation campaign.",
       "source_id": "SRC-MTI-EXT",
-      "commit": "f345d946aa5a81b94795838bec58d874a0fdd0c9",
+      "commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
       "source_path": "README.md",
-      "locator": "repository contents and complete eight-file tracked inventory",
+      "locator": "manuscript, README, and scoped tilt-sign regression-test inventory",
       "evidence_level": "E2",
-      "verification_status": "tracked inventory checked against manuscript claims",
-      "qualification": "Older code in RQR-GIBBS is lineage evidence but is not a documented implementation of this exact snapshot.",
+      "verification_status": "corrected source checked; midpoint and root losses agree in tilt sign",
+      "qualification": "Algebra regression tests verify the corrected tilt convention; they do not establish application performance or tolerance validity for the proposed extensions.",
       "dissertation_disposition": "implementation and validation gap before independent chapter status"
     },
     {
@@ -276,11 +276,11 @@
       "classification": "proved_theorem_or_proposition",
       "claim": "Under the stated regularity conditions, the residual-product score characterizes the mean-preserving fixed-content interval.",
       "source_id": "SRC-RQR",
-      "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
       "source_path": "main.tex",
       "locator": "Mean-Preserving Interval Target",
       "evidence_level": "E1",
-      "verification_status": "statement, conditions, and supplement proof located",
+      "verification_status": "population statement and supporting proof retained in the frozen ECM article",
       "qualification": "Do not extend the result beyond the stated iid continuous regular-interior setting without proof.",
       "dissertation_disposition": "central Chapter 5 theory claim"
     },
@@ -289,11 +289,11 @@
       "classification": "definition_or_setup",
       "claim": "Mean-tilted intervals index admissible fixed-content windows by retained-mean balance; content, placement, and repeated-sampling confidence remain distinct inferential components.",
       "source_id": "SRC-RQR",
-      "commit": "4223c6a3a44f376255bacdca91db71cdf4f3afde",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
       "source_path": "main.tex",
       "locator": "Mean-Tilted Intervals",
       "evidence_level": "E1",
-      "verification_status": "target definition and interpretation located",
+      "verification_status": "population statement and supporting proof retained in the frozen ECM article",
       "qualification": "A tilt selected for a calibrated tolerance action is not automatically a response-likelihood parameter.",
       "dissertation_disposition": "mandatory target distinction"
     },
@@ -308,7 +308,8 @@
       "evidence_level": "E2",
       "verification_status": "main method, supplement proposition, and profile-policy table agree",
       "qualification": "The grid and calibration policy are part of the reported method and must not be selected on validation outcomes.",
-      "dissertation_disposition": "primary current Chapter 5 tolerance procedure"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "CON-RQR-004",
@@ -321,7 +322,8 @@
       "evidence_level": "E2",
       "verification_status": "sample split and cutoff-selection protocol agree across main and supplement",
       "qualification": "This design supports an empirical panel-specific assessment, not a distribution-free theorem.",
-      "dissertation_disposition": "critical validation boundary"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "ART-RQR-003",
@@ -334,7 +336,8 @@
       "evidence_level": "E2",
       "verification_status": "main summary and current validation tables agree",
       "qualification": "The result pertains to the fixed eight-distribution panel and independent validation design; it is not a distribution-free guarantee.",
-      "dissertation_disposition": "central empirical validation evidence"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "ART-RQR-005",
@@ -347,7 +350,8 @@
       "evidence_level": "E2",
       "verification_status": "main summary and width-range displays agree",
       "qualification": "Boundary cases often coincide with Wilks intervals, and width comparisons do not replace attainment checks.",
-      "dissertation_disposition": "mixed efficiency evidence"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "ART-RQR-007",
@@ -360,7 +364,8 @@
       "evidence_level": "E2",
       "verification_status": "main, supplement, source-number macros, and current displays agree",
       "qualification": "Held-out content is descriptive; overlapping splits, possible batch dependence, ties, and unresolved measurement units limit interpretation.",
-      "dissertation_disposition": "application illustration with explicit data limitations"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "CON-MTI-004",
@@ -373,7 +378,8 @@
       "evidence_level": "E2",
       "verification_status": "cross-manuscript scope and terminology compared",
       "qualification": "Use RQR as authority for tolerance inference and MTI-EXTENSIONS only for conditional fixed-target regression and dynamic proposals.",
-      "dissertation_disposition": "one combined research chapter"
+      "dissertation_disposition": "historical source provenance; not the active Chapter 5 ECM results",
+      "snapshot_id": "SNAP-RQR-PROFILED-20261026"
     },
     {
       "id": "CLM-EXDQLM-001",
@@ -426,6 +432,71 @@
       "verification_status": "version boundary checked across the three authorities",
       "qualification": "A later software version must not silently replace the frozen application dependency.",
       "dissertation_disposition": "pin software provenance by chapter"
+    },
+    {
+      "id": "CLM-MTI-ECM-001",
+      "classification": "numerical_implementation_claim",
+      "claim": "MPI and fixed-tilt MTI under proper Gaussian root priors admit Gaussian root and GIG latent-scale full conditionals; finite-iteration ECM uses the same augmentation to estimate a mode.",
+      "source_id": "SRC-RQR",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "source_path": "main.tex",
+      "locator": "Empirical Balance and Fixed-Target Computation",
+      "evidence_level": "E2",
+      "verification_status": "frozen source statements and public tabular evidence inspected",
+      "qualification": "Conditional conjugacy is not a jointly Gaussian posterior; the residual-floor and finite-iteration ECM calculation is not a global mode certificate.",
+      "dissertation_disposition": "current Chapter 5 evidence"
+    },
+    {
+      "id": "ART-MTI-ECM-001",
+      "classification": "empirical_result",
+      "claim": "The frozen ECM validation has smaller mean width than Young--Mathew in 39 of 72 distribution-setting cells; tolerance attainment and width are assessed jointly.",
+      "source_id": "SRC-RQR",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "source_path": "figures/data/mti_ecm_validation_20261111/paired_comparisons.csv",
+      "locator": "72 paired family-setting comparisons",
+      "evidence_level": "E2",
+      "verification_status": "frozen source statements and public tabular evidence inspected",
+      "qualification": "Finite-iteration ECM results replace the older convex-profile packet; no new fit was performed for this migration.",
+      "dissertation_disposition": "current Chapter 5 evidence"
+    },
+    {
+      "id": "CON-MTI-ECM-001",
+      "classification": "empirical_result",
+      "claim": "Simultaneous validation intervals have lower bounds above 0.95 in 53 MTI-ECM distribution-setting cases and include 0.95 in the other 19 cases.",
+      "source_id": "SRC-RQR",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "source_path": "figures/data/mti_ecm_validation_20261111/family_case_summary.csv",
+      "locator": "MTI-ECM simultaneous_lower and simultaneous_upper columns",
+      "evidence_level": "E2",
+      "verification_status": "frozen source statements and public tabular evidence inspected",
+      "qualification": "These are validation-attainment statements, not convergence classifications. Separately, 42116 ECM fits meet the frozen stopping threshold and 29884 reach the iteration cap; neither establishes a distribution-free tolerance guarantee.",
+      "dissertation_disposition": "current Chapter 5 evidence"
+    },
+    {
+      "id": "CON-MTI-GIBBS-001",
+      "classification": "definition_or_setup",
+      "claim": "Gibbs algorithms and their fixed-target posterior interpretation are included, but completed Gibbs/ECM empirical agreement and measured speed comparisons are not reported.",
+      "source_id": "SRC-RQR",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "source_path": "tables/mti_gibbs_comparison_main.tex",
+      "locator": "source comparison placeholder boundary",
+      "evidence_level": "E2",
+      "verification_status": "frozen source statements and public tabular evidence inspected",
+      "qualification": "No placeholder Gibbs values are imported into the dissertation.",
+      "dissertation_disposition": "explicit empirical evidence boundary"
+    },
+    {
+      "id": "ART-MTI-PHARMA-001",
+      "classification": "empirical_result",
+      "claim": "The frozen pharmaceutical MTI-ECM analysis uses 187 product-23 batches and 1000 paired 100/87 random splits; tensile width and stationarity findings are not uniformly favorable.",
+      "source_id": "SRC-RQR",
+      "commit": "cab844d0695fe13fa3f610615d282972112eba51",
+      "source_path": "figures/data/pharma_mti_application_20261020/manifest.json",
+      "locator": "frozen MTI-ECM pharmaceutical application",
+      "evidence_level": "E2",
+      "verification_status": "frozen source statements and public tabular evidence inspected",
+      "qualification": "Partitions reuse the finite historical dataset; endpoints, empirical content, iteration caps, and width must be read together.",
+      "dissertation_disposition": "current Chapter 5 evidence"
     }
   ]
 }

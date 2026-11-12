@@ -42,6 +42,9 @@ ALLOWED_MATERIAL_TYPES = {
     "display_tex_fragment",
     "figure_asset",
 }
+ABSOLUTE_SERVER_PATH = re.compile(
+    r"(?<![A-Za-z0-9_.@/-])/(?:data|home|tmp)/[A-Za-z0-9_.@/-]+"
+)
 
 
 def digest(data: bytes) -> str:
@@ -238,8 +241,15 @@ def main() -> int:
             else:
                 source_id = str(current_projection.get("source_id", ""))
                 commit = str(current_projection.get("commit", ""))
-                if current_projection.get("status") != "IMPLEMENTED_RELEASE_VALIDATED":
-                    errors.append(f"{projection_where}: projection is not release validated")
+                projection_status = current_projection.get("status")
+                if projection_status not in {
+                    "IMPLEMENTED_RELEASE_VALIDATED", "IMPLEMENTED_SOURCE_VERIFIED"
+                }:
+                    errors.append(f"{projection_where}: projection lacks an accepted source-verification state")
+                if projection_status == "IMPLEMENTED_SOURCE_VERIFIED":
+                    migration_record = current_projection.get("migration_record", "")
+                    if migration_record != "docs/ch05-mti-ecm-gibbs-migration-20261111.json" or not (PROJECT_ROOT / migration_record).is_file():
+                        errors.append(f"{projection_where}: source-verified projection lacks its independently checked Chapter 5 migration record")
                 clone = SOURCE_CLONES.get(source_id)
                 if not clone:
                     errors.append(f"{projection_where}: no clone mapping for {source_id}")
@@ -413,7 +423,7 @@ def main() -> int:
     labels: list[str] = []
     cited: set[str] = set()
     forbidden_patterns = {
-        "absolute server path": re.compile(r"/(?:data|home|tmp)/[A-Za-z0-9_.@/-]+"),
+        "absolute server path": ABSOLUTE_SERVER_PATH,
         "private key": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----"),
         "GitHub token": re.compile(r"\b(?:ghp|github_pat)_[A-Za-z0-9_]{20,}\b"),
         "AWS access key": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),

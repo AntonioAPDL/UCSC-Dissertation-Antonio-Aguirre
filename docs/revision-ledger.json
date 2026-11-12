@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-10",
+  "recorded_at": "2026-11-11",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -17,20 +17,21 @@
     {
       "path": "chapters/01-introduction.tex",
       "baseline_sha256": null,
-      "current_sha256": "bde8eb982d402b6e962f53549692bbc7de9c9bde97a97ba07a38cc05d16dc8a8",
+      "current_sha256": "c8db13380c48f82250a1d65d9cb4570d8fa8f08b5e52a58fb0fa76482e7572f8",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-INTRODUCTION-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
       "path": "frontmatter/abstract.tex",
       "baseline_sha256": null,
-      "current_sha256": "6fd19013ae13f60e14f93a87802320589ab85c7561c0768965e148b26ded32c8",
+      "current_sha256": "be7dfc0a2bf53c82e60eb6dba897fa71adc82bb10430802ce878b1c9e127ce00",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -38,26 +39,28 @@
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "869cd2f052382bc7488794bdc32a17ff2ca4f988b534c3b2cf946379869ab3e7",
+      "current_sha256": "09bc01cdf10fbb2c23086a15e967dc769bdff0d22ea09381a06992911ceb3672",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
         "REV-BRUNO-MTI-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "787266ef4f073e2b99223eb7129722aed37fc28576153d2d28329eb9ad6794d1",
+      "current_sha256": "b20d3f813d18b266a9d4ba89edde5ddcea06ae83600fb89822ffc3d8342ef2dd",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -66,7 +69,8 @@
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -147,7 +151,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "ba54ff9bc7417bf8154a212ad787bdac094d0fb7b5fb355970466f83f2ebd65c",
+      "current_sha256": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -166,7 +170,8 @@
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
-        "REV-FIGURE-5-1-OPTION-C-20261110"
+        "REV-FIGURE-5-1-OPTION-C-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -257,8 +262,8 @@
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "19b819bdca2c4755de086a8f8ef7ceac6b292e37f5d178716ce7f51cc331b7a0",
-      "state": "DERIVED_NEW",
+      "current_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+      "state": "EDITED",
       "derived_from": [
         "chapters/05-research-d.tex"
       ],
@@ -270,7 +275,8 @@
         "REV-BRUNO-MTI-20261109",
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-FINAL-AUTHOR-STYLE-20261110",
-        "REV-FINAL-VOICE-EXDQLM-MTI-20261110"
+        "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -387,28 +393,31 @@
     {
       "path": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
       "baseline_sha256": "0203812c871391b9953d9025799c53733c45cb180c05a8c93dded33770da301c",
-      "current_sha256": "fd7bb9218cbf832a31b3ff003f9ea0773d2cf8235f92c611e005a5e93e8b98cf",
+      "current_sha256": "d09897db7feefaae8d701d89989614145ae5d7d2bf05f81e5e81f3f4cc3f254a",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
       "path": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
       "baseline_sha256": "ad19294e108c3ab44750a55a802cd84c82462484fbc5614dcca517e1a1ba2078",
-      "current_sha256": "6f83908a45c0b540f79bcf9da13b43668b6cd061d570a5a2f8571c7c06d7a913",
+      "current_sha256": "16b9c1c4247da4875000aa7780c1389cd1ae7f2b12c32dc375478cd406c10a91",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
       "path": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
       "baseline_sha256": "95542b6c82712e53abf540344f3db1c8609825f3061c02876f3dc96299d209db",
-      "current_sha256": "a43112fbaccce6a48f2cd31870ba305407ba518faa8fdb7daeb1b1dfdca5d0a5",
+      "current_sha256": "c37c50487b3c3af742c37e1c12d327ce867bd9f72a10cedd59070080eee1f6a9",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -423,10 +432,11 @@
     {
       "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
       "baseline_sha256": "c088fb2ed3fedcedab8663577b031f6aa175ff8066d219cb2b9e7e1c30cd72bf",
-      "current_sha256": "39d81c8f24c669dd3f0203c446bc3eb053be67c1da08cb79ced6baf7e1c77a59",
+      "current_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -459,10 +469,11 @@
     {
       "path": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
       "baseline_sha256": "52dc75361dc6ee33618f2ac625cd783fc9e6940f5305c640def86b1b34c050b7",
-      "current_sha256": "d2cf7bfe17e8b70c69b7fd269437fbaf19d9693db1448539307005d8dc874685",
+      "current_sha256": "980aebd8ea08cb4a0d9cae76cbbe51ae0fe41834b068e89e907319601bfa9b94",
       "state": "EDITED",
       "revision_ids": [
-        "REV-CURRENT-SOURCES-20261026"
+        "REV-CURRENT-SOURCES-20261026",
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     },
     {
@@ -529,6 +540,60 @@
       "state": "EDITED",
       "revision_ids": [
         "REV-COMMITTEE-COPY-20261107"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_numbers.tex",
+      "baseline_sha256": null,
+      "current_sha256": "090bb4ca972a4f41d569217fa0c92aa4b6f0d0707bf51909f533d490e95be77c",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/pharma_source_numbers.tex",
+      "baseline_sha256": null,
+      "current_sha256": "3c064475b24d91df8799e7de68488f7156006de17ed6ccfc42dda846bde8b823",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex",
+      "baseline_sha256": null,
+      "current_sha256": "4a8724f059aad310ff1be69c7f1d8e2feddc5ba51600481f06c14cb3b8bc0275",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
+      ]
+    },
+    {
+      "path": "scripts/generate_ch05_mti_ecm_figures.R",
+      "baseline_sha256": null,
+      "current_sha256": "320fbcbdb6bb31dd3169e3a2dd8b965a7cf5c57d711f0686838fd2105d2a2513",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+      "baseline_sha256": null,
+      "current_sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
+      ]
+    },
+    {
+      "path": "tables/ch05-mti/ecm_population_width_reference_20261111.csv",
+      "baseline_sha256": null,
+      "current_sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf",
+      "state": "EDITED",
+      "revision_ids": [
+        "REV-CH05-MTI-ECM-GIBBS-20261111"
       ]
     }
   ],
@@ -1132,6 +1197,32 @@
       "summary": "Replaces the former Figure 5.1 population illustration with the author-selected strongly left-skewed option so that the equal-tailed, mean-preserving, and shortest-contiguous placements are visually distinct. The caption identifies the reflected-lognormal construction briefly, while the plot title remains distribution-neutral.",
       "evidence": "Author selection of Option C on 2026-11-10; docs/figure5-1-distribution-options-20261110.md; scripts/generate_mti_figure5_1_candidates.R",
       "validation": "Deterministic regeneration, population endpoint checks, import-ledger validation, clean dissertation build, extracted-text review, and rendered inspection of the affected page required before merge."
+    },
+    {
+      "id": "REV-CH05-MTI-ECM-GIBBS-20261111",
+      "date": "2026-11-11",
+      "paths": [
+        "appendices/e-mti-technical.tex",
+        "chapters/01-introduction.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+        "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+        "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+        "frontmatter/abstract.tex",
+        "frontmatter/acknowledgments.tex",
+        "scripts/generate_ch05_mti_ecm_figures.R",
+        "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+        "tables/ch05-mti/ecm_population_width_reference_20261111.csv",
+        "tables/ch05-mti/pharma_application_numbers.tex",
+        "tables/ch05-mti/pharma_application_primary_summary.tex",
+        "tables/ch05-mti/pharma_source_numbers.tex",
+        "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+        "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex"
+      ],
+      "summary": "Migrates Chapter 5 and Appendix E to authenticated finite-iteration MTI-ECM results and the conditionally conjugate Gibbs/ECM derivation; preserves population theory, selected Figure 5.1, immutable history, and the unreported Gibbs comparison boundary.",
+      "evidence": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
+      "validation": "Source/asset hashes and migration regression tests; clean build and rendered release inspection remain separate recorded gates."
     }
   ]
 }

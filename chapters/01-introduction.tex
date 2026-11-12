@@ -116,9 +116,12 @@ Chapter~\ref{ch:research-d} begins from the fact that probability content does
 not determine interval placement. Starting from the residual-product criterion
 of \citet{rqr-PouplinEtAl2024RQR} and its population-content equation, the
 project derives the retained-mean characterization of the mean-preserving
-interval and embeds it in a retained-mean tilt family. It then develops a
-profiled procedure that screens fitted content and tilt using a posterior
-content probability before selecting the shortest eligible interval. Independent
+interval and embeds it in a retained-mean tilt family. A generalized posterior
+with conditionally Gaussian root updates supports Gibbs sampling and
+expectation/conditional maximization (ECM) for mode estimation.
+The tolerance procedure fits content--tilt candidates by
+ECM and uses a separate posterior content probability to select the shortest
+eligible interval. Independent
 simulation evaluates the prespecified procedure on eight named distributions
 and characterizes its repeated-sampling performance over that panel. The
 chapter also formulates regression and

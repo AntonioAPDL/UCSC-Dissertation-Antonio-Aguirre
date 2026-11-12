@@ -55,8 +55,9 @@ adjacent-level coefficient shrinkage & Exact simulation crossing and oracle
 scores; retrospective streamflow and electricity-price comparisons & Selected reservoirs,
 one trajectory per simulation mechanism, and retrospective applications \\
 5: MTI; contiguous fixed-content interval placement and a tolerance action & A
-retained-mean characterization, a tilt-indexed interval family, and a calibrated
-profiled selection rule; regression and dynamic formulations are proposed &
+retained-mean characterization, a tilt-indexed interval family, generalized
+posterior computation, and an ECM-based tolerance rule; regression and dynamic
+formulations are proposed &
 Population results, independent simulations, and a pharmaceutical illustration
 & Eight-distribution panel; prospective batch evaluation remains necessary \\
 \bottomrule
@@ -161,16 +162,19 @@ A retained-mean tilt then indexes other contiguous intervals having the same
 content. Equal-tailed and shortest contiguous intervals correspond to
 distribution-specific tilts rather than to one universal value.
 
-The tolerance procedure searches over fitted content and tilt, computes
-endpoints by a convex profile calculation, and uses a direct
+The generalized posterior supports Gibbs sampling for fixed-target endpoint
+uncertainty and ECM for mode estimation. The tolerance procedure searches
+over fitted content and tilt using ECM estimates and a direct
 Dirichlet-process content probability to determine eligibility. Its cutoff is
 calibrated before evaluation on independent samples. Across 72
-distribution--setting cases, MTI content attainment ranges from
-95.1\% to 99.3\%; its mean width is smaller than that of Young--Mathew in 40
+distribution--setting cases, MTI--ECM content attainment ranges from
+95.1\% to 99.9\%; its mean width is smaller than that of Young--Mathew in 39
 cases. The closest cases remain statistically compatible with the nominal
 0.95 confidence, so the study supplies repeated-sampling evidence for the
-specified rule over the eight-distribution panel. The pharmaceutical
-application reports endpoint placement and
+specified finite-iteration rule over the eight-distribution panel. Of the
+72,000 selected ECM fits, 29,884 reach the iteration cap; all are retained in
+the comparison. The pharmaceutical
+application reports endpoint placement, width, empirical content, and
 partition sensitivity on historical batches. Its overlapping partitions,
 possible dependence, ties, and unresolved measurement definitions make this a
 descriptive analysis. A prospective evaluation would use independent future
@@ -272,7 +276,7 @@ a probabilistic model for precipitation and soil-water forecasts would
 propagate exogenous uncertainty. Extension across gauges or basins could then
 test whether source-specific discrepancy information transfers spatially.
 
-A fourth direction concerns adaptive fixed-content intervals. The profiled MTI
+A fourth direction concerns adaptive fixed-content intervals. The MTI tolerance
 rule should be studied under additional distributions, dependence, ties, and
 alternative content models. Implementing the proposed regression and dynamic
 endpoint formulations would establish their numerical behavior, but tolerance

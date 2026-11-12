@@ -1,5 +1,46 @@
 # Validation record
 
+## 2026-11-11 Chapter 5 ECM/Gibbs migration release
+
+The complete release gate passed with
+`bash scripts/validate.sh --tier release --audit-root` against isolated
+clones of all fixed research authorities. All 48 Python tests passed,
+including 14 migration tests and five absolute-path regression tests.
+The source audit rechecked 132 immutable import blobs and the migration
+control checked 11 additional frozen-source records. All historical advisor,
+author-comment, voice/style, appendix-essentiality, display, dependency,
+research, and editorial controls passed. Structure checks cover 37 active
+TeX files, 192 labels, six migration records, and 15 active graphics.
+
+The accepted artifact is `build/release-20261112T043413Z/main.pdf`:
+189 pages, 3,988,713 bytes, US Letter, PDF 1.7, SHA-256
+`8ddddb4a241c68341d06ffb4054ca2f4c3727eb701ea389a72d2f98448235db0`.
+The final log has ten underfull and zero overfull boxes and no blocking
+citation, reference, duplicate-label, rerun, or fatal diagnostic. The
+pre-existing caption/class compatibility and float-placement notices remain
+nonblocking. All 32 fonts are embedded and no Type 3 font occurs.
+
+Physical pages 120--123, 125--126, 171--173, and 176 were rendered and
+inspected. Both short algorithms remain complete on one page, with their
+headings attached. The two reflowed simulation figures have legible labels,
+accurate captions and unchanged plotted values. Tables and pharmaceutical
+comparisons match the authenticated ECM packet. Earlier inspection also
+covered the labeled computational displays and Gaussian/GIG equations.
+
+The base-R plot generator was run twice against hash-checked frozen compact
+inputs; the PNG hashes reproduced exactly. No fit, reconstruction, tuning,
+calibration, or random simulation was performed by that plotting step.
+Five standard-library tests also passed on the corrected extension source,
+including rejection of the reversed tilt sign; its main and supplement
+compile to seven and four pages. The archived ECM C++ sign and audited
+Gibbs canonical shift were already correct.
+
+This validates the editorial migration, source records and rendered
+artifact. It does not claim a full replay of the unavailable ignored
+72,000-dataset archive, an empirical Gibbs comparison, an independent
+Overleaf build, committee approval, or an accessibility-conformant filing
+PDF. The current PDF remains untagged.
+
 ## 2026-11-10 plural voice and Figure 5.1 option validation
 
 The voice validator now rejects first-person singular authorial prose and
