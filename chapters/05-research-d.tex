@@ -13,7 +13,7 @@ confidence \(1-\alpha\), the random interval must contain at least a fraction
 \citep{rqr-Wilks1941ToleranceLimits,rqr-Wilks1942StatisticalPrediction,rqr-Robbins1944DistributionFreeTolerance}.
 Content, placement, and tolerance confidence are distinct. Estimating the
 \((1-c)/2\) and \((1+c)/2\) quantiles yields the central equal-tailed interval
-\citep{qdesn-KoenkerBassett1978}; shortest and mean-preserving intervals use
+\citep{qdesn-KoenkerBassett1978}, whereas shortest and mean-preserving intervals use
 different placement criteria
 \citep{rqr-BrehmerGneiting2021Intervals,rqr-FisslerEtAl2021SetValued}.
 Chapter~\ref{ch:research-c} uses check loss to define individual conditional
@@ -22,24 +22,25 @@ product residual, so the loss identifies a pair of interval endpoints. The
 resulting target is a fixed-content interval whose endpoints are estimated
 jointly, rather than two prespecified response quantiles.
 
-The starting point is the residual-product criterion of
-\citet{rqr-PouplinEtAl2024RQR}. Its loss depends on
-\((y-\eta_1)(y-\eta_2)\), whose sign indicates whether \(y\) falls between two
-roots. First, we identify its unrestricted regular population target. Among
-contiguous intervals with content \(c\), it
-selects the interval whose retained mean equals the population mean. This
-interval is called the mean-preserving interval (MPI); the residual-product
-criterion itself is inherited from Pouplin et al.
+\citet{rqr-PouplinEtAl2024RQR} introduced relaxed quantile regression (RQR)
+to estimate interval endpoints by minimizing a residual-product loss. The
+loss depends on \((y-\eta_1)(y-\eta_2)\), whose sign indicates whether \(y\)
+falls between the two roots. They establish its population-content property
+and use penalized empirical minimization to address interval width and
+conditional coverage. Starting from this criterion, we characterize its
+regular unrestricted population target. Its retained mean equals the
+population mean, motivating the name mean-preserving interval (MPI).
 
-Second, we define a placement family by adding a fixed retained-mean offset
+This characterization leads to a placement family with a fixed retained-mean offset
 \(\delta\). The resulting mean-tilted interval (MTI) retains
 content \(c\) and has retained mean \(\mu+\delta\). MPI is the zero-tilt member,
 whereas equal-tailed and shortest contiguous intervals correspond to
-distribution-specific tilts. Thus \(\delta\) identifies the estimand; it is not
-an ordinary model parameter to be learned without also specifying how the target
-is chosen.
+distribution-specific tilts. Thus \(\delta\) identifies the estimand and must
+be fixed or selected through a specified target-selection rule.
+Under the stated regularity conditions, we establish unique population
+identification for interior admissible fixed tilts.
 
-Third, we construct a generalized posterior for the interval roots.
+For inference, we construct a generalized posterior for the interval roots.
 A normal--exponential augmentation gives Gaussian root conditionals and
 generalized-inverse-Gaussian latent-scale conditionals for both MPI and
 fixed-tilt MTI. These distributions support Gibbs sampling for endpoint
@@ -59,7 +60,7 @@ endpoint placement and held-out content in a finite historical dataset.
 
 The population characterization and conditional computations are derived
 analytically. The tolerance comparison evaluates the specified finite-iteration
-ECM procedure over the eight studied distributions; the direct content
+ECM procedure over the eight studied distributions, while the direct content
 probability is a separate posterior calculation. Simulation studies,
 numerical validation, and applications of the regression and dynamic endpoint
 extensions remain future work. Appendix~\ref{app:mti-technical} gives the
@@ -145,11 +146,11 @@ Both branches are nonnegative and meet continuously at zero when \(y=a\) or
 \(y=b\). An observation inside the interval is weighted by \(1-c\), whereas a
 miss is weighted by \(c\). The two factors also encode distance from both
 endpoints, so the criterion weights membership and endpoint displacement
-together. Increasing \(c\) raises the relative cost of a miss; at a regular
+together. Increasing \(c\) raises the relative cost of a miss. At a regular
 population optimum, this weighting produces the content equation established
 below. For data \(y_1,\ldots,y_n\), an unpenalized empirical MPI fit minimizes
 the average loss
-\(n^{-1}\sum_{i=1}^n\ell_c^{\mathrm{MPI}}(a,b;y_i)\); using the sum gives the
+\(n^{-1}\sum_{i=1}^n\ell_c^{\mathrm{MPI}}(a,b;y_i)\). Using the sum gives the
 same minimizer. Penalized and generalized-posterior calculations are introduced
 in Section~\ref{rqr2026:sec:static-theory-statements}.
 
@@ -169,11 +170,11 @@ For the product residual \(e(a,b;y)=(y-a)(y-b)\), the inequality
 \ell_c^{\mathrm{MPI}}(a,b;y)=\rho_c\{e(a,b;y)\}.
 \label{rqr2026:eq:mpi-product-check}
 \end{equation}
-The loss is symmetric in its two roots; the ordering \(a<b\) is imposed only
+The loss is symmetric in its two roots, and the ordering \(a<b\) is imposed only
 to interpret them as lower and upper endpoints.
 The check loss therefore acts on the scalar product residual, not on
 \(y-a\) or \(y-b\) separately. In particular, \(c\) is the desired interval
-content; it is neither an assigned response-quantile level for either endpoint
+content. It is neither an assigned response-quantile level for either endpoint
 nor the generalized-Bayes learning rate.
 
 The midpoint--half-width parameterization makes the interval geometry
@@ -222,17 +223,16 @@ Proposition~\ref{rqr2026:prop:population-characterization} by differentiating
 the conditional risk. Its assumptions provide the integrability and
 interchange conditions required for that calculation.
 
-The population content equation is due to
-\citet{rqr-PouplinEtAl2024RQR}. The retained-mean equation is a further
-consequence of the same first-order system: conditional on \(X=x\), interval
-membership has zero covariance with \(Y\). In omitted-tail form, the same
+The retained-mean equation determines placement within the content-\(c\)
+class. Conditional on \(X=x\), interval membership has zero covariance with
+\(Y\). In omitted-tail form, the same
 identity balances first-moment mass around the conditional mean:
 \[
 \E[\{\mu_x-Y\}\ind(Y<a)\mid X=x]
 =
 \E[\{Y-\mu_x\}\ind(Y>b)\mid X=x].
 \]
-Tail probabilities may differ; MPI balances their first moments around
+The resulting tail probabilities may differ, and MPI balances their first moments around
 \(\mu_x\). The conditional distributions of \(Y\) inside and outside a regular
 MPI consequently have mean \(\mu_x\), although the endpoint midpoint may differ
 from that mean. A finite first moment is enough for the retained-mean identity
@@ -242,7 +242,7 @@ ensures that the expected MPI loss is finite.
 The score identities determine a quantile-window functional, which is the
 object estimated by the unrestricted population loss.
 
-\begin{theorem}[Quantile-window identification]
+\begin{proposition}[Quantile-window identification]
 \label{rqr2026:thm:quantile-window}
 In addition to the conditions of
 Proposition~\ref{rqr2026:prop:population-characterization}, suppose that \(F_x\) is
@@ -264,11 +264,11 @@ b_c(x)=Q_x\{u_c(x)+c\}.
 \]
 If \(F_x\) is symmetric about \(\mu_x\), then
 \(u_c(x)=(1-c)/2\), and the MPI and equal-tailed intervals coincide.
-\end{theorem}
+\end{proposition}
 
-Section~\ref{app:mti-proofs} proves the theorem, including the symmetry
-implication. The theorem identifies the unique regular stationary window;
-Theorem~\ref{rqr2026:thm:profiled-mean-tilt} below establishes global
+Section~\ref{app:mti-proofs} proves the proposition, including the symmetry
+implication. This identifies the unique regular stationary window, while
+Proposition~\ref{rqr2026:thm:profiled-mean-tilt} below establishes global
 minimization under stronger conditions. If the conditional distribution has endpoint atoms,
 the corresponding directional conditions give
 \[
@@ -319,9 +319,10 @@ M_c(u_\delta)=\mu+\delta.
 \]
 These score equations define the fixed-content placement associated with a
 chosen tilt. Stationarity alone does not establish that the interval is the
-global population minimizer, which is the role of the following theorem.
+global population minimizer. The following proposition establishes that
+identification under additional conditions.
 
-\begin{theorem}[Global identification of the MTI target]
+\begin{proposition}[Global identification of the MTI target]
 \label{rqr2026:thm:profiled-mean-tilt}
 Suppose that the support closure is an interval (possibly with infinite
 endpoints), \(F\) is absolutely continuous and strictly increasing between its
@@ -339,13 +340,13 @@ M_c(u_\delta)=\mu+\delta.
 \]
 Nondegeneracy gives \(M_c(0)<\mu<M_c(1-c)\), so MPI is the interior
 special case \(\delta=0\).
-\end{theorem}
+\end{proposition}
 
 Section~\ref{app:mti-proofs} proves this global-minimizer result through the
-profiled risk and gives the boundary analysis. The theorem converts the MTI
+profiled risk and gives the boundary analysis. The proposition converts the MTI
 score equations into a unique population interval for every interior admissible
 tilt. Boundary tilts correspond to
-one-sided probability-window limits; outside the closed admissible range there
+one-sided probability-window limits, whereas outside the closed admissible range there
 is no finite unrestricted MTI minimizer.
 
 A population placement tilt is the value of \(\delta\) associated with a named
@@ -392,7 +393,7 @@ distributions.}
 Every interval has content \(c=0.80\). Targets are computed under each
 population distribution and then displayed after mean/standard-deviation
 standardization. The top row shows standardized densities with equal-tailed
-  (ET), MPI, and shortest-contiguous (SH) intervals; the bottom row
+  (ET), MPI, and shortest-contiguous (SH) intervals. The bottom row
   shows the standardized width profile along the MTI family. In the
 Normal reference case the three targets coincide at
 \(\delta/\operatorname{SD}(Y)=0\). Under skewness, the population tilts
@@ -406,7 +407,7 @@ These tilts are population quantities. A single tilt does not identify the same
 interval functional across distributions, and conditional placement generally
 requires a covariate-dependent \(\delta(x)\). The target tilt must therefore be
 fixed in advance or selected by a separate rule. Positive affine response
-transformations preserve the target after transforming \(\delta\); arbitrary
+transformations preserve the target after transforming \(\delta\), whereas arbitrary
 monotone transformations need not do so.
 
 \section{Generalized-posterior computation}
@@ -414,31 +415,18 @@ monotone transformations need not do so.
 
 After choosing a content and tilt, we estimate the corresponding interval
 roots through a generalized posterior. The population identities above
-describe the target; finite-sample estimating equations and posterior
+describe the target, while finite-sample estimating equations and posterior
 computation describe how it is fitted.
 
-For training-sample balance, fitted endpoints depend on the observations, and
-the empirical MPI/MTI loss is
-nonsmooth when an observation lies on a root. The finite-sample score identity is
-therefore fractional. For intercept-only MTI with fixed \(\delta\), let
-\((\widehat a,\widehat b)\), \(\widehat a<\widehat b\), be an interior
-subgradient-stationary empirical solution. Then there exist allocations
-\(\widehat q_i\in[0,1]\), equal to one for observations strictly inside the
-fitted interval, zero for observations strictly outside it, and fractional only
-at fitted roots, such that
-\[
-\sum_{i=1}^n \widehat q_i=nc,
-\qquad
-\sum_{i=1}^n \widehat q_i y_i
-=nc(\overline y+\delta).
-\]
-Thus the fitted training interval has exact fractional content and exact
-fractional retained-mean balance in its empirical estimating equations.
-These identities concern the unpenalized criterion. Gaussian root penalties
-contribute additional terms to the estimating equations used in computation;
-Section~\ref{app:mti-computation} gives the corresponding penalized identities.
-Population content and tolerance confidence require the separate posterior
-content calculation and repeated-sampling calibration described below.
+Because the empirical loss is nonsmooth at a fitted root, we use the usual
+check-loss optimality conditions to describe training-sample balance
+\citep{qdesn-KoenkerBassett1978}. For the unpenalized intercept-only criterion,
+an interior subgradient-stationary solution has exact fractional content and
+retained-mean balance. Membership is fractional only for observations at the
+fitted roots. Section~\ref{app:mti-proofs} derives these identities, and
+Section~\ref{app:mti-computation} gives the terms introduced by Gaussian root
+penalties. The posterior content calculation and repeated-sampling calibration
+below assess population content and tolerance confidence separately.
 
 For fixed-target computation, generalized Bayes updates a prior with an
 exponentiated cumulative loss rather
@@ -493,7 +481,7 @@ Here \(\GIG(\nu,A,B)\) has kernel
 conditional means without changing their precisions. Conditional conjugacy
 therefore holds for MPI and fixed-tilt MTI, although the joint root posterior
 is generally non-Gaussian. Gibbs sampling alternates the scale and root
-draws; endpoint and width summaries use the sorted retained pairs.
+draws. Endpoint and width summaries use the sorted retained pairs.
 
 ECM uses the same augmentation for deterministic mode estimation
 \citep{rqr-DempsterLairdRubin1977EM,rqr-MengRubin1993ECM}. For nonzero
@@ -549,7 +537,7 @@ pairs \(\{(q_j,\delta_j):j=1,\ldots,J\}\). The content grid uses a calibrated
 uniform-scan retained fraction as a reference, with fixed offsets and
 additional contents near one. At each content, the tilt grid includes zero
 and fixed sample-standard-deviation offsets around the empirical
-shortest-window tilt. The same construction rule is used for each sample;
+shortest-window tilt. The same construction rule is used for each sample.
 Appendix~\ref{app:mti-calibration} gives its settings. Second, ECM gives
 \(\widehat I_j=[\widehat a_j,\widehat b_j]\) for each pair. Third, the direct DP
 posterior gives the content probability
@@ -574,13 +562,13 @@ Calibration is conducted separately for each design setting
 each candidate cutoff. The selection considers content attainment, interval
 return, and width stability. Its fixed cutoffs are \(0.995\) in eight
 settings and \(0.996\) at \(n=1000,c=0.99\). The calibration bounds are
-pointwise and do not adjust for the search over cutoffs; two setting-specific
+pointwise and do not adjust for the search over cutoffs. Two setting-specific
 minimum lower bounds fall below \(0.95\). We therefore assess the selected
 rule on independent validation samples. Candidate construction,
 hyperparameters, cutoff, and tie rules are fixed before that evaluation.
 Section~\ref{app:mti-calibration} gives the calibration evidence.
 
-Theorems~\ref{rqr2026:thm:quantile-window}--\ref{rqr2026:thm:profiled-mean-tilt} identify
+Propositions~\ref{rqr2026:thm:quantile-window}--\ref{rqr2026:thm:profiled-mean-tilt} identify
 the population MTI family and its admissible tilt coordinate. The exact DP
 Beta distribution describes posterior content under the specified
 response-distribution model. Section~\ref{rqr2026:sec:evaluation} evaluates the
@@ -640,9 +628,10 @@ by sample size and requested content. Within each setting, the rule fixes a dire
 Dirichlet-process content-probability check from an independent calibration run, searches
 fixed-target MTI--ECM endpoint fits over fitted content and retained-mean tilt,
 and keeps the shortest candidate satisfying the content-probability check.
-The cutoff is selected by the simultaneous calibration bounds in
-Section~\ref{rqr2026:sec:mti-tolerance}; the scan provides an initial fitted-content
-reference. Tolerance performance is assessed on the fresh validation samples.
+The cutoff is fixed from the separate calibration assessment in
+Section~\ref{rqr2026:sec:mti-tolerance}. The scan provides an initial
+fitted-content reference, and tolerance performance is assessed on the fresh
+validation samples.
 
 Young--Mathew interpolation
 \citep{rqr-YoungMathew2014NonparametricTolerance} and Wilks min--max intervals
@@ -660,17 +649,6 @@ Figure~\ref{rqr2026:fig:tolerance-validation-width-ranges} also marks the popula
 shortest content-\(c\) interval for each simulation distribution. This
 population benchmark supplies a lower reference for interval width.
 
-\begin{table}[!htbp]
-\centering
-\caption[Independent-sample tolerance validation]{\textbf{Independent-sample tolerance validation.} Results are shown by
-sample-size/content setting and method. Each row summarizes the range
-across eight simulation distributions at tolerance confidence \(0.95\). All three
-reported methods produced an interval in every replication in this run.}
-\label{rqr2026:tab:tolerance-validation-primary}
-\TableStyle
-\input{tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex}
-\end{table}
-
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch05-mti/generated/fig04_tolerance_validation_primary.png}
@@ -678,7 +656,7 @@ reported methods produced an interval in every replication in this run.}
 Intervals not produced are counted as nonattainment.
 Horizontal segments show the range across the eight distributions for each
 method and sample-size/content setting. The displayed axis spans
-\(93.2\%\)--\(100.2\%\); the dashed vertical line marks nominal tolerance
+\(93.2\%\)--\(100.2\%\), and the dashed vertical line marks nominal tolerance
 confidence \(95\%\).}
 \label{rqr2026:fig:tolerance-validation-primary}
 \end{figure}
@@ -689,14 +667,14 @@ confidence \(95\%\).}
 \caption[Interval-width ranges by distribution]{\textbf{Interval-width ranges by distribution.}
 Segments give empirical 2.5\%--97.5\% ranges and crosses mark means over
 1,000 replications. Dashed gray ticks mark population shortest
-content-\(c\) widths. Each panel is one sample-size/content setting;
+content-\(c\) widths. Each panel is one sample-size/content setting, and
 horizontal axes are logarithmic, with lengths in fitting-response units.
 Family labels abbreviate the distributions specified in
 Section~\ref{rqr2026:sec:evaluation}.}
 \label{rqr2026:fig:tolerance-validation-width-ranges}
 \end{figure}
 
-In the completed run, MTI--ECM content attainment ranges from 95.1\% to 99.9\%
+MTI--ECM content attainment ranges from 95.1\% to 99.9\%
 across distribution--setting cases, compared with
 93.6\% to 98.0\% for Young--Mathew, and 95.1\% to 100.0\% for Wilks.
 Figures~\ref{rqr2026:fig:tolerance-validation-primary}
@@ -707,26 +685,27 @@ tolerance confidence in all 72 distribution--setting cases. The closest
 independent validation cases remain near the nominal boundary. The results
 provide repeated-sampling validation of the selected MTI rule over the stated
 eight-distribution design. Of the 72
-simultaneous validation confidence intervals, 53 have lower bounds above
-\(0.95\) and 19 include \(0.95\); none has an upper bound below it.
+simultaneous validation confidence intervals, 53 (73.6\%) have lower bounds above
+\(0.95\) and 19 (26.4\%) include \(0.95\), and none has an upper bound below it.
 
-MTI--ECM has smaller mean width than Young--Mathew in 39 of 72 cases and greater
-mean width in 33. For each of the six asymmetric distributions it is shorter
-in six of nine designs. At \(n=100,c=0.90\), mean reductions range from
-2.8\% to 25.0\% across distributions. At \(n=50,c=0.90\) and
+MTI--ECM has smaller mean width than Young--Mathew in 39 of 72 comparisons
+(54.2\%). The advantage is concentrated in the asymmetric distributions,
+where 36 of 54 comparisons (66.7\%) favor MTI--ECM. Each of the six asymmetric
+distributions favors MTI--ECM in six of nine sample-size/content settings,
+with mean-width reductions reaching 30.6\% in the strongly skewed lognormal
+case. In every comparison with smaller mean width, empirical content
+attainment also exceeds that of Young--Mathew. At \(n=50,c=0.90\) and
 \(n=100,c=0.95\), Young--Mathew is shorter in every distribution.
 The same ordering holds at \(n=500,c=0.99\). Width gains are limited near
 the sample-range boundary. Across the 72,000 selected ECM fits, 42,116
-satisfy the stopping criterion and 29,884 reach the 100-cycle limit. All
+(58.5\%) satisfy the stopping criterion and 29,884 (41.5\%) reach the
+100-cycle limit. All
 returned intervals remain in the comparison, which evaluates this
 finite-iteration procedure.
 
-Section~\ref{app:mti-calibration} gives the selected MTI policy and the
-full-range feasibility calculation used to choose the simulation design. The distribution-level results are summarized above
-through their ranges and simultaneous uncertainty statements.
-The excluded small-sample settings fall outside the region where a sample-bounded
-two-sided distribution-free tolerance statement can be supported at confidence
-\(0.95\). The primary comparison is restricted to these three procedures.
+Section~\ref{app:mti-calibration} gives the selected policy, the full-range
+feasibility calculation, and Table~\ref{rqr2026:tab:tolerance-validation-primary}
+with the distribution-level ranges by setting and method.
 
 \section{Pharmaceutical batch application}
 \label{rqr2026:sec:pharma-application}
@@ -750,7 +729,7 @@ criteria are unspecified. In
 \PharmaFctHardnessQuestions{} batches, average hardness exceeds its recorded
 maximum, indicating that the corresponding measurement windows require
 clarification. We use the reported metric to describe historical batch
-variation; its physical interpretation remains provisional.
+variation, while its physical interpretation remains provisional.
 
 The primary analysis uses \PharmaSplits{} paired random splits, each with
 \PharmaTrain{} training and \PharmaHeldout{} held-out batches. Every method
@@ -773,7 +752,7 @@ The controlled repeated-sampling tolerance evidence remains the simulation
 study in Section~\ref{rqr2026:sec:evaluation}.
 The associated process records identify \PharmaCampaigns{} production
 campaigns \citep{rqr-ZagarMihelic2021Process}. Every random partition shares
-campaigns between training and evaluation; a median
+campaigns between training and evaluation. A median
 \PharmaRandomSharedHeldout{} of \PharmaHeldout{} withheld batches belong to
 campaigns represented in training. The random-split results consequently
 describe variation within this historical production setting.
@@ -782,13 +761,10 @@ describe variation within this historical production setting.
 \centering
 \caption[Pharmaceutical tensile-metric intervals]{\textbf{Reported pharmaceutical tensile metric.} Intervals are
 fit on \PharmaTrain{} batches and evaluated on \PharmaHeldout{} withheld
-batches over \PharmaSplits{} paired random splits. These splits reuse one
-finite dataset and are not independent sampling replications. Bracketed ranges
-are empirical 2.5\%--97.5\% partition quantiles. The metric's physical unit
-and acceptance criteria are unspecified. Lower and upper endpoints are summarized
-separately. Held-out \(\ge c\) gives the percentage of all splits with
-held-out empirical content at least \(c\); returned intervals and tail
-omissions are reported separately.}
+batches over \PharmaSplits{} paired random splits. All methods returned an
+interval in every split. Bracketed ranges are empirical 2.5\%--97.5\%
+quantiles across these overlapping partitions, not posterior credible
+intervals. The metric's physical unit and acceptance criteria are unspecified.}
 \label{rqr2026:tab:pharma-application-primary}
 \TableStyle
 \input{tables/ch05-mti/pharma_application_primary_summary.tex}
@@ -912,27 +888,23 @@ contiguous content-\(c\) windows. Equal-tailed and shortest-contiguous
 intervals are distribution-specific members of this placement family rather
 than universally equivalent targets.
 
-The generalized posterior extends the residual-product criterion to
-uncertainty over interval roots. Its augmentation supports conditionally
-conjugate Gibbs updates for MPI and fixed-tilt MTI, and ECM supplies
-deterministic estimates for candidate selection. The calibrated procedure
-combines these fixed-target estimates with a direct
-Dirichlet-process posterior content check, and a separate calibration run fixes
-the selection rule before validation. In the independent study, empirical
-content attainment exceeds the nominal tolerance confidence in every reported
-setting, and MTI has smaller mean width than Young--Mathew in two thirds of the
-asymmetric distribution--setting cases. The independent confidence bounds
-remain inconclusive in 19 of the 72 cases. These findings characterize the
-prespecified finite-iteration ECM procedure over the stated
-eight-distribution design. Its numerical stopping flags and the finite
-content--tilt grid do not establish global mode or interval-width optimality.
+For inference on these targets, the generalized posterior extends the
+residual-product criterion to uncertainty over interval roots. Its augmentation
+supports conditionally conjugate Gibbs updates for both MPI and fixed-tilt
+MTI, while ECM supplies deterministic estimates for candidate selection.
+Combining these estimates with a direct Dirichlet-process posterior content
+check gives a tolerance procedure whose selection rule is fixed by separate
+calibration before validation.
 
-The inferential target, computational update, content probability, and
-tolerance-confidence statement have separate roles. MTI identifies the
-fixed-content interval being estimated, and the generalized posterior describes
-uncertainty for that loss-defined target. The Dirichlet-process response model
-gives content probabilities for the eligibility screen. Repeated-sampling
-content attainment evaluates the selected tolerance action.
+In the tolerance comparison, width reductions are most frequent under
+asymmetric sampling. MTI--ECM gives smaller mean width than Young--Mathew in
+39 of 72 comparisons (54.2\%), including 36 of 54 asymmetric-distribution
+comparisons (66.7\%). The largest reduction is 30.6\% under strongly skewed
+lognormal sampling, and every narrower-mean-width comparison also has greater
+empirical content attainment. At three settings near the sample-range boundary,
+Young--Mathew instead gives smaller mean width in every distribution. MTI--ECM
+empirical attainment ranges from 95.1\% to 99.9\%, with the independent
+confidence bounds including the nominal value in 19 of 72 cases (26.4\%).
 
 The pharmaceutical analysis has a narrower, descriptive role. It shows how the
 precalibrated procedures place endpoints on historical batch measurements and
@@ -943,8 +915,7 @@ Prospective evaluation on independent future batches, with the measurement
 definition and production grouping recorded in advance, is needed to assess
 performance beyond this historical dataset.
 
-The tolerance evidence covers iid continuous univariate simulations, and
-boundary tilts can lead to one-sided limits or inactive roots. The regression
-and dynamic endpoint models generalize the loss-defined target. Their empirical
-assessment requires implementations, numerical diagnostics, simulation designs,
-and target-specific calibration.
+The regression and dynamic endpoint models extend the same loss-defined
+target to covariate-dependent intervals. Their empirical assessment requires
+implementations, numerical diagnostics, simulation designs, and
+target-specific calibration.

@@ -19,6 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RECORD = "docs/ch05-mti-ecm-gibbs-migration-20261111.json"
+POLISH_RECORD = "docs/ch05-postmigration-polish-20261112.json"
 REQUIRED_LABELS = {
     "rqr2026:eq:mti-computational-loss",
     "rqr2026:eq:mti-generalized-posterior",
@@ -92,10 +93,42 @@ def file_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def artifact_expectations(record: dict, record_sha256: str,
+                          polish: dict | None = None) -> tuple[dict[str, str], list[str]]:
+    """Apply source-locked derivative overrides without rewriting migration history."""
+    expected = {item.get("path", ""): item.get("sha256", "")
+                for item in record.get("artifacts", [])}
+    errors: list[str] = []
+    if polish is None:
+        return expected, errors
+    if polish.get("baseline_migration_sha256") != record_sha256:
+        errors.append("polish baseline migration record hash differs")
+    seen: set[str] = set()
+    for item in polish.get("artifacts", []):
+        path = item.get("path", "")
+        if path in seen:
+            errors.append(f"duplicate polish artifact override: {path}")
+            continue
+        seen.add(path)
+        if path not in expected:
+            errors.append(f"unknown polish artifact override: {path}")
+            continue
+        if item.get("baseline_sha256") != expected[path]:
+            errors.append(f"polish baseline artifact hash differs: {path}")
+            continue
+        current = item.get("current_sha256", "")
+        if not re.fullmatch(r"[0-9a-f]{64}", current):
+            errors.append(f"invalid polish current artifact hash: {path}")
+            continue
+        expected[path] = current
+    return expected, errors
+
+
 def validate(root: Path = ROOT, audit_root: Path | None = None) -> list[str]:
     errors: list[str] = []
     try:
-        record = json.loads((root / RECORD).read_text(encoding="utf-8"))
+        record_bytes = (root / RECORD).read_bytes()
+        record = json.loads(record_bytes)
     except (OSError, ValueError) as exc:
         return [f"migration record unavailable: {exc}"]
     if record.get("schema_version") != 1:
@@ -112,9 +145,19 @@ def validate(root: Path = ROOT, audit_root: Path | None = None) -> list[str]:
         )
     )
     errors.extend(text_errors(chapter, appendix, context, record))
+    polish = None
+    if (root / POLISH_RECORD).is_file():
+        try:
+            polish = json.loads((root / POLISH_RECORD).read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            errors.append(f"polish derivative record unavailable: {exc}")
+    expected, override_errors = artifact_expectations(
+        record, hashlib.sha256(record_bytes).hexdigest(), polish
+    )
+    errors.extend(override_errors)
     for artifact in record.get("artifacts", []):
         path = root / artifact.get("path", "")
-        if not path.is_file() or file_hash(path) != artifact.get("sha256"):
+        if not path.is_file() or file_hash(path) != expected.get(artifact.get("path", "")):
             errors.append(f"migration artifact hash mismatch: {artifact.get('path')}")
     if not record.get("artifacts"):
         errors.append("migration record lacks checked manuscript artifacts")

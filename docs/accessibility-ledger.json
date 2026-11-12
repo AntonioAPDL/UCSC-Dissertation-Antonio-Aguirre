@@ -97,7 +97,7 @@
       "source_path": "chapters/05-research-d.tex",
       "graphic": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
       "figure_label": "rqr2026:fig:tolerance-validation-width-ranges",
-      "alt_text": "Nine design panels arranged in three rows compare mean widths and empirical 2.5--97.5 percent width ranges for frozen MTI-ECM, Young--Mathew and Wilks across eight distributions. A shared left column gives the distribution names. Each panel uses a logarithmic width axis and population shortest-contiguous reference markers. MTI-ECM is narrower than Young--Mathew in 39 of 72 distribution-setting comparisons, not uniformly.",
+      "alt_text": "Nine sample-size/content panels compare mean widths and empirical 2.5--97.5 percent ranges for MTI-ECM, Young--Mathew and Wilks across eight distributions, on logarithmic width axes with shortest-contiguous population references. MTI-ECM has smaller mean width in 39 of 72 cases (54.2%), including 36 of 54 asymmetric cases (66.7%). Young--Mathew is narrower in all distributions at the three settings closest to the sample-range boundary.",
       "description_source": "caption",
       "status": "REVIEWED"
     },

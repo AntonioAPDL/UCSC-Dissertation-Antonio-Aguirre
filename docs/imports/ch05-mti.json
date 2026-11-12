@@ -17,7 +17,8 @@
       "chapters/05-research-d.tex",
       "appendices/e-mti-technical.tex"
     ],
-    "migration_map": "docs/appendix-migration-map.json"
+    "migration_map": "docs/appendix-migration-map.json",
+    "current_polish_record": "docs/ch05-postmigration-polish-20261112.json"
   },
   "distribution": {
     "github": "MERGED_TO_MAIN",
@@ -751,8 +752,8 @@
         "source_path": "tables/pharma_application_primary_summary.tex",
         "source_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
         "destination": "tables/ch05-mti/pharma_application_primary_summary.tex",
-        "destination_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
-        "handling": "Frozen source copied; the ECM policy table preserves the dissertation cross-reference label."
+        "destination_sha256": "d1ecbeca579ef75b542b26bf2d6d2f298b4701aaebfb2edbb0da4afb692209c7",
+        "handling": "Compact editorial derivative: preserves three methods' authenticated median width and held-out content with empirical 95% partition ranges; repeated counts and endpoint/tail columns omitted in favor of caption and retained figure."
       },
       {
         "source_path": "tables/pharma_application_numbers.tex",

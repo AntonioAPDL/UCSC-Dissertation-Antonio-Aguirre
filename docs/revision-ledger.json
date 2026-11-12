@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-11-11",
+  "recorded_at": "2026-11-12",
   "baseline": {
     "id": "manuscript-first-20260915",
     "integration_commit": "79dbb9cc8348d9cc0ece2f23d5ade33570275055",
@@ -46,7 +46,7 @@
     {
       "path": "frontmatter/acknowledgments.tex",
       "baseline_sha256": null,
-      "current_sha256": "09bc01cdf10fbb2c23086a15e967dc769bdff0d22ea09381a06992911ceb3672",
+      "current_sha256": "8443cef7e82528d5120807dea9bc1b8d3c92ee2240fc4dc7c235deb2a5541e54",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -54,13 +54,14 @@
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
-        "REV-CH05-MTI-ECM-GIBBS-20261111"
+        "REV-CH05-MTI-ECM-GIBBS-20261111",
+        "REV-CH05-POSTMIGRATION-POLISH-20261112"
       ]
     },
     {
       "path": "chapters/06-synthesis.tex",
       "baseline_sha256": null,
-      "current_sha256": "b20d3f813d18b266a9d4ba89edde5ddcea06ae83600fb89822ffc3d8342ef2dd",
+      "current_sha256": "0f07621e8d2ad8e1d7c489f846696b97146e7fb3e2d06f099717e4d59d5a5560",
       "state": "EDITED",
       "revision_ids": [
         "REV-ADVISOR-GLOBAL-20261109",
@@ -70,7 +71,8 @@
         "REV-AUTHOR-COMMENTS-20261110",
         "REV-FINAL-AUTHOR-STYLE-20261110",
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
-        "REV-CH05-MTI-ECM-GIBBS-20261111"
+        "REV-CH05-MTI-ECM-GIBBS-20261111",
+        "REV-CH05-POSTMIGRATION-POLISH-20261112"
       ]
     },
     {
@@ -151,7 +153,7 @@
     {
       "path": "chapters/05-research-d.tex",
       "baseline_sha256": "0a0a3facc6e41b72140bb703cef74c9f659761132a9ceed764ae20ddb5fc031d",
-      "current_sha256": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69",
+      "current_sha256": "b07a15512be7d72b5293428c416db1b71b4b3929b5ff741e45a6e2f398b9623e",
       "state": "EDITED",
       "revision_ids": [
         "REV-CH05-20260916",
@@ -171,7 +173,8 @@
         "REV-FINAL-AUTHOR-STYLE-20261110",
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
         "REV-FIGURE-5-1-OPTION-C-20261110",
-        "REV-CH05-MTI-ECM-GIBBS-20261111"
+        "REV-CH05-MTI-ECM-GIBBS-20261111",
+        "REV-CH05-POSTMIGRATION-POLISH-20261112"
       ]
     },
     {
@@ -262,7 +265,7 @@
     {
       "path": "appendices/e-mti-technical.tex",
       "baseline_sha256": null,
-      "current_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+      "current_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
       "state": "EDITED",
       "derived_from": [
         "chapters/05-research-d.tex"
@@ -276,7 +279,8 @@
         "REV-POST-BRUNO-FINAL-POLISH-20261109",
         "REV-FINAL-AUTHOR-STYLE-20261110",
         "REV-FINAL-VOICE-EXDQLM-MTI-20261110",
-        "REV-CH05-MTI-ECM-GIBBS-20261111"
+        "REV-CH05-MTI-ECM-GIBBS-20261111",
+        "REV-CH05-POSTMIGRATION-POLISH-20261112"
       ]
     },
     {
@@ -432,11 +436,12 @@
     {
       "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
       "baseline_sha256": "c088fb2ed3fedcedab8663577b031f6aa175ff8066d219cb2b9e7e1c30cd72bf",
-      "current_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
+      "current_sha256": "d1ecbeca579ef75b542b26bf2d6d2f298b4701aaebfb2edbb0da4afb692209c7",
       "state": "EDITED",
       "revision_ids": [
         "REV-CURRENT-SOURCES-20261026",
-        "REV-CH05-MTI-ECM-GIBBS-20261111"
+        "REV-CH05-MTI-ECM-GIBBS-20261111",
+        "REV-CH05-POSTMIGRATION-POLISH-20261112"
       ]
     },
     {
@@ -1223,6 +1228,20 @@
       "summary": "Migrates Chapter 5 and Appendix E to authenticated finite-iteration MTI-ECM results and the conditionally conjugate Gibbs/ECM derivation; preserves population theory, selected Figure 5.1, immutable history, and the unreported Gibbs comparison boundary.",
       "evidence": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
       "validation": "Source/asset hashes and migration regression tests; clean build and rendered release inspection remain separate recorded gates."
+    },
+    {
+      "id": "REV-CH05-POSTMIGRATION-POLISH-20261112",
+      "date": "2026-11-12",
+      "paths": [
+        "appendices/e-mti-technical.tex",
+        "chapters/05-research-d.tex",
+        "chapters/06-synthesis.tex",
+        "frontmatter/acknowledgments.tex",
+        "tables/ch05-mti/pharma_application_primary_summary.tex"
+      ],
+      "summary": "Clarifies original RQR and MPI/MTI contributions, population propositions, empirical width gains, calibration language, and concise main/appendix presentation without scientific refitting.",
+      "evidence": "docs/ch05-postmigration-polish-20261112.json",
+      "validation": "Scoped mutation tests, frozen-source gates, clean build and rendered inspection recorded in the polish receipt."
     }
   ]
 }

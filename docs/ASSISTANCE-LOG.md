@@ -1,5 +1,21 @@
 # Assistance log
 
+2026-11-12: After the author approved the post-migration polish plan, AI
+assistance clarified the Chapter 5 contribution and attribution account,
+renamed two author-owned results as propositions, condensed duplicated
+main/appendix material, and polished connected prose. It reproduced the
+reported width-comparison counts and percentages from frozen summaries,
+compacted the pharmaceutical table without changing its retained values,
+and corrected a stale calibration-description sentence. It added scoped
+manuscript/provenance regression checks and a derivative-ledger reconciler.
+The acknowledgment now summarizes the documented assistance without the
+earlier unsupported exclusive-use claims. Scientific assets, source
+authorities, historical receipts, and the assistance history are preserved.
+No scientific fit, calibration, simulation, or Gibbs job was performed.
+Build, inspection, and Git integration outcomes are recorded separately in
+the dated polish receipt; no Overleaf build or institutional approval is
+inferred from the GitHub publication.
+
 2026-09-15: AI assistance researched public requirements and documentation,
 audited community template sources, generated this scaffold and handoff
 materials, and performed local compilation/layout checks recorded separately.

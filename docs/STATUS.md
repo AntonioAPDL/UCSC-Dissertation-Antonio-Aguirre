@@ -1,5 +1,35 @@
 # Project status
 
+## 2026-11-12 Chapter 5 post-migration polish release-validated
+
+The approved polish clarifies RQR attribution, the MPI functional name,
+retained-mean tilt, and generalized-posterior computation. Three population
+results are now propositions without changing their statements or proofs.
+The main duplicate empirical-balance display is condensed to a cited bridge,
+and the attainment table moves to Appendix E. The pharmaceutical table is
+reduced to three columns with unchanged retained numerical values.
+
+Results and synthesis now give the verified width comparisons: 39/72 (54.2%)
+overall and 36/54 (66.7%) among asymmetric designs, with a largest reduction
+of 30.6% for strongly skewed lognormal sampling. The stale simultaneous
+cutoff-calibration sentence is corrected, while adverse calibration bounds,
+iteration caps, and unfavorable comparisons remain. The assistance disclosure
+is concise and consistent with the recorded work. Abstract and Chapter 1
+were reviewed and retained unchanged. No scientific jobs were run.
+
+All 71 tests, frozen-source controls, and the complete release build pass.
+The accepted artifact is `build/release-20261112T053327Z/main.pdf`, 189 pages,
+SHA-256 `dbe16ce5173c12886203fbd982e461e606620d6a96fbc849a9d15a48488b5fa7`.
+It has ten underfull and zero overfull boxes. Eighteen affected pages were
+rendered or compared with the already inspected identical renders; the proof
+page-break repair was re-inspected. The exact review map and before/after
+text are in `docs/ch05-postmigration-polish-20261112.md` and its JSON companion.
+The prior migration and publication receipt remain byte-identical.
+
+This is the tested pre-promotion checkpoint. Actual Git promotion and remote
+readback are recorded only after they occur. An Overleaf pull and independent
+compile remain distinct from GitHub publication.
+
 ## 2026-11-11 Chapter 5 migration merged and pushed
 
 The release-validated manuscript commit

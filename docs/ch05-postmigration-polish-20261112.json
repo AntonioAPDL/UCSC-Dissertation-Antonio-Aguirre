@@ -1,0 +1,1025 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "revision_id": "REV-CH05-POSTMIGRATION-POLISH-20261112",
+  "baseline_commit": "a56b66e256245436f5a93af65efa16ca35bba0cd",
+  "status": "RELEASE_VALIDATED_PENDING_PROMOTION",
+  "scope": "Editorial Chapter 5 polish; scientific results, fits and source authorities unchanged",
+  "baseline_migration_record": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
+  "baseline_migration_sha256": "facfc64e6548e20c86308a752dd49de3b9feb43ef3a9da982bf198a4160fe23b",
+  "artifacts": [
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_sha256": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69",
+      "current_sha256": "b07a15512be7d72b5293428c416db1b71b4b3929b5ff741e45a6e2f398b9623e"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
+      "current_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d"
+    },
+    {
+      "path": "chapters/06-synthesis.tex",
+      "baseline_sha256": "b20d3f813d18b266a9d4ba89edde5ddcea06ae83600fb89822ffc3d8342ef2dd",
+      "current_sha256": "0f07621e8d2ad8e1d7c489f846696b97146e7fb3e2d06f099717e4d59d5a5560"
+    },
+    {
+      "path": "frontmatter/acknowledgments.tex",
+      "baseline_sha256": "09bc01cdf10fbb2c23086a15e967dc769bdff0d22ea09381a06992911ceb3672",
+      "current_sha256": "8443cef7e82528d5120807dea9bc1b8d3c92ee2240fc4dc7c235deb2a5541e54"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "baseline_sha256": "630e880f9f056646c1e322d23cd406bde72236e854393e71998d404d4e21ec0b",
+      "current_sha256": "d1ecbeca579ef75b542b26bf2d6d2f298b4701aaebfb2edbb0da4afb692209c7"
+    }
+  ],
+  "protected_artifacts": [
+    {
+      "path": "frontmatter/abstract.tex",
+      "sha256": "be7dfc0a2bf53c82e60eb6dba897fa71adc82bb10430802ce878b1c9e127ce00"
+    },
+    {
+      "path": "chapters/01-introduction.tex",
+      "sha256": "c8db13380c48f82250a1d65d9cb4570d8fa8f08b5e52a58fb0fa76482e7572f8"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig04_tolerance_validation_primary.png",
+      "sha256": "d09897db7feefaae8d701d89989614145ae5d7d2bf05f81e5e81f3f4cc3f254a"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig05_tolerance_validation_width_ranges.png",
+      "sha256": "16b9c1c4247da4875000aa7780c1389cd1ae7f2b12c32dc375478cd406c10a91"
+    },
+    {
+      "path": "figures/ch05-mti/generated/fig06_pharma_application_tensile_intervals.png",
+      "sha256": "c37c50487b3c3af742c37e1c12d327ce867bd9f72a10cedd59070080eee1f6a9"
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex",
+      "sha256": "980aebd8ea08cb4a0d9cae76cbbe51ae0fe41834b068e89e907319601bfa9b94"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_numbers.tex",
+      "sha256": "090bb4ca972a4f41d569217fa0c92aa4b6f0d0707bf51909f533d490e95be77c"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_source_numbers.tex",
+      "sha256": "3c064475b24d91df8799e7de68488f7156006de17ed6ccfc42dda846bde8b823"
+    },
+    {
+      "path": "tables/ch05-mti/tolerance_validation_mti_profile_policy.tex",
+      "sha256": "4a8724f059aad310ff1be69c7f1d8e2feddc5ba51600481f06c14cb3b8bc0275"
+    },
+    {
+      "path": "scripts/generate_ch05_mti_ecm_figures.R",
+      "sha256": "320fbcbdb6bb31dd3169e3a2dd8b965a7cf5c57d711f0686838fd2105d2a2513"
+    },
+    {
+      "path": "tables/ch05-mti/ecm_family_case_summary_20261111.csv",
+      "sha256": "c66c9525b954d31bf76560274099213358f082724fdfff2a115864a195b32e47"
+    },
+    {
+      "path": "tables/ch05-mti/ecm_population_width_reference_20261111.csv",
+      "sha256": "946fc574dae08978c05ee30e69f59b0cac16d1c2b963aca007b18fc5ce7242bf"
+    }
+  ],
+  "request_dispositions": [
+    {
+      "id": "P01",
+      "description": "Contextual Chapter 5 and Appendix E prose polish",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P02",
+      "description": "Concrete mathematical and computational contributions",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P03",
+      "description": "Concise assistance disclosure consistent with documented use",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P04",
+      "description": "39/72 (54.2%) and 36/54 (66.7%) in results and synthesis",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P05",
+      "description": "Named width/attainment comparison under asymmetric sampling",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P06",
+      "description": "Accurate original RQR loss-minimization description",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P07",
+      "description": "MPI functional name distinguished from antecedent RQR procedure",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P08",
+      "description": "Integrated attribution rather than repetitive standalone sentence",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P09",
+      "description": "Tail-probability and first-moment connection clarified",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P10",
+      "description": "Author-owned results and proof headings named propositions",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P11",
+      "description": "Standard check-loss optimality citation, MTI-specific derivation retained",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P12",
+      "description": "Attainment table moved to Appendix E; main figures retained",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P13",
+      "description": "Compact pharmaceutical summary with unchanged values",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P14",
+      "description": "Discussion foregrounds supported contributions and empirical effects",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P15",
+      "description": "Requested global numerical optimality disclaimer removed from discussion",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P16",
+      "description": "Selective transitions and contextual prose-semicolon replacements",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P17",
+      "description": "Pointwise cutoff calibration distinguished from simultaneous validation",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": "P18",
+      "description": "Exact review map, tests and guarded Git integration",
+      "status": "IMPLEMENTED"
+    }
+  ],
+  "review_map": [
+    {
+      "id": "R01",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:sec:introduction",
+      "line": 5,
+      "description": "Introduction and contributions",
+      "pdf_page": 102,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R02",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:prop:population-characterization",
+      "line": 198,
+      "description": "Attribution and tail interpretation",
+      "pdf_page": 107,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R03",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:thm:quantile-window",
+      "line": 246,
+      "description": "Proposition naming and identification",
+      "pdf_page": [107, 110],
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R04",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:sec:static-theory-statements",
+      "line": 414,
+      "description": "Training-sample balance and computation bridge",
+      "pdf_page": 113,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R05",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:sec:mti-tolerance",
+      "line": 517,
+      "description": "Calibration and validation distinction",
+      "pdf_page": 115,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R06",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:fig:tolerance-validation-width-ranges",
+      "line": 674,
+      "description": "Results and skewed-family width interpretation",
+      "pdf_page": [120, 121, 122],
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R07",
+      "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "label": null,
+      "line": 1,
+      "description": "Compact pharmaceutical summary; caption in Chapter 5",
+      "pdf_page": 124,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R08",
+      "path": "chapters/05-research-d.tex",
+      "label": "rqr2026:sec:discussion",
+      "line": 881,
+      "description": "Connected contribution and results discussion",
+      "pdf_page": [127, 128],
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R09",
+      "path": "appendices/e-mti-technical.tex",
+      "label": "app:mti-proofs",
+      "line": 11,
+      "description": "Proposition proof headings and empirical-balance citation",
+      "pdf_page": [166, 167, 168],
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R10",
+      "path": "appendices/e-mti-technical.tex",
+      "label": "rqr2026:tab:tolerance-validation-primary",
+      "line": 363,
+      "description": "Attainment table retained in appendix",
+      "pdf_page": 176,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R11",
+      "path": "chapters/06-synthesis.tex",
+      "label": "sec:synthesis-findings",
+      "line": 156,
+      "description": "MTI synthesis, formerly printed page 124",
+      "pdf_page": 135,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R12",
+      "path": "frontmatter/acknowledgments.tex",
+      "label": null,
+      "line": 44,
+      "description": "Accurate concise assistance disclosure",
+      "pdf_page": 12,
+      "disposition": "EDITED"
+    },
+    {
+      "id": "R13",
+      "path": "frontmatter/abstract.tex",
+      "label": null,
+      "line": 36,
+      "description": "MTI abstract paragraph reviewed and retained",
+      "pdf_page": 10,
+      "disposition": "REVIEWED_RETAINED"
+    },
+    {
+      "id": "R14",
+      "path": "chapters/01-introduction.tex",
+      "label": null,
+      "line": 114,
+      "description": "MTI introductory contribution reviewed and retained",
+      "pdf_page": 17,
+      "disposition": "REVIEWED_RETAINED"
+    },
+    {
+      "id": "R15",
+      "path": "chapters/05-research-d.tex",
+      "label": null,
+      "line": 1,
+      "description": "Whole-chapter context and transition review",
+      "pdf_page": [101, 128],
+      "disposition": "EDITED"
+    }
+  ],
+  "paragraph_changes": [
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        14,
+        18
+      ],
+      "current_lines": [
+        14,
+        18
+      ],
+      "before": "Content, placement, and tolerance confidence are distinct. Estimating the\n\\((1-c)/2\\) and \\((1+c)/2\\) quantiles yields the central equal-tailed interval\n\\citep{qdesn-KoenkerBassett1978}; shortest and mean-preserving intervals use\ndifferent placement criteria\n\\citep{rqr-BrehmerGneiting2021Intervals,rqr-FisslerEtAl2021SetValued}.",
+      "after": "Content, placement, and tolerance confidence are distinct. Estimating the\n\\((1-c)/2\\) and \\((1+c)/2\\) quantiles yields the central equal-tailed interval\n\\citep{qdesn-KoenkerBassett1978}, whereas shortest and mean-preserving intervals use\ndifferent placement criteria\n\\citep{rqr-BrehmerGneiting2021Intervals,rqr-FisslerEtAl2021SetValued}."
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        23,
+        44
+      ],
+      "current_lines": [
+        23,
+        45
+      ],
+      "before": "jointly, rather than two prespecified response quantiles.\n\nThe starting point is the residual-product criterion of\n\\citet{rqr-PouplinEtAl2024RQR}. Its loss depends on\n\\((y-\\eta_1)(y-\\eta_2)\\), whose sign indicates whether \\(y\\) falls between two\nroots. First, we identify its unrestricted regular population target. Among\ncontiguous intervals with content \\(c\\), it\nselects the interval whose retained mean equals the population mean. This\ninterval is called the mean-preserving interval (MPI); the residual-product\ncriterion itself is inherited from Pouplin et al.\n\nSecond, we define a placement family by adding a fixed retained-mean offset\n\\(\\delta\\). The resulting mean-tilted interval (MTI) retains\ncontent \\(c\\) and has retained mean \\(\\mu+\\delta\\). MPI is the zero-tilt member,\nwhereas equal-tailed and shortest contiguous intervals correspond to\ndistribution-specific tilts. Thus \\(\\delta\\) identifies the estimand; it is not\nan ordinary model parameter to be learned without also specifying how the target\nis chosen.\n\nThird, we construct a generalized posterior for the interval roots.\nA normal--exponential augmentation gives Gaussian root conditionals and\ngeneralized-inverse-Gaussian latent-scale conditionals for both MPI and",
+      "after": "jointly, rather than two prespecified response quantiles.\n\n\\citet{rqr-PouplinEtAl2024RQR} introduced relaxed quantile regression (RQR)\nto estimate interval endpoints by minimizing a residual-product loss. The\nloss depends on \\((y-\\eta_1)(y-\\eta_2)\\), whose sign indicates whether \\(y\\)\nfalls between the two roots. They establish its population-content property\nand use penalized empirical minimization to address interval width and\nconditional coverage. Starting from this criterion, we characterize its\nregular unrestricted population target. Its retained mean equals the\npopulation mean, motivating the name mean-preserving interval (MPI).\n\nThis characterization leads to a placement family with a fixed retained-mean offset\n\\(\\delta\\). The resulting mean-tilted interval (MTI) retains\ncontent \\(c\\) and has retained mean \\(\\mu+\\delta\\). MPI is the zero-tilt member,\nwhereas equal-tailed and shortest contiguous intervals correspond to\ndistribution-specific tilts. Thus \\(\\delta\\) identifies the estimand and must\nbe fixed or selected through a specified target-selection rule.\nUnder the stated regularity conditions, we establish unique population\nidentification for interior admissible fixed tilts.\n\nFor inference, we construct a generalized posterior for the interval roots.\nA normal--exponential augmentation gives Gaussian root conditionals and\ngeneralized-inverse-Gaussian latent-scale conditionals for both MPI and"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        60,
+        64
+      ],
+      "current_lines": [
+        61,
+        65
+      ],
+      "before": "The population characterization and conditional computations are derived\nanalytically. The tolerance comparison evaluates the specified finite-iteration\nECM procedure over the eight studied distributions; the direct content\nprobability is a separate posterior calculation. Simulation studies,\nnumerical validation, and applications of the regression and dynamic endpoint",
+      "after": "The population characterization and conditional computations are derived\nanalytically. The tolerance comparison evaluates the specified finite-iteration\nECM procedure over the eight studied distributions, while the direct content\nprobability is a separate posterior calculation. Simulation studies,\nnumerical validation, and applications of the regression and dynamic endpoint"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        146,
+        154
+      ],
+      "current_lines": [
+        147,
+        155
+      ],
+      "before": "miss is weighted by \\(c\\). The two factors also encode distance from both\nendpoints, so the criterion weights membership and endpoint displacement\ntogether. Increasing \\(c\\) raises the relative cost of a miss; at a regular\npopulation optimum, this weighting produces the content equation established\nbelow. For data \\(y_1,\\ldots,y_n\\), an unpenalized empirical MPI fit minimizes\nthe average loss\n\\(n^{-1}\\sum_{i=1}^n\\ell_c^{\\mathrm{MPI}}(a,b;y_i)\\); using the sum gives the\nsame minimizer. Penalized and generalized-posterior calculations are introduced\nin Section~\\ref{rqr2026:sec:static-theory-statements}.",
+      "after": "miss is weighted by \\(c\\). The two factors also encode distance from both\nendpoints, so the criterion weights membership and endpoint displacement\ntogether. Increasing \\(c\\) raises the relative cost of a miss. At a regular\npopulation optimum, this weighting produces the content equation established\nbelow. For data \\(y_1,\\ldots,y_n\\), an unpenalized empirical MPI fit minimizes\nthe average loss\n\\(n^{-1}\\sum_{i=1}^n\\ell_c^{\\mathrm{MPI}}(a,b;y_i)\\). Using the sum gives the\nsame minimizer. Penalized and generalized-posterior calculations are introduced\nin Section~\\ref{rqr2026:sec:static-theory-statements}."
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        170,
+        178
+      ],
+      "current_lines": [
+        171,
+        179
+      ],
+      "before": "\\label{rqr2026:eq:mpi-product-check}\n\\end{equation}\nThe loss is symmetric in its two roots; the ordering \\(a<b\\) is imposed only\nto interpret them as lower and upper endpoints.\nThe check loss therefore acts on the scalar product residual, not on\n\\(y-a\\) or \\(y-b\\) separately. In particular, \\(c\\) is the desired interval\ncontent; it is neither an assigned response-quantile level for either endpoint\nnor the generalized-Bayes learning rate.\n",
+      "after": "\\label{rqr2026:eq:mpi-product-check}\n\\end{equation}\nThe loss is symmetric in its two roots, and the ordering \\(a<b\\) is imposed only\nto interpret them as lower and upper endpoints.\nThe check loss therefore acts on the scalar product residual, not on\n\\(y-a\\) or \\(y-b\\) separately. In particular, \\(c\\) is the desired interval\ncontent. It is neither an assigned response-quantile level for either endpoint\nnor the generalized-Bayes learning rate.\n"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        223,
+        230
+      ],
+      "current_lines": [
+        224,
+        230
+      ],
+      "before": "interchange conditions required for that calculation.\n\nThe population content equation is due to\n\\citet{rqr-PouplinEtAl2024RQR}. The retained-mean equation is a further\nconsequence of the same first-order system: conditional on \\(X=x\\), interval\nmembership has zero covariance with \\(Y\\). In omitted-tail form, the same\nidentity balances first-moment mass around the conditional mean:\n\\[",
+      "after": "interchange conditions required for that calculation.\n\nThe retained-mean equation determines placement within the content-\\(c\\)\nclass. Conditional on \\(X=x\\), interval membership has zero covariance with\n\\(Y\\). In omitted-tail form, the same\nidentity balances first-moment mass around the conditional mean:\n\\["
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        233,
+        237
+      ],
+      "current_lines": [
+        233,
+        237
+      ],
+      "before": "\\E[\\{Y-\\mu_x\\}\\ind(Y>b)\\mid X=x].\n\\]\nTail probabilities may differ; MPI balances their first moments around\n\\(\\mu_x\\). The conditional distributions of \\(Y\\) inside and outside a regular\nMPI consequently have mean \\(\\mu_x\\), although the endpoint midpoint may differ",
+      "after": "\\E[\\{Y-\\mu_x\\}\\ind(Y>b)\\mid X=x].\n\\]\nThe resulting tail probabilities may differ, and MPI balances their first moments around\n\\(\\mu_x\\). The conditional distributions of \\(Y\\) inside and outside a regular\nMPI consequently have mean \\(\\mu_x\\), although the endpoint midpoint may differ"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        243,
+        247
+      ],
+      "current_lines": [
+        243,
+        247
+      ],
+      "before": "object estimated by the unrestricted population loss.\n\n\\begin{theorem}[Quantile-window identification]\n\\label{rqr2026:thm:quantile-window}\nIn addition to the conditions of",
+      "after": "object estimated by the unrestricted population loss.\n\n\\begin{proposition}[Quantile-window identification]\n\\label{rqr2026:thm:quantile-window}\nIn addition to the conditions of"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        265,
+        273
+      ],
+      "current_lines": [
+        265,
+        273
+      ],
+      "before": "If \\(F_x\\) is symmetric about \\(\\mu_x\\), then\n\\(u_c(x)=(1-c)/2\\), and the MPI and equal-tailed intervals coincide.\n\\end{theorem}\n\nSection~\\ref{app:mti-proofs} proves the theorem, including the symmetry\nimplication. The theorem identifies the unique regular stationary window;\nTheorem~\\ref{rqr2026:thm:profiled-mean-tilt} below establishes global\nminimization under stronger conditions. If the conditional distribution has endpoint atoms,\nthe corresponding directional conditions give",
+      "after": "If \\(F_x\\) is symmetric about \\(\\mu_x\\), then\n\\(u_c(x)=(1-c)/2\\), and the MPI and equal-tailed intervals coincide.\n\\end{proposition}\n\nSection~\\ref{app:mti-proofs} proves the proposition, including the symmetry\nimplication. This identifies the unique regular stationary window, while\nProposition~\\ref{rqr2026:thm:profiled-mean-tilt} below establishes global\nminimization under stronger conditions. If the conditional distribution has endpoint atoms,\nthe corresponding directional conditions give"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        320,
+        326
+      ],
+      "current_lines": [
+        320,
+        327
+      ],
+      "before": "These score equations define the fixed-content placement associated with a\nchosen tilt. Stationarity alone does not establish that the interval is the\nglobal population minimizer, which is the role of the following theorem.\n\n\\begin{theorem}[Global identification of the MTI target]\n\\label{rqr2026:thm:profiled-mean-tilt}\nSuppose that the support closure is an interval (possibly with infinite",
+      "after": "These score equations define the fixed-content placement associated with a\nchosen tilt. Stationarity alone does not establish that the interval is the\nglobal population minimizer. The following proposition establishes that\nidentification under additional conditions.\n\n\\begin{proposition}[Global identification of the MTI target]\n\\label{rqr2026:thm:profiled-mean-tilt}\nSuppose that the support closure is an interval (possibly with infinite"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        340,
+        350
+      ],
+      "current_lines": [
+        341,
+        351
+      ],
+      "before": "Nondegeneracy gives \\(M_c(0)<\\mu<M_c(1-c)\\), so MPI is the interior\nspecial case \\(\\delta=0\\).\n\\end{theorem}\n\nSection~\\ref{app:mti-proofs} proves this global-minimizer result through the\nprofiled risk and gives the boundary analysis. The theorem converts the MTI\nscore equations into a unique population interval for every interior admissible\ntilt. Boundary tilts correspond to\none-sided probability-window limits; outside the closed admissible range there\nis no finite unrestricted MTI minimizer.\n",
+      "after": "Nondegeneracy gives \\(M_c(0)<\\mu<M_c(1-c)\\), so MPI is the interior\nspecial case \\(\\delta=0\\).\n\\end{proposition}\n\nSection~\\ref{app:mti-proofs} proves this global-minimizer result through the\nprofiled risk and gives the boundary analysis. The proposition converts the MTI\nscore equations into a unique population interval for every interior admissible\ntilt. Boundary tilts correspond to\none-sided probability-window limits, whereas outside the closed admissible range there\nis no finite unrestricted MTI minimizer.\n"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        393,
+        397
+      ],
+      "current_lines": [
+        394,
+        398
+      ],
+      "before": "population distribution and then displayed after mean/standard-deviation\nstandardization. The top row shows standardized densities with equal-tailed\n  (ET), MPI, and shortest-contiguous (SH) intervals; the bottom row\n  shows the standardized width profile along the MTI family. In the\nNormal reference case the three targets coincide at",
+      "after": "population distribution and then displayed after mean/standard-deviation\nstandardization. The top row shows standardized densities with equal-tailed\n  (ET), MPI, and shortest-contiguous (SH) intervals. The bottom row\n  shows the standardized width profile along the MTI family. In the\nNormal reference case the three targets coincide at"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        407,
+        411
+      ],
+      "current_lines": [
+        408,
+        412
+      ],
+      "before": "requires a covariate-dependent \\(\\delta(x)\\). The target tilt must therefore be\nfixed in advance or selected by a separate rule. Positive affine response\ntransformations preserve the target after transforming \\(\\delta\\); arbitrary\nmonotone transformations need not do so.\n",
+      "after": "requires a covariate-dependent \\(\\delta(x)\\). The target tilt must therefore be\nfixed in advance or selected by a separate rule. Positive affine response\ntransformations preserve the target after transforming \\(\\delta\\), whereas arbitrary\nmonotone transformations need not do so.\n"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        415,
+        443
+      ],
+      "current_lines": [
+        416,
+        431
+      ],
+      "before": "After choosing a content and tilt, we estimate the corresponding interval\nroots through a generalized posterior. The population identities above\ndescribe the target; finite-sample estimating equations and posterior\ncomputation describe how it is fitted.\n\nFor training-sample balance, fitted endpoints depend on the observations, and\nthe empirical MPI/MTI loss is\nnonsmooth when an observation lies on a root. The finite-sample score identity is\ntherefore fractional. For intercept-only MTI with fixed \\(\\delta\\), let\n\\((\\widehat a,\\widehat b)\\), \\(\\widehat a<\\widehat b\\), be an interior\nsubgradient-stationary empirical solution. Then there exist allocations\n\\(\\widehat q_i\\in[0,1]\\), equal to one for observations strictly inside the\nfitted interval, zero for observations strictly outside it, and fractional only\nat fitted roots, such that\n\\[\n\\sum_{i=1}^n \\widehat q_i=nc,\n\\qquad\n\\sum_{i=1}^n \\widehat q_i y_i\n=nc(\\overline y+\\delta).\n\\]\nThus the fitted training interval has exact fractional content and exact\nfractional retained-mean balance in its empirical estimating equations.\nThese identities concern the unpenalized criterion. Gaussian root penalties\ncontribute additional terms to the estimating equations used in computation;\nSection~\\ref{app:mti-computation} gives the corresponding penalized identities.\nPopulation content and tolerance confidence require the separate posterior\ncontent calculation and repeated-sampling calibration described below.\n\nFor fixed-target computation, generalized Bayes updates a prior with an",
+      "after": "After choosing a content and tilt, we estimate the corresponding interval\nroots through a generalized posterior. The population identities above\ndescribe the target, while finite-sample estimating equations and posterior\ncomputation describe how it is fitted.\n\nBecause the empirical loss is nonsmooth at a fitted root, we use the usual\ncheck-loss optimality conditions to describe training-sample balance\n\\citep{qdesn-KoenkerBassett1978}. For the unpenalized intercept-only criterion,\nan interior subgradient-stationary solution has exact fractional content and\nretained-mean balance. Membership is fractional only for observations at the\nfitted roots. Section~\\ref{app:mti-proofs} derives these identities, and\nSection~\\ref{app:mti-computation} gives the terms introduced by Gaussian root\npenalties. The posterior content calculation and repeated-sampling calibration\nbelow assess population content and tolerance confidence separately.\n\nFor fixed-target computation, generalized Bayes updates a prior with an"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        494,
+        498
+      ],
+      "current_lines": [
+        482,
+        486
+      ],
+      "before": "therefore holds for MPI and fixed-tilt MTI, although the joint root posterior\nis generally non-Gaussian. Gibbs sampling alternates the scale and root\ndraws; endpoint and width summaries use the sorted retained pairs.\n\nECM uses the same augmentation for deterministic mode estimation",
+      "after": "therefore holds for MPI and fixed-tilt MTI, although the joint root posterior\nis generally non-Gaussian. Gibbs sampling alternates the scale and root\ndraws. Endpoint and width summaries use the sorted retained pairs.\n\nECM uses the same augmentation for deterministic mode estimation"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        550,
+        554
+      ],
+      "current_lines": [
+        538,
+        542
+      ],
+      "before": "additional contents near one. At each content, the tilt grid includes zero\nand fixed sample-standard-deviation offsets around the empirical\nshortest-window tilt. The same construction rule is used for each sample;\nAppendix~\\ref{app:mti-calibration} gives its settings. Second, ECM gives\n\\(\\widehat I_j=[\\widehat a_j,\\widehat b_j]\\) for each pair. Third, the direct DP",
+      "after": "additional contents near one. At each content, the tilt grid includes zero\nand fixed sample-standard-deviation offsets around the empirical\nshortest-window tilt. The same construction rule is used for each sample.\nAppendix~\\ref{app:mti-calibration} gives its settings. Second, ECM gives\n\\(\\widehat I_j=[\\widehat a_j,\\widehat b_j]\\) for each pair. Third, the direct DP"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        575,
+        579
+      ],
+      "current_lines": [
+        563,
+        567
+      ],
+      "before": "return, and width stability. Its fixed cutoffs are \\(0.995\\) in eight\nsettings and \\(0.996\\) at \\(n=1000,c=0.99\\). The calibration bounds are\npointwise and do not adjust for the search over cutoffs; two setting-specific\nminimum lower bounds fall below \\(0.95\\). We therefore assess the selected\nrule on independent validation samples. Candidate construction,",
+      "after": "return, and width stability. Its fixed cutoffs are \\(0.995\\) in eight\nsettings and \\(0.996\\) at \\(n=1000,c=0.99\\). The calibration bounds are\npointwise and do not adjust for the search over cutoffs. Two setting-specific\nminimum lower bounds fall below \\(0.95\\). We therefore assess the selected\nrule on independent validation samples. Candidate construction,"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        581,
+        585
+      ],
+      "current_lines": [
+        569,
+        573
+      ],
+      "before": "Section~\\ref{app:mti-calibration} gives the calibration evidence.\n\nTheorems~\\ref{rqr2026:thm:quantile-window}--\\ref{rqr2026:thm:profiled-mean-tilt} identify\nthe population MTI family and its admissible tilt coordinate. The exact DP\nBeta distribution describes posterior content under the specified",
+      "after": "Section~\\ref{app:mti-calibration} gives the calibration evidence.\n\nPropositions~\\ref{rqr2026:thm:quantile-window}--\\ref{rqr2026:thm:profiled-mean-tilt} identify\nthe population MTI family and its admissible tilt coordinate. The exact DP\nBeta distribution describes posterior content under the specified"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        641,
+        647
+      ],
+      "current_lines": [
+        629,
+        636
+      ],
+      "before": "fixed-target MTI--ECM endpoint fits over fitted content and retained-mean tilt,\nand keeps the shortest candidate satisfying the content-probability check.\nThe cutoff is selected by the simultaneous calibration bounds in\nSection~\\ref{rqr2026:sec:mti-tolerance}; the scan provides an initial fitted-content\nreference. Tolerance performance is assessed on the fresh validation samples.\n\nYoung--Mathew interpolation",
+      "after": "fixed-target MTI--ECM endpoint fits over fitted content and retained-mean tilt,\nand keeps the shortest candidate satisfying the content-probability check.\nThe cutoff is fixed from the separate calibration assessment in\nSection~\\ref{rqr2026:sec:mti-tolerance}. The scan provides an initial\nfitted-content reference, and tolerance performance is assessed on the fresh\nvalidation samples.\n\nYoung--Mathew interpolation"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        661,
+        675
+      ],
+      "current_lines": [
+        650,
+        653
+      ],
+      "before": "population benchmark supplies a lower reference for interval width.\n\n\\begin{table}[!htbp]\n\\centering\n\\caption[Independent-sample tolerance validation]{\\textbf{Independent-sample tolerance validation.} Results are shown by\nsample-size/content setting and method. Each row summarizes the range\nacross eight simulation distributions at tolerance confidence \\(0.95\\). All three\nreported methods produced an interval in every replication in this run.}\n\\label{rqr2026:tab:tolerance-validation-primary}\n\\TableStyle\n\\input{tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex}\n\\end{table}\n\n\\begin{figure}[!htbp]\n\\centering",
+      "after": "population benchmark supplies a lower reference for interval width.\n\n\\begin{figure}[!htbp]\n\\centering"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        679,
+        683
+      ],
+      "current_lines": [
+        657,
+        661
+      ],
+      "before": "Horizontal segments show the range across the eight distributions for each\nmethod and sample-size/content setting. The displayed axis spans\n\\(93.2\\%\\)--\\(100.2\\%\\); the dashed vertical line marks nominal tolerance\nconfidence \\(95\\%\\).}\n\\label{rqr2026:fig:tolerance-validation-primary}",
+      "after": "Horizontal segments show the range across the eight distributions for each\nmethod and sample-size/content setting. The displayed axis spans\n\\(93.2\\%\\)--\\(100.2\\%\\), and the dashed vertical line marks nominal tolerance\nconfidence \\(95\\%\\).}\n\\label{rqr2026:fig:tolerance-validation-primary}"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        690,
+        694
+      ],
+      "current_lines": [
+        668,
+        672
+      ],
+      "before": "Segments give empirical 2.5\\%--97.5\\% ranges and crosses mark means over\n1,000 replications. Dashed gray ticks mark population shortest\ncontent-\\(c\\) widths. Each panel is one sample-size/content setting;\nhorizontal axes are logarithmic, with lengths in fitting-response units.\nFamily labels abbreviate the distributions specified in",
+      "after": "Segments give empirical 2.5\\%--97.5\\% ranges and crosses mark means over\n1,000 replications. Dashed gray ticks mark population shortest\ncontent-\\(c\\) widths. Each panel is one sample-size/content setting, and\nhorizontal axes are logarithmic, with lengths in fitting-response units.\nFamily labels abbreviate the distributions specified in"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        697,
+        701
+      ],
+      "current_lines": [
+        675,
+        679
+      ],
+      "before": "\\end{figure}\n\nIn the completed run, MTI--ECM content attainment ranges from 95.1\\% to 99.9\\%\nacross distribution--setting cases, compared with\n93.6\\% to 98.0\\% for Young--Mathew, and 95.1\\% to 100.0\\% for Wilks.",
+      "after": "\\end{figure}\n\nMTI--ECM content attainment ranges from 95.1\\% to 99.9\\%\nacross distribution--setting cases, compared with\n93.6\\% to 98.0\\% for Young--Mathew, and 95.1\\% to 100.0\\% for Wilks."
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        708,
+        731
+      ],
+      "current_lines": [
+        686,
+        710
+      ],
+      "before": "provide repeated-sampling validation of the selected MTI rule over the stated\neight-distribution design. Of the 72\nsimultaneous validation confidence intervals, 53 have lower bounds above\n\\(0.95\\) and 19 include \\(0.95\\); none has an upper bound below it.\n\nMTI--ECM has smaller mean width than Young--Mathew in 39 of 72 cases and greater\nmean width in 33. For each of the six asymmetric distributions it is shorter\nin six of nine designs. At \\(n=100,c=0.90\\), mean reductions range from\n2.8\\% to 25.0\\% across distributions. At \\(n=50,c=0.90\\) and\n\\(n=100,c=0.95\\), Young--Mathew is shorter in every distribution.\nThe same ordering holds at \\(n=500,c=0.99\\). Width gains are limited near\nthe sample-range boundary. Across the 72,000 selected ECM fits, 42,116\nsatisfy the stopping criterion and 29,884 reach the 100-cycle limit. All\nreturned intervals remain in the comparison, which evaluates this\nfinite-iteration procedure.\n\nSection~\\ref{app:mti-calibration} gives the selected MTI policy and the\nfull-range feasibility calculation used to choose the simulation design. The distribution-level results are summarized above\nthrough their ranges and simultaneous uncertainty statements.\nThe excluded small-sample settings fall outside the region where a sample-bounded\ntwo-sided distribution-free tolerance statement can be supported at confidence\n\\(0.95\\). The primary comparison is restricted to these three procedures.\n\n\\section{Pharmaceutical batch application}",
+      "after": "provide repeated-sampling validation of the selected MTI rule over the stated\neight-distribution design. Of the 72\nsimultaneous validation confidence intervals, 53 (73.6\\%) have lower bounds above\n\\(0.95\\) and 19 (26.4\\%) include \\(0.95\\), and none has an upper bound below it.\n\nMTI--ECM has smaller mean width than Young--Mathew in 39 of 72 comparisons\n(54.2\\%). The advantage is concentrated in the asymmetric distributions,\nwhere 36 of 54 comparisons (66.7\\%) favor MTI--ECM. Each of the six asymmetric\ndistributions favors MTI--ECM in six of nine sample-size/content settings,\nwith mean-width reductions reaching 30.6\\% in the strongly skewed lognormal\ncase. In every comparison with smaller mean width, empirical content\nattainment also exceeds that of Young--Mathew. At \\(n=50,c=0.90\\) and\n\\(n=100,c=0.95\\), Young--Mathew is shorter in every distribution.\nThe same ordering holds at \\(n=500,c=0.99\\). Width gains are limited near\nthe sample-range boundary. Across the 72,000 selected ECM fits, 42,116\n(58.5\\%) satisfy the stopping criterion and 29,884 (41.5\\%) reach the\n100-cycle limit. All\nreturned intervals remain in the comparison, which evaluates this\nfinite-iteration procedure.\n\nSection~\\ref{app:mti-calibration} gives the selected policy, the full-range\nfeasibility calculation, and Table~\\ref{rqr2026:tab:tolerance-validation-primary}\nwith the distribution-level ranges by setting and method.\n\n\\section{Pharmaceutical batch application}"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        751,
+        755
+      ],
+      "current_lines": [
+        730,
+        734
+      ],
+      "before": "maximum, indicating that the corresponding measurement windows require\nclarification. We use the reported metric to describe historical batch\nvariation; its physical interpretation remains provisional.\n\nThe primary analysis uses \\PharmaSplits{} paired random splits, each with",
+      "after": "maximum, indicating that the corresponding measurement windows require\nclarification. We use the reported metric to describe historical batch\nvariation, while its physical interpretation remains provisional.\n\nThe primary analysis uses \\PharmaSplits{} paired random splits, each with"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        774,
+        778
+      ],
+      "current_lines": [
+        753,
+        757
+      ],
+      "before": "The associated process records identify \\PharmaCampaigns{} production\ncampaigns \\citep{rqr-ZagarMihelic2021Process}. Every random partition shares\ncampaigns between training and evaluation; a median\n\\PharmaRandomSharedHeldout{} of \\PharmaHeldout{} withheld batches belong to\ncampaigns represented in training. The random-split results consequently",
+      "after": "The associated process records identify \\PharmaCampaigns{} production\ncampaigns \\citep{rqr-ZagarMihelic2021Process}. Every random partition shares\ncampaigns between training and evaluation. A median\n\\PharmaRandomSharedHeldout{} of \\PharmaHeldout{} withheld batches belong to\ncampaigns represented in training. The random-split results consequently"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        783,
+        793
+      ],
+      "current_lines": [
+        762,
+        769
+      ],
+      "before": "\\caption[Pharmaceutical tensile-metric intervals]{\\textbf{Reported pharmaceutical tensile metric.} Intervals are\nfit on \\PharmaTrain{} batches and evaluated on \\PharmaHeldout{} withheld\nbatches over \\PharmaSplits{} paired random splits. These splits reuse one\nfinite dataset and are not independent sampling replications. Bracketed ranges\nare empirical 2.5\\%--97.5\\% partition quantiles. The metric's physical unit\nand acceptance criteria are unspecified. Lower and upper endpoints are summarized\nseparately. Held-out \\(\\ge c\\) gives the percentage of all splits with\nheld-out empirical content at least \\(c\\); returned intervals and tail\nomissions are reported separately.}\n\\label{rqr2026:tab:pharma-application-primary}\n\\TableStyle",
+      "after": "\\caption[Pharmaceutical tensile-metric intervals]{\\textbf{Reported pharmaceutical tensile metric.} Intervals are\nfit on \\PharmaTrain{} batches and evaluated on \\PharmaHeldout{} withheld\nbatches over \\PharmaSplits{} paired random splits. All methods returned an\ninterval in every split. Bracketed ranges are empirical 2.5\\%--97.5\\%\nquantiles across these overlapping partitions, not posterior credible\nintervals. The metric's physical unit and acceptance criteria are unspecified.}\n\\label{rqr2026:tab:pharma-application-primary}\n\\TableStyle"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        913,
+        937
+      ],
+      "current_lines": [
+        889,
+        909
+      ],
+      "before": "than universally equivalent targets.\n\nThe generalized posterior extends the residual-product criterion to\nuncertainty over interval roots. Its augmentation supports conditionally\nconjugate Gibbs updates for MPI and fixed-tilt MTI, and ECM supplies\ndeterministic estimates for candidate selection. The calibrated procedure\ncombines these fixed-target estimates with a direct\nDirichlet-process posterior content check, and a separate calibration run fixes\nthe selection rule before validation. In the independent study, empirical\ncontent attainment exceeds the nominal tolerance confidence in every reported\nsetting, and MTI has smaller mean width than Young--Mathew in two thirds of the\nasymmetric distribution--setting cases. The independent confidence bounds\nremain inconclusive in 19 of the 72 cases. These findings characterize the\nprespecified finite-iteration ECM procedure over the stated\neight-distribution design. Its numerical stopping flags and the finite\ncontent--tilt grid do not establish global mode or interval-width optimality.\n\nThe inferential target, computational update, content probability, and\ntolerance-confidence statement have separate roles. MTI identifies the\nfixed-content interval being estimated, and the generalized posterior describes\nuncertainty for that loss-defined target. The Dirichlet-process response model\ngives content probabilities for the eligibility screen. Repeated-sampling\ncontent attainment evaluates the selected tolerance action.\n\nThe pharmaceutical analysis has a narrower, descriptive role. It shows how the",
+      "after": "than universally equivalent targets.\n\nFor inference on these targets, the generalized posterior extends the\nresidual-product criterion to uncertainty over interval roots. Its augmentation\nsupports conditionally conjugate Gibbs updates for both MPI and fixed-tilt\nMTI, while ECM supplies deterministic estimates for candidate selection.\nCombining these estimates with a direct Dirichlet-process posterior content\ncheck gives a tolerance procedure whose selection rule is fixed by separate\ncalibration before validation.\n\nIn the tolerance comparison, width reductions are most frequent under\nasymmetric sampling. MTI--ECM gives smaller mean width than Young--Mathew in\n39 of 72 comparisons (54.2\\%), including 36 of 54 asymmetric-distribution\ncomparisons (66.7\\%). The largest reduction is 30.6\\% under strongly skewed\nlognormal sampling, and every narrower-mean-width comparison also has greater\nempirical content attainment. At three settings near the sample-range boundary,\nYoung--Mathew instead gives smaller mean width in every distribution. MTI--ECM\nempirical attainment ranges from 95.1\\% to 99.9\\%, with the independent\nconfidence bounds including the nominal value in 19 of 72 cases (26.4\\%).\n\nThe pharmaceutical analysis has a narrower, descriptive role. It shows how the"
+    },
+    {
+      "path": "chapters/05-research-d.tex",
+      "baseline_lines": [
+        944,
+        950
+      ],
+      "current_lines": [
+        916,
+        921
+      ],
+      "before": "performance beyond this historical dataset.\n\nThe tolerance evidence covers iid continuous univariate simulations, and\nboundary tilts can lead to one-sided limits or inactive roots. The regression\nand dynamic endpoint models generalize the loss-defined target. Their empirical\nassessment requires implementations, numerical diagnostics, simulation designs,\nand target-specific calibration.",
+      "after": "performance beyond this historical dataset.\n\nThe regression and dynamic endpoint models extend the same loss-defined\ntarget to covariate-dependent intervals. Their empirical assessment requires\nimplementations, numerical diagnostics, simulation designs, and\ntarget-specific calibration."
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        11,
+        15
+      ],
+      "current_lines": [
+        11,
+        15
+      ],
+      "before": "\\label{app:mti-proofs}\n\nFix a conditioning value \\(x\\) and suppress it from the notation; the\nunconditional case follows by omitting \\(X\\). Write\n\\[",
+      "after": "\\label{app:mti-proofs}\n\nFix a conditioning value \\(x\\) and suppress it from the notation. The\nunconditional case follows by omitting \\(X\\). Write\n\\["
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        26,
+        30
+      ],
+      "current_lines": [
+        26,
+        30
+      ],
+      "before": "\\]\nEquivalently, the omitted lower and upper tails balance first moments about\n\\(\\mu\\); their probabilities need not be equal.\n\n\\subsection{Proof of Proposition~\\ref{rqr2026:prop:population-characterization}}",
+      "after": "\\]\nEquivalently, the omitted lower and upper tails balance first moments about\n\\(\\mu\\), although their probabilities need not be equal.\n\n\\subsection{Proof of Proposition~\\ref{rqr2026:prop:population-characterization}}"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        44,
+        51
+      ],
+      "current_lines": [
+        44,
+        51
+      ],
+      "before": "\\(\\E(sY\\mid X=x)=0\\), which is\nEq.~\\eqref{rqr2026:eq:mpi-retained-mean-score}. The first identity is the\npopulation-content result of \\citet{rqr-PouplinEtAl2024RQR}; the second is the\nadditional retained-mean consequence used here.\n\n\\subsection{Proof of Theorem~\\ref{rqr2026:thm:quantile-window}}\n\nModulo probability-zero portions outside the support, every contiguous",
+      "after": "\\(\\E(sY\\mid X=x)=0\\), which is\nEq.~\\eqref{rqr2026:eq:mpi-retained-mean-score}. The first identity is the\npopulation-content result of \\citet{rqr-PouplinEtAl2024RQR}, while the second is the\nadditional retained-mean consequence used here.\n\n\\subsection{Proof of Proposition~\\ref{rqr2026:thm:quantile-window}}\n\nModulo probability-zero portions outside the support, every contiguous"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        58,
+        66
+      ],
+      "current_lines": [
+        58,
+        65
+      ],
+      "before": "highest \\(c\\)-fraction is above \\(\\mu\\). Continuity and strict monotonicity\ntherefore give a unique \\(u_c\\) satisfying \\(M_c(u_c)=\\mu\\). The retained-mean\nscore identifies \\(Q(u_c)\\) and \\(Q(u_c+c)\\). Under symmetry, the window\nbeginning at \\((1-c)/2\\) has retained mean \\(\\mu\\), so uniqueness gives the\nequal-tailed interval.\n\n\\subsection{Proof of Theorem~\\ref{rqr2026:thm:profiled-mean-tilt}}\n\nAway from endpoint atoms, differentiating the expected MTI loss with respect",
+      "after": "highest \\(c\\)-fraction is above \\(\\mu\\). Continuity and strict monotonicity\ntherefore give a unique \\(u_c\\) satisfying \\(M_c(u_c)=\\mu\\). The retained-mean\nscore identifies \\(Q(u_c)\\) and \\(Q(u_c+c)\\). Under symmetry, the equal-tailed\nwindow has retained mean \\(\\mu\\), so uniqueness identifies it as the MPI.\n\n\\subsection{Proof of Proposition~\\ref{rqr2026:thm:profiled-mean-tilt}}\n\nAway from endpoint atoms, differentiating the expected MTI loss with respect"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        86,
+        90
+      ],
+      "current_lines": [
+        85,
+        89
+      ],
+      "before": "\\label{rqr2026:eq:supp-profiled-risk-derivative}\n\\end{equation}\nThe finite second moment supplies an integrable envelope; the corresponding\none-sided derivatives apply at finite support transitions.\n",
+      "after": "\\label{rqr2026:eq:supp-profiled-risk-derivative}\n\\end{equation}\nThe finite second moment supplies an integrable envelope, and the corresponding\none-sided derivatives apply at finite support transitions.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        95,
+        105
+      ],
+      "current_lines": [
+        94,
+        103
+      ],
+      "before": "\\]\nThe right-hand side is strictly increasing in \\(u\\). When a root passes a\nfinite support endpoint, \\(u_c(m)\\) is clamped at zero or \\(1-c\\); hence it\nremains globally nondecreasing. Equation\n\\eqref{rqr2026:eq:supp-profiled-risk-derivative} and strict monotonicity of \\(M_c\\)\nshow that the profiled derivative is negative before the unique solution of\n\\(M_c(u)=\\mu+\\delta\\) and positive afterward. This establishes the unique\nglobal midpoint minimizer; fixed-midpoint profiling gives its unique positive\nradius.\n\nThe admissible population range is",
+      "after": "\\]\nThe right-hand side is strictly increasing in \\(u\\). When a root passes a\nfinite support endpoint, \\(u_c(m)\\) is clamped at zero or \\(1-c\\), so it\nremains globally nondecreasing. Equation\n\\eqref{rqr2026:eq:supp-profiled-risk-derivative} and strict monotonicity of \\(M_c\\)\nshow that the profiled derivative is negative before the unique solution of\n\\(M_c(u)=\\mu+\\delta\\) and positive afterward. Together with fixed-midpoint\nprofiling, this gives the unique global minimizer in midpoint and radius.\n\nThe admissible population range is"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        108,
+        112
+      ],
+      "current_lines": [
+        106,
+        110
+      ],
+      "before": "\\]\nInterior tilts correspond to finite-root windows. At a boundary tilt, an\ninfinite support endpoint gives a semi-infinite limit; a finite endpoint needs\na support constraint to identify an otherwise inactive root. Outside the\nclosed range, the unrestricted expected loss is unbounded below along the",
+      "after": "\\]\nInterior tilts correspond to finite-root windows. At a boundary tilt, an\ninfinite support endpoint gives a semi-infinite limit, whereas a finite endpoint needs\na support constraint to identify an otherwise inactive root. Outside the\nclosed range, the unrestricted expected loss is unbounded below along the"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        117,
+        121
+      ],
+      "current_lines": [
+        115,
+        120
+      ],
+      "before": "An intercept-only endpoint fit uses one pair \\((a,b)\\) for all observations,\nunlike the covariate-dependent endpoint functions considered in the chapter.\nFor the unpenalized empirical MTI criterion, let\n\\(e_i=(y_i-a)(y_i-b)\\). Its check-loss subdifferential is\n\\[",
+      "after": "An intercept-only endpoint fit uses one pair \\((a,b)\\) for all observations,\nunlike the covariate-dependent endpoint functions considered in the chapter.\nWe use the standard check-loss subgradient treatment\n\\citep{qdesn-KoenkerBassett1978}. For the unpenalized empirical MTI criterion, let\n\\(e_i=(y_i-a)(y_i-b)\\). Its check-loss subdifferential is\n\\["
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        149,
+        153
+      ],
+      "current_lines": [
+        148,
+        152
+      ],
+      "before": "Substitution into either equation gives the retained-mean identity.\nThese identities explain the empirical balance reported in\nChapter~\\ref{ch:research-d}; they are estimating equations for the unpenalized\nintercept-only fit, not tolerance guarantees.\n",
+      "after": "Substitution into either equation gives the retained-mean identity.\nThese identities explain the empirical balance reported in\nChapter~\\ref{ch:research-d}. They are estimating equations for the unpenalized\nintercept-only fit, not tolerance guarantees.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        174,
+        178
+      ],
+      "current_lines": [
+        173,
+        177
+      ],
+      "before": "\\(E_{\\pi_0}\\{\\exp[t(a+b)]\\}=\\exp(t^2/\\lambda)\\). Completing the square\nalso bounds all polynomial root moments. This argument uses the stated\nproper Gaussian priors; random heavy-tailed scales require a separate\nargument for nonzero tilt.\n",
+      "after": "\\(E_{\\pi_0}\\{\\exp[t(a+b)]\\}=\\exp(t^2/\\lambda)\\). Completing the square\nalso bounds all polynomial root moments. This argument uses the stated\nproper Gaussian priors. Random heavy-tailed scales require a separate\nargument for nonzero tilt.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        198,
+        202
+      ],
+      "current_lines": [
+        197,
+        201
+      ],
+      "before": "\\end{align*}\nTerms depending only on the sample and fixed settings are absorbed into the\nconstant. This augments an endpoint loss; it does not transform a response\nsampling density.\n",
+      "after": "\\end{align*}\nTerms depending only on the sample and fixed settings are absorbed into the\nconstant. This augments an endpoint loss rather than transforming a response\nsampling density.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        259,
+        263
+      ],
+      "current_lines": [
+        258,
+        262
+      ],
+      "before": "maximization, using one set of E-step weights.\n\\item Accept the cycle if \\(J\\) does not increase beyond the numerical\nallowance; otherwise backtrack toward the preceding roots.\n\\item Stop at the stated criterion or iteration limit. Return the final\nsorted roots, objective, stopping flag, and stationarity diagnostic.",
+      "after": "maximization, using one set of E-step weights.\n\\item Accept the cycle if \\(J\\) does not increase beyond the numerical\nallowance. Otherwise, backtrack toward the preceding roots.\n\\item Stop at the stated criterion or iteration limit. Return the final\nsorted roots, objective, stopping flag, and stationarity diagnostic."
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        281,
+        290
+      ],
+      "current_lines": [
+        280,
+        289
+      ],
+      "before": "-\\frac{\\lambda}{\\omega_{\\mathrm R}}(a+b).\n\\]\nThese identities show the prior contributions to empirical balance; finite\niterates need not satisfy them exactly. In the simulation, 42,116 of\n72,000 selected fits meet the stopping criterion and 29,884 reach the cap.\nAll selected fits reach the cap at \\((n,c)=(50,.90),(100,.95),(500,.99)\\).\nIn the application, the corresponding counts are 90 of 1,000 primary\ntensile fits and 14 of 1,000 primary RSD fits; across all partitions and\nboth responses, 170 of 3,004 pass. Every returned interval remains in the\nempirical comparison. These stopping diagnostics do not certify global",
+      "after": "-\\frac{\\lambda}{\\omega_{\\mathrm R}}(a+b).\n\\]\nThese identities show the prior contributions to empirical balance, although finite\niterates need not satisfy them exactly. In the simulation, 42,116 of\n72,000 selected fits meet the stopping criterion and 29,884 reach the cap.\nAll selected fits reach the cap at \\((n,c)=(50,.90),(100,.95),(500,.99)\\).\nIn the application, the corresponding counts are 90 of 1,000 primary\ntensile fits and 14 of 1,000 primary RSD fits. Across all partitions and\nboth responses, 170 of 3,004 pass. Every returned interval remains in the\nempirical comparison. These stopping diagnostics do not certify global"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        301,
+        305
+      ],
+      "current_lines": [
+        300,
+        304
+      ],
+      "before": "The fitted procedure uses \\(\\alpha_0=1\\) and \\(H=\\Normal(0,4^2)\\) on the fitting\nscale. The resulting survival probability is a posterior content statement\nunder this response-distribution model; repeated-sampling simulation evaluates\nthe complete tolerance rule.\n",
+      "after": "The fitted procedure uses \\(\\alpha_0=1\\) and \\(H=\\Normal(0,4^2)\\) on the fitting\nscale. The resulting survival probability is a posterior content statement\nunder this response-distribution model, whereas repeated-sampling simulation evaluates\nthe complete tolerance rule.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        325,
+        329
+      ],
+      "current_lines": [
+        324,
+        328
+      ],
+      "before": "whose absolute tilt exceeds two sample standard deviations are removed.\nThe fixed construction also allows a deterministic expansion when the\ninitial set has no eligible candidate; this is not replacement by a\ndifferent interval method.\n",
+      "after": "whose absolute tilt exceeds two sample standard deviations are removed.\nThe fixed construction also allows a deterministic expansion when the\ninitial set has no eligible candidate. This is not replacement by a\ndifferent interval method.\n"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        343,
+        347
+      ],
+      "current_lines": [
+        342,
+        346
+      ],
+      "before": "\\(0.995\\), except for \\(0.996\\) at \\(n=1000,c=0.99\\).\nThe smallest distribution-specific lower bounds are approximately\n\\(0.9460\\) at \\(n=100,c=0.95\\) and \\(0.9382\\) at \\(n=500,c=0.99\\);\nthe other seven setting minima exceed \\(0.95\\). They do not adjust for the\ncutoff search or establish a simultaneous guarantee for the selected rule.",
+      "after": "\\(0.995\\), except for \\(0.996\\) at \\(n=1000,c=0.99\\).\nThe smallest distribution-specific lower bounds are approximately\n\\(0.9460\\) at \\(n=100,c=0.95\\) and \\(0.9382\\) at \\(n=500,c=0.99\\), while\nthe other seven setting minima exceed \\(0.95\\). They do not adjust for the\ncutoff search or establish a simultaneous guarantee for the selected rule."
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        355,
+        358
+      ],
+      "current_lines": [
+        354,
+        368
+      ],
+      "before": "\n\\input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}\n\nFor a sample-bounded two-sided order-statistic interval, the full-range",
+      "after": "\n\\input{tables/ch05-mti/tolerance_validation_mti_profile_policy.tex}\n\n\\begin{table}[!htbp]\n\\centering\n\\caption[Independent-sample tolerance validation]{\\textbf{Independent-sample tolerance validation.} Results are shown by\nsample-size/content setting and method. Each row summarizes the range\nacross eight simulation distributions at tolerance confidence \\(0.95\\). All three\nreported methods produced an interval in every replication in this run.}\n\\label{rqr2026:tab:tolerance-validation-primary}\n\\TableStyle\n\\input{tables/ch05-mti/tolerance_validation_article_scenario_ranges.tex}\n\\end{table}\n\nFor a sample-bounded two-sided order-statistic interval, the full-range"
+    },
+    {
+      "path": "appendices/e-mti-technical.tex",
+      "baseline_lines": [
+        401,
+        405
+      ],
+      "current_lines": [
+        411,
+        415
+      ],
+      "before": "update exchanges labels. Reported endpoints are sorted at each design point,\nso coefficient labels are not interpreted as globally lower or upper roots.\nProper Gaussian priors make the finite-dimensional update normalizable; a\nnonzero tilt with heavier-tailed random scales needs a separate propriety\nargument.",
+      "after": "update exchanges labels. Reported endpoints are sorted at each design point,\nso coefficient labels are not interpreted as globally lower or upper roots.\nProper Gaussian priors make the finite-dimensional update normalizable. A\nnonzero tilt with heavier-tailed random scales needs a separate propriety\nargument."
+    },
+    {
+      "path": "chapters/06-synthesis.tex",
+      "baseline_lines": [
+        169,
+        179
+      ],
+      "current_lines": [
+        169,
+        181
+      ],
+      "before": "calibrated before evaluation on independent samples. Across 72\ndistribution--setting cases, MTI--ECM content attainment ranges from\n95.1\\% to 99.9\\%; its mean width is smaller than that of Young--Mathew in 39\ncases. The closest cases remain statistically compatible with the nominal\n0.95 confidence, so the study supplies repeated-sampling evidence for the\nspecified finite-iteration rule over the eight-distribution panel. Of the\n72,000 selected ECM fits, 29,884 reach the iteration cap; all are retained in\nthe comparison. The pharmaceutical\napplication reports endpoint placement, width, empirical content, and\npartition sensitivity on historical batches. Its overlapping partitions,\npossible dependence, ties, and unresolved measurement definitions make this a",
+      "after": "calibrated before evaluation on independent samples. Across 72\ndistribution--setting cases, MTI--ECM content attainment ranges from\n95.1\\% to 99.9\\%. Its mean width is smaller than that of Young--Mathew in\n39 of 72 cases (54.2\\%), including 36 of 54 asymmetric-distribution cases\n(66.7\\%). The largest reductions occur under strongly skewed lognormal\nsampling, where mean width decreases by up to 30.6\\%. In all 39 comparisons\nwith smaller mean width, empirical content attainment also exceeds that of\nYoung--Mathew. The closest attainment cases remain statistically compatible\nwith the nominal 0.95 confidence. Of the 72,000 selected ECM fits, 29,884\n(41.5\\%) reach the iteration cap, and all are retained in the comparison.\nThe pharmaceutical application reports endpoint placement, width, empirical content, and\npartition sensitivity on historical batches. Its overlapping partitions,\npossible dependence, ties, and unresolved measurement definitions make this a"
+    },
+    {
+      "path": "frontmatter/acknowledgments.tex",
+      "baseline_lines": [
+        42,
+        53
+      ],
+      "current_lines": [
+        42,
+        48
+      ],
+      "before": "population-content result on which these contributions build.\n\nAI-assisted tools were used only for selected code debugging and for checks of\ngrammar, readability, organization, and consistency. They were not used to\nproduce complete code implementations, formulate the statistical methodology,\nderive mathematical results or proofs, search or evaluate the literature,\nindependently conduct the research analyses, or generate the reported results.\nWe reviewed and verified all code changes, references, mathematical statements,\nanalyses, interpretations, and final text and take responsibility for the\ncontent of the dissertation.\n\n\\end{acknowledgements}",
+      "after": "population-content result on which these contributions build.\n\nAI-assisted tools supported selected code development and checking,\nliterature verification, and manuscript editing. We reviewed the resulting\nchanges and take responsibility for the final text and computations.\n\n\\end{acknowledgements}"
+    },
+    {
+      "path": "tables/ch05-mti/pharma_application_primary_summary.tex",
+      "baseline_lines": [
+        1,
+        19
+      ],
+      "current_lines": [
+        1,
+        9
+      ],
+      "before": "\\begin{tabularx}{\\textwidth}{@{}lrr>{\\raggedright\\arraybackslash}X>{\\raggedright\\arraybackslash}X@{}}\n\\toprule\nMethod & Splits & Returned (\\%) & Median lower/upper & Width median [95\\% range]\\\\\n\\midrule\nMTI-ECM (proposed) & 1000 & 100.0 & 1.101 / 1.654 & 0.553 [0.450, 0.628] \\\\\nYoung--Mathew (benchmark) & 1000 & 100.0 & 1.133 / 1.690 & 0.533 [0.445, 0.593] \\\\\nWilks (benchmark) & 1000 & 100.0 & 1.040 / 1.748 & 0.665 [0.552, 0.708] \\\\\n\\bottomrule\n\\end{tabularx}\n\\par\\smallskip\n\\begin{tabularx}{\\textwidth}{@{}l>{\\raggedright\\arraybackslash}Xrr@{}}\n\\toprule\nMethod & Held-out content median [95\\% range] (\\%) & Held-out $\\ge c$ (\\%) & Omitted below/above (\\%)\\\\\n\\midrule\nMTI-ECM & 96.6 [87.7, 100.0] & 93.6 & 1.1 / 2.3 \\\\\nYoung--Mathew & 95.4 [87.7, 100.0] & 91.9 & 2.3 / 1.1 \\\\\nWilks & 98.9 [93.1, 100.0] & 99.3 & 0.0 / 0.0 \\\\\n\\bottomrule\n\\end{tabularx}",
+      "after": "\\begin{tabularx}{\\textwidth}{@{}l>{\\raggedright\\arraybackslash}X>{\\raggedright\\arraybackslash}X@{}}\n\\toprule\nMethod & Median width & Median held-out content (\\%)\\\\\n\\midrule\nMTI--ECM & 0.553 [0.450, 0.628] & 96.6 [87.7, 100.0] \\\\\nYoung--Mathew & 0.533 [0.445, 0.593] & 95.4 [87.7, 100.0] \\\\\nWilks & 0.665 [0.552, 0.708] & 98.9 [93.1, 100.0] \\\\\n\\bottomrule\n\\end{tabularx}"
+    }
+  ],
+  "empirical_summary": {
+    "total_cases": 72,
+    "narrower_than_young_mathew": 39,
+    "narrower_percent": 54.2,
+    "asymmetric_cases": 54,
+    "asymmetric_narrower": 36,
+    "asymmetric_narrower_percent": 66.7,
+    "lognormal_max_width_reduction_percent": 30.6,
+    "narrower_cases_with_higher_attainment": 39
+  },
+  "scientific_runs": 0,
+  "validation": {
+    "status": "PASS",
+    "artifact": "build/release-20261112T053327Z/main.pdf",
+    "sha256": "dbe16ce5173c12886203fbd982e461e606620d6a96fbc849a9d15a48488b5fa7",
+    "bytes": 3987301,
+    "pages": 189,
+    "unit_tests": 71,
+    "new_polish_tests": 17,
+    "new_derivative_override_tests": 6,
+    "immutable_import_source_blobs": 132,
+    "additional_migration_source_records": 11,
+    "protected_scientific_assets": 14,
+    "overfull_boxes": 0,
+    "underfull_boxes": 10,
+    "embedded_fonts": 32,
+    "type3_fonts": 0,
+    "pdf_tagged": false,
+    "rendered_physical_pages": [
+      12,
+      102,
+      107,
+      110,
+      120,
+      121,
+      122,
+      124,
+      125,
+      128,
+      135,
+      166,
+      167,
+      168,
+      171,
+      172,
+      175,
+      176
+    ],
+    "visual_review": "PASS; unchanged reviewed-page renders compared bytewise, changed proof pages re-inspected",
+    "environment": "Python 3.11.13; pdfTeX 1.40.19 / TeX Live 2018; BibTeX 0.99d; Poppler 20.11.0",
+    "command": "bash scripts/validate.sh --tier release --audit-root [verified frozen audit clones]",
+    "coverage": "Uninterrupted final release gate completed with exit status zero; no scientific computation or external model qualification implied."
+  },
+  "publication": {
+    "github": "PENDING",
+    "overleaf": "NOT_PERFORMED"
+  }
+}

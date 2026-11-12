@@ -432,9 +432,10 @@
       "appendices/e-mti-technical.tex::heading::subsection::fractional-empirical-balance::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::posterior-content-assessment::occurrence::1",
       "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
-      "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-thm-profiled-mean-tilt::occurrence::1",
+      "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-thm-quantile-window::occurrence::1",
       "appendices/e-mti-technical.tex::label::rqr2026:eq:supp-profiled-risk-derivative",
+      "appendices/e-mti-technical.tex::label::rqr2026:tab:tolerance-validation-primary",
       "display::rqr2026:tab:supp-mti-profile-policy"
     ]
   },
@@ -13987,15 +13988,17 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::section::foundations-profiled-computation-and-validation-details::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::section::calibration-and-sample-range-reference::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::section::calibration-and-sample-range-reference::occurrence::1",
+        "appendices/e-mti-technical.tex::label::rqr2026:tab:tolerance-validation-primary"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14041,16 +14044,17 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::dynamic-endpoint-state-updates::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-quantile-window::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-prop-population-characterization::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-thm-quantile-window::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14102,8 +14106,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14155,8 +14160,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14208,8 +14214,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14261,8 +14268,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14316,8 +14324,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14369,8 +14378,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14422,8 +14432,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14475,8 +14486,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14522,19 +14534,20 @@
       },
       "coverage_keys": [
         "appendices/e-mti-technical.tex::heading::subsection::fixed-content-interval-targets::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::proof-of-theorem-rqr2026-thm-profiled-mean-tilt::occurrence::1",
         "appendices/e-mti-technical.tex::heading::section::fixed-target-computation-and-content-checking::occurrence::1",
         "appendices/e-mti-technical.tex::heading::subsection::augmentation-and-gibbs-sampling::occurrence::1",
         "appendices/e-mti-technical.tex::heading::subsection::ecm-calculation-and-empirical-balance::occurrence::1",
-        "appendices/e-mti-technical.tex::heading::subsection::posterior-content-assessment::occurrence::1"
+        "appendices/e-mti-technical.tex::heading::subsection::posterior-content-assessment::occurrence::1",
+        "appendices/e-mti-technical.tex::heading::subsection::proof-of-proposition-rqr2026-thm-profiled-mean-tilt::occurrence::1"
       ],
       "risk": "HIGH",
       "reviewer": "Antonio de Leon and dissertation advisors",
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14586,8 +14599,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14639,8 +14653,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14692,8 +14707,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14748,8 +14764,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14803,8 +14820,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14859,8 +14877,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14915,8 +14934,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -14968,8 +14988,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15021,8 +15042,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15074,8 +15096,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15127,8 +15150,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15180,8 +15204,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15233,8 +15258,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15286,8 +15312,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15341,8 +15368,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15397,8 +15425,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15452,8 +15481,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15507,8 +15537,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15562,8 +15593,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15617,8 +15649,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15672,8 +15705,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15727,8 +15761,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15782,8 +15817,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15837,8 +15873,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15892,8 +15929,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -15947,8 +15985,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:lem:supp-profile-radius",
@@ -16007,8 +16046,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-intercept-profile",
@@ -16067,8 +16107,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-convex-order",
@@ -16127,8 +16168,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:supp-dp-content-law",
@@ -16187,8 +16229,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:prop:mean-tilt",
@@ -16247,8 +16290,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:supp-fractional-balance",
@@ -16307,8 +16351,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:profiled-mean-tilt",
@@ -16367,8 +16412,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       },
       "formal_result": {
         "statement_authority": "rqr2026:thm:quantile-window",
@@ -18895,8 +18941,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -18952,8 +18999,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19009,8 +19057,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19066,8 +19115,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19125,8 +19175,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19182,8 +19233,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19241,8 +19293,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19298,8 +19351,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19355,8 +19409,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19412,8 +19467,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19469,8 +19525,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19526,8 +19583,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19583,8 +19641,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19640,8 +19699,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19699,8 +19759,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19756,8 +19817,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {
@@ -19813,8 +19875,9 @@
       "status": "IMPLEMENTED",
       "implementation": {
         "commit": "3f264eaf4fa9b398753945fc3cb20f70178e383d",
-        "final_sha256": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3",
-        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately"
+        "final_sha256": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+        "validation": "docs/ch05-mti-ecm-gibbs-migration-20261111.json; source/prose checks, release inspection recorded separately",
+        "current_editorial_record": "docs/ch05-postmigration-polish-20261112.json"
       }
     },
     {

@@ -153,8 +153,9 @@
       "destination_heading": "Foundations, profiled computation, and validation details",
       "appendix_label": "app:mti-technical",
       "risk": "high",
-      "source_file_sha256_after": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69",
-      "destination_file_sha256_after": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3"
+      "source_file_sha256_after": "b07a15512be7d72b5293428c416db1b71b4b3929b5ff741e45a6e2f398b9623e",
+      "destination_file_sha256_after": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+      "current_editorial_revision": "docs/ch05-postmigration-polish-20261112.json"
     },
     {
       "disposition": "MOVE_APPENDIX",
@@ -171,8 +172,9 @@
       "destination_heading": "Regression and dynamic endpoint computation",
       "appendix_label": "app:mti-technical",
       "risk": "high",
-      "source_file_sha256_after": "8249a9b52ae375bbaf795f36a91ee0d396195254c352dae6499c5ee17a9e7b69",
-      "destination_file_sha256_after": "7afa42867e696db80c676d2f2148181c4f7cdda94684fac8a891a1b3c16825e3"
+      "source_file_sha256_after": "b07a15512be7d72b5293428c416db1b71b4b3929b5ff741e45a6e2f398b9623e",
+      "destination_file_sha256_after": "d0d82cc4c8adaa4a95ea37512465d062a74b091e23258ebbf15a8327f314ce0d",
+      "current_editorial_revision": "docs/ch05-postmigration-polish-20261112.json"
     }
   ]
 }

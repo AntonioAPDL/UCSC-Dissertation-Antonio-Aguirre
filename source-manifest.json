@@ -289,6 +289,13 @@
       "extension_source_commit": "66a63ddc389b1492444e6c9e4611c5076ed1ad19",
       "implementation_commit": "fda33763a77317f3a9d9a9803c29f59d81236ce4",
       "integration_commit": "fa584946e900cd0fff658c4ae549b4f98d6d4e79"
+    },
+    "ch05_postmigration_polish": {
+      "record": "docs/ch05-postmigration-polish-20261112.json",
+      "state": "RELEASE_VALIDATED_PENDING_PROMOTION",
+      "baseline_commit": "a56b66e256245436f5a93af65efa16ca35bba0cd",
+      "research_results_changed": false,
+      "scientific_runs": 0
     }
   },
   "author_direction": {

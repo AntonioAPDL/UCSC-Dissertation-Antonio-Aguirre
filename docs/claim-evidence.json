@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_at": "2026-11-11",
+  "recorded_at": "2026-11-12",
   "evidence_scale": {
     "E0": "assertion only",
     "E1": "exact locator at an immutable snapshot",
@@ -449,15 +449,16 @@
     {
       "id": "ART-MTI-ECM-001",
       "classification": "empirical_result",
-      "claim": "The frozen ECM validation has smaller mean width than Young--Mathew in 39 of 72 distribution-setting cells; tolerance attainment and width are assessed jointly.",
+      "claim": "MTI-ECM has smaller mean width than Young--Mathew in 39/72 cases (54.2%), including 36/54 asymmetric cases (66.7%); the largest relative reduction is 30.6% in the strongly skewed lognormal case. All 39 narrower cases also have greater empirical content attainment.",
       "source_id": "SRC-RQR",
       "commit": "cab844d0695fe13fa3f610615d282972112eba51",
       "source_path": "figures/data/mti_ecm_validation_20261111/paired_comparisons.csv",
       "locator": "72 paired family-setting comparisons",
       "evidence_level": "E2",
       "verification_status": "frozen source statements and public tabular evidence inspected",
-      "qualification": "Finite-iteration ECM results replace the older convex-profile packet; no new fit was performed for this migration.",
-      "dissertation_disposition": "current Chapter 5 evidence"
+      "qualification": "Descriptive comparisons of the frozen finite-iteration ECM procedure over eight distributions and nine settings; not universal superiority, a causal effect of skewness, or a new distribution-free tolerance theorem.",
+      "dissertation_disposition": "current Chapter 5 evidence",
+      "editorial_evidence": "docs/ch05-postmigration-polish-20261112.json"
     },
     {
       "id": "CON-MTI-ECM-001",
