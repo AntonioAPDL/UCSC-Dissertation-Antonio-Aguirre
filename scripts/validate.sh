@@ -37,6 +37,7 @@ python3.11 scripts/validate_editorial_audit.py
 python3.11 scripts/initialize_bruno_revision.py validate
 python3.11 scripts/validate_author_comments_revision.py
 python3.11 scripts/validate_final_voice_style.py
+python3.11 scripts/validate_ch05_polish.py
 mti_validator=(python3.11 scripts/validate_mti_migration.py)
 if [[ -n "$audit_root" ]]; then
   mti_validator+=(--audit-root "$audit_root")

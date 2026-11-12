@@ -1,5 +1,35 @@
 # Validation record
 
+## 2026-11-12 Chapter 5 post-migration polish
+
+The final uninterrupted source-aware release gate passed all 71 tests, 132
+immutable import-source blob checks, 11 additional migration-source checks,
+the independent frozen-asset checks, and all historical advisor, author,
+voice, display, appendix, dependency, and structure controls. The 23 added
+tests cover the polish and source-locked derivative overrides. No prior
+migration record or scientific asset was rewritten to obtain a passing gate.
+
+Accepted artifact: `build/release-20261112T053327Z/main.pdf`, 189 US-Letter
+pages, 3,987,301 bytes, SHA-256
+`dbe16ce5173c12886203fbd982e461e606620d6a96fbc849a9d15a48488b5fa7`.
+The final log has ten underfull and zero overfull boxes, with no blocking
+reference, citation, label, rerun, or fatal diagnostic. All 32 fonts are
+embedded, and none is Type 3. The PDF remains untagged.
+
+Physical pages 12, 102, 107, 110, 120--122, 124--125, 128, 135,
+166--168, 171--172, and 175--176 were inspected or compared bytewise with
+identical already inspected renders. The compact table and all main results
+figures are legible, proposition references resolve semantically, both
+algorithms remain intact, and the moved Table E.2 fits cleanly. Proof ending
+sentences were shortened without changing their arguments to remove isolated
+continuation words at page breaks.
+
+The mathematical display comparison found exactly one removed main-text
+duplicate empirical-balance display, retained in the appendix derivation,
+and no changed or added displayed equations. No scientific job, Gibbs
+performance comparison, institutional approval, accessibility conformance,
+or independent Overleaf build is claimed.
+
 ## 2026-11-11 verified integration and remote readback
 
 Integration commit `fa584946e900cd0fff658c4ae549b4f98d6d4e79` has exactly

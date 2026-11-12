@@ -129,6 +129,65 @@ class MtiMigrationTests(unittest.TestCase):
             path.write_text(json.dumps(record), encoding="utf-8")
             self.assertTrue(any("full Git commit" in item for item in MODULE.validate(root)))
 
+    def polish_fixture(self, root):
+        record = json.loads((root / MODULE.RECORD).read_text(encoding="utf-8"))
+        artifact = record["artifacts"][0]
+        path = root / artifact["path"]
+        path.write_text(path.read_text(encoding="utf-8") + "\nEditorial derivative.\n", encoding="utf-8")
+        polish = {
+            "baseline_migration_sha256": hashlib.sha256((root / MODULE.RECORD).read_bytes()).hexdigest(),
+            "artifacts": [{"path": artifact["path"], "baseline_sha256": artifact["sha256"],
+                           "current_sha256": hashlib.sha256(path.read_bytes()).hexdigest()}],
+        }
+        return polish
+
+    def test_source_locked_polish_override_is_accepted(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertEqual([], MODULE.validate(root))
+
+    def test_polish_cannot_rewrite_migration_record_baseline(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            polish["baseline_migration_sha256"] = "0" * 64
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertTrue(any("baseline migration record" in item for item in MODULE.validate(root)))
+
+    def test_polish_cannot_rewrite_original_artifact_identity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            polish["artifacts"][0]["baseline_sha256"] = "0" * 64
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertTrue(any("baseline artifact hash" in item for item in MODULE.validate(root)))
+
+    def test_polish_unknown_override_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            polish["artifacts"][0]["path"] = "unrelated.tex"
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertTrue(any("unknown polish artifact" in item for item in MODULE.validate(root)))
+
+    def test_polish_duplicate_override_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            polish["artifacts"].append(dict(polish["artifacts"][0]))
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertTrue(any("duplicate polish artifact" in item for item in MODULE.validate(root)))
+
+    def test_polish_stale_current_hash_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = self.disk_fixture(directory)
+            polish = self.polish_fixture(root)
+            polish["artifacts"][0]["current_sha256"] = "0" * 64
+            (root / MODULE.POLISH_RECORD).write_text(json.dumps(polish), encoding="utf-8")
+            self.assertTrue(any("artifact hash mismatch" in item for item in MODULE.validate(root)))
+
 
 if __name__ == "__main__":
     unittest.main()
