@@ -31,3 +31,19 @@ Git promotion and Drive upload are recorded only after verified remote
 readback. The requested Drive destination is the existing Dissertation
 Documents folder. No sharing permissions are changed and no prior files are
 deleted. No Overleaf publication or independent Overleaf compile is claimed.
+
+## Verified delivery
+
+Implementation commit `824486d2d726c2ae06aa05457817538d23fdb345` was merged
+through `e7f1f1f649729d53c6fa6a64466077c2d2540302`. Its two parents and
+tree identity with the release-tested implementation were verified. The
+source-aware merged-tree gate passed all 71 tests, and GitHub main was
+pushed and freshly read back at the integration commit.
+
+The accepted PDF was uploaded as
+`Dissertation_Antonio_Aguirre_2026-11-12.pdf` to the author-designated Drive
+folder. Upload completion, metadata, destination-folder membership, size,
+and readable PDF content were checked. The requested sentence is absent.
+Private Drive identifiers are kept only in the ignored local delivery receipt.
+No sharing change or file deletion was performed. This following receipt
+does not change the manuscript or accepted PDF.

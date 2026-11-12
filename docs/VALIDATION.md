@@ -1,5 +1,18 @@
 # Validation record
 
+## 2026-11-12 sentence-removal promotion and Drive readback
+
+The integration `e7f1f1f649729d53c6fa6a64466077c2d2540302` has the
+recorded baseline and implementation parents and exactly matches the
+release-tested implementation tree. The merged source-aware gate passed
+all 71 tests before command-line Git publication and fresh main readback.
+The accepted 3,987,188-byte PDF was uploaded to the requested Drive folder.
+Connector metadata and folder listing verify its identity and destination;
+raw-file and readable-content readbacks succeeded, with the removed
+sentence absent. The connector does not expose a remote checksum, so the
+recorded SHA-256 describes the local uploaded artifact, not an independently
+computed hash of the Drive copy. No Overleaf build is claimed.
+
 ## 2026-11-12 single-sentence removal release
 
 All 71 tests, 132 immutable import-source checks, additional migration

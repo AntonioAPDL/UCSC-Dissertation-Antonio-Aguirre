@@ -3,7 +3,7 @@
   "date": "2026-11-12",
   "revision_id": "REV-CH05-POSTMIGRATION-POLISH-20261112",
   "baseline_commit": "a56b66e256245436f5a93af65efa16ca35bba0cd",
-  "status": "SENTENCE_REMOVAL_RELEASE_VALIDATED_PENDING_PROMOTION",
+  "status": "SENTENCE_REMOVAL_MERGED_TO_MAIN_RELEASE_VALIDATED",
   "scope": "Editorial Chapter 5 polish; scientific results, fits and source authorities unchanged",
   "baseline_migration_record": "docs/ch05-mti-ecm-gibbs-migration-20261111.json",
   "baseline_migration_sha256": "facfc64e6548e20c86308a752dd49de3b9feb43ef3a9da982bf198a4160fe23b",
@@ -1070,8 +1070,23 @@
     ]
   },
   "publication": {
-    "github": "PENDING",
+    "github": "VERIFIED",
     "overleaf": "NOT_PERFORMED",
+    "implementation_commit": "824486d2d726c2ae06aa05457817538d23fdb345",
+    "main_integration_commit": "e7f1f1f649729d53c6fa6a64466077c2d2540302",
+    "merge_parents": ["98057360b05cdeab4b1247827586b39e543c4d93", "824486d2d726c2ae06aa05457817538d23fdb345"],
+    "merge_tree": "68339a2ba8ccb3fae9e726856d9f6aa6b7fd429a",
+    "merge_tree_equals_implementation_tree": true,
+    "verified_remote_main_at_receipt": "e7f1f1f649729d53c6fa6a64466077c2d2540302",
+    "drive_delivery": {
+      "status": "VERIFIED",
+      "file_name": "Dissertation_Antonio_Aguirre_2026-11-12.pdf",
+      "mime_type": "application/pdf",
+      "bytes": 3987188,
+      "checks": "Upload completion, metadata, destination membership, raw-file reference, and readable-PDF readback; removed sentence absent.",
+      "private_identifiers": "Destination and file link retained only in the ignored local delivery receipt.",
+      "sharing_changed": false
+    },
     "previous_publications": [
       {
         "github": "VERIFIED",

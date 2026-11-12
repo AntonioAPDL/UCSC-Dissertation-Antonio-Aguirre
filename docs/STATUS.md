@@ -1,5 +1,17 @@
 # Project status
 
+## 2026-11-12 sentence removal published and PDF delivered
+
+The sentence-removal implementation `824486d2d726c2ae06aa05457817538d23fdb345`
+was integrated through `e7f1f1f649729d53c6fa6a64466077c2d2540302`, tested
+on the combined tree, pushed to main, and freshly read back. Its tree
+equals the release-tested source. The authoritative rebuilt PDF was then
+uploaded to the author-designated Drive folder and checked by metadata,
+folder membership, size, and readable-PDF readback. The removed sentence
+is absent. The private file link is retained in the ignored delivery receipt.
+No sharing permissions were changed. This documentation receipt changes
+no manuscript bytes, scientific result, or accepted PDF.
+
 ## 2026-11-12 requested Chapter 5 sentence removed
 
 The redundant sentence following Proposition 5.2 was removed exactly as
